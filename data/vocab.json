@@ -1,0 +1,182 @@
+[
+  {
+    "id": "v001",
+    "italian": "il gatto",
+    "english": "the cat",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "Il gatto dorme sul divano.",
+    "tags": ["animals", "nouns"]
+  },
+  {
+    "id": "v002",
+    "italian": "la casa",
+    "english": "the house",
+    "gender": "f",
+    "partOfSpeech": "noun",
+    "example": "La casa è grande.",
+    "tags": ["places", "nouns"]
+  },
+  {
+    "id": "v003",
+    "italian": "mangiare",
+    "english": "to eat",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Io mangio la pizza.",
+    "tags": ["verbs", "food"]
+  },
+  {
+    "id": "v004",
+    "italian": "bere",
+    "english": "to drink",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Lei beve il caffè.",
+    "tags": ["verbs", "food"]
+  },
+  {
+    "id": "v005",
+    "italian": "il cane",
+    "english": "the dog",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "Il cane abbaia.",
+    "tags": ["animals", "nouns"]
+  },
+  {
+    "id": "v006",
+    "italian": "bello / bella",
+    "english": "beautiful",
+    "gender": null,
+    "partOfSpeech": "adjective",
+    "example": "Che bel giorno!",
+    "tags": ["adjectives"]
+  },
+  {
+    "id": "v007",
+    "italian": "parlare",
+    "english": "to speak",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Parli italiano?",
+    "tags": ["verbs", "communication"]
+  },
+  {
+    "id": "v008",
+    "italian": "il libro",
+    "english": "the book",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "Leggo un libro ogni settimana.",
+    "tags": ["objects", "nouns"]
+  },
+  {
+    "id": "v009",
+    "italian": "la città",
+    "english": "the city",
+    "gender": "f",
+    "partOfSpeech": "noun",
+    "example": "Roma è una bella città.",
+    "tags": ["places", "nouns"]
+  },
+  {
+    "id": "v010",
+    "italian": "camminare",
+    "english": "to walk",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Cammino ogni mattina.",
+    "tags": ["verbs", "movement"]
+  },
+  {
+    "id": "v011",
+    "italian": "grande",
+    "english": "big / great",
+    "gender": null,
+    "partOfSpeech": "adjective",
+    "example": "Ha una grande famiglia.",
+    "tags": ["adjectives"]
+  },
+  {
+    "id": "v012",
+    "italian": "piccolo / piccola",
+    "english": "small",
+    "gender": null,
+    "partOfSpeech": "adjective",
+    "example": "Ho un appartamento piccolo.",
+    "tags": ["adjectives"]
+  },
+  {
+    "id": "v013",
+    "italian": "l'acqua",
+    "english": "the water",
+    "gender": "f",
+    "partOfSpeech": "noun",
+    "example": "Bevo molta acqua.",
+    "tags": ["food", "nouns"]
+  },
+  {
+    "id": "v014",
+    "italian": "il pane",
+    "english": "the bread",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "Il pane fresco è delizioso.",
+    "tags": ["food", "nouns"]
+  },
+  {
+    "id": "v015",
+    "italian": "dormire",
+    "english": "to sleep",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Dormo otto ore per notte.",
+    "tags": ["verbs", "daily-life"]
+  },
+  {
+    "id": "v016",
+    "italian": "lavorare",
+    "english": "to work",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Lavoro in un ufficio.",
+    "tags": ["verbs", "work"]
+  },
+  {
+    "id": "v017",
+    "italian": "l'amico / l'amica",
+    "english": "the friend",
+    "gender": null,
+    "partOfSpeech": "noun",
+    "example": "Il mio amico si chiama Marco.",
+    "tags": ["people", "nouns"]
+  },
+  {
+    "id": "v018",
+    "italian": "oggi",
+    "english": "today",
+    "gender": null,
+    "partOfSpeech": "adverb",
+    "example": "Oggi fa bel tempo.",
+    "tags": ["time", "adverbs"]
+  },
+  {
+    "id": "v019",
+    "italian": "sempre",
+    "english": "always",
+    "gender": null,
+    "partOfSpeech": "adverb",
+    "example": "Arrivo sempre in orario.",
+    "tags": ["adverbs"]
+  },
+  {
+    "id": "v020",
+    "italian": "mai",
+    "english": "never",
+    "gender": null,
+    "partOfSpeech": "adverb",
+    "example": "Non mangio mai la carne.",
+    "tags": ["adverbs"]
+  }
+]

@@ -1,0 +1,82 @@
+[
+  {
+    "id": "s001",
+    "italian": "Io mangio una mela",
+    "english": "I eat an apple",
+    "parts": ["Io", "mangio", "una", "mela"],
+    "distractors": ["bevo", "il", "arancia"],
+    "tags": ["present", "food"]
+  },
+  {
+    "id": "s002",
+    "italian": "Lei beve il caffè",
+    "english": "She drinks the coffee",
+    "parts": ["Lei", "beve", "il", "caffè"],
+    "distractors": ["mangia", "la", "tè"],
+    "tags": ["present", "food"]
+  },
+  {
+    "id": "s003",
+    "italian": "Noi andiamo al mercato",
+    "english": "We go to the market",
+    "parts": ["Noi", "andiamo", "al", "mercato"],
+    "distractors": ["vediamo", "del", "ristorante"],
+    "tags": ["present", "movement"]
+  },
+  {
+    "id": "s004",
+    "italian": "Il gatto dorme sul divano",
+    "english": "The cat sleeps on the sofa",
+    "parts": ["Il", "gatto", "dorme", "sul", "divano"],
+    "distractors": ["cane", "mangia", "nella", "letto"],
+    "tags": ["present", "animals", "daily-life"]
+  },
+  {
+    "id": "s005",
+    "italian": "Ho comprato un libro",
+    "english": "I bought a book",
+    "parts": ["Ho", "comprato", "un", "libro"],
+    "distractors": ["Sono", "mangiato", "una", "giornale"],
+    "tags": ["passato-prossimo", "objects"]
+  },
+  {
+    "id": "s006",
+    "italian": "Non parlo francese",
+    "english": "I don't speak French",
+    "parts": ["Non", "parlo", "francese"],
+    "distractors": ["capisco", "italiano", "spagnolo"],
+    "tags": ["negation", "present"]
+  },
+  {
+    "id": "s007",
+    "italian": "Vuoi venire con me",
+    "english": "Do you want to come with me",
+    "parts": ["Vuoi", "venire", "con", "me"],
+    "distractors": ["Puoi", "andare", "da", "lui"],
+    "tags": ["present", "modal-verbs"]
+  },
+  {
+    "id": "s008",
+    "italian": "La casa è molto grande",
+    "english": "The house is very big",
+    "parts": ["La", "casa", "è", "molto", "grande"],
+    "distractors": ["Il", "giardino", "piccola", "tanto"],
+    "tags": ["present", "adjectives"]
+  },
+  {
+    "id": "s009",
+    "italian": "Sono andato al supermercato",
+    "english": "I went to the supermarket",
+    "parts": ["Sono", "andato", "al", "supermercato"],
+    "distractors": ["Ho", "venuto", "del", "mercato"],
+    "tags": ["passato-prossimo", "movement"]
+  },
+  {
+    "id": "s010",
+    "italian": "Devo studiare ogni giorno",
+    "english": "I must study every day",
+    "parts": ["Devo", "studiare", "ogni", "giorno"],
+    "distractors": ["Voglio", "lavorare", "qualche", "sera"],
+    "tags": ["present", "modal-verbs", "daily-life"]
+  }
+]

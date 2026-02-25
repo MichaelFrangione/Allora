@@ -1,0 +1,124 @@
+[
+  {
+    "id": "g001",
+    "rule": "Definite Articles",
+    "explanation": "Italian articles agree with the gender and number of the noun. Use 'il' (m. sing.), 'la' (f. sing.), 'i' (m. pl.), 'le' (f. pl.). Use 'lo/gli' before s+consonant, z, ps, gn. Use 'l'' before vowels.",
+    "examples": [
+      "il gatto (m. sing.)",
+      "la casa (f. sing.)",
+      "i gatti (m. pl.)",
+      "le case (f. pl.)",
+      "lo studente (before s+consonant)",
+      "l'amico (before vowel)"
+    ],
+    "tags": ["articles", "nouns", "basics"]
+  },
+  {
+    "id": "g002",
+    "rule": "Indefinite Articles",
+    "explanation": "Use 'un' (m. sing. before consonant or vowel), 'uno' (m. sing. before s+consonant, z, etc.), 'una' (f. sing. before consonant), 'un'' (f. sing. before vowel).",
+    "examples": [
+      "un libro (m. before consonant)",
+      "uno studente (m. before s+consonant)",
+      "una casa (f. before consonant)",
+      "un'amica (f. before vowel)"
+    ],
+    "tags": ["articles", "nouns", "basics"]
+  },
+  {
+    "id": "g003",
+    "rule": "Noun Gender",
+    "explanation": "Most Italian nouns ending in -o are masculine; most ending in -a are feminine. Nouns ending in -e can be either gender and must be memorised. Nouns ending in -ione are usually feminine.",
+    "examples": [
+      "il libro (m.) — ends in -o",
+      "la penna (f.) — ends in -a",
+      "il fiore (m.) — ends in -e (must memorise)",
+      "la stazione (f.) — ends in -ione"
+    ],
+    "tags": ["nouns", "gender", "basics"]
+  },
+  {
+    "id": "g004",
+    "rule": "Present Tense (-are verbs)",
+    "explanation": "Regular -are verbs drop the -are ending and add: -o, -i, -a, -iamo, -ate, -ano.",
+    "examples": [
+      "parlare → io parlo",
+      "parlare → tu parli",
+      "parlare → lui/lei parla",
+      "parlare → noi parliamo",
+      "parlare → voi parlate",
+      "parlare → loro parlano"
+    ],
+    "tags": ["verbs", "present-tense", "conjugation"]
+  },
+  {
+    "id": "g005",
+    "rule": "Present Tense (-ere verbs)",
+    "explanation": "Regular -ere verbs drop the -ere ending and add: -o, -i, -e, -iamo, -ete, -ono.",
+    "examples": [
+      "vedere → io vedo",
+      "vedere → tu vedi",
+      "vedere → lui/lei vede",
+      "vedere → noi vediamo",
+      "vedere → voi vedete",
+      "vedere → loro vedono"
+    ],
+    "tags": ["verbs", "present-tense", "conjugation"]
+  },
+  {
+    "id": "g006",
+    "rule": "Present Tense (-ire verbs)",
+    "explanation": "Regular -ire verbs have two patterns. Type 1: -o, -i, -e, -iamo, -ite, -ono. Type 2 (with -isc-): -isco, -isci, -isce, -iamo, -ite, -iscono.",
+    "examples": [
+      "dormire (type 1) → io dormo, tu dormi, lui dorme",
+      "finire (type 2) → io finisco, tu finisci, lui finisce"
+    ],
+    "tags": ["verbs", "present-tense", "conjugation"]
+  },
+  {
+    "id": "g007",
+    "rule": "Passato Prossimo",
+    "explanation": "Used for completed past actions. Formed with: avere/essere (present) + past participle. Most verbs use avere. Verbs of motion/state often use essere (and the participle agrees with subject gender/number).",
+    "examples": [
+      "Ho mangiato la pizza. (I ate the pizza — avere)",
+      "Sono andato al mercato. (I went to the market — essere, m.)",
+      "Siamo andati al mare. (We went to the sea — essere, m. pl.)"
+    ],
+    "tags": ["verbs", "past-tense"]
+  },
+  {
+    "id": "g008",
+    "rule": "Adjective Agreement",
+    "explanation": "Adjectives agree with the noun in gender and number. -o/-a adjectives have 4 forms. -e adjectives have only 2 forms (sing./pl.).",
+    "examples": [
+      "un gatto nero / una casa nera (m./f. sing.)",
+      "gatti neri / case nere (m./f. pl.)",
+      "un fiore verde / una mela verde (m./f. sing. — -e type)",
+      "fiori verdi / mele verdi (m./f. pl. — -e type)"
+    ],
+    "tags": ["adjectives", "agreement"]
+  },
+  {
+    "id": "g009",
+    "rule": "Negation",
+    "explanation": "To negate a sentence, place 'non' before the verb. Double negatives are standard in Italian (non...niente, non...mai, non...nessuno).",
+    "examples": [
+      "Non parlo francese. (I don't speak French.)",
+      "Non mangio mai la carne. (I never eat meat.)",
+      "Non ho visto nessuno. (I didn't see anyone.)"
+    ],
+    "tags": ["negation", "basics"]
+  },
+  {
+    "id": "g010",
+    "rule": "Subject Pronouns",
+    "explanation": "Italian subject pronouns are often omitted because the verb ending identifies the subject. Use them for emphasis or clarity.",
+    "examples": [
+      "io (I), tu (you, informal), lui (he), lei (she)",
+      "Lei (you, formal), noi (we), voi (you pl.), loro (they)",
+      "Parli italiano? (Do you speak Italian? — pronoun omitted)",
+      "Io parlo italiano, tu no. (I speak Italian, you don't — emphasis)"
+    ],
+    "tags": ["pronouns", "basics"]
+  }
+]

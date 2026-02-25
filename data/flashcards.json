@@ -1,0 +1,92 @@
+[
+  {
+    "id": "f001",
+    "front": "Come si dice 'hello'?",
+    "back": "Ciao (informal) / Salve (formal)",
+    "tags": ["greetings"]
+  },
+  {
+    "id": "f002",
+    "front": "Come si dice 'goodbye'?",
+    "back": "Arrivederci (formal) / Ciao (informal)",
+    "tags": ["greetings"]
+  },
+  {
+    "id": "f003",
+    "front": "Come si dice 'please'?",
+    "back": "Per favore / Per piacere",
+    "tags": ["politeness"]
+  },
+  {
+    "id": "f004",
+    "front": "Come si dice 'thank you'?",
+    "back": "Grazie",
+    "tags": ["politeness"]
+  },
+  {
+    "id": "f005",
+    "front": "Come si dice 'you're welcome'?",
+    "back": "Prego",
+    "tags": ["politeness"]
+  },
+  {
+    "id": "f006",
+    "front": "Come si dice 'excuse me'?",
+    "back": "Scusi (formal) / Scusa (informal)",
+    "tags": ["politeness"]
+  },
+  {
+    "id": "f007",
+    "front": "Come si dice 'I don't understand'?",
+    "back": "Non capisco",
+    "tags": ["phrases", "learning"]
+  },
+  {
+    "id": "f008",
+    "front": "Come si dice 'Can you repeat?'",
+    "back": "Può ripetere? (formal) / Puoi ripetere? (informal)",
+    "tags": ["phrases", "learning"]
+  },
+  {
+    "id": "f009",
+    "front": "Come si dice 'Where is...?'",
+    "back": "Dov'è...?",
+    "tags": ["phrases", "directions"]
+  },
+  {
+    "id": "f010",
+    "front": "Come si dice 'How much does it cost?'",
+    "back": "Quanto costa?",
+    "tags": ["phrases", "shopping"]
+  },
+  {
+    "id": "f011",
+    "front": "Come si dice 'I would like...'?",
+    "back": "Vorrei...",
+    "tags": ["phrases", "food", "shopping"]
+  },
+  {
+    "id": "f012",
+    "front": "Come si dice 'My name is...'?",
+    "back": "Mi chiamo... / Il mio nome è...",
+    "tags": ["introductions"]
+  },
+  {
+    "id": "f013",
+    "front": "Come si dice 'How are you?'",
+    "back": "Come stai? (informal) / Come sta? (formal)",
+    "tags": ["greetings"]
+  },
+  {
+    "id": "f014",
+    "front": "Come si dice 'I am fine'?",
+    "back": "Sto bene",
+    "tags": ["greetings"]
+  },
+  {
+    "id": "f015",
+    "front": "What is the difference between 'essere' and 'stare'?",
+    "back": "Essere = permanent states (I am Italian). Stare = temporary states (I am well today).",
+    "tags": ["grammar", "verbs"]
+  }
+]
