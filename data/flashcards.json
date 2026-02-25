@@ -88,5 +88,167 @@
     "front": "What is the difference between 'essere' and 'stare'?",
     "back": "Essere = permanent states (I am Italian). Stare = temporary states (I am well today).",
     "tags": ["grammar", "verbs"]
+  },
+  {
+    "id": "f016",
+    "front": "fare la spesa",
+    "back": "to go grocery shopping",
+    "tags": ["fare-expressions", "daily-life"]
+  },
+  {
+    "id": "f017",
+    "front": "fare shopping",
+    "back": "to go shopping",
+    "tags": ["fare-expressions", "shopping"]
+  },
+  {
+    "id": "f018",
+    "front": "fare i compiti",
+    "back": "to do one's homework",
+    "tags": ["fare-expressions", "education"]
+  },
+  {
+    "id": "f019",
+    "front": "fare i lavori di casa",
+    "back": "to do the housework",
+    "tags": ["fare-expressions", "daily-life"]
+  },
+  {
+    "id": "f020",
+    "front": "fare uno sforzo",
+    "back": "to make an effort",
+    "tags": ["fare-expressions"]
+  },
+  {
+    "id": "f021",
+    "front": "fare un errore",
+    "back": "to make a mistake",
+    "tags": ["fare-expressions"]
+  },
+  {
+    "id": "f022",
+    "front": "fare rumore",
+    "back": "to make noise",
+    "tags": ["fare-expressions"]
+  },
+  {
+    "id": "f023",
+    "front": "fare il letto",
+    "back": "to make the bed",
+    "tags": ["fare-expressions", "daily-life"]
+  },
+  {
+    "id": "f024",
+    "front": "fare una fotografia",
+    "back": "to take a picture",
+    "tags": ["fare-expressions", "hobbies"]
+  },
+  {
+    "id": "f025",
+    "front": "fare una passeggiata",
+    "back": "to take a walk",
+    "tags": ["fare-expressions", "daily-life"]
+  },
+  {
+    "id": "f026",
+    "front": "fare un esame",
+    "back": "to take an exam",
+    "tags": ["fare-expressions", "education"]
+  },
+  {
+    "id": "f027",
+    "front": "fare un viaggio",
+    "back": "to take a trip",
+    "tags": ["fare-expressions", "travel"]
+  },
+  {
+    "id": "f028",
+    "front": "fare la doccia",
+    "back": "to take a shower",
+    "tags": ["fare-expressions", "daily-life"]
+  },
+  {
+    "id": "f029",
+    "front": "fare il bagno",
+    "back": "to take a bath",
+    "tags": ["fare-expressions", "daily-life"]
+  },
+  {
+    "id": "f030",
+    "front": "fare un pisolino",
+    "back": "to take a nap",
+    "tags": ["fare-expressions", "daily-life"]
+  },
+  {
+    "id": "f031",
+    "front": "fare colazione",
+    "back": "to have breakfast",
+    "tags": ["fare-expressions", "food", "daily-life"]
+  },
+  {
+    "id": "f032",
+    "front": "fare una pausa",
+    "back": "to have a break",
+    "tags": ["fare-expressions", "work", "daily-life"]
+  },
+  {
+    "id": "f033",
+    "front": "fare male",
+    "back": "to hurt, to ache (Mi fa male la testa = My head hurts)",
+    "tags": ["fare-expressions", "health"]
+  },
+  {
+    "id": "f034",
+    "front": "fare bene (a)",
+    "back": "to be good (for...) — Lo sport fa bene alla salute.",
+    "tags": ["fare-expressions", "health"]
+  },
+  {
+    "id": "f035",
+    "front": "fare alla romana",
+    "back": "to split the bill at a restaurant",
+    "tags": ["fare-expressions", "food", "culture"]
+  },
+  {
+    "id": "f036",
+    "front": "fare il pieno",
+    "back": "to fill up the gas tank",
+    "tags": ["fare-expressions", "travel"]
+  },
+  {
+    "id": "f037",
+    "front": "far vedere",
+    "back": "to show something to someone — Fammi vedere! (Show me!)",
+    "tags": ["fare-expressions", "communication"]
+  },
+  {
+    "id": "f038",
+    "front": "fare paura",
+    "back": "to scare / to be scary — I ragni mi fanno paura.",
+    "tags": ["fare-expressions", "emotions"]
+  },
+  {
+    "id": "f039",
+    "front": "fare una domanda",
+    "back": "to ask a question",
+    "tags": ["fare-expressions", "communication"]
+  },
+  {
+    "id": "f040",
+    "front": "fare la fila / fare la coda",
+    "back": "to stand in line / wait in line",
+    "tags": ["fare-expressions", "daily-life"]
+  },
+  {
+    "id": "f041",
+    "front": "What are the 3 verb conjugation groups in Italian?",
+    "back": "-ARE, -ERE, -IRE (e.g. parlare, leggere, dormire)",
+    "tags": ["grammar", "verbs", "conjugation"]
+  },
+  {
+    "id": "f042",
+    "front": "What is the -isc- rule?",
+    "back": "Some -IRE verbs insert -isc- in all forms except noi/voi: capisco, capisci, capisce, capiamo, capite, capiscono.",
+    "tags": ["grammar", "verbs", "conjugation", "isc-verbs"]
   }
 ]

@@ -128,7 +128,7 @@
   {
     "id": "c010",
     "verb": "sapere",
-    "meaning": "to know (a fact/how to)",
+    "meaning": "to know (a fact / how to)",
     "tense": "presente",
     "forms": {
       "io": "so",
@@ -137,6 +137,90 @@
       "noi": "sappiamo",
       "voi": "sapete",
       "loro": "sanno"
+    }
+  },
+  {
+    "id": "c011",
+    "verb": "parlare",
+    "meaning": "to speak (regular -ARE)",
+    "tense": "presente",
+    "forms": {
+      "io": "parlo",
+      "tu": "parli",
+      "lui/lei": "parla",
+      "noi": "parliamo",
+      "voi": "parlate",
+      "loro": "parlano"
+    }
+  },
+  {
+    "id": "c012",
+    "verb": "leggere",
+    "meaning": "to read (regular -ERE)",
+    "tense": "presente",
+    "forms": {
+      "io": "leggo",
+      "tu": "leggi",
+      "lui/lei": "legge",
+      "noi": "leggiamo",
+      "voi": "leggete",
+      "loro": "leggono"
+    }
+  },
+  {
+    "id": "c013",
+    "verb": "dormire",
+    "meaning": "to sleep (regular -IRE, type 1)",
+    "tense": "presente",
+    "forms": {
+      "io": "dormo",
+      "tu": "dormi",
+      "lui/lei": "dorme",
+      "noi": "dormiamo",
+      "voi": "dormite",
+      "loro": "dormono"
+    }
+  },
+  {
+    "id": "c014",
+    "verb": "finire",
+    "meaning": "to finish (regular -IRE, type 2 -isc-)",
+    "tense": "presente",
+    "forms": {
+      "io": "finisco",
+      "tu": "finisci",
+      "lui/lei": "finisce",
+      "noi": "finiamo",
+      "voi": "finite",
+      "loro": "finiscono"
+    }
+  },
+  {
+    "id": "c015",
+    "verb": "parlare",
+    "meaning": "to speak (regular -ARE)",
+    "tense": "passato prossimo",
+    "forms": {
+      "io": "ho parlato",
+      "tu": "hai parlato",
+      "lui/lei": "ha parlato",
+      "noi": "abbiamo parlato",
+      "voi": "avete parlato",
+      "loro": "hanno parlato"
+    }
+  },
+  {
+    "id": "c016",
+    "verb": "andare",
+    "meaning": "to go",
+    "tense": "passato prossimo",
+    "forms": {
+      "io": "sono andato/a",
+      "tu": "sei andato/a",
+      "lui/lei": "è andato/a",
+      "noi": "siamo andati/e",
+      "voi": "siete andati/e",
+      "loro": "sono andati/e"
     }
   }
 ]
