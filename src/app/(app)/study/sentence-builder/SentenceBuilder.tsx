@@ -4,6 +4,8 @@ import { useState, useEffect, useCallback } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { useStudySession } from "@/lib/useStudySession";
+import UnitSelector from "@/components/UnitSelector";
+import { getSentenceUnit } from "@/lib/content";
 import type { SentenceExercise } from "@/lib/content";
 import { cn } from "@/lib/utils";
 
@@ -16,6 +18,8 @@ export default function SentenceBuilder({
 }: {
   exercises: SentenceExercise[];
 }) {
+  const [unit, setUnit] = useState<number | undefined>(undefined);
+  const [started, setStarted] = useState(false);
   const [deck, setDeck] = useState<SentenceExercise[]>([]);
   const [index, setIndex] = useState(0);
   const [built, setBuilt] = useState<string[]>([]);
@@ -26,6 +30,8 @@ export default function SentenceBuilder({
   const [done, setDone] = useState(false);
   const { startSession, endSession, recordAttempt } = useStudySession("sentence");
 
+  const activeExercises = unit ? exercises.filter((e) => getSentenceUnit(e) === unit) : exercises;
+
   const loadExercise = useCallback((ex: SentenceExercise) => {
     setBuilt([]);
     setPool(shuffle([...ex.parts, ...ex.distractors]));
@@ -33,21 +39,22 @@ export default function SentenceBuilder({
     setCorrect(false);
   }, []);
 
-  const init = useCallback(() => {
-    const shuffled = shuffle(exercises);
+  useEffect(() => {
+    return () => { endSession(); };
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  function start() {
+    const active = unit ? exercises.filter((e) => getSentenceUnit(e) === unit) : exercises;
+    const shuffled = shuffle(active);
     setDeck(shuffled);
     setIndex(0);
     setScore({ correct: 0, incorrect: 0 });
     setDone(false);
+    setStarted(true);
     startSession();
     loadExercise(shuffled[0]);
-  }, [exercises, startSession, loadExercise]);
-
-  useEffect(() => {
-    init();
-    return () => { endSession(); };
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }
 
   const ex = deck[index];
 
@@ -87,6 +94,22 @@ export default function SentenceBuilder({
     }
   }
 
+  if (!started) {
+    return (
+      <div className="max-w-lg mx-auto px-4 py-6 space-y-6">
+        <h1 className="text-2xl font-bold">Sentence Builder</h1>
+        <UnitSelector value={unit} onChange={setUnit} />
+        <Button
+          className="w-full h-12"
+          onClick={start}
+          disabled={activeExercises.length === 0}
+        >
+          Start · {activeExercises.length} sentence{activeExercises.length !== 1 ? "s" : ""}
+        </Button>
+      </div>
+    );
+  }
+
   if (!ex && !done) {
     return <div className="flex items-center justify-center min-h-64">Loading…</div>;
   }
@@ -99,7 +122,10 @@ export default function SentenceBuilder({
         <h1 className="text-2xl font-bold">Complete!</h1>
         <p className="text-4xl font-bold">{pct}%</p>
         <p className="text-muted-foreground">{score.correct} / {deck.length} correct</p>
-        <Button onClick={init} className="w-full max-w-xs">Shuffle & Repeat</Button>
+        <Button onClick={start} className="w-full max-w-xs">Shuffle & Repeat</Button>
+        <Button variant="outline" onClick={() => setStarted(false)} className="w-full max-w-xs">
+          Change Unit
+        </Button>
       </div>
     );
   }

@@ -1,12 +1,13 @@
 "use client";
 
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent } from "@/components/ui/card";
 import { useStudySession } from "@/lib/useStudySession";
-import { getVocabDistractors } from "@/lib/content";
+import { getVocabDistractors, getVocabUnit } from "@/lib/content";
+import UnitSelector from "@/components/UnitSelector";
 import type { VocabItem } from "@/lib/content";
 import { cn } from "@/lib/utils";
 
@@ -27,6 +28,8 @@ function buildQuestion(item: VocabItem, allItems: VocabItem[]): Question {
 }
 
 export default function VocabQuiz({ items }: { items: VocabItem[] }) {
+  const [unit, setUnit] = useState<number | undefined>(undefined);
+  const [started, setStarted] = useState(false);
   const [questions, setQuestions] = useState<Question[]>([]);
   const [index, setIndex] = useState(0);
   const [selected, setSelected] = useState<string | null>(null);
@@ -35,22 +38,25 @@ export default function VocabQuiz({ items }: { items: VocabItem[] }) {
   const [done, setDone] = useState(false);
   const { startSession, endSession, recordAttempt } = useStudySession("vocab");
 
-  const init = useCallback(() => {
-    const shuffled = shuffle(items);
+  const activeItems = unit ? items.filter((v) => getVocabUnit(v) === unit) : items;
+
+  useEffect(() => {
+    return () => { endSession(); };
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  function start() {
+    const active = unit ? items.filter((v) => getVocabUnit(v) === unit) : items;
+    const shuffled = shuffle(active);
     setQuestions(shuffled.map((item) => buildQuestion(item, items)));
     setIndex(0);
     setSelected(null);
     setSubmitted(false);
     setScore({ correct: 0, incorrect: 0 });
     setDone(false);
+    setStarted(true);
     startSession();
-  }, [items, startSession]);
-
-  useEffect(() => {
-    init();
-    return () => { endSession(); };
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }
 
   const q = questions[index];
 
@@ -77,8 +83,23 @@ export default function VocabQuiz({ items }: { items: VocabItem[] }) {
     }
   }
 
-  if (done || questions.length === 0) {
-    if (questions.length === 0) return <div className="flex items-center justify-center min-h-64">Loading…</div>;
+  if (!started) {
+    return (
+      <div className="max-w-lg mx-auto px-4 py-6 space-y-6">
+        <h1 className="text-2xl font-bold">Vocab Quiz</h1>
+        <UnitSelector value={unit} onChange={setUnit} />
+        <Button
+          className="w-full h-12"
+          onClick={start}
+          disabled={activeItems.length === 0}
+        >
+          Start · {activeItems.length} word{activeItems.length !== 1 ? "s" : ""}
+        </Button>
+      </div>
+    );
+  }
+
+  if (done) {
     const pct = Math.round((score.correct / questions.length) * 100);
     return (
       <div className="max-w-lg mx-auto px-4 py-8 flex flex-col items-center gap-6">
@@ -86,9 +107,16 @@ export default function VocabQuiz({ items }: { items: VocabItem[] }) {
         <h1 className="text-2xl font-bold">Quiz Complete!</h1>
         <p className="text-4xl font-bold">{pct}%</p>
         <p className="text-muted-foreground">{score.correct} / {questions.length} correct</p>
-        <Button onClick={init} className="w-full max-w-xs">Try Again</Button>
+        <Button onClick={start} className="w-full max-w-xs">Try Again</Button>
+        <Button variant="outline" onClick={() => setStarted(false)} className="w-full max-w-xs">
+          Change Unit
+        </Button>
       </div>
     );
+  }
+
+  if (!q) {
+    return <div className="flex items-center justify-center min-h-64">Loading…</div>;
   }
 
   return (

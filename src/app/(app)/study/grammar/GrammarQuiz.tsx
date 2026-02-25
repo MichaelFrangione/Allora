@@ -1,11 +1,13 @@
 "use client";
 
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Label } from "@/components/ui/label";
 import { useStudySession } from "@/lib/useStudySession";
+import UnitSelector from "@/components/UnitSelector";
+import { getGrammarUnit } from "@/lib/content";
 import type { GrammarRule } from "@/lib/content";
 import { cn } from "@/lib/utils";
 
@@ -21,7 +23,6 @@ type Question = {
 };
 
 function buildQuestion(rule: GrammarRule, allRules: GrammarRule[]): Question {
-  // Use a random example as the answer; quiz asks "which rule does this example illustrate?"
   const correctExample = rule.examples[Math.floor(Math.random() * rule.examples.length)];
   const distractorRules = allRules.filter((r) => r.id !== rule.id);
   const distractors = shuffle(distractorRules)
@@ -38,6 +39,8 @@ function buildQuestion(rule: GrammarRule, allRules: GrammarRule[]): Question {
 }
 
 export default function GrammarQuiz({ rules }: { rules: GrammarRule[] }) {
+  const [unit, setUnit] = useState<number | undefined>(undefined);
+  const [started, setStarted] = useState(false);
   const [questions, setQuestions] = useState<Question[]>([]);
   const [index, setIndex] = useState(0);
   const [selected, setSelected] = useState<string | null>(null);
@@ -46,22 +49,26 @@ export default function GrammarQuiz({ rules }: { rules: GrammarRule[] }) {
   const [done, setDone] = useState(false);
   const { startSession, endSession, recordAttempt } = useStudySession("grammar");
 
-  const init = useCallback(() => {
-    const shuffled = shuffle(rules);
+  const activeRules = unit ? rules.filter((r) => getGrammarUnit(r) === unit) : rules;
+
+  useEffect(() => {
+    return () => { endSession(); };
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  function start() {
+    const active = unit ? rules.filter((r) => getGrammarUnit(r) === unit) : rules;
+    const shuffled = shuffle(active);
+    // Use full rules list for distractors so options are always populated
     setQuestions(shuffled.map((rule) => buildQuestion(rule, rules)));
     setIndex(0);
     setSelected(null);
     setSubmitted(false);
     setScore({ correct: 0, incorrect: 0 });
     setDone(false);
+    setStarted(true);
     startSession();
-  }, [rules, startSession]);
-
-  useEffect(() => {
-    init();
-    return () => { endSession(); };
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }
 
   const q = questions[index];
 
@@ -88,6 +95,22 @@ export default function GrammarQuiz({ rules }: { rules: GrammarRule[] }) {
     }
   }
 
+  if (!started) {
+    return (
+      <div className="max-w-lg mx-auto px-4 py-6 space-y-6">
+        <h1 className="text-2xl font-bold">Grammar Quiz</h1>
+        <UnitSelector value={unit} onChange={setUnit} />
+        <Button
+          className="w-full h-12"
+          onClick={start}
+          disabled={activeRules.length === 0}
+        >
+          Start · {activeRules.length} rule{activeRules.length !== 1 ? "s" : ""}
+        </Button>
+      </div>
+    );
+  }
+
   if (questions.length === 0) {
     return <div className="flex items-center justify-center min-h-64">Loading…</div>;
   }
@@ -100,7 +123,10 @@ export default function GrammarQuiz({ rules }: { rules: GrammarRule[] }) {
         <h1 className="text-2xl font-bold">Quiz Complete!</h1>
         <p className="text-4xl font-bold">{pct}%</p>
         <p className="text-muted-foreground">{score.correct} / {questions.length} correct</p>
-        <Button onClick={init} className="w-full max-w-xs">Try Again</Button>
+        <Button onClick={start} className="w-full max-w-xs">Try Again</Button>
+        <Button variant="outline" onClick={() => setStarted(false)} className="w-full max-w-xs">
+          Change Unit
+        </Button>
       </div>
     );
   }

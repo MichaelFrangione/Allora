@@ -4,6 +4,8 @@ import { useState } from "react";
 import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import UnitSelector from "@/components/UnitSelector";
+import { getGrammarUnit } from "@/lib/content";
 import type { GrammarRule } from "@/lib/content";
 
 export default function GrammarBrowser({
@@ -15,20 +17,24 @@ export default function GrammarBrowser({
 }) {
   const [query, setQuery] = useState("");
   const [activeTag, setActiveTag] = useState("");
+  const [unit, setUnit] = useState<number | undefined>(undefined);
 
   const filtered = initialRules.filter((g) => {
+    const matchesUnit = !unit || getGrammarUnit(g) === unit;
     const matchesTag = !activeTag || g.tags.includes(activeTag);
     const q = query.toLowerCase();
     const matchesQuery =
       !q ||
       g.rule.toLowerCase().includes(q) ||
       g.explanation.toLowerCase().includes(q);
-    return matchesTag && matchesQuery;
+    return matchesUnit && matchesTag && matchesQuery;
   });
 
   return (
     <div className="max-w-lg mx-auto px-4 py-6 space-y-4">
       <h1 className="text-2xl font-bold">Grammar Notes</h1>
+
+      <UnitSelector value={unit} onChange={setUnit} />
 
       <Input
         placeholder="Search rules…"
@@ -68,9 +74,16 @@ export default function GrammarBrowser({
           <Card key={rule.id}>
             <CardHeader className="pb-2">
               <div className="flex items-start justify-between gap-2">
-                <CardTitle className="text-base">{rule.rule}</CardTitle>
+                <div className="flex-1 min-w-0">
+                  <div className="flex items-center gap-1.5 flex-wrap mb-0.5">
+                    <span className="text-[10px] px-1.5 py-0.5 rounded font-medium bg-muted text-muted-foreground">
+                      U{getGrammarUnit(rule)}
+                    </span>
+                  </div>
+                  <CardTitle className="text-base">{rule.rule}</CardTitle>
+                </div>
                 <div className="flex flex-wrap gap-1 justify-end">
-                  {rule.tags.map((t) => (
+                  {rule.tags.slice(0, 3).map((t) => (
                     <Badge key={t} variant="secondary" className="text-[10px]">
                       {t}
                     </Badge>

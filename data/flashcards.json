@@ -1,254 +1,314 @@
 [
   {
     "id": "f001",
-    "front": "Come si dice 'hello'?",
-    "back": "Ciao (informal) / Salve (formal)",
-    "tags": ["greetings"]
+    "front": "What are the 3 verb conjugation groups in Italian?",
+    "back": "-ARE (e.g. parlare), -ERE (e.g. leggere), -IRE (e.g. dormire)",
+    "tags": ["grammar", "verbs", "conjugation", "lesson-1"]
   },
   {
     "id": "f002",
-    "front": "Come si dice 'goodbye'?",
-    "back": "Arrivederci (formal) / Ciao (informal)",
-    "tags": ["greetings"]
+    "front": "How do you conjugate a regular -ARE verb? (e.g. lavorare)",
+    "back": "Drop -ARE, then add: -o, -i, -a, -iamo, -ate, -ano\n→ lavoro, lavori, lavora, lavoriamo, lavorate, lavorano",
+    "tags": ["grammar", "verbs", "are-verbs", "conjugation", "lesson-1"]
   },
   {
     "id": "f003",
-    "front": "Come si dice 'please'?",
-    "back": "Per favore / Per piacere",
-    "tags": ["politeness"]
+    "front": "How do you conjugate a regular -ERE verb? (e.g. vedere)",
+    "back": "Drop -ERE, then add: -o, -i, -e, -iamo, -ete, -ono\n→ vedo, vedi, vede, vediamo, vedete, vedono",
+    "tags": ["grammar", "verbs", "ere-verbs", "conjugation", "lesson-1"]
   },
   {
     "id": "f004",
-    "front": "Come si dice 'thank you'?",
-    "back": "Grazie",
-    "tags": ["politeness"]
+    "front": "How do you conjugate a regular -IRE verb? (e.g. dormire)",
+    "back": "Drop -IRE, then add: -o, -i, -e, -iamo, -ite, -ono\n→ dormo, dormi, dorme, dormiamo, dormite, dormono",
+    "tags": ["grammar", "verbs", "ire-verbs", "conjugation", "lesson-1"]
   },
   {
     "id": "f005",
-    "front": "Come si dice 'you're welcome'?",
-    "back": "Prego",
-    "tags": ["politeness"]
+    "front": "What is the -isc- rule for some -IRE verbs?",
+    "back": "Some -IRE verbs (e.g. finire, capire) insert -isc- in all forms EXCEPT noi/voi:\n→ finisco, finisci, finisce, finiamo, finite, finiscono",
+    "tags": ["grammar", "verbs", "ire-verbs", "isc-verbs", "lesson-1"]
   },
   {
     "id": "f006",
-    "front": "Come si dice 'excuse me'?",
-    "back": "Scusi (formal) / Scusa (informal)",
-    "tags": ["politeness"]
+    "front": "fare la spesa",
+    "back": "to go grocery shopping",
+    "tags": ["fare-expressions", "daily-life", "lesson-1"]
   },
   {
     "id": "f007",
-    "front": "Come si dice 'I don't understand'?",
-    "back": "Non capisco",
-    "tags": ["phrases", "learning"]
+    "front": "fare shopping",
+    "back": "to go shopping",
+    "tags": ["fare-expressions", "shopping", "lesson-1"]
   },
   {
     "id": "f008",
-    "front": "Come si dice 'Can you repeat?'",
-    "back": "Può ripetere? (formal) / Puoi ripetere? (informal)",
-    "tags": ["phrases", "learning"]
+    "front": "fare i compiti",
+    "back": "to do one's homework",
+    "tags": ["fare-expressions", "education", "lesson-1"]
   },
   {
     "id": "f009",
-    "front": "Come si dice 'Where is...?'",
-    "back": "Dov'è...?",
-    "tags": ["phrases", "directions"]
+    "front": "fare i lavori di casa",
+    "back": "to do the housework",
+    "tags": ["fare-expressions", "daily-life", "lesson-1"]
   },
   {
     "id": "f010",
-    "front": "Come si dice 'How much does it cost?'",
-    "back": "Quanto costa?",
-    "tags": ["phrases", "shopping"]
+    "front": "fare uno sforzo",
+    "back": "to make an effort",
+    "tags": ["fare-expressions", "lesson-1"]
   },
   {
     "id": "f011",
-    "front": "Come si dice 'I would like...'?",
-    "back": "Vorrei...",
-    "tags": ["phrases", "food", "shopping"]
+    "front": "fare un errore",
+    "back": "to make a mistake",
+    "tags": ["fare-expressions", "lesson-1"]
   },
   {
     "id": "f012",
-    "front": "Come si dice 'My name is...'?",
-    "back": "Mi chiamo... / Il mio nome è...",
-    "tags": ["introductions"]
+    "front": "fare rumore",
+    "back": "to make noise",
+    "tags": ["fare-expressions", "lesson-1"]
   },
   {
     "id": "f013",
-    "front": "Come si dice 'How are you?'",
-    "back": "Come stai? (informal) / Come sta? (formal)",
-    "tags": ["greetings"]
+    "front": "fare il letto",
+    "back": "to make the bed",
+    "tags": ["fare-expressions", "daily-life", "lesson-1"]
   },
   {
     "id": "f014",
-    "front": "Come si dice 'I am fine'?",
-    "back": "Sto bene",
-    "tags": ["greetings"]
+    "front": "fare pace",
+    "back": "to make peace",
+    "tags": ["fare-expressions", "lesson-1"]
   },
   {
     "id": "f015",
-    "front": "What is the difference between 'essere' and 'stare'?",
-    "back": "Essere = permanent states (I am Italian). Stare = temporary states (I am well today).",
-    "tags": ["grammar", "verbs"]
+    "front": "fare una fotografia",
+    "back": "to take a picture",
+    "tags": ["fare-expressions", "hobbies", "lesson-1"]
   },
   {
     "id": "f016",
-    "front": "fare la spesa",
-    "back": "to go grocery shopping",
-    "tags": ["fare-expressions", "daily-life"]
+    "front": "fare una passeggiata",
+    "back": "to take a walk",
+    "tags": ["fare-expressions", "daily-life", "lesson-1"]
   },
   {
     "id": "f017",
-    "front": "fare shopping",
-    "back": "to go shopping",
-    "tags": ["fare-expressions", "shopping"]
+    "front": "fare un esame",
+    "back": "to take an exam",
+    "tags": ["fare-expressions", "education", "lesson-1"]
   },
   {
     "id": "f018",
-    "front": "fare i compiti",
-    "back": "to do one's homework",
-    "tags": ["fare-expressions", "education"]
+    "front": "fare un viaggio",
+    "back": "to take a trip",
+    "tags": ["fare-expressions", "travel", "lesson-1"]
   },
   {
     "id": "f019",
-    "front": "fare i lavori di casa",
-    "back": "to do the housework",
-    "tags": ["fare-expressions", "daily-life"]
+    "front": "fare la doccia",
+    "back": "to take a shower",
+    "tags": ["fare-expressions", "daily-life", "lesson-1"]
   },
   {
     "id": "f020",
-    "front": "fare uno sforzo",
-    "back": "to make an effort",
-    "tags": ["fare-expressions"]
+    "front": "fare il bagno",
+    "back": "to take a bath",
+    "tags": ["fare-expressions", "daily-life", "lesson-1"]
   },
   {
     "id": "f021",
-    "front": "fare un errore",
-    "back": "to make a mistake",
-    "tags": ["fare-expressions"]
+    "front": "fare un pisolino",
+    "back": "to take a nap",
+    "tags": ["fare-expressions", "daily-life", "lesson-1"]
   },
   {
     "id": "f022",
-    "front": "fare rumore",
-    "back": "to make noise",
-    "tags": ["fare-expressions"]
+    "front": "fare colazione",
+    "back": "to have breakfast",
+    "tags": ["fare-expressions", "food", "daily-life", "lesson-1"]
   },
   {
     "id": "f023",
-    "front": "fare il letto",
-    "back": "to make the bed",
-    "tags": ["fare-expressions", "daily-life"]
+    "front": "fare una pausa",
+    "back": "to have a break",
+    "tags": ["fare-expressions", "work", "daily-life", "lesson-1"]
   },
   {
     "id": "f024",
-    "front": "fare una fotografia",
-    "back": "to take a picture",
-    "tags": ["fare-expressions", "hobbies"]
+    "front": "fare male",
+    "back": "to hurt, to ache — Mi fa male la testa. (My head hurts.)",
+    "tags": ["fare-expressions", "health", "lesson-1"]
   },
   {
     "id": "f025",
-    "front": "fare una passeggiata",
-    "back": "to take a walk",
-    "tags": ["fare-expressions", "daily-life"]
+    "front": "fare bene (a)",
+    "back": "to be good (for...) — Lo sport fa bene alla salute.",
+    "tags": ["fare-expressions", "health", "lesson-1"]
   },
   {
     "id": "f026",
-    "front": "fare un esame",
-    "back": "to take an exam",
-    "tags": ["fare-expressions", "education"]
+    "front": "fare alla romana",
+    "back": "to split the bill at a restaurant",
+    "tags": ["fare-expressions", "food", "culture", "lesson-1"]
   },
   {
     "id": "f027",
-    "front": "fare un viaggio",
-    "back": "to take a trip",
-    "tags": ["fare-expressions", "travel"]
+    "front": "fare il pieno",
+    "back": "to fill up the gas tank",
+    "tags": ["fare-expressions", "travel", "lesson-1"]
   },
   {
     "id": "f028",
-    "front": "fare la doccia",
-    "back": "to take a shower",
-    "tags": ["fare-expressions", "daily-life"]
+    "front": "far vedere",
+    "back": "to show something to someone — Fammi vedere! (Show me!)",
+    "tags": ["fare-expressions", "communication", "lesson-1"]
   },
   {
     "id": "f029",
-    "front": "fare il bagno",
-    "back": "to take a bath",
-    "tags": ["fare-expressions", "daily-life"]
+    "front": "fare paura",
+    "back": "to scare / to be scary — I ragni mi fanno paura.",
+    "tags": ["fare-expressions", "emotions", "lesson-1"]
   },
   {
     "id": "f030",
-    "front": "fare un pisolino",
-    "back": "to take a nap",
-    "tags": ["fare-expressions", "daily-life"]
+    "front": "fare una domanda",
+    "back": "to ask a question",
+    "tags": ["fare-expressions", "communication", "lesson-1"]
   },
   {
     "id": "f031",
-    "front": "fare colazione",
-    "back": "to have breakfast",
-    "tags": ["fare-expressions", "food", "daily-life"]
+    "front": "fare la fila / fare la coda",
+    "back": "to stand in line / wait in line",
+    "tags": ["fare-expressions", "daily-life", "lesson-1"]
   },
   {
     "id": "f032",
-    "front": "fare una pausa",
-    "back": "to have a break",
-    "tags": ["fare-expressions", "work", "daily-life"]
+    "front": "Mi piace / Mi piacciono",
+    "back": "Mi piace + singular noun or infinitive = I like...\nMi piacciono + plural noun = I like...\nEx: Mi piace leggere. / Mi piacciono i gatti.",
+    "tags": ["grammar", "mi-piace", "lesson-2"]
   },
   {
     "id": "f033",
-    "front": "fare male",
-    "back": "to hurt, to ache (Mi fa male la testa = My head hurts)",
-    "tags": ["fare-expressions", "health"]
+    "front": "Sei libero/a stasera?",
+    "back": "Are you free tonight?",
+    "tags": ["social", "invitations", "lesson-2"]
   },
   {
     "id": "f034",
-    "front": "fare bene (a)",
-    "back": "to be good (for...) — Lo sport fa bene alla salute.",
-    "tags": ["fare-expressions", "health"]
+    "front": "Sì, volentieri!",
+    "back": "Yes, gladly! / I'd love to!",
+    "tags": ["social", "invitations", "lesson-2"]
   },
   {
     "id": "f035",
-    "front": "fare alla romana",
-    "back": "to split the bill at a restaurant",
-    "tags": ["fare-expressions", "food", "culture"]
+    "front": "Mi dispiace, non posso.",
+    "back": "I'm sorry, I can't.",
+    "tags": ["social", "invitations", "lesson-2"]
   },
   {
     "id": "f036",
-    "front": "fare il pieno",
-    "back": "to fill up the gas tank",
-    "tags": ["fare-expressions", "travel"]
+    "front": "Magari un'altra volta!",
+    "back": "Maybe another time!",
+    "tags": ["social", "invitations", "lesson-2"]
   },
   {
     "id": "f037",
-    "front": "far vedere",
-    "back": "to show something to someone — Fammi vedere! (Show me!)",
-    "tags": ["fare-expressions", "communication"]
+    "front": "I giorni della settimana",
+    "back": "lunedì (Mon), martedì (Tue), mercoledì (Wed), giovedì (Thu), venerdì (Fri), sabato (Sat), domenica (Sun)\nNote: Days are masculine and not capitalized.",
+    "tags": ["time", "days", "vocabulary", "lesson-3"]
   },
   {
     "id": "f038",
-    "front": "fare paura",
-    "back": "to scare / to be scary — I ragni mi fanno paura.",
-    "tags": ["fare-expressions", "emotions"]
+    "front": "I mesi dell'anno",
+    "back": "gennaio, febbraio, marzo, aprile, maggio, giugno, luglio, agosto, settembre, ottobre, novembre, dicembre\n(January–December)",
+    "tags": ["time", "months", "vocabulary", "lesson-3"]
   },
   {
     "id": "f039",
-    "front": "fare una domanda",
-    "back": "to ask a question",
-    "tags": ["fare-expressions", "communication"]
+    "front": "Le stagioni",
+    "back": "l'inverno (winter), la primavera (spring), l'estate (summer), l'autunno (autumn/fall)",
+    "tags": ["time", "seasons", "vocabulary", "lesson-3"]
   },
   {
     "id": "f040",
-    "front": "fare la fila / fare la coda",
-    "back": "to stand in line / wait in line",
-    "tags": ["fare-expressions", "daily-life"]
+    "front": "Le parti della giornata",
+    "back": "la mattina (morning), il pomeriggio (afternoon), la sera (evening), la notte (night)",
+    "tags": ["time", "daily-life", "vocabulary", "lesson-3"]
   },
   {
     "id": "f041",
-    "front": "What are the 3 verb conjugation groups in Italian?",
-    "back": "-ARE, -ERE, -IRE (e.g. parlare, leggere, dormire)",
-    "tags": ["grammar", "verbs", "conjugation"]
+    "front": "Che ore sono? — in punto",
+    "back": "in punto = exactly / o'clock\nEx: Sono le tre in punto. (It's exactly 3 o'clock.)",
+    "tags": ["time", "telling-time", "lesson-3"]
   },
   {
     "id": "f042",
-    "front": "What is the -isc- rule?",
-    "back": "Some -IRE verbs insert -isc- in all forms except noi/voi: capisco, capisci, capisce, capiamo, capite, capiscono.",
-    "tags": ["grammar", "verbs", "conjugation", "isc-verbs"]
+    "front": "Che ore sono? — e mezza / e quarto / meno un quarto",
+    "back": "e mezza / e trenta = half past\ne un quarto / e quindici = quarter past\nmeno un quarto = quarter to\nEx: Sono le nove e mezza. / Sono le otto meno un quarto.",
+    "tags": ["time", "telling-time", "lesson-3"]
+  },
+  {
+    "id": "f043",
+    "front": "FARE — present tense",
+    "back": "io faccio / tu fai / lui-lei fa\nnoi facciamo / voi fate / loro fanno",
+    "tags": ["verbs", "irregular", "fare", "conjugation", "lesson-3"]
+  },
+  {
+    "id": "f044",
+    "front": "ANDARE — present tense",
+    "back": "io vado / tu vai / lui-lei va\nnoi andiamo / voi andate / loro vanno",
+    "tags": ["verbs", "irregular", "andare", "conjugation", "lesson-3"]
+  },
+  {
+    "id": "f045",
+    "front": "andare + place",
+    "back": "andare a lavorare, a scuola, a teatro, al cinema, al supermercato, al mare, in montagna, in vacanza, in ufficio",
+    "tags": ["verbs", "andare", "expressions", "lesson-3"]
+  },
+  {
+    "id": "f046",
+    "front": "Articoli determinativi maschili",
+    "back": "Singular: IL (consonant), LO (s+cons., z, ps, y), L' (vowel)\nPlural: I → GLI → GLI\nEx: il libro → i libri / lo zio → gli zii / l'amico → gli amici",
+    "tags": ["articles", "grammar", "lesson-4"]
+  },
+  {
+    "id": "f047",
+    "front": "Articoli determinativi femminili",
+    "back": "Singular: LA (consonant), L' (vowel)\nPlural: LE\nEx: la casa → le case / l'isola → le isole",
+    "tags": ["articles", "grammar", "lesson-4"]
+  },
+  {
+    "id": "f048",
+    "front": "Articoli indeterminativi",
+    "back": "Masculine: UN (most), UNO (s+cons., z, ps, y)\nFeminine: UNA (consonant), UN' (vowel)\nEx: un libro, uno studente, una casa, un'amica",
+    "tags": ["articles", "grammar", "lesson-4"]
+  },
+  {
+    "id": "f049",
+    "front": "Aggettivi — agreement rule",
+    "back": "-O adjectives: 4 forms → -o / -a / -i / -e\n-E adjectives: 2 forms → -e (sing.) / -i (pl.)\nEx: alto/alta/alti/alte | grande/grandi",
+    "tags": ["adjectives", "grammar", "agreement", "lesson-5"]
+  },
+  {
+    "id": "f050",
+    "front": "I colori",
+    "back": "bianco (white), rosso (red), giallo (yellow), nero (black), azzurro (light blue), verde (green), arancione (orange), marrone (brown)\nNote: verde, arancione, marrone are invariable for gender.",
+    "tags": ["adjectives", "colors", "vocabulary", "lesson-5"]
+  },
+  {
+    "id": "f051",
+    "front": "Aggettivi comuni — -O type",
+    "back": "bello (beautiful), carino (cute), buono (good), bravo (skilled), brutto (ugly), simpatico (nice), piccolo (small), alto (tall), basso (short), nuovo (new), vecchio (old), noioso (boring), timido (shy)",
+    "tags": ["adjectives", "vocabulary", "lesson-5"]
+  },
+  {
+    "id": "f052",
+    "front": "Aggettivi comuni — -E type",
+    "back": "intelligente (intelligent), importante (important), interessante (interesting), gentile (kind), divertente (fun), grande (big), triste (sad), felice (happy), facile (easy), elegante (elegant), attraente (attractive)",
+    "tags": ["adjectives", "vocabulary", "lesson-5"]
   }
 ]

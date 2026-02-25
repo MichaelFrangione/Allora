@@ -4,6 +4,8 @@ import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { useStudySession } from "@/lib/useStudySession";
+import UnitSelector from "@/components/UnitSelector";
+import { getFlashcardUnit } from "@/lib/content";
 import type { Flashcard } from "@/lib/content";
 import { cn } from "@/lib/utils";
 
@@ -12,6 +14,8 @@ function shuffle<T>(arr: T[]): T[] {
 }
 
 export default function FlashcardSession({ cards }: { cards: Flashcard[] }) {
+  const [unit, setUnit] = useState<number | undefined>(undefined);
+  const [started, setStarted] = useState(false);
   const [deck, setDeck] = useState<Flashcard[]>([]);
   const [index, setIndex] = useState(0);
   const [flipped, setFlipped] = useState(false);
@@ -19,13 +23,23 @@ export default function FlashcardSession({ cards }: { cards: Flashcard[] }) {
   const [done, setDone] = useState(false);
   const { startSession, endSession, recordAttempt } = useStudySession("flashcard");
 
+  const activeCards = unit ? cards.filter((c) => getFlashcardUnit(c) === unit) : cards;
+
   useEffect(() => {
-    const shuffled = shuffle(cards);
-    setDeck(shuffled);
-    startSession();
     return () => { endSession(); };
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+
+  function start() {
+    const active = unit ? cards.filter((c) => getFlashcardUnit(c) === unit) : cards;
+    setDeck(shuffle(active));
+    setIndex(0);
+    setFlipped(false);
+    setScore({ correct: 0, incorrect: 0 });
+    setDone(false);
+    setStarted(true);
+    startSession();
+  }
 
   const current = deck[index];
 
@@ -48,17 +62,20 @@ export default function FlashcardSession({ cards }: { cards: Flashcard[] }) {
     }
   }
 
-  function restart() {
-    setDeck(shuffle(cards));
-    setIndex(0);
-    setFlipped(false);
-    setScore({ correct: 0, incorrect: 0 });
-    setDone(false);
-    startSession();
-  }
-
-  if (!current && !done) {
-    return <div className="flex items-center justify-center min-h-64">Loading…</div>;
+  if (!started) {
+    return (
+      <div className="max-w-lg mx-auto px-4 py-6 space-y-6">
+        <h1 className="text-2xl font-bold">Flashcards</h1>
+        <UnitSelector value={unit} onChange={setUnit} />
+        <Button
+          className="w-full h-12"
+          onClick={start}
+          disabled={activeCards.length === 0}
+        >
+          Start · {activeCards.length} card{activeCards.length !== 1 ? "s" : ""}
+        </Button>
+      </div>
+    );
   }
 
   if (done) {
@@ -73,11 +90,18 @@ export default function FlashcardSession({ cards }: { cards: Flashcard[] }) {
             {score.correct} correct · {score.incorrect} incorrect
           </p>
         </div>
-        <Button onClick={restart} className="w-full max-w-xs">
+        <Button onClick={start} className="w-full max-w-xs">
           Shuffle & Repeat
+        </Button>
+        <Button variant="outline" onClick={() => setStarted(false)} className="w-full max-w-xs">
+          Change Unit
         </Button>
       </div>
     );
+  }
+
+  if (!current) {
+    return <div className="flex items-center justify-center min-h-64">Loading…</div>;
   }
 
   return (

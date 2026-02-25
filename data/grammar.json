@@ -1,124 +1,192 @@
 [
   {
     "id": "g001",
-    "rule": "Definite Articles",
-    "explanation": "Italian articles agree with the gender and number of the noun. Use 'il' (m. sing.), 'la' (f. sing.), 'i' (m. pl.), 'le' (f. pl.). Use 'lo/gli' before s+consonant, z, ps, gn. Use 'l'' before vowels.",
+    "rule": "The 3 Verb Conjugation Groups",
+    "explanation": "Italian verbs are divided into 3 groups according to their infinitive endings: -ARE, -ERE, and -IRE. To conjugate, drop the ending and add the appropriate suffix for each person.",
     "examples": [
-      "il gatto (m. sing.)",
-      "la casa (f. sing.)",
-      "i gatti (m. pl.)",
-      "le case (f. pl.)",
-      "lo studente (before s+consonant)",
-      "l'amico (before vowel)"
+      "-ARE: parlare, mangiare, lavorare, studiare",
+      "-ERE: leggere, prendere, vedere, scrivere",
+      "-IRE: dormire, partire, aprire, sentire"
     ],
-    "tags": ["articles", "nouns", "basics"]
+    "tags": ["verbs", "conjugation", "basics", "lesson-1"]
   },
   {
     "id": "g002",
-    "rule": "Indefinite Articles",
-    "explanation": "Use 'un' (m. sing. before consonant or vowel), 'uno' (m. sing. before s+consonant, z, etc.), 'una' (f. sing. before consonant), 'un'' (f. sing. before vowel).",
+    "rule": "Regular -ARE Verb Endings",
+    "explanation": "Drop -ARE and add: -o (io), -i (tu), -a (lui/lei), -iamo (noi), -ate (voi), -ano (loro).",
     "examples": [
-      "un libro (m. before consonant)",
-      "uno studente (m. before s+consonant)",
-      "una casa (f. before consonant)",
-      "un'amica (f. before vowel)"
+      "parlare → parlo, parli, parla, parliamo, parlate, parlano",
+      "lavorare → lavoro, lavori, lavora, lavoriamo, lavorate, lavorano",
+      "mangiare → mangio, mangi, mangia, mangiamo, mangiate, mangiano"
     ],
-    "tags": ["articles", "nouns", "basics"]
+    "tags": ["verbs", "are-verbs", "conjugation", "present-tense", "lesson-1"]
   },
   {
     "id": "g003",
-    "rule": "Noun Gender",
-    "explanation": "Most Italian nouns ending in -o are masculine; most ending in -a are feminine. Nouns ending in -e can be either gender and must be memorised. Nouns ending in -ione are usually feminine.",
+    "rule": "Regular -ERE Verb Endings",
+    "explanation": "Drop -ERE and add: -o (io), -i (tu), -e (lui/lei), -iamo (noi), -ete (voi), -ono (loro).",
     "examples": [
-      "il libro (m.) — ends in -o",
-      "la penna (f.) — ends in -a",
-      "il fiore (m.) — ends in -e (must memorise)",
-      "la stazione (f.) — ends in -ione"
+      "leggere → leggo, leggi, legge, leggiamo, leggete, leggono",
+      "prendere → prendo, prendi, prende, prendiamo, prendete, prendono",
+      "vedere → vedo, vedi, vede, vediamo, vedete, vedono"
     ],
-    "tags": ["nouns", "gender", "basics"]
+    "tags": ["verbs", "ere-verbs", "conjugation", "present-tense", "lesson-1"]
   },
   {
     "id": "g004",
-    "rule": "Present Tense (-are verbs)",
-    "explanation": "Regular -are verbs drop the -are ending and add: -o, -i, -a, -iamo, -ate, -ano.",
+    "rule": "Regular -IRE Verb Endings (Type 1)",
+    "explanation": "Drop -IRE and add: -o (io), -i (tu), -e (lui/lei), -iamo (noi), -ite (voi), -ono (loro). Examples: dormire, partire, aprire, sentire.",
     "examples": [
-      "parlare → io parlo",
-      "parlare → tu parli",
-      "parlare → lui/lei parla",
-      "parlare → noi parliamo",
-      "parlare → voi parlate",
-      "parlare → loro parlano"
+      "dormire → dormo, dormi, dorme, dormiamo, dormite, dormono",
+      "partire → parto, parti, parte, partiamo, partite, partono",
+      "aprire → apro, apri, apre, apriamo, aprite, aprono"
     ],
-    "tags": ["verbs", "present-tense", "conjugation"]
+    "tags": ["verbs", "ire-verbs", "conjugation", "present-tense", "lesson-1"]
   },
   {
     "id": "g005",
-    "rule": "Present Tense (-ere verbs)",
-    "explanation": "Regular -ere verbs drop the -ere ending and add: -o, -i, -e, -iamo, -ete, -ono.",
+    "rule": "Regular -IRE Verb Endings (Type 2: -isc-)",
+    "explanation": "Some -IRE verbs insert -isc- in all forms EXCEPT noi and voi. Common -isc- verbs: finire, capire, preferire, pulire, sparire, suggerire.",
     "examples": [
-      "vedere → io vedo",
-      "vedere → tu vedi",
-      "vedere → lui/lei vede",
-      "vedere → noi vediamo",
-      "vedere → voi vedete",
-      "vedere → loro vedono"
+      "finire → finisco, finisci, finisce, finiamo, finite, finiscono",
+      "capire → capisco, capisci, capisce, capiamo, capite, capiscono",
+      "preferire → preferisco, preferisci, preferisce, preferiamo, preferite, preferiscono"
     ],
-    "tags": ["verbs", "present-tense", "conjugation"]
+    "tags": ["verbs", "ire-verbs", "isc-verbs", "conjugation", "present-tense", "lesson-1"]
   },
   {
     "id": "g006",
-    "rule": "Present Tense (-ire verbs)",
-    "explanation": "Regular -ire verbs have two patterns. Type 1: -o, -i, -e, -iamo, -ite, -ono. Type 2 (with -isc-): -isco, -isci, -isce, -iamo, -ite, -iscono.",
+    "rule": "Espressioni con FARE",
+    "explanation": "The verb 'fare' (to do/make) is used in many fixed expressions that don't translate literally. These must be memorised as set phrases.",
     "examples": [
-      "dormire (type 1) → io dormo, tu dormi, lui dorme",
-      "finire (type 2) → io finisco, tu finisci, lui finisce"
+      "fare la spesa = to go grocery shopping",
+      "fare colazione = to have breakfast",
+      "fare una passeggiata = to take a walk",
+      "fare la doccia = to take a shower",
+      "fare male = to hurt / to ache",
+      "fare alla romana = to split the bill"
     ],
-    "tags": ["verbs", "present-tense", "conjugation"]
+    "tags": ["verbs", "fare-expressions", "phrases", "lesson-1"]
   },
   {
     "id": "g007",
-    "rule": "Passato Prossimo",
-    "explanation": "Used for completed past actions. Formed with: avere/essere (present) + past participle. Most verbs use avere. Verbs of motion/state often use essere (and the participle agrees with subject gender/number).",
+    "rule": "Mi piace / Mi piacciono",
+    "explanation": "Use 'mi piace' + singular noun or infinitive to say you like something. Use 'mi piacciono' + plural noun. The verb agrees with what is liked, not the speaker.",
     "examples": [
-      "Ho mangiato la pizza. (I ate the pizza — avere)",
-      "Sono andato al mercato. (I went to the market — essere, m.)",
-      "Siamo andati al mare. (We went to the sea — essere, m. pl.)"
+      "Mi piace la pizza. (I like pizza.)",
+      "Mi piace leggere. (I like reading.)",
+      "Mi piacciono i libri. (I like books.)",
+      "Ti piace il calcio? (Do you like football?)",
+      "Non mi piace alzarmi presto. (I don't like waking up early.)"
     ],
-    "tags": ["verbs", "past-tense"]
+    "tags": ["verbs", "mi-piace", "expressions", "lesson-2"]
   },
   {
     "id": "g008",
-    "rule": "Adjective Agreement",
-    "explanation": "Adjectives agree with the noun in gender and number. -o/-a adjectives have 4 forms. -e adjectives have only 2 forms (sing./pl.).",
+    "rule": "Accepting and Refusing Invitations",
+    "explanation": "Key phrases for inviting someone out, accepting, and politely refusing.",
     "examples": [
-      "un gatto nero / una casa nera (m./f. sing.)",
-      "gatti neri / case nere (m./f. pl.)",
-      "un fiore verde / una mela verde (m./f. sing. — -e type)",
-      "fiori verdi / mele verdi (m./f. pl. — -e type)"
+      "Sei libero/a stasera? (Are you free tonight?)",
+      "Vuoi venire al cinema? (Do you want to come to the cinema?)",
+      "Sì, volentieri! (Yes, gladly! / I'd love to!)",
+      "Che buona idea! (What a great idea!)",
+      "Mi dispiace, non posso. (I'm sorry, I can't.)",
+      "No, stasera lavoro. (No, tonight I'm working.)",
+      "Magari un'altra volta! (Maybe another time!)"
     ],
-    "tags": ["adjectives", "agreement"]
+    "tags": ["expressions", "social", "invitations", "lesson-2"]
   },
   {
     "id": "g009",
-    "rule": "Negation",
-    "explanation": "To negate a sentence, place 'non' before the verb. Double negatives are standard in Italian (non...niente, non...mai, non...nessuno).",
+    "rule": "Telling the Time — Che ore sono? / Che ora è?",
+    "explanation": "Use 'sono le' + number for most hours. Use 'è l'una' for 1 o'clock, 'è mezzogiorno' for noon, 'è mezzanotte' for midnight.",
     "examples": [
-      "Non parlo francese. (I don't speak French.)",
-      "Non mangio mai la carne. (I never eat meat.)",
-      "Non ho visto nessuno. (I didn't see anyone.)"
+      "Sono le tre. (It's 3 o'clock.)",
+      "È l'una. (It's 1 o'clock.)",
+      "Sono le dieci e mezza. (It's 10:30.)",
+      "Sono le nove e un quarto. (It's 9:15.)",
+      "Sono le cinque meno un quarto. (It's 4:45.)",
+      "È mezzogiorno. / È mezzanotte. (It's noon. / It's midnight.)",
+      "A che ora inizia il film? — Alle otto. (What time does the film start? — At 8.)"
     ],
-    "tags": ["negation", "basics"]
+    "tags": ["time", "expressions", "lesson-3"]
   },
   {
     "id": "g010",
-    "rule": "Subject Pronouns",
-    "explanation": "Italian subject pronouns are often omitted because the verb ending identifies the subject. Use them for emphasis or clarity.",
+    "rule": "FARE — Irregular Verb (to do / to make)",
+    "explanation": "FARE is highly irregular. It does not follow -ARE patterns. It must be memorised. Used in many fixed expressions.",
     "examples": [
-      "io (I), tu (you, informal), lui (he), lei (she)",
-      "Lei (you, formal), noi (we), voi (you pl.), loro (they)",
-      "Parli italiano? (Do you speak Italian? — pronoun omitted)",
-      "Io parlo italiano, tu no. (I speak Italian, you don't — emphasis)"
+      "io faccio, tu fai, lui/lei fa",
+      "noi facciamo, voi fate, loro fanno",
+      "Che fai di bello oggi? (What are you up to today?)",
+      "Facciamo una pausa. (Let's take a break.)",
+      "Fa bel tempo. (The weather is nice.)"
     ],
-    "tags": ["pronouns", "basics"]
+    "tags": ["verbs", "irregular", "fare", "lesson-3"]
+  },
+  {
+    "id": "g011",
+    "rule": "ANDARE — Irregular Verb (to go)",
+    "explanation": "ANDARE is irregular. Followed by 'a + infinitive' (going to do something) or 'a/in + place' (going somewhere).",
+    "examples": [
+      "io vado, tu vai, lui/lei va",
+      "noi andiamo, voi andate, loro vanno",
+      "Vado a lavorare. (I'm going to work.)",
+      "Andiamo al cinema? (Shall we go to the cinema?)",
+      "Vai in palestra spesso? (Do you go to the gym often?)"
+    ],
+    "tags": ["verbs", "irregular", "andare", "lesson-3"]
+  },
+  {
+    "id": "g012",
+    "rule": "Articoli Determinativi (Definite Articles — THE)",
+    "explanation": "Italian definite articles agree with the gender, number, and first letter of the noun. Masculine singular: IL (consonant), LO (s+consonant, z, ps, y), L' (vowel). Feminine singular: LA (consonant), L' (vowel). Plural: I/GLI (masculine), LE (feminine).",
+    "examples": [
+      "il libro (m. sing., consonant) → i libri (pl.)",
+      "lo studente (m. sing., st-) → gli studenti (pl.)",
+      "l'amico (m. sing., vowel) → gli amici (pl.)",
+      "la casa (f. sing., consonant) → le case (pl.)",
+      "l'isola (f. sing., vowel) → le isole (pl.)"
+    ],
+    "tags": ["articles", "nouns", "grammar", "lesson-4"]
+  },
+  {
+    "id": "g013",
+    "rule": "Articoli Indeterminativi (Indefinite Articles — A / AN)",
+    "explanation": "Indefinite articles are used for non-specific nouns. Masculine: UN (most words), UNO (s+consonant, z, ps, y). Feminine: UNA (consonant), UN' (vowel).",
+    "examples": [
+      "un libro (a book)",
+      "uno studente (a student)",
+      "un amico (a friend — masc.)",
+      "una casa (a house)",
+      "un'isola (an island)",
+      "un'amica (a friend — fem.)"
+    ],
+    "tags": ["articles", "nouns", "grammar", "lesson-4"]
+  },
+  {
+    "id": "g014",
+    "rule": "Adjective Agreement",
+    "explanation": "Italian adjectives agree in gender and number with the noun they describe. Adjectives ending in -O have 4 forms (-o, -a, -i, -e). Adjectives ending in -E have 2 forms (-e singular, -i plural, for both genders).",
+    "examples": [
+      "un ragazzo alto / una ragazza alta / due ragazzi alti / due ragazze alte",
+      "un libro interessante / una lezione interessante / libri interessanti",
+      "Il film è bello. / La casa è bella. / I film sono belli.",
+      "EXCEPTION: antipatico → antipatica / antipatici / antipatiche"
+    ],
+    "tags": ["adjectives", "grammar", "agreement", "lesson-5"]
+  },
+  {
+    "id": "g015",
+    "rule": "Noun Gender and Plural Patterns",
+    "explanation": "Most Italian nouns ending in -O are masculine, -A are feminine, -E can be either. Plurals: -O → -I, -A → -E, -E → -I.",
+    "examples": [
+      "-O (masculine): il bambino → i bambini, il libro → i libri",
+      "-A (feminine): la casa → le case, la sorella → le sorelle",
+      "-E (masculine): il padre → i padri, il fiore → i fiori",
+      "-E (feminine): la stazione → le stazioni, la lezione → le lezioni",
+      "EXCEPTIONS: la mano (f.), il problema (m.), il cinema (m.)"
+    ],
+    "tags": ["nouns", "gender", "plural", "grammar", "lesson-5"]
   }
 ]

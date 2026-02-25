@@ -1,866 +1,1662 @@
 [
   {
     "id": "v001",
-    "italian": "il gatto",
-    "english": "the cat",
-    "gender": "m",
-    "partOfSpeech": "noun",
-    "example": "Il gatto dorme sul divano.",
-    "tags": ["animals", "nouns"]
-  },
-  {
-    "id": "v002",
-    "italian": "la casa",
-    "english": "the house",
-    "gender": "f",
-    "partOfSpeech": "noun",
-    "example": "La casa è grande.",
-    "tags": ["places", "nouns"]
-  },
-  {
-    "id": "v003",
-    "italian": "mangiare",
-    "english": "to eat",
-    "gender": null,
-    "partOfSpeech": "verb",
-    "example": "Io mangio la pizza.",
-    "tags": ["verbs", "are-verbs", "food"]
-  },
-  {
-    "id": "v004",
-    "italian": "bere",
-    "english": "to drink",
-    "gender": null,
-    "partOfSpeech": "verb",
-    "example": "Lei beve il caffè.",
-    "tags": ["verbs", "food", "irregular-verbs"]
-  },
-  {
-    "id": "v005",
-    "italian": "il cane",
-    "english": "the dog",
-    "gender": "m",
-    "partOfSpeech": "noun",
-    "example": "Il cane abbaia.",
-    "tags": ["animals", "nouns"]
-  },
-  {
-    "id": "v006",
-    "italian": "bello / bella",
-    "english": "beautiful",
-    "gender": null,
-    "partOfSpeech": "adjective",
-    "example": "Che bel giorno!",
-    "tags": ["adjectives"]
-  },
-  {
-    "id": "v007",
-    "italian": "parlare",
-    "english": "to speak",
-    "gender": null,
-    "partOfSpeech": "verb",
-    "example": "Parli italiano?",
-    "tags": ["verbs", "are-verbs", "communication"]
-  },
-  {
-    "id": "v008",
-    "italian": "il libro",
-    "english": "the book",
-    "gender": "m",
-    "partOfSpeech": "noun",
-    "example": "Leggo un libro ogni settimana.",
-    "tags": ["objects", "nouns"]
-  },
-  {
-    "id": "v009",
-    "italian": "la città",
-    "english": "the city",
-    "gender": "f",
-    "partOfSpeech": "noun",
-    "example": "Roma è una bella città.",
-    "tags": ["places", "nouns"]
-  },
-  {
-    "id": "v010",
-    "italian": "camminare",
-    "english": "to walk",
-    "gender": null,
-    "partOfSpeech": "verb",
-    "example": "Cammino ogni mattina.",
-    "tags": ["verbs", "are-verbs", "movement"]
-  },
-  {
-    "id": "v011",
-    "italian": "grande",
-    "english": "big / great",
-    "gender": null,
-    "partOfSpeech": "adjective",
-    "example": "Ha una grande famiglia.",
-    "tags": ["adjectives"]
-  },
-  {
-    "id": "v012",
-    "italian": "piccolo / piccola",
-    "english": "small",
-    "gender": null,
-    "partOfSpeech": "adjective",
-    "example": "Ho un appartamento piccolo.",
-    "tags": ["adjectives"]
-  },
-  {
-    "id": "v013",
-    "italian": "l'acqua",
-    "english": "the water",
-    "gender": "f",
-    "partOfSpeech": "noun",
-    "example": "Bevo molta acqua.",
-    "tags": ["food", "nouns"]
-  },
-  {
-    "id": "v014",
-    "italian": "il pane",
-    "english": "the bread",
-    "gender": "m",
-    "partOfSpeech": "noun",
-    "example": "Il pane fresco è delizioso.",
-    "tags": ["food", "nouns"]
-  },
-  {
-    "id": "v015",
-    "italian": "dormire",
-    "english": "to sleep",
-    "gender": null,
-    "partOfSpeech": "verb",
-    "example": "Dormo otto ore per notte.",
-    "tags": ["verbs", "ire-verbs", "daily-life"]
-  },
-  {
-    "id": "v016",
-    "italian": "lavorare",
-    "english": "to work",
-    "gender": null,
-    "partOfSpeech": "verb",
-    "example": "Lavoro in un ufficio.",
-    "tags": ["verbs", "are-verbs", "work"]
-  },
-  {
-    "id": "v017",
-    "italian": "l'amico / l'amica",
-    "english": "the friend",
-    "gender": null,
-    "partOfSpeech": "noun",
-    "example": "Il mio amico si chiama Marco.",
-    "tags": ["people", "nouns"]
-  },
-  {
-    "id": "v018",
-    "italian": "oggi",
-    "english": "today",
-    "gender": null,
-    "partOfSpeech": "adverb",
-    "example": "Oggi fa bel tempo.",
-    "tags": ["time", "adverbs"]
-  },
-  {
-    "id": "v019",
-    "italian": "sempre",
-    "english": "always",
-    "gender": null,
-    "partOfSpeech": "adverb",
-    "example": "Arrivo sempre in orario.",
-    "tags": ["adverbs"]
-  },
-  {
-    "id": "v020",
-    "italian": "mai",
-    "english": "never",
-    "gender": null,
-    "partOfSpeech": "adverb",
-    "example": "Non mangio mai la carne.",
-    "tags": ["adverbs", "negation"]
-  },
-  {
-    "id": "v021",
     "italian": "abbracciare",
     "english": "to hug",
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Ti abbraccio forte.",
-    "tags": ["verbs", "are-verbs", "actions"]
+    "tags": ["verbs", "are-verbs", "actions"],
+    "unit": 1
   },
   {
-    "id": "v022",
+    "id": "v002",
     "italian": "abitare",
     "english": "to live, reside",
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Abito a Milano.",
-    "tags": ["verbs", "are-verbs", "daily-life"]
+    "tags": ["verbs", "are-verbs", "daily-life"],
+    "unit": 1
   },
   {
-    "id": "v023",
+    "id": "v003",
     "italian": "amare",
     "english": "to love",
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Amo la musica italiana.",
-    "tags": ["verbs", "are-verbs", "emotions"]
+    "tags": ["verbs", "are-verbs", "emotions"],
+    "unit": 1
   },
   {
-    "id": "v024",
+    "id": "v004",
     "italian": "ascoltare",
     "english": "to listen",
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Ascolto la radio ogni mattina.",
-    "tags": ["verbs", "are-verbs", "communication"]
+    "tags": ["verbs", "are-verbs", "communication"],
+    "unit": 1
   },
   {
-    "id": "v025",
+    "id": "v005",
     "italian": "assomigliare",
     "english": "to resemble, look like",
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Assomiglio molto a mia madre.",
-    "tags": ["verbs", "are-verbs", "descriptions"]
+    "tags": ["verbs", "are-verbs", "descriptions"],
+    "unit": 1
   },
   {
-    "id": "v026",
+    "id": "v006",
     "italian": "baciare",
     "english": "to kiss",
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Si baciano sulla guancia.",
-    "tags": ["verbs", "are-verbs", "actions"]
+    "tags": ["verbs", "are-verbs", "actions"],
+    "unit": 1
   },
   {
-    "id": "v027",
+    "id": "v007",
     "italian": "ballare",
     "english": "to dance",
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Balli bene il tango?",
-    "tags": ["verbs", "are-verbs", "hobbies"]
+    "tags": ["verbs", "are-verbs", "hobbies"],
+    "unit": 1
   },
   {
-    "id": "v028",
+    "id": "v008",
+    "italian": "camminare",
+    "english": "to walk",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Cammino ogni mattina.",
+    "tags": ["verbs", "are-verbs", "movement"],
+    "unit": 1
+  },
+  {
+    "id": "v009",
     "italian": "cantare",
     "english": "to sing",
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Canto sotto la doccia.",
-    "tags": ["verbs", "are-verbs", "hobbies"]
+    "tags": ["verbs", "are-verbs", "hobbies"],
+    "unit": 1
   },
   {
-    "id": "v029",
+    "id": "v010",
     "italian": "cercare",
     "english": "to look for, seek",
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Cerco il mio telefono.",
-    "tags": ["verbs", "are-verbs", "actions"]
+    "tags": ["verbs", "are-verbs", "actions"],
+    "unit": 1
   },
   {
-    "id": "v030",
+    "id": "v011",
     "italian": "chiacchierare",
     "english": "to chat",
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Chiacchieriamo per ore.",
-    "tags": ["verbs", "are-verbs", "communication"]
+    "tags": ["verbs", "are-verbs", "communication"],
+    "unit": 1
   },
   {
-    "id": "v031",
+    "id": "v012",
     "italian": "chiamare",
     "english": "to call",
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Ti chiamo stasera.",
-    "tags": ["verbs", "are-verbs", "communication"]
+    "tags": ["verbs", "are-verbs", "communication"],
+    "unit": 1
   },
   {
-    "id": "v032",
+    "id": "v013",
     "italian": "cominciare",
     "english": "to start, begin",
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Il film comincia alle otto.",
-    "tags": ["verbs", "are-verbs", "actions"]
+    "tags": ["verbs", "are-verbs", "actions"],
+    "unit": 1
   },
   {
-    "id": "v033",
+    "id": "v014",
     "italian": "comprare",
     "english": "to buy",
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Compro il pane ogni giorno.",
-    "tags": ["verbs", "are-verbs", "shopping"]
+    "tags": ["verbs", "are-verbs", "shopping"],
+    "unit": 1
   },
   {
-    "id": "v034",
+    "id": "v015",
     "italian": "costare",
     "english": "to cost",
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Quanto costa questo?",
-    "tags": ["verbs", "are-verbs", "shopping"]
+    "tags": ["verbs", "are-verbs", "shopping"],
+    "unit": 1
   },
   {
-    "id": "v035",
+    "id": "v016",
     "italian": "cucinare",
     "english": "to cook",
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Cucino la pasta stasera.",
-    "tags": ["verbs", "are-verbs", "food", "daily-life"]
+    "tags": ["verbs", "are-verbs", "food", "daily-life"],
+    "unit": 1
   },
   {
-    "id": "v036",
+    "id": "v017",
     "italian": "domandare",
     "english": "to ask",
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Posso domandarti una cosa?",
-    "tags": ["verbs", "are-verbs", "communication"]
+    "tags": ["verbs", "are-verbs", "communication"],
+    "unit": 1
   },
   {
-    "id": "v037",
+    "id": "v018",
     "italian": "firmare",
     "english": "to sign",
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Firma qui, per favore.",
-    "tags": ["verbs", "are-verbs", "work"]
+    "tags": ["verbs", "are-verbs", "work"],
+    "unit": 1
   },
   {
-    "id": "v038",
+    "id": "v019",
     "italian": "guardare",
     "english": "to look, watch",
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Guardiamo la TV insieme.",
-    "tags": ["verbs", "are-verbs", "daily-life"]
+    "tags": ["verbs", "are-verbs", "daily-life"],
+    "unit": 1
   },
   {
-    "id": "v039",
+    "id": "v020",
     "italian": "guidare",
     "english": "to drive",
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Guida con attenzione.",
-    "tags": ["verbs", "are-verbs", "movement"]
+    "tags": ["verbs", "are-verbs", "movement"],
+    "unit": 1
   },
   {
-    "id": "v040",
+    "id": "v021",
     "italian": "imparare",
     "english": "to learn",
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Imparo l'italiano ogni giorno.",
-    "tags": ["verbs", "are-verbs", "education"]
+    "tags": ["verbs", "are-verbs", "education"],
+    "unit": 1
   },
   {
-    "id": "v041",
+    "id": "v022",
     "italian": "insegnare",
     "english": "to teach",
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Insegna matematica al liceo.",
-    "tags": ["verbs", "are-verbs", "education", "work"]
+    "tags": ["verbs", "are-verbs", "education", "work"],
+    "unit": 1
   },
   {
-    "id": "v042",
+    "id": "v023",
+    "italian": "lavorare",
+    "english": "to work",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Lavoro in un ufficio.",
+    "tags": ["verbs", "are-verbs", "work"],
+    "unit": 1
+  },
+  {
+    "id": "v024",
+    "italian": "mangiare",
+    "english": "to eat",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Mangio la pizza ogni venerdì.",
+    "tags": ["verbs", "are-verbs", "food"],
+    "unit": 1
+  },
+  {
+    "id": "v025",
     "italian": "odiare",
     "english": "to hate",
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Odio svegliarmi presto.",
-    "tags": ["verbs", "are-verbs", "emotions"]
+    "tags": ["verbs", "are-verbs", "emotions"],
+    "unit": 1
   },
   {
-    "id": "v043",
+    "id": "v026",
     "italian": "ordinare",
     "english": "to order",
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Ordino sempre la stessa cosa.",
-    "tags": ["verbs", "are-verbs", "food", "shopping"]
+    "tags": ["verbs", "are-verbs", "food", "shopping"],
+    "unit": 1
   },
   {
-    "id": "v044",
+    "id": "v027",
     "italian": "pagare",
     "english": "to pay",
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Pago con la carta.",
-    "tags": ["verbs", "are-verbs", "shopping"]
+    "tags": ["verbs", "are-verbs", "shopping"],
+    "unit": 1
   },
   {
-    "id": "v045",
+    "id": "v028",
+    "italian": "parlare",
+    "english": "to speak, talk",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Parli italiano?",
+    "tags": ["verbs", "are-verbs", "communication"],
+    "unit": 1
+  },
+  {
+    "id": "v029",
     "italian": "portare",
     "english": "to bring, wear, carry",
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Porto sempre un ombrello.",
-    "tags": ["verbs", "are-verbs", "actions"]
+    "tags": ["verbs", "are-verbs", "actions"],
+    "unit": 1
   },
   {
-    "id": "v046",
+    "id": "v030",
     "italian": "pranzare",
     "english": "to have lunch",
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Pranziamo insieme?",
-    "tags": ["verbs", "are-verbs", "food", "daily-life"]
+    "tags": ["verbs", "are-verbs", "food", "daily-life"],
+    "unit": 1
   },
   {
-    "id": "v047",
+    "id": "v031",
     "italian": "pregare",
     "english": "to pray",
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Prego ogni domenica.",
-    "tags": ["verbs", "are-verbs", "actions"]
+    "tags": ["verbs", "are-verbs", "actions"],
+    "unit": 1
   },
   {
-    "id": "v048",
+    "id": "v032",
     "italian": "prenotare",
     "english": "to reserve, book",
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Ho prenotato un tavolo per due.",
-    "tags": ["verbs", "are-verbs", "travel"]
+    "tags": ["verbs", "are-verbs", "travel"],
+    "unit": 1
   },
   {
-    "id": "v049",
+    "id": "v033",
     "italian": "preparare",
     "english": "to prepare",
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Preparo la cena alle sette.",
-    "tags": ["verbs", "are-verbs", "food", "daily-life"]
+    "tags": ["verbs", "are-verbs", "food", "daily-life"],
+    "unit": 1
   },
   {
-    "id": "v050",
+    "id": "v034",
     "italian": "respirare",
     "english": "to breathe",
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Respira profondamente.",
-    "tags": ["verbs", "are-verbs", "actions"]
+    "tags": ["verbs", "are-verbs", "actions"],
+    "unit": 1
   },
   {
-    "id": "v051",
+    "id": "v035",
     "italian": "ringraziare",
     "english": "to thank",
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Ti ringrazio per tutto.",
-    "tags": ["verbs", "are-verbs", "communication", "politeness"]
+    "tags": ["verbs", "are-verbs", "communication", "politeness"],
+    "unit": 1
   },
   {
-    "id": "v052",
+    "id": "v036",
     "italian": "sbagliare",
     "english": "to make a mistake",
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Ho sbagliato strada.",
-    "tags": ["verbs", "are-verbs", "actions"]
+    "tags": ["verbs", "are-verbs", "actions"],
+    "unit": 1
   },
   {
-    "id": "v053",
+    "id": "v037",
     "italian": "sperare",
     "english": "to hope",
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Spero di vederti presto.",
-    "tags": ["verbs", "are-verbs", "emotions"]
+    "tags": ["verbs", "are-verbs", "emotions"],
+    "unit": 1
   },
   {
-    "id": "v054",
+    "id": "v038",
     "italian": "spiegare",
     "english": "to explain",
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Puoi spiegarmi di nuovo?",
-    "tags": ["verbs", "are-verbs", "communication", "education"]
+    "tags": ["verbs", "are-verbs", "communication", "education"],
+    "unit": 1
   },
   {
-    "id": "v055",
+    "id": "v039",
     "italian": "studiare",
     "english": "to study",
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Studio italiano ogni sera.",
-    "tags": ["verbs", "are-verbs", "education"]
+    "tags": ["verbs", "are-verbs", "education"],
+    "unit": 1
   },
   {
-    "id": "v056",
+    "id": "v040",
     "italian": "trovare",
     "english": "to find",
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Non trovo le chiavi.",
-    "tags": ["verbs", "are-verbs", "actions"]
+    "tags": ["verbs", "are-verbs", "actions"],
+    "unit": 1
   },
   {
-    "id": "v057",
+    "id": "v041",
     "italian": "viaggiare",
     "english": "to travel",
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Viaggio spesso per lavoro.",
-    "tags": ["verbs", "are-verbs", "travel"]
+    "tags": ["verbs", "are-verbs", "travel"],
+    "unit": 1
   },
   {
-    "id": "v058",
+    "id": "v042",
     "italian": "visitare",
     "english": "to visit",
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Visito Roma la prossima settimana.",
-    "tags": ["verbs", "are-verbs", "travel"]
+    "tags": ["verbs", "are-verbs", "travel"],
+    "unit": 1
   },
   {
-    "id": "v059",
+    "id": "v043",
     "italian": "volare",
     "english": "to fly",
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Volo a Roma domani.",
-    "tags": ["verbs", "are-verbs", "travel", "movement"]
+    "tags": ["verbs", "are-verbs", "travel", "movement"],
+    "unit": 1
   },
   {
-    "id": "v060",
+    "id": "v044",
     "italian": "battere",
     "english": "to hit, beat",
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Il cuore batte forte.",
-    "tags": ["verbs", "ere-verbs", "actions"]
+    "tags": ["verbs", "ere-verbs", "actions"],
+    "unit": 1
   },
   {
-    "id": "v061",
+    "id": "v045",
     "italian": "cadere",
     "english": "to fall",
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Cado sempre sulle scale.",
-    "tags": ["verbs", "ere-verbs", "movement"]
+    "tags": ["verbs", "ere-verbs", "movement"],
+    "unit": 1
   },
   {
-    "id": "v062",
+    "id": "v046",
     "italian": "conoscere",
     "english": "to know (a person or place)",
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Conosci Marco?",
-    "tags": ["verbs", "ere-verbs", "communication"]
+    "tags": ["verbs", "ere-verbs", "communication"],
+    "unit": 1
   },
   {
-    "id": "v063",
+    "id": "v047",
     "italian": "correre",
     "english": "to run",
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Corro ogni mattina al parco.",
-    "tags": ["verbs", "ere-verbs", "movement", "sport"]
+    "tags": ["verbs", "ere-verbs", "movement", "sport"],
+    "unit": 1
   },
   {
-    "id": "v064",
+    "id": "v048",
     "italian": "credere",
     "english": "to believe",
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Credo che tu abbia ragione.",
-    "tags": ["verbs", "ere-verbs", "communication"]
+    "tags": ["verbs", "ere-verbs", "communication"],
+    "unit": 1
   },
   {
-    "id": "v065",
+    "id": "v049",
     "italian": "decidere",
     "english": "to decide",
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Decidiamo domani.",
-    "tags": ["verbs", "ere-verbs", "actions"]
+    "tags": ["verbs", "ere-verbs", "actions"],
+    "unit": 1
   },
   {
-    "id": "v066",
+    "id": "v050",
     "italian": "descrivere",
     "english": "to describe",
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Descrivimi la tua città.",
-    "tags": ["verbs", "ere-verbs", "communication"]
+    "tags": ["verbs", "ere-verbs", "communication"],
+    "unit": 1
   },
   {
-    "id": "v067",
+    "id": "v051",
     "italian": "leggere",
     "english": "to read",
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Leggo un libro al mese.",
-    "tags": ["verbs", "ere-verbs", "hobbies", "education"]
+    "tags": ["verbs", "ere-verbs", "hobbies", "education"],
+    "unit": 1
   },
   {
-    "id": "v068",
+    "id": "v052",
     "italian": "mettere",
     "english": "to put, place",
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Metti il libro sul tavolo.",
-    "tags": ["verbs", "ere-verbs", "actions"]
+    "tags": ["verbs", "ere-verbs", "actions"],
+    "unit": 1
   },
   {
-    "id": "v069",
+    "id": "v053",
     "italian": "mordere",
     "english": "to bite",
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Il cane ha morso il postino.",
-    "tags": ["verbs", "ere-verbs", "actions"]
+    "tags": ["verbs", "ere-verbs", "actions"],
+    "unit": 1
   },
   {
-    "id": "v070",
+    "id": "v054",
     "italian": "offendere",
     "english": "to offend",
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Non volevo offenderti.",
-    "tags": ["verbs", "ere-verbs", "communication", "emotions"]
+    "tags": ["verbs", "ere-verbs", "communication", "emotions"],
+    "unit": 1
   },
   {
-    "id": "v071",
+    "id": "v055",
     "italian": "perdere",
     "english": "to lose",
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Ho perso il treno.",
-    "tags": ["verbs", "ere-verbs", "actions"]
+    "tags": ["verbs", "ere-verbs", "actions"],
+    "unit": 1
   },
   {
-    "id": "v072",
+    "id": "v056",
+    "italian": "prendere",
+    "english": "to take",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Prendo un caffè.",
+    "tags": ["verbs", "ere-verbs", "actions"],
+    "unit": 1
+  },
+  {
+    "id": "v057",
     "italian": "ridere",
     "english": "to laugh",
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Ridiamo molto insieme.",
-    "tags": ["verbs", "ere-verbs", "emotions"]
+    "tags": ["verbs", "ere-verbs", "emotions"],
+    "unit": 1
   },
   {
-    "id": "v073",
+    "id": "v058",
     "italian": "rompere",
     "english": "to break",
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Ho rotto il telefono.",
-    "tags": ["verbs", "ere-verbs", "actions"]
+    "tags": ["verbs", "ere-verbs", "actions"],
+    "unit": 1
   },
   {
-    "id": "v074",
+    "id": "v059",
     "italian": "scrivere",
     "english": "to write",
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Scrivo una lettera a mia nonna.",
-    "tags": ["verbs", "ere-verbs", "communication", "hobbies"]
+    "tags": ["verbs", "ere-verbs", "communication", "hobbies"],
+    "unit": 1
   },
   {
-    "id": "v075",
+    "id": "v060",
     "italian": "sopravvivere",
     "english": "to survive",
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Sopravvivo senza caffè... appena.",
-    "tags": ["verbs", "ere-verbs", "actions"]
+    "tags": ["verbs", "ere-verbs", "actions"],
+    "unit": 1
   },
   {
-    "id": "v076",
+    "id": "v061",
     "italian": "sorridere",
     "english": "to smile",
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Sorridi sempre!",
-    "tags": ["verbs", "ere-verbs", "emotions"]
+    "tags": ["verbs", "ere-verbs", "emotions"],
+    "unit": 1
   },
   {
-    "id": "v077",
+    "id": "v062",
     "italian": "vedere",
     "english": "to see",
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Ci vediamo domani.",
-    "tags": ["verbs", "ere-verbs", "daily-life"]
+    "tags": ["verbs", "ere-verbs", "daily-life"],
+    "unit": 1
   },
   {
-    "id": "v078",
+    "id": "v063",
     "italian": "vivere",
     "english": "to live",
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Vivo in Canada da cinque anni.",
-    "tags": ["verbs", "ere-verbs", "daily-life"]
+    "tags": ["verbs", "ere-verbs", "daily-life"],
+    "unit": 1
   },
   {
-    "id": "v079",
+    "id": "v064",
     "italian": "aprire",
     "english": "to open",
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Apri la finestra, per favore.",
-    "tags": ["verbs", "ire-verbs", "actions"]
+    "tags": ["verbs", "ire-verbs", "actions"],
+    "unit": 1
   },
   {
-    "id": "v080",
+    "id": "v065",
     "italian": "bollire",
     "english": "to boil",
     "gender": null,
     "partOfSpeech": "verb",
     "example": "L'acqua bolle.",
-    "tags": ["verbs", "ire-verbs", "food"]
+    "tags": ["verbs", "ire-verbs", "food"],
+    "unit": 1
   },
   {
-    "id": "v081",
+    "id": "v066",
     "italian": "capire",
     "english": "to understand",
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Capisco l'italiano ma non lo parlo bene.",
-    "tags": ["verbs", "ire-verbs", "isc-verbs", "communication", "education"]
+    "tags": ["verbs", "ire-verbs", "isc-verbs", "communication", "education"],
+    "unit": 1
   },
   {
-    "id": "v082",
+    "id": "v067",
     "italian": "coprire",
     "english": "to cover",
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Copriti, fa freddo!",
-    "tags": ["verbs", "ire-verbs", "actions"]
+    "tags": ["verbs", "ire-verbs", "actions"],
+    "unit": 1
   },
   {
-    "id": "v083",
+    "id": "v068",
+    "italian": "cucire",
+    "english": "to sew",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Cucio i miei vestiti.",
+    "tags": ["verbs", "ire-verbs", "hobbies"],
+    "unit": 1
+  },
+  {
+    "id": "v069",
+    "italian": "dormire",
+    "english": "to sleep",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Dormo otto ore per notte.",
+    "tags": ["verbs", "ire-verbs", "daily-life"],
+    "unit": 1
+  },
+  {
+    "id": "v070",
     "italian": "finire",
     "english": "to finish",
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Finisco il lavoro alle sei.",
-    "tags": ["verbs", "ire-verbs", "isc-verbs", "daily-life", "work"]
+    "tags": ["verbs", "ire-verbs", "isc-verbs", "daily-life", "work"],
+    "unit": 1
   },
   {
-    "id": "v084",
+    "id": "v071",
     "italian": "mentire",
     "english": "to lie",
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Non mentire mai.",
-    "tags": ["verbs", "ire-verbs", "communication"]
+    "tags": ["verbs", "ire-verbs", "communication"],
+    "unit": 1
   },
   {
-    "id": "v085",
+    "id": "v072",
     "italian": "offrire",
     "english": "to offer",
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Offro io il caffè.",
-    "tags": ["verbs", "ire-verbs", "actions", "food"]
+    "tags": ["verbs", "ire-verbs", "actions", "food"],
+    "unit": 1
   },
   {
-    "id": "v086",
+    "id": "v073",
     "italian": "partire",
     "english": "to leave, depart",
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Partiamo domani mattina.",
-    "tags": ["verbs", "ire-verbs", "travel", "movement"]
+    "tags": ["verbs", "ire-verbs", "travel", "movement"],
+    "unit": 1
   },
   {
-    "id": "v087",
+    "id": "v074",
     "italian": "preferire",
     "english": "to prefer",
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Preferisco il caffè al tè.",
-    "tags": ["verbs", "ire-verbs", "isc-verbs", "food"]
+    "tags": ["verbs", "ire-verbs", "isc-verbs", "food"],
+    "unit": 1
   },
   {
-    "id": "v088",
+    "id": "v075",
     "italian": "pulire",
     "english": "to clean",
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Pulisco la casa il sabato.",
-    "tags": ["verbs", "ire-verbs", "isc-verbs", "daily-life"]
+    "tags": ["verbs", "ire-verbs", "isc-verbs", "daily-life"],
+    "unit": 1
   },
   {
-    "id": "v089",
+    "id": "v076",
     "italian": "scoprire",
     "english": "to discover",
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Ho scoperto un ristorante fantastico.",
-    "tags": ["verbs", "ire-verbs", "actions"]
+    "tags": ["verbs", "ire-verbs", "actions"],
+    "unit": 1
   },
   {
-    "id": "v090",
+    "id": "v077",
     "italian": "seguire",
     "english": "to follow",
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Segui le istruzioni.",
-    "tags": ["verbs", "ire-verbs", "actions"]
+    "tags": ["verbs", "ire-verbs", "actions"],
+    "unit": 1
   },
   {
-    "id": "v091",
+    "id": "v078",
     "italian": "sentire",
     "english": "to hear, feel, smell",
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Senti che buon profumo!",
-    "tags": ["verbs", "ire-verbs", "senses"]
+    "tags": ["verbs", "ire-verbs", "senses"],
+    "unit": 1
   },
   {
-    "id": "v092",
+    "id": "v079",
     "italian": "servire",
     "english": "to serve",
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Il cameriere serve i clienti.",
-    "tags": ["verbs", "ire-verbs", "food", "work"]
+    "tags": ["verbs", "ire-verbs", "food", "work"],
+    "unit": 1
   },
   {
-    "id": "v093",
+    "id": "v080",
     "italian": "soffrire",
     "english": "to suffer",
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Soffro di allergie in primavera.",
-    "tags": ["verbs", "ire-verbs", "emotions"]
+    "tags": ["verbs", "ire-verbs", "emotions"],
+    "unit": 1
   },
   {
-    "id": "v094",
+    "id": "v081",
     "italian": "sparire",
     "english": "to disappear",
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Le chiavi sono sparite!",
-    "tags": ["verbs", "ire-verbs", "isc-verbs", "actions"]
+    "tags": ["verbs", "ire-verbs", "isc-verbs", "actions"],
+    "unit": 1
   },
   {
-    "id": "v095",
+    "id": "v082",
     "italian": "suggerire",
     "english": "to suggest",
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Cosa suggerisci di fare?",
-    "tags": ["verbs", "ire-verbs", "isc-verbs", "communication"]
+    "tags": ["verbs", "ire-verbs", "isc-verbs", "communication"],
+    "unit": 1
   },
   {
-    "id": "v096",
+    "id": "v083",
     "italian": "vestire",
     "english": "to dress",
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Si veste sempre con eleganza.",
-    "tags": ["verbs", "ire-verbs", "daily-life"]
+    "tags": ["verbs", "ire-verbs", "daily-life"],
+    "unit": 1
+  },
+  {
+    "id": "v084",
+    "italian": "affittare",
+    "english": "to rent",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Affitta un appartamento in centro.",
+    "tags": ["verbs", "are-verbs", "daily-life", "lesson-2"],
+    "unit": 2
+  },
+  {
+    "id": "v085",
+    "italian": "arrivare",
+    "english": "to arrive",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Arrivo a casa alle sei.",
+    "tags": ["verbs", "are-verbs", "movement", "lesson-2"],
+    "unit": 2
+  },
+  {
+    "id": "v086",
+    "italian": "aspettare",
+    "english": "to wait (for)",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Ti aspetto davanti al cinema.",
+    "tags": ["verbs", "are-verbs", "actions", "lesson-2"],
+    "unit": 2
+  },
+  {
+    "id": "v087",
+    "italian": "cambiare",
+    "english": "to change",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Cambio idea spesso.",
+    "tags": ["verbs", "are-verbs", "actions", "lesson-2"],
+    "unit": 2
+  },
+  {
+    "id": "v088",
+    "italian": "giocare",
+    "english": "to play (a game or sport)",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Gioco a tennis ogni settimana.",
+    "tags": ["verbs", "are-verbs", "hobbies", "sport", "lesson-2"],
+    "unit": 2
+  },
+  {
+    "id": "v089",
+    "italian": "suonare",
+    "english": "to play (an instrument)",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Suono la chitarra da tre anni.",
+    "tags": ["verbs", "are-verbs", "hobbies", "music", "lesson-2"],
+    "unit": 2
+  },
+  {
+    "id": "v090",
+    "italian": "nuotare",
+    "english": "to swim",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Nuoto in piscina tre volte a settimana.",
+    "tags": ["verbs", "are-verbs", "hobbies", "sport", "lesson-2"],
+    "unit": 2
+  },
+  {
+    "id": "v091",
+    "italian": "rispondere",
+    "english": "to answer, reply",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Non risponde al telefono.",
+    "tags": ["verbs", "ere-verbs", "communication", "lesson-2"],
+    "unit": 2
+  },
+  {
+    "id": "v092",
+    "italian": "ritornare",
+    "english": "to return, come back",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Ritornano dal mare domenica.",
+    "tags": ["verbs", "are-verbs", "movement", "lesson-2"],
+    "unit": 2
+  },
+  {
+    "id": "v093",
+    "italian": "sembrare",
+    "english": "to seem, appear",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Sembra stanco oggi.",
+    "tags": ["verbs", "are-verbs", "descriptions", "lesson-2"],
+    "unit": 2
+  },
+  {
+    "id": "v094",
+    "italian": "cenare",
+    "english": "to have dinner",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Ceniamo alle otto di sera.",
+    "tags": ["verbs", "are-verbs", "food", "daily-life", "lesson-2"],
+    "unit": 2
+  },
+  {
+    "id": "v095",
+    "italian": "dipingere",
+    "english": "to paint",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Dipinge paesaggi nel tempo libero.",
+    "tags": ["verbs", "ere-verbs", "hobbies", "art", "lesson-2"],
+    "unit": 2
+  },
+  {
+    "id": "v096",
+    "italian": "la mattina",
+    "english": "the morning",
+    "gender": "f",
+    "partOfSpeech": "noun",
+    "example": "Di mattina bevo sempre un caffè.",
+    "tags": ["nouns", "time", "daily-life", "lesson-3"],
+    "unit": 3
+  },
+  {
+    "id": "v097",
+    "italian": "il pomeriggio",
+    "english": "the afternoon",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "Nel pomeriggio vado in palestra.",
+    "tags": ["nouns", "time", "daily-life", "lesson-3"],
+    "unit": 3
+  },
+  {
+    "id": "v098",
+    "italian": "la sera",
+    "english": "the evening",
+    "gender": "f",
+    "partOfSpeech": "noun",
+    "example": "La sera guardiamo un film.",
+    "tags": ["nouns", "time", "daily-life", "lesson-3"],
+    "unit": 3
+  },
+  {
+    "id": "v099",
+    "italian": "la notte",
+    "english": "the night",
+    "gender": "f",
+    "partOfSpeech": "noun",
+    "example": "Di notte fa freddo in inverno.",
+    "tags": ["nouns", "time", "daily-life", "lesson-3"],
+    "unit": 3
+  },
+  {
+    "id": "v100",
+    "italian": "lunedì",
+    "english": "Monday",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "Il lunedì vado in palestra.",
+    "tags": ["nouns", "time", "days", "lesson-3"],
+    "unit": 3
+  },
+  {
+    "id": "v101",
+    "italian": "martedì",
+    "english": "Tuesday",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "Martedì ho lezione di italiano.",
+    "tags": ["nouns", "time", "days", "lesson-3"],
+    "unit": 3
+  },
+  {
+    "id": "v102",
+    "italian": "mercoledì",
+    "english": "Wednesday",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "Mercoledì pranzo con i colleghi.",
+    "tags": ["nouns", "time", "days", "lesson-3"],
+    "unit": 3
+  },
+  {
+    "id": "v103",
+    "italian": "giovedì",
+    "english": "Thursday",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "Giovedì sera usciamo.",
+    "tags": ["nouns", "time", "days", "lesson-3"],
+    "unit": 3
+  },
+  {
+    "id": "v104",
+    "italian": "venerdì",
+    "english": "Friday",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "Il venerdì finisco prima.",
+    "tags": ["nouns", "time", "days", "lesson-3"],
+    "unit": 3
+  },
+  {
+    "id": "v105",
+    "italian": "sabato",
+    "english": "Saturday",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "Sabato vado al mercato.",
+    "tags": ["nouns", "time", "days", "lesson-3"],
+    "unit": 3
+  },
+  {
+    "id": "v106",
+    "italian": "domenica",
+    "english": "Sunday",
+    "gender": "f",
+    "partOfSpeech": "noun",
+    "example": "La domenica riposo.",
+    "tags": ["nouns", "time", "days", "lesson-3"],
+    "unit": 3
+  },
+  {
+    "id": "v107",
+    "italian": "gennaio",
+    "english": "January",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "A gennaio fa molto freddo.",
+    "tags": ["nouns", "time", "months", "lesson-3"],
+    "unit": 3
+  },
+  {
+    "id": "v108",
+    "italian": "febbraio",
+    "english": "February",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "Il mio compleanno è in febbraio.",
+    "tags": ["nouns", "time", "months", "lesson-3"],
+    "unit": 3
+  },
+  {
+    "id": "v109",
+    "italian": "marzo",
+    "english": "March",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "A marzo comincia la primavera.",
+    "tags": ["nouns", "time", "months", "lesson-3"],
+    "unit": 3
+  },
+  {
+    "id": "v110",
+    "italian": "aprile",
+    "english": "April",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "Aprile è un mese piovoso.",
+    "tags": ["nouns", "time", "months", "lesson-3"],
+    "unit": 3
+  },
+  {
+    "id": "v111",
+    "italian": "maggio",
+    "english": "May",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "A maggio i fiori sbocciano.",
+    "tags": ["nouns", "time", "months", "lesson-3"],
+    "unit": 3
+  },
+  {
+    "id": "v112",
+    "italian": "giugno",
+    "english": "June",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "In giugno inizia l'estate.",
+    "tags": ["nouns", "time", "months", "lesson-3"],
+    "unit": 3
+  },
+  {
+    "id": "v113",
+    "italian": "luglio",
+    "english": "July",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "A luglio andiamo in vacanza.",
+    "tags": ["nouns", "time", "months", "lesson-3"],
+    "unit": 3
+  },
+  {
+    "id": "v114",
+    "italian": "agosto",
+    "english": "August",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "Ad agosto fa molto caldo.",
+    "tags": ["nouns", "time", "months", "lesson-3"],
+    "unit": 3
+  },
+  {
+    "id": "v115",
+    "italian": "settembre",
+    "english": "September",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "A settembre ricomincia la scuola.",
+    "tags": ["nouns", "time", "months", "lesson-3"],
+    "unit": 3
+  },
+  {
+    "id": "v116",
+    "italian": "ottobre",
+    "english": "October",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "In ottobre le foglie cadono.",
+    "tags": ["nouns", "time", "months", "lesson-3"],
+    "unit": 3
+  },
+  {
+    "id": "v117",
+    "italian": "novembre",
+    "english": "November",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "A novembre piove spesso.",
+    "tags": ["nouns", "time", "months", "lesson-3"],
+    "unit": 3
+  },
+  {
+    "id": "v118",
+    "italian": "dicembre",
+    "english": "December",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "A dicembre celebriamo il Natale.",
+    "tags": ["nouns", "time", "months", "lesson-3"],
+    "unit": 3
+  },
+  {
+    "id": "v119",
+    "italian": "l'inverno",
+    "english": "winter",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "D'inverno nevica in montagna.",
+    "tags": ["nouns", "time", "seasons", "lesson-3"],
+    "unit": 3
+  },
+  {
+    "id": "v120",
+    "italian": "la primavera",
+    "english": "spring",
+    "gender": "f",
+    "partOfSpeech": "noun",
+    "example": "In primavera tornano i fiori.",
+    "tags": ["nouns", "time", "seasons", "lesson-3"],
+    "unit": 3
+  },
+  {
+    "id": "v121",
+    "italian": "l'estate",
+    "english": "summer",
+    "gender": "f",
+    "partOfSpeech": "noun",
+    "example": "D'estate vado al mare.",
+    "tags": ["nouns", "time", "seasons", "lesson-3"],
+    "unit": 3
+  },
+  {
+    "id": "v122",
+    "italian": "l'autunno",
+    "english": "autumn, fall",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "In autunno le foglie diventano rosse.",
+    "tags": ["nouns", "time", "seasons", "lesson-3"],
+    "unit": 3
+  },
+  {
+    "id": "v123",
+    "italian": "il giorno",
+    "english": "the day",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "Che giorno è oggi?",
+    "tags": ["nouns", "time", "lesson-3"],
+    "unit": 3
+  },
+  {
+    "id": "v124",
+    "italian": "la settimana",
+    "english": "the week",
+    "gender": "f",
+    "partOfSpeech": "noun",
+    "example": "Lavoro cinque giorni alla settimana.",
+    "tags": ["nouns", "time", "lesson-3"],
+    "unit": 3
+  },
+  {
+    "id": "v125",
+    "italian": "il mese",
+    "english": "the month",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "Il mese prossimo parto per l'Italia.",
+    "tags": ["nouns", "time", "lesson-3"],
+    "unit": 3
+  },
+  {
+    "id": "v126",
+    "italian": "l'anno",
+    "english": "the year",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "Quest'anno studio molto.",
+    "tags": ["nouns", "time", "lesson-3"],
+    "unit": 3
+  },
+  {
+    "id": "v127",
+    "italian": "il libro",
+    "english": "the book",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "Il libro è sul tavolo.",
+    "tags": ["nouns", "objects", "lesson-4"],
+    "unit": 4
+  },
+  {
+    "id": "v128",
+    "italian": "il tavolo",
+    "english": "the table",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "Mangiamo al tavolo.",
+    "tags": ["nouns", "objects", "home", "lesson-4"],
+    "unit": 4
+  },
+  {
+    "id": "v129",
+    "italian": "il fratello",
+    "english": "the brother",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "Mio fratello abita a Torino.",
+    "tags": ["nouns", "family", "lesson-4"],
+    "unit": 4
+  },
+  {
+    "id": "v130",
+    "italian": "la sorella",
+    "english": "the sister",
+    "gender": "f",
+    "partOfSpeech": "noun",
+    "example": "Mia sorella è medico.",
+    "tags": ["nouns", "family", "lesson-4"],
+    "unit": 4
+  },
+  {
+    "id": "v131",
+    "italian": "lo zio",
+    "english": "the uncle",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "Lo zio Marco arriva domenica.",
+    "tags": ["nouns", "family", "lesson-4"],
+    "unit": 4
+  },
+  {
+    "id": "v132",
+    "italian": "il padre",
+    "english": "the father",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "Mio padre lavora in centro.",
+    "tags": ["nouns", "family", "lesson-4"],
+    "unit": 4
+  },
+  {
+    "id": "v133",
+    "italian": "la madre",
+    "english": "the mother",
+    "gender": "f",
+    "partOfSpeech": "noun",
+    "example": "Mia madre cucina benissimo.",
+    "tags": ["nouns", "family", "lesson-4"],
+    "unit": 4
+  },
+  {
+    "id": "v134",
+    "italian": "l'amico / l'amica",
+    "english": "the friend (m/f)",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "Un amico è per sempre.",
+    "tags": ["nouns", "people", "lesson-4"],
+    "unit": 4
+  },
+  {
+    "id": "v135",
+    "italian": "la casa",
+    "english": "the house, home",
+    "gender": "f",
+    "partOfSpeech": "noun",
+    "example": "La nostra casa è grande.",
+    "tags": ["nouns", "home", "lesson-4"],
+    "unit": 4
+  },
+  {
+    "id": "v136",
+    "italian": "il cane",
+    "english": "the dog",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "Il cane abbaia fuori.",
+    "tags": ["nouns", "animals", "lesson-4"],
+    "unit": 4
+  },
+  {
+    "id": "v137",
+    "italian": "il fiore",
+    "english": "the flower",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "Compro i fiori per la nonna.",
+    "tags": ["nouns", "nature", "lesson-4"],
+    "unit": 4
+  },
+  {
+    "id": "v138",
+    "italian": "il ristorante",
+    "english": "the restaurant",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "Il ristorante apre alle dodici.",
+    "tags": ["nouns", "food", "places", "lesson-4"],
+    "unit": 4
+  },
+  {
+    "id": "v139",
+    "italian": "la macchina",
+    "english": "the car",
+    "gender": "f",
+    "partOfSpeech": "noun",
+    "example": "La mia macchina è rossa.",
+    "tags": ["nouns", "transport", "lesson-4"],
+    "unit": 4
+  },
+  {
+    "id": "v140",
+    "italian": "la stazione",
+    "english": "the station",
+    "gender": "f",
+    "partOfSpeech": "noun",
+    "example": "La stazione è vicino al centro.",
+    "tags": ["nouns", "places", "transport", "lesson-4"],
+    "unit": 4
+  },
+  {
+    "id": "v141",
+    "italian": "bello",
+    "english": "beautiful, handsome",
+    "gender": "m",
+    "partOfSpeech": "adjective",
+    "example": "Che bel film! / Una bella giornata.",
+    "tags": ["adjectives", "descriptions", "lesson-5"],
+    "unit": 5
+  },
+  {
+    "id": "v142",
+    "italian": "brutto",
+    "english": "ugly, bad",
+    "gender": "m",
+    "partOfSpeech": "adjective",
+    "example": "Che tempo brutto oggi!",
+    "tags": ["adjectives", "descriptions", "lesson-5"],
+    "unit": 5
+  },
+  {
+    "id": "v143",
+    "italian": "buono",
+    "english": "good",
+    "gender": "m",
+    "partOfSpeech": "adjective",
+    "example": "Questo caffè è molto buono.",
+    "tags": ["adjectives", "descriptions", "lesson-5"],
+    "unit": 5
+  },
+  {
+    "id": "v144",
+    "italian": "bravo",
+    "english": "good at something, skilled",
+    "gender": "m",
+    "partOfSpeech": "adjective",
+    "example": "È bravissima in matematica.",
+    "tags": ["adjectives", "descriptions", "lesson-5"],
+    "unit": 5
+  },
+  {
+    "id": "v145",
+    "italian": "simpatico",
+    "english": "nice, likeable",
+    "gender": "m",
+    "partOfSpeech": "adjective",
+    "example": "Il professore è molto simpatico.",
+    "tags": ["adjectives", "personality", "lesson-5"],
+    "unit": 5
+  },
+  {
+    "id": "v146",
+    "italian": "antipatico",
+    "english": "unpleasant, unfriendly",
+    "gender": "m",
+    "partOfSpeech": "adjective",
+    "example": "Non mi piace quel ragazzo, è antipatico.",
+    "tags": ["adjectives", "personality", "lesson-5"],
+    "unit": 5
+  },
+  {
+    "id": "v147",
+    "italian": "alto",
+    "english": "tall, high",
+    "gender": "m",
+    "partOfSpeech": "adjective",
+    "example": "Mio fratello è molto alto.",
+    "tags": ["adjectives", "physical", "lesson-5"],
+    "unit": 5
+  },
+  {
+    "id": "v148",
+    "italian": "basso",
+    "english": "short, low",
+    "gender": "m",
+    "partOfSpeech": "adjective",
+    "example": "La sedia è troppo bassa.",
+    "tags": ["adjectives", "physical", "lesson-5"],
+    "unit": 5
+  },
+  {
+    "id": "v149",
+    "italian": "grande",
+    "english": "big, large, great",
+    "gender": null,
+    "partOfSpeech": "adjective",
+    "example": "Roma è una città grande.",
+    "tags": ["adjectives", "descriptions", "lesson-5"],
+    "unit": 5
+  },
+  {
+    "id": "v150",
+    "italian": "piccolo",
+    "english": "small, little",
+    "gender": "m",
+    "partOfSpeech": "adjective",
+    "example": "Abito in un appartamento piccolo.",
+    "tags": ["adjectives", "descriptions", "lesson-5"],
+    "unit": 5
+  },
+  {
+    "id": "v151",
+    "italian": "nuovo",
+    "english": "new",
+    "gender": "m",
+    "partOfSpeech": "adjective",
+    "example": "Ho comprato una macchina nuova.",
+    "tags": ["adjectives", "descriptions", "lesson-5"],
+    "unit": 5
+  },
+  {
+    "id": "v152",
+    "italian": "vecchio",
+    "english": "old",
+    "gender": "m",
+    "partOfSpeech": "adjective",
+    "example": "Questa è una chiesa vecchia.",
+    "tags": ["adjectives", "descriptions", "lesson-5"],
+    "unit": 5
+  },
+  {
+    "id": "v153",
+    "italian": "intelligente",
+    "english": "intelligent, smart",
+    "gender": null,
+    "partOfSpeech": "adjective",
+    "example": "È una ragazza molto intelligente.",
+    "tags": ["adjectives", "personality", "lesson-5"],
+    "unit": 5
+  },
+  {
+    "id": "v154",
+    "italian": "gentile",
+    "english": "kind, polite",
+    "gender": null,
+    "partOfSpeech": "adjective",
+    "example": "La segretaria è molto gentile.",
+    "tags": ["adjectives", "personality", "lesson-5"],
+    "unit": 5
+  },
+  {
+    "id": "v155",
+    "italian": "felice",
+    "english": "happy",
+    "gender": null,
+    "partOfSpeech": "adjective",
+    "example": "Sono felice di vederti!",
+    "tags": ["adjectives", "emotions", "lesson-5"],
+    "unit": 5
+  },
+  {
+    "id": "v156",
+    "italian": "triste",
+    "english": "sad",
+    "gender": null,
+    "partOfSpeech": "adjective",
+    "example": "Il finale del film è molto triste.",
+    "tags": ["adjectives", "emotions", "lesson-5"],
+    "unit": 5
+  },
+  {
+    "id": "v157",
+    "italian": "interessante",
+    "english": "interesting",
+    "gender": null,
+    "partOfSpeech": "adjective",
+    "example": "La lezione di oggi è molto interessante.",
+    "tags": ["adjectives", "descriptions", "lesson-5"],
+    "unit": 5
+  },
+  {
+    "id": "v158",
+    "italian": "divertente",
+    "english": "fun, entertaining",
+    "gender": null,
+    "partOfSpeech": "adjective",
+    "example": "La festa era molto divertente.",
+    "tags": ["adjectives", "descriptions", "lesson-5"],
+    "unit": 5
+  },
+  {
+    "id": "v159",
+    "italian": "bianco",
+    "english": "white",
+    "gender": "m",
+    "partOfSpeech": "adjective",
+    "example": "Porto una camicia bianca.",
+    "tags": ["adjectives", "colors", "lesson-5"],
+    "unit": 5
+  },
+  {
+    "id": "v160",
+    "italian": "rosso",
+    "english": "red",
+    "gender": "m",
+    "partOfSpeech": "adjective",
+    "example": "Preferisco il vino rosso.",
+    "tags": ["adjectives", "colors", "lesson-5"],
+    "unit": 5
+  },
+  {
+    "id": "v161",
+    "italian": "giallo",
+    "english": "yellow",
+    "gender": "m",
+    "partOfSpeech": "adjective",
+    "example": "Il sole è giallo.",
+    "tags": ["adjectives", "colors", "lesson-5"],
+    "unit": 5
+  },
+  {
+    "id": "v162",
+    "italian": "nero",
+    "english": "black",
+    "gender": "m",
+    "partOfSpeech": "adjective",
+    "example": "Indossa sempre vestiti neri.",
+    "tags": ["adjectives", "colors", "lesson-5"],
+    "unit": 5
+  },
+  {
+    "id": "v163",
+    "italian": "azzurro",
+    "english": "light blue, sky blue",
+    "gender": "m",
+    "partOfSpeech": "adjective",
+    "example": "Il cielo è azzurro oggi.",
+    "tags": ["adjectives", "colors", "lesson-5"],
+    "unit": 5
+  },
+  {
+    "id": "v164",
+    "italian": "verde",
+    "english": "green",
+    "gender": null,
+    "partOfSpeech": "adjective",
+    "example": "L'erba è verde in primavera.",
+    "tags": ["adjectives", "colors", "lesson-5"],
+    "unit": 5
+  },
+  {
+    "id": "v165",
+    "italian": "arancione",
+    "english": "orange",
+    "gender": null,
+    "partOfSpeech": "adjective",
+    "example": "La zucca è arancione.",
+    "tags": ["adjectives", "colors", "lesson-5"],
+    "unit": 5
+  },
+  {
+    "id": "v166",
+    "italian": "marrone",
+    "english": "brown",
+    "gender": null,
+    "partOfSpeech": "adjective",
+    "example": "Ha gli occhi marroni.",
+    "tags": ["adjectives", "colors", "lesson-5"],
+    "unit": 5
   }
 ]

@@ -1,146 +1,6 @@
 [
   {
     "id": "c001",
-    "verb": "essere",
-    "meaning": "to be",
-    "tense": "presente",
-    "forms": {
-      "io": "sono",
-      "tu": "sei",
-      "lui/lei": "è",
-      "noi": "siamo",
-      "voi": "siete",
-      "loro": "sono"
-    }
-  },
-  {
-    "id": "c002",
-    "verb": "avere",
-    "meaning": "to have",
-    "tense": "presente",
-    "forms": {
-      "io": "ho",
-      "tu": "hai",
-      "lui/lei": "ha",
-      "noi": "abbiamo",
-      "voi": "avete",
-      "loro": "hanno"
-    }
-  },
-  {
-    "id": "c003",
-    "verb": "andare",
-    "meaning": "to go",
-    "tense": "presente",
-    "forms": {
-      "io": "vado",
-      "tu": "vai",
-      "lui/lei": "va",
-      "noi": "andiamo",
-      "voi": "andate",
-      "loro": "vanno"
-    }
-  },
-  {
-    "id": "c004",
-    "verb": "fare",
-    "meaning": "to do / to make",
-    "tense": "presente",
-    "forms": {
-      "io": "faccio",
-      "tu": "fai",
-      "lui/lei": "fa",
-      "noi": "facciamo",
-      "voi": "fate",
-      "loro": "fanno"
-    }
-  },
-  {
-    "id": "c005",
-    "verb": "potere",
-    "meaning": "to be able to / can",
-    "tense": "presente",
-    "forms": {
-      "io": "posso",
-      "tu": "puoi",
-      "lui/lei": "può",
-      "noi": "possiamo",
-      "voi": "potete",
-      "loro": "possono"
-    }
-  },
-  {
-    "id": "c006",
-    "verb": "volere",
-    "meaning": "to want",
-    "tense": "presente",
-    "forms": {
-      "io": "voglio",
-      "tu": "vuoi",
-      "lui/lei": "vuole",
-      "noi": "vogliamo",
-      "voi": "volete",
-      "loro": "vogliono"
-    }
-  },
-  {
-    "id": "c007",
-    "verb": "dovere",
-    "meaning": "to have to / must",
-    "tense": "presente",
-    "forms": {
-      "io": "devo",
-      "tu": "devi",
-      "lui/lei": "deve",
-      "noi": "dobbiamo",
-      "voi": "dovete",
-      "loro": "devono"
-    }
-  },
-  {
-    "id": "c008",
-    "verb": "essere",
-    "meaning": "to be",
-    "tense": "passato prossimo",
-    "forms": {
-      "io": "sono stato/a",
-      "tu": "sei stato/a",
-      "lui/lei": "è stato/a",
-      "noi": "siamo stati/e",
-      "voi": "siete stati/e",
-      "loro": "sono stati/e"
-    }
-  },
-  {
-    "id": "c009",
-    "verb": "avere",
-    "meaning": "to have",
-    "tense": "passato prossimo",
-    "forms": {
-      "io": "ho avuto",
-      "tu": "hai avuto",
-      "lui/lei": "ha avuto",
-      "noi": "abbiamo avuto",
-      "voi": "avete avuto",
-      "loro": "hanno avuto"
-    }
-  },
-  {
-    "id": "c010",
-    "verb": "sapere",
-    "meaning": "to know (a fact / how to)",
-    "tense": "presente",
-    "forms": {
-      "io": "so",
-      "tu": "sai",
-      "lui/lei": "sa",
-      "noi": "sappiamo",
-      "voi": "sapete",
-      "loro": "sanno"
-    }
-  },
-  {
-    "id": "c011",
     "verb": "parlare",
     "meaning": "to speak (regular -ARE)",
     "tense": "presente",
@@ -154,7 +14,35 @@
     }
   },
   {
-    "id": "c012",
+    "id": "c002",
+    "verb": "lavorare",
+    "meaning": "to work (regular -ARE)",
+    "tense": "presente",
+    "forms": {
+      "io": "lavoro",
+      "tu": "lavori",
+      "lui/lei": "lavora",
+      "noi": "lavoriamo",
+      "voi": "lavorate",
+      "loro": "lavorano"
+    }
+  },
+  {
+    "id": "c003",
+    "verb": "mangiare",
+    "meaning": "to eat (regular -ARE)",
+    "tense": "presente",
+    "forms": {
+      "io": "mangio",
+      "tu": "mangi",
+      "lui/lei": "mangia",
+      "noi": "mangiamo",
+      "voi": "mangiate",
+      "loro": "mangiano"
+    }
+  },
+  {
+    "id": "c004",
     "verb": "leggere",
     "meaning": "to read (regular -ERE)",
     "tense": "presente",
@@ -168,7 +56,35 @@
     }
   },
   {
-    "id": "c013",
+    "id": "c005",
+    "verb": "prendere",
+    "meaning": "to take (regular -ERE)",
+    "tense": "presente",
+    "forms": {
+      "io": "prendo",
+      "tu": "prendi",
+      "lui/lei": "prende",
+      "noi": "prendiamo",
+      "voi": "prendete",
+      "loro": "prendono"
+    }
+  },
+  {
+    "id": "c006",
+    "verb": "vedere",
+    "meaning": "to see (regular -ERE)",
+    "tense": "presente",
+    "forms": {
+      "io": "vedo",
+      "tu": "vedi",
+      "lui/lei": "vede",
+      "noi": "vediamo",
+      "voi": "vedete",
+      "loro": "vedono"
+    }
+  },
+  {
+    "id": "c007",
     "verb": "dormire",
     "meaning": "to sleep (regular -IRE, type 1)",
     "tense": "presente",
@@ -182,7 +98,21 @@
     }
   },
   {
-    "id": "c014",
+    "id": "c008",
+    "verb": "partire",
+    "meaning": "to leave (regular -IRE, type 1)",
+    "tense": "presente",
+    "forms": {
+      "io": "parto",
+      "tu": "parti",
+      "lui/lei": "parte",
+      "noi": "partiamo",
+      "voi": "partite",
+      "loro": "partono"
+    }
+  },
+  {
+    "id": "c009",
     "verb": "finire",
     "meaning": "to finish (regular -IRE, type 2 -isc-)",
     "tense": "presente",
@@ -196,31 +126,59 @@
     }
   },
   {
-    "id": "c015",
-    "verb": "parlare",
-    "meaning": "to speak (regular -ARE)",
-    "tense": "passato prossimo",
+    "id": "c010",
+    "verb": "capire",
+    "meaning": "to understand (regular -IRE, type 2 -isc-)",
+    "tense": "presente",
     "forms": {
-      "io": "ho parlato",
-      "tu": "hai parlato",
-      "lui/lei": "ha parlato",
-      "noi": "abbiamo parlato",
-      "voi": "avete parlato",
-      "loro": "hanno parlato"
+      "io": "capisco",
+      "tu": "capisci",
+      "lui/lei": "capisce",
+      "noi": "capiamo",
+      "voi": "capite",
+      "loro": "capiscono"
     }
   },
   {
-    "id": "c016",
-    "verb": "andare",
-    "meaning": "to go",
-    "tense": "passato prossimo",
+    "id": "c011",
+    "verb": "preferire",
+    "meaning": "to prefer (regular -IRE, type 2 -isc-)",
+    "tense": "presente",
     "forms": {
-      "io": "sono andato/a",
-      "tu": "sei andato/a",
-      "lui/lei": "è andato/a",
-      "noi": "siamo andati/e",
-      "voi": "siete andati/e",
-      "loro": "sono andati/e"
+      "io": "preferisco",
+      "tu": "preferisci",
+      "lui/lei": "preferisce",
+      "noi": "preferiamo",
+      "voi": "preferite",
+      "loro": "preferiscono"
+    }
+  },
+  {
+    "id": "c012",
+    "verb": "fare",
+    "meaning": "to do / to make (irregular)",
+    "tense": "presente",
+    "forms": {
+      "io": "faccio",
+      "tu": "fai",
+      "lui/lei": "fa",
+      "noi": "facciamo",
+      "voi": "fate",
+      "loro": "fanno"
+    }
+  },
+  {
+    "id": "c013",
+    "verb": "andare",
+    "meaning": "to go (irregular)",
+    "tense": "presente",
+    "forms": {
+      "io": "vado",
+      "tu": "vai",
+      "lui/lei": "va",
+      "noi": "andiamo",
+      "voi": "andate",
+      "loro": "vanno"
     }
   }
 ]

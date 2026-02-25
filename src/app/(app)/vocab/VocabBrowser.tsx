@@ -4,6 +4,8 @@ import { useState } from "react";
 import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
+import UnitSelector from "@/components/UnitSelector";
+import { getVocabUnit } from "@/lib/content";
 import type { VocabItem } from "@/lib/content";
 
 const POS_COLORS: Record<string, string> = {
@@ -22,20 +24,24 @@ export default function VocabBrowser({
 }) {
   const [query, setQuery] = useState("");
   const [activeTag, setActiveTag] = useState("");
+  const [unit, setUnit] = useState<number | undefined>(undefined);
 
   const filtered = initialItems.filter((v) => {
+    const matchesUnit = !unit || getVocabUnit(v) === unit;
     const matchesTag = !activeTag || v.tags.includes(activeTag);
     const q = query.toLowerCase();
     const matchesQuery =
       !q ||
       v.italian.toLowerCase().includes(q) ||
       v.english.toLowerCase().includes(q);
-    return matchesTag && matchesQuery;
+    return matchesUnit && matchesTag && matchesQuery;
   });
 
   return (
     <div className="max-w-lg mx-auto px-4 py-6 space-y-4">
       <h1 className="text-2xl font-bold">Vocabulary</h1>
+
+      <UnitSelector value={unit} onChange={setUnit} />
 
       <Input
         placeholder="Search Italian or English…"
@@ -90,6 +96,9 @@ export default function VocabBrowser({
                     >
                       {item.partOfSpeech}
                     </span>
+                    <span className="text-[10px] px-1.5 py-0.5 rounded font-medium bg-muted text-muted-foreground">
+                      U{getVocabUnit(item)}
+                    </span>
                   </div>
                   <p className="text-sm text-muted-foreground mt-0.5">{item.english}</p>
                   {item.example && (
@@ -97,7 +106,7 @@ export default function VocabBrowser({
                   )}
                 </div>
                 <div className="flex flex-wrap gap-1 justify-end">
-                  {item.tags.map((t) => (
+                  {item.tags.slice(0, 3).map((t) => (
                     <Badge key={t} variant="secondary" className="text-[10px]">
                       {t}
                     </Badge>

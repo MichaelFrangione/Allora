@@ -1,82 +1,170 @@
 [
   {
     "id": "s001",
-    "italian": "Io mangio una mela",
-    "english": "I eat an apple",
-    "parts": ["Io", "mangio", "una", "mela"],
-    "distractors": ["bevo", "il", "arancia"],
-    "tags": ["present", "food"]
+    "italian": "Io mangio la pizza",
+    "english": "I eat the pizza",
+    "parts": ["Io", "mangio", "la", "pizza"],
+    "distractors": ["studio", "il", "pasta"],
+    "tags": ["present", "are-verbs", "food", "lesson-1"]
   },
   {
     "id": "s002",
-    "italian": "Lei beve il caffè",
-    "english": "She drinks the coffee",
-    "parts": ["Lei", "beve", "il", "caffè"],
-    "distractors": ["mangia", "la", "tè"],
-    "tags": ["present", "food"]
+    "italian": "Lei studia ogni giorno",
+    "english": "She studies every day",
+    "parts": ["Lei", "studia", "ogni", "giorno"],
+    "distractors": ["Lui", "lavora", "tutto", "sera"],
+    "tags": ["present", "are-verbs", "education", "lesson-1"]
   },
   {
     "id": "s003",
-    "italian": "Noi andiamo al mercato",
-    "english": "We go to the market",
-    "parts": ["Noi", "andiamo", "al", "mercato"],
-    "distractors": ["vediamo", "del", "ristorante"],
-    "tags": ["present", "movement"]
+    "italian": "Noi parliamo italiano",
+    "english": "We speak Italian",
+    "parts": ["Noi", "parliamo", "italiano"],
+    "distractors": ["Voi", "cantate", "francese"],
+    "tags": ["present", "are-verbs", "communication", "lesson-1"]
   },
   {
     "id": "s004",
-    "italian": "Il gatto dorme sul divano",
-    "english": "The cat sleeps on the sofa",
-    "parts": ["Il", "gatto", "dorme", "sul", "divano"],
-    "distractors": ["cane", "mangia", "nella", "letto"],
-    "tags": ["present", "animals", "daily-life"]
+    "italian": "Loro lavorano in ufficio",
+    "english": "They work in an office",
+    "parts": ["Loro", "lavorano", "in", "ufficio"],
+    "distractors": ["Noi", "studiamo", "a", "casa"],
+    "tags": ["present", "are-verbs", "work", "lesson-1"]
   },
   {
     "id": "s005",
-    "italian": "Ho comprato un libro",
-    "english": "I bought a book",
-    "parts": ["Ho", "comprato", "un", "libro"],
-    "distractors": ["Sono", "mangiato", "una", "giornale"],
-    "tags": ["passato-prossimo", "objects"]
+    "italian": "Tu leggi un libro",
+    "english": "You read a book",
+    "parts": ["Tu", "leggi", "un", "libro"],
+    "distractors": ["Io", "scrivo", "una", "lettera"],
+    "tags": ["present", "ere-verbs", "hobbies", "lesson-1"]
   },
   {
     "id": "s006",
-    "italian": "Non parlo francese",
-    "english": "I don't speak French",
-    "parts": ["Non", "parlo", "francese"],
-    "distractors": ["capisco", "italiano", "spagnolo"],
-    "tags": ["negation", "present"]
+    "italian": "Io prendo un caffè",
+    "english": "I take a coffee",
+    "parts": ["Io", "prendo", "un", "caffè"],
+    "distractors": ["Lei", "vedo", "il", "tè"],
+    "tags": ["present", "ere-verbs", "food", "lesson-1"]
   },
   {
     "id": "s007",
-    "italian": "Vuoi venire con me",
-    "english": "Do you want to come with me",
-    "parts": ["Vuoi", "venire", "con", "me"],
-    "distractors": ["Puoi", "andare", "da", "lui"],
-    "tags": ["present", "modal-verbs"]
+    "italian": "Lui dorme molto",
+    "english": "He sleeps a lot",
+    "parts": ["Lui", "dorme", "molto"],
+    "distractors": ["Lei", "parte", "poco"],
+    "tags": ["present", "ire-verbs", "daily-life", "lesson-1"]
   },
   {
     "id": "s008",
-    "italian": "La casa è molto grande",
-    "english": "The house is very big",
-    "parts": ["La", "casa", "è", "molto", "grande"],
-    "distractors": ["Il", "giardino", "piccola", "tanto"],
-    "tags": ["present", "adjectives"]
+    "italian": "Voi partite domani",
+    "english": "You all leave tomorrow",
+    "parts": ["Voi", "partite", "domani"],
+    "distractors": ["Loro", "dormono", "oggi"],
+    "tags": ["present", "ire-verbs", "travel", "lesson-1"]
   },
   {
     "id": "s009",
-    "italian": "Sono andato al supermercato",
-    "english": "I went to the supermarket",
-    "parts": ["Sono", "andato", "al", "supermercato"],
-    "distractors": ["Ho", "venuto", "del", "mercato"],
-    "tags": ["passato-prossimo", "movement"]
+    "italian": "Io capisco l'italiano",
+    "english": "I understand Italian",
+    "parts": ["Io", "capisco", "l'italiano"],
+    "distractors": ["Tu", "finisco", "il francese"],
+    "tags": ["present", "ire-verbs", "isc-verbs", "education", "lesson-1"]
   },
   {
     "id": "s010",
-    "italian": "Devo studiare ogni giorno",
-    "english": "I must study every day",
-    "parts": ["Devo", "studiare", "ogni", "giorno"],
-    "distractors": ["Voglio", "lavorare", "qualche", "sera"],
-    "tags": ["present", "modal-verbs", "daily-life"]
+    "italian": "Lei preferisce il caffè",
+    "english": "She prefers coffee",
+    "parts": ["Lei", "preferisce", "il", "caffè"],
+    "distractors": ["Lui", "capisce", "la", "pizza"],
+    "tags": ["present", "ire-verbs", "isc-verbs", "food", "lesson-1"]
+  },
+  {
+    "id": "s011",
+    "italian": "Mi piace nuotare in piscina",
+    "english": "I like swimming in the pool",
+    "parts": ["Mi", "piace", "nuotare", "in", "piscina"],
+    "distractors": ["Ti", "piacciono", "correre", "al", "mare"],
+    "tags": ["present", "mi-piace", "hobbies", "lesson-2"]
+  },
+  {
+    "id": "s012",
+    "italian": "Sei libero stasera",
+    "english": "Are you free tonight",
+    "parts": ["Sei", "libero", "stasera"],
+    "distractors": ["Sono", "libera", "domani"],
+    "tags": ["present", "social", "invitations", "lesson-2"]
+  },
+  {
+    "id": "s013",
+    "italian": "Lui suona la chitarra molto bene",
+    "english": "He plays the guitar very well",
+    "parts": ["Lui", "suona", "la", "chitarra", "molto", "bene"],
+    "distractors": ["Lei", "ascolta", "il", "piano", "poco"],
+    "tags": ["present", "are-verbs", "hobbies", "lesson-2"]
+  },
+  {
+    "id": "s014",
+    "italian": "Oggi è lunedì",
+    "english": "Today is Monday",
+    "parts": ["Oggi", "è", "lunedì"],
+    "distractors": ["Domani", "sono", "martedì"],
+    "tags": ["present", "days", "time", "lesson-3"]
+  },
+  {
+    "id": "s015",
+    "italian": "Sono le dieci e mezza",
+    "english": "It is half past ten",
+    "parts": ["Sono", "le", "dieci", "e", "mezza"],
+    "distractors": ["È", "l'una", "un", "quarto", "sera"],
+    "tags": ["present", "telling-time", "lesson-3"]
+  },
+  {
+    "id": "s016",
+    "italian": "Vado al cinema il venerdì sera",
+    "english": "I go to the cinema on Friday evenings",
+    "parts": ["Vado", "al", "cinema", "il", "venerdì", "sera"],
+    "distractors": ["Vai", "a", "teatro", "la", "sabato"],
+    "tags": ["present", "andare", "irregular", "lesson-3"]
+  },
+  {
+    "id": "s017",
+    "italian": "Facciamo colazione alle sette",
+    "english": "We have breakfast at seven",
+    "parts": ["Facciamo", "colazione", "alle", "sette"],
+    "distractors": ["Faccio", "pranzo", "a", "otto"],
+    "tags": ["present", "fare", "irregular", "daily-life", "lesson-3"]
+  },
+  {
+    "id": "s018",
+    "italian": "Il libro è sul tavolo",
+    "english": "The book is on the table",
+    "parts": ["Il", "libro", "è", "sul", "tavolo"],
+    "distractors": ["La", "penna", "lo", "nella", "sedia"],
+    "tags": ["present", "articles", "nouns", "lesson-4"]
+  },
+  {
+    "id": "s019",
+    "italian": "Lo studente studia ogni giorno",
+    "english": "The student studies every day",
+    "parts": ["Lo", "studente", "studia", "ogni", "giorno"],
+    "distractors": ["Il", "professore", "lavora", "tutto", "sera"],
+    "tags": ["present", "articles", "nouns", "lesson-4"]
+  },
+  {
+    "id": "s020",
+    "italian": "La ragazza è molto simpatica",
+    "english": "The girl is very nice",
+    "parts": ["La", "ragazza", "è", "molto", "simpatica"],
+    "distractors": ["Il", "ragazzo", "sono", "poco", "antipatico"],
+    "tags": ["present", "adjectives", "agreement", "lesson-5"]
+  },
+  {
+    "id": "s021",
+    "italian": "I fiori sono belli e colorati",
+    "english": "The flowers are beautiful and colourful",
+    "parts": ["I", "fiori", "sono", "belli", "e", "colorati"],
+    "distractors": ["Le", "case", "è", "brutti", "o", "grandi"],
+    "tags": ["present", "adjectives", "agreement", "lesson-5"]
   }
 ]
