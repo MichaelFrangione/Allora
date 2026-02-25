@@ -10,7 +10,12 @@ import type { SentenceExercise } from "@/lib/content";
 import { cn } from "@/lib/utils";
 
 function shuffle<T>(arr: T[]): T[] {
-  return [...arr].sort(() => Math.random() - 0.5);
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
 }
 
 export default function SentenceBuilder({
@@ -27,6 +32,7 @@ export default function SentenceBuilder({
   const [checked, setChecked] = useState(false);
   const [correct, setCorrect] = useState(false);
   const [score, setScore] = useState({ correct: 0, incorrect: 0 });
+  const [wrongIds, setWrongIds] = useState<string[]>([]);
   const [done, setDone] = useState(false);
   const { startSession, endSession, recordAttempt } = useStudySession("sentence");
 
@@ -44,16 +50,27 @@ export default function SentenceBuilder({
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  function start() {
-    const active = unit ? exercises.filter((e) => getSentenceUnit(e) === unit) : exercises;
+  function beginDrill(filterIds?: string[]) {
+    let active = unit ? exercises.filter((e) => getSentenceUnit(e) === unit) : exercises;
+    if (filterIds) {
+      const filtered = active.filter((e) => filterIds.includes(e.id));
+      if (filtered.length > 0) active = filtered;
+    }
     const shuffled = shuffle(active);
     setDeck(shuffled);
     setIndex(0);
     setScore({ correct: 0, incorrect: 0 });
+    setWrongIds([]);
     setDone(false);
     setStarted(true);
     startSession();
     loadExercise(shuffled[0]);
+  }
+
+  function exitSession() {
+    endSession();
+    setStarted(false);
+    setDone(false);
   }
 
   const ex = deck[index];
@@ -77,6 +94,7 @@ export default function SentenceBuilder({
     setCorrect(isCorrect);
     setChecked(true);
     await recordAttempt(ex.id, "sentence", isCorrect, builtSentence);
+    if (!isCorrect) setWrongIds((ids) => [...ids, ex.id]);
     setScore((s) => ({
       correct: s.correct + (isCorrect ? 1 : 0),
       incorrect: s.incorrect + (isCorrect ? 0 : 1),
@@ -101,7 +119,7 @@ export default function SentenceBuilder({
         <UnitSelector value={unit} onChange={setUnit} />
         <Button
           className="w-full h-12"
-          onClick={start}
+          onClick={() => beginDrill()}
           disabled={activeExercises.length === 0}
         >
           Start · {activeExercises.length} sentence{activeExercises.length !== 1 ? "s" : ""}
@@ -122,7 +140,16 @@ export default function SentenceBuilder({
         <h1 className="text-2xl font-bold">Complete!</h1>
         <p className="text-4xl font-bold">{pct}%</p>
         <p className="text-muted-foreground">{score.correct} / {deck.length} correct</p>
-        <Button onClick={start} className="w-full max-w-xs">Shuffle & Repeat</Button>
+        <Button onClick={() => beginDrill()} className="w-full max-w-xs">Shuffle & Repeat</Button>
+        {wrongIds.length > 0 && (
+          <Button
+            variant="outline"
+            onClick={() => beginDrill(wrongIds)}
+            className="w-full max-w-xs border-amber-400 text-amber-700 hover:bg-amber-50 dark:hover:bg-amber-950"
+          >
+            Practice {wrongIds.length} missed
+          </Button>
+        )}
         <Button variant="outline" onClick={() => setStarted(false)} className="w-full max-w-xs">
           Change Unit
         </Button>
@@ -134,7 +161,16 @@ export default function SentenceBuilder({
     <div className="max-w-lg mx-auto px-4 py-6 space-y-5">
       <div className="flex items-center justify-between">
         <h1 className="font-semibold">Sentence Builder</h1>
-        <span className="text-sm text-muted-foreground">{index + 1} / {deck.length}</span>
+        <div className="flex items-center gap-3">
+          <span className="text-sm text-muted-foreground">{index + 1} / {deck.length}</span>
+          <button
+            onClick={exitSession}
+            className="text-muted-foreground hover:text-foreground transition-colors text-lg leading-none"
+            aria-label="Exit session"
+          >
+            ✕
+          </button>
+        </div>
       </div>
 
       <Card>

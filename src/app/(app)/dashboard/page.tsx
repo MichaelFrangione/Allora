@@ -6,11 +6,12 @@ import { Progress } from "@/components/ui/progress";
 import Link from "next/link";
 
 const studyModes = [
-  { href: "/study/flashcards", label: "Flashcards", emoji: "🃏", desc: "Flip & review" },
+  { href: "/study/flashcards", label: "Flip Cards", emoji: "🃏", desc: "Both directions" },
   { href: "/study/vocab", label: "Vocab Quiz", emoji: "📝", desc: "Multiple choice" },
-  { href: "/study/conjugation", label: "Conjugation", emoji: "🔤", desc: "Type all 6 forms" },
+  { href: "/study/conjugation", label: "Conjugation", emoji: "🔤", desc: "One form at a time" },
   { href: "/study/grammar", label: "Grammar", emoji: "📖", desc: "Rule quiz" },
-  { href: "/study/sentence-builder", label: "Sentences", emoji: "🧩", desc: "Drag & drop" },
+  { href: "/study/sentence-builder", label: "Sentences", emoji: "🧩", desc: "Tap to build" },
+  { href: "/study/mixed", label: "Mixed", emoji: "🎲", desc: "All modes at once" },
 ];
 
 export default async function DashboardPage() {

@@ -12,7 +12,12 @@ import type { VocabItem } from "@/lib/content";
 import { cn } from "@/lib/utils";
 
 function shuffle<T>(arr: T[]): T[] {
-  return [...arr].sort(() => Math.random() - 0.5);
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
 }
 
 type Question = {
@@ -21,7 +26,7 @@ type Question = {
   correct: string;
 };
 
-function buildQuestion(item: VocabItem, allItems: VocabItem[]): Question {
+function buildQuestion(item: VocabItem): Question {
   const distractors = getVocabDistractors(item, 3);
   const options = shuffle([item.english, ...distractors.map((d) => d.english)]);
   return { item, options, correct: item.english };
@@ -35,6 +40,7 @@ export default function VocabQuiz({ items }: { items: VocabItem[] }) {
   const [selected, setSelected] = useState<string | null>(null);
   const [submitted, setSubmitted] = useState(false);
   const [score, setScore] = useState({ correct: 0, incorrect: 0 });
+  const [wrongIds, setWrongIds] = useState<string[]>([]);
   const [done, setDone] = useState(false);
   const { startSession, endSession, recordAttempt } = useStudySession("vocab");
 
@@ -45,17 +51,28 @@ export default function VocabQuiz({ items }: { items: VocabItem[] }) {
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  function start() {
-    const active = unit ? items.filter((v) => getVocabUnit(v) === unit) : items;
+  function beginDrill(filterIds?: string[]) {
+    let active = unit ? items.filter((v) => getVocabUnit(v) === unit) : items;
+    if (filterIds) {
+      const filtered = active.filter((v) => filterIds.includes(v.id));
+      if (filtered.length > 0) active = filtered;
+    }
     const shuffled = shuffle(active);
-    setQuestions(shuffled.map((item) => buildQuestion(item, items)));
+    setQuestions(shuffled.map((item) => buildQuestion(item)));
     setIndex(0);
     setSelected(null);
     setSubmitted(false);
     setScore({ correct: 0, incorrect: 0 });
+    setWrongIds([]);
     setDone(false);
     setStarted(true);
     startSession();
+  }
+
+  function exitSession() {
+    endSession();
+    setStarted(false);
+    setDone(false);
   }
 
   const q = questions[index];
@@ -64,6 +81,7 @@ export default function VocabQuiz({ items }: { items: VocabItem[] }) {
     if (!selected || !q) return;
     const correct = selected === q.correct;
     await recordAttempt(q.item.id, "vocab", correct, selected);
+    if (!correct) setWrongIds((ids) => [...ids, q.item.id]);
     setScore((s) => ({
       correct: s.correct + (correct ? 1 : 0),
       incorrect: s.incorrect + (correct ? 0 : 1),
@@ -90,7 +108,7 @@ export default function VocabQuiz({ items }: { items: VocabItem[] }) {
         <UnitSelector value={unit} onChange={setUnit} />
         <Button
           className="w-full h-12"
-          onClick={start}
+          onClick={() => beginDrill()}
           disabled={activeItems.length === 0}
         >
           Start · {activeItems.length} word{activeItems.length !== 1 ? "s" : ""}
@@ -107,7 +125,16 @@ export default function VocabQuiz({ items }: { items: VocabItem[] }) {
         <h1 className="text-2xl font-bold">Quiz Complete!</h1>
         <p className="text-4xl font-bold">{pct}%</p>
         <p className="text-muted-foreground">{score.correct} / {questions.length} correct</p>
-        <Button onClick={start} className="w-full max-w-xs">Try Again</Button>
+        <Button onClick={() => beginDrill()} className="w-full max-w-xs">Try Again</Button>
+        {wrongIds.length > 0 && (
+          <Button
+            variant="outline"
+            onClick={() => beginDrill(wrongIds)}
+            className="w-full max-w-xs border-amber-400 text-amber-700 hover:bg-amber-50 dark:hover:bg-amber-950"
+          >
+            Practice {wrongIds.length} missed
+          </Button>
+        )}
         <Button variant="outline" onClick={() => setStarted(false)} className="w-full max-w-xs">
           Change Unit
         </Button>
@@ -123,7 +150,16 @@ export default function VocabQuiz({ items }: { items: VocabItem[] }) {
     <div className="max-w-lg mx-auto px-4 py-6 space-y-6">
       <div className="flex items-center justify-between">
         <h1 className="font-semibold">Vocab Quiz</h1>
-        <span className="text-sm text-muted-foreground">{index + 1} / {questions.length}</span>
+        <div className="flex items-center gap-3">
+          <span className="text-sm text-muted-foreground">{index + 1} / {questions.length}</span>
+          <button
+            onClick={exitSession}
+            className="text-muted-foreground hover:text-foreground transition-colors text-lg leading-none"
+            aria-label="Exit session"
+          >
+            ✕
+          </button>
+        </div>
       </div>
 
       <Card>

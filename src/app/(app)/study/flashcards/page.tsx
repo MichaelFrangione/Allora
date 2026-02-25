@@ -1,6 +1,6 @@
-import { flashcards } from "@/lib/content";
+import { vocab } from "@/lib/content";
 import FlashcardSession from "./FlashcardSession";
 
 export default function FlashcardsPage() {
-  return <FlashcardSession cards={flashcards} />;
+  return <FlashcardSession vocab={vocab} />;
 }
