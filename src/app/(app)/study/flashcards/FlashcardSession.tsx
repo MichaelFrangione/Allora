@@ -148,6 +148,7 @@ export default function FlashcardSession({ vocab }: { vocab: VocabItem[] }) {
 
   const front = current.direction === "it→en" ? current.item.italian : current.item.english;
   const genderLabel = current.item.gender === "m" ? "masc." : current.item.gender === "f" ? "fem." : null;
+  const pronunciation = current.item.pronunciation;
 
   return (
     <div className="max-w-lg mx-auto px-4 py-6 flex flex-col gap-6">
@@ -179,7 +180,10 @@ export default function FlashcardSession({ vocab }: { vocab: VocabItem[] }) {
         {!flipped ? (
           <>
             <p className="text-xl font-semibold">{front}</p>
-            <p className="text-xs text-muted-foreground mt-2">Tap to reveal</p>
+            {current.direction === "it→en" && pronunciation && (
+              <p className="text-xs text-muted-foreground tracking-wide">{pronunciation}</p>
+            )}
+            <p className="text-xs text-muted-foreground mt-1">Tap to reveal</p>
           </>
         ) : current.direction === "it→en" ? (
           <>
@@ -194,6 +198,9 @@ export default function FlashcardSession({ vocab }: { vocab: VocabItem[] }) {
         ) : (
           <>
             <p className="text-xl font-semibold">{current.item.italian}</p>
+            {pronunciation && (
+              <p className="text-xs text-muted-foreground tracking-wide">{pronunciation}</p>
+            )}
             {genderLabel && (
               <p className="text-sm text-muted-foreground">({genderLabel})</p>
             )}

@@ -2,14 +2,14 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { BookOpen, LayoutDashboard, Layers, BarChart2, Library } from "lucide-react";
+import { BookOpen, LayoutDashboard, Layers, BarChart2, BookMarked } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const navItems = [
   { href: "/dashboard", label: "Home", icon: LayoutDashboard },
   { href: "/vocab", label: "Vocab", icon: BookOpen },
   { href: "/study/flashcards", label: "Study", icon: Layers },
-  { href: "/grammar", label: "Grammar", icon: Library },
+  { href: "/grammar", label: "Guide", icon: BookMarked },
   { href: "/progress", label: "Progress", icon: BarChart2 },
 ];
 

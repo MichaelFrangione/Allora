@@ -13,6 +13,7 @@ export type VocabItem = {
   example: string;
   tags: string[];
   unit?: number;
+  pronunciation?: string;
 };
 
 export type Flashcard = {

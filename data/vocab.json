@@ -6,8 +6,13 @@
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Ti abbraccio forte.",
-    "tags": ["verbs", "are-verbs", "actions"],
-    "unit": 1
+    "tags": [
+      "verbs",
+      "are-verbs",
+      "actions"
+    ],
+    "unit": 1,
+    "pronunciation": "ab·brac·CIA·re"
   },
   {
     "id": "v002",
@@ -16,8 +21,13 @@
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Abito a Milano.",
-    "tags": ["verbs", "are-verbs", "daily-life"],
-    "unit": 1
+    "tags": [
+      "verbs",
+      "are-verbs",
+      "daily-life"
+    ],
+    "unit": 1,
+    "pronunciation": "a·bi·TA·re"
   },
   {
     "id": "v003",
@@ -26,8 +36,13 @@
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Amo la musica italiana.",
-    "tags": ["verbs", "are-verbs", "emotions"],
-    "unit": 1
+    "tags": [
+      "verbs",
+      "are-verbs",
+      "emotions"
+    ],
+    "unit": 1,
+    "pronunciation": "a·MA·re"
   },
   {
     "id": "v004",
@@ -36,8 +51,13 @@
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Ascolto la radio ogni mattina.",
-    "tags": ["verbs", "are-verbs", "communication"],
-    "unit": 1
+    "tags": [
+      "verbs",
+      "are-verbs",
+      "communication"
+    ],
+    "unit": 1,
+    "pronunciation": "a·scol·TA·re"
   },
   {
     "id": "v005",
@@ -46,8 +66,13 @@
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Assomiglio molto a mia madre.",
-    "tags": ["verbs", "are-verbs", "descriptions"],
-    "unit": 1
+    "tags": [
+      "verbs",
+      "are-verbs",
+      "descriptions"
+    ],
+    "unit": 1,
+    "pronunciation": "as·so·mi·GLIA·re"
   },
   {
     "id": "v006",
@@ -56,8 +81,13 @@
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Si baciano sulla guancia.",
-    "tags": ["verbs", "are-verbs", "actions"],
-    "unit": 1
+    "tags": [
+      "verbs",
+      "are-verbs",
+      "actions"
+    ],
+    "unit": 1,
+    "pronunciation": "ba·CIA·re"
   },
   {
     "id": "v007",
@@ -66,8 +96,13 @@
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Balli bene il tango?",
-    "tags": ["verbs", "are-verbs", "hobbies"],
-    "unit": 1
+    "tags": [
+      "verbs",
+      "are-verbs",
+      "hobbies"
+    ],
+    "unit": 1,
+    "pronunciation": "bal·LA·re"
   },
   {
     "id": "v008",
@@ -76,8 +111,13 @@
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Cammino ogni mattina.",
-    "tags": ["verbs", "are-verbs", "movement"],
-    "unit": 1
+    "tags": [
+      "verbs",
+      "are-verbs",
+      "movement"
+    ],
+    "unit": 1,
+    "pronunciation": "cam·mi·NA·re"
   },
   {
     "id": "v009",
@@ -86,8 +126,13 @@
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Canto sotto la doccia.",
-    "tags": ["verbs", "are-verbs", "hobbies"],
-    "unit": 1
+    "tags": [
+      "verbs",
+      "are-verbs",
+      "hobbies"
+    ],
+    "unit": 1,
+    "pronunciation": "can·TA·re"
   },
   {
     "id": "v010",
@@ -96,8 +141,13 @@
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Cerco il mio telefono.",
-    "tags": ["verbs", "are-verbs", "actions"],
-    "unit": 1
+    "tags": [
+      "verbs",
+      "are-verbs",
+      "actions"
+    ],
+    "unit": 1,
+    "pronunciation": "cer·CA·re"
   },
   {
     "id": "v011",
@@ -106,8 +156,13 @@
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Chiacchieriamo per ore.",
-    "tags": ["verbs", "are-verbs", "communication"],
-    "unit": 1
+    "tags": [
+      "verbs",
+      "are-verbs",
+      "communication"
+    ],
+    "unit": 1,
+    "pronunciation": "chiac·chie·RA·re"
   },
   {
     "id": "v012",
@@ -116,8 +171,13 @@
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Ti chiamo stasera.",
-    "tags": ["verbs", "are-verbs", "communication"],
-    "unit": 1
+    "tags": [
+      "verbs",
+      "are-verbs",
+      "communication"
+    ],
+    "unit": 1,
+    "pronunciation": "chia·MA·re"
   },
   {
     "id": "v013",
@@ -126,8 +186,13 @@
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Il film comincia alle otto.",
-    "tags": ["verbs", "are-verbs", "actions"],
-    "unit": 1
+    "tags": [
+      "verbs",
+      "are-verbs",
+      "actions"
+    ],
+    "unit": 1,
+    "pronunciation": "co·min·CIA·re"
   },
   {
     "id": "v014",
@@ -136,8 +201,13 @@
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Compro il pane ogni giorno.",
-    "tags": ["verbs", "are-verbs", "shopping"],
-    "unit": 1
+    "tags": [
+      "verbs",
+      "are-verbs",
+      "shopping"
+    ],
+    "unit": 1,
+    "pronunciation": "com·PRA·re"
   },
   {
     "id": "v015",
@@ -146,8 +216,13 @@
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Quanto costa questo?",
-    "tags": ["verbs", "are-verbs", "shopping"],
-    "unit": 1
+    "tags": [
+      "verbs",
+      "are-verbs",
+      "shopping"
+    ],
+    "unit": 1,
+    "pronunciation": "cos·TA·re"
   },
   {
     "id": "v016",
@@ -156,8 +231,14 @@
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Cucino la pasta stasera.",
-    "tags": ["verbs", "are-verbs", "food", "daily-life"],
-    "unit": 1
+    "tags": [
+      "verbs",
+      "are-verbs",
+      "food",
+      "daily-life"
+    ],
+    "unit": 1,
+    "pronunciation": "cu·ci·NA·re"
   },
   {
     "id": "v017",
@@ -166,8 +247,13 @@
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Posso domandarti una cosa?",
-    "tags": ["verbs", "are-verbs", "communication"],
-    "unit": 1
+    "tags": [
+      "verbs",
+      "are-verbs",
+      "communication"
+    ],
+    "unit": 1,
+    "pronunciation": "do·man·DA·re"
   },
   {
     "id": "v018",
@@ -176,8 +262,13 @@
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Firma qui, per favore.",
-    "tags": ["verbs", "are-verbs", "work"],
-    "unit": 1
+    "tags": [
+      "verbs",
+      "are-verbs",
+      "work"
+    ],
+    "unit": 1,
+    "pronunciation": "fir·MA·re"
   },
   {
     "id": "v019",
@@ -186,8 +277,13 @@
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Guardiamo la TV insieme.",
-    "tags": ["verbs", "are-verbs", "daily-life"],
-    "unit": 1
+    "tags": [
+      "verbs",
+      "are-verbs",
+      "daily-life"
+    ],
+    "unit": 1,
+    "pronunciation": "guar·DA·re"
   },
   {
     "id": "v020",
@@ -196,8 +292,13 @@
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Guida con attenzione.",
-    "tags": ["verbs", "are-verbs", "movement"],
-    "unit": 1
+    "tags": [
+      "verbs",
+      "are-verbs",
+      "movement"
+    ],
+    "unit": 1,
+    "pronunciation": "gui·DA·re"
   },
   {
     "id": "v021",
@@ -206,8 +307,13 @@
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Imparo l'italiano ogni giorno.",
-    "tags": ["verbs", "are-verbs", "education"],
-    "unit": 1
+    "tags": [
+      "verbs",
+      "are-verbs",
+      "education"
+    ],
+    "unit": 1,
+    "pronunciation": "im·pa·RA·re"
   },
   {
     "id": "v022",
@@ -216,8 +322,14 @@
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Insegna matematica al liceo.",
-    "tags": ["verbs", "are-verbs", "education", "work"],
-    "unit": 1
+    "tags": [
+      "verbs",
+      "are-verbs",
+      "education",
+      "work"
+    ],
+    "unit": 1,
+    "pronunciation": "in·se·GNA·re"
   },
   {
     "id": "v023",
@@ -226,8 +338,13 @@
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Lavoro in un ufficio.",
-    "tags": ["verbs", "are-verbs", "work"],
-    "unit": 1
+    "tags": [
+      "verbs",
+      "are-verbs",
+      "work"
+    ],
+    "unit": 1,
+    "pronunciation": "la·vo·RA·re"
   },
   {
     "id": "v024",
@@ -236,8 +353,13 @@
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Mangio la pizza ogni venerdì.",
-    "tags": ["verbs", "are-verbs", "food"],
-    "unit": 1
+    "tags": [
+      "verbs",
+      "are-verbs",
+      "food"
+    ],
+    "unit": 1,
+    "pronunciation": "man·GIA·re"
   },
   {
     "id": "v025",
@@ -246,8 +368,13 @@
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Odio svegliarmi presto.",
-    "tags": ["verbs", "are-verbs", "emotions"],
-    "unit": 1
+    "tags": [
+      "verbs",
+      "are-verbs",
+      "emotions"
+    ],
+    "unit": 1,
+    "pronunciation": "O·dia·re"
   },
   {
     "id": "v026",
@@ -256,8 +383,14 @@
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Ordino sempre la stessa cosa.",
-    "tags": ["verbs", "are-verbs", "food", "shopping"],
-    "unit": 1
+    "tags": [
+      "verbs",
+      "are-verbs",
+      "food",
+      "shopping"
+    ],
+    "unit": 1,
+    "pronunciation": "or·di·NA·re"
   },
   {
     "id": "v027",
@@ -266,8 +399,13 @@
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Pago con la carta.",
-    "tags": ["verbs", "are-verbs", "shopping"],
-    "unit": 1
+    "tags": [
+      "verbs",
+      "are-verbs",
+      "shopping"
+    ],
+    "unit": 1,
+    "pronunciation": "pa·GA·re"
   },
   {
     "id": "v028",
@@ -276,8 +414,13 @@
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Parli italiano?",
-    "tags": ["verbs", "are-verbs", "communication"],
-    "unit": 1
+    "tags": [
+      "verbs",
+      "are-verbs",
+      "communication"
+    ],
+    "unit": 1,
+    "pronunciation": "par·LA·re"
   },
   {
     "id": "v029",
@@ -286,8 +429,13 @@
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Porto sempre un ombrello.",
-    "tags": ["verbs", "are-verbs", "actions"],
-    "unit": 1
+    "tags": [
+      "verbs",
+      "are-verbs",
+      "actions"
+    ],
+    "unit": 1,
+    "pronunciation": "por·TA·re"
   },
   {
     "id": "v030",
@@ -296,8 +444,14 @@
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Pranziamo insieme?",
-    "tags": ["verbs", "are-verbs", "food", "daily-life"],
-    "unit": 1
+    "tags": [
+      "verbs",
+      "are-verbs",
+      "food",
+      "daily-life"
+    ],
+    "unit": 1,
+    "pronunciation": "pran·ZA·re"
   },
   {
     "id": "v031",
@@ -306,8 +460,13 @@
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Prego ogni domenica.",
-    "tags": ["verbs", "are-verbs", "actions"],
-    "unit": 1
+    "tags": [
+      "verbs",
+      "are-verbs",
+      "actions"
+    ],
+    "unit": 1,
+    "pronunciation": "pre·GA·re"
   },
   {
     "id": "v032",
@@ -316,8 +475,13 @@
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Ho prenotato un tavolo per due.",
-    "tags": ["verbs", "are-verbs", "travel"],
-    "unit": 1
+    "tags": [
+      "verbs",
+      "are-verbs",
+      "travel"
+    ],
+    "unit": 1,
+    "pronunciation": "pre·no·TA·re"
   },
   {
     "id": "v033",
@@ -326,8 +490,14 @@
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Preparo la cena alle sette.",
-    "tags": ["verbs", "are-verbs", "food", "daily-life"],
-    "unit": 1
+    "tags": [
+      "verbs",
+      "are-verbs",
+      "food",
+      "daily-life"
+    ],
+    "unit": 1,
+    "pronunciation": "pre·pa·RA·re"
   },
   {
     "id": "v034",
@@ -336,8 +506,13 @@
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Respira profondamente.",
-    "tags": ["verbs", "are-verbs", "actions"],
-    "unit": 1
+    "tags": [
+      "verbs",
+      "are-verbs",
+      "actions"
+    ],
+    "unit": 1,
+    "pronunciation": "res·pi·RA·re"
   },
   {
     "id": "v035",
@@ -346,8 +521,14 @@
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Ti ringrazio per tutto.",
-    "tags": ["verbs", "are-verbs", "communication", "politeness"],
-    "unit": 1
+    "tags": [
+      "verbs",
+      "are-verbs",
+      "communication",
+      "politeness"
+    ],
+    "unit": 1,
+    "pronunciation": "rin·gra·ZIA·re"
   },
   {
     "id": "v036",
@@ -356,8 +537,13 @@
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Ho sbagliato strada.",
-    "tags": ["verbs", "are-verbs", "actions"],
-    "unit": 1
+    "tags": [
+      "verbs",
+      "are-verbs",
+      "actions"
+    ],
+    "unit": 1,
+    "pronunciation": "sba·GLIA·re"
   },
   {
     "id": "v037",
@@ -366,8 +552,13 @@
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Spero di vederti presto.",
-    "tags": ["verbs", "are-verbs", "emotions"],
-    "unit": 1
+    "tags": [
+      "verbs",
+      "are-verbs",
+      "emotions"
+    ],
+    "unit": 1,
+    "pronunciation": "spe·RA·re"
   },
   {
     "id": "v038",
@@ -376,8 +567,14 @@
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Puoi spiegarmi di nuovo?",
-    "tags": ["verbs", "are-verbs", "communication", "education"],
-    "unit": 1
+    "tags": [
+      "verbs",
+      "are-verbs",
+      "communication",
+      "education"
+    ],
+    "unit": 1,
+    "pronunciation": "spie·GA·re"
   },
   {
     "id": "v039",
@@ -386,8 +583,13 @@
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Studio italiano ogni sera.",
-    "tags": ["verbs", "are-verbs", "education"],
-    "unit": 1
+    "tags": [
+      "verbs",
+      "are-verbs",
+      "education"
+    ],
+    "unit": 1,
+    "pronunciation": "stu·DIA·re"
   },
   {
     "id": "v040",
@@ -396,8 +598,13 @@
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Non trovo le chiavi.",
-    "tags": ["verbs", "are-verbs", "actions"],
-    "unit": 1
+    "tags": [
+      "verbs",
+      "are-verbs",
+      "actions"
+    ],
+    "unit": 1,
+    "pronunciation": "tro·VA·re"
   },
   {
     "id": "v041",
@@ -406,8 +613,13 @@
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Viaggio spesso per lavoro.",
-    "tags": ["verbs", "are-verbs", "travel"],
-    "unit": 1
+    "tags": [
+      "verbs",
+      "are-verbs",
+      "travel"
+    ],
+    "unit": 1,
+    "pronunciation": "viag·GIA·re"
   },
   {
     "id": "v042",
@@ -416,8 +628,13 @@
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Visito Roma la prossima settimana.",
-    "tags": ["verbs", "are-verbs", "travel"],
-    "unit": 1
+    "tags": [
+      "verbs",
+      "are-verbs",
+      "travel"
+    ],
+    "unit": 1,
+    "pronunciation": "vi·si·TA·re"
   },
   {
     "id": "v043",
@@ -426,8 +643,14 @@
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Volo a Roma domani.",
-    "tags": ["verbs", "are-verbs", "travel", "movement"],
-    "unit": 1
+    "tags": [
+      "verbs",
+      "are-verbs",
+      "travel",
+      "movement"
+    ],
+    "unit": 1,
+    "pronunciation": "vo·LA·re"
   },
   {
     "id": "v044",
@@ -436,8 +659,13 @@
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Il cuore batte forte.",
-    "tags": ["verbs", "ere-verbs", "actions"],
-    "unit": 1
+    "tags": [
+      "verbs",
+      "ere-verbs",
+      "actions"
+    ],
+    "unit": 1,
+    "pronunciation": "BAT·te·re"
   },
   {
     "id": "v045",
@@ -446,8 +674,13 @@
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Cado sempre sulle scale.",
-    "tags": ["verbs", "ere-verbs", "movement"],
-    "unit": 1
+    "tags": [
+      "verbs",
+      "ere-verbs",
+      "movement"
+    ],
+    "unit": 1,
+    "pronunciation": "ca·DE·re"
   },
   {
     "id": "v046",
@@ -456,8 +689,13 @@
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Conosci Marco?",
-    "tags": ["verbs", "ere-verbs", "communication"],
-    "unit": 1
+    "tags": [
+      "verbs",
+      "ere-verbs",
+      "communication"
+    ],
+    "unit": 1,
+    "pronunciation": "co·NO·sce·re"
   },
   {
     "id": "v047",
@@ -466,8 +704,14 @@
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Corro ogni mattina al parco.",
-    "tags": ["verbs", "ere-verbs", "movement", "sport"],
-    "unit": 1
+    "tags": [
+      "verbs",
+      "ere-verbs",
+      "movement",
+      "sport"
+    ],
+    "unit": 1,
+    "pronunciation": "COR·re·re"
   },
   {
     "id": "v048",
@@ -476,8 +720,13 @@
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Credo che tu abbia ragione.",
-    "tags": ["verbs", "ere-verbs", "communication"],
-    "unit": 1
+    "tags": [
+      "verbs",
+      "ere-verbs",
+      "communication"
+    ],
+    "unit": 1,
+    "pronunciation": "CRE·de·re"
   },
   {
     "id": "v049",
@@ -486,8 +735,13 @@
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Decidiamo domani.",
-    "tags": ["verbs", "ere-verbs", "actions"],
-    "unit": 1
+    "tags": [
+      "verbs",
+      "ere-verbs",
+      "actions"
+    ],
+    "unit": 1,
+    "pronunciation": "de·CI·de·re"
   },
   {
     "id": "v050",
@@ -496,8 +750,13 @@
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Descrivimi la tua città.",
-    "tags": ["verbs", "ere-verbs", "communication"],
-    "unit": 1
+    "tags": [
+      "verbs",
+      "ere-verbs",
+      "communication"
+    ],
+    "unit": 1,
+    "pronunciation": "de·SCRI·ve·re"
   },
   {
     "id": "v051",
@@ -506,8 +765,14 @@
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Leggo un libro al mese.",
-    "tags": ["verbs", "ere-verbs", "hobbies", "education"],
-    "unit": 1
+    "tags": [
+      "verbs",
+      "ere-verbs",
+      "hobbies",
+      "education"
+    ],
+    "unit": 1,
+    "pronunciation": "LEG·ge·re"
   },
   {
     "id": "v052",
@@ -516,8 +781,13 @@
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Metti il libro sul tavolo.",
-    "tags": ["verbs", "ere-verbs", "actions"],
-    "unit": 1
+    "tags": [
+      "verbs",
+      "ere-verbs",
+      "actions"
+    ],
+    "unit": 1,
+    "pronunciation": "MET·te·re"
   },
   {
     "id": "v053",
@@ -526,8 +796,13 @@
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Il cane ha morso il postino.",
-    "tags": ["verbs", "ere-verbs", "actions"],
-    "unit": 1
+    "tags": [
+      "verbs",
+      "ere-verbs",
+      "actions"
+    ],
+    "unit": 1,
+    "pronunciation": "MOR·de·re"
   },
   {
     "id": "v054",
@@ -536,8 +811,14 @@
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Non volevo offenderti.",
-    "tags": ["verbs", "ere-verbs", "communication", "emotions"],
-    "unit": 1
+    "tags": [
+      "verbs",
+      "ere-verbs",
+      "communication",
+      "emotions"
+    ],
+    "unit": 1,
+    "pronunciation": "of·FEN·de·re"
   },
   {
     "id": "v055",
@@ -546,8 +827,13 @@
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Ho perso il treno.",
-    "tags": ["verbs", "ere-verbs", "actions"],
-    "unit": 1
+    "tags": [
+      "verbs",
+      "ere-verbs",
+      "actions"
+    ],
+    "unit": 1,
+    "pronunciation": "PER·de·re"
   },
   {
     "id": "v056",
@@ -556,8 +842,13 @@
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Prendo un caffè.",
-    "tags": ["verbs", "ere-verbs", "actions"],
-    "unit": 1
+    "tags": [
+      "verbs",
+      "ere-verbs",
+      "actions"
+    ],
+    "unit": 1,
+    "pronunciation": "PREN·de·re"
   },
   {
     "id": "v057",
@@ -566,8 +857,13 @@
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Ridiamo molto insieme.",
-    "tags": ["verbs", "ere-verbs", "emotions"],
-    "unit": 1
+    "tags": [
+      "verbs",
+      "ere-verbs",
+      "emotions"
+    ],
+    "unit": 1,
+    "pronunciation": "RI·de·re"
   },
   {
     "id": "v058",
@@ -576,8 +872,13 @@
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Ho rotto il telefono.",
-    "tags": ["verbs", "ere-verbs", "actions"],
-    "unit": 1
+    "tags": [
+      "verbs",
+      "ere-verbs",
+      "actions"
+    ],
+    "unit": 1,
+    "pronunciation": "ROM·pe·re"
   },
   {
     "id": "v059",
@@ -586,8 +887,14 @@
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Scrivo una lettera a mia nonna.",
-    "tags": ["verbs", "ere-verbs", "communication", "hobbies"],
-    "unit": 1
+    "tags": [
+      "verbs",
+      "ere-verbs",
+      "communication",
+      "hobbies"
+    ],
+    "unit": 1,
+    "pronunciation": "SCRI·ve·re"
   },
   {
     "id": "v060",
@@ -596,8 +903,13 @@
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Sopravvivo senza caffè... appena.",
-    "tags": ["verbs", "ere-verbs", "actions"],
-    "unit": 1
+    "tags": [
+      "verbs",
+      "ere-verbs",
+      "actions"
+    ],
+    "unit": 1,
+    "pronunciation": "so·prav·VI·ve·re"
   },
   {
     "id": "v061",
@@ -606,8 +918,13 @@
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Sorridi sempre!",
-    "tags": ["verbs", "ere-verbs", "emotions"],
-    "unit": 1
+    "tags": [
+      "verbs",
+      "ere-verbs",
+      "emotions"
+    ],
+    "unit": 1,
+    "pronunciation": "sor·RI·de·re"
   },
   {
     "id": "v062",
@@ -616,8 +933,13 @@
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Ci vediamo domani.",
-    "tags": ["verbs", "ere-verbs", "daily-life"],
-    "unit": 1
+    "tags": [
+      "verbs",
+      "ere-verbs",
+      "daily-life"
+    ],
+    "unit": 1,
+    "pronunciation": "ve·DE·re"
   },
   {
     "id": "v063",
@@ -626,8 +948,13 @@
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Vivo in Canada da cinque anni.",
-    "tags": ["verbs", "ere-verbs", "daily-life"],
-    "unit": 1
+    "tags": [
+      "verbs",
+      "ere-verbs",
+      "daily-life"
+    ],
+    "unit": 1,
+    "pronunciation": "VI·ve·re"
   },
   {
     "id": "v064",
@@ -636,8 +963,13 @@
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Apri la finestra, per favore.",
-    "tags": ["verbs", "ire-verbs", "actions"],
-    "unit": 1
+    "tags": [
+      "verbs",
+      "ire-verbs",
+      "actions"
+    ],
+    "unit": 1,
+    "pronunciation": "a·PRI·re"
   },
   {
     "id": "v065",
@@ -646,8 +978,13 @@
     "gender": null,
     "partOfSpeech": "verb",
     "example": "L'acqua bolle.",
-    "tags": ["verbs", "ire-verbs", "food"],
-    "unit": 1
+    "tags": [
+      "verbs",
+      "ire-verbs",
+      "food"
+    ],
+    "unit": 1,
+    "pronunciation": "bol·LI·re"
   },
   {
     "id": "v066",
@@ -656,8 +993,15 @@
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Capisco l'italiano ma non lo parlo bene.",
-    "tags": ["verbs", "ire-verbs", "isc-verbs", "communication", "education"],
-    "unit": 1
+    "tags": [
+      "verbs",
+      "ire-verbs",
+      "isc-verbs",
+      "communication",
+      "education"
+    ],
+    "unit": 1,
+    "pronunciation": "ca·PI·re"
   },
   {
     "id": "v067",
@@ -666,8 +1010,13 @@
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Copriti, fa freddo!",
-    "tags": ["verbs", "ire-verbs", "actions"],
-    "unit": 1
+    "tags": [
+      "verbs",
+      "ire-verbs",
+      "actions"
+    ],
+    "unit": 1,
+    "pronunciation": "co·PRI·re"
   },
   {
     "id": "v068",
@@ -676,8 +1025,13 @@
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Cucio i miei vestiti.",
-    "tags": ["verbs", "ire-verbs", "hobbies"],
-    "unit": 1
+    "tags": [
+      "verbs",
+      "ire-verbs",
+      "hobbies"
+    ],
+    "unit": 1,
+    "pronunciation": "cu·CI·re"
   },
   {
     "id": "v069",
@@ -686,8 +1040,13 @@
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Dormo otto ore per notte.",
-    "tags": ["verbs", "ire-verbs", "daily-life"],
-    "unit": 1
+    "tags": [
+      "verbs",
+      "ire-verbs",
+      "daily-life"
+    ],
+    "unit": 1,
+    "pronunciation": "dor·MI·re"
   },
   {
     "id": "v070",
@@ -696,8 +1055,15 @@
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Finisco il lavoro alle sei.",
-    "tags": ["verbs", "ire-verbs", "isc-verbs", "daily-life", "work"],
-    "unit": 1
+    "tags": [
+      "verbs",
+      "ire-verbs",
+      "isc-verbs",
+      "daily-life",
+      "work"
+    ],
+    "unit": 1,
+    "pronunciation": "fi·NI·re"
   },
   {
     "id": "v071",
@@ -706,8 +1072,13 @@
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Non mentire mai.",
-    "tags": ["verbs", "ire-verbs", "communication"],
-    "unit": 1
+    "tags": [
+      "verbs",
+      "ire-verbs",
+      "communication"
+    ],
+    "unit": 1,
+    "pronunciation": "men·TI·re"
   },
   {
     "id": "v072",
@@ -716,8 +1087,14 @@
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Offro io il caffè.",
-    "tags": ["verbs", "ire-verbs", "actions", "food"],
-    "unit": 1
+    "tags": [
+      "verbs",
+      "ire-verbs",
+      "actions",
+      "food"
+    ],
+    "unit": 1,
+    "pronunciation": "of·FRI·re"
   },
   {
     "id": "v073",
@@ -726,8 +1103,14 @@
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Partiamo domani mattina.",
-    "tags": ["verbs", "ire-verbs", "travel", "movement"],
-    "unit": 1
+    "tags": [
+      "verbs",
+      "ire-verbs",
+      "travel",
+      "movement"
+    ],
+    "unit": 1,
+    "pronunciation": "par·TI·re"
   },
   {
     "id": "v074",
@@ -736,8 +1119,14 @@
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Preferisco il caffè al tè.",
-    "tags": ["verbs", "ire-verbs", "isc-verbs", "food"],
-    "unit": 1
+    "tags": [
+      "verbs",
+      "ire-verbs",
+      "isc-verbs",
+      "food"
+    ],
+    "unit": 1,
+    "pronunciation": "pre·fe·RI·re"
   },
   {
     "id": "v075",
@@ -746,8 +1135,14 @@
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Pulisco la casa il sabato.",
-    "tags": ["verbs", "ire-verbs", "isc-verbs", "daily-life"],
-    "unit": 1
+    "tags": [
+      "verbs",
+      "ire-verbs",
+      "isc-verbs",
+      "daily-life"
+    ],
+    "unit": 1,
+    "pronunciation": "pu·LI·re"
   },
   {
     "id": "v076",
@@ -756,8 +1151,13 @@
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Ho scoperto un ristorante fantastico.",
-    "tags": ["verbs", "ire-verbs", "actions"],
-    "unit": 1
+    "tags": [
+      "verbs",
+      "ire-verbs",
+      "actions"
+    ],
+    "unit": 1,
+    "pronunciation": "sco·PRI·re"
   },
   {
     "id": "v077",
@@ -766,8 +1166,13 @@
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Segui le istruzioni.",
-    "tags": ["verbs", "ire-verbs", "actions"],
-    "unit": 1
+    "tags": [
+      "verbs",
+      "ire-verbs",
+      "actions"
+    ],
+    "unit": 1,
+    "pronunciation": "se·GUI·re"
   },
   {
     "id": "v078",
@@ -776,8 +1181,13 @@
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Senti che buon profumo!",
-    "tags": ["verbs", "ire-verbs", "senses"],
-    "unit": 1
+    "tags": [
+      "verbs",
+      "ire-verbs",
+      "senses"
+    ],
+    "unit": 1,
+    "pronunciation": "sen·TI·re"
   },
   {
     "id": "v079",
@@ -786,8 +1196,14 @@
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Il cameriere serve i clienti.",
-    "tags": ["verbs", "ire-verbs", "food", "work"],
-    "unit": 1
+    "tags": [
+      "verbs",
+      "ire-verbs",
+      "food",
+      "work"
+    ],
+    "unit": 1,
+    "pronunciation": "ser·VI·re"
   },
   {
     "id": "v080",
@@ -796,8 +1212,13 @@
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Soffro di allergie in primavera.",
-    "tags": ["verbs", "ire-verbs", "emotions"],
-    "unit": 1
+    "tags": [
+      "verbs",
+      "ire-verbs",
+      "emotions"
+    ],
+    "unit": 1,
+    "pronunciation": "sof·FRI·re"
   },
   {
     "id": "v081",
@@ -806,8 +1227,14 @@
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Le chiavi sono sparite!",
-    "tags": ["verbs", "ire-verbs", "isc-verbs", "actions"],
-    "unit": 1
+    "tags": [
+      "verbs",
+      "ire-verbs",
+      "isc-verbs",
+      "actions"
+    ],
+    "unit": 1,
+    "pronunciation": "spa·RI·re"
   },
   {
     "id": "v082",
@@ -816,8 +1243,14 @@
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Cosa suggerisci di fare?",
-    "tags": ["verbs", "ire-verbs", "isc-verbs", "communication"],
-    "unit": 1
+    "tags": [
+      "verbs",
+      "ire-verbs",
+      "isc-verbs",
+      "communication"
+    ],
+    "unit": 1,
+    "pronunciation": "sug·ge·RI·re"
   },
   {
     "id": "v083",
@@ -826,8 +1259,13 @@
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Si veste sempre con eleganza.",
-    "tags": ["verbs", "ire-verbs", "daily-life"],
-    "unit": 1
+    "tags": [
+      "verbs",
+      "ire-verbs",
+      "daily-life"
+    ],
+    "unit": 1,
+    "pronunciation": "ves·TI·re"
   },
   {
     "id": "v084",
@@ -836,8 +1274,14 @@
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Affitta un appartamento in centro.",
-    "tags": ["verbs", "are-verbs", "daily-life", "lesson-2"],
-    "unit": 2
+    "tags": [
+      "verbs",
+      "are-verbs",
+      "daily-life",
+      "lesson-2"
+    ],
+    "unit": 2,
+    "pronunciation": "af·fit·TA·re"
   },
   {
     "id": "v085",
@@ -846,8 +1290,14 @@
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Arrivo a casa alle sei.",
-    "tags": ["verbs", "are-verbs", "movement", "lesson-2"],
-    "unit": 2
+    "tags": [
+      "verbs",
+      "are-verbs",
+      "movement",
+      "lesson-2"
+    ],
+    "unit": 2,
+    "pronunciation": "ar·ri·VA·re"
   },
   {
     "id": "v086",
@@ -856,8 +1306,14 @@
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Ti aspetto davanti al cinema.",
-    "tags": ["verbs", "are-verbs", "actions", "lesson-2"],
-    "unit": 2
+    "tags": [
+      "verbs",
+      "are-verbs",
+      "actions",
+      "lesson-2"
+    ],
+    "unit": 2,
+    "pronunciation": "a·spet·TA·re"
   },
   {
     "id": "v087",
@@ -866,8 +1322,14 @@
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Cambio idea spesso.",
-    "tags": ["verbs", "are-verbs", "actions", "lesson-2"],
-    "unit": 2
+    "tags": [
+      "verbs",
+      "are-verbs",
+      "actions",
+      "lesson-2"
+    ],
+    "unit": 2,
+    "pronunciation": "cam·BIA·re"
   },
   {
     "id": "v088",
@@ -876,8 +1338,15 @@
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Gioco a tennis ogni settimana.",
-    "tags": ["verbs", "are-verbs", "hobbies", "sport", "lesson-2"],
-    "unit": 2
+    "tags": [
+      "verbs",
+      "are-verbs",
+      "hobbies",
+      "sport",
+      "lesson-2"
+    ],
+    "unit": 2,
+    "pronunciation": "gio·CA·re"
   },
   {
     "id": "v089",
@@ -886,8 +1355,15 @@
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Suono la chitarra da tre anni.",
-    "tags": ["verbs", "are-verbs", "hobbies", "music", "lesson-2"],
-    "unit": 2
+    "tags": [
+      "verbs",
+      "are-verbs",
+      "hobbies",
+      "music",
+      "lesson-2"
+    ],
+    "unit": 2,
+    "pronunciation": "suo·NA·re"
   },
   {
     "id": "v090",
@@ -896,8 +1372,15 @@
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Nuoto in piscina tre volte a settimana.",
-    "tags": ["verbs", "are-verbs", "hobbies", "sport", "lesson-2"],
-    "unit": 2
+    "tags": [
+      "verbs",
+      "are-verbs",
+      "hobbies",
+      "sport",
+      "lesson-2"
+    ],
+    "unit": 2,
+    "pronunciation": "nuo·TA·re"
   },
   {
     "id": "v091",
@@ -906,8 +1389,14 @@
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Non risponde al telefono.",
-    "tags": ["verbs", "ere-verbs", "communication", "lesson-2"],
-    "unit": 2
+    "tags": [
+      "verbs",
+      "ere-verbs",
+      "communication",
+      "lesson-2"
+    ],
+    "unit": 2,
+    "pronunciation": "ri·SPON·de·re"
   },
   {
     "id": "v092",
@@ -916,8 +1405,14 @@
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Ritornano dal mare domenica.",
-    "tags": ["verbs", "are-verbs", "movement", "lesson-2"],
-    "unit": 2
+    "tags": [
+      "verbs",
+      "are-verbs",
+      "movement",
+      "lesson-2"
+    ],
+    "unit": 2,
+    "pronunciation": "ri·tor·NA·re"
   },
   {
     "id": "v093",
@@ -926,8 +1421,14 @@
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Sembra stanco oggi.",
-    "tags": ["verbs", "are-verbs", "descriptions", "lesson-2"],
-    "unit": 2
+    "tags": [
+      "verbs",
+      "are-verbs",
+      "descriptions",
+      "lesson-2"
+    ],
+    "unit": 2,
+    "pronunciation": "sem·BRA·re"
   },
   {
     "id": "v094",
@@ -936,8 +1437,15 @@
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Ceniamo alle otto di sera.",
-    "tags": ["verbs", "are-verbs", "food", "daily-life", "lesson-2"],
-    "unit": 2
+    "tags": [
+      "verbs",
+      "are-verbs",
+      "food",
+      "daily-life",
+      "lesson-2"
+    ],
+    "unit": 2,
+    "pronunciation": "ce·NA·re"
   },
   {
     "id": "v095",
@@ -946,8 +1454,15 @@
     "gender": null,
     "partOfSpeech": "verb",
     "example": "Dipinge paesaggi nel tempo libero.",
-    "tags": ["verbs", "ere-verbs", "hobbies", "art", "lesson-2"],
-    "unit": 2
+    "tags": [
+      "verbs",
+      "ere-verbs",
+      "hobbies",
+      "art",
+      "lesson-2"
+    ],
+    "unit": 2,
+    "pronunciation": "di·PIN·ge·re"
   },
   {
     "id": "v096",
@@ -956,8 +1471,14 @@
     "gender": "f",
     "partOfSpeech": "noun",
     "example": "Di mattina bevo sempre un caffè.",
-    "tags": ["nouns", "time", "daily-life", "lesson-3"],
-    "unit": 3
+    "tags": [
+      "nouns",
+      "time",
+      "daily-life",
+      "lesson-3"
+    ],
+    "unit": 3,
+    "pronunciation": "la mat·TI·na"
   },
   {
     "id": "v097",
@@ -966,8 +1487,14 @@
     "gender": "m",
     "partOfSpeech": "noun",
     "example": "Nel pomeriggio vado in palestra.",
-    "tags": ["nouns", "time", "daily-life", "lesson-3"],
-    "unit": 3
+    "tags": [
+      "nouns",
+      "time",
+      "daily-life",
+      "lesson-3"
+    ],
+    "unit": 3,
+    "pronunciation": "il po·me·RIG·gio"
   },
   {
     "id": "v098",
@@ -976,8 +1503,14 @@
     "gender": "f",
     "partOfSpeech": "noun",
     "example": "La sera guardiamo un film.",
-    "tags": ["nouns", "time", "daily-life", "lesson-3"],
-    "unit": 3
+    "tags": [
+      "nouns",
+      "time",
+      "daily-life",
+      "lesson-3"
+    ],
+    "unit": 3,
+    "pronunciation": "la SE·ra"
   },
   {
     "id": "v099",
@@ -986,8 +1519,14 @@
     "gender": "f",
     "partOfSpeech": "noun",
     "example": "Di notte fa freddo in inverno.",
-    "tags": ["nouns", "time", "daily-life", "lesson-3"],
-    "unit": 3
+    "tags": [
+      "nouns",
+      "time",
+      "daily-life",
+      "lesson-3"
+    ],
+    "unit": 3,
+    "pronunciation": "la NOT·te"
   },
   {
     "id": "v100",
@@ -996,8 +1535,14 @@
     "gender": "m",
     "partOfSpeech": "noun",
     "example": "Il lunedì vado in palestra.",
-    "tags": ["nouns", "time", "days", "lesson-3"],
-    "unit": 3
+    "tags": [
+      "nouns",
+      "time",
+      "days",
+      "lesson-3"
+    ],
+    "unit": 3,
+    "pronunciation": "lu·ne·DÌ"
   },
   {
     "id": "v101",
@@ -1006,8 +1551,14 @@
     "gender": "m",
     "partOfSpeech": "noun",
     "example": "Martedì ho lezione di italiano.",
-    "tags": ["nouns", "time", "days", "lesson-3"],
-    "unit": 3
+    "tags": [
+      "nouns",
+      "time",
+      "days",
+      "lesson-3"
+    ],
+    "unit": 3,
+    "pronunciation": "mar·te·DÌ"
   },
   {
     "id": "v102",
@@ -1016,8 +1567,14 @@
     "gender": "m",
     "partOfSpeech": "noun",
     "example": "Mercoledì pranzo con i colleghi.",
-    "tags": ["nouns", "time", "days", "lesson-3"],
-    "unit": 3
+    "tags": [
+      "nouns",
+      "time",
+      "days",
+      "lesson-3"
+    ],
+    "unit": 3,
+    "pronunciation": "mer·co·le·DÌ"
   },
   {
     "id": "v103",
@@ -1026,8 +1583,14 @@
     "gender": "m",
     "partOfSpeech": "noun",
     "example": "Giovedì sera usciamo.",
-    "tags": ["nouns", "time", "days", "lesson-3"],
-    "unit": 3
+    "tags": [
+      "nouns",
+      "time",
+      "days",
+      "lesson-3"
+    ],
+    "unit": 3,
+    "pronunciation": "gio·ve·DÌ"
   },
   {
     "id": "v104",
@@ -1036,8 +1599,14 @@
     "gender": "m",
     "partOfSpeech": "noun",
     "example": "Il venerdì finisco prima.",
-    "tags": ["nouns", "time", "days", "lesson-3"],
-    "unit": 3
+    "tags": [
+      "nouns",
+      "time",
+      "days",
+      "lesson-3"
+    ],
+    "unit": 3,
+    "pronunciation": "ve·ner·DÌ"
   },
   {
     "id": "v105",
@@ -1046,8 +1615,14 @@
     "gender": "m",
     "partOfSpeech": "noun",
     "example": "Sabato vado al mercato.",
-    "tags": ["nouns", "time", "days", "lesson-3"],
-    "unit": 3
+    "tags": [
+      "nouns",
+      "time",
+      "days",
+      "lesson-3"
+    ],
+    "unit": 3,
+    "pronunciation": "SA·ba·to"
   },
   {
     "id": "v106",
@@ -1056,8 +1631,14 @@
     "gender": "f",
     "partOfSpeech": "noun",
     "example": "La domenica riposo.",
-    "tags": ["nouns", "time", "days", "lesson-3"],
-    "unit": 3
+    "tags": [
+      "nouns",
+      "time",
+      "days",
+      "lesson-3"
+    ],
+    "unit": 3,
+    "pronunciation": "do·ME·ni·ca"
   },
   {
     "id": "v107",
@@ -1066,8 +1647,14 @@
     "gender": "m",
     "partOfSpeech": "noun",
     "example": "A gennaio fa molto freddo.",
-    "tags": ["nouns", "time", "months", "lesson-3"],
-    "unit": 3
+    "tags": [
+      "nouns",
+      "time",
+      "months",
+      "lesson-3"
+    ],
+    "unit": 3,
+    "pronunciation": "gen·NA·io"
   },
   {
     "id": "v108",
@@ -1076,8 +1663,14 @@
     "gender": "m",
     "partOfSpeech": "noun",
     "example": "Il mio compleanno è in febbraio.",
-    "tags": ["nouns", "time", "months", "lesson-3"],
-    "unit": 3
+    "tags": [
+      "nouns",
+      "time",
+      "months",
+      "lesson-3"
+    ],
+    "unit": 3,
+    "pronunciation": "feb·BRA·io"
   },
   {
     "id": "v109",
@@ -1086,8 +1679,14 @@
     "gender": "m",
     "partOfSpeech": "noun",
     "example": "A marzo comincia la primavera.",
-    "tags": ["nouns", "time", "months", "lesson-3"],
-    "unit": 3
+    "tags": [
+      "nouns",
+      "time",
+      "months",
+      "lesson-3"
+    ],
+    "unit": 3,
+    "pronunciation": "MAR·zo"
   },
   {
     "id": "v110",
@@ -1096,8 +1695,14 @@
     "gender": "m",
     "partOfSpeech": "noun",
     "example": "Aprile è un mese piovoso.",
-    "tags": ["nouns", "time", "months", "lesson-3"],
-    "unit": 3
+    "tags": [
+      "nouns",
+      "time",
+      "months",
+      "lesson-3"
+    ],
+    "unit": 3,
+    "pronunciation": "a·PRI·le"
   },
   {
     "id": "v111",
@@ -1106,8 +1711,14 @@
     "gender": "m",
     "partOfSpeech": "noun",
     "example": "A maggio i fiori sbocciano.",
-    "tags": ["nouns", "time", "months", "lesson-3"],
-    "unit": 3
+    "tags": [
+      "nouns",
+      "time",
+      "months",
+      "lesson-3"
+    ],
+    "unit": 3,
+    "pronunciation": "MAG·gio"
   },
   {
     "id": "v112",
@@ -1116,8 +1727,14 @@
     "gender": "m",
     "partOfSpeech": "noun",
     "example": "In giugno inizia l'estate.",
-    "tags": ["nouns", "time", "months", "lesson-3"],
-    "unit": 3
+    "tags": [
+      "nouns",
+      "time",
+      "months",
+      "lesson-3"
+    ],
+    "unit": 3,
+    "pronunciation": "GIU·gno"
   },
   {
     "id": "v113",
@@ -1126,8 +1743,14 @@
     "gender": "m",
     "partOfSpeech": "noun",
     "example": "A luglio andiamo in vacanza.",
-    "tags": ["nouns", "time", "months", "lesson-3"],
-    "unit": 3
+    "tags": [
+      "nouns",
+      "time",
+      "months",
+      "lesson-3"
+    ],
+    "unit": 3,
+    "pronunciation": "LU·glio"
   },
   {
     "id": "v114",
@@ -1136,8 +1759,14 @@
     "gender": "m",
     "partOfSpeech": "noun",
     "example": "Ad agosto fa molto caldo.",
-    "tags": ["nouns", "time", "months", "lesson-3"],
-    "unit": 3
+    "tags": [
+      "nouns",
+      "time",
+      "months",
+      "lesson-3"
+    ],
+    "unit": 3,
+    "pronunciation": "a·GOS·to"
   },
   {
     "id": "v115",
@@ -1146,8 +1775,14 @@
     "gender": "m",
     "partOfSpeech": "noun",
     "example": "A settembre ricomincia la scuola.",
-    "tags": ["nouns", "time", "months", "lesson-3"],
-    "unit": 3
+    "tags": [
+      "nouns",
+      "time",
+      "months",
+      "lesson-3"
+    ],
+    "unit": 3,
+    "pronunciation": "set·TEM·bre"
   },
   {
     "id": "v116",
@@ -1156,8 +1791,14 @@
     "gender": "m",
     "partOfSpeech": "noun",
     "example": "In ottobre le foglie cadono.",
-    "tags": ["nouns", "time", "months", "lesson-3"],
-    "unit": 3
+    "tags": [
+      "nouns",
+      "time",
+      "months",
+      "lesson-3"
+    ],
+    "unit": 3,
+    "pronunciation": "ot·TO·bre"
   },
   {
     "id": "v117",
@@ -1166,8 +1807,14 @@
     "gender": "m",
     "partOfSpeech": "noun",
     "example": "A novembre piove spesso.",
-    "tags": ["nouns", "time", "months", "lesson-3"],
-    "unit": 3
+    "tags": [
+      "nouns",
+      "time",
+      "months",
+      "lesson-3"
+    ],
+    "unit": 3,
+    "pronunciation": "no·VEM·bre"
   },
   {
     "id": "v118",
@@ -1176,8 +1823,14 @@
     "gender": "m",
     "partOfSpeech": "noun",
     "example": "A dicembre celebriamo il Natale.",
-    "tags": ["nouns", "time", "months", "lesson-3"],
-    "unit": 3
+    "tags": [
+      "nouns",
+      "time",
+      "months",
+      "lesson-3"
+    ],
+    "unit": 3,
+    "pronunciation": "di·CEM·bre"
   },
   {
     "id": "v119",
@@ -1186,8 +1839,14 @@
     "gender": "m",
     "partOfSpeech": "noun",
     "example": "D'inverno nevica in montagna.",
-    "tags": ["nouns", "time", "seasons", "lesson-3"],
-    "unit": 3
+    "tags": [
+      "nouns",
+      "time",
+      "seasons",
+      "lesson-3"
+    ],
+    "unit": 3,
+    "pronunciation": "l'in·VER·no"
   },
   {
     "id": "v120",
@@ -1196,8 +1855,14 @@
     "gender": "f",
     "partOfSpeech": "noun",
     "example": "In primavera tornano i fiori.",
-    "tags": ["nouns", "time", "seasons", "lesson-3"],
-    "unit": 3
+    "tags": [
+      "nouns",
+      "time",
+      "seasons",
+      "lesson-3"
+    ],
+    "unit": 3,
+    "pronunciation": "la pri·ma·VE·ra"
   },
   {
     "id": "v121",
@@ -1206,8 +1871,14 @@
     "gender": "f",
     "partOfSpeech": "noun",
     "example": "D'estate vado al mare.",
-    "tags": ["nouns", "time", "seasons", "lesson-3"],
-    "unit": 3
+    "tags": [
+      "nouns",
+      "time",
+      "seasons",
+      "lesson-3"
+    ],
+    "unit": 3,
+    "pronunciation": "l'es·TA·te"
   },
   {
     "id": "v122",
@@ -1216,8 +1887,14 @@
     "gender": "m",
     "partOfSpeech": "noun",
     "example": "In autunno le foglie diventano rosse.",
-    "tags": ["nouns", "time", "seasons", "lesson-3"],
-    "unit": 3
+    "tags": [
+      "nouns",
+      "time",
+      "seasons",
+      "lesson-3"
+    ],
+    "unit": 3,
+    "pronunciation": "l'au·TUN·no"
   },
   {
     "id": "v123",
@@ -1226,8 +1903,13 @@
     "gender": "m",
     "partOfSpeech": "noun",
     "example": "Che giorno è oggi?",
-    "tags": ["nouns", "time", "lesson-3"],
-    "unit": 3
+    "tags": [
+      "nouns",
+      "time",
+      "lesson-3"
+    ],
+    "unit": 3,
+    "pronunciation": "il GIOR·no"
   },
   {
     "id": "v124",
@@ -1236,8 +1918,13 @@
     "gender": "f",
     "partOfSpeech": "noun",
     "example": "Lavoro cinque giorni alla settimana.",
-    "tags": ["nouns", "time", "lesson-3"],
-    "unit": 3
+    "tags": [
+      "nouns",
+      "time",
+      "lesson-3"
+    ],
+    "unit": 3,
+    "pronunciation": "la set·ti·MA·na"
   },
   {
     "id": "v125",
@@ -1246,8 +1933,13 @@
     "gender": "m",
     "partOfSpeech": "noun",
     "example": "Il mese prossimo parto per l'Italia.",
-    "tags": ["nouns", "time", "lesson-3"],
-    "unit": 3
+    "tags": [
+      "nouns",
+      "time",
+      "lesson-3"
+    ],
+    "unit": 3,
+    "pronunciation": "il ME·se"
   },
   {
     "id": "v126",
@@ -1256,8 +1948,13 @@
     "gender": "m",
     "partOfSpeech": "noun",
     "example": "Quest'anno studio molto.",
-    "tags": ["nouns", "time", "lesson-3"],
-    "unit": 3
+    "tags": [
+      "nouns",
+      "time",
+      "lesson-3"
+    ],
+    "unit": 3,
+    "pronunciation": "l'AN·no"
   },
   {
     "id": "v127",
@@ -1266,8 +1963,13 @@
     "gender": "m",
     "partOfSpeech": "noun",
     "example": "Il libro è sul tavolo.",
-    "tags": ["nouns", "objects", "lesson-4"],
-    "unit": 4
+    "tags": [
+      "nouns",
+      "objects",
+      "lesson-4"
+    ],
+    "unit": 4,
+    "pronunciation": "il LI·bro"
   },
   {
     "id": "v128",
@@ -1276,8 +1978,14 @@
     "gender": "m",
     "partOfSpeech": "noun",
     "example": "Mangiamo al tavolo.",
-    "tags": ["nouns", "objects", "home", "lesson-4"],
-    "unit": 4
+    "tags": [
+      "nouns",
+      "objects",
+      "home",
+      "lesson-4"
+    ],
+    "unit": 4,
+    "pronunciation": "il TA·vo·lo"
   },
   {
     "id": "v129",
@@ -1286,8 +1994,13 @@
     "gender": "m",
     "partOfSpeech": "noun",
     "example": "Mio fratello abita a Torino.",
-    "tags": ["nouns", "family", "lesson-4"],
-    "unit": 4
+    "tags": [
+      "nouns",
+      "family",
+      "lesson-4"
+    ],
+    "unit": 4,
+    "pronunciation": "il fra·TEL·lo"
   },
   {
     "id": "v130",
@@ -1296,8 +2009,13 @@
     "gender": "f",
     "partOfSpeech": "noun",
     "example": "Mia sorella è medico.",
-    "tags": ["nouns", "family", "lesson-4"],
-    "unit": 4
+    "tags": [
+      "nouns",
+      "family",
+      "lesson-4"
+    ],
+    "unit": 4,
+    "pronunciation": "la so·REL·la"
   },
   {
     "id": "v131",
@@ -1306,8 +2024,13 @@
     "gender": "m",
     "partOfSpeech": "noun",
     "example": "Lo zio Marco arriva domenica.",
-    "tags": ["nouns", "family", "lesson-4"],
-    "unit": 4
+    "tags": [
+      "nouns",
+      "family",
+      "lesson-4"
+    ],
+    "unit": 4,
+    "pronunciation": "lo ZI·o"
   },
   {
     "id": "v132",
@@ -1316,8 +2039,13 @@
     "gender": "m",
     "partOfSpeech": "noun",
     "example": "Mio padre lavora in centro.",
-    "tags": ["nouns", "family", "lesson-4"],
-    "unit": 4
+    "tags": [
+      "nouns",
+      "family",
+      "lesson-4"
+    ],
+    "unit": 4,
+    "pronunciation": "il PA·dre"
   },
   {
     "id": "v133",
@@ -1326,8 +2054,13 @@
     "gender": "f",
     "partOfSpeech": "noun",
     "example": "Mia madre cucina benissimo.",
-    "tags": ["nouns", "family", "lesson-4"],
-    "unit": 4
+    "tags": [
+      "nouns",
+      "family",
+      "lesson-4"
+    ],
+    "unit": 4,
+    "pronunciation": "la MA·dre"
   },
   {
     "id": "v134",
@@ -1336,8 +2069,13 @@
     "gender": "m",
     "partOfSpeech": "noun",
     "example": "Un amico è per sempre.",
-    "tags": ["nouns", "people", "lesson-4"],
-    "unit": 4
+    "tags": [
+      "nouns",
+      "people",
+      "lesson-4"
+    ],
+    "unit": 4,
+    "pronunciation": "l'a·MI·co / l'a·MI·ca"
   },
   {
     "id": "v135",
@@ -1346,8 +2084,13 @@
     "gender": "f",
     "partOfSpeech": "noun",
     "example": "La nostra casa è grande.",
-    "tags": ["nouns", "home", "lesson-4"],
-    "unit": 4
+    "tags": [
+      "nouns",
+      "home",
+      "lesson-4"
+    ],
+    "unit": 4,
+    "pronunciation": "la CA·sa"
   },
   {
     "id": "v136",
@@ -1356,8 +2099,13 @@
     "gender": "m",
     "partOfSpeech": "noun",
     "example": "Il cane abbaia fuori.",
-    "tags": ["nouns", "animals", "lesson-4"],
-    "unit": 4
+    "tags": [
+      "nouns",
+      "animals",
+      "lesson-4"
+    ],
+    "unit": 4,
+    "pronunciation": "il CA·ne"
   },
   {
     "id": "v137",
@@ -1366,8 +2114,13 @@
     "gender": "m",
     "partOfSpeech": "noun",
     "example": "Compro i fiori per la nonna.",
-    "tags": ["nouns", "nature", "lesson-4"],
-    "unit": 4
+    "tags": [
+      "nouns",
+      "nature",
+      "lesson-4"
+    ],
+    "unit": 4,
+    "pronunciation": "il FIO·re"
   },
   {
     "id": "v138",
@@ -1376,8 +2129,14 @@
     "gender": "m",
     "partOfSpeech": "noun",
     "example": "Il ristorante apre alle dodici.",
-    "tags": ["nouns", "food", "places", "lesson-4"],
-    "unit": 4
+    "tags": [
+      "nouns",
+      "food",
+      "places",
+      "lesson-4"
+    ],
+    "unit": 4,
+    "pronunciation": "il ri·sto·RAN·te"
   },
   {
     "id": "v139",
@@ -1386,8 +2145,13 @@
     "gender": "f",
     "partOfSpeech": "noun",
     "example": "La mia macchina è rossa.",
-    "tags": ["nouns", "transport", "lesson-4"],
-    "unit": 4
+    "tags": [
+      "nouns",
+      "transport",
+      "lesson-4"
+    ],
+    "unit": 4,
+    "pronunciation": "la MAC·chi·na"
   },
   {
     "id": "v140",
@@ -1396,8 +2160,14 @@
     "gender": "f",
     "partOfSpeech": "noun",
     "example": "La stazione è vicino al centro.",
-    "tags": ["nouns", "places", "transport", "lesson-4"],
-    "unit": 4
+    "tags": [
+      "nouns",
+      "places",
+      "transport",
+      "lesson-4"
+    ],
+    "unit": 4,
+    "pronunciation": "la sta·ZIO·ne"
   },
   {
     "id": "v141",
@@ -1406,8 +2176,13 @@
     "gender": "m",
     "partOfSpeech": "adjective",
     "example": "Che bel film! / Una bella giornata.",
-    "tags": ["adjectives", "descriptions", "lesson-5"],
-    "unit": 5
+    "tags": [
+      "adjectives",
+      "descriptions",
+      "lesson-5"
+    ],
+    "unit": 5,
+    "pronunciation": "BEL·lo"
   },
   {
     "id": "v142",
@@ -1416,8 +2191,13 @@
     "gender": "m",
     "partOfSpeech": "adjective",
     "example": "Che tempo brutto oggi!",
-    "tags": ["adjectives", "descriptions", "lesson-5"],
-    "unit": 5
+    "tags": [
+      "adjectives",
+      "descriptions",
+      "lesson-5"
+    ],
+    "unit": 5,
+    "pronunciation": "BRUT·to"
   },
   {
     "id": "v143",
@@ -1426,8 +2206,13 @@
     "gender": "m",
     "partOfSpeech": "adjective",
     "example": "Questo caffè è molto buono.",
-    "tags": ["adjectives", "descriptions", "lesson-5"],
-    "unit": 5
+    "tags": [
+      "adjectives",
+      "descriptions",
+      "lesson-5"
+    ],
+    "unit": 5,
+    "pronunciation": "BUO·no"
   },
   {
     "id": "v144",
@@ -1436,8 +2221,13 @@
     "gender": "m",
     "partOfSpeech": "adjective",
     "example": "È bravissima in matematica.",
-    "tags": ["adjectives", "descriptions", "lesson-5"],
-    "unit": 5
+    "tags": [
+      "adjectives",
+      "descriptions",
+      "lesson-5"
+    ],
+    "unit": 5,
+    "pronunciation": "BRA·vo"
   },
   {
     "id": "v145",
@@ -1446,8 +2236,13 @@
     "gender": "m",
     "partOfSpeech": "adjective",
     "example": "Il professore è molto simpatico.",
-    "tags": ["adjectives", "personality", "lesson-5"],
-    "unit": 5
+    "tags": [
+      "adjectives",
+      "personality",
+      "lesson-5"
+    ],
+    "unit": 5,
+    "pronunciation": "sim·PA·ti·co"
   },
   {
     "id": "v146",
@@ -1456,8 +2251,13 @@
     "gender": "m",
     "partOfSpeech": "adjective",
     "example": "Non mi piace quel ragazzo, è antipatico.",
-    "tags": ["adjectives", "personality", "lesson-5"],
-    "unit": 5
+    "tags": [
+      "adjectives",
+      "personality",
+      "lesson-5"
+    ],
+    "unit": 5,
+    "pronunciation": "an·ti·PA·ti·co"
   },
   {
     "id": "v147",
@@ -1466,8 +2266,13 @@
     "gender": "m",
     "partOfSpeech": "adjective",
     "example": "Mio fratello è molto alto.",
-    "tags": ["adjectives", "physical", "lesson-5"],
-    "unit": 5
+    "tags": [
+      "adjectives",
+      "physical",
+      "lesson-5"
+    ],
+    "unit": 5,
+    "pronunciation": "AL·to"
   },
   {
     "id": "v148",
@@ -1476,8 +2281,13 @@
     "gender": "m",
     "partOfSpeech": "adjective",
     "example": "La sedia è troppo bassa.",
-    "tags": ["adjectives", "physical", "lesson-5"],
-    "unit": 5
+    "tags": [
+      "adjectives",
+      "physical",
+      "lesson-5"
+    ],
+    "unit": 5,
+    "pronunciation": "BAS·so"
   },
   {
     "id": "v149",
@@ -1486,8 +2296,13 @@
     "gender": null,
     "partOfSpeech": "adjective",
     "example": "Roma è una città grande.",
-    "tags": ["adjectives", "descriptions", "lesson-5"],
-    "unit": 5
+    "tags": [
+      "adjectives",
+      "descriptions",
+      "lesson-5"
+    ],
+    "unit": 5,
+    "pronunciation": "GRAN·de"
   },
   {
     "id": "v150",
@@ -1496,8 +2311,13 @@
     "gender": "m",
     "partOfSpeech": "adjective",
     "example": "Abito in un appartamento piccolo.",
-    "tags": ["adjectives", "descriptions", "lesson-5"],
-    "unit": 5
+    "tags": [
+      "adjectives",
+      "descriptions",
+      "lesson-5"
+    ],
+    "unit": 5,
+    "pronunciation": "PIC·co·lo"
   },
   {
     "id": "v151",
@@ -1506,8 +2326,13 @@
     "gender": "m",
     "partOfSpeech": "adjective",
     "example": "Ho comprato una macchina nuova.",
-    "tags": ["adjectives", "descriptions", "lesson-5"],
-    "unit": 5
+    "tags": [
+      "adjectives",
+      "descriptions",
+      "lesson-5"
+    ],
+    "unit": 5,
+    "pronunciation": "NUO·vo"
   },
   {
     "id": "v152",
@@ -1516,8 +2341,13 @@
     "gender": "m",
     "partOfSpeech": "adjective",
     "example": "Questa è una chiesa vecchia.",
-    "tags": ["adjectives", "descriptions", "lesson-5"],
-    "unit": 5
+    "tags": [
+      "adjectives",
+      "descriptions",
+      "lesson-5"
+    ],
+    "unit": 5,
+    "pronunciation": "VEC·chio"
   },
   {
     "id": "v153",
@@ -1526,8 +2356,13 @@
     "gender": null,
     "partOfSpeech": "adjective",
     "example": "È una ragazza molto intelligente.",
-    "tags": ["adjectives", "personality", "lesson-5"],
-    "unit": 5
+    "tags": [
+      "adjectives",
+      "personality",
+      "lesson-5"
+    ],
+    "unit": 5,
+    "pronunciation": "in·tel·li·GEN·te"
   },
   {
     "id": "v154",
@@ -1536,8 +2371,13 @@
     "gender": null,
     "partOfSpeech": "adjective",
     "example": "La segretaria è molto gentile.",
-    "tags": ["adjectives", "personality", "lesson-5"],
-    "unit": 5
+    "tags": [
+      "adjectives",
+      "personality",
+      "lesson-5"
+    ],
+    "unit": 5,
+    "pronunciation": "gen·TI·le"
   },
   {
     "id": "v155",
@@ -1546,8 +2386,13 @@
     "gender": null,
     "partOfSpeech": "adjective",
     "example": "Sono felice di vederti!",
-    "tags": ["adjectives", "emotions", "lesson-5"],
-    "unit": 5
+    "tags": [
+      "adjectives",
+      "emotions",
+      "lesson-5"
+    ],
+    "unit": 5,
+    "pronunciation": "fe·LI·ce"
   },
   {
     "id": "v156",
@@ -1556,8 +2401,13 @@
     "gender": null,
     "partOfSpeech": "adjective",
     "example": "Il finale del film è molto triste.",
-    "tags": ["adjectives", "emotions", "lesson-5"],
-    "unit": 5
+    "tags": [
+      "adjectives",
+      "emotions",
+      "lesson-5"
+    ],
+    "unit": 5,
+    "pronunciation": "TRIS·te"
   },
   {
     "id": "v157",
@@ -1566,8 +2416,13 @@
     "gender": null,
     "partOfSpeech": "adjective",
     "example": "La lezione di oggi è molto interessante.",
-    "tags": ["adjectives", "descriptions", "lesson-5"],
-    "unit": 5
+    "tags": [
+      "adjectives",
+      "descriptions",
+      "lesson-5"
+    ],
+    "unit": 5,
+    "pronunciation": "in·te·res·SAN·te"
   },
   {
     "id": "v158",
@@ -1576,8 +2431,13 @@
     "gender": null,
     "partOfSpeech": "adjective",
     "example": "La festa era molto divertente.",
-    "tags": ["adjectives", "descriptions", "lesson-5"],
-    "unit": 5
+    "tags": [
+      "adjectives",
+      "descriptions",
+      "lesson-5"
+    ],
+    "unit": 5,
+    "pronunciation": "di·ver·TEN·te"
   },
   {
     "id": "v159",
@@ -1586,8 +2446,13 @@
     "gender": "m",
     "partOfSpeech": "adjective",
     "example": "Porto una camicia bianca.",
-    "tags": ["adjectives", "colors", "lesson-5"],
-    "unit": 5
+    "tags": [
+      "adjectives",
+      "colors",
+      "lesson-5"
+    ],
+    "unit": 5,
+    "pronunciation": "BIAN·co"
   },
   {
     "id": "v160",
@@ -1596,8 +2461,13 @@
     "gender": "m",
     "partOfSpeech": "adjective",
     "example": "Preferisco il vino rosso.",
-    "tags": ["adjectives", "colors", "lesson-5"],
-    "unit": 5
+    "tags": [
+      "adjectives",
+      "colors",
+      "lesson-5"
+    ],
+    "unit": 5,
+    "pronunciation": "ROS·so"
   },
   {
     "id": "v161",
@@ -1606,8 +2476,13 @@
     "gender": "m",
     "partOfSpeech": "adjective",
     "example": "Il sole è giallo.",
-    "tags": ["adjectives", "colors", "lesson-5"],
-    "unit": 5
+    "tags": [
+      "adjectives",
+      "colors",
+      "lesson-5"
+    ],
+    "unit": 5,
+    "pronunciation": "GIAL·lo"
   },
   {
     "id": "v162",
@@ -1616,8 +2491,13 @@
     "gender": "m",
     "partOfSpeech": "adjective",
     "example": "Indossa sempre vestiti neri.",
-    "tags": ["adjectives", "colors", "lesson-5"],
-    "unit": 5
+    "tags": [
+      "adjectives",
+      "colors",
+      "lesson-5"
+    ],
+    "unit": 5,
+    "pronunciation": "NE·ro"
   },
   {
     "id": "v163",
@@ -1626,8 +2506,13 @@
     "gender": "m",
     "partOfSpeech": "adjective",
     "example": "Il cielo è azzurro oggi.",
-    "tags": ["adjectives", "colors", "lesson-5"],
-    "unit": 5
+    "tags": [
+      "adjectives",
+      "colors",
+      "lesson-5"
+    ],
+    "unit": 5,
+    "pronunciation": "az·ZUR·ro"
   },
   {
     "id": "v164",
@@ -1636,8 +2521,13 @@
     "gender": null,
     "partOfSpeech": "adjective",
     "example": "L'erba è verde in primavera.",
-    "tags": ["adjectives", "colors", "lesson-5"],
-    "unit": 5
+    "tags": [
+      "adjectives",
+      "colors",
+      "lesson-5"
+    ],
+    "unit": 5,
+    "pronunciation": "VER·de"
   },
   {
     "id": "v165",
@@ -1646,8 +2536,13 @@
     "gender": null,
     "partOfSpeech": "adjective",
     "example": "La zucca è arancione.",
-    "tags": ["adjectives", "colors", "lesson-5"],
-    "unit": 5
+    "tags": [
+      "adjectives",
+      "colors",
+      "lesson-5"
+    ],
+    "unit": 5,
+    "pronunciation": "a·ran·CIO·ne"
   },
   {
     "id": "v166",
@@ -1656,7 +2551,12 @@
     "gender": null,
     "partOfSpeech": "adjective",
     "example": "Ha gli occhi marroni.",
-    "tags": ["adjectives", "colors", "lesson-5"],
-    "unit": 5
+    "tags": [
+      "adjectives",
+      "colors",
+      "lesson-5"
+    ],
+    "unit": 5,
+    "pronunciation": "mar·RO·ne"
   }
 ]

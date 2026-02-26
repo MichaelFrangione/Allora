@@ -1,7 +1,6 @@
-import { grammar, getGrammarTags } from "@/lib/content";
-import GrammarBrowser from "./GrammarBrowser";
+import { grammar, conjugations } from "@/lib/content";
+import ReferenceBrowser from "./GrammarBrowser";
 
 export default function GrammarPage() {
-  const tags = getGrammarTags();
-  return <GrammarBrowser initialRules={grammar} tags={tags} />;
+  return <ReferenceBrowser rules={grammar} conjugations={conjugations} />;
 }

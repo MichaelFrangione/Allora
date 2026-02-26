@@ -100,6 +100,9 @@ export default function VocabBrowser({
                       U{getVocabUnit(item)}
                     </span>
                   </div>
+                  {item.pronunciation && (
+                    <p className="text-xs text-muted-foreground italic tracking-wide">{item.pronunciation}</p>
+                  )}
                   <p className="text-sm text-muted-foreground mt-0.5">{item.english}</p>
                   {item.example && (
                     <p className="text-xs text-muted-foreground italic mt-1">{item.example}</p>
