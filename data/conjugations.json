@@ -180,5 +180,1181 @@
       "voi": "andate",
       "loro": "vanno"
     }
+  },
+  {
+    "id": "c014",
+    "verb": "abbracciare",
+    "meaning": "to hug (regular -ARE)",
+    "tense": "presente",
+    "forms": {
+      "io": "abbraccio",
+      "tu": "abbracci",
+      "lui/lei": "abbraccia",
+      "noi": "abbracciamo",
+      "voi": "abbracciate",
+      "loro": "abbracciano"
+    }
+  },
+  {
+    "id": "c015",
+    "verb": "abitare",
+    "meaning": "to live, reside (regular -ARE)",
+    "tense": "presente",
+    "forms": {
+      "io": "abito",
+      "tu": "abiti",
+      "lui/lei": "abita",
+      "noi": "abitiamo",
+      "voi": "abitate",
+      "loro": "abitano"
+    }
+  },
+  {
+    "id": "c016",
+    "verb": "amare",
+    "meaning": "to love (regular -ARE)",
+    "tense": "presente",
+    "forms": {
+      "io": "amo",
+      "tu": "ami",
+      "lui/lei": "ama",
+      "noi": "amiamo",
+      "voi": "amate",
+      "loro": "amano"
+    }
+  },
+  {
+    "id": "c017",
+    "verb": "ascoltare",
+    "meaning": "to listen (regular -ARE)",
+    "tense": "presente",
+    "forms": {
+      "io": "ascolto",
+      "tu": "ascolti",
+      "lui/lei": "ascolta",
+      "noi": "ascoltiamo",
+      "voi": "ascoltate",
+      "loro": "ascoltano"
+    }
+  },
+  {
+    "id": "c018",
+    "verb": "assomigliare",
+    "meaning": "to resemble (regular -ARE)",
+    "tense": "presente",
+    "forms": {
+      "io": "assomiglio",
+      "tu": "assomigli",
+      "lui/lei": "assomiglia",
+      "noi": "assomigliamo",
+      "voi": "assomigliate",
+      "loro": "assomigliano"
+    }
+  },
+  {
+    "id": "c019",
+    "verb": "baciare",
+    "meaning": "to kiss (regular -ARE)",
+    "tense": "presente",
+    "forms": {
+      "io": "bacio",
+      "tu": "baci",
+      "lui/lei": "bacia",
+      "noi": "baciamo",
+      "voi": "baciate",
+      "loro": "baciano"
+    }
+  },
+  {
+    "id": "c020",
+    "verb": "ballare",
+    "meaning": "to dance (regular -ARE)",
+    "tense": "presente",
+    "forms": {
+      "io": "ballo",
+      "tu": "balli",
+      "lui/lei": "balla",
+      "noi": "balliamo",
+      "voi": "ballate",
+      "loro": "ballano"
+    }
+  },
+  {
+    "id": "c021",
+    "verb": "camminare",
+    "meaning": "to walk (regular -ARE)",
+    "tense": "presente",
+    "forms": {
+      "io": "cammino",
+      "tu": "cammini",
+      "lui/lei": "cammina",
+      "noi": "camminiamo",
+      "voi": "camminate",
+      "loro": "camminano"
+    }
+  },
+  {
+    "id": "c022",
+    "verb": "cantare",
+    "meaning": "to sing (regular -ARE)",
+    "tense": "presente",
+    "forms": {
+      "io": "canto",
+      "tu": "canti",
+      "lui/lei": "canta",
+      "noi": "cantiamo",
+      "voi": "cantate",
+      "loro": "cantano"
+    }
+  },
+  {
+    "id": "c023",
+    "verb": "cercare",
+    "meaning": "to look for (regular -ARE)",
+    "tense": "presente",
+    "forms": {
+      "io": "cerco",
+      "tu": "cerchi",
+      "lui/lei": "cerca",
+      "noi": "cerchiamo",
+      "voi": "cercate",
+      "loro": "cercano"
+    }
+  },
+  {
+    "id": "c024",
+    "verb": "chiacchierare",
+    "meaning": "to chat (regular -ARE)",
+    "tense": "presente",
+    "forms": {
+      "io": "chiacchiero",
+      "tu": "chiacchieri",
+      "lui/lei": "chiacchiera",
+      "noi": "chiacchieriamo",
+      "voi": "chiacchierate",
+      "loro": "chiacchierano"
+    }
+  },
+  {
+    "id": "c025",
+    "verb": "chiamare",
+    "meaning": "to call (regular -ARE)",
+    "tense": "presente",
+    "forms": {
+      "io": "chiamo",
+      "tu": "chiami",
+      "lui/lei": "chiama",
+      "noi": "chiamiamo",
+      "voi": "chiamate",
+      "loro": "chiamano"
+    }
+  },
+  {
+    "id": "c026",
+    "verb": "cominciare",
+    "meaning": "to begin (regular -ARE)",
+    "tense": "presente",
+    "forms": {
+      "io": "comincio",
+      "tu": "cominci",
+      "lui/lei": "comincia",
+      "noi": "cominciamo",
+      "voi": "cominciate",
+      "loro": "cominciano"
+    }
+  },
+  {
+    "id": "c027",
+    "verb": "comprare",
+    "meaning": "to buy (regular -ARE)",
+    "tense": "presente",
+    "forms": {
+      "io": "compro",
+      "tu": "compri",
+      "lui/lei": "compra",
+      "noi": "compriamo",
+      "voi": "comprate",
+      "loro": "comprano"
+    }
+  },
+  {
+    "id": "c028",
+    "verb": "costare",
+    "meaning": "to cost (regular -ARE)",
+    "tense": "presente",
+    "forms": {
+      "io": "costo",
+      "tu": "costi",
+      "lui/lei": "costa",
+      "noi": "costiamo",
+      "voi": "costate",
+      "loro": "costano"
+    }
+  },
+  {
+    "id": "c029",
+    "verb": "cucinare",
+    "meaning": "to cook (regular -ARE)",
+    "tense": "presente",
+    "forms": {
+      "io": "cucino",
+      "tu": "cucini",
+      "lui/lei": "cucina",
+      "noi": "cuciniamo",
+      "voi": "cucinate",
+      "loro": "cucinano"
+    }
+  },
+  {
+    "id": "c030",
+    "verb": "domandare",
+    "meaning": "to ask (regular -ARE)",
+    "tense": "presente",
+    "forms": {
+      "io": "domando",
+      "tu": "domandi",
+      "lui/lei": "domanda",
+      "noi": "domandiamo",
+      "voi": "domandate",
+      "loro": "domandano"
+    }
+  },
+  {
+    "id": "c031",
+    "verb": "firmare",
+    "meaning": "to sign (regular -ARE)",
+    "tense": "presente",
+    "forms": {
+      "io": "firmo",
+      "tu": "firmi",
+      "lui/lei": "firma",
+      "noi": "firmiamo",
+      "voi": "firmate",
+      "loro": "firmano"
+    }
+  },
+  {
+    "id": "c032",
+    "verb": "guardare",
+    "meaning": "to look, watch (regular -ARE)",
+    "tense": "presente",
+    "forms": {
+      "io": "guardo",
+      "tu": "guardi",
+      "lui/lei": "guarda",
+      "noi": "guardiamo",
+      "voi": "guardate",
+      "loro": "guardano"
+    }
+  },
+  {
+    "id": "c033",
+    "verb": "guidare",
+    "meaning": "to drive (regular -ARE)",
+    "tense": "presente",
+    "forms": {
+      "io": "guido",
+      "tu": "guidi",
+      "lui/lei": "guida",
+      "noi": "guidiamo",
+      "voi": "guidate",
+      "loro": "guidano"
+    }
+  },
+  {
+    "id": "c034",
+    "verb": "imparare",
+    "meaning": "to learn (regular -ARE)",
+    "tense": "presente",
+    "forms": {
+      "io": "imparo",
+      "tu": "impari",
+      "lui/lei": "impara",
+      "noi": "impariamo",
+      "voi": "imparate",
+      "loro": "imparano"
+    }
+  },
+  {
+    "id": "c035",
+    "verb": "insegnare",
+    "meaning": "to teach (regular -ARE)",
+    "tense": "presente",
+    "forms": {
+      "io": "insegno",
+      "tu": "insegni",
+      "lui/lei": "insegna",
+      "noi": "insegniamo",
+      "voi": "insegnate",
+      "loro": "insegnano"
+    }
+  },
+  {
+    "id": "c036",
+    "verb": "odiare",
+    "meaning": "to hate (regular -ARE)",
+    "tense": "presente",
+    "forms": {
+      "io": "odio",
+      "tu": "odi",
+      "lui/lei": "odia",
+      "noi": "odiamo",
+      "voi": "odiate",
+      "loro": "odiano"
+    }
+  },
+  {
+    "id": "c037",
+    "verb": "ordinare",
+    "meaning": "to order (regular -ARE)",
+    "tense": "presente",
+    "forms": {
+      "io": "ordino",
+      "tu": "ordini",
+      "lui/lei": "ordina",
+      "noi": "ordiniamo",
+      "voi": "ordinate",
+      "loro": "ordinano"
+    }
+  },
+  {
+    "id": "c038",
+    "verb": "pagare",
+    "meaning": "to pay (regular -ARE)",
+    "tense": "presente",
+    "forms": {
+      "io": "pago",
+      "tu": "paghi",
+      "lui/lei": "paga",
+      "noi": "paghiamo",
+      "voi": "pagate",
+      "loro": "pagano"
+    }
+  },
+  {
+    "id": "c039",
+    "verb": "portare",
+    "meaning": "to bring, carry (regular -ARE)",
+    "tense": "presente",
+    "forms": {
+      "io": "porto",
+      "tu": "porti",
+      "lui/lei": "porta",
+      "noi": "portiamo",
+      "voi": "portate",
+      "loro": "portano"
+    }
+  },
+  {
+    "id": "c040",
+    "verb": "pranzare",
+    "meaning": "to have lunch (regular -ARE)",
+    "tense": "presente",
+    "forms": {
+      "io": "pranzo",
+      "tu": "pranzi",
+      "lui/lei": "pranza",
+      "noi": "pranziamo",
+      "voi": "pranzate",
+      "loro": "pranzano"
+    }
+  },
+  {
+    "id": "c041",
+    "verb": "pregare",
+    "meaning": "to pray (regular -ARE)",
+    "tense": "presente",
+    "forms": {
+      "io": "prego",
+      "tu": "preghi",
+      "lui/lei": "prega",
+      "noi": "preghiamo",
+      "voi": "pregate",
+      "loro": "pregano"
+    }
+  },
+  {
+    "id": "c042",
+    "verb": "prenotare",
+    "meaning": "to book, reserve (regular -ARE)",
+    "tense": "presente",
+    "forms": {
+      "io": "prenoto",
+      "tu": "prenoti",
+      "lui/lei": "prenota",
+      "noi": "prenotiamo",
+      "voi": "prenotate",
+      "loro": "prenotano"
+    }
+  },
+  {
+    "id": "c043",
+    "verb": "preparare",
+    "meaning": "to prepare (regular -ARE)",
+    "tense": "presente",
+    "forms": {
+      "io": "preparo",
+      "tu": "prepari",
+      "lui/lei": "prepara",
+      "noi": "prepariamo",
+      "voi": "preparate",
+      "loro": "preparano"
+    }
+  },
+  {
+    "id": "c044",
+    "verb": "respirare",
+    "meaning": "to breathe (regular -ARE)",
+    "tense": "presente",
+    "forms": {
+      "io": "respiro",
+      "tu": "respiri",
+      "lui/lei": "respira",
+      "noi": "respiriamo",
+      "voi": "respirate",
+      "loro": "respirano"
+    }
+  },
+  {
+    "id": "c045",
+    "verb": "ringraziare",
+    "meaning": "to thank (regular -ARE)",
+    "tense": "presente",
+    "forms": {
+      "io": "ringrazio",
+      "tu": "ringrazi",
+      "lui/lei": "ringrazia",
+      "noi": "ringraziamo",
+      "voi": "ringraziate",
+      "loro": "ringraziano"
+    }
+  },
+  {
+    "id": "c046",
+    "verb": "sbagliare",
+    "meaning": "to make a mistake (regular -ARE)",
+    "tense": "presente",
+    "forms": {
+      "io": "sbaglio",
+      "tu": "sbagli",
+      "lui/lei": "sbaglia",
+      "noi": "sbagliamo",
+      "voi": "sbagliate",
+      "loro": "sbagliano"
+    }
+  },
+  {
+    "id": "c047",
+    "verb": "sperare",
+    "meaning": "to hope (regular -ARE)",
+    "tense": "presente",
+    "forms": {
+      "io": "spero",
+      "tu": "speri",
+      "lui/lei": "spera",
+      "noi": "speriamo",
+      "voi": "sperate",
+      "loro": "sperano"
+    }
+  },
+  {
+    "id": "c048",
+    "verb": "spiegare",
+    "meaning": "to explain (regular -ARE)",
+    "tense": "presente",
+    "forms": {
+      "io": "spiego",
+      "tu": "spieghi",
+      "lui/lei": "spiega",
+      "noi": "spieghiamo",
+      "voi": "spiegate",
+      "loro": "spiegano"
+    }
+  },
+  {
+    "id": "c049",
+    "verb": "studiare",
+    "meaning": "to study (regular -ARE)",
+    "tense": "presente",
+    "forms": {
+      "io": "studio",
+      "tu": "studi",
+      "lui/lei": "studia",
+      "noi": "studiamo",
+      "voi": "studiate",
+      "loro": "studiano"
+    }
+  },
+  {
+    "id": "c050",
+    "verb": "trovare",
+    "meaning": "to find (regular -ARE)",
+    "tense": "presente",
+    "forms": {
+      "io": "trovo",
+      "tu": "trovi",
+      "lui/lei": "trova",
+      "noi": "troviamo",
+      "voi": "trovate",
+      "loro": "trovano"
+    }
+  },
+  {
+    "id": "c051",
+    "verb": "viaggiare",
+    "meaning": "to travel (regular -ARE)",
+    "tense": "presente",
+    "forms": {
+      "io": "viaggio",
+      "tu": "viaggi",
+      "lui/lei": "viaggia",
+      "noi": "viaggiamo",
+      "voi": "viaggiate",
+      "loro": "viaggiano"
+    }
+  },
+  {
+    "id": "c052",
+    "verb": "visitare",
+    "meaning": "to visit (regular -ARE)",
+    "tense": "presente",
+    "forms": {
+      "io": "visito",
+      "tu": "visiti",
+      "lui/lei": "visita",
+      "noi": "visitiamo",
+      "voi": "visitate",
+      "loro": "visitano"
+    }
+  },
+  {
+    "id": "c053",
+    "verb": "volare",
+    "meaning": "to fly (regular -ARE)",
+    "tense": "presente",
+    "forms": {
+      "io": "volo",
+      "tu": "voli",
+      "lui/lei": "vola",
+      "noi": "voliamo",
+      "voi": "volate",
+      "loro": "volano"
+    }
+  },
+  {
+    "id": "c054",
+    "verb": "affittare",
+    "meaning": "to rent (regular -ARE)",
+    "tense": "presente",
+    "forms": {
+      "io": "affitto",
+      "tu": "affitti",
+      "lui/lei": "affitta",
+      "noi": "affittiamo",
+      "voi": "affittate",
+      "loro": "affittano"
+    }
+  },
+  {
+    "id": "c055",
+    "verb": "arrivare",
+    "meaning": "to arrive (regular -ARE)",
+    "tense": "presente",
+    "forms": {
+      "io": "arrivo",
+      "tu": "arrivi",
+      "lui/lei": "arriva",
+      "noi": "arriviamo",
+      "voi": "arrivate",
+      "loro": "arrivano"
+    }
+  },
+  {
+    "id": "c056",
+    "verb": "aspettare",
+    "meaning": "to wait for (regular -ARE)",
+    "tense": "presente",
+    "forms": {
+      "io": "aspetto",
+      "tu": "aspetti",
+      "lui/lei": "aspetta",
+      "noi": "aspettiamo",
+      "voi": "aspettate",
+      "loro": "aspettano"
+    }
+  },
+  {
+    "id": "c057",
+    "verb": "cambiare",
+    "meaning": "to change (regular -ARE)",
+    "tense": "presente",
+    "forms": {
+      "io": "cambio",
+      "tu": "cambi",
+      "lui/lei": "cambia",
+      "noi": "cambiamo",
+      "voi": "cambiate",
+      "loro": "cambiano"
+    }
+  },
+  {
+    "id": "c058",
+    "verb": "giocare",
+    "meaning": "to play (a game/sport) (regular -ARE)",
+    "tense": "presente",
+    "forms": {
+      "io": "gioco",
+      "tu": "giochi",
+      "lui/lei": "gioca",
+      "noi": "giochiamo",
+      "voi": "giocate",
+      "loro": "giocano"
+    }
+  },
+  {
+    "id": "c059",
+    "verb": "suonare",
+    "meaning": "to play (an instrument) (regular -ARE)",
+    "tense": "presente",
+    "forms": {
+      "io": "suono",
+      "tu": "suoni",
+      "lui/lei": "suona",
+      "noi": "suoniamo",
+      "voi": "suonate",
+      "loro": "suonano"
+    }
+  },
+  {
+    "id": "c060",
+    "verb": "nuotare",
+    "meaning": "to swim (regular -ARE)",
+    "tense": "presente",
+    "forms": {
+      "io": "nuoto",
+      "tu": "nuoti",
+      "lui/lei": "nuota",
+      "noi": "nuotiamo",
+      "voi": "nuotate",
+      "loro": "nuotano"
+    }
+  },
+  {
+    "id": "c061",
+    "verb": "ritornare",
+    "meaning": "to return (regular -ARE)",
+    "tense": "presente",
+    "forms": {
+      "io": "ritorno",
+      "tu": "ritorni",
+      "lui/lei": "ritorna",
+      "noi": "ritorniamo",
+      "voi": "ritornate",
+      "loro": "ritornano"
+    }
+  },
+  {
+    "id": "c062",
+    "verb": "sembrare",
+    "meaning": "to seem (regular -ARE)",
+    "tense": "presente",
+    "forms": {
+      "io": "sembro",
+      "tu": "sembri",
+      "lui/lei": "sembra",
+      "noi": "sembriamo",
+      "voi": "sembrate",
+      "loro": "sembrano"
+    }
+  },
+  {
+    "id": "c063",
+    "verb": "cenare",
+    "meaning": "to have dinner (regular -ARE)",
+    "tense": "presente",
+    "forms": {
+      "io": "ceno",
+      "tu": "ceni",
+      "lui/lei": "cena",
+      "noi": "ceniamo",
+      "voi": "cenate",
+      "loro": "cenano"
+    }
+  },
+  {
+    "id": "c064",
+    "verb": "battere",
+    "meaning": "to hit, beat (regular -ERE)",
+    "tense": "presente",
+    "forms": {
+      "io": "batto",
+      "tu": "batti",
+      "lui/lei": "batte",
+      "noi": "battiamo",
+      "voi": "battete",
+      "loro": "battono"
+    }
+  },
+  {
+    "id": "c065",
+    "verb": "cadere",
+    "meaning": "to fall (regular -ERE)",
+    "tense": "presente",
+    "forms": {
+      "io": "cado",
+      "tu": "cadi",
+      "lui/lei": "cade",
+      "noi": "cadiamo",
+      "voi": "cadete",
+      "loro": "cadono"
+    }
+  },
+  {
+    "id": "c066",
+    "verb": "conoscere",
+    "meaning": "to know (a person/place) (regular -ERE)",
+    "tense": "presente",
+    "forms": {
+      "io": "conosco",
+      "tu": "conosci",
+      "lui/lei": "conosce",
+      "noi": "conosciamo",
+      "voi": "conoscete",
+      "loro": "conoscono"
+    }
+  },
+  {
+    "id": "c067",
+    "verb": "correre",
+    "meaning": "to run (regular -ERE)",
+    "tense": "presente",
+    "forms": {
+      "io": "corro",
+      "tu": "corri",
+      "lui/lei": "corre",
+      "noi": "corriamo",
+      "voi": "correte",
+      "loro": "corrono"
+    }
+  },
+  {
+    "id": "c068",
+    "verb": "credere",
+    "meaning": "to believe (regular -ERE)",
+    "tense": "presente",
+    "forms": {
+      "io": "credo",
+      "tu": "credi",
+      "lui/lei": "crede",
+      "noi": "crediamo",
+      "voi": "credete",
+      "loro": "credono"
+    }
+  },
+  {
+    "id": "c069",
+    "verb": "decidere",
+    "meaning": "to decide (regular -ERE)",
+    "tense": "presente",
+    "forms": {
+      "io": "decido",
+      "tu": "decidi",
+      "lui/lei": "decide",
+      "noi": "decidiamo",
+      "voi": "decidete",
+      "loro": "decidono"
+    }
+  },
+  {
+    "id": "c070",
+    "verb": "descrivere",
+    "meaning": "to describe (regular -ERE)",
+    "tense": "presente",
+    "forms": {
+      "io": "descrivo",
+      "tu": "descrivi",
+      "lui/lei": "descrive",
+      "noi": "descriviamo",
+      "voi": "descrivete",
+      "loro": "descrivono"
+    }
+  },
+  {
+    "id": "c071",
+    "verb": "mettere",
+    "meaning": "to put, place (regular -ERE)",
+    "tense": "presente",
+    "forms": {
+      "io": "metto",
+      "tu": "metti",
+      "lui/lei": "mette",
+      "noi": "mettiamo",
+      "voi": "mettete",
+      "loro": "mettono"
+    }
+  },
+  {
+    "id": "c072",
+    "verb": "mordere",
+    "meaning": "to bite (regular -ERE)",
+    "tense": "presente",
+    "forms": {
+      "io": "mordo",
+      "tu": "mordi",
+      "lui/lei": "morde",
+      "noi": "mordiamo",
+      "voi": "mordete",
+      "loro": "mordono"
+    }
+  },
+  {
+    "id": "c073",
+    "verb": "offendere",
+    "meaning": "to offend (regular -ERE)",
+    "tense": "presente",
+    "forms": {
+      "io": "offendo",
+      "tu": "offendi",
+      "lui/lei": "offende",
+      "noi": "offendiamo",
+      "voi": "offendete",
+      "loro": "offendono"
+    }
+  },
+  {
+    "id": "c074",
+    "verb": "perdere",
+    "meaning": "to lose (regular -ERE)",
+    "tense": "presente",
+    "forms": {
+      "io": "perdo",
+      "tu": "perdi",
+      "lui/lei": "perde",
+      "noi": "perdiamo",
+      "voi": "perdete",
+      "loro": "perdono"
+    }
+  },
+  {
+    "id": "c075",
+    "verb": "ridere",
+    "meaning": "to laugh (regular -ERE)",
+    "tense": "presente",
+    "forms": {
+      "io": "rido",
+      "tu": "ridi",
+      "lui/lei": "ride",
+      "noi": "ridiamo",
+      "voi": "ridete",
+      "loro": "ridono"
+    }
+  },
+  {
+    "id": "c076",
+    "verb": "rompere",
+    "meaning": "to break (regular -ERE)",
+    "tense": "presente",
+    "forms": {
+      "io": "rompo",
+      "tu": "rompi",
+      "lui/lei": "rompe",
+      "noi": "rompiamo",
+      "voi": "rompete",
+      "loro": "rompono"
+    }
+  },
+  {
+    "id": "c077",
+    "verb": "scrivere",
+    "meaning": "to write (regular -ERE)",
+    "tense": "presente",
+    "forms": {
+      "io": "scrivo",
+      "tu": "scrivi",
+      "lui/lei": "scrive",
+      "noi": "scriviamo",
+      "voi": "scrivete",
+      "loro": "scrivono"
+    }
+  },
+  {
+    "id": "c078",
+    "verb": "sopravvivere",
+    "meaning": "to survive (regular -ERE)",
+    "tense": "presente",
+    "forms": {
+      "io": "sopravvivo",
+      "tu": "sopravvivi",
+      "lui/lei": "sopravvive",
+      "noi": "sopravviviamo",
+      "voi": "sopravvivete",
+      "loro": "sopravvivono"
+    }
+  },
+  {
+    "id": "c079",
+    "verb": "sorridere",
+    "meaning": "to smile (regular -ERE)",
+    "tense": "presente",
+    "forms": {
+      "io": "sorrido",
+      "tu": "sorridi",
+      "lui/lei": "sorride",
+      "noi": "sorridiamo",
+      "voi": "sorridete",
+      "loro": "sorridono"
+    }
+  },
+  {
+    "id": "c080",
+    "verb": "vivere",
+    "meaning": "to live (regular -ERE)",
+    "tense": "presente",
+    "forms": {
+      "io": "vivo",
+      "tu": "vivi",
+      "lui/lei": "vive",
+      "noi": "viviamo",
+      "voi": "vivete",
+      "loro": "vivono"
+    }
+  },
+  {
+    "id": "c081",
+    "verb": "rispondere",
+    "meaning": "to answer (regular -ERE)",
+    "tense": "presente",
+    "forms": {
+      "io": "rispondo",
+      "tu": "rispondi",
+      "lui/lei": "risponde",
+      "noi": "rispondiamo",
+      "voi": "rispondete",
+      "loro": "rispondono"
+    }
+  },
+  {
+    "id": "c082",
+    "verb": "dipingere",
+    "meaning": "to paint (regular -ERE)",
+    "tense": "presente",
+    "forms": {
+      "io": "dipingo",
+      "tu": "dipingi",
+      "lui/lei": "dipinge",
+      "noi": "dipingiamo",
+      "voi": "dipingete",
+      "loro": "dipingono"
+    }
+  },
+  {
+    "id": "c083",
+    "verb": "aprire",
+    "meaning": "to open (regular -IRE)",
+    "tense": "presente",
+    "forms": {
+      "io": "apro",
+      "tu": "apri",
+      "lui/lei": "apre",
+      "noi": "apriamo",
+      "voi": "aprite",
+      "loro": "aprono"
+    }
+  },
+  {
+    "id": "c084",
+    "verb": "bollire",
+    "meaning": "to boil (regular -IRE)",
+    "tense": "presente",
+    "forms": {
+      "io": "bollo",
+      "tu": "bolli",
+      "lui/lei": "bolle",
+      "noi": "bolliamo",
+      "voi": "bollite",
+      "loro": "bollono"
+    }
+  },
+  {
+    "id": "c085",
+    "verb": "coprire",
+    "meaning": "to cover (regular -IRE)",
+    "tense": "presente",
+    "forms": {
+      "io": "copro",
+      "tu": "copri",
+      "lui/lei": "copre",
+      "noi": "copriamo",
+      "voi": "coprite",
+      "loro": "coprono"
+    }
+  },
+  {
+    "id": "c086",
+    "verb": "mentire",
+    "meaning": "to lie (regular -IRE)",
+    "tense": "presente",
+    "forms": {
+      "io": "mento",
+      "tu": "menti",
+      "lui/lei": "mente",
+      "noi": "mentiamo",
+      "voi": "mentite",
+      "loro": "mentono"
+    }
+  },
+  {
+    "id": "c087",
+    "verb": "offrire",
+    "meaning": "to offer (regular -IRE)",
+    "tense": "presente",
+    "forms": {
+      "io": "offro",
+      "tu": "offri",
+      "lui/lei": "offre",
+      "noi": "offriamo",
+      "voi": "offrite",
+      "loro": "offrono"
+    }
+  },
+  {
+    "id": "c088",
+    "verb": "scoprire",
+    "meaning": "to discover (regular -IRE)",
+    "tense": "presente",
+    "forms": {
+      "io": "scopro",
+      "tu": "scopri",
+      "lui/lei": "scopre",
+      "noi": "scopriamo",
+      "voi": "scoprite",
+      "loro": "scoprono"
+    }
+  },
+  {
+    "id": "c089",
+    "verb": "seguire",
+    "meaning": "to follow (regular -IRE)",
+    "tense": "presente",
+    "forms": {
+      "io": "seguo",
+      "tu": "segui",
+      "lui/lei": "segue",
+      "noi": "seguiamo",
+      "voi": "seguite",
+      "loro": "seguono"
+    }
+  },
+  {
+    "id": "c090",
+    "verb": "sentire",
+    "meaning": "to hear, feel (regular -IRE)",
+    "tense": "presente",
+    "forms": {
+      "io": "sento",
+      "tu": "senti",
+      "lui/lei": "sente",
+      "noi": "sentiamo",
+      "voi": "sentite",
+      "loro": "sentono"
+    }
+  },
+  {
+    "id": "c091",
+    "verb": "servire",
+    "meaning": "to serve (regular -IRE)",
+    "tense": "presente",
+    "forms": {
+      "io": "servo",
+      "tu": "servi",
+      "lui/lei": "serve",
+      "noi": "serviamo",
+      "voi": "servite",
+      "loro": "servono"
+    }
+  },
+  {
+    "id": "c092",
+    "verb": "soffrire",
+    "meaning": "to suffer (regular -IRE)",
+    "tense": "presente",
+    "forms": {
+      "io": "soffro",
+      "tu": "soffri",
+      "lui/lei": "soffre",
+      "noi": "soffriamo",
+      "voi": "soffrite",
+      "loro": "soffrono"
+    }
+  },
+  {
+    "id": "c093",
+    "verb": "vestire",
+    "meaning": "to dress (regular -IRE)",
+    "tense": "presente",
+    "forms": {
+      "io": "vesto",
+      "tu": "vesti",
+      "lui/lei": "veste",
+      "noi": "vestiamo",
+      "voi": "vestite",
+      "loro": "vestono"
+    }
+  },
+  {
+    "id": "c094",
+    "verb": "cucire",
+    "meaning": "to sew (irregular)",
+    "tense": "presente",
+    "forms": {
+      "io": "cucio",
+      "tu": "cuci",
+      "lui/lei": "cuce",
+      "noi": "cuciamo",
+      "voi": "cucite",
+      "loro": "cuciono"
+    }
+  },
+  {
+    "id": "c095",
+    "verb": "pulire",
+    "meaning": "to clean (regular -IRE (-isc-))",
+    "tense": "presente",
+    "forms": {
+      "io": "pulisco",
+      "tu": "pulisci",
+      "lui/lei": "pulisce",
+      "noi": "puliamo",
+      "voi": "pulite",
+      "loro": "puliscono"
+    }
+  },
+  {
+    "id": "c096",
+    "verb": "sparire",
+    "meaning": "to disappear (regular -IRE (-isc-))",
+    "tense": "presente",
+    "forms": {
+      "io": "sparisco",
+      "tu": "sparisci",
+      "lui/lei": "sparisce",
+      "noi": "spariamo",
+      "voi": "sparite",
+      "loro": "spariscono"
+    }
+  },
+  {
+    "id": "c097",
+    "verb": "suggerire",
+    "meaning": "to suggest (regular -IRE (-isc-))",
+    "tense": "presente",
+    "forms": {
+      "io": "suggerisco",
+      "tu": "suggerisci",
+      "lui/lei": "suggerisce",
+      "noi": "suggeriamo",
+      "voi": "suggerite",
+      "loro": "suggeriscono"
+    }
   }
 ]

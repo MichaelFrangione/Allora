@@ -8,23 +8,6 @@ import type { Conjugation } from "@/lib/content";
 
 const PRONOUNS = ["io", "tu", "lui/lei", "noi", "voi", "loro"];
 
-// Group labels derived from meaning field keywords
-const GROUPS: { label: string; match: string }[] = [
-  { label: "Regular -ARE", match: "-ARE" },
-  { label: "Regular -ERE", match: "-ERE" },
-  { label: "Regular -IRE (type 1)", match: "type 1" },
-  { label: "Regular -IRE (type 2, -isc-)", match: "type 2" },
-  { label: "Irregular", match: "irregular" },
-];
-
-function getGroup(conj: Conjugation): string {
-  const m = conj.meaning.toLowerCase();
-  if (m.includes("type 2")) return "Regular -IRE (type 2, -isc-)";
-  if (m.includes("type 1")) return "Regular -IRE (type 1)";
-  if (m.includes("-are")) return "Regular -ARE";
-  if (m.includes("-ere")) return "Regular -ERE";
-  return "Irregular";
-}
 
 function ConjugationTable({ conj }: { conj: Conjugation }) {
   return (
@@ -67,9 +50,6 @@ export default function ConjugationReference({
       )
     : conjugations;
 
-  // When searching, show flat list; otherwise show grouped
-  const isSearching = query.length > 0;
-
   return (
     <div className="max-w-lg mx-auto px-4 py-6 space-y-4">
       {/* Header */}
@@ -97,34 +77,19 @@ export default function ConjugationReference({
       </div>
 
       {/* Results */}
-      {filtered.length === 0 ? (
+      {query.length === 0 ? (
+        <p className="text-sm text-muted-foreground text-center py-12">
+          Search for a verb to see its conjugation table.
+        </p>
+      ) : filtered.length === 0 ? (
         <p className="text-sm text-muted-foreground text-center py-8">
           No verbs found for &ldquo;{query}&rdquo;.
         </p>
-      ) : isSearching ? (
+      ) : (
         <div className="space-y-3">
           {filtered.map((c) => (
             <ConjugationTable key={c.id} conj={c} />
           ))}
-        </div>
-      ) : (
-        <div className="space-y-6">
-          {GROUPS.map((group) => {
-            const groupConjs = filtered.filter(
-              (c) => getGroup(c) === group.label
-            );
-            if (groupConjs.length === 0) return null;
-            return (
-              <div key={group.label} className="space-y-3">
-                <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">
-                  {group.label}
-                </p>
-                {groupConjs.map((c) => (
-                  <ConjugationTable key={c.id} conj={c} />
-                ))}
-              </div>
-            );
-          })}
         </div>
       )}
     </div>
