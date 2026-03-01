@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+import { ChevronRight, TableIcon } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import {
   Accordion,
@@ -196,6 +198,161 @@ function TimeSection() {
   );
 }
 
+// ── La Concordanza ────────────────────────────────────────────────────────────
+
+const E_NOUNS_MASC: [string, string][] = [
+  ["il fiore", "flower"], ["il mare", "sea"], ["il pane", "bread"],
+  ["il nome", "name"], ["il ristorante", "restaurant"],
+];
+
+const E_NOUNS_FEM: [string, string][] = [
+  ["la notte", "night"], ["la luce", "light"], ["la stazione", "station"],
+  ["la lezione", "lesson"], ["la decisione", "decision"],
+];
+
+function ConcordanzaSection() {
+  return (
+    <div className="space-y-5">
+      <p className="text-sm text-muted-foreground">
+        <strong>La concordanza</strong> means the article, noun, and adjective must all agree
+        in <strong>gender</strong> (maschile / femminile) and <strong>number</strong> (singolare / plurale).
+      </p>
+
+      {/* Articles */}
+      <div>
+        <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground mb-2">
+          Articles (Articoli)
+        </p>
+        <div className="grid grid-cols-2 gap-3">
+          {(["Maschile", "Femminile"] as const).map((gender) => (
+            <div key={gender} className="rounded-lg border overflow-hidden">
+              <div className="bg-muted px-3 py-1.5">
+                <p className="text-xs font-semibold">{gender}</p>
+              </div>
+              <table className="w-full text-sm">
+                <thead>
+                  <tr className="border-t">
+                    <th className="px-3 py-1 text-left text-xs text-muted-foreground font-normal">Sing.</th>
+                    <th className="px-3 py-1 text-left text-xs text-muted-foreground font-normal">Plur.</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {gender === "Maschile" ? (
+                    <>
+                      <tr className="border-t"><td className="px-3 py-1 font-medium">il</td><td className="px-3 py-1 font-medium">i</td></tr>
+                      <tr className="border-t"><td className="px-3 py-1 font-medium">lo</td><td className="px-3 py-1 font-medium">gli</td></tr>
+                      <tr className="border-t"><td className="px-3 py-1 font-medium">l&apos;</td><td className="px-3 py-1 font-medium">gli</td></tr>
+                    </>
+                  ) : (
+                    <>
+                      <tr className="border-t"><td className="px-3 py-1 font-medium">la</td><td className="px-3 py-1 font-medium">le</td></tr>
+                      <tr className="border-t"><td className="px-3 py-1 font-medium">l&apos;</td><td className="px-3 py-1 font-medium">le</td></tr>
+                    </>
+                  )}
+                </tbody>
+              </table>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* -O adjectives */}
+      <div>
+        <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground mb-2">
+          Adjectives ending in -O <span className="normal-case font-normal">(4 forms: -o / -a / -i / -e)</span>
+        </p>
+        <div className="rounded-lg border overflow-hidden">
+          <table className="w-full text-sm">
+            <thead>
+              <tr className="bg-muted">
+                <th className="px-3 py-1.5 text-left text-xs font-semibold w-20"></th>
+                <th className="px-3 py-1.5 text-left text-xs font-semibold">Singolare</th>
+                <th className="px-3 py-1.5 text-left text-xs font-semibold">Plurale</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr className="border-t">
+                <td className="px-3 py-1.5 text-muted-foreground text-xs">Masc.</td>
+                <td className="px-3 py-1.5 italic">il ragazzo <strong>alto</strong></td>
+                <td className="px-3 py-1.5 italic">i ragazzi <strong>alti</strong></td>
+              </tr>
+              <tr className="border-t">
+                <td className="px-3 py-1.5 text-muted-foreground text-xs">Fem.</td>
+                <td className="px-3 py-1.5 italic">la ragazza <strong>alta</strong></td>
+                <td className="px-3 py-1.5 italic">le ragazze <strong>alte</strong></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      {/* -E adjectives */}
+      <div>
+        <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground mb-2">
+          Adjectives ending in -E <span className="normal-case font-normal">(2 forms: -e sing. / -i pl.)</span>
+        </p>
+        <div className="rounded-lg border overflow-hidden">
+          <table className="w-full text-sm">
+            <thead>
+              <tr className="bg-muted">
+                <th className="px-3 py-1.5 text-left text-xs font-semibold w-20"></th>
+                <th className="px-3 py-1.5 text-left text-xs font-semibold">Singolare</th>
+                <th className="px-3 py-1.5 text-left text-xs font-semibold">Plurale</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr className="border-t">
+                <td className="px-3 py-1.5 text-muted-foreground text-xs">Masc.</td>
+                <td className="px-3 py-1.5 italic">il ragazzo <strong>intelligente</strong></td>
+                <td className="px-3 py-1.5 italic">i ragazzi <strong>intelligenti</strong></td>
+              </tr>
+              <tr className="border-t">
+                <td className="px-3 py-1.5 text-muted-foreground text-xs">Fem.</td>
+                <td className="px-3 py-1.5 italic">la ragazza <strong>intelligente</strong></td>
+                <td className="px-3 py-1.5 italic">le ragazze <strong>intelligenti</strong></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p className="text-xs text-muted-foreground mt-1.5">
+          Other examples: difficile → difficili, grande → grandi, felice → felici
+        </p>
+      </div>
+
+      {/* Nouns ending in -E */}
+      <div>
+        <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground mb-2">
+          Nouns ending in -E <span className="normal-case font-normal">(gender must be memorised — plural always -E → -I)</span>
+        </p>
+        <div className="grid grid-cols-2 gap-3">
+          <div>
+            <p className="text-xs font-semibold text-muted-foreground mb-1">Maschile</p>
+            <ul className="space-y-0.5">
+              {E_NOUNS_MASC.map(([it, en]) => (
+                <li key={it} className="text-sm">
+                  <span className="font-medium italic">{it}</span>{" "}
+                  <span className="text-muted-foreground text-xs">({en})</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div>
+            <p className="text-xs font-semibold text-muted-foreground mb-1">Femminile</p>
+            <ul className="space-y-0.5">
+              {E_NOUNS_FEM.map(([it, en]) => (
+                <li key={it} className="text-sm">
+                  <span className="font-medium italic">{it}</span>{" "}
+                  <span className="text-muted-foreground text-xs">({en})</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 // ── Main component ────────────────────────────────────────────────────────────
 
 export default function ReferenceBrowser({
@@ -210,6 +367,19 @@ export default function ReferenceBrowser({
   return (
     <div className="max-w-lg mx-auto px-4 py-6 space-y-2">
       <h1 className="text-2xl font-bold mb-4">Guide</h1>
+
+      <Link href="/grammar/conjugations">
+        <div className="flex items-center justify-between rounded-lg border px-4 py-3 hover:bg-muted/50 transition-colors mb-2">
+          <div className="flex items-center gap-3">
+            <TableIcon className="h-5 w-5 text-muted-foreground" />
+            <div>
+              <p className="text-sm font-semibold">Verb Conjugations</p>
+              <p className="text-xs text-muted-foreground">All conjugation tables — searchable</p>
+            </div>
+          </div>
+          <ChevronRight className="h-4 w-4 text-muted-foreground" />
+        </div>
+      </Link>
 
       <Accordion type="multiple" className="space-y-2">
 
@@ -230,6 +400,16 @@ export default function ReferenceBrowser({
           </AccordionTrigger>
           <AccordionContent className="pt-2 pb-4">
             <TimeSection />
+          </AccordionContent>
+        </AccordionItem>
+
+        {/* La Concordanza */}
+        <AccordionItem value="concordanza" className="border rounded-lg px-4">
+          <AccordionTrigger className="text-base font-semibold hover:no-underline py-3">
+            La Concordanza
+          </AccordionTrigger>
+          <AccordionContent className="pt-2 pb-4">
+            <ConcordanzaSection />
           </AccordionContent>
         </AccordionItem>
 

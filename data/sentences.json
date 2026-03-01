@@ -166,5 +166,29 @@
     "parts": ["I", "fiori", "sono", "belli", "e", "colorati"],
     "distractors": ["Le", "case", "è", "brutti", "o", "grandi"],
     "tags": ["present", "adjectives", "agreement", "lesson-5"]
+  },
+  {
+    "id": "s022",
+    "italian": "La lezione è molto interessante",
+    "english": "The lesson is very interesting",
+    "parts": ["La", "lezione", "è", "molto", "interessante"],
+    "distractors": ["Il", "libro", "sono", "poco", "difficile"],
+    "tags": ["present", "adjectives", "concordanza", "e-nouns", "lesson-5"]
+  },
+  {
+    "id": "s023",
+    "italian": "I ragazzi intelligenti studiano ogni giorno",
+    "english": "The intelligent boys study every day",
+    "parts": ["I", "ragazzi", "intelligenti", "studiano", "ogni", "giorno"],
+    "distractors": ["Le", "ragazze", "interessante", "lavorano", "tutto", "sera"],
+    "tags": ["present", "adjectives", "concordanza", "agreement", "lesson-5"]
+  },
+  {
+    "id": "s024",
+    "italian": "Il ristorante è grande e elegante",
+    "english": "The restaurant is large and elegant",
+    "parts": ["Il", "ristorante", "è", "grande", "e", "elegante"],
+    "distractors": ["La", "stazione", "sono", "piccolo", "o", "noioso"],
+    "tags": ["present", "adjectives", "concordanza", "e-nouns", "lesson-5"]
   }
 ]

@@ -2558,5 +2558,126 @@
     ],
     "unit": 5,
     "pronunciation": "mar·RO·ne"
+  },
+  {
+    "id": "v167",
+    "italian": "fiore",
+    "english": "flower",
+    "gender": "maschile",
+    "partOfSpeech": "noun",
+    "example": "Il fiore è bello.",
+    "tags": ["nouns", "nature", "e-nouns", "lesson-5"],
+    "unit": 5,
+    "pronunciation": "FIO·re"
+  },
+  {
+    "id": "v168",
+    "italian": "mare",
+    "english": "sea",
+    "gender": "maschile",
+    "partOfSpeech": "noun",
+    "example": "Il mare è azzurro.",
+    "tags": ["nouns", "nature", "e-nouns", "lesson-5"],
+    "unit": 5,
+    "pronunciation": "MA·re"
+  },
+  {
+    "id": "v169",
+    "italian": "pane",
+    "english": "bread",
+    "gender": "maschile",
+    "partOfSpeech": "noun",
+    "example": "Mi piace il pane fresco.",
+    "tags": ["nouns", "food", "e-nouns", "lesson-5"],
+    "unit": 5,
+    "pronunciation": "PA·ne"
+  },
+  {
+    "id": "v170",
+    "italian": "nome",
+    "english": "name",
+    "gender": "maschile",
+    "partOfSpeech": "noun",
+    "example": "Come ti chiami? Qual è il tuo nome?",
+    "tags": ["nouns", "identity", "e-nouns", "lesson-5"],
+    "unit": 5,
+    "pronunciation": "NO·me"
+  },
+  {
+    "id": "v171",
+    "italian": "ristorante",
+    "english": "restaurant",
+    "gender": "maschile",
+    "partOfSpeech": "noun",
+    "example": "Andiamo al ristorante stasera.",
+    "tags": ["nouns", "food", "places", "e-nouns", "lesson-5"],
+    "unit": 5,
+    "pronunciation": "ri·sto·RAN·te"
+  },
+  {
+    "id": "v172",
+    "italian": "notte",
+    "english": "night",
+    "gender": "femminile",
+    "partOfSpeech": "noun",
+    "example": "Buona notte!",
+    "tags": ["nouns", "time", "e-nouns", "lesson-5"],
+    "unit": 5,
+    "pronunciation": "NOT·te"
+  },
+  {
+    "id": "v173",
+    "italian": "luce",
+    "english": "light",
+    "gender": "femminile",
+    "partOfSpeech": "noun",
+    "example": "La luce del sole è bellissima.",
+    "tags": ["nouns", "nature", "e-nouns", "lesson-5"],
+    "unit": 5,
+    "pronunciation": "LU·ce"
+  },
+  {
+    "id": "v174",
+    "italian": "stazione",
+    "english": "station",
+    "gender": "femminile",
+    "partOfSpeech": "noun",
+    "example": "La stazione è vicina al centro.",
+    "tags": ["nouns", "places", "transport", "e-nouns", "lesson-5"],
+    "unit": 5,
+    "pronunciation": "sta·ZIO·ne"
+  },
+  {
+    "id": "v175",
+    "italian": "lezione",
+    "english": "lesson",
+    "gender": "femminile",
+    "partOfSpeech": "noun",
+    "example": "La lezione inizia alle nove.",
+    "tags": ["nouns", "education", "e-nouns", "lesson-5"],
+    "unit": 5,
+    "pronunciation": "le·ZIO·ne"
+  },
+  {
+    "id": "v176",
+    "italian": "decisione",
+    "english": "decision",
+    "gender": "femminile",
+    "partOfSpeech": "noun",
+    "example": "È una decisione difficile.",
+    "tags": ["nouns", "abstract", "e-nouns", "lesson-5"],
+    "unit": 5,
+    "pronunciation": "de·ci·SIO·ne"
+  },
+  {
+    "id": "v177",
+    "italian": "difficile",
+    "english": "difficult",
+    "gender": null,
+    "partOfSpeech": "adjective",
+    "example": "Questo esercizio è difficile.",
+    "tags": ["adjectives", "e-adjectives", "descriptions", "lesson-5"],
+    "unit": 5,
+    "pronunciation": "dif·FI·ci·le"
   }
 ]

@@ -310,5 +310,29 @@
     "front": "Aggettivi comuni — -E type",
     "back": "intelligente (intelligent), importante (important), interessante (interesting), gentile (kind), divertente (fun), grande (big), triste (sad), felice (happy), facile (easy), elegante (elegant), attraente (attractive)",
     "tags": ["adjectives", "vocabulary", "lesson-5"]
+  },
+  {
+    "id": "f053",
+    "front": "Cos'è la concordanza?",
+    "back": "Agreement: the article, noun, and adjective must all match in gender and number.\nEx: il ragazzo alto / la ragazza alta / i ragazzi alti / le ragazze alte",
+    "tags": ["grammar", "concordanza", "agreement", "lesson-5"]
+  },
+  {
+    "id": "f054",
+    "front": "Nouns ending in -E — gender & plural rule",
+    "back": "Nouns ending in -E can be masculine OR feminine — gender must be memorised.\nPlural always changes -E → -I.\nMaschile: il fiore → i fiori / il ristorante → i ristoranti\nFemminile: la stazione → le stazioni / la lezione → le lezioni",
+    "tags": ["grammar", "nouns", "e-nouns", "plural", "lesson-5"]
+  },
+  {
+    "id": "f055",
+    "front": "Aggettivi in -E — concordanza",
+    "back": "Adjectives ending in -E have ONE form for singular (both m. and f.) and change to -I in the plural.\nEx: intelligente (m./f. sing.) → intelligenti (m./f. pl.)\nOthers: difficile → difficili / grande → grandi / felice → felici",
+    "tags": ["grammar", "adjectives", "e-adjectives", "concordanza", "lesson-5"]
+  },
+  {
+    "id": "f056",
+    "front": "La concordanza: -E nouns — maschile o femminile?",
+    "back": "MASCHILE: il fiore, il mare, il pane, il nome, il ristorante\nFEMMINILE: la notte, la luce, la stazione, la lezione, la decisione\nThere is no rule — gender must be memorised!",
+    "tags": ["vocabulary", "nouns", "e-nouns", "concordanza", "lesson-5"]
   }
 ]

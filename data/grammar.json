@@ -188,5 +188,27 @@
       "EXCEPTIONS: la mano (f.), il problema (m.), il cinema (m.)"
     ],
     "tags": ["nouns", "gender", "plural", "grammar", "lesson-5"]
+  },
+  {
+    "id": "g016",
+    "rule": "La Concordanza (Agreement)",
+    "explanation": "In Italian, the article, noun, and adjective must all agree in gender (maschile/femminile) and number (singolare/plurale). This is called 'la concordanza'. All three elements must match — change one and the others follow.",
+    "examples": [
+      "il ragazzo alto (m. sing.) → i ragazzi alti (m. pl.)",
+      "la ragazza alta (f. sing.) → le ragazze alte (f. pl.)",
+      "il ragazzo intelligente → i ragazzi intelligenti",
+      "la ragazza intelligente → le ragazze intelligenti"
+    ],
+    "tags": ["adjectives", "nouns", "articles", "agreement", "concordanza", "lesson-5"]
+  },
+  {
+    "id": "g017",
+    "rule": "Nomi in -E: genere e plurale",
+    "explanation": "Nouns ending in -E can be masculine OR feminine — there is no rule, the gender must be memorised. The plural always changes -E → -I for both genders.",
+    "examples": [
+      "MASCHILE: il fiore → i fiori, il mare → i mari, il pane → i pani, il nome → i nomi, il ristorante → i ristoranti",
+      "FEMMINILE: la notte → le notti, la luce → le luci, la stazione → le stazioni, la lezione → le lezioni, la decisione → le decisioni"
+    ],
+    "tags": ["nouns", "e-nouns", "plural", "gender", "lesson-5"]
   }
 ]
