@@ -15,6 +15,14 @@ export async function POST(req: Request) {
     return NextResponse.json({ error: "Missing fields" }, { status: 400 });
   }
 
+  if (sessionId) {
+    const owns = await prisma.studySession.findFirst({
+      where: { id: sessionId, userId: session.user.id },
+      select: { id: true },
+    });
+    if (!owns) return NextResponse.json({ error: "Forbidden" }, { status: 403 });
+  }
+
   const attempt = await prisma.cardAttempt.create({
     data: {
       userId: session.user.id,

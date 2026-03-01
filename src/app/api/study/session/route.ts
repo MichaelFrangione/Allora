@@ -22,7 +22,7 @@ export async function POST(req: Request) {
   if (action === "end") {
     if (!sessionId) return NextResponse.json({ error: "Missing sessionId" }, { status: 400 });
     const updated = await prisma.studySession.update({
-      where: { id: sessionId },
+      where: { id: sessionId, userId: session.user.id },
       data: { endedAt: new Date() },
     });
     return NextResponse.json(updated);
