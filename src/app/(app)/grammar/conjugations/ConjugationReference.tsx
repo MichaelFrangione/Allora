@@ -4,10 +4,27 @@ import { useState } from "react";
 import { Search, ArrowLeft } from "lucide-react";
 import Link from "next/link";
 import { Input } from "@/components/ui/input";
+import { cn } from "@/lib/utils";
 import type { Conjugation } from "@/lib/content";
 
 const PRONOUNS = ["io", "tu", "lui/lei", "noi", "voi", "loro"];
 
+const VERB_TYPES = [
+  { label: "All", value: "" },
+  { label: "-ARE", value: "-ARE" },
+  { label: "-ERE", value: "-ERE" },
+  { label: "-IRE", value: "-IRE" },
+  { label: "Irregular", value: "irregular" },
+];
+
+function getVerbType(meaning: string): string {
+  const m = meaning.toLowerCase();
+  if (m.includes("irregular")) return "irregular";
+  if (m.includes("-are")) return "-ARE";
+  if (m.includes("-ere")) return "-ERE";
+  if (m.includes("-ire")) return "-IRE";
+  return "";
+}
 
 function ConjugationTable({ conj }: { conj: Conjugation }) {
   return (
@@ -38,17 +55,20 @@ export default function ConjugationReference({
   conjugations: Conjugation[];
 }) {
   const [query, setQuery] = useState("");
+  const [activeType, setActiveType] = useState("");
 
-  const filtered = query
-    ? conjugations.filter(
-        (c) =>
-          c.verb.toLowerCase().includes(query.toLowerCase()) ||
-          c.meaning.toLowerCase().includes(query.toLowerCase()) ||
-          Object.values(c.forms).some((f) =>
-            f.toLowerCase().includes(query.toLowerCase())
-          )
-      )
-    : conjugations;
+  const filtered = conjugations.filter((c) => {
+    const matchesType = !activeType || getVerbType(c.meaning) === activeType;
+    const q = query.toLowerCase();
+    const matchesQuery =
+      !q ||
+      c.verb.toLowerCase().includes(q) ||
+      c.meaning.toLowerCase().includes(q) ||
+      Object.values(c.forms).some((f) => f.toLowerCase().includes(q));
+    return matchesType && matchesQuery;
+  });
+
+  const isEmpty = query.length === 0 && !activeType;
 
   return (
     <div className="max-w-lg mx-auto px-4 py-6 space-y-4">
@@ -76,14 +96,32 @@ export default function ConjugationReference({
         />
       </div>
 
+      {/* Type chips */}
+      <div className="flex flex-wrap gap-2">
+        {VERB_TYPES.map(({ label, value }) => (
+          <button
+            key={value}
+            onClick={() => setActiveType(activeType === value ? "" : value)}
+            className={cn(
+              "text-xs px-3 py-1 rounded-full border transition-colors",
+              activeType === value
+                ? "bg-primary text-primary-foreground border-primary"
+                : "border-border hover:bg-accent"
+            )}
+          >
+            {label}
+          </button>
+        ))}
+      </div>
+
       {/* Results */}
-      {query.length === 0 ? (
+      {isEmpty ? (
         <p className="text-sm text-muted-foreground text-center py-12">
-          Search for a verb to see its conjugation table.
+          Search or select a verb type to browse conjugations.
         </p>
       ) : filtered.length === 0 ? (
         <p className="text-sm text-muted-foreground text-center py-8">
-          No verbs found for &ldquo;{query}&rdquo;.
+          No verbs found.
         </p>
       ) : (
         <div className="space-y-3">

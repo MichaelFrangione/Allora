@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import { Input } from "@/components/ui/input";
-import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import UnitSelector from "@/components/UnitSelector";
 import { getVocabUnit } from "@/lib/content";
@@ -15,26 +14,31 @@ const POS_COLORS: Record<string, string> = {
   adverb: "bg-orange-100 text-orange-800 dark:bg-orange-900 dark:text-orange-200",
 };
 
+const POS_CHIPS = [
+  { label: "All", value: "" },
+  { label: "Nouns", value: "noun" },
+  { label: "Verbs", value: "verb" },
+  { label: "Adjectives", value: "adjective" },
+];
+
 export default function VocabBrowser({
   initialItems,
-  tags,
 }: {
   initialItems: VocabItem[];
-  tags: string[];
 }) {
   const [query, setQuery] = useState("");
-  const [activeTag, setActiveTag] = useState("");
+  const [activePos, setActivePos] = useState("");
   const [unit, setUnit] = useState<number | undefined>(undefined);
 
   const filtered = initialItems.filter((v) => {
     const matchesUnit = !unit || getVocabUnit(v) === unit;
-    const matchesTag = !activeTag || v.tags.includes(activeTag);
+    const matchesPos = !activePos || v.partOfSpeech === activePos;
     const q = query.toLowerCase();
     const matchesQuery =
       !q ||
       v.italian.toLowerCase().includes(q) ||
       v.english.toLowerCase().includes(q);
-    return matchesUnit && matchesTag && matchesQuery;
+    return matchesUnit && matchesPos && matchesQuery;
   });
 
   return (
@@ -51,27 +55,17 @@ export default function VocabBrowser({
       />
 
       <div className="flex flex-wrap gap-2">
-        <button
-          onClick={() => setActiveTag("")}
-          className={`text-xs px-3 py-1 rounded-full border transition-colors ${
-            !activeTag
-              ? "bg-primary text-primary-foreground border-primary"
-              : "border-border hover:bg-accent"
-          }`}
-        >
-          All
-        </button>
-        {tags.map((tag) => (
+        {POS_CHIPS.map(({ label, value }) => (
           <button
-            key={tag}
-            onClick={() => setActiveTag(activeTag === tag ? "" : tag)}
+            key={value}
+            onClick={() => setActivePos(activePos === value ? "" : value)}
             className={`text-xs px-3 py-1 rounded-full border transition-colors ${
-              activeTag === tag
+              activePos === value
                 ? "bg-primary text-primary-foreground border-primary"
                 : "border-border hover:bg-accent"
             }`}
           >
-            {tag}
+            {label}
           </button>
         ))}
       </div>
@@ -107,13 +101,6 @@ export default function VocabBrowser({
                   {item.example && (
                     <p className="text-xs text-muted-foreground italic mt-1">{item.example}</p>
                   )}
-                </div>
-                <div className="flex flex-wrap gap-1 justify-end">
-                  {item.tags.slice(0, 3).map((t) => (
-                    <Badge key={t} variant="secondary" className="text-[10px]">
-                      {t}
-                    </Badge>
-                  ))}
                 </div>
               </div>
             </CardContent>
