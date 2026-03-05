@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -90,6 +90,17 @@ const CHEAT_SHEETS: Record<string, { title: string; rows: { pronoun: string; end
   },
 };
 
+const TYPE_LABELS: Record<string, string> = {
+  all: "All",
+  ARE: "-ARE",
+  ERE: "-ERE",
+  IRE: "-IRE",
+  "IRE-ISC": "-ISC",
+  irregular: "Irregular",
+};
+const TYPE_FILTER_OPTIONS = ["all", "ARE", "ERE", "IRE", "IRE-ISC", "irregular"] as const;
+type VerbTypeFilter = typeof TYPE_FILTER_OPTIONS[number];
+
 type DrillMode = "pick" | "random";
 
 type RandomCard = { conj: Conjugation; pronoun: string };
@@ -135,7 +146,24 @@ export default function ConjugationDrill({
   const [selectedVerb, setSelectedVerb] = useState(verbs[0] ?? "");
   const [selectedTense, setSelectedTense] = useState(tenses[0] ?? "");
   const [limit, setLimit] = useState<number | null>(30);
+  const [verbTypeFilter, setVerbTypeFilter] = useState<VerbTypeFilter>("all");
+  const [pickTypeFilter, setPickTypeFilter] = useState<VerbTypeFilter>("all");
   const [started, setStarted] = useState(false);
+
+  // Map each verb to its type
+  const verbTypeMap = useMemo(() => {
+    const map: Record<string, string> = {};
+    for (const v of verbs) {
+      const conj = conjugations.find((c) => c.verb === v);
+      if (conj) map[v] = getVerbType(conj);
+    }
+    return map;
+  }, [verbs, conjugations]);
+
+  // Verbs filtered by pick type chip
+  const filteredPickVerbs = useMemo(() => {
+    return pickTypeFilter === "all" ? verbs : verbs.filter((v) => verbTypeMap[v] === pickTypeFilter);
+  }, [pickTypeFilter, verbs, verbTypeMap]);
 
   // Pick mode state
   const [pronounList, setPronounList] = useState<string[]>([]);
@@ -189,7 +217,10 @@ export default function ConjugationDrill({
   }
 
   function beginRandomDrill(filterItems?: RandomCard[]) {
-    const deck = filterItems ?? buildRandomDeck(conjugations, limit, new Set(weakIds));
+    const filteredConjs = verbTypeFilter === "all"
+      ? conjugations
+      : conjugations.filter((c) => getVerbType(c) === verbTypeFilter);
+    const deck = filterItems ?? buildRandomDeck(filteredConjs, limit, new Set(weakIds));
     setRandomDeck(deck);
     setRandomIndex(0);
     setAnswer("");
@@ -277,56 +308,108 @@ export default function ConjugationDrill({
         </div>
 
         {drillMode === "pick" ? (
-          <div className="grid grid-cols-2 gap-3">
-            <div className="space-y-1">
-              <Label className="text-xs">Verb</Label>
-              <Select value={selectedVerb} onValueChange={setSelectedVerb}>
-                <SelectTrigger>
-                  <SelectValue placeholder="Select verb" />
-                </SelectTrigger>
-                <SelectContent>
-                  {verbs.map((v) => (
-                    <SelectItem key={v} value={v}>{v}</SelectItem>
-                  ))}
-                </SelectContent>
-              </Select>
+          <div className="space-y-3">
+            <div>
+              <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wide mb-2">Verb type</p>
+              <div className="flex flex-wrap gap-2">
+                {TYPE_FILTER_OPTIONS.map((t) => (
+                  <button
+                    key={t}
+                    onClick={() => {
+                      setPickTypeFilter(t);
+                      // reset selected verb to first in new filtered list
+                      const next = t === "all" ? verbs : verbs.filter((v) => verbTypeMap[v] === t);
+                      if (next.length > 0 && !next.includes(selectedVerb)) setSelectedVerb(next[0]);
+                    }}
+                    className={cn(
+                      "px-3 py-1.5 rounded-full text-sm font-medium transition-colors",
+                      pickTypeFilter === t
+                        ? "bg-primary text-primary-foreground"
+                        : "bg-muted text-muted-foreground hover:bg-muted/80"
+                    )}
+                  >
+                    {TYPE_LABELS[t]}
+                  </button>
+                ))}
+              </div>
             </div>
-            <div className="space-y-1">
-              <Label className="text-xs">Tense</Label>
-              <Select value={selectedTense} onValueChange={setSelectedTense}>
-                <SelectTrigger>
-                  <SelectValue placeholder="Select tense" />
-                </SelectTrigger>
-                <SelectContent>
-                  {tenses.map((t) => (
-                    <SelectItem key={t} value={t}>{t}</SelectItem>
-                  ))}
-                </SelectContent>
-              </Select>
+            <div className="grid grid-cols-2 gap-3">
+              <div className="space-y-1">
+                <Label className="text-xs">Verb</Label>
+                <Select value={selectedVerb} onValueChange={setSelectedVerb}>
+                  <SelectTrigger>
+                    <SelectValue>{selectedVerb || "Select verb"}</SelectValue>
+                  </SelectTrigger>
+                  <SelectContent>
+                    {filteredPickVerbs.map((v) => (
+                      <SelectItem key={v} value={v}>
+                        <span className="flex justify-between gap-6 w-full">
+                          <span>{v}</span>
+                          <span className="text-muted-foreground text-xs">{TYPE_LABELS[verbTypeMap[v]] ?? ""}</span>
+                        </span>
+                      </SelectItem>
+                    ))}
+                  </SelectContent>
+                </Select>
+              </div>
+              <div className="space-y-1">
+                <Label className="text-xs">Tense</Label>
+                <Select value={selectedTense} onValueChange={setSelectedTense}>
+                  <SelectTrigger>
+                    <SelectValue placeholder="Select tense" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    {tenses.map((t) => (
+                      <SelectItem key={t} value={t}>{t}</SelectItem>
+                    ))}
+                  </SelectContent>
+                </Select>
+              </div>
             </div>
           </div>
         ) : (
-          <div>
-            <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wide mb-2">Questions per session</p>
-            <div className="flex flex-wrap gap-2">
-              {LIMIT_OPTIONS.map((l) => (
-                <button
-                  key={l ?? "all"}
-                  onClick={() => setLimit(l)}
-                  className={cn(
-                    "px-3 py-1.5 rounded-full text-sm font-medium transition-colors",
-                    limit === l
-                      ? "bg-primary text-primary-foreground"
-                      : "bg-muted text-muted-foreground hover:bg-muted/80"
-                  )}
-                >
-                  {l ?? "All"}
-                </button>
-              ))}
+          <div className="space-y-4">
+            <div>
+              <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wide mb-2">Verb type</p>
+              <div className="flex flex-wrap gap-2">
+                {TYPE_FILTER_OPTIONS.map((t) => (
+                  <button
+                    key={t}
+                    onClick={() => setVerbTypeFilter(t)}
+                    className={cn(
+                      "px-3 py-1.5 rounded-full text-sm font-medium transition-colors",
+                      verbTypeFilter === t
+                        ? "bg-primary text-primary-foreground"
+                        : "bg-muted text-muted-foreground hover:bg-muted/80"
+                    )}
+                  >
+                    {TYPE_LABELS[t]}
+                  </button>
+                ))}
+              </div>
             </div>
-            <p className="text-xs text-muted-foreground mt-2">
-              Any verb · any form · randomized
-            </p>
+            <div>
+              <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wide mb-2">Questions per session</p>
+              <div className="flex flex-wrap gap-2">
+                {LIMIT_OPTIONS.map((l) => (
+                  <button
+                    key={l ?? "all"}
+                    onClick={() => setLimit(l)}
+                    className={cn(
+                      "px-3 py-1.5 rounded-full text-sm font-medium transition-colors",
+                      limit === l
+                        ? "bg-primary text-primary-foreground"
+                        : "bg-muted text-muted-foreground hover:bg-muted/80"
+                    )}
+                  >
+                    {l ?? "All"}
+                  </button>
+                ))}
+              </div>
+              <p className="text-xs text-muted-foreground mt-2">
+                Any form · randomized
+              </p>
+            </div>
           </div>
         )}
 
@@ -342,7 +425,10 @@ export default function ConjugationDrill({
           )
         ) : (
           <Button className="w-full h-12" onClick={() => beginRandomDrill()}>
-            Start · {limit !== null ? limit : conjugations.length * PRONOUNS.length} questions
+            {(() => {
+              const count = verbTypeFilter === "all" ? conjugations.length : conjugations.filter((c) => getVerbType(c) === verbTypeFilter).length;
+              return `Start · ${limit !== null ? limit : count * PRONOUNS.length} questions`;
+            })()}
           </Button>
         )}
       </div>
@@ -436,7 +522,6 @@ export default function ConjugationDrill({
                   <tr className="border-b">
                     <th className="text-left pb-2 text-muted-foreground font-medium">Pronoun</th>
                     <th className="text-left pb-2 text-muted-foreground font-medium">Ending</th>
-                    <th className="text-left pb-2 text-muted-foreground font-medium">Example</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -444,7 +529,6 @@ export default function ConjugationDrill({
                     <tr key={i} className="border-b last:border-0">
                       <td className="py-2 font-medium">{row.pronoun}</td>
                       <td className="py-2 font-mono text-primary">{row.ending}</td>
-                      <td className="py-2 text-muted-foreground">{row.example}</td>
                     </tr>
                   ))}
                 </tbody>
