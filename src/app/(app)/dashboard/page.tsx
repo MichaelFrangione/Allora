@@ -4,6 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
 import Link from "next/link";
+import BoostToggle from "@/components/BoostToggle";
 
 const studyModes = [
   { href: "/study/flashcards", label: "Flip Cards", emoji: "🃏", desc: "Both directions" },
@@ -141,6 +142,13 @@ export default async function DashboardPage() {
           </CardContent>
         </Card>
       )}
+
+      <div>
+        <h2 className="text-sm font-semibold text-muted-foreground uppercase tracking-wide mb-3">
+          Preferences
+        </h2>
+        <BoostToggle />
+      </div>
     </div>
   );
 }
