@@ -7,6 +7,7 @@ import UnitSelector from "@/components/UnitSelector";
 import { getVocabUnit } from "@/lib/content";
 import type { VocabItem } from "@/lib/content";
 import { cn } from "@/lib/utils";
+import { getBoostEnabled } from "@/components/BoostToggle";
 
 const LIMIT_OPTIONS = [10, 20, 30, 50, null] as const;
 
@@ -19,7 +20,7 @@ function shuffle<T>(arr: T[]): T[] {
   return a;
 }
 
-export default function PronunciationDrill({ items }: { items: VocabItem[] }) {
+export default function PronunciationDrill({ items, weakIds = [] }: { items: VocabItem[]; weakIds?: string[] }) {
   const [unit, setUnit] = useState<number | undefined>(undefined);
   const [limit, setLimit] = useState<number | null>(30);
   const [started, setStarted] = useState(false);
@@ -34,11 +35,21 @@ export default function PronunciationDrill({ items }: { items: VocabItem[] }) {
   const activeItems = unit ? items.filter((v) => getVocabUnit(v) === unit) : items;
 
   function beginDrill(filterIds?: string[]) {
-    let pool = filterIds
-      ? items.filter((v) => filterIds.includes(v.id))
-      : (unit ? items.filter((v) => getVocabUnit(v) === unit) : [...items]);
-    pool = shuffle(pool);
-    if (limit !== null && !filterIds) pool = pool.slice(0, limit);
+    let pool: VocabItem[];
+    if (filterIds) {
+      pool = shuffle(items.filter((v) => filterIds.includes(v.id)));
+    } else {
+      const active = unit ? items.filter((v) => getVocabUnit(v) === unit) : items;
+      const weakSet = new Set(weakIds);
+      const boostEnabled = getBoostEnabled();
+      const weighted: VocabItem[] = [];
+      for (const item of active) {
+        const copies = boostEnabled && weakSet.has(item.id) ? 3 : 1;
+        for (let i = 0; i < copies; i++) weighted.push(item);
+      }
+      pool = shuffle(weighted);
+      if (limit !== null) pool = pool.slice(0, limit);
+    }
     setDeck(pool);
     setIndex(0);
     setFlipped(false);

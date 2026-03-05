@@ -8,6 +8,7 @@ import UnitSelector from "@/components/UnitSelector";
 import { getVocabUnit } from "@/lib/content";
 import type { VocabItem } from "@/lib/content";
 import { cn } from "@/lib/utils";
+import { getBoostEnabled } from "@/components/BoostToggle";
 
 const LIMIT_OPTIONS = [10, 20, 30, 50, null] as const;
 
@@ -43,8 +44,6 @@ function buildDeck(items: VocabItem[], weakIds: Set<string>, limit: number | nul
   return shuffled;
 }
 
-const BOOST_KEY = "flashcard_boost_enabled";
-
 export default function FlashcardSession({
   vocab,
   weakIds = [],
@@ -55,11 +54,6 @@ export default function FlashcardSession({
   const weakSet = new Set(weakIds);
   const [unit, setUnit] = useState<number | undefined>(undefined);
   const [limit, setLimit] = useState<number | null>(30);
-  const [boostEnabled, setBoostEnabled] = useState(() => {
-    if (typeof window === "undefined") return true;
-    const stored = localStorage.getItem(BOOST_KEY);
-    return stored === null ? true : stored === "true";
-  });
   const [started, setStarted] = useState(false);
   const [deck, setDeck] = useState<FlipCard[]>([]);
   const [index, setIndex] = useState(0);
@@ -76,17 +70,9 @@ export default function FlashcardSession({
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  function toggleBoost() {
-    setBoostEnabled((prev) => {
-      const next = !prev;
-      localStorage.setItem(BOOST_KEY, String(next));
-      return next;
-    });
-  }
-
   function beginDrill(filterIds?: string[]) {
     const active = unit ? vocab.filter((v) => getVocabUnit(v) === unit) : vocab;
-    const effectiveWeakSet = boostEnabled ? weakSet : new Set<string>();
+    const effectiveWeakSet = getBoostEnabled() ? weakSet : new Set<string>();
     let cards: FlipCard[];
     if (filterIds) {
       // Retry missed — use exact ids, no limit, no weighting
@@ -136,37 +122,10 @@ export default function FlashcardSession({
       limit !== null ? limit : activeItems.length * 2,
       activeItems.length * 2
     );
-    const weakCount = activeItems.filter((v) => weakSet.has(v.id)).length;
     return (
       <div className="max-w-lg mx-auto px-4 py-6 space-y-6">
         <h1 className="text-2xl font-bold">Vocab Flip Cards</h1>
         <UnitSelector value={unit} onChange={setUnit} />
-        {weakCount > 0 && (
-          <div className="flex items-center justify-between rounded-xl border px-4 py-3">
-            <div>
-              <p className="text-sm font-medium">Boost weak items</p>
-              <p className="text-xs text-muted-foreground">
-                {weakCount} item{weakCount !== 1 ? "s" : ""} below 70% — show more often
-              </p>
-            </div>
-            <button
-              onClick={toggleBoost}
-              className={cn(
-                "relative inline-flex h-6 w-11 shrink-0 rounded-full border-2 border-transparent transition-colors focus:outline-none",
-                boostEnabled ? "bg-primary" : "bg-muted"
-              )}
-              role="switch"
-              aria-checked={boostEnabled}
-            >
-              <span
-                className={cn(
-                  "pointer-events-none inline-block h-5 w-5 rounded-full bg-white shadow-lg transition-transform",
-                  boostEnabled ? "translate-x-5" : "translate-x-0"
-                )}
-              />
-            </button>
-          </div>
-        )}
         <div>
           <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wide mb-2">Cards per session</p>
           <div className="flex flex-wrap gap-2">

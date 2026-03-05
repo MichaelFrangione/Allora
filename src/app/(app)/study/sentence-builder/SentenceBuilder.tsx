@@ -8,6 +8,7 @@ import UnitSelector from "@/components/UnitSelector";
 import { getSentenceUnit } from "@/lib/content";
 import type { SentenceExercise } from "@/lib/content";
 import { cn } from "@/lib/utils";
+import { getBoostEnabled } from "@/components/BoostToggle";
 
 const LIMIT_OPTIONS = [10, 20, 30, 50, null] as const;
 
@@ -22,8 +23,10 @@ function shuffle<T>(arr: T[]): T[] {
 
 export default function SentenceBuilder({
   exercises,
+  weakIds = [],
 }: {
   exercises: SentenceExercise[];
+  weakIds?: string[];
 }) {
   const [unit, setUnit] = useState<number | undefined>(undefined);
   const [limit, setLimit] = useState<number | null>(30);
@@ -55,12 +58,22 @@ export default function SentenceBuilder({
 
   function beginDrill(filterIds?: string[]) {
     let active = unit ? exercises.filter((e) => getSentenceUnit(e) === unit) : exercises;
+    let shuffled: SentenceExercise[];
     if (filterIds) {
       const filtered = active.filter((e) => filterIds.includes(e.id));
       if (filtered.length > 0) active = filtered;
+      shuffled = shuffle(active);
+    } else {
+      const weakSet = new Set(weakIds);
+      const boostEnabled = getBoostEnabled();
+      const pool: SentenceExercise[] = [];
+      for (const ex of active) {
+        const copies = boostEnabled && weakSet.has(ex.id) ? 3 : 1;
+        for (let i = 0; i < copies; i++) pool.push(ex);
+      }
+      shuffled = shuffle(pool);
+      if (limit !== null) shuffled = shuffled.slice(0, limit);
     }
-    let shuffled = shuffle(active);
-    if (limit !== null && !filterIds) shuffled = shuffled.slice(0, limit);
     setDeck(shuffled);
     setIndex(0);
     setScore({ correct: 0, incorrect: 0 });

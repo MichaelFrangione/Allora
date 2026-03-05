@@ -10,6 +10,7 @@ import { getVocabDistractors, getVocabUnit } from "@/lib/content";
 import UnitSelector from "@/components/UnitSelector";
 import type { VocabItem } from "@/lib/content";
 import { cn } from "@/lib/utils";
+import { getBoostEnabled } from "@/components/BoostToggle";
 
 const LIMIT_OPTIONS = [10, 20, 30, 50, null] as const;
 
@@ -34,7 +35,7 @@ function buildQuestion(item: VocabItem): Question {
   return { item, options, correct: item.english };
 }
 
-export default function VocabQuiz({ items }: { items: VocabItem[] }) {
+export default function VocabQuiz({ items, weakIds = [] }: { items: VocabItem[]; weakIds?: string[] }) {
   const [unit, setUnit] = useState<number | undefined>(undefined);
   const [limit, setLimit] = useState<number | null>(30);
   const [started, setStarted] = useState(false);
@@ -59,10 +60,19 @@ export default function VocabQuiz({ items }: { items: VocabItem[] }) {
     if (filterIds) {
       const filtered = active.filter((v) => filterIds.includes(v.id));
       if (filtered.length > 0) active = filtered;
+      setQuestions(shuffle(active).map((item) => buildQuestion(item)));
+    } else {
+      const weakSet = new Set(weakIds);
+      const boostEnabled = getBoostEnabled();
+      const pool: VocabItem[] = [];
+      for (const item of active) {
+        const copies = boostEnabled && weakSet.has(item.id) ? 3 : 1;
+        for (let i = 0; i < copies; i++) pool.push(item);
+      }
+      let shuffled = shuffle(pool);
+      if (limit !== null) shuffled = shuffled.slice(0, limit);
+      setQuestions(shuffled.map((item) => buildQuestion(item)));
     }
-    let shuffled = shuffle(active);
-    if (limit !== null && !filterIds) shuffled = shuffled.slice(0, limit);
-    setQuestions(shuffled.map((item) => buildQuestion(item)));
     setIndex(0);
     setSelected(null);
     setSubmitted(false);

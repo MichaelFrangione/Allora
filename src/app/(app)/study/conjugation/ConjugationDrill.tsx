@@ -10,6 +10,7 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from 
 import { useStudySession } from "@/lib/useStudySession";
 import type { Conjugation } from "@/lib/content";
 import { cn } from "@/lib/utils";
+import { getBoostEnabled } from "@/components/BoostToggle";
 
 const PRONOUNS = ["io", "tu", "lui/lei", "noi", "voi", "loro"];
 const IRREGULAR = ["essere","avere","fare","andare","stare","venire","dire","potere","volere","sapere"];
@@ -101,11 +102,15 @@ function shuffle<T>(arr: T[]): T[] {
   return a;
 }
 
-function buildRandomDeck(conjugations: Conjugation[], count: number | null): RandomCard[] {
+function buildRandomDeck(conjugations: Conjugation[], count: number | null, weakIds: Set<string>): RandomCard[] {
   const pairs: RandomCard[] = [];
+  const boostEnabled = getBoostEnabled();
   for (const conj of conjugations) {
-    for (const pronoun of PRONOUNS) {
-      pairs.push({ conj, pronoun });
+    const copies = boostEnabled && weakIds.has(conj.id) ? 3 : 1;
+    for (let i = 0; i < copies; i++) {
+      for (const pronoun of PRONOUNS) {
+        pairs.push({ conj, pronoun });
+      }
     }
   }
   const shuffled = shuffle(pairs);
@@ -116,10 +121,12 @@ export default function ConjugationDrill({
   conjugations,
   verbs,
   tenses,
+  weakIds = [],
 }: {
   conjugations: Conjugation[];
   verbs: string[];
   tenses: string[];
+  weakIds?: string[];
 }) {
   const [drillMode, setDrillMode] = useState<DrillMode>("pick");
   const [selectedVerb, setSelectedVerb] = useState(verbs[0] ?? "");
@@ -170,7 +177,7 @@ export default function ConjugationDrill({
   }
 
   function beginRandomDrill(filterItems?: RandomCard[]) {
-    const deck = filterItems ?? buildRandomDeck(conjugations, limit);
+    const deck = filterItems ?? buildRandomDeck(conjugations, limit, new Set(weakIds));
     setRandomDeck(deck);
     setRandomIndex(0);
     setAnswer("");

@@ -7,6 +7,7 @@ import { Label } from "@/components/ui/label";
 import { useStudySession } from "@/lib/useStudySession";
 import type { ConcordanzaQuestion } from "@/lib/content";
 import { cn } from "@/lib/utils";
+import { getBoostEnabled } from "@/components/BoostToggle";
 
 const LIMIT_OPTIONS = [10, 20, 30, 50, null] as const;
 
@@ -19,7 +20,7 @@ function shuffle<T>(arr: T[]): T[] {
   return a;
 }
 
-export default function ConcordanzaQuiz({ questions }: { questions: ConcordanzaQuestion[] }) {
+export default function ConcordanzaQuiz({ questions, weakIds = [] }: { questions: ConcordanzaQuestion[]; weakIds?: string[] }) {
   const [limit, setLimit] = useState<number | null>(30);
   const [started, setStarted] = useState(false);
   const [deck, setDeck] = useState<ConcordanzaQuestion[]>([]);
@@ -37,11 +38,20 @@ export default function ConcordanzaQuiz({ questions }: { questions: ConcordanzaQ
   }, []);
 
   function beginDrill(filterIds?: string[]) {
-    let pool = filterIds
-      ? questions.filter((q) => filterIds.includes(q.id))
-      : [...questions];
-    pool = shuffle(pool);
-    if (limit !== null && !filterIds) pool = pool.slice(0, limit);
+    let pool: ConcordanzaQuestion[];
+    if (filterIds) {
+      pool = shuffle(questions.filter((q) => filterIds.includes(q.id)));
+    } else {
+      const weakSet = new Set(weakIds);
+      const boostEnabled = getBoostEnabled();
+      const weighted: ConcordanzaQuestion[] = [];
+      for (const q of questions) {
+        const copies = boostEnabled && weakSet.has(q.id) ? 3 : 1;
+        for (let i = 0; i < copies; i++) weighted.push(q);
+      }
+      pool = shuffle(weighted);
+      if (limit !== null) pool = pool.slice(0, limit);
+    }
     setDeck(pool);
     setIndex(0);
     setSelected(null);
