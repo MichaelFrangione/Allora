@@ -3,6 +3,7 @@ import flashcardsData from "../../data/flashcards.json";
 import conjugationsData from "../../data/conjugations.json";
 import grammarData from "../../data/grammar.json";
 import sentencesData from "../../data/sentences.json";
+import pronunciationData from "../../data/pronunciation.json";
 
 export type VocabItem = {
   id: string;
@@ -48,14 +49,30 @@ export type SentenceExercise = {
   tags: string[];
 };
 
+export type PronunciationExample = {
+  italian: string;
+  phonetic: string;
+  english: string;
+};
+
+export type PronunciationRule = {
+  id: string;
+  combo: string;
+  rule: string;
+  phonetic: string;
+  examples: PronunciationExample[];
+  tags: string[];
+};
+
 export const vocab: VocabItem[] = vocabData as VocabItem[];
 export const flashcards: Flashcard[] = flashcardsData as Flashcard[];
 export const conjugations: Conjugation[] = conjugationsData as Conjugation[];
 export const grammar: GrammarRule[] = grammarData as GrammarRule[];
 export const sentences: SentenceExercise[] = sentencesData as SentenceExercise[];
+export const pronunciationRules: PronunciationRule[] = pronunciationData as PronunciationRule[];
 
 // Unit numbers available across content
-export const UNITS = [1, 2, 3, 4, 5] as const;
+export const UNITS = [1, 2, 3, 4, 5, 6] as const;
 export type UnitNumber = (typeof UNITS)[number];
 
 /** Extract unit number from lesson tags (e.g. "lesson-2" → 2). Defaults to 1. */

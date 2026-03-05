@@ -210,5 +210,49 @@
       "FEMMINILE: la notte → le notti, la luce → le luci, la stazione → le stazioni, la lezione → le lezioni, la decisione → le decisioni"
     ],
     "tags": ["nouns", "e-nouns", "plural", "gender", "lesson-5"]
+  },
+  {
+    "id": "g018",
+    "rule": "Aggettivi Possessivi (Possessive Adjectives)",
+    "explanation": "Possessive adjectives in Italian agree in gender and number with the NOUN they modify (not the owner). They are usually preceded by a definite article, EXCEPT with singular unmodified family members (mio fratello, mia sorella, but i miei fratelli, le mie sorelle).",
+    "examples": [
+      "MASCHILE SINGOLARE: il mio, il tuo, il suo, il nostro, il vostro, il loro",
+      "FEMMINILE SINGOLARE: la mia, la tua, la sua, la nostra, la vostra, la loro",
+      "MASCHILE PLURALE: i miei, i tuoi, i suoi, i nostri, i vostri, i loro",
+      "FEMMINILE PLURALE: le mie, le tue, le sue, le nostre, le vostre, le loro",
+      "CON FAMIGLIA (no article): mio fratello, mia sorella, mio padre, mia madre",
+      "CON FAMIGLIA (plurale — use article): i miei fratelli, le mie sorelle"
+    ],
+    "tags": ["possessives", "adjectives", "agreement", "family", "lesson-6"]
+  },
+  {
+    "id": "g019",
+    "rule": "La Concordanza: Adjectives in -O vs -E",
+    "explanation": "Adjectives ending in -O have FOUR forms to match gender and number: -o (m.s.), -a (f.s.), -i (m.p.), -e (f.p.). Adjectives ending in -E have only TWO forms: -e (singular, both genders), -i (plural, both genders). This is why concordanza is essential — the wrong form sounds wrong to native speakers.",
+    "examples": [
+      "AGGETTIVI IN -O (4 forms): stanco, stanca, stanchi, stanche",
+      "  → Il ragazzo è stanco. / La ragazza è stanca.",
+      "  → I ragazzi sono stanchi. / Le ragazze sono stanche.",
+      "AGGETTIVI IN -E (2 forms): intelligente, intelligenti",
+      "  → Il ragazzo è intelligente. / La ragazza è intelligente.",
+      "  → I ragazzi sono intelligenti. / Le ragazze sono intelligenti.",
+      "COMMON -O ADJECTIVES: nuovo/a, vecchio/a, bello/a, brutto/a, caldo/a, freddo/a, sportivo/a, squisito/a",
+      "COMMON -E ADJECTIVES: grande, piccole → wait! piccolo is -O. grande/i is -E."
+    ],
+    "tags": ["adjectives", "concordanza", "agreement", "lesson-6"]
+  },
+  {
+    "id": "g020",
+    "rule": "Al Bar: Espressioni utili",
+    "explanation": "Key expressions for ordering at an Italian café (bar). In Italy, 'bar' means a coffee shop/café, not necessarily an alcohol bar. Italians typically stand at the counter for coffee.",
+    "examples": [
+      "Ordering: Prendo un caffè. / Vorrei un cappuccino. / Per me il solito.",
+      "Asking: Caldo o freddo? / Con o senza zucchero? / Con o senza schiuma?",
+      "Opinions: È buonissimo! / È squisito! / Non è male. / Fa schifo!",
+      "Paying: Quant'è? / Sono X euro. / Tenga il resto. (Keep the change.)",
+      "AVERE + noun: ho fame (I'm hungry), ho sonno (I'm sleepy), ho sete (I'm thirsty)",
+      "ESSERE + in ritardo: Sono in ritardo! (I'm late!)"
+    ],
+    "tags": ["bar", "expressions", "vocabulary", "lesson-6"]
   }
 ]

@@ -1356,5 +1356,33 @@
       "voi": "suggerite",
       "loro": "suggeriscono"
     }
+  },
+  {
+    "id": "c098",
+    "verb": "spedire",
+    "meaning": "to send (regular -IRE (-isc-))",
+    "tense": "presente",
+    "forms": {
+      "io": "spedisco",
+      "tu": "spedisci",
+      "lui/lei": "spedisce",
+      "noi": "spediamo",
+      "voi": "spedite",
+      "loro": "spediscono"
+    }
+  },
+  {
+    "id": "c099",
+    "verb": "costruire",
+    "meaning": "to build (regular -IRE (-isc-))",
+    "tense": "presente",
+    "forms": {
+      "io": "costruisco",
+      "tu": "costruisci",
+      "lui/lei": "costruisce",
+      "noi": "costruiamo",
+      "voi": "costruite",
+      "loro": "costruiscono"
+    }
   }
 ]

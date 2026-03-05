@@ -1,0 +1,222 @@
+[
+  {
+    "id": "p001",
+    "combo": "CI / CE",
+    "rule": "Sounds like 'ch' in 'cheese'",
+    "phonetic": "CH (as in 'cheese')",
+    "examples": [
+      { "italian": "ciao", "phonetic": "CHAO", "english": "hello/bye" },
+      { "italian": "cinema", "phonetic": "CHI·ne·ma", "english": "cinema" },
+      { "italian": "dolce", "phonetic": "DOL·che", "english": "sweet" },
+      { "italian": "arancione", "phonetic": "a·ran·CHO·ne", "english": "orange" }
+    ],
+    "tags": ["pronunciation", "c-sounds"]
+  },
+  {
+    "id": "p002",
+    "combo": "CA / CO / CU",
+    "rule": "Sounds like 'k' in 'cat'",
+    "phonetic": "K (hard C)",
+    "examples": [
+      { "italian": "caffè", "phonetic": "KAF·fè", "english": "coffee" },
+      { "italian": "come", "phonetic": "KO·me", "english": "how" },
+      { "italian": "cugino", "phonetic": "ku·GI·no", "english": "cousin" },
+      { "italian": "casa", "phonetic": "KA·sa", "english": "house" }
+    ],
+    "tags": ["pronunciation", "c-sounds"]
+  },
+  {
+    "id": "p003",
+    "combo": "CHI / CHE",
+    "rule": "Sounds like 'k' — the H makes C hard before I/E",
+    "phonetic": "K (hard C before I/E)",
+    "examples": [
+      { "italian": "chi", "phonetic": "KI", "english": "who" },
+      { "italian": "che", "phonetic": "KE", "english": "what/that" },
+      { "italian": "perché", "phonetic": "per·KÉ", "english": "why/because" },
+      { "italian": "chiave", "phonetic": "KIA·ve", "english": "key" }
+    ],
+    "tags": ["pronunciation", "c-sounds", "ch-combo"]
+  },
+  {
+    "id": "p004",
+    "combo": "GI / GE",
+    "rule": "Sounds like 'j' in 'juice'",
+    "phonetic": "J (as in 'juice')",
+    "examples": [
+      { "italian": "giacca", "phonetic": "JAK·ka", "english": "jacket" },
+      { "italian": "giorno", "phonetic": "JOR·no", "english": "day" },
+      { "italian": "gelato", "phonetic": "je·LA·to", "english": "ice cream" },
+      { "italian": "gentile", "phonetic": "jen·TI·le", "english": "kind" }
+    ],
+    "tags": ["pronunciation", "g-sounds"]
+  },
+  {
+    "id": "p005",
+    "combo": "GA / GO / GU",
+    "rule": "Sounds like 'g' in 'go' (hard G)",
+    "phonetic": "G (hard, as in 'go')",
+    "examples": [
+      { "italian": "gatto", "phonetic": "GAT·to", "english": "cat" },
+      { "italian": "gusto", "phonetic": "GU·sto", "english": "taste" },
+      { "italian": "gondola", "phonetic": "GON·do·la", "english": "gondola" },
+      { "italian": "grande", "phonetic": "GRAN·de", "english": "big" }
+    ],
+    "tags": ["pronunciation", "g-sounds"]
+  },
+  {
+    "id": "p006",
+    "combo": "GHI / GHE",
+    "rule": "Sounds like hard 'g' — the H keeps G hard before I/E",
+    "phonetic": "G (hard G before I/E)",
+    "examples": [
+      { "italian": "spaghetti", "phonetic": "spa·GET·ti", "english": "spaghetti" },
+      { "italian": "funghi", "phonetic": "FUN·gi (hard g)", "english": "mushrooms" },
+      { "italian": "ghiaccio", "phonetic": "GJAC·cio", "english": "ice" }
+    ],
+    "tags": ["pronunciation", "g-sounds", "gh-combo"]
+  },
+  {
+    "id": "p007",
+    "combo": "GLI",
+    "rule": "Sounds like 'lli' in 'million' — a soft LY sound",
+    "phonetic": "LY (as in 'million')",
+    "examples": [
+      { "italian": "gli", "phonetic": "LYI", "english": "the (m.pl.) / to him" },
+      { "italian": "figli", "phonetic": "FI·lyi", "english": "children/sons" },
+      { "italian": "sbaglio", "phonetic": "SBA·lyo", "english": "mistake" },
+      { "italian": "foglio", "phonetic": "FO·lyo", "english": "sheet (of paper)" }
+    ],
+    "tags": ["pronunciation", "gli-combo"]
+  },
+  {
+    "id": "p008",
+    "combo": "GN",
+    "rule": "Sounds like 'ny' in 'canyon' — a nasal NY sound",
+    "phonetic": "NY (as in 'canyon')",
+    "examples": [
+      { "italian": "signora", "phonetic": "si·NYO·ra", "english": "Mrs./woman" },
+      { "italian": "bagno", "phonetic": "BA·nyo", "english": "bathroom" },
+      { "italian": "gnocchi", "phonetic": "NYO·ki", "english": "gnocchi" },
+      { "italian": "ognuno", "phonetic": "o·NYU·no", "english": "everyone" }
+    ],
+    "tags": ["pronunciation", "gn-combo"]
+  },
+  {
+    "id": "p009",
+    "combo": "SC before I/E",
+    "rule": "Sounds like 'sh' in 'shoe'",
+    "phonetic": "SH (as in 'shoe')",
+    "examples": [
+      { "italian": "scena", "phonetic": "SHE·na", "english": "scene" },
+      { "italian": "uscita", "phonetic": "u·SHI·ta", "english": "exit" },
+      { "italian": "pesce", "phonetic": "PE·she", "english": "fish" },
+      { "italian": "schiuma", "phonetic": "SHOO·ma", "english": "foam" }
+    ],
+    "tags": ["pronunciation", "sc-sounds"]
+  },
+  {
+    "id": "p010",
+    "combo": "SC before A/O/U",
+    "rule": "Sounds like 'sk' in 'school'",
+    "phonetic": "SK (as in 'school')",
+    "examples": [
+      { "italian": "scarpa", "phonetic": "SKAR·pa", "english": "shoe" },
+      { "italian": "scuola", "phonetic": "SKWO·la", "english": "school" },
+      { "italian": "disco", "phonetic": "DI·sko", "english": "disc/party" },
+      { "italian": "scorso", "phonetic": "SKOR·so", "english": "last (as in last year)" }
+    ],
+    "tags": ["pronunciation", "sc-sounds"]
+  },
+  {
+    "id": "p011",
+    "combo": "Z",
+    "rule": "Sounds like 'ts' (pizza) or 'dz' (zero) — varies by word",
+    "phonetic": "TS or DZ",
+    "examples": [
+      { "italian": "pizza", "phonetic": "PIT·tsa", "english": "pizza" },
+      { "italian": "zero", "phonetic": "DZE·ro", "english": "zero" },
+      { "italian": "zucchero", "phonetic": "TSUK·ke·ro", "english": "sugar" },
+      { "italian": "grazie", "phonetic": "GRA·tsie", "english": "thank you" }
+    ],
+    "tags": ["pronunciation", "z-sound"]
+  },
+  {
+    "id": "p012",
+    "combo": "Double consonants",
+    "rule": "Double consonants are held/pronounced longer. They change the word meaning!",
+    "phonetic": "Hold the consonant longer",
+    "examples": [
+      { "italian": "pala vs palla", "phonetic": "PA·la vs PAL·la", "english": "shovel vs ball" },
+      { "italian": "nonno", "phonetic": "NON·no (hold the N)", "english": "grandfather" },
+      { "italian": "cappuccino", "phonetic": "cap·PUC·CIno", "english": "cappuccino" },
+      { "italian": "mamma", "phonetic": "MAM·ma", "english": "mom" }
+    ],
+    "tags": ["pronunciation", "double-consonants"]
+  },
+  {
+    "id": "p013",
+    "combo": "H",
+    "rule": "H is always silent in Italian — never pronounced",
+    "phonetic": "SILENT",
+    "examples": [
+      { "italian": "ho", "phonetic": "O (not HO)", "english": "I have" },
+      { "italian": "hai", "phonetic": "AI (not HAI)", "english": "you have" },
+      { "italian": "hotel", "phonetic": "o·TEL", "english": "hotel" },
+      { "italian": "ha", "phonetic": "A (not HA)", "english": "he/she has" }
+    ],
+    "tags": ["pronunciation", "h-silent"]
+  },
+  {
+    "id": "p014",
+    "combo": "R",
+    "rule": "R is always rolled/trilled in Italian — especially at the start of a word",
+    "phonetic": "Rolled/trilled R",
+    "examples": [
+      { "italian": "rosso", "phonetic": "RROS·so (roll the R)", "english": "red" },
+      { "italian": "ritardo", "phonetic": "rri·TAR·do", "english": "delay" },
+      { "italian": "ristorante", "phonetic": "rri·sto·RAN·te", "english": "restaurant" },
+      { "italian": "preferire", "phonetic": "pre·fe·RI·re", "english": "to prefer" }
+    ],
+    "tags": ["pronunciation", "r-sound"]
+  },
+  {
+    "id": "p015",
+    "combo": "Stressed syllables",
+    "rule": "Most Italian words stress the second-to-last syllable. Accents (è, à, ò) mark exceptions.",
+    "phonetic": "Second-to-last syllable (usually)",
+    "examples": [
+      { "italian": "pizza", "phonetic": "PIZ·za (first)", "english": "pizza" },
+      { "italian": "italiano", "phonetic": "i·ta·LIA·no (third)", "english": "Italian" },
+      { "italian": "caffè", "phonetic": "caf·FÈ (last — accent!)", "english": "coffee" },
+      { "italian": "università", "phonetic": "u·ni·ver·si·TÀ (last — accent!)", "english": "university" }
+    ],
+    "tags": ["pronunciation", "stress", "accent"]
+  },
+  {
+    "id": "p016",
+    "combo": "CI vs CHI — The Tricky One",
+    "rule": "CI = 'chi' sound (cheese). CHI = 'ki' sound (key). The H reverses what you'd expect!",
+    "phonetic": "CI = CH sound / CHI = K sound",
+    "examples": [
+      { "italian": "ciao", "phonetic": "CHAO — CI = 'ch'", "english": "hi/bye" },
+      { "italian": "chi", "phonetic": "KI — CHI = 'k'", "english": "who" },
+      { "italian": "cinema", "phonetic": "CHI·ne·ma — CI = 'ch'", "english": "cinema" },
+      { "italian": "chiave", "phonetic": "KIA·ve — CHI = 'k'", "english": "key" }
+    ],
+    "tags": ["pronunciation", "c-sounds", "ch-combo", "tricky"]
+  },
+  {
+    "id": "p017",
+    "combo": "GI vs GHI — The Tricky One",
+    "rule": "GI = 'ji' sound (juice). GHI = 'gi' sound (give). Same pattern as CI/CHI!",
+    "phonetic": "GI = J sound / GHI = hard G sound",
+    "examples": [
+      { "italian": "giorno", "phonetic": "JOR·no — GI = 'j'", "english": "day" },
+      { "italian": "funghi", "phonetic": "FUN·gi (hard g) — GHI = 'g'", "english": "mushrooms" },
+      { "italian": "giacca", "phonetic": "JAK·ka — GI = 'j'", "english": "jacket" },
+      { "italian": "ghiaccio", "phonetic": "GIA·cio (hard g) — GHI = 'g'", "english": "ice" }
+    ],
+    "tags": ["pronunciation", "g-sounds", "gh-combo", "tricky"]
+  }
+]

@@ -9,6 +9,8 @@ import { getSentenceUnit } from "@/lib/content";
 import type { SentenceExercise } from "@/lib/content";
 import { cn } from "@/lib/utils";
 
+const LIMIT_OPTIONS = [10, 20, 30, 50, null] as const;
+
 function shuffle<T>(arr: T[]): T[] {
   const a = [...arr];
   for (let i = a.length - 1; i > 0; i--) {
@@ -24,6 +26,7 @@ export default function SentenceBuilder({
   exercises: SentenceExercise[];
 }) {
   const [unit, setUnit] = useState<number | undefined>(undefined);
+  const [limit, setLimit] = useState<number | null>(30);
   const [started, setStarted] = useState(false);
   const [deck, setDeck] = useState<SentenceExercise[]>([]);
   const [index, setIndex] = useState(0);
@@ -56,7 +59,8 @@ export default function SentenceBuilder({
       const filtered = active.filter((e) => filterIds.includes(e.id));
       if (filtered.length > 0) active = filtered;
     }
-    const shuffled = shuffle(active);
+    let shuffled = shuffle(active);
+    if (limit !== null && !filterIds) shuffled = shuffled.slice(0, limit);
     setDeck(shuffled);
     setIndex(0);
     setScore({ correct: 0, incorrect: 0 });
@@ -113,16 +117,36 @@ export default function SentenceBuilder({
   }
 
   if (!started) {
+    const count = limit !== null ? Math.min(limit, activeExercises.length) : activeExercises.length;
     return (
       <div className="max-w-lg mx-auto px-4 py-6 space-y-6">
         <h1 className="text-2xl font-bold">Sentence Builder</h1>
         <UnitSelector value={unit} onChange={setUnit} />
+        <div>
+          <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wide mb-2">Sentences per session</p>
+          <div className="flex flex-wrap gap-2">
+            {LIMIT_OPTIONS.map((l) => (
+              <button
+                key={l ?? "all"}
+                onClick={() => setLimit(l)}
+                className={cn(
+                  "px-3 py-1.5 rounded-full text-sm font-medium transition-colors",
+                  limit === l
+                    ? "bg-primary text-primary-foreground"
+                    : "bg-muted text-muted-foreground hover:bg-muted/80"
+                )}
+              >
+                {l ?? "All"}
+              </button>
+            ))}
+          </div>
+        </div>
         <Button
           className="w-full h-12"
           onClick={() => beginDrill()}
           disabled={activeExercises.length === 0}
         >
-          Start · {activeExercises.length} sentence{activeExercises.length !== 1 ? "s" : ""}
+          Start · {count} sentence{count !== 1 ? "s" : ""}
         </Button>
       </div>
     );
@@ -178,7 +202,7 @@ export default function SentenceBuilder({
           <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground mb-1">
             Translate
           </p>
-          <p className="text-base font-medium">{ex.english}</p>
+          <p className="text-base font-medium">{ex!.english}</p>
         </CardContent>
       </Card>
 
@@ -225,7 +249,7 @@ export default function SentenceBuilder({
       {checked && !correct && (
         <div className="rounded-xl bg-muted px-4 py-3 text-sm">
           <span className="text-muted-foreground">Correct: </span>
-          <span className="font-semibold">{ex.italian}</span>
+          <span className="font-semibold">{ex!.italian}</span>
         </div>
       )}
 
@@ -234,7 +258,7 @@ export default function SentenceBuilder({
           <>
             <Button
               variant="outline"
-              onClick={() => loadExercise(ex)}
+              onClick={() => loadExercise(ex!)}
               className="flex-1"
             >
               Reset

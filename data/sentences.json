@@ -190,5 +190,293 @@
     "parts": ["Il", "ristorante", "è", "grande", "e", "elegante"],
     "distractors": ["La", "stazione", "sono", "piccolo", "o", "noioso"],
     "tags": ["present", "adjectives", "concordanza", "e-nouns", "lesson-5"]
+  },
+  {
+    "id": "s025",
+    "italian": "La ragazza è stanca e triste",
+    "english": "The girl is tired and sad",
+    "parts": ["La", "ragazza", "è", "stanca", "e", "triste"],
+    "distractors": ["Il", "ragazzo", "sono", "stanco", "o", "felice"],
+    "tags": ["present", "adjectives", "concordanza", "lesson-6"]
+  },
+  {
+    "id": "s026",
+    "italian": "I ragazzi sono stanchi dopo la partita",
+    "english": "The boys are tired after the match",
+    "parts": ["I", "ragazzi", "sono", "stanchi", "dopo", "la", "partita"],
+    "distractors": ["Le", "ragazze", "è", "stanche", "prima", "il", "lezione"],
+    "tags": ["present", "adjectives", "concordanza", "lesson-6"]
+  },
+  {
+    "id": "s027",
+    "italian": "Prendo un caffè e un cornetto alla crema",
+    "english": "I'll have a coffee and a cream pastry",
+    "parts": ["Prendo", "un", "caffè", "e", "un", "cornetto", "alla", "crema"],
+    "distractors": ["Prendi", "una", "cappuccino", "o", "una", "tramezzino", "al", "zucchero"],
+    "tags": ["present", "bar", "ordering", "lesson-6"]
+  },
+  {
+    "id": "s028",
+    "italian": "Mi piace il cappuccino con poca schiuma",
+    "english": "I like cappuccino with little foam",
+    "parts": ["Mi", "piace", "il", "cappuccino", "con", "poca", "schiuma"],
+    "distractors": ["Ti", "piacciono", "la", "caffè", "senza", "molto", "zucchero"],
+    "tags": ["present", "piacere", "bar", "lesson-6"]
+  },
+  {
+    "id": "s029",
+    "italian": "Preferisco il tramezzino al cornetto",
+    "english": "I prefer the sandwich to the pastry",
+    "parts": ["Preferisco", "il", "tramezzino", "al", "cornetto"],
+    "distractors": ["Preferisce", "la", "tramezzini", "del", "cappuccino"],
+    "tags": ["present", "isc-verbs", "bar", "lesson-6"]
+  },
+  {
+    "id": "s030",
+    "italian": "Ho fame e ho bisogno di un cornetto",
+    "english": "I'm hungry and I need a pastry",
+    "parts": ["Ho", "fame", "e", "ho", "bisogno", "di", "un", "cornetto"],
+    "distractors": ["Hai", "sonno", "o", "ha", "voglia", "del", "una", "tramezzino"],
+    "tags": ["present", "expressions", "bar", "lesson-6"]
+  },
+  {
+    "id": "s031",
+    "italian": "Mio fratello è molto sportivo",
+    "english": "My brother is very sporty",
+    "parts": ["Mio", "fratello", "è", "molto", "sportivo"],
+    "distractors": ["Mia", "sorella", "sono", "poco", "sportiva"],
+    "tags": ["present", "family", "possessives", "concordanza", "lesson-6"]
+  },
+  {
+    "id": "s032",
+    "italian": "La mia famiglia è grande e simpatica",
+    "english": "My family is big and nice",
+    "parts": ["La", "mia", "famiglia", "è", "grande", "e", "simpatica"],
+    "distractors": ["Il", "mio", "fratello", "sono", "piccolo", "o", "antipatico"],
+    "tags": ["present", "family", "possessives", "concordanza", "lesson-6"]
+  },
+  {
+    "id": "s033",
+    "italian": "I miei nonni abitano in campagna",
+    "english": "My grandparents live in the countryside",
+    "parts": ["I", "miei", "nonni", "abitano", "in", "campagna"],
+    "distractors": ["Le", "mie", "nonne", "abita", "a", "città"],
+    "tags": ["present", "family", "possessives", "lesson-6"]
+  },
+  {
+    "id": "s034",
+    "italian": "Sono in ritardo per la lezione di italiano",
+    "english": "I am late for the Italian lesson",
+    "parts": ["Sono", "in", "ritardo", "per", "la", "lezione", "di", "italiano"],
+    "distractors": ["Sei", "a", "presto", "dopo", "il", "lezioni", "della", "matematica"],
+    "tags": ["present", "expressions", "lesson-6"]
+  },
+  {
+    "id": "s035",
+    "italian": "Il caffè è caldo e squisito",
+    "english": "The coffee is hot and exquisite",
+    "parts": ["Il", "caffè", "è", "caldo", "e", "squisito"],
+    "distractors": ["La", "colazione", "sono", "freddo", "o", "squisita"],
+    "tags": ["present", "adjectives", "concordanza", "bar", "lesson-6"]
+  },
+  {
+    "id": "s036",
+    "italian": "Le pizzette sono fredde e non buone",
+    "english": "The small pizzas are cold and not good",
+    "parts": ["Le", "pizzette", "sono", "fredde", "e", "non", "buone"],
+    "distractors": ["I", "tramezzini", "è", "freddo", "o", "male", "buoni"],
+    "tags": ["present", "adjectives", "concordanza", "bar", "lesson-6"]
+  },
+  {
+    "id": "s037",
+    "italian": "Faccio colazione al bar ogni mattina",
+    "english": "I have breakfast at the café every morning",
+    "parts": ["Faccio", "colazione", "al", "bar", "ogni", "mattina"],
+    "distractors": ["Facciamo", "pranzo", "alla", "casa", "questa", "sera"],
+    "tags": ["present", "bar", "habits", "lesson-6"]
+  },
+  {
+    "id": "s038",
+    "italian": "Quanto è il conto per favore",
+    "english": "How much is the bill please",
+    "parts": ["Quanto", "è", "il", "conto", "per", "favore"],
+    "distractors": ["Come", "sono", "la", "resto", "grazie", "prego"],
+    "tags": ["present", "bar", "expressions", "lesson-6"]
+  },
+  {
+    "id": "s039",
+    "italian": "Mia sorella preferisce il tè al caffè",
+    "english": "My sister prefers tea to coffee",
+    "parts": ["Mia", "sorella", "preferisce", "il", "tè", "al", "caffè"],
+    "distractors": ["Mio", "fratello", "preferisco", "la", "caffè", "del", "tè"],
+    "tags": ["present", "isc-verbs", "family", "bar", "lesson-6"]
+  },
+  {
+    "id": "s040",
+    "italian": "Il ragazzo alto è mio cugino",
+    "english": "The tall boy is my cousin",
+    "parts": ["Il", "ragazzo", "alto", "è", "mio", "cugino"],
+    "distractors": ["La", "ragazza", "alta", "sono", "mia", "cugina"],
+    "tags": ["present", "adjectives", "concordanza", "family", "lesson-6"]
+  },
+  {
+    "id": "s041",
+    "italian": "Le ragazze intelligenti studiano molto",
+    "english": "The intelligent girls study a lot",
+    "parts": ["Le", "ragazze", "intelligenti", "studiano", "molto"],
+    "distractors": ["I", "ragazzi", "intelligente", "studia", "poco"],
+    "tags": ["present", "adjectives", "concordanza", "e-adjectives", "lesson-5", "lesson-6"]
+  },
+  {
+    "id": "s042",
+    "italian": "Ho sonno perché non dormo bene",
+    "english": "I am sleepy because I don't sleep well",
+    "parts": ["Ho", "sonno", "perché", "non", "dormo", "bene"],
+    "distractors": ["Ha", "fame", "ma", "non", "mangio", "male"],
+    "tags": ["present", "expressions", "lesson-6"]
+  },
+  {
+    "id": "s043",
+    "italian": "Parliamo italiano con i nostri amici",
+    "english": "We speak Italian with our friends",
+    "parts": ["Parliamo", "italiano", "con", "i", "nostri", "amici"],
+    "distractors": ["Parla", "francese", "per", "le", "nostre", "amiche"],
+    "tags": ["present", "are-verbs", "possessives", "lesson-6"]
+  },
+  {
+    "id": "s044",
+    "italian": "Il tuo cappuccino è pronto",
+    "english": "Your cappuccino is ready",
+    "parts": ["Il", "tuo", "cappuccino", "è", "pronto"],
+    "distractors": ["La", "tua", "caffè", "sono", "pronta"],
+    "tags": ["present", "possessives", "bar", "concordanza", "lesson-6"]
+  },
+  {
+    "id": "s045",
+    "italian": "I biscotti al cioccolato sono buonissimi",
+    "english": "The chocolate cookies are very delicious",
+    "parts": ["I", "biscotti", "al", "cioccolato", "sono", "buonissimi"],
+    "distractors": ["Le", "pizzette", "del", "formaggio", "è", "buonissime"],
+    "tags": ["present", "adjectives", "concordanza", "bar", "lesson-6"]
+  },
+  {
+    "id": "s046",
+    "italian": "Ogni giorno vado al bar prima di lavorare",
+    "english": "Every day I go to the café before working",
+    "parts": ["Ogni", "giorno", "vado", "al", "bar", "prima", "di", "lavorare"],
+    "distractors": ["Ogni", "sera", "andiamo", "alla", "casa", "dopo", "del", "studiare"],
+    "tags": ["present", "bar", "habits", "lesson-6"]
+  },
+  {
+    "id": "s047",
+    "italian": "Sua madre è simpatica e intelligente",
+    "english": "His mother is nice and intelligent",
+    "parts": ["Sua", "madre", "è", "simpatica", "e", "intelligente"],
+    "distractors": ["Suo", "padre", "sono", "antipatico", "o", "difficile"],
+    "tags": ["present", "family", "possessives", "concordanza", "lesson-6"]
+  },
+  {
+    "id": "s048",
+    "italian": "Gli studenti sono molto stanchi oggi",
+    "english": "The students are very tired today",
+    "parts": ["Gli", "studenti", "sono", "molto", "stanchi", "oggi"],
+    "distractors": ["Le", "studentesse", "è", "poco", "stanche", "ieri"],
+    "tags": ["present", "adjectives", "concordanza", "lesson-5", "lesson-6"]
+  },
+  {
+    "id": "s049",
+    "italian": "Prendo un caffè macchiato caldo per favore",
+    "english": "I'll have a hot macchiato please",
+    "parts": ["Prendo", "un", "caffè", "macchiato", "caldo", "per", "favore"],
+    "distractors": ["Prende", "una", "cappuccino", "macchiata", "freddo", "grazie", "prego"],
+    "tags": ["present", "bar", "ordering", "concordanza", "lesson-6"]
+  },
+  {
+    "id": "s050",
+    "italian": "Le sue sorelle sono belle e simpatiche",
+    "english": "His sisters are beautiful and nice",
+    "parts": ["Le", "sue", "sorelle", "sono", "belle", "e", "simpatiche"],
+    "distractors": ["I", "suoi", "fratelli", "è", "belli", "o", "simpatici"],
+    "tags": ["present", "family", "possessives", "concordanza", "lesson-6"]
+  },
+  {
+    "id": "s051",
+    "italian": "Mangiamo il cornetto ancora caldo",
+    "english": "We eat the pastry still warm",
+    "parts": ["Mangiamo", "il", "cornetto", "ancora", "caldo"],
+    "distractors": ["Mangiate", "la", "pizza", "già", "fredda"],
+    "tags": ["present", "bar", "concordanza", "lesson-6"]
+  },
+  {
+    "id": "s052",
+    "italian": "Vostro zio parla italiano molto bene",
+    "english": "Your uncle speaks Italian very well",
+    "parts": ["Vostro", "zio", "parla", "italiano", "molto", "bene"],
+    "distractors": ["Vostra", "zia", "parliamo", "francese", "poco", "male"],
+    "tags": ["present", "family", "possessives", "are-verbs", "lesson-6"]
+  },
+  {
+    "id": "s053",
+    "italian": "Il fiore rosso è bello e profumato",
+    "english": "The red flower is beautiful and fragrant",
+    "parts": ["Il", "fiore", "rosso", "è", "bello", "e", "profumato"],
+    "distractors": ["La", "rosa", "rossa", "sono", "brutto", "o", "noioso"],
+    "tags": ["present", "adjectives", "concordanza", "e-nouns", "lesson-5"]
+  },
+  {
+    "id": "s054",
+    "italian": "Le studentesse sono brave e diligenti",
+    "english": "The female students are skilled and diligent",
+    "parts": ["Le", "studentesse", "sono", "brave", "e", "diligenti"],
+    "distractors": ["Gli", "studenti", "è", "bravi", "o", "pigri"],
+    "tags": ["present", "adjectives", "concordanza", "lesson-5"]
+  },
+  {
+    "id": "s055",
+    "italian": "Non mi piace il caffè senza zucchero",
+    "english": "I don't like coffee without sugar",
+    "parts": ["Non", "mi", "piace", "il", "caffè", "senza", "zucchero"],
+    "distractors": ["Non", "ti", "piacciono", "la", "tè", "con", "burro"],
+    "tags": ["present", "piacere", "bar", "lesson-6"]
+  },
+  {
+    "id": "s056",
+    "italian": "Mia nonna fa il pane ogni domenica",
+    "english": "My grandmother makes bread every Sunday",
+    "parts": ["Mia", "nonna", "fa", "il", "pane", "ogni", "domenica"],
+    "distractors": ["Mio", "nonno", "fare", "la", "pizza", "questa", "sabato"],
+    "tags": ["present", "family", "possessives", "fare", "lesson-6"]
+  },
+  {
+    "id": "s057",
+    "italian": "Sono le nove e un quarto di mattina",
+    "english": "It is quarter past nine in the morning",
+    "parts": ["Sono", "le", "nove", "e", "un", "quarto", "di", "mattina"],
+    "distractors": ["È", "il", "otto", "o", "una", "mezza", "della", "sera"],
+    "tags": ["present", "time", "lesson-3"]
+  },
+  {
+    "id": "s058",
+    "italian": "Gli piacciono molto i panini al prosciutto",
+    "english": "He likes ham sandwiches very much",
+    "parts": ["Gli", "piacciono", "molto", "i", "panini", "al", "prosciutto"],
+    "distractors": ["Le", "piace", "poco", "le", "pizzette", "alla", "crema"],
+    "tags": ["present", "piacere", "bar", "lesson-6", "lesson-2"]
+  },
+  {
+    "id": "s059",
+    "italian": "Noi preferiamo andare al bar a piedi",
+    "english": "We prefer to go to the café on foot",
+    "parts": ["Noi", "preferiamo", "andare", "al", "bar", "a", "piedi"],
+    "distractors": ["Loro", "preferiscono", "venire", "alla", "casa", "in", "macchina"],
+    "tags": ["present", "isc-verbs", "bar", "lesson-6"]
+  },
+  {
+    "id": "s060",
+    "italian": "I tuoi fratelli sono bravi e sportivi",
+    "english": "Your brothers are skilled and sporty",
+    "parts": ["I", "tuoi", "fratelli", "sono", "bravi", "e", "sportivi"],
+    "distractors": ["Le", "tue", "sorelle", "è", "brave", "o", "sportive"],
+    "tags": ["present", "family", "possessives", "concordanza", "lesson-6"]
   }
 ]

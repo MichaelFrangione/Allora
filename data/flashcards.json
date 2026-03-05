@@ -334,5 +334,149 @@
     "front": "La concordanza: -E nouns — maschile o femminile?",
     "back": "MASCHILE: il fiore, il mare, il pane, il nome, il ristorante\nFEMMINILE: la notte, la luce, la stazione, la lezione, la decisione\nThere is no rule — gender must be memorised!",
     "tags": ["vocabulary", "nouns", "e-nouns", "concordanza", "lesson-5"]
+  },
+  {
+    "id": "f057",
+    "front": "Concordanza: 'stanco' — complete all 4 forms",
+    "back": "m. sing.: stanco\nf. sing.: stanca\nm. pl.: stanchi\nf. pl.: stanche\n→ Adjectives in -O always have 4 forms!",
+    "tags": ["grammar", "concordanza", "adjectives", "lesson-6"]
+  },
+  {
+    "id": "f058",
+    "front": "Concordanza: 'nuovo' — complete all 4 forms",
+    "back": "m. sing.: nuovo\nf. sing.: nuova\nm. pl.: nuovi\nf. pl.: nuove\nPattern: -o / -a / -i / -e",
+    "tags": ["grammar", "concordanza", "adjectives", "lesson-6"]
+  },
+  {
+    "id": "f059",
+    "front": "Concordanza: 'sportivo' — complete all 4 forms",
+    "back": "m. sing.: sportivo\nf. sing.: sportiva\nm. pl.: sportivi\nf. pl.: sportive\nEx: Mio fratello è sportivo. / Mia sorella è sportiva.",
+    "tags": ["grammar", "concordanza", "adjectives", "lesson-6"]
+  },
+  {
+    "id": "f060",
+    "front": "Concordanza: 'intelligente' — complete all forms",
+    "back": "sing. (m. & f.): intelligente\npl. (m. & f.): intelligenti\n→ Adjectives in -E have only 2 forms (same for m./f. in singular)",
+    "tags": ["grammar", "concordanza", "e-adjectives", "lesson-6"]
+  },
+  {
+    "id": "f061",
+    "front": "Which is correct? 'Il ragazzo è stanca' or 'stanco'?",
+    "back": "'stanco' ✓\nragazzo = masculine → adjective must be masculine: stanco.\n'stanca' is feminine — only use with nouns like la ragazza, la donna, etc.",
+    "tags": ["grammar", "concordanza", "practice", "lesson-6"]
+  },
+  {
+    "id": "f062",
+    "front": "Which is correct? 'Le ragazze sono stanchi' or 'stanche'?",
+    "back": "'stanche' ✓\nragazze = feminine plural → adjective must be feminine plural: stanche.\n'stanchi' is masculine plural (i ragazzi sono stanchi).",
+    "tags": ["grammar", "concordanza", "practice", "lesson-6"]
+  },
+  {
+    "id": "f063",
+    "front": "Concordanza: 'I cornetti sono _____ (delicious)'",
+    "back": "buonissimi ✓ (masculine plural)\ncornetti = maschile plurale\nbuono → buoni (regular) / buonissimo → buonissimi (superlative)",
+    "tags": ["grammar", "concordanza", "practice", "bar", "lesson-6"]
+  },
+  {
+    "id": "f064",
+    "front": "Concordanza: 'La colazione è _____ (delicious)'",
+    "back": "buonissima ✓ (feminine singular)\ncolazione = femminile singolare\nbuono → buona → buonissima",
+    "tags": ["grammar", "concordanza", "practice", "bar", "lesson-6"]
+  },
+  {
+    "id": "f065",
+    "front": "Aggettivi Possessivi: MY (all 4 forms)",
+    "back": "m. sing.: il mio (il mio caffè)\nf. sing.: la mia (la mia famiglia)\nm. pl.: i miei (i miei fratelli)\nf. pl.: le mie (le mie sorelle)",
+    "tags": ["grammar", "possessives", "lesson-6"]
+  },
+  {
+    "id": "f066",
+    "front": "Aggettivi Possessivi: YOUR singular (all 4 forms)",
+    "back": "m. sing.: il tuo (il tuo caffè)\nf. sing.: la tua (la tua famiglia)\nm. pl.: i tuoi (i tuoi fratelli)\nf. pl.: le tue (le tue sorelle)",
+    "tags": ["grammar", "possessives", "lesson-6"]
+  },
+  {
+    "id": "f067",
+    "front": "Aggettivi Possessivi: HIS/HER (all 4 forms)",
+    "back": "m. sing.: il suo (il suo cappuccino)\nf. sing.: la sua (la sua mamma)\nm. pl.: i suoi (i suoi amici)\nf. pl.: le sue (le sue sorelle)\nNote: suo/sua = both his AND her in Italian!",
+    "tags": ["grammar", "possessives", "lesson-6"]
+  },
+  {
+    "id": "f068",
+    "front": "Aggettivi Possessivi: OUR / YOUR plural / THEIR",
+    "back": "OUR: il nostro / la nostra / i nostri / le nostre\nYOUR (pl.): il vostro / la vostra / i vostri / le vostre\nTHEIR: il loro / la loro / i loro / le loro (loro is invariable!)",
+    "tags": ["grammar", "possessives", "lesson-6"]
+  },
+  {
+    "id": "f069",
+    "front": "Possessives + family: when do you drop the article?",
+    "back": "Drop article with SINGULAR unmodified family nouns:\n✓ mio fratello / mia sorella / tua mamma / suo papà\nKEEP article when: plural → i miei fratelli / modified → il mio fratello grande / loro → il loro fratello",
+    "tags": ["grammar", "possessives", "family", "lesson-6"]
+  },
+  {
+    "id": "f070",
+    "front": "Which is correct? 'la mia sorella' or 'mia sorella'?",
+    "back": "Both can be right!\nmia sorella ✓ — singular, unmodified family noun (no article)\nla mia sorella grande ✓ — article needed when modified\nle mie sorelle ✓ — article always needed in plural",
+    "tags": ["grammar", "possessives", "family", "practice", "lesson-6"]
+  },
+  {
+    "id": "f071",
+    "front": "Bar vocabulary: types of coffee in Italian",
+    "back": "caffè — regular espresso\ncappuccino — espresso + steamed milk + foam\ncaffè macchiato — espresso + dash of milk\nlatte macchiato — hot milk + dash of espresso\ncaffè lungo — long/diluted espresso\ncaffè ristretto — very short/concentrated espresso",
+    "tags": ["vocabulary", "bar", "lesson-6"]
+  },
+  {
+    "id": "f072",
+    "front": "How do you say 'I'm hungry', 'I'm sleepy', 'I'm thirsty'?",
+    "back": "I'm hungry → Ho fame\nI'm sleepy → Ho sonno\nI'm thirsty → Ho sete\nI'm cold → Ho freddo / I'm hot → Ho caldo\nKey: use AVERE (to have), not ESSERE (to be)!",
+    "tags": ["vocabulary", "expressions", "bar", "lesson-6"]
+  },
+  {
+    "id": "f073",
+    "front": "How do you say 'I'm late' in Italian?",
+    "back": "Sono in ritardo!\n(lit. 'I am in delay') — uses ESSERE\nEx: Giovanni è in ritardo per la lezione.",
+    "tags": ["vocabulary", "expressions", "lesson-6"]
+  },
+  {
+    "id": "f074",
+    "front": "PREFERIRE — conjugate in present tense",
+    "back": "io preferisco\ntu preferisci\nlui/lei preferisce\nnoi preferiamo\nvoi preferite\nloro preferiscono\n→ -ISC verb: add -isc- in io/tu/lui/loro forms",
+    "tags": ["verbs", "conjugation", "isc-verbs", "lesson-6"]
+  },
+  {
+    "id": "f075",
+    "front": "Concordanza quick rule: -O adjectives vs -E adjectives",
+    "back": "Ends in -O → 4 forms: -o / -a / -i / -e\nEx: nuovo, nuova, nuovi, nuove\n\nEnds in -E → 2 forms: -e (sing., m. & f.) / -i (plural, m. & f.)\nEx: intelligente, intelligenti",
+    "tags": ["grammar", "concordanza", "adjectives", "lesson-6"]
+  },
+  {
+    "id": "f076",
+    "front": "Concordanza: 'Il caffè è _____ (cold)'",
+    "back": "freddo ✓ (masculine singular)\ncaffè = maschile → freddo (not fredda/freddi/fredde)",
+    "tags": ["grammar", "concordanza", "practice", "bar", "lesson-6"]
+  },
+  {
+    "id": "f077",
+    "front": "Concordanza: 'Le pizzette sono _____ (cold)'",
+    "back": "fredde ✓ (feminine plural)\npizzette = femminile plurale → freddo → fredde",
+    "tags": ["grammar", "concordanza", "practice", "bar", "lesson-6"]
+  },
+  {
+    "id": "f078",
+    "front": "Concordanza: 'I tramezzini sono _____ (delicious)'",
+    "back": "squisiti ✓ (masculine plural)\ntramezzini = maschile plurale → squisito → squisiti",
+    "tags": ["grammar", "concordanza", "practice", "bar", "lesson-6"]
+  },
+  {
+    "id": "f079",
+    "front": "Concordanza: 'La sorella di Marco è _____ (sporty)'",
+    "back": "sportiva ✓ (feminine singular)\nsorella = femminile singolare → sportivo → sportiva",
+    "tags": ["grammar", "concordanza", "practice", "family", "lesson-6"]
+  },
+  {
+    "id": "f080",
+    "front": "How do you say 'Keep the change' in Italian?",
+    "back": "Tenga il resto. (formal)\nQuant'è? → How much is it?\nSono X euro. → It's X euros.",
+    "tags": ["vocabulary", "bar", "expressions", "lesson-6"]
   }
 ]

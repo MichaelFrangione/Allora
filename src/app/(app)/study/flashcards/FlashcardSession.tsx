@@ -9,6 +9,8 @@ import { getVocabUnit } from "@/lib/content";
 import type { VocabItem } from "@/lib/content";
 import { cn } from "@/lib/utils";
 
+const LIMIT_OPTIONS = [10, 20, 30, 50, null] as const;
+
 function shuffle<T>(arr: T[]): T[] {
   const a = [...arr];
   for (let i = a.length - 1; i > 0; i--) {
@@ -22,19 +24,35 @@ type FlipCard = {
   id: string;
   item: VocabItem;
   direction: "it→en" | "en→it";
+  weight?: number;
 };
 
-function buildDeck(items: VocabItem[]): FlipCard[] {
+function buildDeck(items: VocabItem[], weakIds: Set<string>, limit: number | null): FlipCard[] {
   const cards: FlipCard[] = [];
   for (const item of items) {
-    cards.push({ id: `${item.id}-fwd`, item, direction: "it→en" });
-    cards.push({ id: `${item.id}-rev`, item, direction: "en→it" });
+    const isWeak = weakIds.has(item.id);
+    // Weak items get 3 copies in the pool, strong items get 1
+    const copies = isWeak ? 3 : 1;
+    for (let i = 0; i < copies; i++) {
+      cards.push({ id: `${item.id}-fwd-${i}`, item, direction: "it→en" });
+      cards.push({ id: `${item.id}-rev-${i}`, item, direction: "en→it" });
+    }
   }
-  return shuffle(cards);
+  const shuffled = shuffle(cards);
+  if (limit !== null) return shuffled.slice(0, limit);
+  return shuffled;
 }
 
-export default function FlashcardSession({ vocab }: { vocab: VocabItem[] }) {
+export default function FlashcardSession({
+  vocab,
+  weakIds = [],
+}: {
+  vocab: VocabItem[];
+  weakIds?: string[];
+}) {
+  const weakSet = new Set(weakIds);
   const [unit, setUnit] = useState<number | undefined>(undefined);
+  const [limit, setLimit] = useState<number | null>(30);
   const [started, setStarted] = useState(false);
   const [deck, setDeck] = useState<FlipCard[]>([]);
   const [index, setIndex] = useState(0);
@@ -53,10 +71,13 @@ export default function FlashcardSession({ vocab }: { vocab: VocabItem[] }) {
 
   function beginDrill(filterIds?: string[]) {
     const active = unit ? vocab.filter((v) => getVocabUnit(v) === unit) : vocab;
-    let cards = buildDeck(active);
+    let cards: FlipCard[];
     if (filterIds) {
-      const filtered = cards.filter((c) => filterIds.includes(c.id));
-      cards = filtered.length > 0 ? filtered : buildDeck(active);
+      // Retry missed — use exact ids, no limit, no weighting
+      const filtered = buildDeck(active, new Set(), null).filter((c) => filterIds.includes(c.id));
+      cards = filtered.length > 0 ? filtered : buildDeck(active, weakSet, limit);
+    } else {
+      cards = buildDeck(active, weakSet, limit);
     }
     setDeck(cards);
     setIndex(0);
@@ -95,17 +116,47 @@ export default function FlashcardSession({ vocab }: { vocab: VocabItem[] }) {
   }
 
   if (!started) {
-    const cardCount = activeItems.length * 2;
+    const estimatedCards = Math.min(
+      limit !== null ? limit : activeItems.length * 2,
+      activeItems.length * 2
+    );
+    const weakCount = activeItems.filter((v) => weakSet.has(v.id)).length;
     return (
       <div className="max-w-lg mx-auto px-4 py-6 space-y-6">
-        <h1 className="text-2xl font-bold">Vocab Flip Cards</h1>
+        <div>
+          <h1 className="text-2xl font-bold">Vocab Flip Cards</h1>
+          {weakCount > 0 && (
+            <p className="text-xs text-amber-600 mt-1">
+              {weakCount} weak item{weakCount !== 1 ? "s" : ""} will appear more often
+            </p>
+          )}
+        </div>
         <UnitSelector value={unit} onChange={setUnit} />
+        <div>
+          <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wide mb-2">Cards per session</p>
+          <div className="flex flex-wrap gap-2">
+            {LIMIT_OPTIONS.map((l) => (
+              <button
+                key={l ?? "all"}
+                onClick={() => setLimit(l)}
+                className={cn(
+                  "px-3 py-1.5 rounded-full text-sm font-medium transition-colors",
+                  limit === l
+                    ? "bg-primary text-primary-foreground"
+                    : "bg-muted text-muted-foreground hover:bg-muted/80"
+                )}
+              >
+                {l ?? "All"}
+              </button>
+            ))}
+          </div>
+        </div>
         <Button
           className="w-full h-12"
           onClick={() => beginDrill()}
           disabled={activeItems.length === 0}
         >
-          Start · {cardCount} card{cardCount !== 1 ? "s" : ""}
+          Start · {estimatedCards} card{estimatedCards !== 1 ? "s" : ""}
         </Button>
       </div>
     );
@@ -147,8 +198,9 @@ export default function FlashcardSession({ vocab }: { vocab: VocabItem[] }) {
   }
 
   const front = current.direction === "it→en" ? current.item.italian : current.item.english;
-  const genderLabel = current.item.gender === "m" ? "masc." : current.item.gender === "f" ? "fem." : null;
+  const genderLabel = current.item.gender === "maschile" ? "masc." : current.item.gender === "femminile" ? "fem." : null;
   const pronunciation = current.item.pronunciation;
+  const isWeak = weakSet.has(current.item.id);
 
   return (
     <div className="max-w-lg mx-auto px-4 py-6 flex flex-col gap-6">
@@ -168,9 +220,16 @@ export default function FlashcardSession({ vocab }: { vocab: VocabItem[] }) {
         </div>
       </div>
 
-      <Badge variant="outline" className="self-start text-xs">
-        {current.direction === "it→en" ? "Italian → English" : "English → Italian"}
-      </Badge>
+      <div className="flex items-center gap-2">
+        <Badge variant="outline" className="text-xs">
+          {current.direction === "it→en" ? "Italian → English" : "English → Italian"}
+        </Badge>
+        {isWeak && (
+          <Badge variant="outline" className="text-xs border-amber-400 text-amber-600">
+            Focus
+          </Badge>
+        )}
+      </div>
 
       {/* Card */}
       <div

@@ -11,6 +11,8 @@ import UnitSelector from "@/components/UnitSelector";
 import type { VocabItem } from "@/lib/content";
 import { cn } from "@/lib/utils";
 
+const LIMIT_OPTIONS = [10, 20, 30, 50, null] as const;
+
 function shuffle<T>(arr: T[]): T[] {
   const a = [...arr];
   for (let i = a.length - 1; i > 0; i--) {
@@ -34,6 +36,7 @@ function buildQuestion(item: VocabItem): Question {
 
 export default function VocabQuiz({ items }: { items: VocabItem[] }) {
   const [unit, setUnit] = useState<number | undefined>(undefined);
+  const [limit, setLimit] = useState<number | null>(30);
   const [started, setStarted] = useState(false);
   const [questions, setQuestions] = useState<Question[]>([]);
   const [index, setIndex] = useState(0);
@@ -57,7 +60,8 @@ export default function VocabQuiz({ items }: { items: VocabItem[] }) {
       const filtered = active.filter((v) => filterIds.includes(v.id));
       if (filtered.length > 0) active = filtered;
     }
-    const shuffled = shuffle(active);
+    let shuffled = shuffle(active);
+    if (limit !== null && !filterIds) shuffled = shuffled.slice(0, limit);
     setQuestions(shuffled.map((item) => buildQuestion(item)));
     setIndex(0);
     setSelected(null);
@@ -102,16 +106,36 @@ export default function VocabQuiz({ items }: { items: VocabItem[] }) {
   }
 
   if (!started) {
+    const count = limit !== null ? Math.min(limit, activeItems.length) : activeItems.length;
     return (
       <div className="max-w-lg mx-auto px-4 py-6 space-y-6">
         <h1 className="text-2xl font-bold">Vocab Quiz</h1>
         <UnitSelector value={unit} onChange={setUnit} />
+        <div>
+          <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wide mb-2">Questions per session</p>
+          <div className="flex flex-wrap gap-2">
+            {LIMIT_OPTIONS.map((l) => (
+              <button
+                key={l ?? "all"}
+                onClick={() => setLimit(l)}
+                className={cn(
+                  "px-3 py-1.5 rounded-full text-sm font-medium transition-colors",
+                  limit === l
+                    ? "bg-primary text-primary-foreground"
+                    : "bg-muted text-muted-foreground hover:bg-muted/80"
+                )}
+              >
+                {l ?? "All"}
+              </button>
+            ))}
+          </div>
+        </div>
         <Button
           className="w-full h-12"
           onClick={() => beginDrill()}
           disabled={activeItems.length === 0}
         >
-          Start · {activeItems.length} word{activeItems.length !== 1 ? "s" : ""}
+          Start · {count} word{count !== 1 ? "s" : ""}
         </Button>
       </div>
     );
