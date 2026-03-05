@@ -1,12 +1,13 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Badge } from "@/components/ui/badge";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
+import { CircleHelp } from "lucide-react";
 import { useStudySession } from "@/lib/useStudySession";
 import type { Conjugation } from "@/lib/content";
 import { cn } from "@/lib/utils";
@@ -122,11 +123,13 @@ export default function ConjugationDrill({
   verbs,
   tenses,
   weakIds = [],
+  initialIds,
 }: {
   conjugations: Conjugation[];
   verbs: string[];
   tenses: string[];
   weakIds?: string[];
+  initialIds?: string[];
 }) {
   const [drillMode, setDrillMode] = useState<DrillMode>("pick");
   const [selectedVerb, setSelectedVerb] = useState(verbs[0] ?? "");
@@ -149,6 +152,15 @@ export default function ConjugationDrill({
   const [wrongItems, setWrongItems] = useState<Array<string | RandomCard>>([]);
   const [done, setDone] = useState(false);
   const { startSession, endSession, recordAttempt } = useStudySession("conjugation");
+
+  useEffect(() => {
+    if (initialIds && initialIds.length > 0) {
+      setDrillMode("random");
+      const weakConjs = conjugations.filter((c) => initialIds.includes(c.id));
+      beginRandomDrill(buildRandomDeck(weakConjs, null, new Set()));
+    }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   const pickConj = conjugations.find(
     (c) => c.verb === selectedVerb && c.tense === selectedTense
@@ -392,32 +404,14 @@ export default function ConjugationDrill({
           <span className="text-sm text-muted-foreground">
             {currentIndex + 1} / {totalCards}
           </span>
-          <button
-            onClick={exitSession}
-            className="text-muted-foreground hover:text-foreground transition-colors text-lg leading-none"
-            aria-label="Exit session"
-          >
-            ✕
-          </button>
-        </div>
-      </div>
-
-      {/* Pronoun prompt card with hint button inside */}
-      <div className="rounded-2xl border-2 border-border bg-card p-8 text-center relative">
-        <p className="text-xs text-muted-foreground mb-3 uppercase tracking-wide font-semibold">
-          Conjugate
-        </p>
-        <p className="text-3xl font-bold">{currentPronoun}</p>
-        <p className="text-muted-foreground mt-1">{currentConj.verb}</p>
-        {drillMode === "random" && (
-          <p className="text-xs text-muted-foreground mt-2 italic">{currentConj.meaning}</p>
-        )}
-        <div className="mt-4 flex justify-center">
           <Dialog>
             <DialogTrigger asChild>
-              <Button variant="ghost" size="sm" className="text-xs text-muted-foreground h-7 px-2">
-                Hint
-              </Button>
+              <button
+                className="text-muted-foreground hover:text-foreground transition-colors"
+                aria-label="Hint"
+              >
+                <CircleHelp className="w-5 h-5" />
+              </button>
             </DialogTrigger>
             <DialogContent className="max-w-sm">
               <DialogHeader>
@@ -445,7 +439,26 @@ export default function ConjugationDrill({
               </div>
             </DialogContent>
           </Dialog>
+          <button
+            onClick={exitSession}
+            className="text-muted-foreground hover:text-foreground transition-colors text-lg leading-none"
+            aria-label="Exit session"
+          >
+            ✕
+          </button>
         </div>
+      </div>
+
+      {/* Pronoun prompt card with hint button inside */}
+      <div className="rounded-2xl border-2 border-border bg-card p-8 text-center relative">
+        <p className="text-xs text-muted-foreground mb-3 uppercase tracking-wide font-semibold">
+          Conjugate
+        </p>
+        <p className="text-3xl font-bold">{currentPronoun}</p>
+        <p className="text-muted-foreground mt-1">{currentConj.verb}</p>
+        {drillMode === "random" && (
+          <p className="text-xs text-muted-foreground mt-2 italic">{currentConj.meaning}</p>
+        )}
       </div>
 
       {/* Answer input */}

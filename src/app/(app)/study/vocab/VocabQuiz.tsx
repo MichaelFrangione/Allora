@@ -35,7 +35,7 @@ function buildQuestion(item: VocabItem): Question {
   return { item, options, correct: item.english };
 }
 
-export default function VocabQuiz({ items, weakIds = [] }: { items: VocabItem[]; weakIds?: string[] }) {
+export default function VocabQuiz({ items, weakIds = [], initialIds }: { items: VocabItem[]; weakIds?: string[]; initialIds?: string[] }) {
   const [unit, setUnit] = useState<number | undefined>(undefined);
   const [limit, setLimit] = useState<number | null>(30);
   const [started, setStarted] = useState(false);
@@ -52,6 +52,11 @@ export default function VocabQuiz({ items, weakIds = [] }: { items: VocabItem[];
 
   useEffect(() => {
     return () => { endSession(); };
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  useEffect(() => {
+    if (initialIds && initialIds.length > 0) beginDrill(initialIds);
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 

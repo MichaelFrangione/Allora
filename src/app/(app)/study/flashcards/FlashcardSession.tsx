@@ -47,9 +47,11 @@ function buildDeck(items: VocabItem[], weakIds: Set<string>, limit: number | nul
 export default function FlashcardSession({
   vocab,
   weakIds = [],
+  initialIds,
 }: {
   vocab: VocabItem[];
   weakIds?: string[];
+  initialIds?: string[];
 }) {
   const weakSet = new Set(weakIds);
   const [unit, setUnit] = useState<number | undefined>(undefined);
@@ -67,6 +69,11 @@ export default function FlashcardSession({
 
   useEffect(() => {
     return () => { endSession(); };
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  useEffect(() => {
+    if (initialIds && initialIds.length > 0) beginDrill(initialIds);
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 

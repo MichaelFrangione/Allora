@@ -128,9 +128,9 @@ export default async function ProgressPage() {
                         {MODE_LABELS[type] ?? type}
                       </CardTitle>
                       {MODE_LINKS[type] && (
-                        <Link href={MODE_LINKS[type]}>
+                        <Link href={`${MODE_LINKS[type]}?weak=1`}>
                           <Button size="sm" variant="outline" className="text-xs h-7">
-                            Drill →
+                            Drill weak →
                           </Button>
                         </Link>
                       )}

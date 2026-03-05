@@ -24,9 +24,11 @@ function shuffle<T>(arr: T[]): T[] {
 export default function SentenceBuilder({
   exercises,
   weakIds = [],
+  initialIds,
 }: {
   exercises: SentenceExercise[];
   weakIds?: string[];
+  initialIds?: string[];
 }) {
   const [unit, setUnit] = useState<number | undefined>(undefined);
   const [limit, setLimit] = useState<number | null>(30);
@@ -53,6 +55,11 @@ export default function SentenceBuilder({
 
   useEffect(() => {
     return () => { endSession(); };
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  useEffect(() => {
+    if (initialIds && initialIds.length > 0) beginDrill(initialIds);
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
@@ -272,7 +279,7 @@ export default function SentenceBuilder({
             <Button
               variant="outline"
               onClick={() => loadExercise(ex!)}
-              className="flex-1"
+              className="flex-1 h-12"
             >
               Reset
             </Button>
