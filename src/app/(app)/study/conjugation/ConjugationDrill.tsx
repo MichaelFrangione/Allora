@@ -404,41 +404,6 @@ export default function ConjugationDrill({
           <span className="text-sm text-muted-foreground">
             {currentIndex + 1} / {totalCards}
           </span>
-          <Dialog>
-            <DialogTrigger asChild>
-              <button
-                className="text-muted-foreground hover:text-foreground transition-colors"
-                aria-label="Hint"
-              >
-                <CircleHelp className="w-5 h-5" />
-              </button>
-            </DialogTrigger>
-            <DialogContent className="max-w-sm">
-              <DialogHeader>
-                <DialogTitle className="text-base">{cheatSheet.title}</DialogTitle>
-              </DialogHeader>
-              <div className="mt-2">
-                <table className="w-full text-sm">
-                  <thead>
-                    <tr className="border-b">
-                      <th className="text-left pb-2 text-muted-foreground font-medium">Pronoun</th>
-                      <th className="text-left pb-2 text-muted-foreground font-medium">Ending</th>
-                      <th className="text-left pb-2 text-muted-foreground font-medium">Example</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {cheatSheet.rows.map((row, i) => (
-                      <tr key={i} className="border-b last:border-0">
-                        <td className="py-2 font-medium">{row.pronoun}</td>
-                        <td className="py-2 font-mono text-primary">{row.ending}</td>
-                        <td className="py-2 text-muted-foreground">{row.example}</td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
-            </DialogContent>
-          </Dialog>
           <button
             onClick={exitSession}
             className="text-muted-foreground hover:text-foreground transition-colors text-lg leading-none"
@@ -451,6 +416,42 @@ export default function ConjugationDrill({
 
       {/* Pronoun prompt card with hint button inside */}
       <div className="rounded-2xl border-2 border-border bg-card p-8 text-center relative">
+        <Dialog>
+          <DialogTrigger asChild>
+            <button
+              className="absolute top-3 right-3 flex items-center gap-1 text-xs text-muted-foreground hover:text-foreground transition-colors"
+              aria-label="Hint"
+            >
+              <CircleHelp className="w-3.5 h-3.5" />
+              Hint
+            </button>
+          </DialogTrigger>
+          <DialogContent className="max-w-sm">
+            <DialogHeader>
+              <DialogTitle className="text-base">{cheatSheet.title}</DialogTitle>
+            </DialogHeader>
+            <div className="mt-2">
+              <table className="w-full text-sm">
+                <thead>
+                  <tr className="border-b">
+                    <th className="text-left pb-2 text-muted-foreground font-medium">Pronoun</th>
+                    <th className="text-left pb-2 text-muted-foreground font-medium">Ending</th>
+                    <th className="text-left pb-2 text-muted-foreground font-medium">Example</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {cheatSheet.rows.map((row, i) => (
+                    <tr key={i} className="border-b last:border-0">
+                      <td className="py-2 font-medium">{row.pronoun}</td>
+                      <td className="py-2 font-mono text-primary">{row.ending}</td>
+                      <td className="py-2 text-muted-foreground">{row.example}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </DialogContent>
+        </Dialog>
         <p className="text-xs text-muted-foreground mb-3 uppercase tracking-wide font-semibold">
           Conjugate
         </p>
