@@ -4,6 +4,7 @@ import conjugationsData from "../../data/conjugations.json";
 import grammarData from "../../data/grammar.json";
 import sentencesData from "../../data/sentences.json";
 import pronunciationData from "../../data/pronunciation.json";
+import concordanzaData from "../../data/concordanza.json";
 
 export type VocabItem = {
   id: string;
@@ -70,6 +71,18 @@ export const conjugations: Conjugation[] = conjugationsData as Conjugation[];
 export const grammar: GrammarRule[] = grammarData as GrammarRule[];
 export const sentences: SentenceExercise[] = sentencesData as SentenceExercise[];
 export const pronunciationRules: PronunciationRule[] = pronunciationData as PronunciationRule[];
+
+export type ConcordanzaQuestion = {
+  id: string;
+  sentence: string;
+  hint: string;
+  adjective: string;
+  correct: string;
+  options: string[];
+  tags: string[];
+};
+
+export const concordanza: ConcordanzaQuestion[] = concordanzaData as ConcordanzaQuestion[];
 
 // Unit numbers available across content
 export const UNITS = [1, 2, 3, 4, 5, 6] as const;

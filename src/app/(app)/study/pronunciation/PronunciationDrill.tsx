@@ -2,9 +2,10 @@
 
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
 import { useStudySession } from "@/lib/useStudySession";
-import type { PronunciationRule } from "@/lib/content";
+import UnitSelector from "@/components/UnitSelector";
+import { getVocabUnit } from "@/lib/content";
+import type { VocabItem } from "@/lib/content";
 import { cn } from "@/lib/utils";
 
 const LIMIT_OPTIONS = [10, 20, 30, 50, null] as const;
@@ -18,10 +19,11 @@ function shuffle<T>(arr: T[]): T[] {
   return a;
 }
 
-export default function PronunciationDrill({ rules }: { rules: PronunciationRule[] }) {
+export default function PronunciationDrill({ items }: { items: VocabItem[] }) {
+  const [unit, setUnit] = useState<number | undefined>(undefined);
   const [limit, setLimit] = useState<number | null>(30);
   const [started, setStarted] = useState(false);
-  const [deck, setDeck] = useState<PronunciationRule[]>([]);
+  const [deck, setDeck] = useState<VocabItem[]>([]);
   const [index, setIndex] = useState(0);
   const [flipped, setFlipped] = useState(false);
   const [score, setScore] = useState({ correct: 0, incorrect: 0 });
@@ -29,10 +31,12 @@ export default function PronunciationDrill({ rules }: { rules: PronunciationRule
   const [done, setDone] = useState(false);
   const { startSession, endSession, recordAttempt } = useStudySession("pronunciation");
 
+  const activeItems = unit ? items.filter((v) => getVocabUnit(v) === unit) : items;
+
   function beginDrill(filterIds?: string[]) {
     let pool = filterIds
-      ? rules.filter((r) => filterIds.includes(r.id))
-      : [...rules];
+      ? items.filter((v) => filterIds.includes(v.id))
+      : (unit ? items.filter((v) => getVocabUnit(v) === unit) : [...items]);
     pool = shuffle(pool);
     if (limit !== null && !filterIds) pool = pool.slice(0, limit);
     setDeck(pool);
@@ -72,14 +76,16 @@ export default function PronunciationDrill({ rules }: { rules: PronunciationRule
   }
 
   if (!started) {
+    const count = limit !== null ? Math.min(limit, activeItems.length) : activeItems.length;
     return (
       <div className="max-w-lg mx-auto px-4 py-6 space-y-6">
         <div>
           <h1 className="text-2xl font-bold">Pronunciation</h1>
           <p className="text-sm text-muted-foreground mt-1">
-            Learn how Italian letter combinations really sound.
+            See a word — flip to hear how it sounds.
           </p>
         </div>
+        <UnitSelector value={unit} onChange={setUnit} />
         <div>
           <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wide mb-2">Cards per session</p>
           <div className="flex flex-wrap gap-2">
@@ -99,8 +105,12 @@ export default function PronunciationDrill({ rules }: { rules: PronunciationRule
             ))}
           </div>
         </div>
-        <Button className="w-full h-12" onClick={() => beginDrill()}>
-          Start · {limit !== null ? Math.min(limit, rules.length) : rules.length} rule{(limit ?? rules.length) !== 1 ? "s" : ""}
+        <Button
+          className="w-full h-12"
+          onClick={() => beginDrill()}
+          disabled={activeItems.length === 0}
+        >
+          Start · {count} word{count !== 1 ? "s" : ""}
         </Button>
       </div>
     );
@@ -133,6 +143,8 @@ export default function PronunciationDrill({ rules }: { rules: PronunciationRule
 
   if (!current) return null;
 
+  const genderLabel = current.gender === "maschile" ? "m." : current.gender === "femminile" ? "f." : null;
+
   return (
     <div className="max-w-lg mx-auto px-4 py-6 flex flex-col gap-6">
       <div className="flex items-center justify-between">
@@ -149,35 +161,30 @@ export default function PronunciationDrill({ rules }: { rules: PronunciationRule
         </div>
       </div>
 
-      <Badge variant="outline" className="self-start text-xs">
-        Tap to see how it sounds
-      </Badge>
-
       {/* Card */}
       <div
-        className="min-h-64 flex flex-col items-center justify-center rounded-2xl border-2 border-border bg-card p-8 cursor-pointer select-none active:scale-[0.98] transition-transform text-center gap-4"
+        className="min-h-56 flex flex-col items-center justify-center rounded-2xl border-2 border-border bg-card p-8 cursor-pointer select-none active:scale-[0.98] transition-transform text-center gap-3"
         onClick={() => setFlipped((f) => !f)}
       >
         {!flipped ? (
           <>
-            <p className="text-4xl font-bold tracking-widest">{current.combo}</p>
-            <p className="text-xs text-muted-foreground mt-1">Tap to reveal</p>
+            <p className="text-3xl font-bold">{current.italian}</p>
+            {genderLabel && (
+              <p className="text-sm text-muted-foreground">({genderLabel})</p>
+            )}
+            <p className="text-xs text-muted-foreground mt-2">Tap to reveal</p>
           </>
         ) : (
           <>
-            <div className="space-y-1">
-              <p className="text-2xl font-bold">{current.phonetic}</p>
-              <p className="text-base text-muted-foreground">{current.rule}</p>
-            </div>
-            <div className="w-full border-t border-border pt-4 mt-2 space-y-2 text-left">
-              {current.examples.map((ex, i) => (
-                <div key={i} className="flex items-baseline gap-2">
-                  <span className="font-semibold text-sm w-28 shrink-0">{ex.italian}</span>
-                  <span className="text-xs text-primary font-mono">{ex.phonetic}</span>
-                  <span className="text-xs text-muted-foreground ml-auto">{ex.english}</span>
-                </div>
-              ))}
-            </div>
+            <p className="text-3xl font-bold tracking-wide text-primary">
+              {current.pronunciation}
+            </p>
+            <p className="text-lg text-muted-foreground">{current.english}</p>
+            {current.example && (
+              <p className="text-sm text-muted-foreground italic mt-1 border-t border-border pt-3 w-full text-center">
+                {current.example}
+              </p>
+            )}
           </>
         )}
       </div>

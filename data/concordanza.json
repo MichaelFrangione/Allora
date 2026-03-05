@@ -1,0 +1,470 @@
+[
+  {
+    "id": "cq001",
+    "sentence": "Il ragazzo è molto _____.",
+    "hint": "ragazzo — m. sing.",
+    "adjective": "stanco",
+    "correct": "stanco",
+    "options": ["stanco", "stanca", "stanchi", "stanche"],
+    "tags": ["concordanza", "lesson-6"]
+  },
+  {
+    "id": "cq002",
+    "sentence": "La ragazza è molto _____.",
+    "hint": "ragazza — f. sing.",
+    "adjective": "stanco",
+    "correct": "stanca",
+    "options": ["stanco", "stanca", "stanchi", "stanche"],
+    "tags": ["concordanza", "lesson-6"]
+  },
+  {
+    "id": "cq003",
+    "sentence": "I ragazzi sono molto _____.",
+    "hint": "ragazzi — m. pl.",
+    "adjective": "stanco",
+    "correct": "stanchi",
+    "options": ["stanco", "stanca", "stanchi", "stanche"],
+    "tags": ["concordanza", "lesson-6"]
+  },
+  {
+    "id": "cq004",
+    "sentence": "Le ragazze sono molto _____.",
+    "hint": "ragazze — f. pl.",
+    "adjective": "stanco",
+    "correct": "stanche",
+    "options": ["stanco", "stanca", "stanchi", "stanche"],
+    "tags": ["concordanza", "lesson-6"]
+  },
+  {
+    "id": "cq005",
+    "sentence": "Il caffè è ancora _____.",
+    "hint": "caffè — m. sing.",
+    "adjective": "caldo",
+    "correct": "caldo",
+    "options": ["caldo", "calda", "caldi", "calde"],
+    "tags": ["concordanza", "bar", "lesson-6"]
+  },
+  {
+    "id": "cq006",
+    "sentence": "La minestra è ancora _____.",
+    "hint": "minestra — f. sing.",
+    "adjective": "caldo",
+    "correct": "calda",
+    "options": ["caldo", "calda", "caldi", "calde"],
+    "tags": ["concordanza", "bar", "lesson-6"]
+  },
+  {
+    "id": "cq007",
+    "sentence": "I cornetti sono ancora _____.",
+    "hint": "cornetti — m. pl.",
+    "adjective": "caldo",
+    "correct": "caldi",
+    "options": ["caldo", "calda", "caldi", "calde"],
+    "tags": ["concordanza", "bar", "lesson-6"]
+  },
+  {
+    "id": "cq008",
+    "sentence": "Le pizzette sono ancora _____.",
+    "hint": "pizzette — f. pl.",
+    "adjective": "caldo",
+    "correct": "calde",
+    "options": ["caldo", "calda", "caldi", "calde"],
+    "tags": ["concordanza", "bar", "lesson-6"]
+  },
+  {
+    "id": "cq009",
+    "sentence": "Il succo è _____.",
+    "hint": "succo — m. sing.",
+    "adjective": "freddo",
+    "correct": "freddo",
+    "options": ["freddo", "fredda", "freddi", "fredde"],
+    "tags": ["concordanza", "bar", "lesson-6"]
+  },
+  {
+    "id": "cq010",
+    "sentence": "La birra è _____.",
+    "hint": "birra — f. sing.",
+    "adjective": "freddo",
+    "correct": "fredda",
+    "options": ["freddo", "fredda", "freddi", "fredde"],
+    "tags": ["concordanza", "bar", "lesson-6"]
+  },
+  {
+    "id": "cq011",
+    "sentence": "I tramezzini sono _____.",
+    "hint": "tramezzini — m. pl.",
+    "adjective": "freddo",
+    "correct": "freddi",
+    "options": ["freddo", "fredda", "freddi", "fredde"],
+    "tags": ["concordanza", "bar", "lesson-6"]
+  },
+  {
+    "id": "cq012",
+    "sentence": "Le paste sono _____.",
+    "hint": "paste — f. pl.",
+    "adjective": "freddo",
+    "correct": "fredde",
+    "options": ["freddo", "fredda", "freddi", "fredde"],
+    "tags": ["concordanza", "bar", "lesson-6"]
+  },
+  {
+    "id": "cq013",
+    "sentence": "Il cornetto è _____.",
+    "hint": "cornetto — m. sing.",
+    "adjective": "buono",
+    "correct": "buono",
+    "options": ["buono", "buona", "buoni", "buone"],
+    "tags": ["concordanza", "bar", "lesson-6"]
+  },
+  {
+    "id": "cq014",
+    "sentence": "La colazione è _____.",
+    "hint": "colazione — f. sing.",
+    "adjective": "buono",
+    "correct": "buona",
+    "options": ["buono", "buona", "buoni", "buone"],
+    "tags": ["concordanza", "bar", "lesson-6"]
+  },
+  {
+    "id": "cq015",
+    "sentence": "I biscotti sono _____.",
+    "hint": "biscotti — m. pl.",
+    "adjective": "buono",
+    "correct": "buoni",
+    "options": ["buono", "buona", "buoni", "buone"],
+    "tags": ["concordanza", "bar", "lesson-6"]
+  },
+  {
+    "id": "cq016",
+    "sentence": "Le merendine sono _____.",
+    "hint": "merendine — f. pl.",
+    "adjective": "buono",
+    "correct": "buone",
+    "options": ["buono", "buona", "buoni", "buone"],
+    "tags": ["concordanza", "bar", "lesson-6"]
+  },
+  {
+    "id": "cq017",
+    "sentence": "Il fiore è _____.",
+    "hint": "fiore — m. sing.",
+    "adjective": "bello",
+    "correct": "bello",
+    "options": ["bello", "bella", "belli", "belle"],
+    "tags": ["concordanza", "lesson-5"]
+  },
+  {
+    "id": "cq018",
+    "sentence": "La rosa è _____.",
+    "hint": "rosa — f. sing.",
+    "adjective": "bello",
+    "correct": "bella",
+    "options": ["bello", "bella", "belli", "belle"],
+    "tags": ["concordanza", "lesson-5"]
+  },
+  {
+    "id": "cq019",
+    "sentence": "I fiori sono _____.",
+    "hint": "fiori — m. pl.",
+    "adjective": "bello",
+    "correct": "belli",
+    "options": ["bello", "bella", "belli", "belle"],
+    "tags": ["concordanza", "lesson-5"]
+  },
+  {
+    "id": "cq020",
+    "sentence": "Le rose sono _____.",
+    "hint": "rose — f. pl.",
+    "adjective": "bello",
+    "correct": "belle",
+    "options": ["bello", "bella", "belli", "belle"],
+    "tags": ["concordanza", "lesson-5"]
+  },
+  {
+    "id": "cq021",
+    "sentence": "Mio fratello è _____.",
+    "hint": "fratello — m. sing.",
+    "adjective": "sportivo",
+    "correct": "sportivo",
+    "options": ["sportivo", "sportiva", "sportivi", "sportive"],
+    "tags": ["concordanza", "family", "lesson-6"]
+  },
+  {
+    "id": "cq022",
+    "sentence": "Mia sorella è _____.",
+    "hint": "sorella — f. sing.",
+    "adjective": "sportivo",
+    "correct": "sportiva",
+    "options": ["sportivo", "sportiva", "sportivi", "sportive"],
+    "tags": ["concordanza", "family", "lesson-6"]
+  },
+  {
+    "id": "cq023",
+    "sentence": "I miei fratelli sono _____.",
+    "hint": "fratelli — m. pl.",
+    "adjective": "sportivo",
+    "correct": "sportivi",
+    "options": ["sportivo", "sportiva", "sportivi", "sportive"],
+    "tags": ["concordanza", "family", "lesson-6"]
+  },
+  {
+    "id": "cq024",
+    "sentence": "Le mie sorelle sono _____.",
+    "hint": "sorelle — f. pl.",
+    "adjective": "sportivo",
+    "correct": "sportive",
+    "options": ["sportivo", "sportiva", "sportivi", "sportive"],
+    "tags": ["concordanza", "family", "lesson-6"]
+  },
+  {
+    "id": "cq025",
+    "sentence": "Il professore è _____.",
+    "hint": "professore — m. sing. · adjective ends in -E!",
+    "adjective": "intelligente",
+    "correct": "intelligente",
+    "options": ["intelligente", "intelligenti", "intelligento", "intelligenta"],
+    "tags": ["concordanza", "e-adjectives", "lesson-5"]
+  },
+  {
+    "id": "cq026",
+    "sentence": "La professoressa è _____.",
+    "hint": "professoressa — f. sing. · adjective ends in -E!",
+    "adjective": "intelligente",
+    "correct": "intelligente",
+    "options": ["intelligente", "intelligenti", "intelligenta", "intelligento"],
+    "tags": ["concordanza", "e-adjectives", "lesson-5"]
+  },
+  {
+    "id": "cq027",
+    "sentence": "Gli studenti sono _____.",
+    "hint": "studenti — m. pl. · adjective ends in -E!",
+    "adjective": "intelligente",
+    "correct": "intelligenti",
+    "options": ["intelligente", "intelligenti", "intelligento", "intelligenta"],
+    "tags": ["concordanza", "e-adjectives", "lesson-5"]
+  },
+  {
+    "id": "cq028",
+    "sentence": "Le studentesse sono _____.",
+    "hint": "studentesse — f. pl. · adjective ends in -E!",
+    "adjective": "intelligente",
+    "correct": "intelligenti",
+    "options": ["intelligente", "intelligenti", "intelligenta", "intelligento"],
+    "tags": ["concordanza", "e-adjectives", "lesson-5"]
+  },
+  {
+    "id": "cq029",
+    "sentence": "Il ristorante è _____.",
+    "hint": "ristorante — m. sing. · adjective ends in -E!",
+    "adjective": "grande",
+    "correct": "grande",
+    "options": ["grande", "grandi", "grando", "granda"],
+    "tags": ["concordanza", "e-adjectives", "lesson-5"]
+  },
+  {
+    "id": "cq030",
+    "sentence": "La stazione è _____.",
+    "hint": "stazione — f. sing. · adjective ends in -E!",
+    "adjective": "grande",
+    "correct": "grande",
+    "options": ["grande", "grandi", "granda", "grando"],
+    "tags": ["concordanza", "e-adjectives", "lesson-5"]
+  },
+  {
+    "id": "cq031",
+    "sentence": "I ristoranti sono _____.",
+    "hint": "ristoranti — m. pl. · adjective ends in -E!",
+    "adjective": "grande",
+    "correct": "grandi",
+    "options": ["grande", "grandi", "grando", "granda"],
+    "tags": ["concordanza", "e-adjectives", "lesson-5"]
+  },
+  {
+    "id": "cq032",
+    "sentence": "Le stazioni sono _____.",
+    "hint": "stazioni — f. pl. · adjective ends in -E!",
+    "adjective": "grande",
+    "correct": "grandi",
+    "options": ["grande", "grandi", "granda", "grando"],
+    "tags": ["concordanza", "e-adjectives", "lesson-5"]
+  },
+  {
+    "id": "cq033",
+    "sentence": "Il mio professore è _____.",
+    "hint": "professore — m. sing.",
+    "adjective": "simpatico",
+    "correct": "simpatico",
+    "options": ["simpatico", "simpatica", "simpatici", "simpatiche"],
+    "tags": ["concordanza", "lesson-5"]
+  },
+  {
+    "id": "cq034",
+    "sentence": "La mia professoressa è _____.",
+    "hint": "professoressa — f. sing.",
+    "adjective": "simpatico",
+    "correct": "simpatica",
+    "options": ["simpatico", "simpatica", "simpatici", "simpatiche"],
+    "tags": ["concordanza", "lesson-5"]
+  },
+  {
+    "id": "cq035",
+    "sentence": "I nostri colleghi sono _____.",
+    "hint": "colleghi — m. pl.",
+    "adjective": "simpatico",
+    "correct": "simpatici",
+    "options": ["simpatico", "simpatica", "simpatici", "simpatiche"],
+    "tags": ["concordanza", "lesson-5"]
+  },
+  {
+    "id": "cq036",
+    "sentence": "Le nostre colleghe sono _____.",
+    "hint": "colleghe — f. pl.",
+    "adjective": "simpatico",
+    "correct": "simpatiche",
+    "options": ["simpatico", "simpatica", "simpatici", "simpatiche"],
+    "tags": ["concordanza", "lesson-5"]
+  },
+  {
+    "id": "cq037",
+    "sentence": "Il bambino è _____.",
+    "hint": "bambino — m. sing. · adjective ends in -E!",
+    "adjective": "felice",
+    "correct": "felice",
+    "options": ["felice", "felici", "felico", "felica"],
+    "tags": ["concordanza", "e-adjectives", "lesson-5"]
+  },
+  {
+    "id": "cq038",
+    "sentence": "La bambina è _____.",
+    "hint": "bambina — f. sing. · adjective ends in -E!",
+    "adjective": "felice",
+    "correct": "felice",
+    "options": ["felice", "felici", "felica", "felico"],
+    "tags": ["concordanza", "e-adjectives", "lesson-5"]
+  },
+  {
+    "id": "cq039",
+    "sentence": "I bambini sono _____.",
+    "hint": "bambini — m. pl. · adjective ends in -E!",
+    "adjective": "felice",
+    "correct": "felici",
+    "options": ["felice", "felici", "felico", "felica"],
+    "tags": ["concordanza", "e-adjectives", "lesson-5"]
+  },
+  {
+    "id": "cq040",
+    "sentence": "Le bambine sono _____.",
+    "hint": "bambine — f. pl. · adjective ends in -E!",
+    "adjective": "felice",
+    "correct": "felici",
+    "options": ["felice", "felici", "felica", "felico"],
+    "tags": ["concordanza", "e-adjectives", "lesson-5"]
+  },
+  {
+    "id": "cq041",
+    "sentence": "Il libro è _____.",
+    "hint": "libro — m. sing.",
+    "adjective": "nuovo",
+    "correct": "nuovo",
+    "options": ["nuovo", "nuova", "nuovi", "nuove"],
+    "tags": ["concordanza", "lesson-5"]
+  },
+  {
+    "id": "cq042",
+    "sentence": "La macchina è _____.",
+    "hint": "macchina — f. sing.",
+    "adjective": "nuovo",
+    "correct": "nuova",
+    "options": ["nuovo", "nuova", "nuovi", "nuove"],
+    "tags": ["concordanza", "lesson-5"]
+  },
+  {
+    "id": "cq043",
+    "sentence": "I libri sono _____.",
+    "hint": "libri — m. pl.",
+    "adjective": "nuovo",
+    "correct": "nuovi",
+    "options": ["nuovo", "nuova", "nuovi", "nuove"],
+    "tags": ["concordanza", "lesson-5"]
+  },
+  {
+    "id": "cq044",
+    "sentence": "Le macchine sono _____.",
+    "hint": "macchine — f. pl.",
+    "adjective": "nuovo",
+    "correct": "nuove",
+    "options": ["nuovo", "nuova", "nuovi", "nuove"],
+    "tags": ["concordanza", "lesson-5"]
+  },
+  {
+    "id": "cq045",
+    "sentence": "Il cornetto è _____.",
+    "hint": "cornetto — m. sing.",
+    "adjective": "squisito",
+    "correct": "squisito",
+    "options": ["squisito", "squisita", "squisiti", "squisite"],
+    "tags": ["concordanza", "bar", "lesson-6"]
+  },
+  {
+    "id": "cq046",
+    "sentence": "La torta è _____.",
+    "hint": "torta — f. sing.",
+    "adjective": "squisito",
+    "correct": "squisita",
+    "options": ["squisito", "squisita", "squisiti", "squisite"],
+    "tags": ["concordanza", "bar", "lesson-6"]
+  },
+  {
+    "id": "cq047",
+    "sentence": "I dolci sono _____.",
+    "hint": "dolci — m. pl.",
+    "adjective": "squisito",
+    "correct": "squisiti",
+    "options": ["squisito", "squisita", "squisiti", "squisite"],
+    "tags": ["concordanza", "bar", "lesson-6"]
+  },
+  {
+    "id": "cq048",
+    "sentence": "Le pizze sono _____.",
+    "hint": "pizze — f. pl.",
+    "adjective": "squisito",
+    "correct": "squisite",
+    "options": ["squisito", "squisita", "squisiti", "squisite"],
+    "tags": ["concordanza", "bar", "lesson-6"]
+  },
+  {
+    "id": "cq049",
+    "sentence": "La lezione è molto _____.",
+    "hint": "lezione — f. sing. · adjective ends in -E!",
+    "adjective": "interessante",
+    "correct": "interessante",
+    "options": ["interessante", "interessanti", "interessanta", "interessanto"],
+    "tags": ["concordanza", "e-adjectives", "lesson-5"]
+  },
+  {
+    "id": "cq050",
+    "sentence": "Le lezioni sono molto _____.",
+    "hint": "lezioni — f. pl. · adjective ends in -E!",
+    "adjective": "interessante",
+    "correct": "interessanti",
+    "options": ["interessante", "interessanti", "interessanta", "interessanto"],
+    "tags": ["concordanza", "e-adjectives", "lesson-5"]
+  },
+  {
+    "id": "cq051",
+    "sentence": "Il film è molto _____.",
+    "hint": "film — m. sing. · adjective ends in -E!",
+    "adjective": "interessante",
+    "correct": "interessante",
+    "options": ["interessante", "interessanti", "interessanto", "interessanta"],
+    "tags": ["concordanza", "e-adjectives", "lesson-5"]
+  },
+  {
+    "id": "cq052",
+    "sentence": "I film sono molto _____.",
+    "hint": "film — m. pl. · adjective ends in -E!",
+    "adjective": "interessante",
+    "correct": "interessanti",
+    "options": ["interessante", "interessanti", "interessanto", "interessanta"],
+    "tags": ["concordanza", "e-adjectives", "lesson-5"]
+  }
+]

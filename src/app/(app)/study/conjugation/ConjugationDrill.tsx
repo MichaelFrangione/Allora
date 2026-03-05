@@ -373,7 +373,7 @@ export default function ConjugationDrill({
   return (
     <div className="max-w-lg mx-auto px-4 py-6 space-y-5">
       {/* Header */}
-      <div className="flex items-start justify-between gap-3">
+      <div className="flex items-center justify-between gap-3">
         <div className="flex flex-wrap items-center gap-x-2 gap-y-1">
           <span className="font-semibold">{currentConj.verb}</span>
           {drillMode === "pick" && (
@@ -381,12 +381,35 @@ export default function ConjugationDrill({
           )}
           <Badge variant="secondary" className="text-xs">{verbType}</Badge>
         </div>
-        <div className="flex items-center gap-2 shrink-0">
-          {/* Cheat sheet button */}
+        <div className="flex items-center gap-3 shrink-0">
+          <span className="text-sm text-muted-foreground">
+            {currentIndex + 1} / {totalCards}
+          </span>
+          <button
+            onClick={exitSession}
+            className="text-muted-foreground hover:text-foreground transition-colors text-lg leading-none"
+            aria-label="Exit session"
+          >
+            ✕
+          </button>
+        </div>
+      </div>
+
+      {/* Pronoun prompt card with hint button inside */}
+      <div className="rounded-2xl border-2 border-border bg-card p-8 text-center relative">
+        <p className="text-xs text-muted-foreground mb-3 uppercase tracking-wide font-semibold">
+          Conjugate
+        </p>
+        <p className="text-3xl font-bold">{currentPronoun}</p>
+        <p className="text-muted-foreground mt-1">{currentConj.verb}</p>
+        {drillMode === "random" && (
+          <p className="text-xs text-muted-foreground mt-2 italic">{currentConj.meaning}</p>
+        )}
+        <div className="mt-4 flex justify-center">
           <Dialog>
             <DialogTrigger asChild>
-              <Button variant="outline" size="sm" className="text-xs h-8 px-2">
-                Cheat Sheet
+              <Button variant="ghost" size="sm" className="text-xs text-muted-foreground h-7 px-2">
+                Hint
               </Button>
             </DialogTrigger>
             <DialogContent className="max-w-sm">
@@ -415,30 +438,7 @@ export default function ConjugationDrill({
               </div>
             </DialogContent>
           </Dialog>
-
-          <span className="text-sm text-muted-foreground">
-            {currentIndex + 1} / {totalCards}
-          </span>
-          <button
-            onClick={exitSession}
-            className="text-muted-foreground hover:text-foreground transition-colors text-lg leading-none"
-            aria-label="Exit session"
-          >
-            ✕
-          </button>
         </div>
-      </div>
-
-      {/* Pronoun prompt */}
-      <div className="rounded-2xl border-2 border-border bg-card p-8 text-center">
-        <p className="text-xs text-muted-foreground mb-3 uppercase tracking-wide font-semibold">
-          Conjugate
-        </p>
-        <p className="text-3xl font-bold">{currentPronoun}</p>
-        <p className="text-muted-foreground mt-1">{currentConj.verb}</p>
-        {drillMode === "random" && (
-          <p className="text-xs text-muted-foreground mt-2 italic">{currentConj.meaning}</p>
-        )}
       </div>
 
       {/* Answer input */}

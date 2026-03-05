@@ -9,9 +9,9 @@ const studyModes = [
   { href: "/study/flashcards", label: "Flip Cards", emoji: "🃏", desc: "Both directions" },
   { href: "/study/vocab", label: "Vocab Quiz", emoji: "📝", desc: "Multiple choice" },
   { href: "/study/conjugation", label: "Conjugation", emoji: "🔤", desc: "One form at a time" },
+  { href: "/study/concordanza", label: "Concordanza", emoji: "🎯", desc: "Pick the right form" },
   { href: "/study/pronunciation", label: "Pronunciation", emoji: "🔊", desc: "How sounds work" },
   { href: "/study/time", label: "Time & Dates", emoji: "🕐", desc: "Clock, days, months" },
-  { href: "/study/grammar", label: "Grammar", emoji: "📖", desc: "Rule quiz" },
   { href: "/study/sentence-builder", label: "Sentences", emoji: "🧩", desc: "Tap to build" },
   { href: "/study/mixed", label: "Mixed", emoji: "🎲", desc: "All modes at once" },
 ];
