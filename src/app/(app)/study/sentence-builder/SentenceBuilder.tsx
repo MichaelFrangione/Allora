@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback, useRef } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { useStudySession } from "@/lib/useStudySession";
@@ -58,7 +58,20 @@ export default function SentenceBuilder({
   const [score, setScore] = useState({ correct: 0, incorrect: 0 });
   const [wrongIds, setWrongIds] = useState<string[]>([]);
   const [done, setDone] = useState(false);
+  const [speaking, setSpeaking] = useState(false);
   const { startSession, endSession, recordAttempt } = useStudySession("sentence");
+
+  function speak(text: string) {
+    if (!window.speechSynthesis) return;
+    window.speechSynthesis.cancel();
+    const utterance = new SpeechSynthesisUtterance(text);
+    utterance.lang = "it-IT";
+    utterance.rate = 0.9;
+    utterance.onstart = () => setSpeaking(true);
+    utterance.onend = () => setSpeaking(false);
+    utterance.onerror = () => setSpeaking(false);
+    window.speechSynthesis.speak(utterance);
+  }
 
   const activeExercises = exercises.filter((e) => {
     if (unit && getSentenceUnit(e) !== unit) return false;
@@ -273,10 +286,27 @@ export default function SentenceBuilder({
 
       <Card>
         <CardContent className="pt-4 pb-4">
-          <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground mb-1">
-            Translate
-          </p>
+          <div className="flex items-center justify-between mb-1">
+            <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">
+              Translate
+            </p>
+            {checked && (
+              <button
+                onClick={() => speak(ex!.italian)}
+                className={cn(
+                  "text-lg transition-opacity",
+                  speaking ? "opacity-50" : "opacity-70 hover:opacity-100"
+                )}
+                aria-label="Hear the sentence"
+              >
+                🔊
+              </button>
+            )}
+          </div>
           <p className="text-base font-medium">{ex!.english}</p>
+          {checked && (
+            <p className="text-sm text-muted-foreground mt-1 italic">{ex!.italian}</p>
+          )}
         </CardContent>
       </Card>
 
