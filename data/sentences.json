@@ -2101,7 +2101,7 @@
       "Loro",
       "preferiscono",
       "venire",
-      "in",
+      "a",
       "treno"
     ],
     "tags": [
@@ -2934,6 +2934,30 @@
       "present",
       "ricapitoliamo",
       "lesson-5"
+    ]
+  },
+  {
+    "id": "s114",
+    "italian": "Loro preferiscono andare in treno",
+    "english": "They prefer to go by train",
+    "parts": [
+      "Loro",
+      "preferiscono",
+      "andare",
+      "in",
+      "treno"
+    ],
+    "distractors": [
+      "Noi",
+      "preferiamo",
+      "venire",
+      "con",
+      "macchina"
+    ],
+    "tags": [
+      "present",
+      "isc-verbs",
+      "lesson-6"
     ]
   },
   {
