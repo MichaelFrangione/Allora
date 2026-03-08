@@ -29,6 +29,20 @@ export default function VocabBrowser({
   const [query, setQuery] = useState("");
   const [activePos, setActivePos] = useState("");
   const [unit, setUnit] = useState<number | undefined>(undefined);
+  const [speaking, setSpeaking] = useState("");
+
+  function speak(text: string) {
+    if (!window.speechSynthesis) return;
+    window.speechSynthesis.cancel();
+    if (speaking === text) { setSpeaking(""); return; }
+    const utterance = new SpeechSynthesisUtterance(text);
+    utterance.lang = "it-IT";
+    utterance.rate = 0.9;
+    utterance.onstart = () => setSpeaking(text);
+    utterance.onend = () => setSpeaking("");
+    utterance.onerror = () => setSpeaking("");
+    window.speechSynthesis.speak(utterance);
+  }
 
   const filtered = initialItems.filter((v) => {
     const matchesUnit = !unit || getVocabUnit(v) === unit;
@@ -80,9 +94,17 @@ export default function VocabBrowser({
                 <div className="flex-1 min-w-0">
                   <div className="flex items-center gap-2 flex-wrap">
                     <span className="font-semibold text-base">{item.italian}</span>
+                    <button
+                      onClick={() => speak(item.italian)}
+                      className={`text-base transition-opacity ${speaking === item.italian ? "opacity-40" : "opacity-50 hover:opacity-100"}`}
+                      aria-label="Hear pronunciation"
+                    >
+                      🔊
+                    </button>
                     {item.gender && (
                       <span className="text-xs text-muted-foreground">({item.gender}.)</span>
                     )}
+
                     <span
                       className={`text-[10px] px-1.5 py-0.5 rounded font-medium ${
                         POS_COLORS[item.partOfSpeech] ?? "bg-muted text-muted-foreground"
