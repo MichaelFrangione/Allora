@@ -196,7 +196,7 @@ export default function SentenceBuilder({
             {TOPIC_TAGS.map((t) => (
               <button
                 key={t.value}
-                onClick={() => setTopic(topic === t.value ? undefined : t.value)}
+                onClick={() => { setTopic(topic === t.value ? undefined : t.value); setUnit(undefined); }}
                 className={cn(
                   "px-3 py-1.5 rounded-full text-sm font-medium transition-colors",
                   topic === t.value

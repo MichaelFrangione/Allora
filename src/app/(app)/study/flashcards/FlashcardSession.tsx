@@ -65,6 +65,20 @@ export default function FlashcardSession({
   const [done, setDone] = useState(false);
   const { startSession, endSession, recordAttempt } = useStudySession("flashcard");
 
+  const [speaking, setSpeaking] = useState(false);
+
+  function speak(text: string) {
+    if (!window.speechSynthesis) return;
+    window.speechSynthesis.cancel();
+    const utterance = new SpeechSynthesisUtterance(text);
+    utterance.lang = "it-IT";
+    utterance.rate = 0.9;
+    utterance.onstart = () => setSpeaking(true);
+    utterance.onend = () => setSpeaking(false);
+    utterance.onerror = () => setSpeaking(false);
+    window.speechSynthesis.speak(utterance);
+  }
+
   const activeItems = unit ? vocab.filter((v) => getVocabUnit(v) === unit) : vocab;
 
   useEffect(() => {
@@ -243,6 +257,15 @@ export default function FlashcardSession({
             {current.direction === "it→en" && pronunciation && (
               <p className="text-xs text-muted-foreground tracking-wide">{pronunciation}</p>
             )}
+            {current.direction === "it→en" && (
+              <button
+                onClick={(e) => { e.stopPropagation(); speak(current.item.italian); }}
+                className={cn("text-lg mt-1 transition-opacity", speaking ? "opacity-40" : "opacity-60 hover:opacity-100")}
+                aria-label="Hear pronunciation"
+              >
+                🔊
+              </button>
+            )}
             <p className="text-xs text-muted-foreground mt-1">Tap to reveal</p>
           </>
         ) : current.direction === "it→en" ? (
@@ -264,6 +287,13 @@ export default function FlashcardSession({
             {genderLabel && (
               <p className="text-sm text-muted-foreground">({genderLabel})</p>
             )}
+            <button
+              onClick={(e) => { e.stopPropagation(); speak(current.item.italian); }}
+              className={cn("text-lg mt-1 transition-opacity", speaking ? "opacity-40" : "opacity-60 hover:opacity-100")}
+              aria-label="Hear pronunciation"
+            >
+              🔊
+            </button>
           </>
         )}
       </div>

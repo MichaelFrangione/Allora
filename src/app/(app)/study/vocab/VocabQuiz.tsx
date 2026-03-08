@@ -48,6 +48,20 @@ export default function VocabQuiz({ items, weakIds = [], initialIds }: { items: 
   const [done, setDone] = useState(false);
   const { startSession, endSession, recordAttempt } = useStudySession("vocab");
 
+  const [speaking, setSpeaking] = useState(false);
+
+  function speak(text: string) {
+    if (!window.speechSynthesis) return;
+    window.speechSynthesis.cancel();
+    const utterance = new SpeechSynthesisUtterance(text);
+    utterance.lang = "it-IT";
+    utterance.rate = 0.9;
+    utterance.onstart = () => setSpeaking(true);
+    utterance.onend = () => setSpeaking(false);
+    utterance.onerror = () => setSpeaking(false);
+    window.speechSynthesis.speak(utterance);
+  }
+
   const activeItems = unit ? items.filter((v) => getVocabUnit(v) === unit) : items;
 
   useEffect(() => {
@@ -207,6 +221,13 @@ export default function VocabQuiz({ items, weakIds = [], initialIds }: { items: 
           {q.item.partOfSpeech && (
             <p className="text-sm text-muted-foreground mt-1">{q.item.partOfSpeech}</p>
           )}
+          <button
+            onClick={() => speak(q.item.italian)}
+            className={cn("text-lg mt-3 transition-opacity", speaking ? "opacity-40" : "opacity-60 hover:opacity-100")}
+            aria-label="Hear pronunciation"
+          >
+            🔊
+          </button>
         </CardContent>
       </Card>
 

@@ -30,7 +30,20 @@ export default function ConcordanzaQuiz({ questions, weakIds = [] }: { questions
   const [score, setScore] = useState({ correct: 0, incorrect: 0 });
   const [wrongIds, setWrongIds] = useState<string[]>([]);
   const [done, setDone] = useState(false);
+  const [speaking, setSpeaking] = useState(false);
   const { startSession, endSession, recordAttempt } = useStudySession("concordanza");
+
+  function speak(text: string) {
+    if (!window.speechSynthesis) return;
+    window.speechSynthesis.cancel();
+    const utterance = new SpeechSynthesisUtterance(text);
+    utterance.lang = "it-IT";
+    utterance.rate = 0.9;
+    utterance.onstart = () => setSpeaking(true);
+    utterance.onend = () => setSpeaking(false);
+    utterance.onerror = () => setSpeaking(false);
+    window.speechSynthesis.speak(utterance);
+  }
 
   useEffect(() => {
     return () => { endSession(); };
@@ -187,6 +200,17 @@ export default function ConcordanzaQuiz({ questions, weakIds = [] }: { questions
           {after}
         </p>
         <p className="text-xs text-center text-muted-foreground">{q.hint}</p>
+        {submitted && (
+          <div className="flex justify-center">
+            <button
+              onClick={() => speak(q.sentence.replace("_____", q.correct))}
+              className={cn("text-lg transition-opacity", speaking ? "opacity-40" : "opacity-60 hover:opacity-100")}
+              aria-label="Hear sentence"
+            >
+              🔊
+            </button>
+          </div>
+        )}
       </div>
 
       {/* Options */}
