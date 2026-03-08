@@ -12,6 +12,21 @@ import { getBoostEnabled } from "@/components/BoostToggle";
 
 const LIMIT_OPTIONS = [10, 20, 30, 50, null] as const;
 
+const TOPIC_TAGS = [
+  { value: "piacere", label: "Piacere" },
+  { value: "concordanza", label: "Concordanza" },
+  { value: "bar", label: "Al Bar" },
+  { value: "possessives", label: "Possessives" },
+  { value: "adjectives", label: "Adjectives" },
+  { value: "family", label: "Family" },
+  { value: "isc-verbs", label: "ISC Verbs" },
+  { value: "verbi-are", label: "-ARE Verbs" },
+  { value: "verbi-ere", label: "-ERE Verbs" },
+  { value: "verbi-ire", label: "-IRE Verbs" },
+  { value: "verbi-misti", label: "Mixed Verbs" },
+  { value: "ricapitoliamo", label: "Ricapitoliamo" },
+] as const;
+
 function shuffle<T>(arr: T[]): T[] {
   const a = [...arr];
   for (let i = a.length - 1; i > 0; i--) {
@@ -31,6 +46,7 @@ export default function SentenceBuilder({
   initialIds?: string[];
 }) {
   const [unit, setUnit] = useState<number | undefined>(undefined);
+  const [topic, setTopic] = useState<string | undefined>(undefined);
   const [limit, setLimit] = useState<number | null>(30);
   const [started, setStarted] = useState(false);
   const [deck, setDeck] = useState<SentenceExercise[]>([]);
@@ -44,7 +60,11 @@ export default function SentenceBuilder({
   const [done, setDone] = useState(false);
   const { startSession, endSession, recordAttempt } = useStudySession("sentence");
 
-  const activeExercises = unit ? exercises.filter((e) => getSentenceUnit(e) === unit) : exercises;
+  const activeExercises = exercises.filter((e) => {
+    if (unit && getSentenceUnit(e) !== unit) return false;
+    if (topic && !e.tags.includes(topic)) return false;
+    return true;
+  });
 
   const loadExercise = useCallback((ex: SentenceExercise) => {
     setBuilt([]);
@@ -64,7 +84,11 @@ export default function SentenceBuilder({
   }, []);
 
   function beginDrill(filterIds?: string[]) {
-    let active = unit ? exercises.filter((e) => getSentenceUnit(e) === unit) : exercises;
+    let active = exercises.filter((e) => {
+      if (unit && getSentenceUnit(e) !== unit) return false;
+      if (topic && !e.tags.includes(topic)) return false;
+      return true;
+    });
     let shuffled: SentenceExercise[];
     if (filterIds) {
       const filtered = active.filter((e) => filterIds.includes(e.id));
@@ -141,7 +165,37 @@ export default function SentenceBuilder({
     return (
       <div className="max-w-lg mx-auto px-4 py-6 space-y-6">
         <h1 className="text-2xl font-bold">Sentence Builder</h1>
-        <UnitSelector value={unit} onChange={setUnit} />
+        <UnitSelector value={unit} onChange={(u) => { setUnit(u); setTopic(undefined); }} />
+        <div>
+          <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wide mb-2">Topic</p>
+          <div className="flex flex-wrap gap-2">
+            <button
+              onClick={() => setTopic(undefined)}
+              className={cn(
+                "px-3 py-1.5 rounded-full text-sm font-medium transition-colors",
+                topic === undefined
+                  ? "bg-primary text-primary-foreground"
+                  : "bg-muted text-muted-foreground hover:bg-muted/80"
+              )}
+            >
+              All
+            </button>
+            {TOPIC_TAGS.map((t) => (
+              <button
+                key={t.value}
+                onClick={() => setTopic(topic === t.value ? undefined : t.value)}
+                className={cn(
+                  "px-3 py-1.5 rounded-full text-sm font-medium transition-colors",
+                  topic === t.value
+                    ? "bg-primary text-primary-foreground"
+                    : "bg-muted text-muted-foreground hover:bg-muted/80"
+                )}
+              >
+                {t.label}
+              </button>
+            ))}
+          </div>
+        </div>
         <div>
           <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wide mb-2">Sentences per session</p>
           <div className="flex flex-wrap gap-2">

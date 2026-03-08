@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { useStudySession } from "@/lib/useStudySession";
 import UnitSelector from "@/components/UnitSelector";
 import { getVocabUnit } from "@/lib/content";
-import type { VocabItem } from "@/lib/content";
+import type { VocabItem, PronunciationRule } from "@/lib/content";
 import { cn } from "@/lib/utils";
 import { getBoostEnabled } from "@/components/BoostToggle";
 
@@ -20,11 +20,22 @@ function shuffle<T>(arr: T[]): T[] {
   return a;
 }
 
-export default function PronunciationDrill({ items, weakIds = [] }: { items: VocabItem[]; weakIds?: string[] }) {
+type DrillMode = "vocab" | "rules";
+
+export default function PronunciationDrill({
+  items,
+  weakIds = [],
+  rules = [],
+}: {
+  items: VocabItem[];
+  weakIds?: string[];
+  rules?: PronunciationRule[];
+}) {
+  const [mode, setMode] = useState<DrillMode>("vocab");
   const [unit, setUnit] = useState<number | undefined>(undefined);
   const [limit, setLimit] = useState<number | null>(30);
   const [started, setStarted] = useState(false);
-  const [deck, setDeck] = useState<VocabItem[]>([]);
+  const [deck, setDeck] = useState<(VocabItem | PronunciationRule)[]>([]);
   const [index, setIndex] = useState(0);
   const [flipped, setFlipped] = useState(false);
   const [score, setScore] = useState({ correct: 0, incorrect: 0 });
@@ -33,10 +44,15 @@ export default function PronunciationDrill({ items, weakIds = [] }: { items: Voc
   const { startSession, endSession, recordAttempt } = useStudySession("pronunciation");
 
   const activeItems = unit ? items.filter((v) => getVocabUnit(v) === unit) : items;
+  const setupCount = mode === "rules"
+    ? rules.length
+    : limit !== null ? Math.min(limit, activeItems.length) : activeItems.length;
 
   function beginDrill(filterIds?: string[]) {
-    let pool: VocabItem[];
-    if (filterIds) {
+    let pool: (VocabItem | PronunciationRule)[];
+    if (mode === "rules") {
+      pool = shuffle([...rules]);
+    } else if (filterIds) {
       pool = shuffle(items.filter((v) => filterIds.includes(v.id)));
     } else {
       const active = unit ? items.filter((v) => getVocabUnit(v) === unit) : items;
@@ -67,6 +83,7 @@ export default function PronunciationDrill({ items, weakIds = [] }: { items: Voc
   }
 
   const current = deck[index];
+  const isRule = current && "combo" in current;
 
   async function handleAnswer(correct: boolean) {
     if (!current) return;
@@ -87,41 +104,80 @@ export default function PronunciationDrill({ items, weakIds = [] }: { items: Voc
   }
 
   if (!started) {
-    const count = limit !== null ? Math.min(limit, activeItems.length) : activeItems.length;
     return (
       <div className="max-w-lg mx-auto px-4 py-6 space-y-6">
         <div>
           <h1 className="text-2xl font-bold">Pronunciation</h1>
           <p className="text-sm text-muted-foreground mt-1">
-            See a word — flip to hear how it sounds.
+            See a word or sound rule — flip to hear how it sounds.
           </p>
         </div>
-        <UnitSelector value={unit} onChange={setUnit} />
+
         <div>
-          <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wide mb-2">Cards per session</p>
-          <div className="flex flex-wrap gap-2">
-            {LIMIT_OPTIONS.map((l) => (
-              <button
-                key={l ?? "all"}
-                onClick={() => setLimit(l)}
-                className={cn(
-                  "px-3 py-1.5 rounded-full text-sm font-medium transition-colors",
-                  limit === l
-                    ? "bg-primary text-primary-foreground"
-                    : "bg-muted text-muted-foreground hover:bg-muted/80"
-                )}
-              >
-                {l ?? "All"}
-              </button>
-            ))}
+          <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wide mb-2">Mode</p>
+          <div className="flex gap-2">
+            <button
+              onClick={() => setMode("vocab")}
+              className={cn(
+                "px-3 py-1.5 rounded-full text-sm font-medium transition-colors",
+                mode === "vocab"
+                  ? "bg-primary text-primary-foreground"
+                  : "bg-muted text-muted-foreground hover:bg-muted/80"
+              )}
+            >
+              Vocab Words
+            </button>
+            <button
+              onClick={() => setMode("rules")}
+              className={cn(
+                "px-3 py-1.5 rounded-full text-sm font-medium transition-colors",
+                mode === "rules"
+                  ? "bg-primary text-primary-foreground"
+                  : "bg-muted text-muted-foreground hover:bg-muted/80"
+              )}
+            >
+              Sound Rules
+            </button>
           </div>
         </div>
+
+        {mode === "vocab" && (
+          <>
+            <UnitSelector value={unit} onChange={setUnit} />
+            <div>
+              <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wide mb-2">Cards per session</p>
+              <div className="flex flex-wrap gap-2">
+                {LIMIT_OPTIONS.map((l) => (
+                  <button
+                    key={l ?? "all"}
+                    onClick={() => setLimit(l)}
+                    className={cn(
+                      "px-3 py-1.5 rounded-full text-sm font-medium transition-colors",
+                      limit === l
+                        ? "bg-primary text-primary-foreground"
+                        : "bg-muted text-muted-foreground hover:bg-muted/80"
+                    )}
+                  >
+                    {l ?? "All"}
+                  </button>
+                ))}
+              </div>
+            </div>
+          </>
+        )}
+
+        {mode === "rules" && (
+          <p className="text-sm text-muted-foreground">
+            Drills all {rules.length} Italian sound rules — CHI/CHE, GLI, GN, SC, Z, and more.
+          </p>
+        )}
+
         <Button
           className="w-full h-12"
           onClick={() => beginDrill()}
-          disabled={activeItems.length === 0}
+          disabled={setupCount === 0}
         >
-          Start · {count} word{count !== 1 ? "s" : ""}
+          Start · {setupCount} {mode === "rules" ? "rule" : "word"}{setupCount !== 1 ? "s" : ""}
         </Button>
       </div>
     );
@@ -136,7 +192,7 @@ export default function PronunciationDrill({ items, weakIds = [] }: { items: Voc
         <p className="text-4xl font-bold">{pct}%</p>
         <p className="text-muted-foreground">{score.correct} / {deck.length} correct</p>
         <Button onClick={() => beginDrill()} className="w-full max-w-xs">Shuffle & Repeat</Button>
-        {wrongIds.length > 0 && (
+        {wrongIds.length > 0 && mode === "vocab" && (
           <Button
             variant="outline"
             onClick={() => beginDrill(wrongIds)}
@@ -154,7 +210,9 @@ export default function PronunciationDrill({ items, weakIds = [] }: { items: Voc
 
   if (!current) return null;
 
-  const genderLabel = current.gender === "maschile" ? "m." : current.gender === "femminile" ? "f." : null;
+  const vocabItem = !isRule ? (current as VocabItem) : null;
+  const ruleItem = isRule ? (current as PronunciationRule) : null;
+  const genderLabel = vocabItem?.gender === "maschile" ? "m." : vocabItem?.gender === "femminile" ? "f." : null;
 
   return (
     <div className="max-w-lg mx-auto px-4 py-6 flex flex-col gap-6">
@@ -179,22 +237,48 @@ export default function PronunciationDrill({ items, weakIds = [] }: { items: Voc
       >
         {!flipped ? (
           <>
-            <p className="text-3xl font-bold">{current.italian}</p>
-            {genderLabel && (
-              <p className="text-sm text-muted-foreground">({genderLabel})</p>
+            {vocabItem && (
+              <>
+                <p className="text-3xl font-bold">{vocabItem.italian}</p>
+                {genderLabel && <p className="text-sm text-muted-foreground">({genderLabel})</p>}
+              </>
+            )}
+            {ruleItem && (
+              <>
+                <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground mb-1">Sound Rule</p>
+                <p className="text-4xl font-bold">{ruleItem.combo}</p>
+              </>
             )}
             <p className="text-xs text-muted-foreground mt-2">Tap to reveal</p>
           </>
         ) : (
           <>
-            <p className="text-3xl font-bold tracking-wide text-primary">
-              {current.pronunciation}
-            </p>
-            <p className="text-lg text-muted-foreground">{current.english}</p>
-            {current.example && (
-              <p className="text-sm text-muted-foreground italic mt-1 border-t border-border pt-3 w-full text-center">
-                {current.example}
-              </p>
+            {vocabItem && (
+              <>
+                <p className="text-3xl font-bold tracking-wide text-primary">{vocabItem.pronunciation}</p>
+                <p className="text-lg text-muted-foreground">{vocabItem.english}</p>
+                {vocabItem.example && (
+                  <p className="text-sm text-muted-foreground italic mt-1 border-t border-border pt-3 w-full text-center">
+                    {vocabItem.example}
+                  </p>
+                )}
+              </>
+            )}
+            {ruleItem && (
+              <>
+                <p className="text-2xl font-bold text-primary">{ruleItem.phonetic}</p>
+                <p className="text-sm text-muted-foreground">{ruleItem.rule}</p>
+                <div className="border-t border-border pt-3 w-full mt-1 space-y-1">
+                  {ruleItem.examples.map((ex, i) => (
+                    <p key={i} className="text-sm">
+                      <span className="font-semibold">{ex.italian}</span>
+                      <span className="text-muted-foreground"> → </span>
+                      <span className="text-primary font-medium">{ex.phonetic}</span>
+                      <span className="text-muted-foreground"> · {ex.english}</span>
+                    </p>
+                  ))}
+                </div>
+              </>
             )}
           </>
         )}
