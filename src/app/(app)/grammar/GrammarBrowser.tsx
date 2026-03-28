@@ -68,6 +68,9 @@ const UNIT_LABELS: Record<number, string> = {
   3: "Unit 3 — Irregular Verbs & Telling Time",
   4: "Unit 4 — Definite & Indefinite Articles",
   5: "Unit 5 — Adjectives & Nouns",
+  6: "Unit 6 — Al Bar, Possessive Adjectives & ISC Verbs",
+  7: "Unit 7 — Modal Verbs, Directions & Prepositions",
+  8: "Unit 8 — Al Ristorante",
 };
 
 // ── Sub-components ────────────────────────────────────────────────────────────
@@ -353,6 +356,65 @@ function ConcordanzaSection() {
   );
 }
 
+// ── Preposizioni Articolate ───────────────────────────────────────────────────
+
+const PREP_ROWS: [string, string, string, string, string, string, string, string][] = [
+  // [prep, il, lo, l', la, i, gli, le]
+  ["DI",  "del",  "dello",  "dell'",  "della",  "dei",  "degli",  "delle"],
+  ["A",   "al",   "allo",   "all'",   "alla",   "ai",   "agli",   "alle"],
+  ["DA",  "dal",  "dallo",  "dall'",  "dalla",  "dai",  "dagli",  "dalle"],
+  ["IN",  "nel",  "nello",  "nell'",  "nella",  "nei",  "negli",  "nelle"],
+  ["SU",  "sul",  "sullo",  "sull'",  "sulla",  "sui",  "sugli",  "sulle"],
+];
+
+function PreposizioniArticolateSection() {
+  return (
+    <div className="space-y-4">
+      <p className="text-sm text-muted-foreground">
+        Five prepositions (<strong>di, a, da, in, su</strong>) combine with the definite article.
+        Con, per, tra, fra never combine.
+      </p>
+      <div className="rounded-lg border overflow-x-auto">
+        <table className="w-full text-sm">
+          <thead>
+            <tr className="bg-muted">
+              <th className="px-2 py-1.5 text-left text-xs font-semibold w-10">Prep</th>
+              {["il", "lo", "l'", "la", "i", "gli", "le"].map((art) => (
+                <th key={art} className="px-2 py-1.5 text-center text-xs font-semibold text-muted-foreground">{art}</th>
+              ))}
+            </tr>
+          </thead>
+          <tbody>
+            {PREP_ROWS.map(([prep, ...forms]) => (
+              <tr key={prep} className="border-t">
+                <td className="px-2 py-1.5 font-bold text-xs text-muted-foreground">{prep}</td>
+                {forms.map((f) => (
+                  <td key={f} className="px-2 py-1.5 text-center font-medium">{f}</td>
+                ))}
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <div className="space-y-1">
+        <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">Examples</p>
+        {[
+          ["Vado al supermercato.", "I go to the supermarket. (a + il)"],
+          ["Il libro dello studente.", "The student's book. (di + lo)"],
+          ["Vengo dalla stazione.", "I'm coming from the station. (da + la)"],
+          ["Il caffè è sul tavolo.", "The coffee is on the table. (su + il)"],
+          ["Abito nel centro.", "I live in the centre. (in + il)"],
+        ].map(([it, en]) => (
+          <div key={it} className="text-sm">
+            <span className="font-medium italic">{it}</span>
+            <span className="text-muted-foreground"> — {en}</span>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
 // ── Main component ────────────────────────────────────────────────────────────
 
 export default function ReferenceBrowser({
@@ -362,7 +424,7 @@ export default function ReferenceBrowser({
   rules: GrammarRule[];
   conjugations: Conjugation[];
 }) {
-  const units = [1, 2, 3, 4, 5] as const;
+  const units = [1, 2, 3, 4, 5, 6, 7, 8] as const;
 
   return (
     <div className="max-w-lg mx-auto px-4 py-6 space-y-2">
@@ -413,13 +475,15 @@ export default function ReferenceBrowser({
           </AccordionContent>
         </AccordionItem>
 
-        {/* Units 1–5 */}
+        {/* Units 1–8 */}
         {units.map((unit) => {
           const unitRules = rules.filter((r) => getGrammarUnit(r) === unit);
           const unitConjs = conjugations.filter((c) => {
             // Assign conjugations to units by convention
             if (unit === 1) return ["c001","c002","c003","c004","c005","c006","c007","c008","c009","c010","c011"].includes(c.id);
             if (unit === 3) return ["c012","c013"].includes(c.id);
+            if (unit === 6) return ["c098","c099"].includes(c.id); // spedire, costruire (ISC verbs)
+            if (unit === 7) return ["c100","c101","c102","c103","c104"].includes(c.id); // dovere, potere, volere, girare, continuare
             return false;
           });
 
@@ -432,6 +496,14 @@ export default function ReferenceBrowser({
                 {unitRules.map((rule) => (
                   <GrammarCard key={rule.id} rule={rule} />
                 ))}
+                {unit === 7 && (
+                  <div className="space-y-3">
+                    <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">
+                      Preposizioni Articolate — Reference Table
+                    </p>
+                    <PreposizioniArticolateSection />
+                  </div>
+                )}
                 {unitConjs.length > 0 && (
                   <div className="space-y-3">
                     <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">
