@@ -75,26 +75,138 @@ const UNIT_LABELS: Record<number, string> = {
 
 // ── Sub-components ────────────────────────────────────────────────────────────
 
+// Regex: line starts with ALL-CAPS word(s), optional parenthetical, then colon
+const ALL_CAPS_HEADER = /^([A-ZÀÈÌÒÙ][A-ZÀÈÌÒÙ\s\-]+(?:\s*\([^)]*\))?)\s*:\s*(.*)$/;
+
+function renderExplanationLine(line: string, key: string | number) {
+  if (!line.trim()) return null;
+
+  // ⚠️ Note / warning
+  if (line.startsWith("⚠️")) {
+    return (
+      <div key={key} className="rounded-md bg-amber-50 dark:bg-amber-950/40 border border-amber-200 dark:border-amber-800 px-3 py-2 text-sm">
+        {line}
+      </div>
+    );
+  }
+
+  // ALL-CAPS section header with optional trailing content
+  const headerMatch = line.match(ALL_CAPS_HEADER);
+  if (headerMatch) {
+    const [, label, rest] = headerMatch;
+    return (
+      <div key={key} className="pt-1 first:pt-0">
+        <span className="text-xs font-bold uppercase tracking-wide text-foreground">{label.trim()}</span>
+        {rest && <span className="text-sm text-muted-foreground ml-2">{rest}</span>}
+      </div>
+    );
+  }
+
+  return <p key={key} className="text-sm text-muted-foreground">{line}</p>;
+}
+
+function ExplanationRenderer({ text }: { text: string }) {
+  // Split into major sections by blank lines
+  const sections = text.split(/\n\n+/);
+
+  return (
+    <div className="space-y-3">
+      {sections.map((section, si) => {
+        const lines = section.split("\n").map((l) => l.trim()).filter(Boolean);
+        const bullets = lines.filter((l) => l.startsWith("•"));
+        const rest = lines.filter((l) => !l.startsWith("•"));
+
+        return (
+          <div key={si} className="space-y-1">
+            {rest.map((line, li) => renderExplanationLine(line, `${si}-${li}`))}
+            {bullets.length > 0 && (
+              <ul className="space-y-1 mt-1">
+                {bullets.map((b, bi) => (
+                  <li key={bi} className="flex gap-2 text-sm text-muted-foreground">
+                    <span className="shrink-0 text-foreground font-medium">•</span>
+                    <span>{b.slice(1).trim()}</span>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </div>
+        );
+      })}
+    </div>
+  );
+}
+
+function ExampleItem({ text }: { text: string }) {
+  const t = text.trim();
+
+  // Arrow sub-item (e.g. "  → Il ragazzo è stanco.")
+  if (/^→/.test(t)) {
+    return (
+      <div className="text-sm pl-4 border-l-2 border-muted italic text-muted-foreground">
+        {t.replace(/^→\s*/, "")}
+      </div>
+    );
+  }
+
+  // ALL-CAPS label row: "MASCHILE: il mio / il tuo..."
+  const upperLabel = t.match(/^([A-ZÀÈÌÒÙ][A-ZÀÈÌÒÙ\s\-/]+(?:\s*\([^)]*\))?)\s*:\s*(.+)$/);
+  if (upperLabel) {
+    return (
+      <div className="text-sm flex flex-wrap gap-x-2">
+        <span className="text-xs font-bold uppercase tracking-wide text-muted-foreground shrink-0">{upperLabel[1].trim()}:</span>
+        <span className="italic">{upperLabel[2]}</span>
+      </div>
+    );
+  }
+
+  // "Italian (English translation)" pattern
+  const parenMatch = t.match(/^(.+?)\s+\((.+)\)\.?$/);
+  if (parenMatch && !parenMatch[1].includes("(")) {
+    return (
+      <div className="text-sm pl-3 border-l-2 border-primary/30">
+        <span className="italic font-medium">{parenMatch[1]}</span>
+        <span className="text-muted-foreground"> ({parenMatch[2]})</span>
+      </div>
+    );
+  }
+
+  // "Italian = English" or "Italian — English"
+  const splitMatch = t.match(/^(.+?)\s+(=|—)\s+(.+)$/);
+  if (splitMatch) {
+    return (
+      <div className="text-sm pl-3 border-l-2 border-primary/30 flex flex-wrap gap-x-2">
+        <span className="italic font-medium">{splitMatch[1]}</span>
+        <span className="text-muted-foreground">— {splitMatch[3]}</span>
+      </div>
+    );
+  }
+
+  // Default: plain italic with left border
+  return (
+    <div className="text-sm pl-3 border-l-2 border-muted italic text-muted-foreground">
+      {t}
+    </div>
+  );
+}
+
 function GrammarCard({ rule }: { rule: GrammarRule }) {
   return (
     <Card>
       <CardHeader className="pb-2">
         <CardTitle className="text-base">{rule.rule}</CardTitle>
       </CardHeader>
-      <CardContent className="pt-0 space-y-3">
-        <p className="text-sm text-muted-foreground">{rule.explanation}</p>
+      <CardContent className="pt-0 space-y-4">
+        <ExplanationRenderer text={rule.explanation} />
         {rule.examples.length > 0 && (
-          <div className="space-y-1">
+          <div className="space-y-1.5">
             <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">
               Examples
             </p>
-            <ul className="space-y-0.5">
+            <div className="space-y-1.5">
               {rule.examples.map((ex, i) => (
-                <li key={i} className="text-sm italic pl-3 border-l-2 border-muted">
-                  {ex}
-                </li>
+                <ExampleItem key={i} text={ex} />
               ))}
-            </ul>
+            </div>
           </div>
         )}
       </CardContent>
