@@ -5,6 +5,7 @@ import grammarData from "../../data/grammar.json";
 import sentencesData from "../../data/sentences.json";
 import pronunciationData from "../../data/pronunciation.json";
 import concordanzaData from "../../data/concordanza.json";
+import modalVerbsData from "../../data/modal-verbs.json";
 
 export type VocabItem = {
   id: string;
@@ -84,8 +85,22 @@ export type ConcordanzaQuestion = {
 
 export const concordanza: ConcordanzaQuestion[] = concordanzaData as ConcordanzaQuestion[];
 
+export interface ModalVerbQuestion {
+  id: string;
+  category: "slide-9" | "slide-10";
+  prompt?: string;
+  sentence: string;
+  hint: string;
+  correct: string;
+  options: string[];
+  explanation?: string;
+  tags: string[];
+}
+
+export const modalVerbs: ModalVerbQuestion[] = modalVerbsData as ModalVerbQuestion[];
+
 // Unit numbers available across content
-export const UNITS = [1, 2, 3, 4, 5, 6] as const;
+export const UNITS = [1, 2, 3, 4, 5, 6, 7, 8] as const;
 export type UnitNumber = (typeof UNITS)[number];
 
 /** Extract unit number from lesson tags (e.g. "lesson-2" → 2). Defaults to 1. */

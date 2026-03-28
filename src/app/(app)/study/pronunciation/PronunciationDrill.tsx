@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { useStudySession } from "@/lib/useStudySession";
+import { useSpeech } from "@/lib/useSpeech";
 import UnitSelector from "@/components/UnitSelector";
 import { getVocabUnit } from "@/lib/content";
 import type { VocabItem, PronunciationRule } from "@/lib/content";
@@ -41,20 +42,8 @@ export default function PronunciationDrill({
   const [score, setScore] = useState({ correct: 0, incorrect: 0 });
   const [wrongIds, setWrongIds] = useState<string[]>([]);
   const [done, setDone] = useState(false);
-  const [speaking, setSpeaking] = useState(false);
   const { startSession, endSession, recordAttempt } = useStudySession("pronunciation");
-
-  function speak(text: string) {
-    if (!window.speechSynthesis) return;
-    window.speechSynthesis.cancel();
-    const utterance = new SpeechSynthesisUtterance(text);
-    utterance.lang = "it-IT";
-    utterance.rate = 0.9;
-    utterance.onstart = () => setSpeaking(true);
-    utterance.onend = () => setSpeaking(false);
-    utterance.onerror = () => setSpeaking(false);
-    window.speechSynthesis.speak(utterance);
-  }
+  const { speak, speaking } = useSpeech();
 
   const activeItems = unit ? items.filter((v) => getVocabUnit(v) === unit) : items;
   const setupCount = mode === "rules"

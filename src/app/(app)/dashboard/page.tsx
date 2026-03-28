@@ -10,11 +10,15 @@ const studyModes = [
   { href: "/study/flashcards", label: "Flip Cards", emoji: "🃏", desc: "Both directions" },
   { href: "/study/vocab", label: "Vocab Quiz", emoji: "📝", desc: "Multiple choice" },
   { href: "/study/conjugation", label: "Conjugation", emoji: "🔤", desc: "One form at a time" },
-  { href: "/study/concordanza", label: "Concordanza", emoji: "🎯", desc: "Pick the right form" },
   { href: "/study/pronunciation", label: "Pronunciation", emoji: "🔊", desc: "How sounds work" },
   { href: "/study/time", label: "Time & Dates", emoji: "🕐", desc: "Clock, days, months" },
   { href: "/study/sentence-builder", label: "Sentences", emoji: "🧩", desc: "Tap to build" },
   { href: "/study/mixed", label: "Mixed", emoji: "🎲", desc: "All modes at once" },
+];
+
+const focusedDrills = [
+  { href: "/study/concordanza", label: "La Concordanza", emoji: "🎯", desc: "Pick the correct adjective form to match the noun" },
+  { href: "/study/modal-verbs", label: "Verbi Modali", emoji: "🔧", desc: "Dovere, potere, volere — slides 9 & 10" },
 ];
 
 export default async function DashboardPage() {
@@ -74,6 +78,27 @@ export default async function DashboardPage() {
                   <div className="text-2xl mb-1">{emoji}</div>
                   <div className="font-semibold text-sm">{label}</div>
                   <div className="text-xs text-muted-foreground">{desc}</div>
+                </CardContent>
+              </Card>
+            </Link>
+          ))}
+        </div>
+      </div>
+
+      <div>
+        <h2 className="text-sm font-semibold text-muted-foreground uppercase tracking-wide mb-3">
+          Focused Drills
+        </h2>
+        <div className="flex flex-col gap-2">
+          {focusedDrills.map(({ href, label, emoji, desc }) => (
+            <Link key={href} href={href}>
+              <Card className="hover:bg-accent transition-colors cursor-pointer">
+                <CardContent className="py-3 px-4 flex items-center gap-4">
+                  <div className="text-2xl">{emoji}</div>
+                  <div>
+                    <div className="font-semibold text-sm">{label}</div>
+                    <div className="text-xs text-muted-foreground">{desc}</div>
+                  </div>
                 </CardContent>
               </Card>
             </Link>

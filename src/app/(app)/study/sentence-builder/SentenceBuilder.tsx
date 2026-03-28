@@ -1,9 +1,10 @@
 "use client";
 
-import { useState, useEffect, useCallback, useRef } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { useStudySession } from "@/lib/useStudySession";
+import { useSpeech } from "@/lib/useSpeech";
 import UnitSelector from "@/components/UnitSelector";
 import { getSentenceUnit } from "@/lib/content";
 import type { SentenceExercise } from "@/lib/content";
@@ -58,20 +59,8 @@ export default function SentenceBuilder({
   const [score, setScore] = useState({ correct: 0, incorrect: 0 });
   const [wrongIds, setWrongIds] = useState<string[]>([]);
   const [done, setDone] = useState(false);
-  const [speaking, setSpeaking] = useState(false);
   const { startSession, endSession, recordAttempt } = useStudySession("sentence");
-
-  function speak(text: string) {
-    if (!window.speechSynthesis) return;
-    window.speechSynthesis.cancel();
-    const utterance = new SpeechSynthesisUtterance(text);
-    utterance.lang = "it-IT";
-    utterance.rate = 0.9;
-    utterance.onstart = () => setSpeaking(true);
-    utterance.onend = () => setSpeaking(false);
-    utterance.onerror = () => setSpeaking(false);
-    window.speechSynthesis.speak(utterance);
-  }
+  const { speak, speaking } = useSpeech();
 
   const activeExercises = exercises.filter((e) => {
     if (unit && getSentenceUnit(e) !== unit) return false;

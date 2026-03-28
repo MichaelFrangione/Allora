@@ -6,6 +6,7 @@ import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent } from "@/components/ui/card";
 import { useStudySession } from "@/lib/useStudySession";
+import { useSpeech } from "@/lib/useSpeech";
 import { getVocabDistractors, getVocabUnit } from "@/lib/content";
 import UnitSelector from "@/components/UnitSelector";
 import type { VocabItem } from "@/lib/content";
@@ -47,20 +48,7 @@ export default function VocabQuiz({ items, weakIds = [], initialIds }: { items: 
   const [wrongIds, setWrongIds] = useState<string[]>([]);
   const [done, setDone] = useState(false);
   const { startSession, endSession, recordAttempt } = useStudySession("vocab");
-
-  const [speaking, setSpeaking] = useState(false);
-
-  function speak(text: string) {
-    if (!window.speechSynthesis) return;
-    window.speechSynthesis.cancel();
-    const utterance = new SpeechSynthesisUtterance(text);
-    utterance.lang = "it-IT";
-    utterance.rate = 0.9;
-    utterance.onstart = () => setSpeaking(true);
-    utterance.onend = () => setSpeaking(false);
-    utterance.onerror = () => setSpeaking(false);
-    window.speechSynthesis.speak(utterance);
-  }
+  const { speak, speaking } = useSpeech();
 
   const activeItems = unit ? items.filter((v) => getVocabUnit(v) === unit) : items;
 

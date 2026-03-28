@@ -3,480 +3,1101 @@
     "id": "f001",
     "front": "What are the 3 verb conjugation groups in Italian?",
     "back": "-ARE (e.g. parlare), -ERE (e.g. leggere), -IRE (e.g. dormire)",
-    "tags": ["grammar", "verbs", "conjugation", "lesson-1"]
+    "tags": [
+      "grammar",
+      "verbs",
+      "conjugation",
+      "lesson-1"
+    ]
   },
   {
     "id": "f002",
     "front": "How do you conjugate a regular -ARE verb? (e.g. lavorare)",
     "back": "Drop -ARE, then add: -o, -i, -a, -iamo, -ate, -ano\n→ lavoro, lavori, lavora, lavoriamo, lavorate, lavorano",
-    "tags": ["grammar", "verbs", "are-verbs", "conjugation", "lesson-1"]
+    "tags": [
+      "grammar",
+      "verbs",
+      "are-verbs",
+      "conjugation",
+      "lesson-1"
+    ]
   },
   {
     "id": "f003",
     "front": "How do you conjugate a regular -ERE verb? (e.g. vedere)",
     "back": "Drop -ERE, then add: -o, -i, -e, -iamo, -ete, -ono\n→ vedo, vedi, vede, vediamo, vedete, vedono",
-    "tags": ["grammar", "verbs", "ere-verbs", "conjugation", "lesson-1"]
+    "tags": [
+      "grammar",
+      "verbs",
+      "ere-verbs",
+      "conjugation",
+      "lesson-1"
+    ]
   },
   {
     "id": "f004",
     "front": "How do you conjugate a regular -IRE verb? (e.g. dormire)",
     "back": "Drop -IRE, then add: -o, -i, -e, -iamo, -ite, -ono\n→ dormo, dormi, dorme, dormiamo, dormite, dormono",
-    "tags": ["grammar", "verbs", "ire-verbs", "conjugation", "lesson-1"]
+    "tags": [
+      "grammar",
+      "verbs",
+      "ire-verbs",
+      "conjugation",
+      "lesson-1"
+    ]
   },
   {
     "id": "f005",
     "front": "What is the -isc- rule for some -IRE verbs?",
     "back": "Some -IRE verbs (e.g. finire, capire) insert -isc- in all forms EXCEPT noi/voi:\n→ finisco, finisci, finisce, finiamo, finite, finiscono",
-    "tags": ["grammar", "verbs", "ire-verbs", "isc-verbs", "lesson-1"]
+    "tags": [
+      "grammar",
+      "verbs",
+      "ire-verbs",
+      "isc-verbs",
+      "lesson-1"
+    ]
   },
   {
     "id": "f006",
     "front": "fare la spesa",
     "back": "to go grocery shopping",
-    "tags": ["fare-expressions", "daily-life", "lesson-1"]
+    "tags": [
+      "fare-expressions",
+      "daily-life",
+      "lesson-1"
+    ]
   },
   {
     "id": "f007",
     "front": "fare shopping",
     "back": "to go shopping",
-    "tags": ["fare-expressions", "shopping", "lesson-1"]
+    "tags": [
+      "fare-expressions",
+      "shopping",
+      "lesson-1"
+    ]
   },
   {
     "id": "f008",
     "front": "fare i compiti",
     "back": "to do one's homework",
-    "tags": ["fare-expressions", "education", "lesson-1"]
+    "tags": [
+      "fare-expressions",
+      "education",
+      "lesson-1"
+    ]
   },
   {
     "id": "f009",
     "front": "fare i lavori di casa",
     "back": "to do the housework",
-    "tags": ["fare-expressions", "daily-life", "lesson-1"]
+    "tags": [
+      "fare-expressions",
+      "daily-life",
+      "lesson-1"
+    ]
   },
   {
     "id": "f010",
     "front": "fare uno sforzo",
     "back": "to make an effort",
-    "tags": ["fare-expressions", "lesson-1"]
+    "tags": [
+      "fare-expressions",
+      "lesson-1"
+    ]
   },
   {
     "id": "f011",
     "front": "fare un errore",
     "back": "to make a mistake",
-    "tags": ["fare-expressions", "lesson-1"]
+    "tags": [
+      "fare-expressions",
+      "lesson-1"
+    ]
   },
   {
     "id": "f012",
     "front": "fare rumore",
     "back": "to make noise",
-    "tags": ["fare-expressions", "lesson-1"]
+    "tags": [
+      "fare-expressions",
+      "lesson-1"
+    ]
   },
   {
     "id": "f013",
     "front": "fare il letto",
     "back": "to make the bed",
-    "tags": ["fare-expressions", "daily-life", "lesson-1"]
+    "tags": [
+      "fare-expressions",
+      "daily-life",
+      "lesson-1"
+    ]
   },
   {
     "id": "f014",
     "front": "fare pace",
     "back": "to make peace",
-    "tags": ["fare-expressions", "lesson-1"]
+    "tags": [
+      "fare-expressions",
+      "lesson-1"
+    ]
   },
   {
     "id": "f015",
     "front": "fare una fotografia",
     "back": "to take a picture",
-    "tags": ["fare-expressions", "hobbies", "lesson-1"]
+    "tags": [
+      "fare-expressions",
+      "hobbies",
+      "lesson-1"
+    ]
   },
   {
     "id": "f016",
     "front": "fare una passeggiata",
     "back": "to take a walk",
-    "tags": ["fare-expressions", "daily-life", "lesson-1"]
+    "tags": [
+      "fare-expressions",
+      "daily-life",
+      "lesson-1"
+    ]
   },
   {
     "id": "f017",
     "front": "fare un esame",
     "back": "to take an exam",
-    "tags": ["fare-expressions", "education", "lesson-1"]
+    "tags": [
+      "fare-expressions",
+      "education",
+      "lesson-1"
+    ]
   },
   {
     "id": "f018",
     "front": "fare un viaggio",
     "back": "to take a trip",
-    "tags": ["fare-expressions", "travel", "lesson-1"]
+    "tags": [
+      "fare-expressions",
+      "travel",
+      "lesson-1"
+    ]
   },
   {
     "id": "f019",
     "front": "fare la doccia",
     "back": "to take a shower",
-    "tags": ["fare-expressions", "daily-life", "lesson-1"]
+    "tags": [
+      "fare-expressions",
+      "daily-life",
+      "lesson-1"
+    ]
   },
   {
     "id": "f020",
     "front": "fare il bagno",
     "back": "to take a bath",
-    "tags": ["fare-expressions", "daily-life", "lesson-1"]
+    "tags": [
+      "fare-expressions",
+      "daily-life",
+      "lesson-1"
+    ]
   },
   {
     "id": "f021",
     "front": "fare un pisolino",
     "back": "to take a nap",
-    "tags": ["fare-expressions", "daily-life", "lesson-1"]
+    "tags": [
+      "fare-expressions",
+      "daily-life",
+      "lesson-1"
+    ]
   },
   {
     "id": "f022",
     "front": "fare colazione",
     "back": "to have breakfast",
-    "tags": ["fare-expressions", "food", "daily-life", "lesson-1"]
+    "tags": [
+      "fare-expressions",
+      "food",
+      "daily-life",
+      "lesson-1"
+    ]
   },
   {
     "id": "f023",
     "front": "fare una pausa",
     "back": "to have a break",
-    "tags": ["fare-expressions", "work", "daily-life", "lesson-1"]
+    "tags": [
+      "fare-expressions",
+      "work",
+      "daily-life",
+      "lesson-1"
+    ]
   },
   {
     "id": "f024",
     "front": "fare male",
     "back": "to hurt, to ache — Mi fa male la testa. (My head hurts.)",
-    "tags": ["fare-expressions", "health", "lesson-1"]
+    "tags": [
+      "fare-expressions",
+      "health",
+      "lesson-1"
+    ]
   },
   {
     "id": "f025",
     "front": "fare bene (a)",
     "back": "to be good (for...) — Lo sport fa bene alla salute.",
-    "tags": ["fare-expressions", "health", "lesson-1"]
+    "tags": [
+      "fare-expressions",
+      "health",
+      "lesson-1"
+    ]
   },
   {
     "id": "f026",
     "front": "fare alla romana",
     "back": "to split the bill at a restaurant",
-    "tags": ["fare-expressions", "food", "culture", "lesson-1"]
+    "tags": [
+      "fare-expressions",
+      "food",
+      "culture",
+      "lesson-1"
+    ]
   },
   {
     "id": "f027",
     "front": "fare il pieno",
     "back": "to fill up the gas tank",
-    "tags": ["fare-expressions", "travel", "lesson-1"]
+    "tags": [
+      "fare-expressions",
+      "travel",
+      "lesson-1"
+    ]
   },
   {
     "id": "f028",
     "front": "far vedere",
     "back": "to show something to someone — Fammi vedere! (Show me!)",
-    "tags": ["fare-expressions", "communication", "lesson-1"]
+    "tags": [
+      "fare-expressions",
+      "communication",
+      "lesson-1"
+    ]
   },
   {
     "id": "f029",
     "front": "fare paura",
     "back": "to scare / to be scary — I ragni mi fanno paura.",
-    "tags": ["fare-expressions", "emotions", "lesson-1"]
+    "tags": [
+      "fare-expressions",
+      "emotions",
+      "lesson-1"
+    ]
   },
   {
     "id": "f030",
     "front": "fare una domanda",
     "back": "to ask a question",
-    "tags": ["fare-expressions", "communication", "lesson-1"]
+    "tags": [
+      "fare-expressions",
+      "communication",
+      "lesson-1"
+    ]
   },
   {
     "id": "f031",
     "front": "fare la fila / fare la coda",
     "back": "to stand in line / wait in line",
-    "tags": ["fare-expressions", "daily-life", "lesson-1"]
+    "tags": [
+      "fare-expressions",
+      "daily-life",
+      "lesson-1"
+    ]
   },
   {
     "id": "f032",
     "front": "Mi piace / Mi piacciono",
     "back": "Mi piace + singular noun or infinitive = I like...\nMi piacciono + plural noun = I like...\nEx: Mi piace leggere. / Mi piacciono i gatti.",
-    "tags": ["grammar", "mi-piace", "lesson-2"]
+    "tags": [
+      "grammar",
+      "mi-piace",
+      "lesson-2"
+    ]
   },
   {
     "id": "f033",
     "front": "Sei libero/a stasera?",
     "back": "Are you free tonight?",
-    "tags": ["social", "invitations", "lesson-2"]
+    "tags": [
+      "social",
+      "invitations",
+      "lesson-2"
+    ]
   },
   {
     "id": "f034",
     "front": "Sì, volentieri!",
     "back": "Yes, gladly! / I'd love to!",
-    "tags": ["social", "invitations", "lesson-2"]
+    "tags": [
+      "social",
+      "invitations",
+      "lesson-2"
+    ]
   },
   {
     "id": "f035",
     "front": "Mi dispiace, non posso.",
     "back": "I'm sorry, I can't.",
-    "tags": ["social", "invitations", "lesson-2"]
+    "tags": [
+      "social",
+      "invitations",
+      "lesson-2"
+    ]
   },
   {
     "id": "f036",
     "front": "Magari un'altra volta!",
     "back": "Maybe another time!",
-    "tags": ["social", "invitations", "lesson-2"]
+    "tags": [
+      "social",
+      "invitations",
+      "lesson-2"
+    ]
   },
   {
     "id": "f037",
     "front": "I giorni della settimana",
     "back": "lunedì (Mon), martedì (Tue), mercoledì (Wed), giovedì (Thu), venerdì (Fri), sabato (Sat), domenica (Sun)\nNote: Days are masculine and not capitalized.",
-    "tags": ["time", "days", "vocabulary", "lesson-3"]
+    "tags": [
+      "time",
+      "days",
+      "vocabulary",
+      "lesson-3"
+    ]
   },
   {
     "id": "f038",
     "front": "I mesi dell'anno",
     "back": "gennaio, febbraio, marzo, aprile, maggio, giugno, luglio, agosto, settembre, ottobre, novembre, dicembre\n(January–December)",
-    "tags": ["time", "months", "vocabulary", "lesson-3"]
+    "tags": [
+      "time",
+      "months",
+      "vocabulary",
+      "lesson-3"
+    ]
   },
   {
     "id": "f039",
     "front": "Le stagioni",
     "back": "l'inverno (winter), la primavera (spring), l'estate (summer), l'autunno (autumn/fall)",
-    "tags": ["time", "seasons", "vocabulary", "lesson-3"]
+    "tags": [
+      "time",
+      "seasons",
+      "vocabulary",
+      "lesson-3"
+    ]
   },
   {
     "id": "f040",
     "front": "Le parti della giornata",
     "back": "la mattina (morning), il pomeriggio (afternoon), la sera (evening), la notte (night)",
-    "tags": ["time", "daily-life", "vocabulary", "lesson-3"]
+    "tags": [
+      "time",
+      "daily-life",
+      "vocabulary",
+      "lesson-3"
+    ]
   },
   {
     "id": "f041",
     "front": "Che ore sono? — in punto",
     "back": "in punto = exactly / o'clock\nEx: Sono le tre in punto. (It's exactly 3 o'clock.)",
-    "tags": ["time", "telling-time", "lesson-3"]
+    "tags": [
+      "time",
+      "telling-time",
+      "lesson-3"
+    ]
   },
   {
     "id": "f042",
     "front": "Che ore sono? — e mezza / e quarto / meno un quarto",
     "back": "e mezza / e trenta = half past\ne un quarto / e quindici = quarter past\nmeno un quarto = quarter to\nEx: Sono le nove e mezza. / Sono le otto meno un quarto.",
-    "tags": ["time", "telling-time", "lesson-3"]
+    "tags": [
+      "time",
+      "telling-time",
+      "lesson-3"
+    ]
   },
   {
     "id": "f043",
     "front": "FARE — present tense",
     "back": "io faccio / tu fai / lui-lei fa\nnoi facciamo / voi fate / loro fanno",
-    "tags": ["verbs", "irregular", "fare", "conjugation", "lesson-3"]
+    "tags": [
+      "verbs",
+      "irregular",
+      "fare",
+      "conjugation",
+      "lesson-3"
+    ]
   },
   {
     "id": "f044",
     "front": "ANDARE — present tense",
     "back": "io vado / tu vai / lui-lei va\nnoi andiamo / voi andate / loro vanno",
-    "tags": ["verbs", "irregular", "andare", "conjugation", "lesson-3"]
+    "tags": [
+      "verbs",
+      "irregular",
+      "andare",
+      "conjugation",
+      "lesson-3"
+    ]
   },
   {
     "id": "f045",
     "front": "andare + place",
     "back": "andare a lavorare, a scuola, a teatro, al cinema, al supermercato, al mare, in montagna, in vacanza, in ufficio",
-    "tags": ["verbs", "andare", "expressions", "lesson-3"]
+    "tags": [
+      "verbs",
+      "andare",
+      "expressions",
+      "lesson-3"
+    ]
   },
   {
     "id": "f046",
     "front": "Articoli determinativi maschili",
     "back": "Singular: IL (consonant), LO (s+cons., z, ps, y), L' (vowel)\nPlural: I → GLI → GLI\nEx: il libro → i libri / lo zio → gli zii / l'amico → gli amici",
-    "tags": ["articles", "grammar", "lesson-4"]
+    "tags": [
+      "articles",
+      "grammar",
+      "lesson-4"
+    ]
   },
   {
     "id": "f047",
     "front": "Articoli determinativi femminili",
     "back": "Singular: LA (consonant), L' (vowel)\nPlural: LE\nEx: la casa → le case / l'isola → le isole",
-    "tags": ["articles", "grammar", "lesson-4"]
+    "tags": [
+      "articles",
+      "grammar",
+      "lesson-4"
+    ]
   },
   {
     "id": "f048",
     "front": "Articoli indeterminativi",
     "back": "Masculine: UN (most), UNO (s+cons., z, ps, y)\nFeminine: UNA (consonant), UN' (vowel)\nEx: un libro, uno studente, una casa, un'amica",
-    "tags": ["articles", "grammar", "lesson-4"]
+    "tags": [
+      "articles",
+      "grammar",
+      "lesson-4"
+    ]
   },
   {
     "id": "f049",
     "front": "Aggettivi — agreement rule",
     "back": "-O adjectives: 4 forms → -o / -a / -i / -e\n-E adjectives: 2 forms → -e (sing.) / -i (pl.)\nEx: alto/alta/alti/alte | grande/grandi",
-    "tags": ["adjectives", "grammar", "agreement", "lesson-5"]
+    "tags": [
+      "adjectives",
+      "grammar",
+      "agreement",
+      "lesson-5"
+    ]
   },
   {
     "id": "f050",
     "front": "I colori",
     "back": "bianco (white), rosso (red), giallo (yellow), nero (black), azzurro (light blue), verde (green), arancione (orange), marrone (brown)\nNote: verde, arancione, marrone are invariable for gender.",
-    "tags": ["adjectives", "colors", "vocabulary", "lesson-5"]
+    "tags": [
+      "adjectives",
+      "colors",
+      "vocabulary",
+      "lesson-5"
+    ]
   },
   {
     "id": "f051",
     "front": "Aggettivi comuni — -O type",
     "back": "bello (beautiful), carino (cute), buono (good), bravo (skilled), brutto (ugly), simpatico (nice), piccolo (small), alto (tall), basso (short), nuovo (new), vecchio (old), noioso (boring), timido (shy)",
-    "tags": ["adjectives", "vocabulary", "lesson-5"]
+    "tags": [
+      "adjectives",
+      "vocabulary",
+      "lesson-5"
+    ]
   },
   {
     "id": "f052",
     "front": "Aggettivi comuni — -E type",
     "back": "intelligente (intelligent), importante (important), interessante (interesting), gentile (kind), divertente (fun), grande (big), triste (sad), felice (happy), facile (easy), elegante (elegant), attraente (attractive)",
-    "tags": ["adjectives", "vocabulary", "lesson-5"]
+    "tags": [
+      "adjectives",
+      "vocabulary",
+      "lesson-5"
+    ]
   },
   {
     "id": "f053",
     "front": "Cos'è la concordanza?",
     "back": "Agreement: the article, noun, and adjective must all match in gender and number.\nEx: il ragazzo alto / la ragazza alta / i ragazzi alti / le ragazze alte",
-    "tags": ["grammar", "concordanza", "agreement", "lesson-5"]
+    "tags": [
+      "grammar",
+      "concordanza",
+      "agreement",
+      "lesson-5"
+    ]
   },
   {
     "id": "f054",
     "front": "Nouns ending in -E — gender & plural rule",
     "back": "Nouns ending in -E can be masculine OR feminine — gender must be memorised.\nPlural always changes -E → -I.\nMaschile: il fiore → i fiori / il ristorante → i ristoranti\nFemminile: la stazione → le stazioni / la lezione → le lezioni",
-    "tags": ["grammar", "nouns", "e-nouns", "plural", "lesson-5"]
+    "tags": [
+      "grammar",
+      "nouns",
+      "e-nouns",
+      "plural",
+      "lesson-5"
+    ]
   },
   {
     "id": "f055",
     "front": "Aggettivi in -E — concordanza",
     "back": "Adjectives ending in -E have ONE form for singular (both m. and f.) and change to -I in the plural.\nEx: intelligente (m./f. sing.) → intelligenti (m./f. pl.)\nOthers: difficile → difficili / grande → grandi / felice → felici",
-    "tags": ["grammar", "adjectives", "e-adjectives", "concordanza", "lesson-5"]
+    "tags": [
+      "grammar",
+      "adjectives",
+      "e-adjectives",
+      "concordanza",
+      "lesson-5"
+    ]
   },
   {
     "id": "f056",
     "front": "La concordanza: -E nouns — maschile o femminile?",
     "back": "MASCHILE: il fiore, il mare, il pane, il nome, il ristorante\nFEMMINILE: la notte, la luce, la stazione, la lezione, la decisione\nThere is no rule — gender must be memorised!",
-    "tags": ["vocabulary", "nouns", "e-nouns", "concordanza", "lesson-5"]
+    "tags": [
+      "vocabulary",
+      "nouns",
+      "e-nouns",
+      "concordanza",
+      "lesson-5"
+    ]
   },
   {
     "id": "f057",
     "front": "Concordanza: 'stanco' — complete all 4 forms",
     "back": "m. sing.: stanco\nf. sing.: stanca\nm. pl.: stanchi\nf. pl.: stanche\n→ Adjectives in -O always have 4 forms!",
-    "tags": ["grammar", "concordanza", "adjectives", "lesson-6"]
+    "tags": [
+      "grammar",
+      "concordanza",
+      "adjectives",
+      "lesson-6"
+    ]
   },
   {
     "id": "f058",
     "front": "Concordanza: 'nuovo' — complete all 4 forms",
     "back": "m. sing.: nuovo\nf. sing.: nuova\nm. pl.: nuovi\nf. pl.: nuove\nPattern: -o / -a / -i / -e",
-    "tags": ["grammar", "concordanza", "adjectives", "lesson-6"]
+    "tags": [
+      "grammar",
+      "concordanza",
+      "adjectives",
+      "lesson-6"
+    ]
   },
   {
     "id": "f059",
     "front": "Concordanza: 'sportivo' — complete all 4 forms",
     "back": "m. sing.: sportivo\nf. sing.: sportiva\nm. pl.: sportivi\nf. pl.: sportive\nEx: Mio fratello è sportivo. / Mia sorella è sportiva.",
-    "tags": ["grammar", "concordanza", "adjectives", "lesson-6"]
+    "tags": [
+      "grammar",
+      "concordanza",
+      "adjectives",
+      "lesson-6"
+    ]
   },
   {
     "id": "f060",
     "front": "Concordanza: 'intelligente' — complete all forms",
     "back": "sing. (m. & f.): intelligente\npl. (m. & f.): intelligenti\n→ Adjectives in -E have only 2 forms (same for m./f. in singular)",
-    "tags": ["grammar", "concordanza", "e-adjectives", "lesson-6"]
+    "tags": [
+      "grammar",
+      "concordanza",
+      "e-adjectives",
+      "lesson-6"
+    ]
   },
   {
     "id": "f061",
     "front": "Which is correct? 'Il ragazzo è stanca' or 'stanco'?",
     "back": "'stanco' ✓\nragazzo = masculine → adjective must be masculine: stanco.\n'stanca' is feminine — only use with nouns like la ragazza, la donna, etc.",
-    "tags": ["grammar", "concordanza", "practice", "lesson-6"]
+    "tags": [
+      "grammar",
+      "concordanza",
+      "practice",
+      "lesson-6"
+    ]
   },
   {
     "id": "f062",
     "front": "Which is correct? 'Le ragazze sono stanchi' or 'stanche'?",
     "back": "'stanche' ✓\nragazze = feminine plural → adjective must be feminine plural: stanche.\n'stanchi' is masculine plural (i ragazzi sono stanchi).",
-    "tags": ["grammar", "concordanza", "practice", "lesson-6"]
+    "tags": [
+      "grammar",
+      "concordanza",
+      "practice",
+      "lesson-6"
+    ]
   },
   {
     "id": "f063",
     "front": "Concordanza: 'I cornetti sono _____ (delicious)'",
     "back": "buonissimi ✓ (masculine plural)\ncornetti = maschile plurale\nbuono → buoni (regular) / buonissimo → buonissimi (superlative)",
-    "tags": ["grammar", "concordanza", "practice", "bar", "lesson-6"]
+    "tags": [
+      "grammar",
+      "concordanza",
+      "practice",
+      "bar",
+      "lesson-6"
+    ]
   },
   {
     "id": "f064",
     "front": "Concordanza: 'La colazione è _____ (delicious)'",
     "back": "buonissima ✓ (feminine singular)\ncolazione = femminile singolare\nbuono → buona → buonissima",
-    "tags": ["grammar", "concordanza", "practice", "bar", "lesson-6"]
+    "tags": [
+      "grammar",
+      "concordanza",
+      "practice",
+      "bar",
+      "lesson-6"
+    ]
   },
   {
     "id": "f065",
     "front": "Aggettivi Possessivi: MY (all 4 forms)",
     "back": "m. sing.: il mio (il mio caffè)\nf. sing.: la mia (la mia famiglia)\nm. pl.: i miei (i miei fratelli)\nf. pl.: le mie (le mie sorelle)",
-    "tags": ["grammar", "possessives", "lesson-6"]
+    "tags": [
+      "grammar",
+      "possessives",
+      "lesson-6"
+    ]
   },
   {
     "id": "f066",
     "front": "Aggettivi Possessivi: YOUR singular (all 4 forms)",
     "back": "m. sing.: il tuo (il tuo caffè)\nf. sing.: la tua (la tua famiglia)\nm. pl.: i tuoi (i tuoi fratelli)\nf. pl.: le tue (le tue sorelle)",
-    "tags": ["grammar", "possessives", "lesson-6"]
+    "tags": [
+      "grammar",
+      "possessives",
+      "lesson-6"
+    ]
   },
   {
     "id": "f067",
     "front": "Aggettivi Possessivi: HIS/HER (all 4 forms)",
     "back": "m. sing.: il suo (il suo cappuccino)\nf. sing.: la sua (la sua mamma)\nm. pl.: i suoi (i suoi amici)\nf. pl.: le sue (le sue sorelle)\nNote: suo/sua = both his AND her in Italian!",
-    "tags": ["grammar", "possessives", "lesson-6"]
+    "tags": [
+      "grammar",
+      "possessives",
+      "lesson-6"
+    ]
   },
   {
     "id": "f068",
     "front": "Aggettivi Possessivi: OUR / YOUR plural / THEIR",
     "back": "OUR: il nostro / la nostra / i nostri / le nostre\nYOUR (pl.): il vostro / la vostra / i vostri / le vostre\nTHEIR: il loro / la loro / i loro / le loro (loro is invariable!)",
-    "tags": ["grammar", "possessives", "lesson-6"]
+    "tags": [
+      "grammar",
+      "possessives",
+      "lesson-6"
+    ]
   },
   {
     "id": "f069",
     "front": "Possessives + family: when do you drop the article?",
     "back": "Drop article with SINGULAR unmodified family nouns:\n✓ mio fratello / mia sorella / tua mamma / suo papà\nKEEP article when: plural → i miei fratelli / modified → il mio fratello grande / loro → il loro fratello",
-    "tags": ["grammar", "possessives", "family", "lesson-6"]
+    "tags": [
+      "grammar",
+      "possessives",
+      "family",
+      "lesson-6"
+    ]
   },
   {
     "id": "f070",
     "front": "Which is correct? 'la mia sorella' or 'mia sorella'?",
     "back": "Both can be right!\nmia sorella ✓ — singular, unmodified family noun (no article)\nla mia sorella grande ✓ — article needed when modified\nle mie sorelle ✓ — article always needed in plural",
-    "tags": ["grammar", "possessives", "family", "practice", "lesson-6"]
+    "tags": [
+      "grammar",
+      "possessives",
+      "family",
+      "practice",
+      "lesson-6"
+    ]
   },
   {
     "id": "f071",
     "front": "Bar vocabulary: types of coffee in Italian",
     "back": "caffè — regular espresso\ncappuccino — espresso + steamed milk + foam\ncaffè macchiato — espresso + dash of milk\nlatte macchiato — hot milk + dash of espresso\ncaffè lungo — long/diluted espresso\ncaffè ristretto — very short/concentrated espresso",
-    "tags": ["vocabulary", "bar", "lesson-6"]
+    "tags": [
+      "vocabulary",
+      "bar",
+      "lesson-6"
+    ]
   },
   {
     "id": "f072",
     "front": "How do you say 'I'm hungry', 'I'm sleepy', 'I'm thirsty'?",
     "back": "I'm hungry → Ho fame\nI'm sleepy → Ho sonno\nI'm thirsty → Ho sete\nI'm cold → Ho freddo / I'm hot → Ho caldo\nKey: use AVERE (to have), not ESSERE (to be)!",
-    "tags": ["vocabulary", "expressions", "bar", "lesson-6"]
+    "tags": [
+      "vocabulary",
+      "expressions",
+      "bar",
+      "lesson-6"
+    ]
   },
   {
     "id": "f073",
     "front": "How do you say 'I'm late' in Italian?",
     "back": "Sono in ritardo!\n(lit. 'I am in delay') — uses ESSERE\nEx: Giovanni è in ritardo per la lezione.",
-    "tags": ["vocabulary", "expressions", "lesson-6"]
+    "tags": [
+      "vocabulary",
+      "expressions",
+      "lesson-6"
+    ]
   },
   {
     "id": "f074",
     "front": "PREFERIRE — conjugate in present tense",
     "back": "io preferisco\ntu preferisci\nlui/lei preferisce\nnoi preferiamo\nvoi preferite\nloro preferiscono\n→ -ISC verb: add -isc- in io/tu/lui/loro forms",
-    "tags": ["verbs", "conjugation", "isc-verbs", "lesson-6"]
+    "tags": [
+      "verbs",
+      "conjugation",
+      "isc-verbs",
+      "lesson-6"
+    ]
   },
   {
     "id": "f075",
     "front": "Concordanza quick rule: -O adjectives vs -E adjectives",
     "back": "Ends in -O → 4 forms: -o / -a / -i / -e\nEx: nuovo, nuova, nuovi, nuove\n\nEnds in -E → 2 forms: -e (sing., m. & f.) / -i (plural, m. & f.)\nEx: intelligente, intelligenti",
-    "tags": ["grammar", "concordanza", "adjectives", "lesson-6"]
+    "tags": [
+      "grammar",
+      "concordanza",
+      "adjectives",
+      "lesson-6"
+    ]
   },
   {
     "id": "f076",
     "front": "Concordanza: 'Il caffè è _____ (cold)'",
     "back": "freddo ✓ (masculine singular)\ncaffè = maschile → freddo (not fredda/freddi/fredde)",
-    "tags": ["grammar", "concordanza", "practice", "bar", "lesson-6"]
+    "tags": [
+      "grammar",
+      "concordanza",
+      "practice",
+      "bar",
+      "lesson-6"
+    ]
   },
   {
     "id": "f077",
     "front": "Concordanza: 'Le pizzette sono _____ (cold)'",
     "back": "fredde ✓ (feminine plural)\npizzette = femminile plurale → freddo → fredde",
-    "tags": ["grammar", "concordanza", "practice", "bar", "lesson-6"]
+    "tags": [
+      "grammar",
+      "concordanza",
+      "practice",
+      "bar",
+      "lesson-6"
+    ]
   },
   {
     "id": "f078",
     "front": "Concordanza: 'I tramezzini sono _____ (delicious)'",
     "back": "squisiti ✓ (masculine plural)\ntramezzini = maschile plurale → squisito → squisiti",
-    "tags": ["grammar", "concordanza", "practice", "bar", "lesson-6"]
+    "tags": [
+      "grammar",
+      "concordanza",
+      "practice",
+      "bar",
+      "lesson-6"
+    ]
   },
   {
     "id": "f079",
     "front": "Concordanza: 'La sorella di Marco è _____ (sporty)'",
     "back": "sportiva ✓ (feminine singular)\nsorella = femminile singolare → sportivo → sportiva",
-    "tags": ["grammar", "concordanza", "practice", "family", "lesson-6"]
+    "tags": [
+      "grammar",
+      "concordanza",
+      "practice",
+      "family",
+      "lesson-6"
+    ]
   },
   {
     "id": "f080",
     "front": "How do you say 'Keep the change' in Italian?",
     "back": "Tenga il resto. (formal)\nQuant'è? → How much is it?\nSono X euro. → It's X euros.",
-    "tags": ["vocabulary", "bar", "expressions", "lesson-6"]
+    "tags": [
+      "vocabulary",
+      "bar",
+      "expressions",
+      "lesson-6"
+    ]
+  },
+  {
+    "id": "f081",
+    "front": "Conjugate DOVERE (to have to/must) in the present tense",
+    "back": "io devo\ntu devi\nlui/lei deve\nnoi dobbiamo\nvoi dovete\nloro devono\n\nEs: Devo studiare molto. / Dobbiamo andare.",
+    "tags": [
+      "grammar",
+      "modals",
+      "dovere",
+      "conjugation",
+      "lesson-7"
+    ]
+  },
+  {
+    "id": "f082",
+    "front": "Conjugate POTERE (can/to be able to) in the present tense",
+    "back": "io posso\ntu puoi\nlui/lei può\nnoi possiamo\nvoi potete\nloro possono\n\nEs: Puoi venire stasera? / Non posso, mi dispiace.",
+    "tags": [
+      "grammar",
+      "modals",
+      "potere",
+      "conjugation",
+      "lesson-7"
+    ]
+  },
+  {
+    "id": "f083",
+    "front": "Conjugate VOLERE (to want) in the present tense",
+    "back": "io voglio\ntu vuoi\nlui/lei vuole\nnoi vogliamo\nvoi volete\nloro vogliono\n\nEs: Voglio un caffè. / Vuoi venire a cena con me?",
+    "tags": [
+      "grammar",
+      "modals",
+      "volere",
+      "conjugation",
+      "lesson-7"
+    ]
+  },
+  {
+    "id": "f084",
+    "front": "What are the 3 main uses of DOVERE?",
+    "back": "1. Necessità (necessity): Sto male, devo andare dal dottore.\n2. Obbligo (obligation): In classe dovete parlare in italiano.\n3. Consigli (advice): Se vuoi imparare, devi studiare molto.",
+    "tags": [
+      "grammar",
+      "modals",
+      "dovere",
+      "lesson-7"
+    ]
+  },
+  {
+    "id": "f085",
+    "front": "What are the main uses of POTERE?",
+    "back": "1. Possibilità/impossibilità: Puoi venire al cinema? / No, non posso.\n2. Richiesta gentile: Puoi chiudere la finestra, per favore?\n3. Permesso: Posso andare in bagno? / No, non puoi.",
+    "tags": [
+      "grammar",
+      "modals",
+      "potere",
+      "lesson-7"
+    ]
+  },
+  {
+    "id": "f086",
+    "front": "What are the main uses of VOLERE?",
+    "back": "1. Desiderio: Voglio cambiare vita!\n2. Fare un invito/offerta: Vuoi venire a cena con me? / Vuoi un po' d'acqua?",
+    "tags": [
+      "grammar",
+      "modals",
+      "volere",
+      "lesson-7"
+    ]
+  },
+  {
+    "id": "f087",
+    "front": "How do you ASK for directions in Italian? (key phrases)",
+    "back": "• Scusi, vorrei un'informazione...\n• Per arrivare a/in...?\n• Dove posso trovare...?\n• Dov'è...?\n• È lontano/vicino a piedi?",
+    "tags": [
+      "directions",
+      "expressions",
+      "lesson-7"
+    ]
+  },
+  {
+    "id": "f088",
+    "front": "How do you GIVE directions in Italian? (key phrases)",
+    "back": "• Deve/Dovete andare dritto\n• Continuate dritto\n• Girare a destra/sinistra\n• All'incrocio / al semaforo\n• Prendere la prima a destra/sinistra\n• In fondo a via...\n• Davanti a... / All'angolo di...",
+    "tags": [
+      "directions",
+      "expressions",
+      "lesson-7"
+    ]
+  },
+  {
+    "id": "f089",
+    "front": "How do you accept or decline an invitation in Italian?",
+    "back": "ACCEPT ✓:\n• Sì, certo!\n• Sì, volentieri!\n• Va bene!\n\nDECLINE ✗:\n• Mi dispiace, ma non posso.\n• No, grazie.\n\nUNSURE ?:\n• Forse / Magari...\n• Devo vedere...",
+    "tags": [
+      "expressions",
+      "invitations",
+      "lesson-7"
+    ]
+  },
+  {
+    "id": "f090",
+    "front": "Which 5 prepositions combine with the definite article? Which ones NEVER do?",
+    "back": "COMBINE: DI, A, DA, IN, SU\n\nNEVER COMBINE: CON, PER, TRA, FRA\n\nRemember: these 4 always stay simple!",
+    "tags": [
+      "prepositions",
+      "grammar",
+      "articolate",
+      "lesson-7"
+    ]
+  },
+  {
+    "id": "f091",
+    "front": "Complete the preposizioni articolate for A + articles",
+    "back": "A + il = AL\nA + lo = ALLO\nA + l' = ALL'\nA + la = ALLA\nA + i = AI\nA + gli = AGLI\nA + le = ALLE\n\nEs: Vado al bar. / Vai alla stazione. / Andiamo agli uffici.",
+    "tags": [
+      "prepositions",
+      "grammar",
+      "articolate",
+      "lesson-7"
+    ]
+  },
+  {
+    "id": "f092",
+    "front": "Complete the preposizioni articolate for DI + articles",
+    "back": "DI + il = DEL\nDI + lo = DELLO\nDI + l' = DELL'\nDI + la = DELLA\nDI + i = DEI\nDI + gli = DEGLI\nDI + le = DELLE\n\nEs: il libro del professore / la fine della strada",
+    "tags": [
+      "prepositions",
+      "grammar",
+      "articolate",
+      "lesson-7"
+    ]
+  },
+  {
+    "id": "f093",
+    "front": "Complete the preposizioni articolate for DA, IN, SU + il/lo/la/i/gli/le",
+    "back": "DA: dal/dallo/dall'/dalla/dai/dagli/dalle\nIN: nel/nello/nell'/nella/nei/negli/nelle\nSU: sul/sullo/sull'/sulla/sui/sugli/sulle\n\nEs: Vado dal medico. / Sono nel centro. / Il libro è sul tavolo.",
+    "tags": [
+      "prepositions",
+      "grammar",
+      "articolate",
+      "lesson-7"
+    ]
+  },
+  {
+    "id": "f094",
+    "front": "Write PIACERE with all indirect object pronouns",
+    "back": "MI piace/piacciono (to me)\nTI piace/piacciono (to you, informal)\nGLI piace/piacciono (to him)\nLE piace/piacciono (to her)\nCI piace/piacciono (to us)\nVI piace/piacciono (to you, plural)\nGLI piace/piacciono (to them)\n\nEs: Mi piace il caffè. / Gli piacciono i cornetti.",
+    "tags": [
+      "grammar",
+      "piacere",
+      "lesson-6",
+      "lesson-7"
+    ]
+  },
+  {
+    "id": "f095",
+    "front": "When do you use PIACE vs PIACCIONO?",
+    "back": "PIACE = singular noun or infinitive verb\n• Mi piace il caffè. ✓\n• Mi piace andare al cinema. ✓\n\nPIACCIONO = plural noun\n• Mi piacciono i biscotti. ✓\n• Ti piacciono le tagliatelle? ✓",
+    "tags": [
+      "grammar",
+      "piacere",
+      "lesson-6"
+    ]
+  },
+  {
+    "id": "f096",
+    "front": "Aggettivi Possessivi: list all forms (m.sg / m.pl / f.sg / f.pl)",
+    "back": "mio / miei / mia / mie\ntuo / tuoi / tua / tue\nsuo / suoi / sua / sue\nnostro / nostri / nostra / nostre\nvostro / vostri / vostra / vostre\nloro / loro / loro / loro\n\n⚠️ Drop article with singular family: Mio fratello (not 'il mio fratello')",
+    "tags": [
+      "grammar",
+      "possessivi",
+      "adjectives",
+      "lesson-6"
+    ]
+  },
+  {
+    "id": "f097",
+    "front": "When do you DROP the article before possessive adjectives?",
+    "back": "Drop the article for SINGULAR family members:\n• Mio padre / Mia madre ✓\n• Mio fratello / Mia sorella ✓\n• Mio nonno / Mia nonna ✓\n\nKEEP the article when:\n• Plural: i miei fratelli ✓\n• With adjective: il mio fratello maggiore ✓\n• loro always keeps article: il loro padre ✓",
+    "tags": [
+      "grammar",
+      "possessivi",
+      "family",
+      "lesson-6"
+    ]
+  },
+  {
+    "id": "f098",
+    "front": "What are the courses of an Italian meal in order?",
+    "back": "1. ANTIPASTI — starters/appetizers\n2. PRIMI — first courses (pasta, risotto, soup)\n3. SECONDI — main courses (meat, fish)\n4. CONTORNI — side dishes (vegetables, salad)\n5. DOLCI — desserts\n\nYou don't have to order all courses!",
+    "tags": [
+      "restaurant",
+      "vocabulary",
+      "culture",
+      "lesson-8"
+    ]
+  },
+  {
+    "id": "f099",
+    "front": "How do you order food at an Italian restaurant? (customer phrases)",
+    "back": "• Avete un tavolo per due/tre/quattro?\n• Può portare il menù/la carta dei vini?\n• Che cosa c'è nell'antipasto della casa?\n• Qual è la vostra specialità?\n• Come antipasto, prendo...\n• Di primo, vorrei...\n• Di secondo, per me...\n• Un contorno di insalata mista.\n• Scusi, può portare il conto?",
+    "tags": [
+      "restaurant",
+      "expressions",
+      "lesson-8"
+    ]
+  },
+  {
+    "id": "f100",
+    "front": "What does the waiter say at an Italian restaurant?",
+    "back": "• Siete pronti per ordinare?\n• Che cosa volete da bere/da mangiare?\n• La nostra specialità è...\n• Vi porto subito l'acqua/il vino.\n• Volete anche un contorno?\n• Cottura al sangue, media o ben cotta? (for steak)",
+    "tags": [
+      "restaurant",
+      "expressions",
+      "lesson-8"
+    ]
+  },
+  {
+    "id": "f101",
+    "front": "What is L'APERITIVO?",
+    "back": "L'aperitivo is an Italian tradition: meeting friends after work or study to have a drink and snacks (stuzzichini) before dinner.\n\nWhen: 6 PM onwards\nFamous drinks: Negroni, Spritz, Campari, Martini\nFood: stuzzichini, crostini, salumi, pizza\n\nThe word comes from Latin 'aperire' (to open) — it opens the meal and the stomach!",
+    "tags": [
+      "culture",
+      "restaurant",
+      "aperitivo",
+      "lesson-8"
+    ]
+  },
+  {
+    "id": "f102",
+    "front": "How do you ask for the bill in Italian? And how does the waiter respond?",
+    "back": "Customer: Scusi, può portare il conto?\nCustomer: Quant'è?\n\nWaiter: Sono X euro.\nTipping: Tenga il resto. (Keep the change.)\n\nNote: In Italy you usually ask for the bill — it won't be brought automatically!",
+    "tags": [
+      "restaurant",
+      "expressions",
+      "lesson-8"
+    ]
+  },
+  {
+    "id": "f103",
+    "front": "Translate with PIACERE — how do these work?\n1. They like spaghetti very much.\n2. He likes to watch movies.\n3. We like Italian songs.",
+    "back": "1. A loro piacciono molto gli spaghetti. (piacciono = plural noun)\n2. A lui piace guardare i film. (piace = infinitive)\n3. Ci piacciono le canzoni italiane. (piacciono = plural noun)",
+    "tags": [
+      "grammar",
+      "piacere",
+      "translation",
+      "lesson-6",
+      "lesson-7"
+    ]
   }
 ]

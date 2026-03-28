@@ -6,11 +6,19 @@ import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Label } from "@/components/ui/label";
 import { useStudySession } from "@/lib/useStudySession";
 import { useSpeech } from "@/lib/useSpeech";
-import type { ConcordanzaQuestion } from "@/lib/content";
+import type { ModalVerbQuestion } from "@/lib/content";
 import { cn } from "@/lib/utils";
 import { getBoostEnabled } from "@/components/BoostToggle";
 
-const LIMIT_OPTIONS = [10, 20, 30, 50, null] as const;
+type Category = "all" | "slide-9" | "slide-10";
+
+const LIMIT_OPTIONS = [10, 20, null] as const;
+
+const CATEGORY_LABELS: Record<Category, string> = {
+  all: "All questions",
+  "slide-9": "Slide 9 — Dovere, Potere o Volere?",
+  "slide-10": "Slide 10 — Completa con i verbi",
+};
 
 function shuffle<T>(arr: T[]): T[] {
   const a = [...arr];
@@ -21,33 +29,46 @@ function shuffle<T>(arr: T[]): T[] {
   return a;
 }
 
-export default function ConcordanzaQuiz({ questions, weakIds = [] }: { questions: ConcordanzaQuestion[]; weakIds?: string[] }) {
-  const [limit, setLimit] = useState<number | null>(30);
+export default function ModalVerbsQuiz({
+  questions,
+  weakIds = [],
+}: {
+  questions: ModalVerbQuestion[];
+  weakIds?: string[];
+}) {
+  const [category, setCategory] = useState<Category>("all");
+  const [limit, setLimit] = useState<number | null>(null);
   const [started, setStarted] = useState(false);
-  const [deck, setDeck] = useState<ConcordanzaQuestion[]>([]);
+  const [deck, setDeck] = useState<ModalVerbQuestion[]>([]);
   const [index, setIndex] = useState(0);
   const [selected, setSelected] = useState<string | null>(null);
   const [submitted, setSubmitted] = useState(false);
   const [score, setScore] = useState({ correct: 0, incorrect: 0 });
   const [wrongIds, setWrongIds] = useState<string[]>([]);
   const [done, setDone] = useState(false);
-  const { startSession, endSession, recordAttempt } = useStudySession("concordanza");
+  const { startSession, endSession, recordAttempt } = useStudySession("modal-verbs");
   const { speak, speaking } = useSpeech();
 
   useEffect(() => {
     return () => { endSession(); };
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
+  function getPool(): ModalVerbQuestion[] {
+    if (category === "all") return questions;
+    return questions.filter((q) => q.category === category);
+  }
+
   function beginDrill(filterIds?: string[]) {
-    let pool: ConcordanzaQuestion[];
+    let pool: ModalVerbQuestion[];
     if (filterIds) {
       pool = shuffle(questions.filter((q) => filterIds.includes(q.id)));
     } else {
+      const base = getPool();
       const weakSet = new Set(weakIds);
       const boostEnabled = getBoostEnabled();
-      const weighted: ConcordanzaQuestion[] = [];
-      for (const q of questions) {
+      const weighted: ModalVerbQuestion[] = [];
+      for (const q of base) {
         const copies = boostEnabled && weakSet.has(q.id) ? 3 : 1;
         for (let i = 0; i < copies; i++) weighted.push(q);
       }
@@ -76,7 +97,7 @@ export default function ConcordanzaQuiz({ questions, weakIds = [] }: { questions
   async function handleSubmit() {
     if (!selected || !q) return;
     const correct = selected === q.correct;
-    await recordAttempt(q.id, "concordanza", correct, selected);
+    await recordAttempt(q.id, "modal-verbs", correct, selected);
     if (!correct) setWrongIds((ids) => [...ids, q.id]);
     setScore((s) => ({
       correct: s.correct + (correct ? 1 : 0),
@@ -97,16 +118,44 @@ export default function ConcordanzaQuiz({ questions, weakIds = [] }: { questions
     }
   }
 
+  // Setup screen
   if (!started) {
-    const count = limit !== null ? Math.min(limit, questions.length) : questions.length;
+    const pool = getPool();
+    const count = limit !== null ? Math.min(limit, pool.length) : pool.length;
     return (
       <div className="max-w-lg mx-auto px-4 py-6 space-y-6">
         <div>
-          <h1 className="text-2xl font-bold">La Concordanza</h1>
+          <h1 className="text-2xl font-bold">Verbi Modali</h1>
           <p className="text-sm text-muted-foreground mt-1">
-            Pick the correct adjective form to match the noun.
+            Choose the correct form of dovere, potere, or volere.
           </p>
         </div>
+
+        {/* Category selector */}
+        <div>
+          <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wide mb-2">Category</p>
+          <div className="flex flex-col gap-2">
+            {(["all", "slide-9", "slide-10"] as Category[]).map((cat) => (
+              <button
+                key={cat}
+                onClick={() => setCategory(cat)}
+                className={cn(
+                  "px-4 py-2.5 rounded-xl text-sm font-medium transition-colors text-left",
+                  category === cat
+                    ? "bg-primary text-primary-foreground"
+                    : "bg-muted text-muted-foreground hover:bg-muted/80"
+                )}
+              >
+                {CATEGORY_LABELS[cat]}
+                <span className="ml-2 opacity-60 text-xs">
+                  ({cat === "all" ? questions.length : questions.filter(q => q.category === cat).length})
+                </span>
+              </button>
+            ))}
+          </div>
+        </div>
+
+        {/* Session limit */}
         <div>
           <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wide mb-2">Questions per session</p>
           <div className="flex flex-wrap gap-2">
@@ -126,6 +175,7 @@ export default function ConcordanzaQuiz({ questions, weakIds = [] }: { questions
             ))}
           </div>
         </div>
+
         <Button className="w-full h-12" onClick={() => beginDrill()}>
           Start · {count} question{count !== 1 ? "s" : ""}
         </Button>
@@ -133,6 +183,7 @@ export default function ConcordanzaQuiz({ questions, weakIds = [] }: { questions
     );
   }
 
+  // Done screen
   if (done) {
     const pct = Math.round((score.correct / deck.length) * 100);
     return (
@@ -160,13 +211,12 @@ export default function ConcordanzaQuiz({ questions, weakIds = [] }: { questions
 
   if (!q) return null;
 
-  // Split sentence around blank
-  const [before, after] = q.sentence.split("_____");
+  const [before, after] = q.sentence.split("___");
 
   return (
     <div className="max-w-lg mx-auto px-4 py-6 space-y-6">
       <div className="flex items-center justify-between">
-        <h1 className="font-semibold">La Concordanza</h1>
+        <h1 className="font-semibold">Verbi Modali</h1>
         <div className="flex items-center gap-3">
           <span className="text-sm text-muted-foreground">{index + 1} / {deck.length}</span>
           <button
@@ -179,11 +229,19 @@ export default function ConcordanzaQuiz({ questions, weakIds = [] }: { questions
         </div>
       </div>
 
+      {/* Task prompt for slide-9 questions */}
+      {q.prompt && (
+        <div className="rounded-xl bg-muted px-4 py-3">
+          <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wide mb-1">Situation</p>
+          <p className="text-sm italic">{q.prompt}</p>
+        </div>
+      )}
+
       {/* Question card */}
       <div className="rounded-2xl border-2 border-border bg-card px-6 py-8 space-y-3">
         <p className="text-lg font-medium leading-relaxed text-center">
           {before}
-          <span className="inline-block border-b-2 border-primary min-w-20 mx-1 text-center font-bold text-primary">
+          <span className="inline-block border-b-2 border-primary min-w-16 mx-1 text-center font-bold text-primary">
             {submitted ? q.correct : "?"}
           </span>
           {after}
@@ -192,7 +250,7 @@ export default function ConcordanzaQuiz({ questions, weakIds = [] }: { questions
         {submitted && (
           <div className="flex justify-center">
             <button
-              onClick={() => speak(q.sentence.replace("_____", q.correct))}
+              onClick={() => speak(q.sentence.replace("___", q.correct))}
               className={cn("text-lg transition-opacity", speaking ? "opacity-40" : "opacity-60 hover:opacity-100")}
               aria-label="Hear sentence"
             >
@@ -232,14 +290,21 @@ export default function ConcordanzaQuiz({ questions, weakIds = [] }: { questions
       </RadioGroup>
 
       {submitted && (
-        <p className={cn(
-          "text-sm font-medium text-center",
-          selected === q.correct ? "text-green-600" : "text-red-500"
-        )}>
-          {selected === q.correct
-            ? "Correct! ✓"
-            : `Incorrect — the answer is "${q.correct}"`}
-        </p>
+        <div className="space-y-2">
+          <p className={cn(
+            "text-sm font-medium text-center",
+            selected === q.correct ? "text-green-600" : "text-red-500"
+          )}>
+            {selected === q.correct
+              ? "Correct! ✓"
+              : `Incorrect — the answer is "${q.correct}"`}
+          </p>
+          {q.explanation && (
+            <div className="rounded-xl bg-muted px-4 py-3">
+              <p className="text-sm text-muted-foreground">{q.explanation}</p>
+            </div>
+          )}
+        </div>
       )}
 
       <div className="flex gap-3">

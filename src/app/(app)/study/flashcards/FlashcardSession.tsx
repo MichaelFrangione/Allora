@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { useStudySession } from "@/lib/useStudySession";
+import { useSpeech } from "@/lib/useSpeech";
 import UnitSelector from "@/components/UnitSelector";
 import { getVocabUnit } from "@/lib/content";
 import type { VocabItem } from "@/lib/content";
@@ -64,20 +65,7 @@ export default function FlashcardSession({
   const [wrongIds, setWrongIds] = useState<string[]>([]);
   const [done, setDone] = useState(false);
   const { startSession, endSession, recordAttempt } = useStudySession("flashcard");
-
-  const [speaking, setSpeaking] = useState(false);
-
-  function speak(text: string) {
-    if (!window.speechSynthesis) return;
-    window.speechSynthesis.cancel();
-    const utterance = new SpeechSynthesisUtterance(text);
-    utterance.lang = "it-IT";
-    utterance.rate = 0.9;
-    utterance.onstart = () => setSpeaking(true);
-    utterance.onend = () => setSpeaking(false);
-    utterance.onerror = () => setSpeaking(false);
-    window.speechSynthesis.speak(utterance);
-  }
+  const { speak, speaking } = useSpeech();
 
   const activeItems = unit ? vocab.filter((v) => getVocabUnit(v) === unit) : vocab;
 

@@ -8,7 +8,12 @@
       "-ERE: leggere, prendere, vedere, scrivere",
       "-IRE: dormire, partire, aprire, sentire"
     ],
-    "tags": ["verbs", "conjugation", "basics", "lesson-1"]
+    "tags": [
+      "verbs",
+      "conjugation",
+      "basics",
+      "lesson-1"
+    ]
   },
   {
     "id": "g002",
@@ -19,7 +24,13 @@
       "lavorare → lavoro, lavori, lavora, lavoriamo, lavorate, lavorano",
       "mangiare → mangio, mangi, mangia, mangiamo, mangiate, mangiano"
     ],
-    "tags": ["verbs", "are-verbs", "conjugation", "present-tense", "lesson-1"]
+    "tags": [
+      "verbs",
+      "are-verbs",
+      "conjugation",
+      "present-tense",
+      "lesson-1"
+    ]
   },
   {
     "id": "g003",
@@ -30,7 +41,13 @@
       "prendere → prendo, prendi, prende, prendiamo, prendete, prendono",
       "vedere → vedo, vedi, vede, vediamo, vedete, vedono"
     ],
-    "tags": ["verbs", "ere-verbs", "conjugation", "present-tense", "lesson-1"]
+    "tags": [
+      "verbs",
+      "ere-verbs",
+      "conjugation",
+      "present-tense",
+      "lesson-1"
+    ]
   },
   {
     "id": "g004",
@@ -41,7 +58,13 @@
       "partire → parto, parti, parte, partiamo, partite, partono",
       "aprire → apro, apri, apre, apriamo, aprite, aprono"
     ],
-    "tags": ["verbs", "ire-verbs", "conjugation", "present-tense", "lesson-1"]
+    "tags": [
+      "verbs",
+      "ire-verbs",
+      "conjugation",
+      "present-tense",
+      "lesson-1"
+    ]
   },
   {
     "id": "g005",
@@ -52,7 +75,14 @@
       "capire → capisco, capisci, capisce, capiamo, capite, capiscono",
       "preferire → preferisco, preferisci, preferisce, preferiamo, preferite, preferiscono"
     ],
-    "tags": ["verbs", "ire-verbs", "isc-verbs", "conjugation", "present-tense", "lesson-1"]
+    "tags": [
+      "verbs",
+      "ire-verbs",
+      "isc-verbs",
+      "conjugation",
+      "present-tense",
+      "lesson-1"
+    ]
   },
   {
     "id": "g006",
@@ -66,7 +96,12 @@
       "fare male = to hurt / to ache",
       "fare alla romana = to split the bill"
     ],
-    "tags": ["verbs", "fare-expressions", "phrases", "lesson-1"]
+    "tags": [
+      "verbs",
+      "fare-expressions",
+      "phrases",
+      "lesson-1"
+    ]
   },
   {
     "id": "g007",
@@ -79,7 +114,12 @@
       "Ti piace il calcio? (Do you like football?)",
       "Non mi piace alzarmi presto. (I don't like waking up early.)"
     ],
-    "tags": ["verbs", "mi-piace", "expressions", "lesson-2"]
+    "tags": [
+      "verbs",
+      "mi-piace",
+      "expressions",
+      "lesson-2"
+    ]
   },
   {
     "id": "g008",
@@ -94,7 +134,12 @@
       "No, stasera lavoro. (No, tonight I'm working.)",
       "Magari un'altra volta! (Maybe another time!)"
     ],
-    "tags": ["expressions", "social", "invitations", "lesson-2"]
+    "tags": [
+      "expressions",
+      "social",
+      "invitations",
+      "lesson-2"
+    ]
   },
   {
     "id": "g009",
@@ -109,7 +154,11 @@
       "È mezzogiorno. / È mezzanotte. (It's noon. / It's midnight.)",
       "A che ora inizia il film? — Alle otto. (What time does the film start? — At 8.)"
     ],
-    "tags": ["time", "expressions", "lesson-3"]
+    "tags": [
+      "time",
+      "expressions",
+      "lesson-3"
+    ]
   },
   {
     "id": "g010",
@@ -122,7 +171,12 @@
       "Facciamo una pausa. (Let's take a break.)",
       "Fa bel tempo. (The weather is nice.)"
     ],
-    "tags": ["verbs", "irregular", "fare", "lesson-3"]
+    "tags": [
+      "verbs",
+      "irregular",
+      "fare",
+      "lesson-3"
+    ]
   },
   {
     "id": "g011",
@@ -135,7 +189,12 @@
       "Andiamo al cinema? (Shall we go to the cinema?)",
       "Vai in palestra spesso? (Do you go to the gym often?)"
     ],
-    "tags": ["verbs", "irregular", "andare", "lesson-3"]
+    "tags": [
+      "verbs",
+      "irregular",
+      "andare",
+      "lesson-3"
+    ]
   },
   {
     "id": "g012",
@@ -148,7 +207,12 @@
       "la casa (f. sing., consonant) → le case (pl.)",
       "l'isola (f. sing., vowel) → le isole (pl.)"
     ],
-    "tags": ["articles", "nouns", "grammar", "lesson-4"]
+    "tags": [
+      "articles",
+      "nouns",
+      "grammar",
+      "lesson-4"
+    ]
   },
   {
     "id": "g013",
@@ -162,7 +226,12 @@
       "un'isola (an island)",
       "un'amica (a friend — fem.)"
     ],
-    "tags": ["articles", "nouns", "grammar", "lesson-4"]
+    "tags": [
+      "articles",
+      "nouns",
+      "grammar",
+      "lesson-4"
+    ]
   },
   {
     "id": "g014",
@@ -174,7 +243,12 @@
       "Il film è bello. / La casa è bella. / I film sono belli.",
       "EXCEPTION: antipatico → antipatica / antipatici / antipatiche"
     ],
-    "tags": ["adjectives", "grammar", "agreement", "lesson-5"]
+    "tags": [
+      "adjectives",
+      "grammar",
+      "agreement",
+      "lesson-5"
+    ]
   },
   {
     "id": "g015",
@@ -187,7 +261,13 @@
       "-E (feminine): la stazione → le stazioni, la lezione → le lezioni",
       "EXCEPTIONS: la mano (f.), il problema (m.), il cinema (m.)"
     ],
-    "tags": ["nouns", "gender", "plural", "grammar", "lesson-5"]
+    "tags": [
+      "nouns",
+      "gender",
+      "plural",
+      "grammar",
+      "lesson-5"
+    ]
   },
   {
     "id": "g016",
@@ -199,7 +279,14 @@
       "il ragazzo intelligente → i ragazzi intelligenti",
       "la ragazza intelligente → le ragazze intelligenti"
     ],
-    "tags": ["adjectives", "nouns", "articles", "agreement", "concordanza", "lesson-5"]
+    "tags": [
+      "adjectives",
+      "nouns",
+      "articles",
+      "agreement",
+      "concordanza",
+      "lesson-5"
+    ]
   },
   {
     "id": "g017",
@@ -209,7 +296,13 @@
       "MASCHILE: il fiore → i fiori, il mare → i mari, il pane → i pani, il nome → i nomi, il ristorante → i ristoranti",
       "FEMMINILE: la notte → le notti, la luce → le luci, la stazione → le stazioni, la lezione → le lezioni, la decisione → le decisioni"
     ],
-    "tags": ["nouns", "e-nouns", "plural", "gender", "lesson-5"]
+    "tags": [
+      "nouns",
+      "e-nouns",
+      "plural",
+      "gender",
+      "lesson-5"
+    ]
   },
   {
     "id": "g018",
@@ -223,7 +316,13 @@
       "CON FAMIGLIA (no article): mio fratello, mia sorella, mio padre, mia madre",
       "CON FAMIGLIA (plurale — use article): i miei fratelli, le mie sorelle"
     ],
-    "tags": ["possessives", "adjectives", "agreement", "family", "lesson-6"]
+    "tags": [
+      "possessives",
+      "adjectives",
+      "agreement",
+      "family",
+      "lesson-6"
+    ]
   },
   {
     "id": "g019",
@@ -239,7 +338,12 @@
       "COMMON -O ADJECTIVES: nuovo/a, vecchio/a, bello/a, brutto/a, caldo/a, freddo/a, sportivo/a, squisito/a",
       "COMMON -E ADJECTIVES: grande, piccole → wait! piccolo is -O. grande/i is -E."
     ],
-    "tags": ["adjectives", "concordanza", "agreement", "lesson-6"]
+    "tags": [
+      "adjectives",
+      "concordanza",
+      "agreement",
+      "lesson-6"
+    ]
   },
   {
     "id": "g020",
@@ -253,6 +357,129 @@
       "AVERE + noun: ho fame (I'm hungry), ho sonno (I'm sleepy), ho sete (I'm thirsty)",
       "ESSERE + in ritardo: Sono in ritardo! (I'm late!)"
     ],
-    "tags": ["bar", "expressions", "vocabulary", "lesson-6"]
+    "tags": [
+      "bar",
+      "expressions",
+      "vocabulary",
+      "lesson-6"
+    ]
+  },
+  {
+    "id": "g021",
+    "rule": "Verbi Modali: Dovere, Potere, Volere",
+    "explanation": "Three key irregular verbs used before an infinitive.\n\nDOVERE (must/have to): expresses necessity, obligation, or advice.\n• Io devo / Tu devi / Lui-lei deve / Noi dobbiamo / Voi dovete / Loro devono\n• Esprimere necessità: Sto male, devo andare dal dottore.\n• Esprimere obbligo: In classe dovete parlare in italiano.\n• Dare consigli: Se vuoi imparare, devi studiare molto.\n\nPOTERE (can/to be able to): expresses possibility or permission.\n• Io posso / Tu puoi / Lui-lei può / Noi possiamo / Voi potete / Loro possono\n• Possibilità: Puoi venire al cinema stasera?\n• Richiesta gentile: Puoi chiudere la finestra?\n• Permesso: Posso andare in bagno?\n\nVOLERE (to want): expresses desire or offers.\n• Io voglio / Tu vuoi / Lui-lei vuole / Noi vogliamo / Voi volete / Loro vogliono\n• Desiderio: Voglio cambiare vita!\n• Fare un invito: Vuoi venire a cena con me?\n• Offrire: Vuoi un po' d'acqua?",
+    "examples": [
+      "Voglio tornare in hotel ma non so come arrivare. Potete aiutarmi?",
+      "Devo prendere l'autobus?",
+      "Puoi chiudere la finestra, per favore?",
+      "Non posso venire stasera, mi dispiace."
+    ],
+    "tags": [
+      "modals",
+      "dovere",
+      "potere",
+      "volere",
+      "lesson-7"
+    ]
+  },
+  {
+    "id": "g022",
+    "rule": "Chiedere e Dare Indicazioni (Asking and Giving Directions)",
+    "explanation": "Key phrases for asking and giving directions in Italian.\n\nCHIEDERE (asking):\n• Scusi, vorrei un'informazione...\n• Per arrivare a/in...?\n• Dove posso trovare...?\n• Dov'è...?\n• È lontano/vicino a piedi?\n\nDARE (giving):\n• Deve andare dritto / Continuate dritto\n• Dovete girare a destra/sinistra\n• Girate all'incrocio / al semaforo\n• Prendete la prima a destra/sinistra\n• In fondo a via...\n• Davanti a...\n• All'angolo di...",
+    "examples": [
+      "Scusi, per arrivare alle Due Torri?",
+      "Deve girare a sinistra su Via Indipendenza.",
+      "Poi vada sempre dritto fino alla fine della strada.",
+      "Non è molto lontano. Ci vogliono circa 10 minuti a piedi."
+    ],
+    "tags": [
+      "directions",
+      "city",
+      "expressions",
+      "lesson-7"
+    ]
+  },
+  {
+    "id": "g023",
+    "rule": "Preposizioni Semplici (Simple Prepositions)",
+    "explanation": "The 9 simple prepositions and their main uses:\n\n• DI — possession, origin, specification: Il libro di Maria / Un ragazzo di Napoli\n• A — destination, time, age: Vado a scuola / Cena a otto\n• DA — origin, duration, cause: Vengo da Roma / Studio da due anni / Vado dal medico\n• IN — location (inside), transport: Sono in ufficio / Vado in treno\n• CON — company, instrument: Esco con Luca / Scrivo con la penna\n• SU — position above, topic: Il libro è su tavolo / Un libro su Dante\n• PER — purpose, cause, duration: Un regalo per te / Parto per Parigi\n• TRA/FRA — future time, position between: Tra un'ora / Fra amici\n\nUseful rules:\n• IN + nations/regions: Vivo in Italia / in Toscana\n• A + cities: Abito a Milano\n• DA + person: Vado dal medico\n• A casa (not 'in casa'), a scuola, a teatro\n• In banca, in palestra, in montagna, in città",
+    "examples": [
+      "Vado a scuola ogni giorno.",
+      "Vengo da Roma ma abito a Milano.",
+      "Il libro è su tavolo vicino alla finestra.",
+      "Parto per Parigi tra una settimana."
+    ],
+    "tags": [
+      "prepositions",
+      "grammar",
+      "lesson-7"
+    ]
+  },
+  {
+    "id": "g024",
+    "rule": "Preposizioni Articolate (Articulated Prepositions)",
+    "explanation": "Five prepositions combine with the definite article:\nDI, A, DA, IN, SU\n(Con, per, tra, fra NEVER combine with articles!)\n\nCombined forms:\n\nDI: del / dello / dell' / della / dei / degli / delle\nA: al / allo / all' / alla / ai / agli / alle\nDA: dal / dallo / dall' / dalla / dai / dagli / dalle\nIN: nel / nello / nell' / nella / nei / negli / nelle\nSU: sul / sullo / sull' / sulla / sui / sugli / sulle\n\nExamples:\n• Vado al mercato (a + il)\n• Vengo dalla palestra (da + la)\n• Il libro è sul tavolo (su + il)\n• Abito nell'appartamento (in + l')\n• È la macchina del professore (di + il)",
+    "examples": [
+      "Giro a sinistra all'incrocio. (a + l')",
+      "Vado dal medico domani. (da + il)",
+      "Il caffè è sul bancone. (su + il)",
+      "Esco dalla banca. (da + la)"
+    ],
+    "tags": [
+      "prepositions",
+      "grammar",
+      "articolate",
+      "lesson-7"
+    ]
+  },
+  {
+    "id": "g025",
+    "rule": "Accettare e Rifiutare un Invito (Accepting and Declining Invitations)",
+    "explanation": "How to respond to invitations in Italian:\n\nACCETTARE (accepting) ✓:\n• Sì, certo!\n• Sì, volentieri!\n• Va bene! / Okay!\n\nRIFIUTARE (declining) ✗:\n• Mi dispiace, ma non posso.\n• No, non posso.\n• No, grazie.\n\nNON SAPERE (uncertain) ?:\n• Non lo so...\n• Forse / Magari...\n• Devo vedere...",
+    "examples": [
+      "Vuoi venire a cena con me? — Sì, volentieri!",
+      "Puoi venire al cinema stasera? — Mi dispiace, ma non posso.",
+      "Vieni alla festa sabato? — Forse, devo vedere."
+    ],
+    "tags": [
+      "expressions",
+      "invitations",
+      "lesson-7"
+    ]
+  },
+  {
+    "id": "g026",
+    "rule": "Aggettivi Possessivi (Possessive Adjectives)",
+    "explanation": "Possessive adjectives agree in gender and number with the NOUN they modify (not the owner).\n\nMASCHILE: il mio / il tuo / il suo / il nostro / il vostro / il loro\nPLURALE: i miei / i tuoi / i suoi / i nostri / i vostri / i loro\nFEMMINILE: la mia / la tua / la sua / la nostra / la vostra / la loro\nPLURALE: le mie / le tue / le sue / le nostre / le vostre / le loro\n\n⚠️ ATTENZIONE - Drop the article with singular family members:\n• Mio fratello (NOT il mio fratello)\n• Mia sorella (NOT la mia sorella)\n• BUT: Il mio fratello maggiore (with adjective) ✓\n• BUT: I miei fratelli (plural always keeps article) ✓\n\nExamples:\n• Il mio cane è nero → I miei cani sono neri\n• La sua macchina è sportiva → Le sue macchine sono sportive",
+    "examples": [
+      "Mio fratello si chiama Marco.",
+      "La mia sorella ha venticinque anni.",
+      "I miei nonni abitano a Trieste.",
+      "Il loro cane è molto grande."
+    ],
+    "tags": [
+      "possessivi",
+      "grammar",
+      "adjectives",
+      "family",
+      "lesson-6"
+    ]
+  },
+  {
+    "id": "g027",
+    "rule": "Al Ristorante — Frasi Utili (Useful Restaurant Phrases)",
+    "explanation": "Key phrases for ordering and interacting at an Italian restaurant.\n\nIL CLIENTE CHIEDE (customer asks):\n• Avete un tavolo per due?\n• Può portare il menù/la carta dei vini?\n• Scusi, può portare un po' di pane?\n• Prendiamo una bottiglia di Chianti.\n• Che cosa c'è nell'antipasto della casa?\n• Che cosa ci consiglia?\n• Qual è la vostra specialità?\n• Come antipasto, prendo... / Di primo, vorrei... / Di secondo, per me...\n• Scusi, può portare il conto?\n\nIL CAMERIERE RISPONDE (waiter responds):\n• Siete pronti per ordinare?\n• Che cosa volete da bere/da mangiare?\n• La nostra specialità è...\n• Vi porto subito l'acqua/il vino.\n• Volete un contorno?\n\nI CORSI (courses):\n• Antipasti → Starters\n• Primi → First courses (pasta, risotto)\n• Secondi → Main courses (meat, fish)\n• Contorni → Side dishes\n• Dolci → Desserts",
+    "examples": [
+      "Avete un tavolo per due? — Certo, prego da questa parte.",
+      "Siete pronti per ordinare? — Sì, ma abbiamo una domanda: che cosa c'è nell'antipasto della casa?",
+      "Di primo, vorrei le tagliatelle al ragù.",
+      "Scusi, può portare il conto? — Certo, arrivo subito."
+    ],
+    "tags": [
+      "restaurant",
+      "expressions",
+      "vocabulary",
+      "lesson-8"
+    ]
   }
 ]

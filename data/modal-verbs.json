@@ -1,0 +1,254 @@
+[
+  {
+    "id": "mv001",
+    "category": "slide-10",
+    "sentence": "Mi dispiace, non ___ venire.",
+    "hint": "potere (io)",
+    "correct": "posso",
+    "options": ["posso", "puoi", "può", "potete"],
+    "tags": ["potere", "lesson-7"]
+  },
+  {
+    "id": "mv002",
+    "category": "slide-10",
+    "sentence": "Oggi Carla ___ lavorare fino a tardi.",
+    "hint": "dovere (lei)",
+    "correct": "deve",
+    "options": ["devo", "devi", "deve", "dobbiamo"],
+    "tags": ["dovere", "lesson-7"]
+  },
+  {
+    "id": "mv003",
+    "category": "slide-10",
+    "sentence": "Io non ___ venire con te perché devo studiare.",
+    "hint": "potere (io) — prima parte",
+    "correct": "posso",
+    "options": ["posso", "puoi", "può", "possono"],
+    "tags": ["potere", "lesson-7"]
+  },
+  {
+    "id": "mv004",
+    "category": "slide-10",
+    "sentence": "Io non posso venire con te perché ___ studiare.",
+    "hint": "dovere (io) — seconda parte",
+    "correct": "devo",
+    "options": ["devo", "devi", "deve", "dobbiamo"],
+    "tags": ["dovere", "lesson-7"]
+  },
+  {
+    "id": "mv005",
+    "category": "slide-10",
+    "sentence": "Alessio non ___ andare in macchina con Stefano.",
+    "hint": "volere (lui)",
+    "correct": "vuole",
+    "options": ["voglio", "vuoi", "vuole", "vogliono"],
+    "tags": ["volere", "lesson-7"]
+  },
+  {
+    "id": "mv006",
+    "category": "slide-10",
+    "sentence": "___ chiudere la finestra? Ho freddo.",
+    "hint": "potere (tu)",
+    "correct": "Puoi",
+    "options": ["Posso", "Puoi", "Può", "Potete"],
+    "tags": ["potere", "lesson-7"]
+  },
+  {
+    "id": "mv007",
+    "category": "slide-10",
+    "sentence": "Loro ___ andare a casa perché sono stanchi.",
+    "hint": "volere (loro)",
+    "correct": "vogliono",
+    "options": ["voglio", "vuole", "vogliamo", "vogliono"],
+    "tags": ["volere", "lesson-7"]
+  },
+  {
+    "id": "mv008",
+    "category": "slide-10",
+    "sentence": "Signora, ___ darmi un'informazione?",
+    "hint": "potere (Lei — formal)",
+    "correct": "può",
+    "options": ["posso", "puoi", "può", "potete"],
+    "tags": ["potere", "lesson-7"]
+  },
+  {
+    "id": "mv009",
+    "category": "slide-10",
+    "sentence": "Per arrivare alla stazione, ___ girare a sinistra dell'incrocio.",
+    "hint": "dovere (Lei — formal)",
+    "correct": "deve",
+    "options": ["devo", "devi", "deve", "dovete"],
+    "tags": ["dovere", "directions", "lesson-7"]
+  },
+  {
+    "id": "mv010",
+    "category": "slide-10",
+    "sentence": "Noi ___ vedere la partita di calcio.",
+    "hint": "volere (noi)",
+    "correct": "vogliamo",
+    "options": ["voglio", "vuole", "vogliamo", "vogliono"],
+    "tags": ["volere", "lesson-7"]
+  },
+  {
+    "id": "mv011",
+    "category": "slide-10",
+    "sentence": "Loro ___ andare a casa.",
+    "hint": "volere (loro)",
+    "correct": "vogliono",
+    "options": ["voglio", "vuole", "vogliamo", "vogliono"],
+    "tags": ["volere", "lesson-7"]
+  },
+  {
+    "id": "mv012",
+    "category": "slide-10",
+    "sentence": "Scusate, ___ smettere di fumare?",
+    "hint": "potere (voi)",
+    "correct": "potete",
+    "options": ["posso", "può", "potete", "possono"],
+    "tags": ["potere", "lesson-7"]
+  },
+  {
+    "id": "mv013",
+    "category": "slide-10",
+    "sentence": "Gli studenti ___ essere a scuola alle 8:00.",
+    "hint": "dovere (loro)",
+    "correct": "devono",
+    "options": ["devo", "deve", "dobbiamo", "devono"],
+    "tags": ["dovere", "lesson-7"]
+  },
+  {
+    "id": "mv014",
+    "category": "slide-10",
+    "sentence": "Oggi io non ___ andare al supermercato, non ho tempo.",
+    "hint": "potere (io)",
+    "correct": "posso",
+    "options": ["posso", "puoi", "può", "potete"],
+    "tags": ["potere", "lesson-7"]
+  },
+  {
+    "id": "mv015",
+    "category": "slide-10",
+    "sentence": "La signora Maria ___ prendere ogni mattina il bus.",
+    "hint": "dovere (lei)",
+    "correct": "deve",
+    "options": ["devo", "devi", "deve", "dovete"],
+    "tags": ["dovere", "lesson-7"]
+  },
+  {
+    "id": "mv016",
+    "category": "slide-10",
+    "sentence": "Voi non ___ cambiare idea.",
+    "hint": "volere (voi)",
+    "correct": "volete",
+    "options": ["voglio", "vuole", "volete", "vogliono"],
+    "tags": ["volere", "lesson-7"]
+  },
+  {
+    "id": "mv017",
+    "category": "slide-10",
+    "sentence": "Lucio non ha la patente quindi non ___ guidare.",
+    "hint": "potere (lui)",
+    "correct": "può",
+    "options": ["posso", "puoi", "può", "potete"],
+    "tags": ["potere", "lesson-7"]
+  },
+  {
+    "id": "mv018",
+    "category": "slide-9",
+    "prompt": "Offri una birra alla persona alla tua destra.",
+    "sentence": "___ una birra?",
+    "hint": "Stai offrendo qualcosa — quale verbo usi?",
+    "correct": "Vuoi",
+    "options": ["Vuoi", "Devo", "Posso", "Voglio"],
+    "explanation": "VOLERE → 'Vuoi una birra?' = Do you want a beer? Use VOLERE to offer or invite.",
+    "tags": ["volere", "lesson-7"]
+  },
+  {
+    "id": "mv019",
+    "category": "slide-9",
+    "prompt": "Chiedi alla persona davanti a te di chiudere la finestra.",
+    "sentence": "___ chiudere la finestra, per favore?",
+    "hint": "Stai facendo una richiesta gentile — quale verbo usi?",
+    "correct": "Puoi",
+    "options": ["Puoi", "Devi", "Vuoi", "Posso"],
+    "explanation": "POTERE → 'Puoi chiudere la finestra?' = Can you close the window? Use POTERE for polite requests.",
+    "tags": ["potere", "lesson-7"]
+  },
+  {
+    "id": "mv020",
+    "category": "slide-9",
+    "prompt": "Dì che cosa devi fare stasera.",
+    "sentence": "___ studiare stasera.",
+    "hint": "Esprimi una necessità — quale verbo usi?",
+    "correct": "Devo",
+    "options": ["Devo", "Posso", "Voglio", "Devi"],
+    "explanation": "DOVERE → 'Devo studiare stasera.' = I have to study tonight. Use DOVERE for necessity.",
+    "tags": ["dovere", "lesson-7"]
+  },
+  {
+    "id": "mv021",
+    "category": "slide-9",
+    "prompt": "Ordina a tuo figlio di fare i compiti.",
+    "sentence": "___ fare i compiti adesso!",
+    "hint": "Stai dando un ordine/obbligo — quale verbo usi?",
+    "correct": "Devi",
+    "options": ["Devi", "Puoi", "Vuoi", "Deve"],
+    "explanation": "DOVERE (tu) → 'Devi fare i compiti!' = You must do your homework! Use DOVERE for obligation.",
+    "tags": ["dovere", "lesson-7"]
+  },
+  {
+    "id": "mv022",
+    "category": "slide-9",
+    "prompt": "Vieta alla persona di fianco a te di fumare in classe.",
+    "sentence": "Non ___ fumare in classe!",
+    "hint": "Stai negando il permesso — quale verbo usi?",
+    "correct": "puoi",
+    "options": ["puoi", "devi", "vuoi", "può"],
+    "explanation": "POTERE → 'Non puoi fumare in classe!' = You can't smoke in class! Use POTERE to deny permission.",
+    "tags": ["potere", "lesson-7"]
+  },
+  {
+    "id": "mv023",
+    "category": "slide-9",
+    "prompt": "Dì che cosa vuoi fare stasera.",
+    "sentence": "___ andare al cinema stasera.",
+    "hint": "Esprimi un desiderio — quale verbo usi?",
+    "correct": "Voglio",
+    "options": ["Voglio", "Devo", "Posso", "Vogliamo"],
+    "explanation": "VOLERE → 'Voglio andare al cinema.' = I want to go to the cinema. Use VOLERE for desires.",
+    "tags": ["volere", "lesson-7"]
+  },
+  {
+    "id": "mv024",
+    "category": "slide-9",
+    "prompt": "Invita la persona alla tua sinistra alla tua festa di compleanno.",
+    "sentence": "___ venire alla mia festa di compleanno?",
+    "hint": "Stai facendo un invito — quale verbo usi?",
+    "correct": "Vuoi",
+    "options": ["Vuoi", "Puoi", "Devi", "Vuole"],
+    "explanation": "VOLERE → 'Vuoi venire alla mia festa?' = Do you want to come to my party? Use VOLERE for invitations.",
+    "tags": ["volere", "lesson-7"]
+  },
+  {
+    "id": "mv025",
+    "category": "slide-9",
+    "prompt": "Chiedi il permesso di entrare.",
+    "sentence": "___ entrare?",
+    "hint": "Stai chiedendo il permesso — quale verbo usi?",
+    "correct": "Posso",
+    "options": ["Posso", "Devo", "Voglio", "Possiamo"],
+    "explanation": "POTERE → 'Posso entrare?' = Can I come in? Use POTERE to ask for permission.",
+    "tags": ["potere", "lesson-7"]
+  },
+  {
+    "id": "mv026",
+    "category": "slide-9",
+    "prompt": "Un tuo amico va in Italia. Consiglia una città che è necessario visitare.",
+    "sentence": "___ visitare Roma, è bellissima!",
+    "hint": "Stai dando un consiglio — quale verbo usi?",
+    "correct": "Devi",
+    "options": ["Devi", "Vuoi", "Puoi", "Devo"],
+    "explanation": "DOVERE → 'Devi visitare Roma!' = You must visit Rome! Use DOVERE for strong advice.",
+    "tags": ["dovere", "lesson-7"]
+  }
+]

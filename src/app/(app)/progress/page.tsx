@@ -29,6 +29,7 @@ const MODE_LINKS: Record<string, string> = {
   conjugation: "/study/conjugation",
   grammar: "/study/grammar",
   sentence: "/study/sentence-builder",
+  "modal-verbs": "/study/modal-verbs",
 };
 
 const MODE_LABELS: Record<string, string> = {
@@ -37,6 +38,7 @@ const MODE_LABELS: Record<string, string> = {
   conjugation: "Conjugation",
   grammar: "Grammar",
   sentence: "Sentences",
+  "modal-verbs": "Verbi Modali",
 };
 
 export default async function ProgressPage() {

@@ -3244,5 +3244,889 @@
     ],
     "unit": 6,
     "pronunciation": "pre·fe·RI·re"
+  },
+  {
+    "id": "v210",
+    "italian": "marito",
+    "english": "husband",
+    "gender": "maschile",
+    "partOfSpeech": "noun",
+    "example": "Suo marito lavora molto.",
+    "tags": [
+      "nouns",
+      "family",
+      "lesson-6"
+    ],
+    "unit": 6,
+    "pronunciation": "MA·ri·to"
+  },
+  {
+    "id": "v211",
+    "italian": "moglie",
+    "english": "wife",
+    "gender": "femminile",
+    "partOfSpeech": "noun",
+    "example": "Sua moglie è molto gentile.",
+    "tags": [
+      "nouns",
+      "family",
+      "lesson-6"
+    ],
+    "unit": 6,
+    "pronunciation": "MO·lye"
+  },
+  {
+    "id": "v212",
+    "italian": "figlio",
+    "english": "son",
+    "gender": "maschile",
+    "partOfSpeech": "noun",
+    "example": "Il suo figlio ha dieci anni.",
+    "tags": [
+      "nouns",
+      "family",
+      "lesson-6"
+    ],
+    "unit": 6,
+    "pronunciation": "FI·lyo"
+  },
+  {
+    "id": "v213",
+    "italian": "figlia",
+    "english": "daughter",
+    "gender": "femminile",
+    "partOfSpeech": "noun",
+    "example": "La sua figlia studia medicina.",
+    "tags": [
+      "nouns",
+      "family",
+      "lesson-6"
+    ],
+    "unit": 6,
+    "pronunciation": "FI·lya"
+  },
+  {
+    "id": "v214",
+    "italian": "nipote",
+    "english": "grandchild / nephew / niece",
+    "gender": null,
+    "partOfSpeech": "noun",
+    "example": "Il nipote gioca con i nonni.",
+    "tags": [
+      "nouns",
+      "family",
+      "lesson-6"
+    ],
+    "unit": 6,
+    "pronunciation": "ni·PO·te"
+  },
+  {
+    "id": "v215",
+    "italian": "genitori",
+    "english": "parents",
+    "gender": null,
+    "partOfSpeech": "noun",
+    "example": "I miei genitori abitano a Roma.",
+    "tags": [
+      "nouns",
+      "family",
+      "lesson-6"
+    ],
+    "unit": 6,
+    "pronunciation": "je·ni·TO·ri"
+  },
+  {
+    "id": "v216",
+    "italian": "pizzetta",
+    "english": "small pizza",
+    "gender": "femminile",
+    "partOfSpeech": "noun",
+    "example": "Mi piace la pizzetta al pomodoro.",
+    "tags": [
+      "nouns",
+      "food",
+      "bar",
+      "lesson-6"
+    ],
+    "unit": 6,
+    "pronunciation": "pit·TSET·ta"
+  },
+  {
+    "id": "v217",
+    "italian": "panino",
+    "english": "bread roll / sandwich",
+    "gender": "maschile",
+    "partOfSpeech": "noun",
+    "example": "Prendo un panino al prosciutto.",
+    "tags": [
+      "nouns",
+      "food",
+      "bar",
+      "lesson-6"
+    ],
+    "unit": 6,
+    "pronunciation": "pa·NI·no"
+  },
+  {
+    "id": "v218",
+    "italian": "spremuta",
+    "english": "freshly squeezed juice",
+    "gender": "femminile",
+    "partOfSpeech": "noun",
+    "example": "Una spremuta d'arancia, per favore.",
+    "tags": [
+      "nouns",
+      "food",
+      "bar",
+      "lesson-6"
+    ],
+    "unit": 6,
+    "pronunciation": "spre·MU·ta"
+  },
+  {
+    "id": "v219",
+    "italian": "turista",
+    "english": "tourist",
+    "gender": "maschile",
+    "partOfSpeech": "noun",
+    "example": "Il turista chiede indicazioni.",
+    "tags": [
+      "nouns",
+      "city",
+      "lesson-7"
+    ],
+    "unit": 7,
+    "pronunciation": "tu·RI·sta"
+  },
+  {
+    "id": "v220",
+    "italian": "passante",
+    "english": "passerby",
+    "gender": "maschile",
+    "partOfSpeech": "noun",
+    "example": "Il passante aiuta il turista.",
+    "tags": [
+      "nouns",
+      "city",
+      "lesson-7"
+    ],
+    "unit": 7,
+    "pronunciation": "pas·SAN·te"
+  },
+  {
+    "id": "v221",
+    "italian": "incrocio",
+    "english": "intersection",
+    "gender": "maschile",
+    "partOfSpeech": "noun",
+    "example": "Giri a sinistra all'incrocio.",
+    "tags": [
+      "nouns",
+      "city",
+      "directions",
+      "lesson-7"
+    ],
+    "unit": 7,
+    "pronunciation": "in·KRO·cho"
+  },
+  {
+    "id": "v222",
+    "italian": "semaforo",
+    "english": "traffic light",
+    "gender": "maschile",
+    "partOfSpeech": "noun",
+    "example": "Fermati al semaforo rosso.",
+    "tags": [
+      "nouns",
+      "city",
+      "directions",
+      "lesson-7"
+    ],
+    "unit": 7,
+    "pronunciation": "se·MA·fo·ro"
+  },
+  {
+    "id": "v223",
+    "italian": "percorso",
+    "english": "route / path",
+    "gender": "maschile",
+    "partOfSpeech": "noun",
+    "example": "Qual è il percorso più veloce?",
+    "tags": [
+      "nouns",
+      "city",
+      "lesson-7"
+    ],
+    "unit": 7,
+    "pronunciation": "per·KOR·so"
+  },
+  {
+    "id": "v224",
+    "italian": "direzione",
+    "english": "direction",
+    "gender": "femminile",
+    "partOfSpeech": "noun",
+    "example": "In che direzione devo andare?",
+    "tags": [
+      "nouns",
+      "city",
+      "directions",
+      "lesson-7"
+    ],
+    "unit": 7,
+    "pronunciation": "di·re·TZYO·ne"
+  },
+  {
+    "id": "v225",
+    "italian": "sinistra",
+    "english": "left",
+    "gender": "femminile",
+    "partOfSpeech": "noun",
+    "example": "Gira a sinistra al semaforo.",
+    "tags": [
+      "nouns",
+      "city",
+      "directions",
+      "lesson-7"
+    ],
+    "unit": 7,
+    "pronunciation": "si·NI·stra"
+  },
+  {
+    "id": "v226",
+    "italian": "destra",
+    "english": "right",
+    "gender": "femminile",
+    "partOfSpeech": "noun",
+    "example": "Prendi la prima a destra.",
+    "tags": [
+      "nouns",
+      "city",
+      "directions",
+      "lesson-7"
+    ],
+    "unit": 7,
+    "pronunciation": "DE·stra"
+  },
+  {
+    "id": "v227",
+    "italian": "girare",
+    "english": "to turn",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Dovete girare a destra all'incrocio.",
+    "tags": [
+      "verbs",
+      "city",
+      "directions",
+      "lesson-7"
+    ],
+    "unit": 7,
+    "pronunciation": "ji·RA·re"
+  },
+  {
+    "id": "v228",
+    "italian": "continuare",
+    "english": "to continue",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Continua sempre dritto per cento metri.",
+    "tags": [
+      "verbs",
+      "city",
+      "directions",
+      "lesson-7"
+    ],
+    "unit": 7,
+    "pronunciation": "kon·ti·nu·A·re"
+  },
+  {
+    "id": "v229",
+    "italian": "lontano",
+    "english": "far",
+    "gender": null,
+    "partOfSpeech": "adjective",
+    "example": "La stazione non è molto lontana.",
+    "tags": [
+      "adjectives",
+      "city",
+      "lesson-7"
+    ],
+    "unit": 7,
+    "pronunciation": "lon·TA·no"
+  },
+  {
+    "id": "v230",
+    "italian": "vicino",
+    "english": "near / close",
+    "gender": null,
+    "partOfSpeech": "adjective",
+    "example": "Il bar è vicino alla piazza.",
+    "tags": [
+      "adjectives",
+      "city",
+      "lesson-7"
+    ],
+    "unit": 7,
+    "pronunciation": "vi·CHI·no"
+  },
+  {
+    "id": "v231",
+    "italian": "invito",
+    "english": "invitation",
+    "gender": "maschile",
+    "partOfSpeech": "noun",
+    "example": "Vuoi venire alla mia festa? È un invito!",
+    "tags": [
+      "nouns",
+      "expressions",
+      "lesson-7"
+    ],
+    "unit": 7,
+    "pronunciation": "in·VI·to"
+  },
+  {
+    "id": "v232",
+    "italian": "volentieri",
+    "english": "gladly / with pleasure",
+    "gender": null,
+    "partOfSpeech": "adverb",
+    "example": "Sì, volentieri! Vengo alla festa.",
+    "tags": [
+      "adverbs",
+      "expressions",
+      "lesson-7"
+    ],
+    "unit": 7,
+    "pronunciation": "vo·len·TYE·ri"
+  },
+  {
+    "id": "v233",
+    "italian": "magari",
+    "english": "maybe / perhaps",
+    "gender": null,
+    "partOfSpeech": "adverb",
+    "example": "Magari vengo domani, non sono sicuro.",
+    "tags": [
+      "adverbs",
+      "expressions",
+      "lesson-7"
+    ],
+    "unit": 7,
+    "pronunciation": "ma·GA·ri"
+  },
+  {
+    "id": "v234",
+    "italian": "forse",
+    "english": "maybe / perhaps",
+    "gender": null,
+    "partOfSpeech": "adverb",
+    "example": "Forse posso venire, devo vedere.",
+    "tags": [
+      "adverbs",
+      "expressions",
+      "lesson-7"
+    ],
+    "unit": 7,
+    "pronunciation": "FOR·se"
+  },
+  {
+    "id": "v235",
+    "italian": "dovere",
+    "english": "to have to / must",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Devo studiare molto per l'esame.",
+    "tags": [
+      "verbs",
+      "modals",
+      "lesson-7"
+    ],
+    "unit": 7,
+    "pronunciation": "do·VE·re"
+  },
+  {
+    "id": "v236",
+    "italian": "potere",
+    "english": "to be able to / can",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Posso aiutarti con l'italiano.",
+    "tags": [
+      "verbs",
+      "modals",
+      "lesson-7"
+    ],
+    "unit": 7,
+    "pronunciation": "po·TE·re"
+  },
+  {
+    "id": "v237",
+    "italian": "volere",
+    "english": "to want",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Voglio andare in Italia quest'estate.",
+    "tags": [
+      "verbs",
+      "modals",
+      "lesson-7"
+    ],
+    "unit": 7,
+    "pronunciation": "vo·LE·re"
+  },
+  {
+    "id": "v238",
+    "italian": "piazza",
+    "english": "square / plaza",
+    "gender": "femminile",
+    "partOfSpeech": "noun",
+    "example": "La piazza è nel centro della città.",
+    "tags": [
+      "nouns",
+      "city",
+      "lesson-7"
+    ],
+    "unit": 7,
+    "pronunciation": "PYAT·tsa"
+  },
+  {
+    "id": "v239",
+    "italian": "città",
+    "english": "city",
+    "gender": "femminile",
+    "partOfSpeech": "noun",
+    "example": "Roma è una città bellissima.",
+    "tags": [
+      "nouns",
+      "city",
+      "lesson-7"
+    ],
+    "unit": 7,
+    "pronunciation": "chit·TA"
+  },
+  {
+    "id": "v240",
+    "italian": "via",
+    "english": "street",
+    "gender": "femminile",
+    "partOfSpeech": "noun",
+    "example": "Abito in via Roma al numero dieci.",
+    "tags": [
+      "nouns",
+      "city",
+      "directions",
+      "lesson-7"
+    ],
+    "unit": 7,
+    "pronunciation": "VI·a"
+  },
+  {
+    "id": "v241",
+    "italian": "angolo",
+    "english": "corner",
+    "gender": "maschile",
+    "partOfSpeech": "noun",
+    "example": "Il bar è all'angolo della strada.",
+    "tags": [
+      "nouns",
+      "city",
+      "directions",
+      "lesson-7"
+    ],
+    "unit": 7,
+    "pronunciation": "AN·go·lo"
+  },
+  {
+    "id": "v242",
+    "italian": "trattoria",
+    "english": "traditional Italian restaurant",
+    "gender": "femminile",
+    "partOfSpeech": "noun",
+    "example": "La trattoria di Mario è famosissima.",
+    "tags": [
+      "nouns",
+      "restaurant",
+      "lesson-8"
+    ],
+    "unit": 8,
+    "pronunciation": "trat·to·RI·a"
+  },
+  {
+    "id": "v243",
+    "italian": "pizzeria",
+    "english": "pizza restaurant",
+    "gender": "femminile",
+    "partOfSpeech": "noun",
+    "example": "Andiamo in pizzeria stasera?",
+    "tags": [
+      "nouns",
+      "restaurant",
+      "lesson-8"
+    ],
+    "unit": 8,
+    "pronunciation": "pit·tse·RI·a"
+  },
+  {
+    "id": "v244",
+    "italian": "taverna",
+    "english": "tavern",
+    "gender": "femminile",
+    "partOfSpeech": "noun",
+    "example": "La taverna serve vino locale.",
+    "tags": [
+      "nouns",
+      "restaurant",
+      "lesson-8"
+    ],
+    "unit": 8,
+    "pronunciation": "ta·VER·na"
+  },
+  {
+    "id": "v245",
+    "italian": "osteria",
+    "english": "osteria / wine bar",
+    "gender": "femminile",
+    "partOfSpeech": "noun",
+    "example": "L'osteria ha dei vini ottimi.",
+    "tags": [
+      "nouns",
+      "restaurant",
+      "lesson-8"
+    ],
+    "unit": 8,
+    "pronunciation": "oste·RI·a"
+  },
+  {
+    "id": "v246",
+    "italian": "antipasto",
+    "english": "starter / appetizer",
+    "gender": "maschile",
+    "partOfSpeech": "noun",
+    "example": "Come antipasto prendiamo la bruschetta.",
+    "tags": [
+      "nouns",
+      "food",
+      "restaurant",
+      "lesson-8"
+    ],
+    "unit": 8,
+    "pronunciation": "an·ti·PA·sto"
+  },
+  {
+    "id": "v247",
+    "italian": "primo",
+    "english": "first course",
+    "gender": "maschile",
+    "partOfSpeech": "noun",
+    "example": "Di primo vorrei le tagliatelle al ragù.",
+    "tags": [
+      "nouns",
+      "food",
+      "restaurant",
+      "lesson-8"
+    ],
+    "unit": 8,
+    "pronunciation": "PRI·mo"
+  },
+  {
+    "id": "v248",
+    "italian": "secondo",
+    "english": "main course",
+    "gender": "maschile",
+    "partOfSpeech": "noun",
+    "example": "Di secondo prendo la tagliata.",
+    "tags": [
+      "nouns",
+      "food",
+      "restaurant",
+      "lesson-8"
+    ],
+    "unit": 8,
+    "pronunciation": "se·KON·do"
+  },
+  {
+    "id": "v249",
+    "italian": "contorno",
+    "english": "side dish",
+    "gender": "maschile",
+    "partOfSpeech": "noun",
+    "example": "Come contorno, un'insalata mista.",
+    "tags": [
+      "nouns",
+      "food",
+      "restaurant",
+      "lesson-8"
+    ],
+    "unit": 8,
+    "pronunciation": "kon·TOR·no"
+  },
+  {
+    "id": "v250",
+    "italian": "dolce",
+    "english": "dessert / sweet",
+    "gender": "maschile",
+    "partOfSpeech": "noun",
+    "example": "Per il dolce ripasso dopo.",
+    "tags": [
+      "nouns",
+      "food",
+      "restaurant",
+      "lesson-8"
+    ],
+    "unit": 8,
+    "pronunciation": "DOL·che"
+  },
+  {
+    "id": "v251",
+    "italian": "cameriere",
+    "english": "waiter",
+    "gender": "maschile",
+    "partOfSpeech": "noun",
+    "example": "Scusi, cameriere! Può portare il conto?",
+    "tags": [
+      "nouns",
+      "restaurant",
+      "lesson-8"
+    ],
+    "unit": 8,
+    "pronunciation": "ka·me·RYE·re"
+  },
+  {
+    "id": "v252",
+    "italian": "cliente",
+    "english": "customer",
+    "gender": "maschile",
+    "partOfSpeech": "noun",
+    "example": "Il cliente ordina il primo piatto.",
+    "tags": [
+      "nouns",
+      "restaurant",
+      "lesson-8"
+    ],
+    "unit": 8,
+    "pronunciation": "KLYEN·te"
+  },
+  {
+    "id": "v253",
+    "italian": "bottiglia",
+    "english": "bottle",
+    "gender": "femminile",
+    "partOfSpeech": "noun",
+    "example": "Prendiamo una bottiglia di vino rosso.",
+    "tags": [
+      "nouns",
+      "restaurant",
+      "lesson-8"
+    ],
+    "unit": 8,
+    "pronunciation": "bot·TI·lya"
+  },
+  {
+    "id": "v254",
+    "italian": "specialità",
+    "english": "specialty",
+    "gender": "femminile",
+    "partOfSpeech": "noun",
+    "example": "La nostra specialità è la tagliata.",
+    "tags": [
+      "nouns",
+      "restaurant",
+      "lesson-8"
+    ],
+    "unit": 8,
+    "pronunciation": "spe·cha·li·TA"
+  },
+  {
+    "id": "v255",
+    "italian": "ravioli",
+    "english": "ravioli",
+    "gender": "maschile",
+    "partOfSpeech": "noun",
+    "example": "I ravioli ai funghi porcini sono squisiti.",
+    "tags": [
+      "nouns",
+      "food",
+      "pasta",
+      "restaurant",
+      "lesson-8"
+    ],
+    "unit": 8,
+    "pronunciation": "ra·VYO·li"
+  },
+  {
+    "id": "v256",
+    "italian": "tagliatelle",
+    "english": "tagliatelle",
+    "gender": "femminile",
+    "partOfSpeech": "noun",
+    "example": "Le tagliatelle al ragù sono tipiche di Bologna.",
+    "tags": [
+      "nouns",
+      "food",
+      "pasta",
+      "restaurant",
+      "lesson-8"
+    ],
+    "unit": 8,
+    "pronunciation": "ta·lya·TEL·le"
+  },
+  {
+    "id": "v257",
+    "italian": "funghi",
+    "english": "mushrooms",
+    "gender": "maschile",
+    "partOfSpeech": "noun",
+    "example": "I funghi porcini sono molto saporiti.",
+    "tags": [
+      "nouns",
+      "food",
+      "lesson-8"
+    ],
+    "unit": 8,
+    "pronunciation": "FUN·gi"
+  },
+  {
+    "id": "v258",
+    "italian": "insalata",
+    "english": "salad",
+    "gender": "femminile",
+    "partOfSpeech": "noun",
+    "example": "Un'insalata mista come contorno, grazie.",
+    "tags": [
+      "nouns",
+      "food",
+      "restaurant",
+      "lesson-8"
+    ],
+    "unit": 8,
+    "pronunciation": "in·sa·LA·ta"
+  },
+  {
+    "id": "v259",
+    "italian": "tagliata",
+    "english": "grilled sliced steak",
+    "gender": "femminile",
+    "partOfSpeech": "noun",
+    "example": "La tagliata al radicchio è la specialità della casa.",
+    "tags": [
+      "nouns",
+      "food",
+      "restaurant",
+      "lesson-8"
+    ],
+    "unit": 8,
+    "pronunciation": "ta·LYA·ta"
+  },
+  {
+    "id": "v260",
+    "italian": "aperitivo",
+    "english": "aperitif",
+    "gender": "maschile",
+    "partOfSpeech": "noun",
+    "example": "Gli italiani amano fare l'aperitivo dopo il lavoro.",
+    "tags": [
+      "nouns",
+      "drinks",
+      "culture",
+      "lesson-8"
+    ],
+    "unit": 8,
+    "pronunciation": "a·pe·ri·TI·vo"
+  },
+  {
+    "id": "v261",
+    "italian": "stuzzichini",
+    "english": "bar snacks",
+    "gender": "maschile",
+    "partOfSpeech": "noun",
+    "example": "Durante l'aperitivo si mangiano gli stuzzichini.",
+    "tags": [
+      "nouns",
+      "food",
+      "culture",
+      "lesson-8"
+    ],
+    "unit": 8,
+    "pronunciation": "stut·tsi·KI·ni"
+  },
+  {
+    "id": "v262",
+    "italian": "vino",
+    "english": "wine",
+    "gender": "maschile",
+    "partOfSpeech": "noun",
+    "example": "Prendiamo una bottiglia di vino rosso.",
+    "tags": [
+      "nouns",
+      "drinks",
+      "restaurant",
+      "lesson-8"
+    ],
+    "unit": 8,
+    "pronunciation": "VI·no"
+  },
+  {
+    "id": "v263",
+    "italian": "acqua",
+    "english": "water",
+    "gender": "femminile",
+    "partOfSpeech": "noun",
+    "example": "Una bottiglia di acqua frizzante, per favore.",
+    "tags": [
+      "nouns",
+      "drinks",
+      "restaurant",
+      "lesson-8"
+    ],
+    "unit": 8,
+    "pronunciation": "AK·kwa"
+  },
+  {
+    "id": "v264",
+    "italian": "pesce",
+    "english": "fish",
+    "gender": "maschile",
+    "partOfSpeech": "noun",
+    "example": "Mangiamo pesce o carne stasera?",
+    "tags": [
+      "nouns",
+      "food",
+      "restaurant",
+      "lesson-8"
+    ],
+    "unit": 8,
+    "pronunciation": "PE·she"
+  },
+  {
+    "id": "v265",
+    "italian": "carne",
+    "english": "meat",
+    "gender": "femminile",
+    "partOfSpeech": "noun",
+    "example": "La tagliata è un secondo di carne.",
+    "tags": [
+      "nouns",
+      "food",
+      "restaurant",
+      "lesson-8"
+    ],
+    "unit": 8,
+    "pronunciation": "KAR·ne"
+  },
+  {
+    "id": "v266",
+    "italian": "menù",
+    "english": "menu",
+    "gender": "maschile",
+    "partOfSpeech": "noun",
+    "example": "Può portare il menù, per favore?",
+    "tags": [
+      "nouns",
+      "restaurant",
+      "lesson-8"
+    ],
+    "unit": 8,
+    "pronunciation": "me·NU"
   }
 ]

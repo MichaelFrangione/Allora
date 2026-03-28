@@ -2985,5 +2985,810 @@
       "ricapitoliamo",
       "lesson-5"
     ]
+  },
+  {
+    "id": "s115",
+    "italian": "Non posso venire stasera mi dispiace.",
+    "english": "I can't come tonight, I'm sorry.",
+    "parts": [
+      "Non",
+      "posso",
+      "venire",
+      "stasera",
+      "mi",
+      "dispiace"
+    ],
+    "distractors": [
+      "devo",
+      "voglio",
+      "andare",
+      "domani",
+      "sera",
+      "grazie"
+    ],
+    "tags": [
+      "present",
+      "potere",
+      "modals",
+      "lesson-7"
+    ]
+  },
+  {
+    "id": "s116",
+    "italian": "Puoi chiudere la finestra per favore?",
+    "english": "Can you close the window please?",
+    "parts": [
+      "Puoi",
+      "chiudere",
+      "la",
+      "finestra",
+      "per",
+      "favore"
+    ],
+    "distractors": [
+      "Devi",
+      "aprire",
+      "la",
+      "porta",
+      "prego",
+      "grazie"
+    ],
+    "tags": [
+      "present",
+      "potere",
+      "modals",
+      "lesson-7"
+    ]
+  },
+  {
+    "id": "s117",
+    "italian": "Voglio tornare in hotel ma non so come arrivare.",
+    "english": "I want to go back to the hotel but I don't know how to get there.",
+    "parts": [
+      "Voglio",
+      "tornare",
+      "in",
+      "hotel",
+      "ma",
+      "non",
+      "so",
+      "come",
+      "arrivare"
+    ],
+    "distractors": [
+      "Devo",
+      "partire",
+      "a",
+      "casa",
+      "perché",
+      "quando",
+      "viene"
+    ],
+    "tags": [
+      "present",
+      "volere",
+      "modals",
+      "lesson-7"
+    ]
+  },
+  {
+    "id": "s118",
+    "italian": "Dobbiamo girare a sinistra all'incrocio.",
+    "english": "We have to turn left at the intersection.",
+    "parts": [
+      "Dobbiamo",
+      "girare",
+      "a",
+      "sinistra",
+      "all'incrocio"
+    ],
+    "distractors": [
+      "Dovete",
+      "andare",
+      "a",
+      "destra",
+      "al",
+      "semaforo"
+    ],
+    "tags": [
+      "present",
+      "dovere",
+      "directions",
+      "lesson-7"
+    ]
+  },
+  {
+    "id": "s119",
+    "italian": "Deve andare sempre dritto fino alla fine della strada.",
+    "english": "You have to go straight ahead to the end of the street.",
+    "parts": [
+      "Deve",
+      "andare",
+      "sempre",
+      "dritto",
+      "fino",
+      "alla",
+      "fine",
+      "della",
+      "strada"
+    ],
+    "distractors": [
+      "Dovete",
+      "girare",
+      "spesso",
+      "sinistra",
+      "dopo",
+      "della",
+      "piazza",
+      "via"
+    ],
+    "tags": [
+      "present",
+      "dovere",
+      "directions",
+      "lesson-7"
+    ]
+  },
+  {
+    "id": "s120",
+    "italian": "Non è molto lontano ci vogliono dieci minuti a piedi.",
+    "english": "It's not very far, it takes about ten minutes on foot.",
+    "parts": [
+      "Non",
+      "è",
+      "molto",
+      "lontano",
+      "ci",
+      "vogliono",
+      "dieci",
+      "minuti",
+      "a",
+      "piedi"
+    ],
+    "distractors": [
+      "È",
+      "abbastanza",
+      "vicino",
+      "là",
+      "ci",
+      "vuole",
+      "cinque",
+      "ore",
+      "in",
+      "macchina"
+    ],
+    "tags": [
+      "present",
+      "directions",
+      "city",
+      "lesson-7"
+    ]
+  },
+  {
+    "id": "s121",
+    "italian": "Mi piace il gelato alla fragola.",
+    "english": "I like strawberry ice cream.",
+    "parts": [
+      "Mi",
+      "piace",
+      "il",
+      "gelato",
+      "alla",
+      "fragola"
+    ],
+    "distractors": [
+      "Ti",
+      "piacciono",
+      "i",
+      "biscotti",
+      "al",
+      "cioccolato"
+    ],
+    "tags": [
+      "present",
+      "piacere",
+      "lesson-7"
+    ]
+  },
+  {
+    "id": "s122",
+    "italian": "Non mi piace ascoltare la musica classica.",
+    "english": "I don't like listening to classical music.",
+    "parts": [
+      "Non",
+      "mi",
+      "piace",
+      "ascoltare",
+      "la",
+      "musica",
+      "classica"
+    ],
+    "distractors": [
+      "mi",
+      "piacciono",
+      "guardare",
+      "i",
+      "film",
+      "italiana",
+      "tanto"
+    ],
+    "tags": [
+      "present",
+      "piacere",
+      "lesson-7"
+    ]
+  },
+  {
+    "id": "s123",
+    "italian": "Mi piacciono i ravioli ai funghi porcini.",
+    "english": "I like ravioli with porcini mushrooms.",
+    "parts": [
+      "Mi",
+      "piacciono",
+      "i",
+      "ravioli",
+      "ai",
+      "funghi",
+      "porcini"
+    ],
+    "distractors": [
+      "Mi",
+      "piace",
+      "la",
+      "tagliatella",
+      "al",
+      "ragù",
+      "fresca"
+    ],
+    "tags": [
+      "present",
+      "piacere",
+      "restaurant",
+      "lesson-7",
+      "lesson-8"
+    ]
+  },
+  {
+    "id": "s124",
+    "italian": "Mi piace andare al cinema con i miei amici.",
+    "english": "I like going to the cinema with my friends.",
+    "parts": [
+      "Mi",
+      "piace",
+      "andare",
+      "al",
+      "cinema",
+      "con",
+      "i",
+      "miei",
+      "amici"
+    ],
+    "distractors": [
+      "Ti",
+      "piacciono",
+      "fare",
+      "a",
+      "teatro",
+      "con",
+      "i",
+      "tuoi",
+      "ragazzi"
+    ],
+    "tags": [
+      "present",
+      "piacere",
+      "lesson-7"
+    ]
+  },
+  {
+    "id": "s125",
+    "italian": "Gli piace fare sport ogni giorno.",
+    "english": "He likes playing sport every day.",
+    "parts": [
+      "Gli",
+      "piace",
+      "fare",
+      "sport",
+      "ogni",
+      "giorno"
+    ],
+    "distractors": [
+      "Le",
+      "piacciono",
+      "giocare",
+      "a",
+      "calcio",
+      "la",
+      "sera"
+    ],
+    "tags": [
+      "present",
+      "piacere",
+      "lesson-7"
+    ]
+  },
+  {
+    "id": "s126",
+    "italian": "Vi piacciono le tagliatelle al ragù?",
+    "english": "Do you (plural) like tagliatelle with ragù?",
+    "parts": [
+      "Vi",
+      "piacciono",
+      "le",
+      "tagliatelle",
+      "al",
+      "ragù"
+    ],
+    "distractors": [
+      "Ci",
+      "piace",
+      "i",
+      "ravioli",
+      "al",
+      "pomodoro"
+    ],
+    "tags": [
+      "present",
+      "piacere",
+      "restaurant",
+      "lesson-7",
+      "lesson-8"
+    ]
+  },
+  {
+    "id": "s127",
+    "italian": "Mio fratello si chiama Marco.",
+    "english": "My brother's name is Marco.",
+    "parts": [
+      "Mio",
+      "fratello",
+      "si",
+      "chiama",
+      "Marco"
+    ],
+    "distractors": [
+      "Il",
+      "mio",
+      "sorella",
+      "si",
+      "dice",
+      "Luca"
+    ],
+    "tags": [
+      "present",
+      "possessivi",
+      "family",
+      "lesson-6"
+    ]
+  },
+  {
+    "id": "s128",
+    "italian": "La mia sorella ha venticinque anni.",
+    "english": "My sister is twenty-five years old.",
+    "parts": [
+      "La",
+      "mia",
+      "sorella",
+      "ha",
+      "venticinque",
+      "anni"
+    ],
+    "distractors": [
+      "Il",
+      "mio",
+      "fratello",
+      "è",
+      "venti",
+      "vecchio"
+    ],
+    "tags": [
+      "present",
+      "possessivi",
+      "family",
+      "lesson-6"
+    ]
+  },
+  {
+    "id": "s129",
+    "italian": "I miei nonni abitano a Trieste.",
+    "english": "My grandparents live in Trieste.",
+    "parts": [
+      "I",
+      "miei",
+      "nonni",
+      "abitano",
+      "a",
+      "Trieste"
+    ],
+    "distractors": [
+      "Le",
+      "mie",
+      "nonne",
+      "vivono",
+      "in",
+      "Roma"
+    ],
+    "tags": [
+      "present",
+      "possessivi",
+      "family",
+      "lesson-6"
+    ]
+  },
+  {
+    "id": "s130",
+    "italian": "La nostra famiglia è molto grande.",
+    "english": "Our family is very big.",
+    "parts": [
+      "La",
+      "nostra",
+      "famiglia",
+      "è",
+      "molto",
+      "grande"
+    ],
+    "distractors": [
+      "Il",
+      "nostro",
+      "amico",
+      "è",
+      "abbastanza",
+      "piccolo"
+    ],
+    "tags": [
+      "present",
+      "possessivi",
+      "family",
+      "lesson-6"
+    ]
+  },
+  {
+    "id": "s131",
+    "italian": "Il suo cane è nero e molto bravo.",
+    "english": "His/her dog is black and very well-behaved.",
+    "parts": [
+      "Il",
+      "suo",
+      "cane",
+      "è",
+      "nero",
+      "e",
+      "molto",
+      "bravo"
+    ],
+    "distractors": [
+      "La",
+      "sua",
+      "macchina",
+      "è",
+      "rossa",
+      "e",
+      "abbastanza",
+      "sportiva"
+    ],
+    "tags": [
+      "present",
+      "possessivi",
+      "lesson-6"
+    ]
+  },
+  {
+    "id": "s132",
+    "italian": "Avete un tavolo per due?",
+    "english": "Do you have a table for two?",
+    "parts": [
+      "Avete",
+      "un",
+      "tavolo",
+      "per",
+      "due"
+    ],
+    "distractors": [
+      "Avete",
+      "una",
+      "sedia",
+      "per",
+      "tre",
+      "persone"
+    ],
+    "tags": [
+      "present",
+      "restaurant",
+      "lesson-8"
+    ]
+  },
+  {
+    "id": "s133",
+    "italian": "Di primo vorrei le tagliatelle al ragù per favore.",
+    "english": "For the first course I'd like tagliatelle with ragù please.",
+    "parts": [
+      "Di",
+      "primo",
+      "vorrei",
+      "le",
+      "tagliatelle",
+      "al",
+      "ragù",
+      "per",
+      "favore"
+    ],
+    "distractors": [
+      "Di",
+      "secondo",
+      "voglio",
+      "i",
+      "ravioli",
+      "ai",
+      "funghi",
+      "grazie"
+    ],
+    "tags": [
+      "present",
+      "restaurant",
+      "volere",
+      "lesson-8"
+    ]
+  },
+  {
+    "id": "s134",
+    "italian": "Come antipasto prendo l'insalata mista.",
+    "english": "For the starter I'll have the mixed salad.",
+    "parts": [
+      "Come",
+      "antipasto",
+      "prendo",
+      "l'insalata",
+      "mista"
+    ],
+    "distractors": [
+      "Di",
+      "contorno",
+      "vorrei",
+      "il",
+      "risotto",
+      "semplice"
+    ],
+    "tags": [
+      "present",
+      "restaurant",
+      "lesson-8"
+    ]
+  },
+  {
+    "id": "s135",
+    "italian": "Può portare il conto per favore?",
+    "english": "Can you bring the bill please?",
+    "parts": [
+      "Può",
+      "portare",
+      "il",
+      "conto",
+      "per",
+      "favore"
+    ],
+    "distractors": [
+      "Puoi",
+      "portare",
+      "il",
+      "menù",
+      "prego",
+      "grazie"
+    ],
+    "tags": [
+      "present",
+      "restaurant",
+      "lesson-8"
+    ]
+  },
+  {
+    "id": "s136",
+    "italian": "La nostra specialità è la tagliata al radicchio.",
+    "english": "Our specialty is the tagliata with radicchio.",
+    "parts": [
+      "La",
+      "nostra",
+      "specialità",
+      "è",
+      "la",
+      "tagliata",
+      "al",
+      "radicchio"
+    ],
+    "distractors": [
+      "Il",
+      "nostro",
+      "antipasto",
+      "è",
+      "i",
+      "ravioli",
+      "ai",
+      "funghi"
+    ],
+    "tags": [
+      "present",
+      "restaurant",
+      "possessivi",
+      "lesson-8"
+    ]
+  },
+  {
+    "id": "s137",
+    "italian": "Il libro è sul tavolo vicino alla finestra.",
+    "english": "The book is on the table near the window.",
+    "parts": [
+      "Il",
+      "libro",
+      "è",
+      "sul",
+      "tavolo",
+      "vicino",
+      "alla",
+      "finestra"
+    ],
+    "distractors": [
+      "La",
+      "penna",
+      "è",
+      "nel",
+      "cassetto",
+      "lontano",
+      "dal",
+      "muro"
+    ],
+    "tags": [
+      "present",
+      "prepositions",
+      "articolate",
+      "lesson-7"
+    ]
+  },
+  {
+    "id": "s138",
+    "italian": "Vado dal medico ogni settimana.",
+    "english": "I go to the doctor every week.",
+    "parts": [
+      "Vado",
+      "dal",
+      "medico",
+      "ogni",
+      "settimana"
+    ],
+    "distractors": [
+      "Vado",
+      "dal",
+      "dottore",
+      "ogni",
+      "giorno",
+      "mese"
+    ],
+    "tags": [
+      "present",
+      "prepositions",
+      "articolate",
+      "lesson-7"
+    ]
+  },
+  {
+    "id": "s139",
+    "italian": "Abito nel centro della città.",
+    "english": "I live in the city centre.",
+    "parts": [
+      "Abito",
+      "nel",
+      "centro",
+      "della",
+      "città"
+    ],
+    "distractors": [
+      "Abito",
+      "nell'",
+      "esterno",
+      "della",
+      "campagna"
+    ],
+    "tags": [
+      "present",
+      "prepositions",
+      "articolate",
+      "lesson-7"
+    ]
+  },
+  {
+    "id": "s140",
+    "italian": "Ti piacciono le pizzette o preferisci i tramezzini?",
+    "english": "Do you like small pizzas or do you prefer sandwiches?",
+    "parts": [
+      "Ti",
+      "piacciono",
+      "le",
+      "pizzette",
+      "o",
+      "preferisci",
+      "i",
+      "tramezzini"
+    ],
+    "distractors": [
+      "Mi",
+      "piace",
+      "la",
+      "pizza",
+      "e",
+      "preferisco",
+      "il",
+      "panino"
+    ],
+    "tags": [
+      "present",
+      "piacere",
+      "bar",
+      "lesson-6"
+    ]
+  },
+  {
+    "id": "s141",
+    "italian": "Anche a me piace molto il cappuccino senza schiuma.",
+    "english": "I also like cappuccino without foam very much.",
+    "parts": [
+      "Anche",
+      "a",
+      "me",
+      "piace",
+      "molto",
+      "il",
+      "cappuccino",
+      "senza",
+      "schiuma"
+    ],
+    "distractors": [
+      "Neanche",
+      "a",
+      "te",
+      "piacciono",
+      "poco",
+      "i",
+      "biscotti",
+      "con",
+      "zucchero"
+    ],
+    "tags": [
+      "present",
+      "piacere",
+      "bar",
+      "lesson-6"
+    ]
+  },
+  {
+    "id": "s142",
+    "italian": "Giro a destra al semaforo e poi vado sempre dritto.",
+    "english": "I turn right at the traffic light and then go straight ahead.",
+    "parts": [
+      "Giro",
+      "a",
+      "destra",
+      "al",
+      "semaforo",
+      "e",
+      "poi",
+      "vado",
+      "sempre",
+      "dritto"
+    ],
+    "distractors": [
+      "Gira",
+      "a",
+      "sinistra",
+      "all'incrocio",
+      "ma",
+      "dopo",
+      "vai",
+      "a",
+      "sinistra"
+    ],
+    "tags": [
+      "present",
+      "directions",
+      "city",
+      "lesson-7"
+    ]
   }
 ]
