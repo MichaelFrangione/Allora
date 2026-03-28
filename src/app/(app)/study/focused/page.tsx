@@ -3,16 +3,46 @@ import Link from "next/link";
 
 const drills = [
   {
+    href: "/study/modal-verbs",
+    label: "Verbi Modali",
+    emoji: "🔧",
+    desc: "Dovere, potere, volere — choose the right verb or form",
+  },
+  {
     href: "/study/concordanza",
     label: "La Concordanza",
     emoji: "🎯",
     desc: "Pick the correct adjective form to match the noun",
   },
   {
-    href: "/study/modal-verbs",
-    label: "Verbi Modali",
-    emoji: "🔧",
-    desc: "Dovere, potere, volere — choose the right verb or form",
+    href: "/study/piacere",
+    label: "Piacere",
+    emoji: "💚",
+    desc: "Mi piace / mi piacciono — singular, plural, and questions",
+  },
+  {
+    href: "/study/preposizioni-articolate",
+    label: "Preposizioni Articolate",
+    emoji: "🔗",
+    desc: "del / al / dal / nel / sul — fill in the right form",
+  },
+  {
+    href: "/study/ristorante",
+    label: "Al Ristorante",
+    emoji: "🍽️",
+    desc: "Complete the restaurant conversation",
+  },
+  {
+    href: "/study/al-bar",
+    label: "Al Bar",
+    emoji: "☕",
+    desc: "ISC verbs and piacere translation exercises",
+  },
+  {
+    href: "/study/possessivi",
+    label: "Aggettivi Possessivi",
+    emoji: "👨‍👩‍👧",
+    desc: "Mio / tuo / suo — possessive adjectives with family",
   },
   {
     href: "/study/time",

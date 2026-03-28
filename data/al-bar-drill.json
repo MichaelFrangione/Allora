@@ -1,0 +1,194 @@
+[
+  {
+    "id": "ab001", "category": "verbi-isc",
+    "sentence": "A che ora ___ il film?",
+    "hint": "finire (lui/lei) — verbo -ISC",
+    "correct": "finisce",
+    "options": ["finisco", "finisci", "finisce", "finiscono"],
+    "explanation": "FINIRE → lui/lei FINISCE. ISC appears in io/tu/lui-lei/loro forms.",
+    "tags": ["isc-verbs", "lesson-6"]
+  },
+  {
+    "id": "ab002", "category": "verbi-isc",
+    "sentence": "Io non ___ la grammatica italiana.",
+    "hint": "capire (io) — verbo -ISC",
+    "correct": "capisco",
+    "options": ["capisco", "capisci", "capisce", "capiamo"],
+    "explanation": "CAPIRE → io CAPISCO. The -ISC- is inserted before the ending.",
+    "tags": ["isc-verbs", "lesson-6"]
+  },
+  {
+    "id": "ab003", "category": "verbi-isc",
+    "sentence": "___ il cappuccino o il caffè latte?",
+    "hint": "preferire (tu) — verbo -ISC",
+    "correct": "Preferisci",
+    "options": ["Preferisco", "Preferisci", "Preferisce", "Preferiamo"],
+    "explanation": "PREFERIRE → tu PREFERISCI. ISC form for tu.",
+    "tags": ["isc-verbs", "lesson-6"]
+  },
+  {
+    "id": "ab004", "category": "verbi-isc",
+    "sentence": "Noi non ___ mai la nostra camera.",
+    "hint": "pulire (noi) — verbo -ISC",
+    "correct": "puliamo",
+    "options": ["pulisco", "puliamo", "pulite", "puliscono"],
+    "explanation": "PULIRE → noi PULIAMO. The NOI and VOI forms do NOT use -ISC-.",
+    "tags": ["isc-verbs", "lesson-6"]
+  },
+  {
+    "id": "ab005", "category": "verbi-isc",
+    "sentence": "Vado all'ufficio postale e ___ le lettere.",
+    "hint": "spedire (io) — verbo -ISC",
+    "correct": "spedisco",
+    "options": ["spedisco", "spedisci", "spedisce", "spediamo"],
+    "explanation": "SPEDIRE → io SPEDISCO. ISC form for io.",
+    "tags": ["isc-verbs", "lesson-6"]
+  },
+  {
+    "id": "ab006", "category": "verbi-isc",
+    "sentence": "I bambini ___ un castello di sabbia.",
+    "hint": "costruire (loro) — verbo -ISC",
+    "correct": "costruiscono",
+    "options": ["costruisco", "costruisce", "costruiamo", "costruiscono"],
+    "explanation": "COSTRUIRE → loro COSTRUISCONO. ISC form for loro.",
+    "tags": ["isc-verbs", "lesson-6"]
+  },
+  {
+    "id": "ab007", "category": "verbi-isc",
+    "sentence": "Ogni giorno ___ di lavorare alle sei.",
+    "hint": "finire (lui/lei) — verbo -ISC",
+    "correct": "finisce",
+    "options": ["finisco", "finisce", "finiamo", "finiscono"],
+    "explanation": "FINIRE → lui/lei FINISCE.",
+    "tags": ["isc-verbs", "lesson-6"]
+  },
+  {
+    "id": "ab008", "category": "verbi-isc",
+    "sentence": "___ l'inglese? Sì, ma non lo parliamo bene.",
+    "hint": "capire (voi) — verbo -ISC",
+    "correct": "Capite",
+    "options": ["Capisco", "Capisci", "Capite", "Capiscono"],
+    "explanation": "CAPIRE → voi CAPITE. The VOI form does NOT use -ISC-.",
+    "tags": ["isc-verbs", "lesson-6"]
+  },
+  {
+    "id": "ab009", "category": "piacere-traduzione",
+    "prompt": "They like spaghetti very much.",
+    "sentence": "A loro ___ molto gli spaghetti.",
+    "hint": "gli spaghetti → plurale",
+    "correct": "piacciono",
+    "options": ["piacciono", "piace", "piacere", "piaci"],
+    "explanation": "Plural noun → PIACCIONO. 'A loro piacciono molto gli spaghetti.'",
+    "tags": ["piacere", "lesson-6"]
+  },
+  {
+    "id": "ab010", "category": "piacere-traduzione",
+    "prompt": "Marco, do you like pop music?",
+    "sentence": "Marco, ti ___ la musica pop?",
+    "hint": "la musica → singolare",
+    "correct": "piace",
+    "options": ["piace", "piacciono", "piacere", "piaci"],
+    "explanation": "Singular noun → PIACE. 'Ti piace la musica pop?'",
+    "tags": ["piacere", "lesson-6"]
+  },
+  {
+    "id": "ab011", "category": "piacere-traduzione",
+    "prompt": "I don't like soccer at all.",
+    "sentence": "Non mi ___ il calcio per niente.",
+    "hint": "il calcio → singolare",
+    "correct": "piace",
+    "options": ["piace", "piacciono", "piacere", "piaci"],
+    "explanation": "Singular noun → PIACE. 'Non mi piace il calcio per niente.'",
+    "tags": ["piacere", "lesson-6"]
+  },
+  {
+    "id": "ab012", "category": "piacere-traduzione",
+    "prompt": "Massimo likes to drive fast.",
+    "sentence": "A Massimo ___ guidare veloce.",
+    "hint": "guidare → infinito",
+    "correct": "piace",
+    "options": ["piace", "piacciono", "piacere", "piaci"],
+    "explanation": "Infinitive → PIACE. 'A Massimo piace guidare veloce.'",
+    "tags": ["piacere", "lesson-6"]
+  },
+  {
+    "id": "ab013", "category": "piacere-traduzione",
+    "prompt": "He likes my paintings.",
+    "sentence": "Gli ___ i miei quadri.",
+    "hint": "i miei quadri → plurale",
+    "correct": "piacciono",
+    "options": ["piacciono", "piace", "piacere", "piaci"],
+    "explanation": "Plural noun → PIACCIONO. 'Gli piacciono i miei quadri.'",
+    "tags": ["piacere", "lesson-6"]
+  },
+  {
+    "id": "ab014", "category": "piacere-traduzione",
+    "prompt": "We like Italian songs.",
+    "sentence": "Ci ___ le canzoni italiane.",
+    "hint": "le canzoni → plurale",
+    "correct": "piacciono",
+    "options": ["piacciono", "piace", "piacere", "piaci"],
+    "explanation": "Plural noun → PIACCIONO. 'Ci piacciono le canzoni italiane.'",
+    "tags": ["piacere", "lesson-6"]
+  },
+  {
+    "id": "ab015", "category": "piacere-traduzione",
+    "prompt": "She likes to watch movies.",
+    "sentence": "A lei ___ guardare i film.",
+    "hint": "guardare → infinito",
+    "correct": "piace",
+    "options": ["piace", "piacciono", "piacere", "piaci"],
+    "explanation": "Infinitive → PIACE. 'A lei piace guardare i film.'",
+    "tags": ["piacere", "lesson-6"]
+  },
+  {
+    "id": "ab016", "category": "piacere-traduzione",
+    "prompt": "I like parties.",
+    "sentence": "Mi ___ le feste.",
+    "hint": "le feste → plurale",
+    "correct": "piacciono",
+    "options": ["piacciono", "piace", "piacere", "piaci"],
+    "explanation": "Plural noun → PIACCIONO. 'Mi piacciono le feste.'",
+    "tags": ["piacere", "lesson-6"]
+  },
+  {
+    "id": "ab017", "category": "piacere-traduzione",
+    "prompt": "They don't like Spain very much.",
+    "sentence": "A loro non ___ molto la Spagna.",
+    "hint": "la Spagna → singolare",
+    "correct": "piace",
+    "options": ["piace", "piacciono", "piacere", "piaci"],
+    "explanation": "Singular noun → PIACE. 'A loro non piace molto la Spagna.'",
+    "tags": ["piacere", "lesson-6"]
+  },
+  {
+    "id": "ab018", "category": "piacere-traduzione",
+    "prompt": "She likes wine.",
+    "sentence": "A lei ___ il vino.",
+    "hint": "il vino → singolare",
+    "correct": "piace",
+    "options": ["piace", "piacciono", "piacere", "piaci"],
+    "explanation": "Singular noun → PIACE. 'A lei piace il vino.'",
+    "tags": ["piacere", "lesson-6"]
+  },
+  {
+    "id": "ab019", "category": "piacere-traduzione",
+    "prompt": "He likes to take a shower every morning.",
+    "sentence": "A lui ___ fare la doccia ogni mattina.",
+    "hint": "fare → infinito",
+    "correct": "piace",
+    "options": ["piace", "piacciono", "piacere", "piaci"],
+    "explanation": "Infinitive → PIACE. 'A lui piace fare la doccia ogni mattina.'",
+    "tags": ["piacere", "lesson-6"]
+  },
+  {
+    "id": "ab020", "category": "piacere-traduzione",
+    "prompt": "Susan doesn't like spinach.",
+    "sentence": "A Susan non ___ gli spinaci.",
+    "hint": "gli spinaci → plurale",
+    "correct": "piacciono",
+    "options": ["piacciono", "piace", "piacere", "piaci"],
+    "explanation": "Plural noun → PIACCIONO. 'A Susan non piacciono gli spinaci.'",
+    "tags": ["piacere", "lesson-6"]
+  }
+]

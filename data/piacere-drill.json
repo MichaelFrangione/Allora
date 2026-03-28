@@ -1,0 +1,232 @@
+[
+  {
+    "id": "pd001", "category": "piace-piacciono",
+    "sentence": "Mi ___ il gelato.",
+    "hint": "il gelato → singolare",
+    "correct": "piace",
+    "options": ["piace", "piacciono", "piacere", "piaci"],
+    "explanation": "Singular noun → use PIACE",
+    "tags": ["piacere", "lesson-7"]
+  },
+  {
+    "id": "pd002", "category": "piace-piacciono",
+    "sentence": "Mi ___ le verdure.",
+    "hint": "le verdure → plurale",
+    "correct": "piacciono",
+    "options": ["piace", "piacciono", "piacere", "piaci"],
+    "explanation": "Plural noun → use PIACCIONO",
+    "tags": ["piacere", "lesson-7"]
+  },
+  {
+    "id": "pd003", "category": "piace-piacciono",
+    "sentence": "Mi ___ ascoltare la musica.",
+    "hint": "ascoltare → infinito",
+    "correct": "piace",
+    "options": ["piace", "piacciono", "piacere", "piaci"],
+    "explanation": "Infinitive verb → use PIACE (treated as singular)",
+    "tags": ["piacere", "lesson-7"]
+  },
+  {
+    "id": "pd004", "category": "piace-piacciono",
+    "sentence": "Mi ___ andare al cinema.",
+    "hint": "andare → infinito",
+    "correct": "piace",
+    "options": ["piace", "piacciono", "piacere", "piaci"],
+    "explanation": "Infinitive verb → use PIACE",
+    "tags": ["piacere", "lesson-7"]
+  },
+  {
+    "id": "pd005", "category": "piace-piacciono",
+    "sentence": "Mi ___ i ragni!",
+    "hint": "i ragni → plurale",
+    "correct": "piacciono",
+    "options": ["piace", "piacciono", "piacere", "piaci"],
+    "explanation": "Plural noun → use PIACCIONO",
+    "tags": ["piacere", "lesson-7"]
+  },
+  {
+    "id": "pd006", "category": "piace-piacciono",
+    "sentence": "Mi ___ il calcio.",
+    "hint": "il calcio → singolare",
+    "correct": "piace",
+    "options": ["piace", "piacciono", "piacere", "piaci"],
+    "explanation": "Singular noun → use PIACE",
+    "tags": ["piacere", "lesson-7"]
+  },
+  {
+    "id": "pd007", "category": "piace-piacciono",
+    "sentence": "Mi ___ studiare l'italiano.",
+    "hint": "studiare → infinito",
+    "correct": "piace",
+    "options": ["piace", "piacciono", "piacere", "piaci"],
+    "explanation": "Infinitive verb → use PIACE",
+    "tags": ["piacere", "lesson-7"]
+  },
+  {
+    "id": "pd008", "category": "piace-piacciono",
+    "sentence": "Mi ___ i compiti.",
+    "hint": "i compiti → plurale",
+    "correct": "piacciono",
+    "options": ["piace", "piacciono", "piacere", "piaci"],
+    "explanation": "Plural noun → use PIACCIONO",
+    "tags": ["piacere", "lesson-7"]
+  },
+  {
+    "id": "pd009", "category": "piace-piacciono",
+    "sentence": "Mi ___ la pasta.",
+    "hint": "la pasta → singolare",
+    "correct": "piace",
+    "options": ["piace", "piacciono", "piacere", "piaci"],
+    "explanation": "Singular noun → use PIACE",
+    "tags": ["piacere", "lesson-7"]
+  },
+  {
+    "id": "pd010", "category": "piace-piacciono",
+    "sentence": "Mi ___ leggere.",
+    "hint": "leggere → infinito",
+    "correct": "piace",
+    "options": ["piace", "piacciono", "piacere", "piaci"],
+    "explanation": "Infinitive verb → use PIACE",
+    "tags": ["piacere", "lesson-7"]
+  },
+  {
+    "id": "pd011", "category": "piace-piacciono",
+    "sentence": "Mi ___ i cani.",
+    "hint": "i cani → plurale",
+    "correct": "piacciono",
+    "options": ["piace", "piacciono", "piacere", "piaci"],
+    "explanation": "Plural noun → use PIACCIONO",
+    "tags": ["piacere", "lesson-7"]
+  },
+  {
+    "id": "pd012", "category": "piace-piacciono",
+    "sentence": "Mi ___ fare sport.",
+    "hint": "fare → infinito",
+    "correct": "piace",
+    "options": ["piace", "piacciono", "piacere", "piaci"],
+    "explanation": "Infinitive verb → use PIACE",
+    "tags": ["piacere", "lesson-7"]
+  },
+  {
+    "id": "pd013", "category": "piace-piacciono",
+    "sentence": "Mi ___ la musica classica.",
+    "hint": "la musica → singolare",
+    "correct": "piace",
+    "options": ["piace", "piacciono", "piacere", "piaci"],
+    "explanation": "Singular noun → use PIACE",
+    "tags": ["piacere", "lesson-7"]
+  },
+  {
+    "id": "pd014", "category": "piace-piacciono",
+    "sentence": "Mi ___ i videogiochi.",
+    "hint": "i videogiochi → plurale",
+    "correct": "piacciono",
+    "options": ["piace", "piacciono", "piacere", "piaci"],
+    "explanation": "Plural noun → use PIACCIONO",
+    "tags": ["piacere", "lesson-7"]
+  },
+  {
+    "id": "pd015", "category": "con-pronomi",
+    "sentence": "Mi ___ il gelato al cioccolato.",
+    "hint": "a me → mi | il gelato → singolare",
+    "correct": "piace",
+    "options": ["piace", "piacciono", "piacere", "piaci"],
+    "explanation": "Mi piace = to me it is pleasing. Singular noun → piace.",
+    "tags": ["piacere", "pronouns", "lesson-7"]
+  },
+  {
+    "id": "pd016", "category": "con-pronomi",
+    "sentence": "Ti ___ i film d'azione?",
+    "hint": "a te → ti | i film → plurale",
+    "correct": "piacciono",
+    "options": ["piace", "piacciono", "piacere", "piaci"],
+    "explanation": "Ti piacciono = to you they are pleasing. Plural noun → piacciono.",
+    "tags": ["piacere", "pronouns", "lesson-7"]
+  },
+  {
+    "id": "pd017", "category": "con-pronomi",
+    "sentence": "A Luca non ___ le verdure.",
+    "hint": "a lui → gli | le verdure → plurale",
+    "correct": "piacciono",
+    "options": ["piace", "piacciono", "piacere", "piaci"],
+    "explanation": "Gli piacciono = to him they are pleasing. Plural noun → piacciono.",
+    "tags": ["piacere", "pronouns", "lesson-7"]
+  },
+  {
+    "id": "pd018", "category": "con-pronomi",
+    "sentence": "Ci ___ questa canzone!",
+    "hint": "a noi → ci | questa canzone → singolare",
+    "correct": "piace",
+    "options": ["piace", "piacciono", "piacere", "piaci"],
+    "explanation": "Ci piace = to us it is pleasing. Singular noun → piace.",
+    "tags": ["piacere", "pronouns", "lesson-7"]
+  },
+  {
+    "id": "pd019", "category": "con-pronomi",
+    "sentence": "Vi ___ la pizza napoletana?",
+    "hint": "a voi → vi | la pizza → singolare",
+    "correct": "piace",
+    "options": ["piace", "piacciono", "piacere", "piaci"],
+    "explanation": "Vi piace = to you (plural) it is pleasing. Singular noun → piace.",
+    "tags": ["piacere", "pronouns", "lesson-7"]
+  },
+  {
+    "id": "pd020", "category": "con-pronomi",
+    "sentence": "A loro ___ i viaggi in treno.",
+    "hint": "a loro → gli | i viaggi → plurale",
+    "correct": "piacciono",
+    "options": ["piace", "piacciono", "piacere", "piaci"],
+    "explanation": "Gli piacciono = to them they are pleasing. Plural noun → piacciono.",
+    "tags": ["piacere", "pronouns", "lesson-7"]
+  },
+  {
+    "id": "pd021", "category": "fare-domande",
+    "prompt": "(sport / voi)",
+    "sentence": "___ gli sport?",
+    "hint": "voi → vi | gli sport → plurale",
+    "correct": "Vi piacciono",
+    "options": ["Vi piacciono", "Vi piace", "Ti piacciono", "Ci piacciono"],
+    "explanation": "Voi → VI. Plural noun → PIACCIONO. → 'Vi piacciono gli sport?'",
+    "tags": ["piacere", "questions", "lesson-7"]
+  },
+  {
+    "id": "pd022", "category": "fare-domande",
+    "prompt": "(viaggi / lei)",
+    "sentence": "___ i viaggi?",
+    "hint": "lei → le | i viaggi → plurale",
+    "correct": "Le piacciono",
+    "options": ["Le piacciono", "Le piace", "Gli piacciono", "La piacciono"],
+    "explanation": "Lei → LE. Plural noun → PIACCIONO. → 'Le piacciono i viaggi?'",
+    "tags": ["piacere", "questions", "lesson-7"]
+  },
+  {
+    "id": "pd023", "category": "fare-domande",
+    "prompt": "(pizza / loro)",
+    "sentence": "___ la pizza napoletana?",
+    "hint": "loro → gli | la pizza → singolare",
+    "correct": "Gli piace",
+    "options": ["Gli piace", "Gli piacciono", "Loro piace", "Vi piace"],
+    "explanation": "Loro → GLI. Singular noun → PIACE. → 'Gli piace la pizza napoletana?'",
+    "tags": ["piacere", "questions", "lesson-7"]
+  },
+  {
+    "id": "pd024", "category": "fare-domande",
+    "prompt": "(animali / tu)",
+    "sentence": "___ gli animali?",
+    "hint": "tu → ti | gli animali → plurale",
+    "correct": "Ti piacciono",
+    "options": ["Ti piacciono", "Ti piace", "Mi piacciono", "Vi piacciono"],
+    "explanation": "Tu → TI. Plural noun → PIACCIONO. → 'Ti piacciono gli animali?'",
+    "tags": ["piacere", "questions", "lesson-7"]
+  },
+  {
+    "id": "pd025", "category": "fare-domande",
+    "prompt": "(musica italiana / lui)",
+    "sentence": "___ la musica italiana?",
+    "hint": "lui → gli | la musica → singolare",
+    "correct": "Gli piace",
+    "options": ["Gli piace", "Gli piacciono", "Le piace", "Ti piace"],
+    "explanation": "Lui → GLI. Singular noun → PIACE. → 'Gli piace la musica italiana?'",
+    "tags": ["piacere", "questions", "lesson-7"]
+  }
+]

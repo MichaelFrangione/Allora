@@ -6,6 +6,11 @@ import sentencesData from "../../data/sentences.json";
 import pronunciationData from "../../data/pronunciation.json";
 import concordanzaData from "../../data/concordanza.json";
 import modalVerbsData from "../../data/modal-verbs.json";
+import piacereData from "../../data/piacere-drill.json";
+import preposizioniData from "../../data/preposizioni-drill.json";
+import ristoranteData from "../../data/ristorante-drill.json";
+import alBarData from "../../data/al-bar-drill.json";
+import possessiviData from "../../data/possessivi-drill.json";
 
 export type VocabItem = {
   id: string;
@@ -98,6 +103,24 @@ export interface ModalVerbQuestion {
 }
 
 export const modalVerbs: ModalVerbQuestion[] = modalVerbsData as ModalVerbQuestion[];
+
+export interface DrillQuestion {
+  id: string;
+  category?: string;
+  prompt?: string;
+  sentence: string;
+  hint?: string;
+  correct: string;
+  options: string[];
+  explanation?: string;
+  tags: string[];
+}
+
+export const piacereDrill: DrillQuestion[] = piacereData as DrillQuestion[];
+export const preposizioniDrill: DrillQuestion[] = preposizioniData as DrillQuestion[];
+export const ristoranteDrill: DrillQuestion[] = ristoranteData as DrillQuestion[];
+export const alBarDrill: DrillQuestion[] = alBarData as DrillQuestion[];
+export const possessiviDrill: DrillQuestion[] = possessiviData as DrillQuestion[];
 
 // Unit numbers available across content
 export const UNITS = [1, 2, 3, 4, 5, 6, 7, 8] as const;

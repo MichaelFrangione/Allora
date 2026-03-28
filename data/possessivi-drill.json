@@ -1,0 +1,102 @@
+[
+  {
+    "id": "pos001",
+    "prompt": "Il fratello di Lisa si chiama Bart.",
+    "sentence": "___ fratello si chiama Bart.",
+    "hint": "fratello = m.sg. family → drop the article",
+    "correct": "Suo",
+    "options": ["Suo", "Il suo", "La sua", "I suoi"],
+    "explanation": "FRATELLO (m.sg. family member) → drop the article. 'Suo fratello' ✓ NOT 'Il suo fratello'.",
+    "tags": ["possessivi", "family", "lesson-6"]
+  },
+  {
+    "id": "pos002",
+    "prompt": "La madre di Bart si chiama Marge.",
+    "sentence": "___ madre si chiama Marge.",
+    "hint": "madre = f.sg. family → drop the article",
+    "correct": "Sua",
+    "options": ["Sua", "Il suo", "La sua", "Le sue"],
+    "explanation": "MADRE (f.sg. family member) → drop the article. 'Sua madre' ✓ NOT 'La sua madre'.",
+    "tags": ["possessivi", "family", "lesson-6"]
+  },
+  {
+    "id": "pos003",
+    "prompt": "Il padre di Lisa e Bart è Homer.",
+    "sentence": "___ padre è Homer.",
+    "hint": "loro → sempre con articolo",
+    "correct": "Il loro",
+    "options": ["Il loro", "Loro", "Il suo", "I loro"],
+    "explanation": "LORO always keeps the article, even with family. 'Il loro padre' ✓ NOT 'Loro padre'.",
+    "tags": ["possessivi", "family", "lesson-6"]
+  },
+  {
+    "id": "pos004",
+    "prompt": "I nonni di Bart sono Abraham e Mona.",
+    "sentence": "___ nonni sono Abraham e Mona.",
+    "hint": "nonni = m.pl. → plurale tiene l'articolo",
+    "correct": "I suoi",
+    "options": ["I suoi", "Suoi", "I tuoi", "Le sue"],
+    "explanation": "NONNI (plural) → always keeps the article. 'I suoi nonni' ✓.",
+    "tags": ["possessivi", "family", "lesson-6"]
+  },
+  {
+    "id": "pos005",
+    "prompt": "La sorella di Bart si chiama Lisa.",
+    "sentence": "___ sorella si chiama Lisa.",
+    "hint": "sorella = f.sg. family → drop the article",
+    "correct": "Sua",
+    "options": ["Sua", "La sua", "Il suo", "Le sue"],
+    "explanation": "SORELLA (f.sg. family member) → drop the article. 'Sua sorella' ✓.",
+    "tags": ["possessivi", "family", "lesson-6"]
+  },
+  {
+    "id": "pos006",
+    "prompt": "Homer è il marito di Marge.",
+    "sentence": "Homer è ___ marito.",
+    "hint": "marito → tiene l'articolo",
+    "correct": "il suo",
+    "options": ["il suo", "suo", "la sua", "i suoi"],
+    "explanation": "MARITO keeps the article (not a standard close family term). 'Il suo marito' ✓.",
+    "tags": ["possessivi", "family", "lesson-6"]
+  },
+  {
+    "id": "pos007",
+    "prompt": "Le zie di Bart sono Patty e Selma.",
+    "sentence": "___ zie sono Patty e Selma.",
+    "hint": "zie = f.pl. → plurale tiene l'articolo",
+    "correct": "Le sue",
+    "options": ["Le sue", "La sua", "I suoi", "Sua"],
+    "explanation": "ZIE (f.pl. plural) → always keeps the article. 'Le sue zie' ✓.",
+    "tags": ["possessivi", "family", "lesson-6"]
+  },
+  {
+    "id": "pos008",
+    "prompt": "Abraham è il nonno di Homer.",
+    "sentence": "___ nonno si chiama Abraham.",
+    "hint": "nonno = m.sg. family → drop the article",
+    "correct": "Suo",
+    "options": ["Suo", "Il suo", "I suoi", "La sua"],
+    "explanation": "NONNO (m.sg. family member) → drop the article. 'Suo nonno' ✓.",
+    "tags": ["possessivi", "family", "lesson-6"]
+  },
+  {
+    "id": "pos009",
+    "prompt": "Ling è la figlia adottiva di Selma.",
+    "sentence": "Ling è ___ figlia.",
+    "hint": "figlia = f.sg. family → drop the article",
+    "correct": "sua",
+    "options": ["sua", "la sua", "il suo", "le sue"],
+    "explanation": "FIGLIA (f.sg. family member) → drop the article. 'Sua figlia' ✓.",
+    "tags": ["possessivi", "family", "lesson-6"]
+  },
+  {
+    "id": "pos010",
+    "prompt": "Herb è il fratello di Homer.",
+    "sentence": "Herb è ___ fratello.",
+    "hint": "fratello = m.sg. family → drop the article",
+    "correct": "suo",
+    "options": ["suo", "il suo", "la sua", "i suoi"],
+    "explanation": "FRATELLO (m.sg. family member) → drop the article. 'Suo fratello' ✓.",
+    "tags": ["possessivi", "family", "lesson-6"]
+  }
+]

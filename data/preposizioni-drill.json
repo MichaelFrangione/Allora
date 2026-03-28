@@ -1,0 +1,137 @@
+[
+  {
+    "id": "pa001",
+    "sentence": "Vado ___ bar ogni mattina.",
+    "hint": "a + il",
+    "correct": "al",
+    "options": ["al", "dal", "nel", "del"],
+    "explanation": "A + IL = AL. 'Vado al bar' — destination.",
+    "tags": ["preposizioni", "lesson-7"]
+  },
+  {
+    "id": "pa002",
+    "sentence": "Il libro è ___ tavolo.",
+    "hint": "su + il",
+    "correct": "sul",
+    "options": ["sul", "al", "dal", "nel"],
+    "explanation": "SU + IL = SUL. 'Il libro è sul tavolo' — position on top.",
+    "tags": ["preposizioni", "lesson-7"]
+  },
+  {
+    "id": "pa003",
+    "sentence": "Vado ___ medico domani.",
+    "hint": "da + il",
+    "correct": "dal",
+    "options": ["dal", "al", "nel", "del"],
+    "explanation": "DA + IL = DAL. 'Vado dal medico' — going to a person.",
+    "tags": ["preposizioni", "lesson-7"]
+  },
+  {
+    "id": "pa004",
+    "sentence": "Abito ___ centro della città.",
+    "hint": "in + il",
+    "correct": "nel",
+    "options": ["nel", "del", "al", "sul"],
+    "explanation": "IN + IL = NEL. 'Abito nel centro' — location inside.",
+    "tags": ["preposizioni", "lesson-7"]
+  },
+  {
+    "id": "pa005",
+    "sentence": "È la macchina ___ professore.",
+    "hint": "di + il",
+    "correct": "del",
+    "options": ["del", "dal", "nel", "al"],
+    "explanation": "DI + IL = DEL. 'La macchina del professore' — possession.",
+    "tags": ["preposizioni", "lesson-7"]
+  },
+  {
+    "id": "pa006",
+    "sentence": "Gira a sinistra ___ incrocio.",
+    "hint": "a + l'",
+    "correct": "all'",
+    "options": ["all'", "dall'", "nell'", "sull'"],
+    "explanation": "A + L' = ALL'. 'All'incrocio' — at the intersection.",
+    "tags": ["preposizioni", "directions", "lesson-7"]
+  },
+  {
+    "id": "pa007",
+    "sentence": "Esco ___ palestra alle sei.",
+    "hint": "da + la",
+    "correct": "dalla",
+    "options": ["dalla", "alla", "nella", "sulla"],
+    "explanation": "DA + LA = DALLA. 'Esco dalla palestra' — coming from a place.",
+    "tags": ["preposizioni", "lesson-7"]
+  },
+  {
+    "id": "pa008",
+    "sentence": "Andiamo ___ spiaggia domani.",
+    "hint": "a + la",
+    "correct": "alla",
+    "options": ["alla", "dalla", "nella", "sulla"],
+    "explanation": "A + LA = ALLA. 'Andiamo alla spiaggia' — destination.",
+    "tags": ["preposizioni", "lesson-7"]
+  },
+  {
+    "id": "pa009",
+    "sentence": "Il gatto è ___ letto.",
+    "hint": "su + il",
+    "correct": "sul",
+    "options": ["sul", "al", "dal", "nel"],
+    "explanation": "SU + IL = SUL. 'Il gatto è sul letto' — on top of.",
+    "tags": ["preposizioni", "lesson-7"]
+  },
+  {
+    "id": "pa010",
+    "sentence": "L'appartamento è ___ terzo piano.",
+    "hint": "a + il",
+    "correct": "al",
+    "options": ["al", "dal", "nel", "del"],
+    "explanation": "A + IL = AL. 'Al terzo piano' — on the third floor.",
+    "tags": ["preposizioni", "lesson-7"]
+  },
+  {
+    "id": "pa011",
+    "sentence": "Studia ___ biblioteca ogni sera.",
+    "hint": "in + la",
+    "correct": "nella",
+    "options": ["nella", "della", "alla", "sulla"],
+    "explanation": "IN + LA = NELLA. 'Studia nella biblioteca' — inside the library.",
+    "tags": ["preposizioni", "lesson-7"]
+  },
+  {
+    "id": "pa012",
+    "sentence": "Ha comprato un regalo ___ studenti.",
+    "hint": "a + gli",
+    "correct": "agli",
+    "options": ["agli", "dagli", "negli", "degli"],
+    "explanation": "A + GLI = AGLI. 'Un regalo agli studenti' — for/to the students.",
+    "tags": ["preposizioni", "lesson-7"]
+  },
+  {
+    "id": "pa013",
+    "sentence": "Le chiavi sono ___ borsa.",
+    "hint": "in + la",
+    "correct": "nella",
+    "options": ["nella", "della", "alla", "dalla"],
+    "explanation": "IN + LA = NELLA. 'Nella borsa' — inside the bag.",
+    "tags": ["preposizioni", "lesson-7"]
+  },
+  {
+    "id": "pa014",
+    "sentence": "Vengo ___ stazione in taxi.",
+    "hint": "da + la",
+    "correct": "dalla",
+    "options": ["dalla", "alla", "nella", "sulla"],
+    "explanation": "DA + LA = DALLA. 'Vengo dalla stazione' — coming from the station.",
+    "tags": ["preposizioni", "lesson-7"]
+  },
+  {
+    "id": "pa015",
+    "sentence": "Il caffè è ___ bancone.",
+    "hint": "su + il",
+    "correct": "sul",
+    "options": ["sul", "al", "nel", "dal"],
+    "explanation": "SU + IL = SUL. 'Il caffè è sul bancone' — on the counter.",
+    "tags": ["preposizioni", "lesson-7"]
+  }
+]

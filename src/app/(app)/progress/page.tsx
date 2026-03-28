@@ -30,6 +30,11 @@ const MODE_LINKS: Record<string, string> = {
   grammar: "/study/grammar",
   sentence: "/study/sentence-builder",
   "modal-verbs": "/study/modal-verbs",
+  piacere: "/study/piacere",
+  preposizioni: "/study/preposizioni-articolate",
+  ristorante: "/study/ristorante",
+  "al-bar": "/study/al-bar",
+  possessivi: "/study/possessivi",
 };
 
 const MODE_LABELS: Record<string, string> = {
@@ -39,6 +44,11 @@ const MODE_LABELS: Record<string, string> = {
   grammar: "Grammar",
   sentence: "Sentences",
   "modal-verbs": "Verbi Modali",
+  piacere: "Piacere",
+  preposizioni: "Preposizioni Articolate",
+  ristorante: "Al Ristorante",
+  "al-bar": "Al Bar",
+  possessivi: "Aggettivi Possessivi",
 };
 
 export default async function ProgressPage() {

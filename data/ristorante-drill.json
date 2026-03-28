@@ -1,0 +1,110 @@
+[
+  {
+    "id": "rr001",
+    "sentence": "Buonasera, ___ un tavolo per due?",
+    "hint": "Il cliente chiede se c'è un tavolo disponibile.",
+    "correct": "avete",
+    "options": ["avete", "siete", "volete", "potete"],
+    "explanation": "AVERE un tavolo = to have a table. The customer asks the staff.",
+    "tags": ["restaurant", "lesson-8"]
+  },
+  {
+    "id": "rr002",
+    "sentence": "Siete pronti per ___?",
+    "hint": "Il cameriere chiede se sono pronti a scegliere.",
+    "correct": "ordinare",
+    "options": ["ordinare", "mangiare", "pagare", "bere"],
+    "explanation": "ORDINARE = to order. 'Siete pronti per ordinare?' is the waiter's standard question.",
+    "tags": ["restaurant", "lesson-8"]
+  },
+  {
+    "id": "rr003",
+    "sentence": "Di primo, ___ le tagliatelle al ragù.",
+    "hint": "Il cliente ordina il primo piatto in modo cortese.",
+    "correct": "vorrei",
+    "options": ["vorrei", "prendo", "voglio", "porto"],
+    "explanation": "VORREI (conditional of volere) is the polite way to order: 'I would like...'",
+    "tags": ["restaurant", "lesson-8"]
+  },
+  {
+    "id": "rr004",
+    "sentence": "La nostra ___ è la tagliata al radicchio.",
+    "hint": "Il cameriere descrive il piatto speciale della casa.",
+    "correct": "specialità",
+    "options": ["specialità", "ricetta", "antipasto", "menu"],
+    "explanation": "SPECIALITÀ = specialty. 'La nostra specialità è...' — the house special.",
+    "tags": ["restaurant", "lesson-8"]
+  },
+  {
+    "id": "rr005",
+    "sentence": "Scusi, ___ portare il conto?",
+    "hint": "Il cliente chiede il conto al cameriere.",
+    "correct": "può",
+    "options": ["può", "deve", "vuole", "riesce"],
+    "explanation": "PUÒ (potere, lei) = can you? 'Può portare il conto?' — polite request to the waiter.",
+    "tags": ["restaurant", "lesson-8"]
+  },
+  {
+    "id": "rr006",
+    "sentence": "Vi porto subito ___ e poi il vino.",
+    "hint": "Il cameriere porta da bere per cominciare.",
+    "correct": "l'acqua",
+    "options": ["l'acqua", "il pane", "il menù", "il conto"],
+    "explanation": "L'ACQUA = the water. Waiters typically bring water first in Italy.",
+    "tags": ["restaurant", "lesson-8"]
+  },
+  {
+    "id": "rr007",
+    "sentence": "Cottura al sangue, ___ o ben cotta?",
+    "hint": "Il cameriere chiede come cuocere la carne.",
+    "correct": "media",
+    "options": ["media", "normale", "piccola", "grande"],
+    "explanation": "MEDIA = medium. Italian meat doneness: al sangue (rare) / media / ben cotta (well done).",
+    "tags": ["restaurant", "lesson-8"]
+  },
+  {
+    "id": "rr008",
+    "sentence": "Che cosa c'è ___ antipasto della casa?",
+    "hint": "Il cliente chiede la composizione dell'antipasto.",
+    "correct": "nell'",
+    "options": ["nell'", "all'", "dall'", "sull'"],
+    "explanation": "IN + L' = NELL'. 'Nell'antipasto' — inside the antipasto.",
+    "tags": ["restaurant", "preposizioni", "lesson-8"]
+  },
+  {
+    "id": "rr009",
+    "sentence": "Volete anche un ___?",
+    "hint": "Il cameriere propone qualcosa di aggiuntivo.",
+    "correct": "contorno",
+    "options": ["contorno", "antipasto", "dolce", "primo"],
+    "explanation": "CONTORNO = side dish. Comes with the secondo (main course).",
+    "tags": ["restaurant", "lesson-8"]
+  },
+  {
+    "id": "rr010",
+    "sentence": "Prendiamo una ___ di vino rosso.",
+    "hint": "Il cliente ordina il vino.",
+    "correct": "bottiglia",
+    "options": ["bottiglia", "bicchiere", "tazza", "carafe"],
+    "explanation": "BOTTIGLIA = bottle. 'Una bottiglia di vino rosso' — a bottle of red wine.",
+    "tags": ["restaurant", "lesson-8"]
+  },
+  {
+    "id": "rr011",
+    "sentence": "Come antipasto, ___ l'insalata mista.",
+    "hint": "Il cliente ordina l'antipasto in modo diretto.",
+    "correct": "prendo",
+    "options": ["prendo", "vorrei", "voglio", "mangio"],
+    "explanation": "PRENDO (prendere, io) = I'll have. 'Come antipasto, prendo...' — a direct way to order.",
+    "tags": ["restaurant", "lesson-8"]
+  },
+  {
+    "id": "rr012",
+    "sentence": "Avete anche la ___ dei vini?",
+    "hint": "Il cliente vuole vedere i vini disponibili.",
+    "correct": "carta",
+    "options": ["carta", "lista", "menù", "bottiglia"],
+    "explanation": "LA CARTA DEI VINI = the wine list. 'Avete la carta dei vini?' — standard phrase.",
+    "tags": ["restaurant", "lesson-8"]
+  }
+]
