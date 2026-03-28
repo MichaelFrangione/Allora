@@ -16,8 +16,8 @@ const LIMIT_OPTIONS = [10, 20, null] as const;
 
 const CATEGORY_LABELS: Record<Category, string> = {
   all: "All questions",
-  "slide-9": "Slide 9 — Dovere, Potere o Volere?",
-  "slide-10": "Slide 10 — Completa con i verbi",
+  "slide-9": "Quale verbo usi? (context)",
+  "slide-10": "Completa con la forma corretta",
 };
 
 function shuffle<T>(arr: T[]): T[] {
