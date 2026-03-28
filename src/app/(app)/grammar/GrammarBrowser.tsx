@@ -445,45 +445,15 @@ export default function ReferenceBrowser({
 
       <Accordion type="multiple" className="space-y-2">
 
-        {/* Numbers */}
-        <AccordionItem value="numbers" className="border rounded-lg px-4">
-          <AccordionTrigger className="text-base font-semibold hover:no-underline py-3">
-            Numbers &amp; Counting
-          </AccordionTrigger>
-          <AccordionContent className="pt-2 pb-4">
-            <NumbersSection />
-          </AccordionContent>
-        </AccordionItem>
-
-        {/* Time */}
-        <AccordionItem value="time" className="border rounded-lg px-4">
-          <AccordionTrigger className="text-base font-semibold hover:no-underline py-3">
-            Time, Days &amp; Months
-          </AccordionTrigger>
-          <AccordionContent className="pt-2 pb-4">
-            <TimeSection />
-          </AccordionContent>
-        </AccordionItem>
-
-        {/* La Concordanza */}
-        <AccordionItem value="concordanza" className="border rounded-lg px-4">
-          <AccordionTrigger className="text-base font-semibold hover:no-underline py-3">
-            La Concordanza
-          </AccordionTrigger>
-          <AccordionContent className="pt-2 pb-4">
-            <ConcordanzaSection />
-          </AccordionContent>
-        </AccordionItem>
-
         {/* Units 1–8 */}
         {units.map((unit) => {
-          const unitRules = rules.filter((r) => getGrammarUnit(r) === unit);
+          // g018 is an older, partial duplicate of g026 (both possessivi, lesson-6) — skip it
+          const unitRules = rules.filter((r) => getGrammarUnit(r) === unit && r.id !== "g018");
           const unitConjs = conjugations.filter((c) => {
-            // Assign conjugations to units by convention
             if (unit === 1) return ["c001","c002","c003","c004","c005","c006","c007","c008","c009","c010","c011"].includes(c.id);
             if (unit === 3) return ["c012","c013"].includes(c.id);
-            if (unit === 6) return ["c098","c099"].includes(c.id); // spedire, costruire (ISC verbs)
-            if (unit === 7) return ["c100","c101","c102","c103","c104"].includes(c.id); // dovere, potere, volere, girare, continuare
+            if (unit === 6) return ["c098","c099"].includes(c.id);
+            if (unit === 7) return ["c100","c101","c102","c103","c104"].includes(c.id);
             return false;
           });
 
@@ -496,25 +466,47 @@ export default function ReferenceBrowser({
                 {unitRules.map((rule) => (
                   <GrammarCard key={rule.id} rule={rule} />
                 ))}
+
+                {/* Unit 3: Numbers + Time reference tables */}
+                {unit === 3 && (
+                  <>
+                    <div className="space-y-3">
+                      <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">Numbers — Reference</p>
+                      <NumbersSection />
+                    </div>
+                    <div className="space-y-3">
+                      <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">Time, Days &amp; Months — Reference</p>
+                      <TimeSection />
+                    </div>
+                  </>
+                )}
+
+                {/* Unit 5: La Concordanza visual tables */}
+                {unit === 5 && (
+                  <div className="space-y-3">
+                    <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">La Concordanza — Reference Tables</p>
+                    <ConcordanzaSection />
+                  </div>
+                )}
+
+                {/* Unit 7: Preposizioni Articolate visual table */}
                 {unit === 7 && (
                   <div className="space-y-3">
-                    <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">
-                      Preposizioni Articolate — Reference Table
-                    </p>
+                    <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">Preposizioni Articolate — Reference Table</p>
                     <PreposizioniArticolateSection />
                   </div>
                 )}
+
                 {unitConjs.length > 0 && (
                   <div className="space-y-3">
-                    <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">
-                      Conjugation Tables
-                    </p>
+                    <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">Conjugation Tables</p>
                     {unitConjs.map((c) => (
                       <ConjugationTable key={c.id} conj={c} />
                     ))}
                   </div>
                 )}
-                {unitRules.length === 0 && unitConjs.length === 0 && (
+
+                {unitRules.length === 0 && unitConjs.length === 0 && unit !== 3 && unit !== 5 && unit !== 7 && (
                   <p className="text-sm text-muted-foreground">No content for this unit yet.</p>
                 )}
               </AccordionContent>
