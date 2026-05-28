@@ -1,4 +1,5 @@
 import { prisma } from "@/lib/prisma";
+import { SUBJECTS, getVocabById } from "@/lib/content";
 
 export type ItemStats = {
   contentId: string;
@@ -149,4 +150,126 @@ export async function getRecentSessions(userId: string, limit = 5) {
     take: limit,
     include: { _count: { select: { attempts: true } } },
   });
+}
+
+// ── Learn path: XP, streak, and per-subject mastery (all derived from CardAttempt) ──
+
+const XP_PER_CORRECT = 10;
+const XP_PER_ATTEMPT = 2; // a little XP even for wrong answers, like Duolingo
+
+/** Maps a drill's contentType to the subject id it practises. */
+const CONTENT_TYPE_SUBJECT: Record<string, string> = {
+  riflessivi: "reflexive-verbs",
+  pronomi: "pronouns",
+  "essere-avere": "essere-avere",
+  articoli: "articles",
+  genere: "gender",
+  plurali: "plural",
+  aggettivi: "adjectives",
+  concordanza: "adjectives",
+  possessivi: "possessives",
+  piacere: "piacere",
+  preposizioni: "prepositions",
+  "modal-verbs": "modals",
+  interrogativi: "interrogatives",
+  dimostrativi: "demonstratives",
+  saluti: "greetings",
+  conjugation: "present-tense",
+};
+
+type AttemptRow = { contentType: string; contentId: string; correct: boolean; createdAt: Date };
+
+/** Resolve which subject an attempt belongs to (drills by type; vocab/flashcards by their item's tags). */
+function subjectForAttempt(a: AttemptRow): string | null {
+  const direct = CONTENT_TYPE_SUBJECT[a.contentType];
+  if (direct) return direct;
+  if (a.contentType === "vocab" || a.contentType === "flashcard") {
+    const item = getVocabById(a.contentId);
+    if (item) {
+      const subject = SUBJECTS.find((s) => s.tags.some((t) => item.tags.includes(t)));
+      return subject?.id ?? null;
+    }
+  }
+  return null;
+}
+
+/** Local YYYY-MM-DD key for streak grouping. */
+function dayKey(d: Date): string {
+  return `${d.getFullYear()}-${d.getMonth()}-${d.getDate()}`;
+}
+
+/** Consecutive days practised, counting back from today (stays alive if today not done yet). */
+function computeStreak(dayKeys: Set<string>, now: Date): number {
+  if (dayKeys.size === 0) return 0;
+  const cursor = new Date(now);
+  // If nothing today, start counting from yesterday so the streak isn't broken mid-day.
+  if (!dayKeys.has(dayKey(cursor))) cursor.setDate(cursor.getDate() - 1);
+  let streak = 0;
+  while (dayKeys.has(dayKey(cursor))) {
+    streak += 1;
+    cursor.setDate(cursor.getDate() - 1);
+  }
+  return streak;
+}
+
+/** Mastery level 0–5 for a subject, from correct count gated by accuracy. */
+function masteryLevel(correct: number, accuracy: number): number {
+  if (correct < 4 || accuracy < 0.5) return Math.min(1, Math.floor(correct / 4));
+  // 1 level per ~8 correct answers, capped at 5
+  return Math.min(5, 1 + Math.floor(correct / 8));
+}
+
+export type SubjectProgress = {
+  attempts: number;
+  correct: number;
+  accuracy: number;
+  level: number;
+};
+
+export type LearnStats = {
+  xp: number;
+  streak: number;
+  todayCorrect: number;
+  totalCorrect: number;
+  bySubject: Record<string, SubjectProgress>;
+};
+
+/**
+ * Everything the Duolingo-style Learn path needs, computed from persisted CardAttempt
+ * rows (no extra schema). XP, streak and per-subject mastery all survive across devices.
+ */
+export async function getLearnStats(
+  userId: string,
+  now: Date = new Date()
+): Promise<LearnStats> {
+  const attempts: AttemptRow[] = await prisma.cardAttempt.findMany({
+    where: { userId },
+    select: { contentType: true, contentId: true, correct: true, createdAt: true },
+  });
+
+  const totalCorrect = attempts.filter((a) => a.correct).length;
+  const xp = totalCorrect * XP_PER_CORRECT + (attempts.length - totalCorrect) * XP_PER_ATTEMPT;
+
+  const dayKeys = new Set(attempts.map((a) => dayKey(a.createdAt)));
+  const streak = computeStreak(dayKeys, now);
+
+  const todayKey = dayKey(now);
+  const todayCorrect = attempts.filter((a) => a.correct && dayKey(a.createdAt) === todayKey).length;
+
+  const bySubject: Record<string, SubjectProgress> = {};
+  for (const a of attempts) {
+    const subject = subjectForAttempt(a);
+    if (!subject) continue;
+    const e = bySubject[subject] ?? { attempts: 0, correct: 0, accuracy: 0, level: 0 };
+    e.attempts += 1;
+    e.correct += a.correct ? 1 : 0;
+    bySubject[subject] = e;
+  }
+  for (const key of Object.keys(bySubject)) {
+    const e = bySubject[key];
+    e.accuracy = e.attempts > 0 ? e.correct / e.attempts : 0;
+    e.level = masteryLevel(e.correct, e.accuracy);
+  }
+
+  return { xp, streak, todayCorrect, totalCorrect, bySubject };
 }
