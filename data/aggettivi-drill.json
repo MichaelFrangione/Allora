@@ -1,0 +1,202 @@
+[
+  {
+    "id": "agg001",
+    "category": "concordanza",
+    "sentence": "Passami una penna ___.",
+    "hint": "Penna is feminine singular; an -O adjective takes the -a form.",
+    "correct": "nera",
+    "options": ["nero", "nere", "nera", "neri"],
+    "explanation": "Penna is feminine singular, so nero becomes nera.",
+    "tags": ["adjectives", "agreement"]
+  },
+  {
+    "id": "agg002",
+    "category": "concordanza",
+    "sentence": "Conosco molti ragazzi ___.",
+    "hint": "Ragazzi is masculine plural; tedesco ends in -CO so add -h before -i.",
+    "correct": "tedeschi",
+    "options": ["tedesche", "tedesco", "tedesci", "tedeschi"],
+    "explanation": "Masculine plural of tedesco keeps the hard sound: tedeschi.",
+    "tags": ["adjectives", "agreement"]
+  },
+  {
+    "id": "agg003",
+    "category": "concordanza",
+    "sentence": "Mia sorella è sempre ___.",
+    "hint": "Sorella is feminine singular; an -O adjective takes the -a form.",
+    "correct": "allegra",
+    "options": ["allegra", "allegro", "allegri", "allegre"],
+    "explanation": "Sorella is feminine singular, so allegro becomes allegra.",
+    "tags": ["adjectives", "agreement"]
+  },
+  {
+    "id": "agg004",
+    "category": "concordanza",
+    "sentence": "Mio fratello ha una macchina ___.",
+    "hint": "Verde is an -E adjective: invariable in gender, only changes for number.",
+    "correct": "verde",
+    "options": ["verda", "verde", "verdo", "verdi"],
+    "explanation": "Verde is an -E type adjective, so the singular form stays verde regardless of gender.",
+    "tags": ["adjectives", "agreement"]
+  },
+  {
+    "id": "agg005",
+    "category": "concordanza",
+    "sentence": "Gli esercizi sono ___.",
+    "hint": "Esercizi is plural; an -E adjective takes -i in the plural.",
+    "correct": "facili",
+    "options": ["facile", "facili", "facila", "faciles"],
+    "explanation": "Facile is an -E adjective; its plural (both genders) is facili.",
+    "tags": ["adjectives", "agreement"]
+  },
+  {
+    "id": "agg006",
+    "category": "concordanza",
+    "sentence": "Le lezioni sono ___.",
+    "hint": "Lezioni is plural; an -E adjective takes -i in the plural for both genders.",
+    "correct": "facili",
+    "options": ["facile", "facila", "facili", "facile "],
+    "explanation": "Facile is an -E adjective; its plural is facili for feminine too.",
+    "tags": ["adjectives", "agreement"]
+  },
+  {
+    "id": "agg007",
+    "category": "concordanza",
+    "sentence": "Le bambine sono molto ___.",
+    "hint": "Bambine is feminine plural; an -O adjective takes the -e form.",
+    "correct": "brave",
+    "options": ["bravo", "brava", "bravi", "brave"],
+    "explanation": "Bambine is feminine plural, so bravo becomes brave.",
+    "tags": ["adjectives", "agreement"]
+  },
+  {
+    "id": "agg008",
+    "category": "concordanza",
+    "sentence": "I bambini sono ___.",
+    "hint": "Bambini is masculine plural; an -O adjective takes the -i form.",
+    "correct": "bravi",
+    "options": ["bravi", "bravo", "brave", "brava"],
+    "explanation": "Bambini is masculine plural, so bravo becomes bravi.",
+    "tags": ["adjectives", "agreement"]
+  },
+  {
+    "id": "agg009",
+    "category": "concordanza",
+    "sentence": "Anna è una ragazza ___.",
+    "hint": "Ragazza is feminine singular; simpatico ends in -CO but goes simpatici/simpatica.",
+    "correct": "simpatica",
+    "options": ["simpatico", "simpatica", "simpatici", "simpatiche"],
+    "explanation": "Ragazza is feminine singular, so simpatico becomes simpatica.",
+    "tags": ["adjectives", "agreement"]
+  },
+  {
+    "id": "agg010",
+    "category": "concordanza",
+    "sentence": "Ho due amici molto ___.",
+    "hint": "Amici is masculine plural; simpatico softens to simpatici.",
+    "correct": "simpatici",
+    "options": ["simpatichi", "simpatici", "simpatico", "simpatiche"],
+    "explanation": "Simpatico forms its masculine plural as simpatici (soft c).",
+    "tags": ["adjectives", "agreement"]
+  },
+  {
+    "id": "agg011",
+    "category": "bello",
+    "sentence": "Silvia ha un ___ appartamento con quattro camere.",
+    "hint": "Bello before a noun behaves like the definite article; before a vowel (l') use bell'.",
+    "correct": "bell'",
+    "options": ["bel", "bell'", "bello", "begli"],
+    "explanation": "Before a masculine noun starting with a vowel (l'appartamento), bello becomes bell'.",
+    "tags": ["adjectives", "bello-buono"]
+  },
+  {
+    "id": "agg012",
+    "category": "bello",
+    "sentence": "Stasera in TV c'è un film molto ___.",
+    "hint": "Here bello comes after the noun (predicate), so use the full standard form.",
+    "correct": "bello",
+    "options": ["bel", "bello", "bell'", "begli"],
+    "explanation": "After the noun bello is not shortened; the masculine singular form is bello.",
+    "tags": ["adjectives", "bello-buono"]
+  },
+  {
+    "id": "agg013",
+    "category": "bello",
+    "sentence": "Che ___ occhi che hai!",
+    "hint": "Bello before a masculine plural noun starting with a vowel (gli) = begli.",
+    "correct": "begli",
+    "options": ["belli", "bei", "begli", "bell'"],
+    "explanation": "Like gli occhi, bello becomes begli before a masculine plural vowel-initial noun.",
+    "tags": ["adjectives", "bello-buono"]
+  },
+  {
+    "id": "agg014",
+    "category": "bello",
+    "sentence": "Guarda quei ___ alberi.",
+    "hint": "Bello before a masculine plural noun starting with a vowel (gli) = begli.",
+    "correct": "begli",
+    "options": ["bei", "begli", "belli", "bello"],
+    "explanation": "Gli alberi → begli alberi: bello becomes begli before a vowel-initial masculine plural noun.",
+    "tags": ["adjectives", "bello-buono"]
+  },
+  {
+    "id": "agg015",
+    "category": "bello",
+    "sentence": "Mario ha un ___ bambino.",
+    "hint": "Bello before a normal masculine consonant noun (il) = bel.",
+    "correct": "bel",
+    "options": ["bel", "bello", "begli", "bei"],
+    "explanation": "Like il bambino, bello becomes bel before a masculine noun starting with a consonant.",
+    "tags": ["adjectives", "bello-buono"]
+  },
+  {
+    "id": "agg016",
+    "category": "bello",
+    "sentence": "In piazza ci sono i ___ bambini della scuola.",
+    "hint": "Bello before a normal masculine plural noun (i) = bei.",
+    "correct": "bei",
+    "options": ["begli", "bei", "belli", "bel"],
+    "explanation": "Like i bambini, bello becomes bei before a consonant-initial masculine plural noun.",
+    "tags": ["adjectives", "bello-buono"]
+  },
+  {
+    "id": "agg017",
+    "category": "buono",
+    "sentence": "Cecilia è una ___ amica di Stefania.",
+    "hint": "Buono before a noun behaves like the indefinite article; un'amica → buon'amica.",
+    "correct": "buon'",
+    "options": ["buona", "buon'", "buono", "buon"],
+    "explanation": "Before a feminine vowel-initial noun (un'amica), buona becomes buon'.",
+    "tags": ["adjectives", "bello-buono"]
+  },
+  {
+    "id": "agg018",
+    "category": "buono",
+    "sentence": "Marco è un ___ studente.",
+    "hint": "Buono before a noun behaves like the indefinite article; uno studente → un buono studente.",
+    "correct": "buono",
+    "options": ["buon", "buono", "buon'", "buona"],
+    "explanation": "Like uno studente, buono keeps its full form before s+consonant nouns.",
+    "tags": ["adjectives", "bello-buono"]
+  },
+  {
+    "id": "agg019",
+    "category": "buono",
+    "sentence": "È un ___ bambino, non piange mai.",
+    "hint": "Buono before a normal masculine consonant noun (un) = buon.",
+    "correct": "buon",
+    "options": ["buon", "buono", "buona", "buoni"],
+    "explanation": "Like un bambino, buono becomes buon before an ordinary masculine consonant noun.",
+    "tags": ["adjectives", "bello-buono"]
+  },
+  {
+    "id": "agg020",
+    "category": "concordanza",
+    "sentence": "Firenze è una città molto ___.",
+    "hint": "After an adverb the adjective follows the noun; tranquilla agrees with città (f sing).",
+    "correct": "tranquilla",
+    "options": ["tranquillo", "tranquilla", "tranquilli", "tranquille"],
+    "explanation": "Città is feminine singular, so tranquillo becomes tranquilla.",
+    "tags": ["adjectives", "agreement"]
+  }
+]

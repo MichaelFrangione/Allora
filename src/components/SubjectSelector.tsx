@@ -1,13 +1,15 @@
 "use client";
 
-import { UNITS } from "@/lib/content";
+import type { Subject } from "@/lib/content";
 
-interface UnitSelectorProps {
-  value: number | undefined;
-  onChange: (unit: number | undefined) => void;
+interface SubjectSelectorProps {
+  /** The subjects actually present in the current content. */
+  subjects: Subject[];
+  value: string | undefined;
+  onChange: (subject: string | undefined) => void;
 }
 
-export default function UnitSelector({ value, onChange }: UnitSelectorProps) {
+export default function SubjectSelector({ subjects, value, onChange }: SubjectSelectorProps) {
   return (
     <div className="flex flex-wrap gap-2">
       <button
@@ -18,19 +20,20 @@ export default function UnitSelector({ value, onChange }: UnitSelectorProps) {
             : "bg-muted text-muted-foreground hover:bg-muted/80"
         }`}
       >
-        All Units
+        All
       </button>
-      {UNITS.map((u) => (
+      {subjects.map((s) => (
         <button
-          key={u}
-          onClick={() => onChange(u)}
+          key={s.id}
+          onClick={() => onChange(s.id)}
           className={`px-3 py-1.5 rounded-full text-sm font-medium transition-colors ${
-            value === u
+            value === s.id
               ? "bg-primary text-primary-foreground"
               : "bg-muted text-muted-foreground hover:bg-muted/80"
           }`}
         >
-          Unit {u}
+          <span className="mr-1">{s.emoji}</span>
+          {s.label}
         </button>
       ))}
     </div>

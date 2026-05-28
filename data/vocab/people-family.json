@@ -1,0 +1,486 @@
+[
+  {
+    "id": "v129",
+    "italian": "il fratello",
+    "english": "the brother",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "Mio fratello abita a Torino.",
+    "tags": [
+      "nouns",
+      "family",
+      "lesson-4"
+    ],
+    "unit": 4,
+    "pronunciation": "il fra·TEL·lo"
+  },
+  {
+    "id": "v130",
+    "italian": "la sorella",
+    "english": "the sister",
+    "gender": "f",
+    "partOfSpeech": "noun",
+    "example": "Mia sorella è medico.",
+    "tags": [
+      "nouns",
+      "family",
+      "lesson-4"
+    ],
+    "unit": 4,
+    "pronunciation": "la so·REL·la"
+  },
+  {
+    "id": "v131",
+    "italian": "lo zio",
+    "english": "the uncle",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "Lo zio Marco arriva domenica.",
+    "tags": [
+      "nouns",
+      "family",
+      "lesson-4"
+    ],
+    "unit": 4,
+    "pronunciation": "lo DZEE·o"
+  },
+  {
+    "id": "v132",
+    "italian": "il padre",
+    "english": "the father",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "Mio padre lavora in centro.",
+    "tags": [
+      "nouns",
+      "family",
+      "lesson-4"
+    ],
+    "unit": 4,
+    "pronunciation": "il PA·dre"
+  },
+  {
+    "id": "v133",
+    "italian": "la madre",
+    "english": "the mother",
+    "gender": "f",
+    "partOfSpeech": "noun",
+    "example": "Mia madre cucina benissimo.",
+    "tags": [
+      "nouns",
+      "family",
+      "lesson-4"
+    ],
+    "unit": 4,
+    "pronunciation": "la MA·dre"
+  },
+  {
+    "id": "v134",
+    "italian": "l'amico / l'amica",
+    "english": "the friend (m/f)",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "Un amico è per sempre.",
+    "tags": [
+      "nouns",
+      "people",
+      "lesson-4"
+    ],
+    "unit": 4,
+    "pronunciation": "a·MI·ko / a·MI·ka"
+  },
+  {
+    "id": "v145",
+    "italian": "simpatico",
+    "english": "nice, likeable",
+    "gender": "m",
+    "partOfSpeech": "adjective",
+    "example": "Il professore è molto simpatico.",
+    "tags": [
+      "adjectives",
+      "personality",
+      "lesson-5"
+    ],
+    "unit": 5,
+    "pronunciation": "sim·PA·ti·ko"
+  },
+  {
+    "id": "v146",
+    "italian": "antipatico",
+    "english": "unpleasant, unfriendly",
+    "gender": "m",
+    "partOfSpeech": "adjective",
+    "example": "Non mi piace quel ragazzo, è antipatico.",
+    "tags": [
+      "adjectives",
+      "personality",
+      "lesson-5"
+    ],
+    "unit": 5,
+    "pronunciation": "an·ti·PA·ti·ko"
+  },
+  {
+    "id": "v147",
+    "italian": "alto",
+    "english": "tall, high",
+    "gender": "m",
+    "partOfSpeech": "adjective",
+    "example": "Mio fratello è molto alto.",
+    "tags": [
+      "adjectives",
+      "physical",
+      "lesson-5"
+    ],
+    "unit": 5,
+    "pronunciation": "AL·to"
+  },
+  {
+    "id": "v148",
+    "italian": "basso",
+    "english": "short, low",
+    "gender": "m",
+    "partOfSpeech": "adjective",
+    "example": "La sedia è troppo bassa.",
+    "tags": [
+      "adjectives",
+      "physical",
+      "lesson-5"
+    ],
+    "unit": 5,
+    "pronunciation": "BAS·so"
+  },
+  {
+    "id": "v153",
+    "italian": "intelligente",
+    "english": "intelligent, smart",
+    "gender": null,
+    "partOfSpeech": "adjective",
+    "example": "È una ragazza molto intelligente.",
+    "tags": [
+      "adjectives",
+      "personality",
+      "lesson-5"
+    ],
+    "unit": 5,
+    "pronunciation": "in·tel·li·JEN·te"
+  },
+  {
+    "id": "v154",
+    "italian": "gentile",
+    "english": "kind, polite",
+    "gender": null,
+    "partOfSpeech": "adjective",
+    "example": "La segretaria è molto gentile.",
+    "tags": [
+      "adjectives",
+      "personality",
+      "lesson-5"
+    ],
+    "unit": 5,
+    "pronunciation": "jen·TI·le"
+  },
+  {
+    "id": "v155",
+    "italian": "felice",
+    "english": "happy",
+    "gender": null,
+    "partOfSpeech": "adjective",
+    "example": "Sono felice di vederti!",
+    "tags": [
+      "adjectives",
+      "emotions",
+      "lesson-5"
+    ],
+    "unit": 5,
+    "pronunciation": "fe·LI·che"
+  },
+  {
+    "id": "v156",
+    "italian": "triste",
+    "english": "sad",
+    "gender": null,
+    "partOfSpeech": "adjective",
+    "example": "Il finale del film è molto triste.",
+    "tags": [
+      "adjectives",
+      "emotions",
+      "lesson-5"
+    ],
+    "unit": 5,
+    "pronunciation": "TRIS·te"
+  },
+  {
+    "id": "v170",
+    "italian": "nome",
+    "english": "name",
+    "gender": "maschile",
+    "partOfSpeech": "noun",
+    "example": "Come ti chiami? Qual è il tuo nome?",
+    "tags": [
+      "nouns",
+      "identity",
+      "e-nouns",
+      "lesson-5"
+    ],
+    "unit": 5,
+    "pronunciation": "NO·me"
+  },
+  {
+    "id": "v192",
+    "italian": "fame",
+    "english": "hunger",
+    "gender": "femminile",
+    "partOfSpeech": "noun",
+    "example": "Ho fame, voglio mangiare qualcosa.",
+    "tags": [
+      "nouns",
+      "body",
+      "expressions",
+      "e-nouns",
+      "lesson-6"
+    ],
+    "unit": 6,
+    "pronunciation": "FA·me"
+  },
+  {
+    "id": "v193",
+    "italian": "sonno",
+    "english": "sleepiness",
+    "gender": "maschile",
+    "partOfSpeech": "noun",
+    "example": "Ho sonno, ho bisogno di un caffè.",
+    "tags": [
+      "nouns",
+      "body",
+      "expressions",
+      "lesson-6"
+    ],
+    "unit": 6,
+    "pronunciation": "SON·no"
+  },
+  {
+    "id": "v195",
+    "italian": "papà",
+    "english": "father / dad",
+    "gender": "maschile",
+    "partOfSpeech": "noun",
+    "example": "Mio papà beve il caffè ogni mattina.",
+    "tags": [
+      "nouns",
+      "family",
+      "lesson-6"
+    ],
+    "unit": 6,
+    "pronunciation": "pa·PÀ"
+  },
+  {
+    "id": "v196",
+    "italian": "mamma",
+    "english": "mother / mom",
+    "gender": "femminile",
+    "partOfSpeech": "noun",
+    "example": "Mia mamma preferisce il tè.",
+    "tags": [
+      "nouns",
+      "family",
+      "lesson-6"
+    ],
+    "unit": 6,
+    "pronunciation": "MAM·ma"
+  },
+  {
+    "id": "v197",
+    "italian": "fratello",
+    "english": "brother",
+    "gender": "maschile",
+    "partOfSpeech": "noun",
+    "example": "Mio fratello si chiama Luca.",
+    "tags": [
+      "nouns",
+      "family",
+      "lesson-6"
+    ],
+    "unit": 6,
+    "pronunciation": "fra·TEL·lo"
+  },
+  {
+    "id": "v198",
+    "italian": "sorella",
+    "english": "sister",
+    "gender": "femminile",
+    "partOfSpeech": "noun",
+    "example": "Mia sorella abita a Roma.",
+    "tags": [
+      "nouns",
+      "family",
+      "lesson-6"
+    ],
+    "unit": 6,
+    "pronunciation": "so·REL·la"
+  },
+  {
+    "id": "v199",
+    "italian": "nonno",
+    "english": "grandfather",
+    "gender": "maschile",
+    "partOfSpeech": "noun",
+    "example": "Mio nonno ha ottant'anni.",
+    "tags": [
+      "nouns",
+      "family",
+      "lesson-6"
+    ],
+    "unit": 6,
+    "pronunciation": "NON·no"
+  },
+  {
+    "id": "v200",
+    "italian": "nonna",
+    "english": "grandmother",
+    "gender": "femminile",
+    "partOfSpeech": "noun",
+    "example": "La mia nonna fa la pizza migliore del mondo.",
+    "tags": [
+      "nouns",
+      "family",
+      "lesson-6"
+    ],
+    "unit": 6,
+    "pronunciation": "NON·na"
+  },
+  {
+    "id": "v201",
+    "italian": "zio",
+    "english": "uncle",
+    "gender": "maschile",
+    "partOfSpeech": "noun",
+    "example": "Mio zio abita in campagna.",
+    "tags": [
+      "nouns",
+      "family",
+      "lesson-6"
+    ],
+    "unit": 6,
+    "pronunciation": "DZEE·o"
+  },
+  {
+    "id": "v202",
+    "italian": "zia",
+    "english": "aunt",
+    "gender": "femminile",
+    "partOfSpeech": "noun",
+    "example": "Mia zia cucina molto bene.",
+    "tags": [
+      "nouns",
+      "family",
+      "lesson-6"
+    ],
+    "unit": 6,
+    "pronunciation": "DZEE·a"
+  },
+  {
+    "id": "v203",
+    "italian": "famiglia",
+    "english": "family",
+    "gender": "femminile",
+    "partOfSpeech": "noun",
+    "example": "La mia famiglia è grande e simpatica.",
+    "tags": [
+      "nouns",
+      "family",
+      "lesson-6"
+    ],
+    "unit": 6,
+    "pronunciation": "fa·MI·lya"
+  },
+  {
+    "id": "v210",
+    "italian": "marito",
+    "english": "husband",
+    "gender": "maschile",
+    "partOfSpeech": "noun",
+    "example": "Suo marito lavora molto.",
+    "tags": [
+      "nouns",
+      "family",
+      "lesson-6"
+    ],
+    "unit": 6,
+    "pronunciation": "MA·ri·to"
+  },
+  {
+    "id": "v211",
+    "italian": "moglie",
+    "english": "wife",
+    "gender": "femminile",
+    "partOfSpeech": "noun",
+    "example": "Sua moglie è molto gentile.",
+    "tags": [
+      "nouns",
+      "family",
+      "lesson-6"
+    ],
+    "unit": 6,
+    "pronunciation": "MO·lye"
+  },
+  {
+    "id": "v212",
+    "italian": "figlio",
+    "english": "son",
+    "gender": "maschile",
+    "partOfSpeech": "noun",
+    "example": "Il suo figlio ha dieci anni.",
+    "tags": [
+      "nouns",
+      "family",
+      "lesson-6"
+    ],
+    "unit": 6,
+    "pronunciation": "FI·lyo"
+  },
+  {
+    "id": "v213",
+    "italian": "figlia",
+    "english": "daughter",
+    "gender": "femminile",
+    "partOfSpeech": "noun",
+    "example": "La sua figlia studia medicina.",
+    "tags": [
+      "nouns",
+      "family",
+      "lesson-6"
+    ],
+    "unit": 6,
+    "pronunciation": "FI·lya"
+  },
+  {
+    "id": "v214",
+    "italian": "nipote",
+    "english": "grandchild / nephew / niece",
+    "gender": null,
+    "partOfSpeech": "noun",
+    "example": "Il nipote gioca con i nonni.",
+    "tags": [
+      "nouns",
+      "family",
+      "lesson-6"
+    ],
+    "unit": 6,
+    "pronunciation": "ni·PO·te"
+  },
+  {
+    "id": "v215",
+    "italian": "genitori",
+    "english": "parents",
+    "gender": null,
+    "partOfSpeech": "noun",
+    "example": "I miei genitori abitano a Roma.",
+    "tags": [
+      "nouns",
+      "family",
+      "lesson-6"
+    ],
+    "unit": 6,
+    "pronunciation": "je·ni·TO·ri"
+  }
+]

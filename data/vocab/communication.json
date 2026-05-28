@@ -1,0 +1,272 @@
+[
+  {
+    "id": "v231",
+    "italian": "invito",
+    "english": "invitation",
+    "gender": "maschile",
+    "partOfSpeech": "noun",
+    "example": "Vuoi venire alla mia festa? È un invito!",
+    "tags": [
+      "nouns",
+      "expressions",
+      "lesson-7"
+    ],
+    "unit": 7,
+    "pronunciation": "in·VI·to"
+  },
+  {
+    "id": "v232",
+    "italian": "volentieri",
+    "english": "gladly / with pleasure",
+    "gender": null,
+    "partOfSpeech": "adverb",
+    "example": "Sì, volentieri! Vengo alla festa.",
+    "tags": [
+      "adverbs",
+      "expressions",
+      "lesson-7"
+    ],
+    "unit": 7,
+    "pronunciation": "vo·len·TYE·ri"
+  },
+  {
+    "id": "v233",
+    "italian": "magari",
+    "english": "maybe / perhaps",
+    "gender": null,
+    "partOfSpeech": "adverb",
+    "example": "Magari vengo domani, non sono sicuro.",
+    "tags": [
+      "adverbs",
+      "expressions",
+      "lesson-7"
+    ],
+    "unit": 7,
+    "pronunciation": "ma·GA·ri"
+  },
+  {
+    "id": "v234",
+    "italian": "forse",
+    "english": "maybe / perhaps",
+    "gender": null,
+    "partOfSpeech": "adverb",
+    "example": "Forse posso venire, devo vedere.",
+    "tags": [
+      "adverbs",
+      "expressions",
+      "lesson-7"
+    ],
+    "unit": 7,
+    "pronunciation": "FOR·se"
+  },
+  {
+    "id": "v277",
+    "italian": "ciao",
+    "english": "hi / bye (informal)",
+    "gender": null,
+    "partOfSpeech": "expression",
+    "example": "Ciao! Come stai?",
+    "tags": ["greetings", "communication", "politeness"],
+    "pronunciation": "CHA·o"
+  },
+  {
+    "id": "v278",
+    "italian": "buongiorno",
+    "english": "good morning / good day",
+    "gender": null,
+    "partOfSpeech": "expression",
+    "example": "Buongiorno, signora!",
+    "tags": ["greetings", "communication", "politeness"],
+    "pronunciation": "bwon·JOR·no"
+  },
+  {
+    "id": "v279",
+    "italian": "buonasera",
+    "english": "good evening",
+    "gender": null,
+    "partOfSpeech": "expression",
+    "example": "Buonasera a tutti!",
+    "tags": ["greetings", "communication", "politeness"],
+    "pronunciation": "bwo·na·SE·ra"
+  },
+  {
+    "id": "v280",
+    "italian": "buonanotte",
+    "english": "good night",
+    "gender": null,
+    "partOfSpeech": "expression",
+    "example": "Buonanotte, a domani!",
+    "tags": ["greetings", "communication", "politeness"],
+    "pronunciation": "bwo·na·NOT·te"
+  },
+  {
+    "id": "v281",
+    "italian": "arrivederci",
+    "english": "goodbye (formal)",
+    "gender": null,
+    "partOfSpeech": "expression",
+    "example": "Arrivederci, dottore!",
+    "tags": ["greetings", "communication", "politeness"],
+    "pronunciation": "ar·ri·ve·DER·chi"
+  },
+  {
+    "id": "v282",
+    "italian": "buona giornata",
+    "english": "have a good day",
+    "gender": null,
+    "partOfSpeech": "expression",
+    "example": "Esco adesso — buona giornata!",
+    "tags": ["greetings", "communication", "politeness"],
+    "pronunciation": "BWO·na jor·NA·ta"
+  },
+  {
+    "id": "v283",
+    "italian": "buona serata",
+    "english": "have a good evening",
+    "gender": null,
+    "partOfSpeech": "expression",
+    "example": "Ci vediamo domani, buona serata!",
+    "tags": ["greetings", "communication", "politeness"],
+    "pronunciation": "BWO·na se·RA·ta"
+  },
+  {
+    "id": "v284",
+    "italian": "chi",
+    "english": "who",
+    "gender": null,
+    "partOfSpeech": "pronoun",
+    "example": "Chi è quella ragazza?",
+    "tags": ["interrogatives", "question-words"],
+    "pronunciation": "ki"
+  },
+  {
+    "id": "v285",
+    "italian": "che cosa",
+    "english": "what",
+    "gender": null,
+    "partOfSpeech": "pronoun",
+    "example": "Che cosa fai stasera?",
+    "tags": ["interrogatives", "question-words"],
+    "pronunciation": "ke KO·za"
+  },
+  {
+    "id": "v286",
+    "italian": "come",
+    "english": "how",
+    "gender": null,
+    "partOfSpeech": "adverb",
+    "example": "Come stai? Come ti chiami?",
+    "tags": ["interrogatives", "question-words"],
+    "pronunciation": "KO·me"
+  },
+  {
+    "id": "v287",
+    "italian": "quando",
+    "english": "when",
+    "gender": null,
+    "partOfSpeech": "adverb",
+    "example": "Quando parti per Roma?",
+    "tags": ["interrogatives", "question-words"],
+    "pronunciation": "KWAN·do"
+  },
+  {
+    "id": "v288",
+    "italian": "dove",
+    "english": "where",
+    "gender": null,
+    "partOfSpeech": "adverb",
+    "example": "Dove abiti?",
+    "tags": ["interrogatives", "question-words"],
+    "pronunciation": "DO·ve"
+  },
+  {
+    "id": "v289",
+    "italian": "quale",
+    "english": "which",
+    "gender": null,
+    "partOfSpeech": "adjective",
+    "example": "Quale libro preferisci?",
+    "tags": ["interrogatives", "question-words"],
+    "pronunciation": "KWA·le"
+  },
+  {
+    "id": "v290",
+    "italian": "perché",
+    "english": "why / because",
+    "gender": null,
+    "partOfSpeech": "adverb",
+    "example": "Perché non mangi? Perché non ho fame.",
+    "tags": ["interrogatives", "question-words"],
+    "pronunciation": "per·KE"
+  },
+  {
+    "id": "v291",
+    "italian": "quanto",
+    "english": "how much",
+    "gender": null,
+    "partOfSpeech": "adjective",
+    "example": "Quanto costa il caffè?",
+    "tags": ["interrogatives", "question-words"],
+    "pronunciation": "KWAN·to"
+  },
+  {
+    "id": "v292",
+    "italian": "quanti",
+    "english": "how many",
+    "gender": null,
+    "partOfSpeech": "adjective",
+    "example": "Quanti anni hai?",
+    "tags": ["interrogatives", "question-words"],
+    "pronunciation": "KWAN·ti"
+  },
+  {
+    "id": "v293",
+    "italian": "questo",
+    "english": "this (m.)",
+    "gender": "maschile",
+    "partOfSpeech": "adjective",
+    "example": "Questo libro è mio.",
+    "tags": ["demonstratives", "vocabulary"],
+    "pronunciation": "KWE·sto"
+  },
+  {
+    "id": "v294",
+    "italian": "questa",
+    "english": "this (f.)",
+    "gender": "femminile",
+    "partOfSpeech": "adjective",
+    "example": "Questa ragazza è simpatica.",
+    "tags": ["demonstratives", "vocabulary"],
+    "pronunciation": "KWE·sta"
+  },
+  {
+    "id": "v295",
+    "italian": "quello",
+    "english": "that (m.)",
+    "gender": "maschile",
+    "partOfSpeech": "adjective",
+    "example": "Preferisco quello gelato.",
+    "tags": ["demonstratives", "vocabulary"],
+    "pronunciation": "KWEL·lo"
+  },
+  {
+    "id": "v296",
+    "italian": "quella",
+    "english": "that (f.)",
+    "gender": "femminile",
+    "partOfSpeech": "adjective",
+    "example": "Quella casa è bella.",
+    "tags": ["demonstratives", "vocabulary"],
+    "pronunciation": "KWEL·la"
+  },
+  {
+    "id": "v297",
+    "italian": "qualcosa",
+    "english": "something",
+    "gender": null,
+    "partOfSpeech": "pronoun",
+    "example": "Vuoi qualcosa da bere?",
+    "tags": ["demonstratives", "vocabulary"],
+    "pronunciation": "kwal·KO·za"
+  }
+]

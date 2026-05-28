@@ -1,0 +1,18 @@
+[
+  {
+    "id": "v176",
+    "italian": "decisione",
+    "english": "decision",
+    "gender": "femminile",
+    "partOfSpeech": "noun",
+    "example": "È una decisione difficile.",
+    "tags": [
+      "nouns",
+      "abstract",
+      "e-nouns",
+      "lesson-5"
+    ],
+    "unit": 5,
+    "pronunciation": "de·chi·SIO·ne"
+  }
+]

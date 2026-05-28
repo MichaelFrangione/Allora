@@ -12,6 +12,7 @@ export default async function RistorantePage() {
     <DrillQuiz
       title="Al Ristorante"
       subtitle="Complete the restaurant conversation."
+      instructions="Complete each line of the restaurant conversation by choosing the word or phrase that fits."
       contentType="ristorante"
       questions={ristoranteDrill}
       weakIds={weakIds}

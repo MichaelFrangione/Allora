@@ -1,0 +1,18 @@
+[
+  {
+    "id": "v175",
+    "italian": "lezione",
+    "english": "lesson",
+    "gender": "femminile",
+    "partOfSpeech": "noun",
+    "example": "La lezione inizia alle nove.",
+    "tags": [
+      "nouns",
+      "education",
+      "e-nouns",
+      "lesson-5"
+    ],
+    "unit": 5,
+    "pronunciation": "le·TSYO·ne"
+  }
+]

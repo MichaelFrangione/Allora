@@ -1,0 +1,302 @@
+[
+  {
+    "id": "art001",
+    "category": "determinativo-singolare",
+    "sentence": "___ albero.",
+    "hint": "albero inizia per vocale (a-)",
+    "correct": "l'",
+    "options": ["l'", "il", "lo", "la"],
+    "explanation": "Davanti a un nome maschile che inizia per vocale si usa l'.",
+    "tags": ["articles", "definite"]
+  },
+  {
+    "id": "art002",
+    "category": "determinativo-singolare",
+    "sentence": "___ studente.",
+    "hint": "studente → s + consonante",
+    "correct": "lo",
+    "options": ["lo", "il", "l'", "la"],
+    "explanation": "Davanti a s impura (s + consonante) il maschile singolare usa lo.",
+    "tags": ["articles", "definite"]
+  },
+  {
+    "id": "art003",
+    "category": "determinativo-singolare",
+    "sentence": "___ zio.",
+    "hint": "zio → inizia per z",
+    "correct": "lo",
+    "options": ["il", "lo", "l'", "gli"],
+    "explanation": "Davanti a z il maschile singolare usa lo.",
+    "tags": ["articles", "definite"]
+  },
+  {
+    "id": "art004",
+    "category": "determinativo-singolare",
+    "sentence": "___ psicologo.",
+    "hint": "psicologo → ps-",
+    "correct": "lo",
+    "options": ["lo", "il", "l'", "la"],
+    "explanation": "Davanti al gruppo ps il maschile singolare usa lo.",
+    "tags": ["articles", "definite"]
+  },
+  {
+    "id": "art005",
+    "category": "determinativo-singolare",
+    "sentence": "___ ragazza.",
+    "hint": "ragazza → femminile per consonante",
+    "correct": "la",
+    "options": ["la", "le", "l'", "il"],
+    "explanation": "Davanti a un nome femminile che inizia per consonante si usa la.",
+    "tags": ["articles", "definite"]
+  },
+  {
+    "id": "art006",
+    "category": "determinativo-singolare",
+    "sentence": "___ cane.",
+    "hint": "cane → maschile per consonante normale",
+    "correct": "il",
+    "options": ["il", "lo", "l'", "la"],
+    "explanation": "Davanti a un nome maschile che inizia per consonante semplice si usa il.",
+    "tags": ["articles", "definite"]
+  },
+  {
+    "id": "art007",
+    "category": "determinativo-singolare",
+    "sentence": "___ uomo.",
+    "hint": "uomo → inizia per vocale (u-)",
+    "correct": "l'",
+    "options": ["l'", "il", "lo", "gli"],
+    "explanation": "Davanti a un nome maschile che inizia per vocale si usa l'.",
+    "tags": ["articles", "definite"]
+  },
+  {
+    "id": "art008",
+    "category": "determinativo-singolare",
+    "sentence": "___ professore.",
+    "hint": "professore → consonante semplice (p-)",
+    "correct": "il",
+    "options": ["il", "lo", "l'", "i"],
+    "explanation": "Davanti a un nome maschile che inizia per consonante semplice si usa il.",
+    "tags": ["articles", "definite"]
+  },
+  {
+    "id": "art009",
+    "category": "determinativo-singolare",
+    "sentence": "___ indiano.",
+    "hint": "indiano → inizia per vocale (i-)",
+    "correct": "l'",
+    "options": ["lo", "l'", "il", "la"],
+    "explanation": "Davanti a un nome maschile che inizia per vocale si usa l'.",
+    "tags": ["articles", "definite"]
+  },
+  {
+    "id": "art010",
+    "category": "determinativo-plurale",
+    "sentence": "___ alberi.",
+    "hint": "alberi → maschile plurale, vocale",
+    "correct": "gli",
+    "options": ["gli", "i", "le"],
+    "explanation": "Il plurale maschile davanti a vocale usa gli.",
+    "tags": ["articles", "definite"]
+  },
+  {
+    "id": "art011",
+    "category": "determinativo-plurale",
+    "sentence": "___ studenti.",
+    "hint": "studenti → s + consonante, plurale",
+    "correct": "gli",
+    "options": ["i", "gli", "le"],
+    "explanation": "Il plurale dei nomi maschili con s impura usa gli.",
+    "tags": ["articles", "definite"]
+  },
+  {
+    "id": "art012",
+    "category": "determinativo-plurale",
+    "sentence": "___ cani.",
+    "hint": "cani → maschile plurale, consonante semplice",
+    "correct": "i",
+    "options": ["i", "gli", "le"],
+    "explanation": "Il plurale dei nomi maschili con il singolare il usa i.",
+    "tags": ["articles", "definite"]
+  },
+  {
+    "id": "art013",
+    "category": "determinativo-plurale",
+    "sentence": "___ ragazze.",
+    "hint": "ragazze → femminile plurale",
+    "correct": "le",
+    "options": ["le", "i", "gli"],
+    "explanation": "Il plurale femminile usa sempre le.",
+    "tags": ["articles", "definite"]
+  },
+  {
+    "id": "art014",
+    "category": "determinativo-plurale",
+    "sentence": "___ zii.",
+    "hint": "zii → z, maschile plurale",
+    "correct": "gli",
+    "options": ["gli", "i", "le"],
+    "explanation": "Il plurale dei nomi maschili con il singolare lo usa gli.",
+    "tags": ["articles", "definite"]
+  },
+  {
+    "id": "art015",
+    "category": "determinativo-plurale",
+    "sentence": "___ professori.",
+    "hint": "professori → consonante semplice, plurale",
+    "correct": "i",
+    "options": ["i", "gli", "le"],
+    "explanation": "Il plurale dei nomi maschili con il singolare il usa i.",
+    "tags": ["articles", "definite"]
+  },
+  {
+    "id": "art016",
+    "category": "determinativo-plurale",
+    "sentence": "___ donne.",
+    "hint": "donne → femminile plurale",
+    "correct": "le",
+    "options": ["le", "gli", "i"],
+    "explanation": "Il plurale femminile usa sempre le.",
+    "tags": ["articles", "definite"]
+  },
+  {
+    "id": "art017",
+    "category": "determinativo-plurale",
+    "sentence": "___ psicologi.",
+    "hint": "psicologi → ps-, maschile plurale",
+    "correct": "gli",
+    "options": ["gli", "i", "le"],
+    "explanation": "Il plurale dei nomi maschili con il singolare lo (ps-) usa gli.",
+    "tags": ["articles", "definite"]
+  },
+  {
+    "id": "art018",
+    "category": "indeterminativo",
+    "sentence": "Vorrei ___ libro.",
+    "hint": "libro → maschile, consonante semplice",
+    "correct": "un",
+    "options": ["un", "uno", "una", "un'"],
+    "explanation": "Davanti a un nome maschile con consonante semplice si usa un.",
+    "tags": ["articles", "indefinite"]
+  },
+  {
+    "id": "art019",
+    "category": "indeterminativo",
+    "sentence": "___ studente.",
+    "hint": "studente → s + consonante",
+    "correct": "uno",
+    "options": ["uno", "un", "una", "un'"],
+    "explanation": "Davanti a s impura il maschile indeterminativo usa uno.",
+    "tags": ["articles", "indefinite"]
+  },
+  {
+    "id": "art020",
+    "category": "indeterminativo",
+    "sentence": "___ zio.",
+    "hint": "zio → inizia per z",
+    "correct": "uno",
+    "options": ["un", "uno", "una", "un'"],
+    "explanation": "Davanti a z il maschile indeterminativo usa uno.",
+    "tags": ["articles", "indefinite"]
+  },
+  {
+    "id": "art021",
+    "category": "indeterminativo",
+    "sentence": "___ casa.",
+    "hint": "casa → femminile, consonante",
+    "correct": "una",
+    "options": ["una", "un", "un'", "uno"],
+    "explanation": "Davanti a un nome femminile che inizia per consonante si usa una.",
+    "tags": ["articles", "indefinite"]
+  },
+  {
+    "id": "art022",
+    "category": "indeterminativo",
+    "sentence": "___ italiana.",
+    "hint": "italiana → femminile, inizia per vocale",
+    "correct": "un'",
+    "options": ["un'", "una", "un", "uno"],
+    "explanation": "Davanti a un nome femminile che inizia per vocale si usa un' con l'apostrofo.",
+    "tags": ["articles", "indefinite"]
+  },
+  {
+    "id": "art023",
+    "category": "indeterminativo",
+    "sentence": "___ psicologo.",
+    "hint": "psicologo → ps-",
+    "correct": "uno",
+    "options": ["uno", "un", "una", "un'"],
+    "explanation": "Davanti al gruppo ps il maschile indeterminativo usa uno.",
+    "tags": ["articles", "indefinite"]
+  },
+  {
+    "id": "art024",
+    "category": "indeterminativo",
+    "sentence": "___ ragazza.",
+    "hint": "ragazza → femminile, consonante",
+    "correct": "una",
+    "options": ["una", "un'", "un", "uno"],
+    "explanation": "Davanti a un nome femminile che inizia per consonante si usa una.",
+    "tags": ["articles", "indefinite"]
+  },
+  {
+    "id": "art025",
+    "category": "indeterminativo",
+    "sentence": "___ albero.",
+    "hint": "albero → maschile, inizia per vocale",
+    "correct": "un",
+    "options": ["un", "uno", "un'", "una"],
+    "explanation": "Davanti a un nome maschile che inizia per vocale si usa un senza apostrofo.",
+    "tags": ["articles", "indefinite"]
+  },
+  {
+    "id": "art026",
+    "category": "partitivo",
+    "sentence": "Ho ___ amici francesi.",
+    "hint": "amici → maschile plurale, vocale",
+    "correct": "degli",
+    "options": ["degli", "dei", "delle"],
+    "explanation": "Il partitivo plurale maschile davanti a vocale usa degli.",
+    "tags": ["articles", "indefinite"]
+  },
+  {
+    "id": "art027",
+    "category": "partitivo",
+    "sentence": "___ cani.",
+    "hint": "cani → maschile plurale, consonante semplice",
+    "correct": "dei",
+    "options": ["dei", "degli", "delle"],
+    "explanation": "Il partitivo plurale maschile (singolare il) usa dei.",
+    "tags": ["articles", "indefinite"]
+  },
+  {
+    "id": "art028",
+    "category": "partitivo",
+    "sentence": "___ case.",
+    "hint": "case → femminile plurale",
+    "correct": "delle",
+    "options": ["delle", "dei", "degli"],
+    "explanation": "Il partitivo plurale femminile usa delle.",
+    "tags": ["articles", "indefinite"]
+  },
+  {
+    "id": "art029",
+    "category": "partitivo",
+    "sentence": "___ studenti.",
+    "hint": "studenti → s + consonante, plurale",
+    "correct": "degli",
+    "options": ["degli", "dei", "delle"],
+    "explanation": "Il partitivo plurale maschile con s impura usa degli.",
+    "tags": ["articles", "indefinite"]
+  },
+  {
+    "id": "art030",
+    "category": "partitivo",
+    "sentence": "___ ragazze.",
+    "hint": "ragazze → femminile plurale",
+    "correct": "delle",
+    "options": ["delle", "degli", "dei"],
+    "explanation": "Il partitivo plurale femminile usa delle.",
+    "tags": ["articles", "indefinite"]
+  }
+]

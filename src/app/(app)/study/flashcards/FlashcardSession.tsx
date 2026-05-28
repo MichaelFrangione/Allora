@@ -1,12 +1,12 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { useStudySession } from "@/lib/useStudySession";
 import { useSpeech } from "@/lib/useSpeech";
-import UnitSelector from "@/components/UnitSelector";
-import { getVocabUnit } from "@/lib/content";
+import SubjectSelector from "@/components/SubjectSelector";
+import { tagsMatchSubject, subjectsPresent } from "@/lib/content";
 import type { VocabItem } from "@/lib/content";
 import { cn } from "@/lib/utils";
 import { getBoostEnabled } from "@/components/BoostToggle";
@@ -55,7 +55,8 @@ export default function FlashcardSession({
   initialIds?: string[];
 }) {
   const weakSet = new Set(weakIds);
-  const [unit, setUnit] = useState<number | undefined>(undefined);
+  const [subject, setSubject] = useState<string | undefined>(undefined);
+  const availableSubjects = subjectsPresent(vocab.map((v) => v.tags));
   const [limit, setLimit] = useState<number | null>(30);
   const [started, setStarted] = useState(false);
   const [deck, setDeck] = useState<FlipCard[]>([]);
@@ -66,8 +67,9 @@ export default function FlashcardSession({
   const [done, setDone] = useState(false);
   const { startSession, endSession, recordAttempt } = useStudySession("flashcard");
   const { speak, speaking } = useSpeech();
+  const answeringRef = useRef(false);
 
-  const activeItems = unit ? vocab.filter((v) => getVocabUnit(v) === unit) : vocab;
+  const activeItems = subject ? vocab.filter((v) => tagsMatchSubject(v.tags, subject)) : vocab;
 
   useEffect(() => {
     return () => { endSession(); };
@@ -80,7 +82,7 @@ export default function FlashcardSession({
   }, []);
 
   function beginDrill(filterIds?: string[]) {
-    const active = unit ? vocab.filter((v) => getVocabUnit(v) === unit) : vocab;
+    const active = subject ? vocab.filter((v) => tagsMatchSubject(v.tags, subject)) : vocab;
     const effectiveWeakSet = getBoostEnabled() ? weakSet : new Set<string>();
     let cards: FlipCard[];
     if (filterIds) {
@@ -109,7 +111,8 @@ export default function FlashcardSession({
   const current = deck[index];
 
   async function handleAnswer(correct: boolean) {
-    if (!current) return;
+    if (!current || answeringRef.current) return;
+    answeringRef.current = true;
     await recordAttempt(current.item.id, "flashcard", correct);
     if (!correct) setWrongIds((ids) => [...ids, current.id]);
     setScore((s) => ({
@@ -124,6 +127,7 @@ export default function FlashcardSession({
       setIndex(next);
       setFlipped(false);
     }
+    answeringRef.current = false;
   }
 
   if (!started) {
@@ -134,7 +138,7 @@ export default function FlashcardSession({
     return (
       <div className="max-w-lg mx-auto px-4 py-6 space-y-6">
         <h1 className="text-2xl font-bold">Vocab Flip Cards</h1>
-        <UnitSelector value={unit} onChange={setUnit} />
+        <SubjectSelector subjects={availableSubjects} value={subject} onChange={setSubject} />
         <div>
           <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wide mb-2">Cards per session</p>
           <div className="flex flex-wrap gap-2">
@@ -190,7 +194,7 @@ export default function FlashcardSession({
           </Button>
         )}
         <Button variant="outline" onClick={() => setStarted(false)} className="w-full max-w-xs">
-          Change Unit
+          Change Subject
         </Button>
       </div>
     );
@@ -236,11 +240,27 @@ export default function FlashcardSession({
 
       {/* Card */}
       <div
-        className="min-h-56 flex flex-col items-center justify-center rounded-2xl border-2 border-border bg-card p-8 cursor-pointer select-none active:scale-[0.98] transition-transform text-center gap-3"
+        className="perspective-1000 min-h-56 cursor-pointer select-none rounded-2xl outline-none focus-visible:ring-2 focus-visible:ring-ring"
+        role="button"
+        tabIndex={0}
+        aria-pressed={flipped}
+        aria-label={`Flashcard ${flipped ? "answer" : "prompt"}: ${front}. Press Enter or Space to flip.`}
         onClick={() => setFlipped((f) => !f)}
+        onKeyDown={(e) => {
+          if (e.key === "Enter" || e.key === " ") {
+            e.preventDefault();
+            setFlipped((f) => !f);
+          }
+        }}
       >
-        {!flipped ? (
-          <>
+        <div
+          className={cn(
+            "relative min-h-56 w-full transform-3d transition-transform duration-500",
+            flipped && "rotate-y-180"
+          )}
+        >
+          {/* Front */}
+          <div className="backface-hidden absolute inset-0 flex flex-col items-center justify-center rounded-2xl border-2 border-border bg-card p-8 text-center gap-3">
             <p className="text-xl font-semibold">{front}</p>
             {current.direction === "it→en" && pronunciation && (
               <p className="text-xs text-muted-foreground tracking-wide">{pronunciation}</p>
@@ -250,40 +270,46 @@ export default function FlashcardSession({
                 onClick={(e) => { e.stopPropagation(); speak(current.item.italian); }}
                 className={cn("text-lg mt-1 transition-opacity", speaking ? "opacity-40" : "opacity-60 hover:opacity-100")}
                 aria-label="Hear pronunciation"
+                tabIndex={-1}
               >
                 🔊
               </button>
             )}
             <p className="text-xs text-muted-foreground mt-1">Tap to reveal</p>
-          </>
-        ) : current.direction === "it→en" ? (
-          <>
-            <p className="text-xl font-semibold">{current.item.english}</p>
-            {genderLabel && (
-              <p className="text-sm text-muted-foreground">({genderLabel})</p>
+          </div>
+          {/* Back */}
+          <div className="backface-hidden rotate-y-180 absolute inset-0 flex flex-col items-center justify-center rounded-2xl border-2 border-border bg-card p-8 text-center gap-3">
+            {current.direction === "it→en" ? (
+              <>
+                <p className="text-xl font-semibold">{current.item.english}</p>
+                {genderLabel && (
+                  <p className="text-sm text-muted-foreground">({genderLabel})</p>
+                )}
+                {current.item.example && (
+                  <p className="text-sm text-muted-foreground italic mt-1">{current.item.example}</p>
+                )}
+              </>
+            ) : (
+              <>
+                <p className="text-xl font-semibold">{current.item.italian}</p>
+                {pronunciation && (
+                  <p className="text-xs text-muted-foreground tracking-wide">{pronunciation}</p>
+                )}
+                {genderLabel && (
+                  <p className="text-sm text-muted-foreground">({genderLabel})</p>
+                )}
+                <button
+                  onClick={(e) => { e.stopPropagation(); speak(current.item.italian); }}
+                  className={cn("text-lg mt-1 transition-opacity", speaking ? "opacity-40" : "opacity-60 hover:opacity-100")}
+                  aria-label="Hear pronunciation"
+                  tabIndex={-1}
+                >
+                  🔊
+                </button>
+              </>
             )}
-            {current.item.example && (
-              <p className="text-sm text-muted-foreground italic mt-1">{current.item.example}</p>
-            )}
-          </>
-        ) : (
-          <>
-            <p className="text-xl font-semibold">{current.item.italian}</p>
-            {pronunciation && (
-              <p className="text-xs text-muted-foreground tracking-wide">{pronunciation}</p>
-            )}
-            {genderLabel && (
-              <p className="text-sm text-muted-foreground">({genderLabel})</p>
-            )}
-            <button
-              onClick={(e) => { e.stopPropagation(); speak(current.item.italian); }}
-              className={cn("text-lg mt-1 transition-opacity", speaking ? "opacity-40" : "opacity-60 hover:opacity-100")}
-              aria-label="Hear pronunciation"
-            >
-              🔊
-            </button>
-          </>
-        )}
+          </div>
+        </div>
       </div>
 
       <div className={cn("grid grid-cols-2 gap-3 transition-opacity", !flipped && "opacity-0 pointer-events-none")}>

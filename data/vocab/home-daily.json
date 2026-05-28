@@ -1,0 +1,112 @@
+[
+  {
+    "id": "v096",
+    "italian": "la mattina",
+    "english": "the morning",
+    "gender": "f",
+    "partOfSpeech": "noun",
+    "example": "Di mattina bevo sempre un caffè.",
+    "tags": [
+      "nouns",
+      "time",
+      "daily-life",
+      "lesson-3"
+    ],
+    "unit": 3,
+    "pronunciation": "la mat·TI·na"
+  },
+  {
+    "id": "v097",
+    "italian": "il pomeriggio",
+    "english": "the afternoon",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "Nel pomeriggio vado in palestra.",
+    "tags": [
+      "nouns",
+      "time",
+      "daily-life",
+      "lesson-3"
+    ],
+    "unit": 3,
+    "pronunciation": "po·me·RIJ·jo"
+  },
+  {
+    "id": "v098",
+    "italian": "la sera",
+    "english": "the evening",
+    "gender": "f",
+    "partOfSpeech": "noun",
+    "example": "La sera guardiamo un film.",
+    "tags": [
+      "nouns",
+      "time",
+      "daily-life",
+      "lesson-3"
+    ],
+    "unit": 3,
+    "pronunciation": "la SE·ra"
+  },
+  {
+    "id": "v099",
+    "italian": "la notte",
+    "english": "the night",
+    "gender": "f",
+    "partOfSpeech": "noun",
+    "example": "Di notte fa freddo in inverno.",
+    "tags": [
+      "nouns",
+      "time",
+      "daily-life",
+      "lesson-3"
+    ],
+    "unit": 3,
+    "pronunciation": "la NOT·te"
+  },
+  {
+    "id": "v127",
+    "italian": "il libro",
+    "english": "the book",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "Il libro è sul tavolo.",
+    "tags": [
+      "nouns",
+      "objects",
+      "lesson-4"
+    ],
+    "unit": 4,
+    "pronunciation": "il LI·bro"
+  },
+  {
+    "id": "v128",
+    "italian": "il tavolo",
+    "english": "the table",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "Mangiamo al tavolo.",
+    "tags": [
+      "nouns",
+      "objects",
+      "home",
+      "lesson-4"
+    ],
+    "unit": 4,
+    "pronunciation": "il TA·vo·lo"
+  },
+  {
+    "id": "v135",
+    "italian": "la casa",
+    "english": "the house, home",
+    "gender": "f",
+    "partOfSpeech": "noun",
+    "example": "La nostra casa è grande.",
+    "tags": [
+      "nouns",
+      "home",
+      "lesson-4"
+    ],
+    "unit": 4,
+    "pronunciation": "KA·sa"
+  }
+]

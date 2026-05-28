@@ -4,8 +4,8 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { useStudySession } from "@/lib/useStudySession";
 import { useSpeech } from "@/lib/useSpeech";
-import UnitSelector from "@/components/UnitSelector";
-import { getVocabUnit } from "@/lib/content";
+import SubjectSelector from "@/components/SubjectSelector";
+import { tagsMatchSubject, subjectsPresent } from "@/lib/content";
 import type { VocabItem, PronunciationRule } from "@/lib/content";
 import { cn } from "@/lib/utils";
 import { getBoostEnabled } from "@/components/BoostToggle";
@@ -33,7 +33,8 @@ export default function PronunciationDrill({
   rules?: PronunciationRule[];
 }) {
   const [mode, setMode] = useState<DrillMode>("vocab");
-  const [unit, setUnit] = useState<number | undefined>(undefined);
+  const [subject, setSubject] = useState<string | undefined>(undefined);
+  const availableSubjects = subjectsPresent(items.map((v) => v.tags));
   const [limit, setLimit] = useState<number | null>(30);
   const [started, setStarted] = useState(false);
   const [deck, setDeck] = useState<(VocabItem | PronunciationRule)[]>([]);
@@ -45,7 +46,7 @@ export default function PronunciationDrill({
   const { startSession, endSession, recordAttempt } = useStudySession("pronunciation");
   const { speak, speaking } = useSpeech();
 
-  const activeItems = unit ? items.filter((v) => getVocabUnit(v) === unit) : items;
+  const activeItems = subject ? items.filter((v) => tagsMatchSubject(v.tags, subject)) : items;
   const setupCount = mode === "rules"
     ? rules.length
     : limit !== null ? Math.min(limit, activeItems.length) : activeItems.length;
@@ -57,7 +58,7 @@ export default function PronunciationDrill({
     } else if (filterIds) {
       pool = shuffle(items.filter((v) => filterIds.includes(v.id)));
     } else {
-      const active = unit ? items.filter((v) => getVocabUnit(v) === unit) : items;
+      const active = subject ? items.filter((v) => tagsMatchSubject(v.tags, subject)) : items;
       const weakSet = new Set(weakIds);
       const boostEnabled = getBoostEnabled();
       const weighted: VocabItem[] = [];
@@ -145,7 +146,7 @@ export default function PronunciationDrill({
 
         {mode === "vocab" && (
           <>
-            <UnitSelector value={unit} onChange={setUnit} />
+            <SubjectSelector subjects={availableSubjects} value={subject} onChange={setSubject} />
             <div>
               <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wide mb-2">Cards per session</p>
               <div className="flex flex-wrap gap-2">

@@ -429,6 +429,14 @@ export default function TimeQuiz() {
       <div className="max-w-lg mx-auto px-4 py-6 space-y-6">
         <h1 className="text-2xl font-bold">Time &amp; Dates Quiz</h1>
 
+        <div className="rounded-xl border border-primary/30 bg-primary/5 px-4 py-3">
+          <p className="text-xs font-semibold uppercase tracking-wide text-primary mb-1">How it works</p>
+          <p className="text-sm text-muted-foreground">
+            Read the prompt and choose the correct answer — telling the time, days of the week, months,
+            and seasons in Italian.
+          </p>
+        </div>
+
         <div className="space-y-2">
           <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">Category</p>
           <div className="flex flex-wrap gap-2">

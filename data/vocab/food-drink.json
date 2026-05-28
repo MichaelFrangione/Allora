@@ -1,0 +1,767 @@
+[
+  {
+    "id": "v138",
+    "italian": "il ristorante",
+    "english": "the restaurant",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "Il ristorante apre alle dodici.",
+    "tags": [
+      "nouns",
+      "food",
+      "places",
+      "lesson-4"
+    ],
+    "unit": 4,
+    "pronunciation": "il ri·sto·RAN·te"
+  },
+  {
+    "id": "v169",
+    "italian": "pane",
+    "english": "bread",
+    "gender": "maschile",
+    "partOfSpeech": "noun",
+    "example": "Mi piace il pane fresco.",
+    "tags": [
+      "nouns",
+      "food",
+      "e-nouns",
+      "lesson-5"
+    ],
+    "unit": 5,
+    "pronunciation": "PA·ne"
+  },
+  {
+    "id": "v171",
+    "italian": "ristorante",
+    "english": "restaurant",
+    "gender": "maschile",
+    "partOfSpeech": "noun",
+    "example": "Andiamo al ristorante stasera.",
+    "tags": [
+      "nouns",
+      "food",
+      "places",
+      "e-nouns",
+      "lesson-5"
+    ],
+    "unit": 5,
+    "pronunciation": "ri·sto·RAN·te"
+  },
+  {
+    "id": "v178",
+    "italian": "caffè",
+    "english": "coffee",
+    "gender": "maschile",
+    "partOfSpeech": "noun",
+    "example": "Prendo un caffè al bar ogni mattina.",
+    "tags": [
+      "nouns",
+      "food",
+      "bar",
+      "lesson-6"
+    ],
+    "unit": 6,
+    "pronunciation": "kaf·FÈ"
+  },
+  {
+    "id": "v179",
+    "italian": "cappuccino",
+    "english": "cappuccino",
+    "gender": "maschile",
+    "partOfSpeech": "noun",
+    "example": "Voglio un cappuccino con molta schiuma.",
+    "tags": [
+      "nouns",
+      "food",
+      "bar",
+      "lesson-6"
+    ],
+    "unit": 6,
+    "pronunciation": "kap·puk·KI·no"
+  },
+  {
+    "id": "v180",
+    "italian": "cornetto",
+    "english": "pastry / croissant",
+    "gender": "maschile",
+    "partOfSpeech": "noun",
+    "example": "Il cornetto alla nutella è buonissimo.",
+    "tags": [
+      "nouns",
+      "food",
+      "bar",
+      "lesson-6"
+    ],
+    "unit": 6,
+    "pronunciation": "cor·NET·to"
+  },
+  {
+    "id": "v181",
+    "italian": "colazione",
+    "english": "breakfast",
+    "gender": "femminile",
+    "partOfSpeech": "noun",
+    "example": "Faccio colazione al bar ogni giorno.",
+    "tags": [
+      "nouns",
+      "food",
+      "bar",
+      "e-nouns",
+      "lesson-6"
+    ],
+    "unit": 6,
+    "pronunciation": "ko·la·TSYO·ne"
+  },
+  {
+    "id": "v182",
+    "italian": "bar",
+    "english": "café / coffee bar",
+    "gender": "maschile",
+    "partOfSpeech": "noun",
+    "example": "Andiamo al bar a prendere un caffè.",
+    "tags": [
+      "nouns",
+      "places",
+      "bar",
+      "lesson-6"
+    ],
+    "unit": 6,
+    "pronunciation": "BAR"
+  },
+  {
+    "id": "v183",
+    "italian": "schiuma",
+    "english": "foam",
+    "gender": "femminile",
+    "partOfSpeech": "noun",
+    "example": "Vorrei il cappuccino con poca schiuma.",
+    "tags": [
+      "nouns",
+      "food",
+      "bar",
+      "lesson-6"
+    ],
+    "unit": 6,
+    "pronunciation": "SKYU·ma"
+  },
+  {
+    "id": "v184",
+    "italian": "zucchero",
+    "english": "sugar",
+    "gender": "maschile",
+    "partOfSpeech": "noun",
+    "example": "Prendo il caffè senza zucchero.",
+    "tags": [
+      "nouns",
+      "food",
+      "bar",
+      "lesson-6"
+    ],
+    "unit": 6,
+    "pronunciation": "TSUK·ke·ro"
+  },
+  {
+    "id": "v185",
+    "italian": "tramezzino",
+    "english": "sandwich (triangle)",
+    "gender": "maschile",
+    "partOfSpeech": "noun",
+    "example": "Prendo un tramezzino al tonno.",
+    "tags": [
+      "nouns",
+      "food",
+      "bar",
+      "lesson-6"
+    ],
+    "unit": 6,
+    "pronunciation": "tra·med·DZEE·no"
+  },
+  {
+    "id": "v186",
+    "italian": "biscotto",
+    "english": "biscuit / cookie",
+    "gender": "maschile",
+    "partOfSpeech": "noun",
+    "example": "Mi piacciono i biscotti al cioccolato.",
+    "tags": [
+      "nouns",
+      "food",
+      "bar",
+      "lesson-6"
+    ],
+    "unit": 6,
+    "pronunciation": "bi·SKOT·to"
+  },
+  {
+    "id": "v187",
+    "italian": "succo",
+    "english": "juice",
+    "gender": "maschile",
+    "partOfSpeech": "noun",
+    "example": "Voglio un succo di frutta, per favore.",
+    "tags": [
+      "nouns",
+      "food",
+      "bar",
+      "lesson-6"
+    ],
+    "unit": 6,
+    "pronunciation": "SUK·ko"
+  },
+  {
+    "id": "v188",
+    "italian": "marmellata",
+    "english": "jam",
+    "gender": "femminile",
+    "partOfSpeech": "noun",
+    "example": "Le fette biscottate con la marmellata sono buone.",
+    "tags": [
+      "nouns",
+      "food",
+      "bar",
+      "lesson-6"
+    ],
+    "unit": 6,
+    "pronunciation": "mar·mel·LA·ta"
+  },
+  {
+    "id": "v189",
+    "italian": "burro",
+    "english": "butter",
+    "gender": "maschile",
+    "partOfSpeech": "noun",
+    "example": "Il pane con il burro è la mia colazione preferita.",
+    "tags": [
+      "nouns",
+      "food",
+      "bar",
+      "lesson-6"
+    ],
+    "unit": 6,
+    "pronunciation": "BUR·ro"
+  },
+  {
+    "id": "v190",
+    "italian": "conto",
+    "english": "bill / check",
+    "gender": "maschile",
+    "partOfSpeech": "noun",
+    "example": "Scusi, quanto è il conto?",
+    "tags": [
+      "nouns",
+      "bar",
+      "money",
+      "lesson-6"
+    ],
+    "unit": 6,
+    "pronunciation": "KON·to"
+  },
+  {
+    "id": "v191",
+    "italian": "resto",
+    "english": "change (money)",
+    "gender": "maschile",
+    "partOfSpeech": "noun",
+    "example": "Tenga il resto, grazie.",
+    "tags": [
+      "nouns",
+      "bar",
+      "money",
+      "lesson-6"
+    ],
+    "unit": 6,
+    "pronunciation": "RE·sto"
+  },
+  {
+    "id": "v205",
+    "italian": "caldo",
+    "english": "warm / hot",
+    "gender": null,
+    "partOfSpeech": "adjective",
+    "example": "Il caffè è caldo e buono.",
+    "tags": [
+      "adjectives",
+      "descriptions",
+      "concordanza",
+      "bar",
+      "lesson-6"
+    ],
+    "unit": 6,
+    "pronunciation": "KAL·do"
+  },
+  {
+    "id": "v206",
+    "italian": "freddo",
+    "english": "cold",
+    "gender": null,
+    "partOfSpeech": "adjective",
+    "example": "Preferisci il caffè freddo o caldo?",
+    "tags": [
+      "adjectives",
+      "descriptions",
+      "concordanza",
+      "bar",
+      "lesson-6"
+    ],
+    "unit": 6,
+    "pronunciation": "FRED·do"
+  },
+  {
+    "id": "v208",
+    "italian": "squisito",
+    "english": "exquisite / delicious",
+    "gender": null,
+    "partOfSpeech": "adjective",
+    "example": "Il cornetto alla crema è squisito!",
+    "tags": [
+      "adjectives",
+      "descriptions",
+      "concordanza",
+      "bar",
+      "lesson-6"
+    ],
+    "unit": 6,
+    "pronunciation": "SKWEE·si·to"
+  },
+  {
+    "id": "v216",
+    "italian": "pizzetta",
+    "english": "small pizza",
+    "gender": "femminile",
+    "partOfSpeech": "noun",
+    "example": "Mi piace la pizzetta al pomodoro.",
+    "tags": [
+      "nouns",
+      "food",
+      "bar",
+      "lesson-6"
+    ],
+    "unit": 6,
+    "pronunciation": "pit·TSET·ta"
+  },
+  {
+    "id": "v217",
+    "italian": "panino",
+    "english": "bread roll / sandwich",
+    "gender": "maschile",
+    "partOfSpeech": "noun",
+    "example": "Prendo un panino al prosciutto.",
+    "tags": [
+      "nouns",
+      "food",
+      "bar",
+      "lesson-6"
+    ],
+    "unit": 6,
+    "pronunciation": "pa·NI·no"
+  },
+  {
+    "id": "v218",
+    "italian": "spremuta",
+    "english": "freshly squeezed juice",
+    "gender": "femminile",
+    "partOfSpeech": "noun",
+    "example": "Una spremuta d'arancia, per favore.",
+    "tags": [
+      "nouns",
+      "food",
+      "bar",
+      "lesson-6"
+    ],
+    "unit": 6,
+    "pronunciation": "spre·MU·ta"
+  },
+  {
+    "id": "v242",
+    "italian": "trattoria",
+    "english": "traditional Italian restaurant",
+    "gender": "femminile",
+    "partOfSpeech": "noun",
+    "example": "La trattoria di Mario è famosissima.",
+    "tags": [
+      "nouns",
+      "restaurant",
+      "lesson-8"
+    ],
+    "unit": 8,
+    "pronunciation": "trat·to·RI·a"
+  },
+  {
+    "id": "v243",
+    "italian": "pizzeria",
+    "english": "pizza restaurant",
+    "gender": "femminile",
+    "partOfSpeech": "noun",
+    "example": "Andiamo in pizzeria stasera?",
+    "tags": [
+      "nouns",
+      "restaurant",
+      "lesson-8"
+    ],
+    "unit": 8,
+    "pronunciation": "pit·tse·RI·a"
+  },
+  {
+    "id": "v244",
+    "italian": "taverna",
+    "english": "tavern",
+    "gender": "femminile",
+    "partOfSpeech": "noun",
+    "example": "La taverna serve vino locale.",
+    "tags": [
+      "nouns",
+      "restaurant",
+      "lesson-8"
+    ],
+    "unit": 8,
+    "pronunciation": "ta·VER·na"
+  },
+  {
+    "id": "v245",
+    "italian": "osteria",
+    "english": "osteria / wine bar",
+    "gender": "femminile",
+    "partOfSpeech": "noun",
+    "example": "L'osteria ha dei vini ottimi.",
+    "tags": [
+      "nouns",
+      "restaurant",
+      "lesson-8"
+    ],
+    "unit": 8,
+    "pronunciation": "oste·RI·a"
+  },
+  {
+    "id": "v246",
+    "italian": "antipasto",
+    "english": "starter / appetizer",
+    "gender": "maschile",
+    "partOfSpeech": "noun",
+    "example": "Come antipasto prendiamo la bruschetta.",
+    "tags": [
+      "nouns",
+      "food",
+      "restaurant",
+      "lesson-8"
+    ],
+    "unit": 8,
+    "pronunciation": "an·ti·PA·sto"
+  },
+  {
+    "id": "v247",
+    "italian": "primo",
+    "english": "first course",
+    "gender": "maschile",
+    "partOfSpeech": "noun",
+    "example": "Di primo vorrei le tagliatelle al ragù.",
+    "tags": [
+      "nouns",
+      "food",
+      "restaurant",
+      "lesson-8"
+    ],
+    "unit": 8,
+    "pronunciation": "PRI·mo"
+  },
+  {
+    "id": "v248",
+    "italian": "secondo",
+    "english": "main course",
+    "gender": "maschile",
+    "partOfSpeech": "noun",
+    "example": "Di secondo prendo la tagliata.",
+    "tags": [
+      "nouns",
+      "food",
+      "restaurant",
+      "lesson-8"
+    ],
+    "unit": 8,
+    "pronunciation": "se·KON·do"
+  },
+  {
+    "id": "v249",
+    "italian": "contorno",
+    "english": "side dish",
+    "gender": "maschile",
+    "partOfSpeech": "noun",
+    "example": "Come contorno, un'insalata mista.",
+    "tags": [
+      "nouns",
+      "food",
+      "restaurant",
+      "lesson-8"
+    ],
+    "unit": 8,
+    "pronunciation": "kon·TOR·no"
+  },
+  {
+    "id": "v250",
+    "italian": "dolce",
+    "english": "dessert / sweet",
+    "gender": "maschile",
+    "partOfSpeech": "noun",
+    "example": "Per il dolce ripasso dopo.",
+    "tags": [
+      "nouns",
+      "food",
+      "restaurant",
+      "lesson-8"
+    ],
+    "unit": 8,
+    "pronunciation": "DOL·che"
+  },
+  {
+    "id": "v251",
+    "italian": "cameriere",
+    "english": "waiter",
+    "gender": "maschile",
+    "partOfSpeech": "noun",
+    "example": "Scusi, cameriere! Può portare il conto?",
+    "tags": [
+      "nouns",
+      "restaurant",
+      "lesson-8"
+    ],
+    "unit": 8,
+    "pronunciation": "ka·me·RYE·re"
+  },
+  {
+    "id": "v252",
+    "italian": "cliente",
+    "english": "customer",
+    "gender": "maschile",
+    "partOfSpeech": "noun",
+    "example": "Il cliente ordina il primo piatto.",
+    "tags": [
+      "nouns",
+      "restaurant",
+      "lesson-8"
+    ],
+    "unit": 8,
+    "pronunciation": "KLYEN·te"
+  },
+  {
+    "id": "v253",
+    "italian": "bottiglia",
+    "english": "bottle",
+    "gender": "femminile",
+    "partOfSpeech": "noun",
+    "example": "Prendiamo una bottiglia di vino rosso.",
+    "tags": [
+      "nouns",
+      "restaurant",
+      "lesson-8"
+    ],
+    "unit": 8,
+    "pronunciation": "bot·TI·lya"
+  },
+  {
+    "id": "v254",
+    "italian": "specialità",
+    "english": "specialty",
+    "gender": "femminile",
+    "partOfSpeech": "noun",
+    "example": "La nostra specialità è la tagliata.",
+    "tags": [
+      "nouns",
+      "restaurant",
+      "lesson-8"
+    ],
+    "unit": 8,
+    "pronunciation": "spe·cha·li·TA"
+  },
+  {
+    "id": "v255",
+    "italian": "ravioli",
+    "english": "ravioli",
+    "gender": "maschile",
+    "partOfSpeech": "noun",
+    "example": "I ravioli ai funghi porcini sono squisiti.",
+    "tags": [
+      "nouns",
+      "food",
+      "pasta",
+      "restaurant",
+      "lesson-8"
+    ],
+    "unit": 8,
+    "pronunciation": "ra·VYO·li"
+  },
+  {
+    "id": "v256",
+    "italian": "tagliatelle",
+    "english": "tagliatelle",
+    "gender": "femminile",
+    "partOfSpeech": "noun",
+    "example": "Le tagliatelle al ragù sono tipiche di Bologna.",
+    "tags": [
+      "nouns",
+      "food",
+      "pasta",
+      "restaurant",
+      "lesson-8"
+    ],
+    "unit": 8,
+    "pronunciation": "ta·lya·TEL·le"
+  },
+  {
+    "id": "v257",
+    "italian": "funghi",
+    "english": "mushrooms",
+    "gender": "maschile",
+    "partOfSpeech": "noun",
+    "example": "I funghi porcini sono molto saporiti.",
+    "tags": [
+      "nouns",
+      "food",
+      "lesson-8"
+    ],
+    "unit": 8,
+    "pronunciation": "FUN·gi"
+  },
+  {
+    "id": "v258",
+    "italian": "insalata",
+    "english": "salad",
+    "gender": "femminile",
+    "partOfSpeech": "noun",
+    "example": "Un'insalata mista come contorno, grazie.",
+    "tags": [
+      "nouns",
+      "food",
+      "restaurant",
+      "lesson-8"
+    ],
+    "unit": 8,
+    "pronunciation": "in·sa·LA·ta"
+  },
+  {
+    "id": "v259",
+    "italian": "tagliata",
+    "english": "grilled sliced steak",
+    "gender": "femminile",
+    "partOfSpeech": "noun",
+    "example": "La tagliata al radicchio è la specialità della casa.",
+    "tags": [
+      "nouns",
+      "food",
+      "restaurant",
+      "lesson-8"
+    ],
+    "unit": 8,
+    "pronunciation": "ta·LYA·ta"
+  },
+  {
+    "id": "v260",
+    "italian": "aperitivo",
+    "english": "aperitif",
+    "gender": "maschile",
+    "partOfSpeech": "noun",
+    "example": "Gli italiani amano fare l'aperitivo dopo il lavoro.",
+    "tags": [
+      "nouns",
+      "drinks",
+      "culture",
+      "lesson-8"
+    ],
+    "unit": 8,
+    "pronunciation": "a·pe·ri·TI·vo"
+  },
+  {
+    "id": "v261",
+    "italian": "stuzzichini",
+    "english": "bar snacks",
+    "gender": "maschile",
+    "partOfSpeech": "noun",
+    "example": "Durante l'aperitivo si mangiano gli stuzzichini.",
+    "tags": [
+      "nouns",
+      "food",
+      "culture",
+      "lesson-8"
+    ],
+    "unit": 8,
+    "pronunciation": "stut·tsi·KI·ni"
+  },
+  {
+    "id": "v262",
+    "italian": "vino",
+    "english": "wine",
+    "gender": "maschile",
+    "partOfSpeech": "noun",
+    "example": "Prendiamo una bottiglia di vino rosso.",
+    "tags": [
+      "nouns",
+      "drinks",
+      "restaurant",
+      "lesson-8"
+    ],
+    "unit": 8,
+    "pronunciation": "VI·no"
+  },
+  {
+    "id": "v263",
+    "italian": "acqua",
+    "english": "water",
+    "gender": "femminile",
+    "partOfSpeech": "noun",
+    "example": "Una bottiglia di acqua frizzante, per favore.",
+    "tags": [
+      "nouns",
+      "drinks",
+      "restaurant",
+      "lesson-8"
+    ],
+    "unit": 8,
+    "pronunciation": "AK·kwa"
+  },
+  {
+    "id": "v264",
+    "italian": "pesce",
+    "english": "fish",
+    "gender": "maschile",
+    "partOfSpeech": "noun",
+    "example": "Mangiamo pesce o carne stasera?",
+    "tags": [
+      "nouns",
+      "food",
+      "restaurant",
+      "lesson-8"
+    ],
+    "unit": 8,
+    "pronunciation": "PE·she"
+  },
+  {
+    "id": "v265",
+    "italian": "carne",
+    "english": "meat",
+    "gender": "femminile",
+    "partOfSpeech": "noun",
+    "example": "La tagliata è un secondo di carne.",
+    "tags": [
+      "nouns",
+      "food",
+      "restaurant",
+      "lesson-8"
+    ],
+    "unit": 8,
+    "pronunciation": "KAR·ne"
+  },
+  {
+    "id": "v266",
+    "italian": "menù",
+    "english": "menu",
+    "gender": "maschile",
+    "partOfSpeech": "noun",
+    "example": "Può portare il menù, per favore?",
+    "tags": [
+      "nouns",
+      "restaurant",
+      "lesson-8"
+    ],
+    "unit": 8,
+    "pronunciation": "me·NU"
+  }
+]

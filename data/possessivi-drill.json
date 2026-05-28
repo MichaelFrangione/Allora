@@ -98,5 +98,75 @@
     "options": ["suo", "il suo", "la sua", "i suoi"],
     "explanation": "FRATELLO (m.sg. family member) → drop the article. 'Suo fratello' ✓.",
     "tags": ["possessivi", "family", "lesson-6"]
+  },
+  {
+    "id": "pos011",
+    "prompt": "Pluralize: La tua casa.",
+    "sentence": "La tua casa → ___.",
+    "hint": "casa is feminine plural",
+    "correct": "le tue case",
+    "options": ["le tue case", "i tuoi case", "le tua case", "le tue casa"],
+    "explanation": "Possessives agree in gender and number: la tua casa → le tue case.",
+    "tags": ["possessives", "agreement"]
+  },
+  {
+    "id": "pos012",
+    "prompt": "Pluralize: Il mio amico.",
+    "sentence": "Il mio amico → ___.",
+    "hint": "amico is masculine plural",
+    "correct": "i miei amici",
+    "options": ["i miei amici", "i mio amici", "i miei amico", "le mie amici"],
+    "explanation": "Il mio amico → i miei amici (mio → miei).",
+    "tags": ["possessives", "agreement"]
+  },
+  {
+    "id": "pos013",
+    "prompt": "Pluralize: Il suo libro.",
+    "sentence": "Il suo libro → ___.",
+    "hint": "libro is masculine plural",
+    "correct": "i suoi libri",
+    "options": ["i suoi libri", "i sui libri", "i suoi libro", "le sue libri"],
+    "explanation": "Il suo libro → i suoi libri (suo → suoi).",
+    "tags": ["possessives", "agreement"]
+  },
+  {
+    "id": "pos014",
+    "prompt": "Pluralize: Il loro giornale.",
+    "sentence": "Il loro giornale → ___.",
+    "hint": "loro is invariable",
+    "correct": "i loro giornali",
+    "options": ["i loro giornali", "i lori giornali", "le loro giornali", "i loro giornale"],
+    "explanation": "LORO never changes; only the article and noun become plural: i loro giornali.",
+    "tags": ["possessives", "agreement"]
+  },
+  {
+    "id": "pos015",
+    "prompt": "Dormo sempre nel ___ letto.",
+    "sentence": "Dormo sempre nel ___ letto.",
+    "hint": "io → mio | letto = m.sg.",
+    "correct": "mio",
+    "options": ["mio", "mia", "miei", "tuo"],
+    "explanation": "Io → mio; letto is masculine singular → mio.",
+    "tags": ["possessives"]
+  },
+  {
+    "id": "pos016",
+    "prompt": "Mia madre si chiama Paola.",
+    "sentence": "___ madre si chiama Paola.",
+    "hint": "madre = f.sg. family member → drop the article",
+    "correct": "Mia",
+    "options": ["Mia", "La mia", "Mie", "Il mio"],
+    "explanation": "Singular family members drop the article: 'Mia madre' ✓ (not 'La mia madre').",
+    "tags": ["possessives", "family"]
+  },
+  {
+    "id": "pos017",
+    "prompt": "Plural family members KEEP the article.",
+    "sentence": "___ nonni sono molto vecchi.",
+    "hint": "nonni = plural family → keep the article | io → miei",
+    "correct": "I miei",
+    "options": ["I miei", "Miei", "Mie", "I mio"],
+    "explanation": "With PLURAL family members the article stays: 'I miei nonni' ✓.",
+    "tags": ["possessives", "family"]
   }
 ]

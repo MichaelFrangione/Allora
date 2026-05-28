@@ -3,6 +3,66 @@ import Link from "next/link";
 
 const drills = [
   {
+    href: "/study/saluti",
+    label: "Saluti",
+    emoji: "👋",
+    desc: "Greetings & farewells — ciao, buongiorno, arrivederci",
+  },
+  {
+    href: "/study/interrogativi",
+    label: "Interrogativi",
+    emoji: "❓",
+    desc: "Question words — chi, cosa, come, quando, dove",
+  },
+  {
+    href: "/study/dimostrativi",
+    label: "Dimostrativi",
+    emoji: "👆",
+    desc: "This & that — questo, quello, questi, quelli",
+  },
+  {
+    href: "/study/riflessivi",
+    label: "Verbi Riflessivi",
+    emoji: "🔁",
+    desc: "Reflexive verbs — mi sveglio, ti vesti, si diverte",
+  },
+  {
+    href: "/study/pronomi",
+    label: "Pronomi",
+    emoji: "👉",
+    desc: "Subject, reflexive, direct- and indirect-object pronouns",
+  },
+  {
+    href: "/study/essere-avere",
+    label: "Essere & Avere",
+    emoji: "🟰",
+    desc: "The two key verbs, plus avere fame / sete / sonno",
+  },
+  {
+    href: "/study/articoli",
+    label: "Articoli",
+    emoji: "📰",
+    desc: "il / lo / un / dei — definite, indefinite, partitive",
+  },
+  {
+    href: "/study/genere",
+    label: "Il Genere dei Nomi",
+    emoji: "⚥",
+    desc: "Masculine or feminine — endings and exceptions",
+  },
+  {
+    href: "/study/plurali",
+    label: "Il Plurale dei Nomi",
+    emoji: "➕",
+    desc: "Regular, spelling-change, and irregular plurals",
+  },
+  {
+    href: "/study/aggettivi",
+    label: "Gli Aggettivi",
+    emoji: "🎨",
+    desc: "Agreement, plus bello and buono",
+  },
+  {
     href: "/study/modal-verbs",
     label: "Verbi Modali",
     emoji: "🔧",

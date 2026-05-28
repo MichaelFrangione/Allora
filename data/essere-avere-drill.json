@@ -1,0 +1,222 @@
+[
+  {
+    "id": "eav001",
+    "category": "essere",
+    "sentence": "Il libro ___ sul tavolo.",
+    "hint": "Subject: il libro (3rd person singular).",
+    "correct": "è",
+    "options": ["sono", "è", "sei", "siamo"],
+    "explanation": "With a singular subject (lui/lei/it) the present of ESSERE is 'è'.",
+    "tags": ["essere-avere", "verb-essere"]
+  },
+  {
+    "id": "eav002",
+    "category": "essere",
+    "sentence": "Claudio e Teresa ___ a Roma.",
+    "hint": "Subject: two people (loro, 3rd person plural).",
+    "correct": "sono",
+    "options": ["è", "siete", "sono", "siamo"],
+    "explanation": "With a plural subject (loro) the present of ESSERE is 'sono'.",
+    "tags": ["essere-avere", "verb-essere"]
+  },
+  {
+    "id": "eav003",
+    "category": "essere",
+    "sentence": "(Noi) ___ amici.",
+    "hint": "Subject: noi (1st person plural).",
+    "correct": "siamo",
+    "options": ["siete", "siamo", "sono", "sei"],
+    "explanation": "The present of ESSERE for 'noi' (we) is 'siamo'.",
+    "tags": ["essere-avere", "verb-essere"]
+  },
+  {
+    "id": "eav004",
+    "category": "essere",
+    "sentence": "(Voi) ___ simpatici.",
+    "hint": "Subject: voi (2nd person plural).",
+    "correct": "siete",
+    "options": ["siamo", "sono", "siete", "è"],
+    "explanation": "The present of ESSERE for 'voi' (you all) is 'siete'.",
+    "tags": ["essere-avere", "verb-essere"]
+  },
+  {
+    "id": "eav005",
+    "category": "essere",
+    "sentence": "(Tu) ___ carina.",
+    "hint": "Subject: tu (2nd person singular).",
+    "correct": "sei",
+    "options": ["è", "sei", "sono", "siete"],
+    "explanation": "The present of ESSERE for 'tu' (you) is 'sei'.",
+    "tags": ["essere-avere", "verb-essere"]
+  },
+  {
+    "id": "eav006",
+    "category": "essere",
+    "sentence": "(Io) ___ spagnolo.",
+    "hint": "Subject: io (1st person singular).",
+    "correct": "sono",
+    "options": ["sei", "siamo", "sono", "è"],
+    "explanation": "The present of ESSERE for 'io' (I) is 'sono'.",
+    "tags": ["essere-avere", "verb-essere"]
+  },
+  {
+    "id": "eav007",
+    "category": "essere",
+    "sentence": "Maria ___ italiana.",
+    "hint": "Subject: Maria (3rd person singular).",
+    "correct": "è",
+    "options": ["sei", "è", "siamo", "sono"],
+    "explanation": "With a singular subject (lei) the present of ESSERE is 'è'.",
+    "tags": ["essere-avere", "verb-essere"]
+  },
+  {
+    "id": "eav008",
+    "category": "essere",
+    "sentence": "(Noi) ___ stanchi dopo il viaggio.",
+    "hint": "Subject: noi (1st person plural).",
+    "correct": "siamo",
+    "options": ["sono", "siete", "siamo", "è"],
+    "explanation": "The present of ESSERE for 'noi' (we) is 'siamo'.",
+    "tags": ["essere-avere", "verb-essere"]
+  },
+  {
+    "id": "eav009",
+    "category": "avere",
+    "sentence": "Luca ___ un cane.",
+    "hint": "Subject: Luca (3rd person singular).",
+    "correct": "ha",
+    "options": ["ho", "hai", "ha", "hanno"],
+    "explanation": "With a singular subject (lui/lei) the present of AVERE is 'ha'.",
+    "tags": ["essere-avere", "verb-avere"]
+  },
+  {
+    "id": "eav010",
+    "category": "avere",
+    "sentence": "Lara ___ una macchina nuova.",
+    "hint": "Subject: Lara (3rd person singular).",
+    "correct": "ha",
+    "options": ["hai", "ha", "abbiamo", "ho"],
+    "explanation": "With a singular subject (lei) the present of AVERE is 'ha'.",
+    "tags": ["essere-avere", "verb-avere"]
+  },
+  {
+    "id": "eav011",
+    "category": "avere",
+    "sentence": "Io ___ una piccola casa a Venezia.",
+    "hint": "Subject: io (1st person singular).",
+    "correct": "ho",
+    "options": ["ha", "ho", "hai", "avete"],
+    "explanation": "The present of AVERE for 'io' (I) is 'ho'.",
+    "tags": ["essere-avere", "verb-avere"]
+  },
+  {
+    "id": "eav012",
+    "category": "avere",
+    "sentence": "Tu ___ un lavoro interessante.",
+    "hint": "Subject: tu (2nd person singular).",
+    "correct": "hai",
+    "options": ["ho", "ha", "hai", "hanno"],
+    "explanation": "The present of AVERE for 'tu' (you) is 'hai'.",
+    "tags": ["essere-avere", "verb-avere"]
+  },
+  {
+    "id": "eav013",
+    "category": "avere",
+    "sentence": "Luca e Stefania ___ un cane.",
+    "hint": "Subject: two people (loro, 3rd person plural).",
+    "correct": "hanno",
+    "options": ["ha", "avete", "hanno", "abbiamo"],
+    "explanation": "With a plural subject (loro) the present of AVERE is 'hanno'.",
+    "tags": ["essere-avere", "verb-avere"]
+  },
+  {
+    "id": "eav014",
+    "category": "avere",
+    "sentence": "Tu e tuo fratello ___ un lavoro interessante.",
+    "hint": "Subject: voi (2nd person plural).",
+    "correct": "avete",
+    "options": ["abbiamo", "avete", "hanno", "hai"],
+    "explanation": "The present of AVERE for 'voi' (you all) is 'avete'.",
+    "tags": ["essere-avere", "verb-avere"]
+  },
+  {
+    "id": "eav015",
+    "category": "avere",
+    "sentence": "(Noi) ___ molti amici a Milano.",
+    "hint": "Subject: noi (1st person plural).",
+    "correct": "abbiamo",
+    "options": ["avete", "hanno", "abbiamo", "ho"],
+    "explanation": "The present of AVERE for 'noi' (we) is 'abbiamo'.",
+    "tags": ["essere-avere", "verb-avere"]
+  },
+  {
+    "id": "eav016",
+    "category": "avere",
+    "sentence": "I bambini ___ molti giocattoli.",
+    "hint": "Subject: i bambini (loro, 3rd person plural).",
+    "correct": "hanno",
+    "options": ["ha", "hanno", "avete", "abbiamo"],
+    "explanation": "With a plural subject (loro) the present of AVERE is 'hanno'.",
+    "tags": ["essere-avere", "verb-avere"]
+  },
+  {
+    "id": "eav017",
+    "category": "espressioni-avere",
+    "sentence": "Vado al bar a comprare una birra; fa molto caldo e ho ___.",
+    "hint": "What do you feel when it's hot and you want a drink?",
+    "correct": "sete",
+    "options": ["fame", "sonno", "sete", "paura"],
+    "explanation": "Italian uses AVERE for physical states: 'avere sete' = to be thirsty (literally 'to have thirst').",
+    "tags": ["essere-avere", "verb-avere"]
+  },
+  {
+    "id": "eav018",
+    "category": "espressioni-avere",
+    "sentence": "Loro tornano a casa presto. Hanno ___ per strada di sera.",
+    "hint": "What do you feel walking alone at night?",
+    "correct": "paura",
+    "options": ["20 anni", "freddo", "fame", "paura"],
+    "explanation": "Italian uses AVERE for emotions/states: 'avere paura' = to be afraid (literally 'to have fear').",
+    "tags": ["essere-avere", "verb-avere"]
+  },
+  {
+    "id": "eav019",
+    "category": "espressioni-avere",
+    "sentence": "Se hai ___, prendi il mio maglione.",
+    "hint": "Why would you put on a sweater?",
+    "correct": "freddo",
+    "options": ["freddo", "caldo", "sonno", "sete"],
+    "explanation": "Italian uses AVERE for temperature sensations: 'avere freddo' = to be cold (literally 'to have cold').",
+    "tags": ["essere-avere", "verb-avere"]
+  },
+  {
+    "id": "eav020",
+    "category": "espressioni-avere",
+    "sentence": "Abbiamo solo ___. Dobbiamo lavorare per molti anni.",
+    "hint": "Age is also expressed with AVERE.",
+    "correct": "30 anni",
+    "options": ["sonno", "paura", "30 anni", "fame"],
+    "explanation": "Italian expresses age with AVERE: 'avere 30 anni' = to be 30 years old (literally 'to have 30 years').",
+    "tags": ["essere-avere", "verb-avere"]
+  },
+  {
+    "id": "eav021",
+    "category": "espressioni-avere",
+    "sentence": "Stefano va sempre a letto tardi, perché non ha mai ___.",
+    "hint": "What do you feel when you need to sleep?",
+    "correct": "sonno",
+    "options": ["fame", "sonno", "caldo", "sete"],
+    "explanation": "Italian uses AVERE for states: 'avere sonno' = to be sleepy (literally 'to have sleepiness').",
+    "tags": ["essere-avere", "verb-avere"]
+  },
+  {
+    "id": "eav022",
+    "category": "espressioni-avere",
+    "sentence": "A casa tua le finestre sono sempre chiuse. Non hai mai ___?",
+    "hint": "Closed windows make a room feel warm.",
+    "correct": "caldo",
+    "options": ["sonno", "paura", "freddo", "caldo"],
+    "explanation": "Italian uses AVERE for temperature sensations: 'avere caldo' = to be hot (literally 'to have heat').",
+    "tags": ["essere-avere", "verb-avere"]
+  }
+]

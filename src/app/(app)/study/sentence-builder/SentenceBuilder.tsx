@@ -5,8 +5,8 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { useStudySession } from "@/lib/useStudySession";
 import { useSpeech } from "@/lib/useSpeech";
-import UnitSelector from "@/components/UnitSelector";
-import { getSentenceUnit } from "@/lib/content";
+import SubjectSelector from "@/components/SubjectSelector";
+import { tagsMatchSubject, subjectsPresent } from "@/lib/content";
 import type { SentenceExercise } from "@/lib/content";
 import { cn } from "@/lib/utils";
 import { getBoostEnabled } from "@/components/BoostToggle";
@@ -46,8 +46,9 @@ export default function SentenceBuilder({
   weakIds?: string[];
   initialIds?: string[];
 }) {
-  const [unit, setUnit] = useState<number | undefined>(undefined);
+  const [subject, setSubject] = useState<string | undefined>(undefined);
   const [topic, setTopic] = useState<string | undefined>(undefined);
+  const availableSubjects = subjectsPresent(exercises.map((e) => e.tags));
   const [limit, setLimit] = useState<number | null>(30);
   const [started, setStarted] = useState(false);
   const [deck, setDeck] = useState<SentenceExercise[]>([]);
@@ -63,7 +64,7 @@ export default function SentenceBuilder({
   const { speak, speaking } = useSpeech();
 
   const activeExercises = exercises.filter((e) => {
-    if (unit && getSentenceUnit(e) !== unit) return false;
+    if (subject && !tagsMatchSubject(e.tags, subject)) return false;
     if (topic && !e.tags.includes(topic)) return false;
     return true;
   });
@@ -87,7 +88,7 @@ export default function SentenceBuilder({
 
   function beginDrill(filterIds?: string[]) {
     let active = exercises.filter((e) => {
-      if (unit && getSentenceUnit(e) !== unit) return false;
+      if (subject && !tagsMatchSubject(e.tags, subject)) return false;
       if (topic && !e.tags.includes(topic)) return false;
       return true;
     });
@@ -137,10 +138,17 @@ export default function SentenceBuilder({
     setPool((p) => [...p, word]);
   }
 
+  // Compare the built sentence to the target, ignoring spacing and trailing
+  // sentence punctuation (., ?, !) — which aren't tappable tokens. Word order and
+  // every word (including repeats like "il … il") must still match exactly.
+  function normalizeSentence(s: string): string {
+    return s.replace(/\s+/g, " ").trim().replace(/[.?!]+$/, "");
+  }
+
   async function handleCheck() {
     if (!ex) return;
     const builtSentence = built.join(" ");
-    const isCorrect = builtSentence === ex.italian;
+    const isCorrect = normalizeSentence(builtSentence) === normalizeSentence(ex.italian);
     setCorrect(isCorrect);
     setChecked(true);
     await recordAttempt(ex.id, "sentence", isCorrect, builtSentence);
@@ -167,7 +175,7 @@ export default function SentenceBuilder({
     return (
       <div className="max-w-lg mx-auto px-4 py-6 space-y-6">
         <h1 className="text-2xl font-bold">Sentence Builder</h1>
-        <UnitSelector value={unit} onChange={(u) => { setUnit(u); setTopic(undefined); }} />
+        <SubjectSelector subjects={availableSubjects} value={subject} onChange={(s) => { setSubject(s); setTopic(undefined); }} />
         <div>
           <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wide mb-2">Topic</p>
           <div className="flex flex-wrap gap-2">
@@ -185,7 +193,7 @@ export default function SentenceBuilder({
             {TOPIC_TAGS.map((t) => (
               <button
                 key={t.value}
-                onClick={() => { setTopic(topic === t.value ? undefined : t.value); setUnit(undefined); }}
+                onClick={() => { setTopic(topic === t.value ? undefined : t.value); setSubject(undefined); }}
                 className={cn(
                   "px-3 py-1.5 rounded-full text-sm font-medium transition-colors",
                   topic === t.value
@@ -251,7 +259,7 @@ export default function SentenceBuilder({
           </Button>
         )}
         <Button variant="outline" onClick={() => setStarted(false)} className="w-full max-w-xs">
-          Change Unit
+          Change Subject
         </Button>
       </div>
     );

@@ -1,0 +1,330 @@
+[
+  {
+    "id": "v137",
+    "italian": "il fiore",
+    "english": "the flower",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "Compro i fiori per la nonna.",
+    "tags": [
+      "nouns",
+      "nature",
+      "lesson-4"
+    ],
+    "unit": 4,
+    "pronunciation": "il FIO·re"
+  },
+  {
+    "id": "v139",
+    "italian": "la macchina",
+    "english": "the car",
+    "gender": "f",
+    "partOfSpeech": "noun",
+    "example": "La mia macchina è rossa.",
+    "tags": [
+      "nouns",
+      "transport",
+      "lesson-4"
+    ],
+    "unit": 4,
+    "pronunciation": "MAK·ki·na"
+  },
+  {
+    "id": "v140",
+    "italian": "la stazione",
+    "english": "the station",
+    "gender": "f",
+    "partOfSpeech": "noun",
+    "example": "La stazione è vicino al centro.",
+    "tags": [
+      "nouns",
+      "places",
+      "transport",
+      "lesson-4"
+    ],
+    "unit": 4,
+    "pronunciation": "sta·TSYO·ne"
+  },
+  {
+    "id": "v167",
+    "italian": "fiore",
+    "english": "flower",
+    "gender": "maschile",
+    "partOfSpeech": "noun",
+    "example": "Il fiore è bello.",
+    "tags": [
+      "nouns",
+      "nature",
+      "e-nouns",
+      "lesson-5"
+    ],
+    "unit": 5,
+    "pronunciation": "FIO·re"
+  },
+  {
+    "id": "v168",
+    "italian": "mare",
+    "english": "sea",
+    "gender": "maschile",
+    "partOfSpeech": "noun",
+    "example": "Il mare è azzurro.",
+    "tags": [
+      "nouns",
+      "nature",
+      "e-nouns",
+      "lesson-5"
+    ],
+    "unit": 5,
+    "pronunciation": "MA·re"
+  },
+  {
+    "id": "v173",
+    "italian": "luce",
+    "english": "light",
+    "gender": "femminile",
+    "partOfSpeech": "noun",
+    "example": "La luce del sole è bellissima.",
+    "tags": [
+      "nouns",
+      "nature",
+      "e-nouns",
+      "lesson-5"
+    ],
+    "unit": 5,
+    "pronunciation": "LU·che"
+  },
+  {
+    "id": "v174",
+    "italian": "stazione",
+    "english": "station",
+    "gender": "femminile",
+    "partOfSpeech": "noun",
+    "example": "La stazione è vicina al centro.",
+    "tags": [
+      "nouns",
+      "places",
+      "transport",
+      "e-nouns",
+      "lesson-5"
+    ],
+    "unit": 5,
+    "pronunciation": "sta·TSYO·ne"
+  },
+  {
+    "id": "v219",
+    "italian": "turista",
+    "english": "tourist",
+    "gender": "maschile",
+    "partOfSpeech": "noun",
+    "example": "Il turista chiede indicazioni.",
+    "tags": [
+      "nouns",
+      "city",
+      "lesson-7"
+    ],
+    "unit": 7,
+    "pronunciation": "tu·RI·sta"
+  },
+  {
+    "id": "v220",
+    "italian": "passante",
+    "english": "passerby",
+    "gender": "maschile",
+    "partOfSpeech": "noun",
+    "example": "Il passante aiuta il turista.",
+    "tags": [
+      "nouns",
+      "city",
+      "lesson-7"
+    ],
+    "unit": 7,
+    "pronunciation": "pas·SAN·te"
+  },
+  {
+    "id": "v221",
+    "italian": "incrocio",
+    "english": "intersection",
+    "gender": "maschile",
+    "partOfSpeech": "noun",
+    "example": "Giri a sinistra all'incrocio.",
+    "tags": [
+      "nouns",
+      "city",
+      "directions",
+      "lesson-7"
+    ],
+    "unit": 7,
+    "pronunciation": "in·KRO·cho"
+  },
+  {
+    "id": "v222",
+    "italian": "semaforo",
+    "english": "traffic light",
+    "gender": "maschile",
+    "partOfSpeech": "noun",
+    "example": "Fermati al semaforo rosso.",
+    "tags": [
+      "nouns",
+      "city",
+      "directions",
+      "lesson-7"
+    ],
+    "unit": 7,
+    "pronunciation": "se·MA·fo·ro"
+  },
+  {
+    "id": "v223",
+    "italian": "percorso",
+    "english": "route / path",
+    "gender": "maschile",
+    "partOfSpeech": "noun",
+    "example": "Qual è il percorso più veloce?",
+    "tags": [
+      "nouns",
+      "city",
+      "lesson-7"
+    ],
+    "unit": 7,
+    "pronunciation": "per·KOR·so"
+  },
+  {
+    "id": "v224",
+    "italian": "direzione",
+    "english": "direction",
+    "gender": "femminile",
+    "partOfSpeech": "noun",
+    "example": "In che direzione devo andare?",
+    "tags": [
+      "nouns",
+      "city",
+      "directions",
+      "lesson-7"
+    ],
+    "unit": 7,
+    "pronunciation": "di·re·TZYO·ne"
+  },
+  {
+    "id": "v225",
+    "italian": "sinistra",
+    "english": "left",
+    "gender": "femminile",
+    "partOfSpeech": "noun",
+    "example": "Gira a sinistra al semaforo.",
+    "tags": [
+      "nouns",
+      "city",
+      "directions",
+      "lesson-7"
+    ],
+    "unit": 7,
+    "pronunciation": "si·NI·stra"
+  },
+  {
+    "id": "v226",
+    "italian": "destra",
+    "english": "right",
+    "gender": "femminile",
+    "partOfSpeech": "noun",
+    "example": "Prendi la prima a destra.",
+    "tags": [
+      "nouns",
+      "city",
+      "directions",
+      "lesson-7"
+    ],
+    "unit": 7,
+    "pronunciation": "DE·stra"
+  },
+  {
+    "id": "v229",
+    "italian": "lontano",
+    "english": "far",
+    "gender": null,
+    "partOfSpeech": "adjective",
+    "example": "La stazione non è molto lontana.",
+    "tags": [
+      "adjectives",
+      "city",
+      "lesson-7"
+    ],
+    "unit": 7,
+    "pronunciation": "lon·TA·no"
+  },
+  {
+    "id": "v230",
+    "italian": "vicino",
+    "english": "near / close",
+    "gender": null,
+    "partOfSpeech": "adjective",
+    "example": "Il bar è vicino alla piazza.",
+    "tags": [
+      "adjectives",
+      "city",
+      "lesson-7"
+    ],
+    "unit": 7,
+    "pronunciation": "vi·CHI·no"
+  },
+  {
+    "id": "v238",
+    "italian": "piazza",
+    "english": "square / plaza",
+    "gender": "femminile",
+    "partOfSpeech": "noun",
+    "example": "La piazza è nel centro della città.",
+    "tags": [
+      "nouns",
+      "city",
+      "lesson-7"
+    ],
+    "unit": 7,
+    "pronunciation": "PYAT·tsa"
+  },
+  {
+    "id": "v239",
+    "italian": "città",
+    "english": "city",
+    "gender": "femminile",
+    "partOfSpeech": "noun",
+    "example": "Roma è una città bellissima.",
+    "tags": [
+      "nouns",
+      "city",
+      "lesson-7"
+    ],
+    "unit": 7,
+    "pronunciation": "chit·TA"
+  },
+  {
+    "id": "v240",
+    "italian": "via",
+    "english": "street",
+    "gender": "femminile",
+    "partOfSpeech": "noun",
+    "example": "Abito in via Roma al numero dieci.",
+    "tags": [
+      "nouns",
+      "city",
+      "directions",
+      "lesson-7"
+    ],
+    "unit": 7,
+    "pronunciation": "VI·a"
+  },
+  {
+    "id": "v241",
+    "italian": "angolo",
+    "english": "corner",
+    "gender": "maschile",
+    "partOfSpeech": "noun",
+    "example": "Il bar è all'angolo della strada.",
+    "tags": [
+      "nouns",
+      "city",
+      "directions",
+      "lesson-7"
+    ],
+    "unit": 7,
+    "pronunciation": "AN·go·lo"
+  }
+]

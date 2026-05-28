@@ -12,9 +12,11 @@ export default async function PreposizioniArticolatePage() {
     <DrillQuiz
       title="Preposizioni Articolate"
       subtitle="Fill in the correct combined preposition + article."
+      instructions="Combine the preposition with the article to fill the blank with the right contracted form (del, allo, nella, sui…)."
       contentType="preposizioni"
       questions={preposizioniDrill}
       weakIds={weakIds}
+      subjectId="prepositions"
     />
   );
 }

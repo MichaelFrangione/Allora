@@ -1,0 +1,320 @@
+[
+  {
+    "id": "v141",
+    "italian": "bello",
+    "english": "beautiful, handsome",
+    "gender": "m",
+    "partOfSpeech": "adjective",
+    "example": "Che bel film! / Una bella giornata.",
+    "tags": [
+      "adjectives",
+      "descriptions",
+      "lesson-5"
+    ],
+    "unit": 5,
+    "pronunciation": "BEL·lo"
+  },
+  {
+    "id": "v142",
+    "italian": "brutto",
+    "english": "ugly, bad",
+    "gender": "m",
+    "partOfSpeech": "adjective",
+    "example": "Che tempo brutto oggi!",
+    "tags": [
+      "adjectives",
+      "descriptions",
+      "lesson-5"
+    ],
+    "unit": 5,
+    "pronunciation": "BRUT·to"
+  },
+  {
+    "id": "v143",
+    "italian": "buono",
+    "english": "good",
+    "gender": "m",
+    "partOfSpeech": "adjective",
+    "example": "Questo caffè è molto buono.",
+    "tags": [
+      "adjectives",
+      "descriptions",
+      "lesson-5"
+    ],
+    "unit": 5,
+    "pronunciation": "BUO·no"
+  },
+  {
+    "id": "v144",
+    "italian": "bravo",
+    "english": "good at something, skilled",
+    "gender": "m",
+    "partOfSpeech": "adjective",
+    "example": "È bravissima in matematica.",
+    "tags": [
+      "adjectives",
+      "descriptions",
+      "lesson-5"
+    ],
+    "unit": 5,
+    "pronunciation": "BRA·vo"
+  },
+  {
+    "id": "v149",
+    "italian": "grande",
+    "english": "big, large, great",
+    "gender": null,
+    "partOfSpeech": "adjective",
+    "example": "Roma è una città grande.",
+    "tags": [
+      "adjectives",
+      "descriptions",
+      "lesson-5"
+    ],
+    "unit": 5,
+    "pronunciation": "GRAN·de"
+  },
+  {
+    "id": "v150",
+    "italian": "piccolo",
+    "english": "small, little",
+    "gender": "m",
+    "partOfSpeech": "adjective",
+    "example": "Abito in un appartamento piccolo.",
+    "tags": [
+      "adjectives",
+      "descriptions",
+      "lesson-5"
+    ],
+    "unit": 5,
+    "pronunciation": "PIK·ko·lo"
+  },
+  {
+    "id": "v151",
+    "italian": "nuovo",
+    "english": "new",
+    "gender": "m",
+    "partOfSpeech": "adjective",
+    "example": "Ho comprato una macchina nuova.",
+    "tags": [
+      "adjectives",
+      "descriptions",
+      "lesson-5"
+    ],
+    "unit": 5,
+    "pronunciation": "NUO·vo"
+  },
+  {
+    "id": "v152",
+    "italian": "vecchio",
+    "english": "old",
+    "gender": "m",
+    "partOfSpeech": "adjective",
+    "example": "Questa è una chiesa vecchia.",
+    "tags": [
+      "adjectives",
+      "descriptions",
+      "lesson-5"
+    ],
+    "unit": 5,
+    "pronunciation": "VEK·kyo"
+  },
+  {
+    "id": "v157",
+    "italian": "interessante",
+    "english": "interesting",
+    "gender": null,
+    "partOfSpeech": "adjective",
+    "example": "La lezione di oggi è molto interessante.",
+    "tags": [
+      "adjectives",
+      "descriptions",
+      "lesson-5"
+    ],
+    "unit": 5,
+    "pronunciation": "in·te·res·SAN·te"
+  },
+  {
+    "id": "v158",
+    "italian": "divertente",
+    "english": "fun, entertaining",
+    "gender": null,
+    "partOfSpeech": "adjective",
+    "example": "La festa era molto divertente.",
+    "tags": [
+      "adjectives",
+      "descriptions",
+      "lesson-5"
+    ],
+    "unit": 5,
+    "pronunciation": "di·ver·TEN·te"
+  },
+  {
+    "id": "v159",
+    "italian": "bianco",
+    "english": "white",
+    "gender": "m",
+    "partOfSpeech": "adjective",
+    "example": "Porto una camicia bianca.",
+    "tags": [
+      "adjectives",
+      "colors",
+      "lesson-5"
+    ],
+    "unit": 5,
+    "pronunciation": "BIAN·ko"
+  },
+  {
+    "id": "v160",
+    "italian": "rosso",
+    "english": "red",
+    "gender": "m",
+    "partOfSpeech": "adjective",
+    "example": "Preferisco il vino rosso.",
+    "tags": [
+      "adjectives",
+      "colors",
+      "lesson-5"
+    ],
+    "unit": 5,
+    "pronunciation": "ROS·so"
+  },
+  {
+    "id": "v161",
+    "italian": "giallo",
+    "english": "yellow",
+    "gender": "m",
+    "partOfSpeech": "adjective",
+    "example": "Il sole è giallo.",
+    "tags": [
+      "adjectives",
+      "colors",
+      "lesson-5"
+    ],
+    "unit": 5,
+    "pronunciation": "JAL·lo"
+  },
+  {
+    "id": "v162",
+    "italian": "nero",
+    "english": "black",
+    "gender": "m",
+    "partOfSpeech": "adjective",
+    "example": "Indossa sempre vestiti neri.",
+    "tags": [
+      "adjectives",
+      "colors",
+      "lesson-5"
+    ],
+    "unit": 5,
+    "pronunciation": "NE·ro"
+  },
+  {
+    "id": "v163",
+    "italian": "azzurro",
+    "english": "light blue, sky blue",
+    "gender": "m",
+    "partOfSpeech": "adjective",
+    "example": "Il cielo è azzurro oggi.",
+    "tags": [
+      "adjectives",
+      "colors",
+      "lesson-5"
+    ],
+    "unit": 5,
+    "pronunciation": "at·TSUR·ro"
+  },
+  {
+    "id": "v164",
+    "italian": "verde",
+    "english": "green",
+    "gender": null,
+    "partOfSpeech": "adjective",
+    "example": "L'erba è verde in primavera.",
+    "tags": [
+      "adjectives",
+      "colors",
+      "lesson-5"
+    ],
+    "unit": 5,
+    "pronunciation": "VER·de"
+  },
+  {
+    "id": "v165",
+    "italian": "arancione",
+    "english": "orange",
+    "gender": null,
+    "partOfSpeech": "adjective",
+    "example": "La zucca è arancione.",
+    "tags": [
+      "adjectives",
+      "colors",
+      "lesson-5"
+    ],
+    "unit": 5,
+    "pronunciation": "a·ran·CHO·ne"
+  },
+  {
+    "id": "v166",
+    "italian": "marrone",
+    "english": "brown",
+    "gender": null,
+    "partOfSpeech": "adjective",
+    "example": "Ha gli occhi marroni.",
+    "tags": [
+      "adjectives",
+      "colors",
+      "lesson-5"
+    ],
+    "unit": 5,
+    "pronunciation": "mar·RO·ne"
+  },
+  {
+    "id": "v177",
+    "italian": "difficile",
+    "english": "difficult",
+    "gender": null,
+    "partOfSpeech": "adjective",
+    "example": "Questo esercizio è difficile.",
+    "tags": [
+      "adjectives",
+      "e-adjectives",
+      "descriptions",
+      "lesson-5"
+    ],
+    "unit": 5,
+    "pronunciation": "dif·FI·chi·le"
+  },
+  {
+    "id": "v204",
+    "italian": "stanco",
+    "english": "tired",
+    "gender": null,
+    "partOfSpeech": "adjective",
+    "example": "Sono stanco dopo la lezione.",
+    "tags": [
+      "adjectives",
+      "descriptions",
+      "concordanza",
+      "lesson-6"
+    ],
+    "unit": 6,
+    "pronunciation": "STAN·ko"
+  },
+  {
+    "id": "v207",
+    "italian": "sportivo",
+    "english": "sporty",
+    "gender": null,
+    "partOfSpeech": "adjective",
+    "example": "Mio fratello è molto sportivo.",
+    "tags": [
+      "adjectives",
+      "descriptions",
+      "concordanza",
+      "lesson-6"
+    ],
+    "unit": 6,
+    "pronunciation": "spor·TI·vo"
+  }
+]

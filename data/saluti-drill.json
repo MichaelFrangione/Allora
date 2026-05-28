@@ -1,0 +1,134 @@
+[
+  {
+    "id": "sal001",
+    "category": "saluti",
+    "prompt": "It's 9 AM. You greet your teacher.",
+    "sentence": "___",
+    "hint": "morning/day greeting",
+    "correct": "Buongiorno",
+    "options": ["Buongiorno", "Buonasera", "Buonanotte", "Arrivederci"],
+    "explanation": "Buongiorno = good morning/day, used from morning through the afternoon. Buonasera starts from late afternoon.",
+    "tags": ["greetings", "communication"]
+  },
+  {
+    "id": "sal002",
+    "category": "saluti",
+    "prompt": "It's 8 PM. You arrive at a dinner party.",
+    "sentence": "___",
+    "hint": "evening greeting",
+    "correct": "Buonasera",
+    "options": ["Buonasera", "Buongiorno", "Ciao", "Buonanotte"],
+    "explanation": "Buonasera = good evening, used as a greeting from late afternoon onward when arriving.",
+    "tags": ["greetings", "communication"]
+  },
+  {
+    "id": "sal003",
+    "category": "saluti",
+    "prompt": "You greet a close friend informally.",
+    "sentence": "___",
+    "hint": "informal, any time of day",
+    "correct": "Ciao",
+    "options": ["Ciao", "Buongiorno", "Arrivederci", "Buonasera"],
+    "explanation": "Ciao is the informal greeting (and farewell) used with friends, family, and peers at any time of day.",
+    "tags": ["greetings", "communication"]
+  },
+  {
+    "id": "sal004",
+    "category": "saluti",
+    "prompt": "You're going to bed and say good night.",
+    "sentence": "___",
+    "hint": "said when going to sleep",
+    "correct": "Buonanotte",
+    "options": ["Buonanotte", "Buonasera", "Buongiorno", "Ciao"],
+    "explanation": "Buonanotte = good night, said specifically when going to bed, not as a general evening greeting (that's Buonasera).",
+    "tags": ["greetings", "communication"]
+  },
+  {
+    "id": "sal005",
+    "category": "saluti",
+    "prompt": "Midday — you greet a shopkeeper.",
+    "sentence": "___",
+    "hint": "daytime greeting, formal",
+    "correct": "Buongiorno",
+    "options": ["Buongiorno", "Buonanotte", "Buonasera", "Ciao"],
+    "explanation": "Buongiorno covers morning and midday and is the polite greeting for people you don't know well, like a shopkeeper.",
+    "tags": ["greetings", "communication"]
+  },
+  {
+    "id": "sal006",
+    "category": "saluti",
+    "prompt": "Late afternoon — you walk into a cafe and greet the barista.",
+    "sentence": "___",
+    "hint": "shifts from day to evening greeting",
+    "correct": "Buonasera",
+    "options": ["Buonasera", "Buongiorno", "Buonanotte", "Arrivederci"],
+    "explanation": "By late afternoon Italians switch from Buongiorno to Buonasera (good evening) as the standard polite greeting.",
+    "tags": ["greetings", "communication"]
+  },
+  {
+    "id": "sal007",
+    "category": "congedi",
+    "prompt": "Formal goodbye to a colleague.",
+    "sentence": "___",
+    "hint": "formal goodbye",
+    "correct": "Arrivederci",
+    "options": ["Arrivederci", "Ciao", "Buongiorno", "Buonasera"],
+    "explanation": "Arrivederci = goodbye, the standard polite/formal farewell with people you don't address informally.",
+    "tags": ["greetings", "communication"]
+  },
+  {
+    "id": "sal008",
+    "category": "congedi",
+    "prompt": "Informal goodbye to a friend.",
+    "sentence": "___",
+    "hint": "informal, doubles as hello",
+    "correct": "Ciao",
+    "options": ["Ciao", "Arrivederci", "Buonasera", "Buongiorno"],
+    "explanation": "Ciao works as both an informal hello and goodbye among friends and peers.",
+    "tags": ["greetings", "communication"]
+  },
+  {
+    "id": "sal009",
+    "category": "congedi",
+    "prompt": "Leaving in the morning — wish them a good day.",
+    "sentence": "___",
+    "hint": "well-wish on departure, daytime",
+    "correct": "Buona giornata",
+    "options": ["Buona giornata", "Buongiorno", "Buona serata", "Arrivederci"],
+    "explanation": "Buona giornata = have a good day, said when leaving during the day. Buongiorno is a greeting, not a farewell.",
+    "tags": ["greetings", "communication"]
+  },
+  {
+    "id": "sal010",
+    "category": "congedi",
+    "prompt": "Leaving in the evening — wish them a good evening.",
+    "sentence": "___",
+    "hint": "well-wish on departure, evening",
+    "correct": "Buona serata",
+    "options": ["Buona serata", "Buonasera", "Buona giornata", "Ciao"],
+    "explanation": "Buona serata = have a good evening, said when leaving in the evening. Buonasera is the evening greeting on arrival.",
+    "tags": ["greetings", "communication"]
+  },
+  {
+    "id": "sal011",
+    "category": "congedi",
+    "prompt": "Leaving late at night.",
+    "sentence": "___",
+    "hint": "night farewell, also said before sleep",
+    "correct": "Buonanotte",
+    "options": ["Buonanotte", "Buona serata", "Arrivederci", "Buonasera"],
+    "explanation": "Buonanotte = good night, used when parting late at night or before going to sleep.",
+    "tags": ["greetings", "communication"]
+  },
+  {
+    "id": "sal012",
+    "category": "congedi",
+    "prompt": "You leave a shop in the afternoon and the clerk wishes you well.",
+    "sentence": "___",
+    "hint": "daytime departure well-wish",
+    "correct": "Buona giornata",
+    "options": ["Buona giornata", "Buona serata", "Buonanotte", "Buongiorno"],
+    "explanation": "In the afternoon the departing well-wish is still Buona giornata; it shifts to Buona serata in the evening.",
+    "tags": ["greetings", "communication"]
+  }
+]

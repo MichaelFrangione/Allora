@@ -1,0 +1,202 @@
+[
+  {
+    "id": "gen001",
+    "category": "maschile-o-femminile",
+    "sentence": "___ problema",
+    "hint": "I nomi in -MA sono spesso maschili.",
+    "correct": "il",
+    "options": ["il", "la", "lo"],
+    "explanation": "I nomi che terminano in -MA (problema, tema, programma, sistema) sono maschili: il problema.",
+    "tags": ["gender", "endings"]
+  },
+  {
+    "id": "gen002",
+    "category": "maschile-o-femminile",
+    "sentence": "___ mano",
+    "hint": "Alcuni nomi in -O sono femminili.",
+    "correct": "la",
+    "options": ["il", "la", "lo"],
+    "explanation": "Mano è un'eccezione: termina in -O ma è femminile, come radio, foto, moto, auto. Quindi: la mano.",
+    "tags": ["gender", "endings"]
+  },
+  {
+    "id": "gen003",
+    "category": "maschile-o-femminile",
+    "sentence": "___ radio",
+    "hint": "Parola accorciata (radiofonia), eccezione in -O.",
+    "correct": "la",
+    "options": ["il", "la", "l'"],
+    "explanation": "Radio è una parola accorciata e femminile, pur finendo in -O: la radio.",
+    "tags": ["gender", "endings"]
+  },
+  {
+    "id": "gen004",
+    "category": "maschile-o-femminile",
+    "sentence": "___ libertà",
+    "hint": "I nomi in -TÀ sono femminili.",
+    "correct": "la",
+    "options": ["il", "la", "lo"],
+    "explanation": "I nomi che terminano in -TÀ (e in -TÙ) sono femminili: la libertà, la gioventù.",
+    "tags": ["gender", "endings"]
+  },
+  {
+    "id": "gen005",
+    "category": "maschile-o-femminile",
+    "sentence": "___ giornale",
+    "hint": "Terminazione -ALE.",
+    "correct": "il",
+    "options": ["il", "la", "lo"],
+    "explanation": "I nomi in -ALE sono generalmente maschili: il giornale.",
+    "tags": ["gender", "endings"]
+  },
+  {
+    "id": "gen006",
+    "category": "maschile-o-femminile",
+    "sentence": "___ lezione",
+    "hint": "Terminazione -IONE.",
+    "correct": "la",
+    "options": ["il", "la", "l'"],
+    "explanation": "I nomi in -IONE sono femminili: la lezione, la stazione.",
+    "tags": ["gender", "endings"]
+  },
+  {
+    "id": "gen007",
+    "category": "maschile-o-femminile",
+    "sentence": "___ fiore",
+    "hint": "Terminazione -ORE.",
+    "correct": "il",
+    "options": ["la", "il", "lo"],
+    "explanation": "I nomi in -ORE sono maschili: il fiore.",
+    "tags": ["gender", "endings"]
+  },
+  {
+    "id": "gen008",
+    "category": "maschile-o-femminile",
+    "sentence": "___ dentista (uomo)",
+    "hint": "Nomi di persona in -ISTA: il genere segue la persona.",
+    "correct": "il",
+    "options": ["il", "la", "l'"],
+    "explanation": "I nomi di persona in -ISTA (dentista, artista, giornalista) hanno la stessa forma per maschile e femminile; per un uomo si usa il maschile: il dentista.",
+    "tags": ["gender", "endings"]
+  },
+  {
+    "id": "gen009",
+    "category": "maschile-o-femminile",
+    "sentence": "___ crisi",
+    "hint": "Terminazione -I.",
+    "correct": "la",
+    "options": ["il", "la", "lo"],
+    "explanation": "I nomi in -I sono femminili: la crisi, l'analisi, la sintesi.",
+    "tags": ["gender", "endings"]
+  },
+  {
+    "id": "gen010",
+    "category": "maschile-o-femminile",
+    "sentence": "___ programma",
+    "hint": "Terminazione -MA.",
+    "correct": "il",
+    "options": ["la", "il", "lo"],
+    "explanation": "I nomi in -MA sono maschili: il programma, il sistema, il tema.",
+    "tags": ["gender", "endings"]
+  },
+  {
+    "id": "gen011",
+    "category": "maschile-o-femminile",
+    "sentence": "___ stazione",
+    "hint": "Terminazione -IONE.",
+    "correct": "la",
+    "options": ["il", "la", "l'"],
+    "explanation": "I nomi in -IONE sono femminili: la stazione, la lezione.",
+    "tags": ["gender", "endings"]
+  },
+  {
+    "id": "gen012",
+    "category": "maschile-o-femminile",
+    "sentence": "___ sapone",
+    "hint": "Terminazione -ONE.",
+    "correct": "il",
+    "options": ["la", "il", "lo"],
+    "explanation": "I nomi in -ONE sono generalmente maschili: il sapone.",
+    "tags": ["gender", "endings"]
+  },
+  {
+    "id": "gen013",
+    "category": "il-genere",
+    "sentence": "Il nome 'tema' è...",
+    "hint": "Pensa alla regola dei nomi in -MA.",
+    "correct": "maschile",
+    "options": ["maschile", "femminile"],
+    "explanation": "I nomi in -MA sono maschili, quindi 'tema' è maschile: il tema.",
+    "tags": ["gender", "endings"]
+  },
+  {
+    "id": "gen014",
+    "category": "il-genere",
+    "sentence": "Il nome 'libertà' è...",
+    "hint": "Terminazione -TÀ.",
+    "correct": "femminile",
+    "options": ["femminile", "maschile"],
+    "explanation": "I nomi in -TÀ sono femminili, quindi 'libertà' è femminile: la libertà.",
+    "tags": ["gender", "endings"]
+  },
+  {
+    "id": "gen015",
+    "category": "il-genere",
+    "sentence": "Il nome 'cinema' è...",
+    "hint": "Terminazione -MA (parola di origine greca).",
+    "correct": "maschile",
+    "options": ["maschile", "femminile"],
+    "explanation": "I nomi in -MA sono maschili, quindi 'cinema' è maschile: il cinema.",
+    "tags": ["gender", "endings"]
+  },
+  {
+    "id": "gen016",
+    "category": "il-genere",
+    "sentence": "Il nome 'lezione' è...",
+    "hint": "Terminazione -IONE.",
+    "correct": "femminile",
+    "options": ["femminile", "maschile"],
+    "explanation": "I nomi in -IONE sono femminili, quindi 'lezione' è femminile: la lezione.",
+    "tags": ["gender", "endings"]
+  },
+  {
+    "id": "gen017",
+    "category": "il-genere",
+    "sentence": "Il nome 'fiore' è...",
+    "hint": "Terminazione -ORE.",
+    "correct": "maschile",
+    "options": ["maschile", "femminile"],
+    "explanation": "I nomi in -ORE sono maschili, quindi 'fiore' è maschile: il fiore.",
+    "tags": ["gender", "endings"]
+  },
+  {
+    "id": "gen018",
+    "category": "il-genere",
+    "sentence": "Il nome 'mano' è...",
+    "hint": "Eccezione: termina in -O.",
+    "correct": "femminile",
+    "options": ["femminile", "maschile"],
+    "explanation": "Mano è un'eccezione: termina in -O ma è femminile, come radio, foto, moto e auto.",
+    "tags": ["gender", "endings"]
+  },
+  {
+    "id": "gen019",
+    "category": "eccezioni",
+    "sentence": "I giorni della settimana sono maschili, tranne...",
+    "hint": "Un solo giorno fa eccezione.",
+    "correct": "la domenica",
+    "options": ["la domenica", "il lunedì", "il sabato"],
+    "explanation": "I giorni della settimana sono maschili (il lunedì, il sabato), tranne 'la domenica', che è femminile.",
+    "tags": ["gender", "eccezioni"]
+  },
+  {
+    "id": "gen020",
+    "category": "eccezioni",
+    "sentence": "Quale nome in -A è maschile?",
+    "hint": "I nomi in -MA possono essere maschili.",
+    "correct": "il problema",
+    "options": ["la casa", "il problema", "la pizza"],
+    "explanation": "Alcuni nomi in -A sono maschili, soprattutto quelli in -MA: il problema. Casa e pizza restano femminili.",
+    "tags": ["gender", "eccezioni"]
+  }
+]

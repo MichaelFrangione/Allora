@@ -1,0 +1,222 @@
+[
+  {
+    "id": "plu001",
+    "category": "plurale-regolare",
+    "sentence": "il telefono → ___",
+    "hint": "I nomi maschili in -O fanno il plurale in -I.",
+    "correct": "i telefoni",
+    "options": ["i telefoni", "le telefone", "i telefone", "gli telefoni"],
+    "explanation": "Maschile in -O → -I, con articolo plurale 'i'.",
+    "tags": ["plural"]
+  },
+  {
+    "id": "plu002",
+    "category": "plurale-regolare",
+    "sentence": "la scuola → ___",
+    "hint": "I nomi femminili in -A fanno il plurale in -E.",
+    "correct": "le scuole",
+    "options": ["le scuole", "le scuoli", "i scuoli", "le scuola"],
+    "explanation": "Femminile in -A → -E, con articolo plurale 'le'.",
+    "tags": ["plural"]
+  },
+  {
+    "id": "plu003",
+    "category": "plurale-regolare",
+    "sentence": "il cane → ___",
+    "hint": "I nomi in -E (maschili o femminili) fanno il plurale in -I.",
+    "correct": "i cani",
+    "options": ["le cani", "i cane", "i cani", "gli cani"],
+    "explanation": "Nome in -E → -I; maschile, quindi 'i cani'.",
+    "tags": ["plural"]
+  },
+  {
+    "id": "plu004",
+    "category": "plurale-regolare",
+    "sentence": "la chiave → ___",
+    "hint": "I nomi in -E fanno il plurale in -I, anche se femminili.",
+    "correct": "le chiavi",
+    "options": ["le chiave", "le chiavi", "i chiavi", "le chiave"],
+    "explanation": "Femminile in -E → -I, ma l'articolo resta 'le'.",
+    "tags": ["plural"]
+  },
+  {
+    "id": "plu005",
+    "category": "plurale-regolare",
+    "sentence": "il problema → ___",
+    "hint": "I nomi maschili in -A (spesso di origine greca) fanno il plurale in -I.",
+    "correct": "i problemi",
+    "options": ["i problemi", "le probleme", "i probleme", "le problemi"],
+    "explanation": "Maschile in -A → -I: il problema, i problemi.",
+    "tags": ["plural", "irregular"]
+  },
+  {
+    "id": "plu006",
+    "category": "plurale-regolare",
+    "sentence": "la libertà → ___",
+    "hint": "I nomi che finiscono in -TÀ (accentata) sono invariabili.",
+    "correct": "le libertà",
+    "options": ["le libertà", "le libertè", "le libertài", "i libertà"],
+    "explanation": "Le parole in -TÀ non cambiano al plurale: cambia solo l'articolo.",
+    "tags": ["plural", "invariable"]
+  },
+  {
+    "id": "plu007",
+    "category": "plurale-ortografia",
+    "sentence": "l'albergo → ___",
+    "hint": "Maschile in -GO con accento sulla penultima sillaba → -GHI (suono duro).",
+    "correct": "gli alberghi",
+    "options": ["gli alberghi", "gli albergi", "i alberghi", "gli albergh"],
+    "explanation": "Per mantenere il suono duro si aggiunge la H: albergo → alberghi.",
+    "tags": ["plural", "spelling"]
+  },
+  {
+    "id": "plu008",
+    "category": "plurale-ortografia",
+    "sentence": "il medico → ___",
+    "hint": "Maschile in -CO con accento sulla terzultima sillaba → -CI.",
+    "correct": "i medici",
+    "options": ["i medici", "i medichi", "i medico", "gli medici"],
+    "explanation": "Parola sdrucciola: medico → medici (suono dolce).",
+    "tags": ["plural", "spelling"]
+  },
+  {
+    "id": "plu009",
+    "category": "plurale-ortografia",
+    "sentence": "la banca → ___",
+    "hint": "Femminile in -CA → -CHE (suono duro mantenuto con la H).",
+    "correct": "le banche",
+    "options": ["le banche", "le bance", "le banchi", "i banche"],
+    "explanation": "Femminile in -CA → -CHE: banca → banche.",
+    "tags": ["plural", "spelling"]
+  },
+  {
+    "id": "plu010",
+    "category": "plurale-ortografia",
+    "sentence": "l'amico → ___",
+    "hint": "Eccezione: amico è una parola piana ma fa il plurale in -CI.",
+    "correct": "gli amici",
+    "options": ["gli amici", "gli amichi", "i amici", "gli amice"],
+    "explanation": "Amico è un'eccezione: amico → amici (suono dolce).",
+    "tags": ["plural", "spelling"]
+  },
+  {
+    "id": "plu011",
+    "category": "plurale-ortografia",
+    "sentence": "la camicia → ___",
+    "hint": "-CIA preceduta da vocale (i) mantiene la I → -CIE.",
+    "correct": "le camicie",
+    "options": ["le camicie", "le camice", "le camicia", "le camici"],
+    "explanation": "-CIA con vocale prima della C → -CIE: camicia → camicie.",
+    "tags": ["plural", "spelling"]
+  },
+  {
+    "id": "plu012",
+    "category": "plurale-ortografia",
+    "sentence": "l'arancia → ___",
+    "hint": "-CIA preceduta da consonante (n) perde la I → -CE.",
+    "correct": "le arance",
+    "options": ["le arance", "le arancie", "le aranci", "gli arance"],
+    "explanation": "-CIA con consonante prima della C → -CE: arancia → arance.",
+    "tags": ["plural", "spelling"]
+  },
+  {
+    "id": "plu013",
+    "category": "plurale-ortografia",
+    "sentence": "la pioggia → ___",
+    "hint": "-GIA preceduta da consonante (g) perde la I → -GE.",
+    "correct": "le piogge",
+    "options": ["le piogge", "le pioggie", "le pioggi", "le piogga"],
+    "explanation": "-GIA con consonante prima → -GE: pioggia → piogge.",
+    "tags": ["plural", "spelling"]
+  },
+  {
+    "id": "plu014",
+    "category": "plurale-ortografia",
+    "sentence": "lo psicologo → ___",
+    "hint": "Maschile in -GO con accento sulla terzultima sillaba → -GI.",
+    "correct": "gli psicologi",
+    "options": ["gli psicologi", "gli psicologhi", "i psicologi", "gli psicologe"],
+    "explanation": "Parola sdrucciola: psicologo → psicologi (suono dolce).",
+    "tags": ["plural", "spelling"]
+  },
+  {
+    "id": "plu015",
+    "category": "plurale-irregolare",
+    "sentence": "l'uomo → ___",
+    "hint": "Plurale completamente irregolare.",
+    "correct": "gli uomini",
+    "options": ["gli uomini", "gli uomi", "i uomini", "gli uomeni"],
+    "explanation": "Plurale irregolare: uomo → uomini.",
+    "tags": ["plural", "irregular"]
+  },
+  {
+    "id": "plu016",
+    "category": "plurale-irregolare",
+    "sentence": "l'uovo → ___",
+    "hint": "Maschile al singolare, femminile in -A al plurale.",
+    "correct": "le uova",
+    "options": ["le uova", "gli uovi", "le uove", "gli uova"],
+    "explanation": "Irregolare: l'uovo (m.) → le uova (f.).",
+    "tags": ["plural", "irregular"]
+  },
+  {
+    "id": "plu017",
+    "category": "plurale-irregolare",
+    "sentence": "il braccio → ___",
+    "hint": "Parte del corpo: maschile → femminile in -A al plurale.",
+    "correct": "le braccia",
+    "options": ["le braccia", "i bracci", "le bracce", "gli bracci"],
+    "explanation": "Parte del corpo irregolare: il braccio → le braccia.",
+    "tags": ["plural", "irregular"]
+  },
+  {
+    "id": "plu018",
+    "category": "plurale-irregolare",
+    "sentence": "il dito → ___",
+    "hint": "Parte del corpo: maschile → femminile in -A al plurale.",
+    "correct": "le dita",
+    "options": ["le dita", "i diti", "le dite", "gli diti"],
+    "explanation": "Parte del corpo irregolare: il dito → le dita.",
+    "tags": ["plural", "irregular"]
+  },
+  {
+    "id": "plu019",
+    "category": "plurale-irregolare",
+    "sentence": "il paio → ___",
+    "hint": "Plurale irregolare femminile in -A.",
+    "correct": "le paia",
+    "options": ["le paia", "i pai", "le paie", "gli pai"],
+    "explanation": "Irregolare: il paio → le paia.",
+    "tags": ["plural", "irregular"]
+  },
+  {
+    "id": "plu020",
+    "category": "invariabile",
+    "sentence": "il film → ___",
+    "hint": "Le parole straniere che finiscono in consonante sono invariabili.",
+    "correct": "i film",
+    "options": ["i film", "i films", "i filmi", "gli film"],
+    "explanation": "Parola straniera invariabile: cambia solo l'articolo.",
+    "tags": ["plural", "invariable"]
+  },
+  {
+    "id": "plu021",
+    "category": "invariabile",
+    "sentence": "la foto → ___",
+    "hint": "Le abbreviazioni (foto = fotografia) sono invariabili.",
+    "correct": "le foto",
+    "options": ["le foto", "le foti", "le fote", "i foto"],
+    "explanation": "Abbreviazione invariabile: la foto → le foto.",
+    "tags": ["plural", "invariable"]
+  },
+  {
+    "id": "plu022",
+    "category": "invariabile",
+    "sentence": "Quale nome è solo plurale?",
+    "hint": "Alcuni nomi esistono solo al plurale (pluralia tantum).",
+    "correct": "i pantaloni",
+    "options": ["i pantaloni", "il pantalone", "la gente"],
+    "explanation": "'I pantaloni' si usa al plurale; 'la gente' è solo singolare.",
+    "tags": ["plural", "invariable"]
+  }
+]

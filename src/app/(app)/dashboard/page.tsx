@@ -1,5 +1,5 @@
 import { auth } from "@/lib/auth";
-import { getModeStats, getRecentSessions } from "@/lib/progress";
+import { getModeStats, getRecentSessions, getDueVocabCount } from "@/lib/progress";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
@@ -20,9 +20,10 @@ export default async function DashboardPage() {
   const session = await auth();
   const userId = session!.user!.id!;
 
-  const [modeStats, recentSessions] = await Promise.all([
+  const [modeStats, recentSessions, dueCount] = await Promise.all([
     getModeStats(userId),
     getRecentSessions(userId, 3),
+    getDueVocabCount(userId),
   ]);
 
   const totalAttempts = modeStats.reduce((sum: number, m) => sum + m.total, 0);
@@ -66,6 +67,22 @@ export default async function DashboardPage() {
           Quick Start
         </h2>
         <div className="grid grid-cols-2 gap-3 sm:grid-cols-3">
+          <Link href="/study/review">
+            <Card className="relative hover:bg-accent transition-colors cursor-pointer h-full border-primary/40">
+              {dueCount > 0 && (
+                <span className="absolute top-2 right-2 inline-flex min-w-5 items-center justify-center rounded-full bg-primary px-1.5 text-xs font-bold text-primary-foreground">
+                  {dueCount}
+                </span>
+              )}
+              <CardContent className="pt-4 pb-3 px-3">
+                <div className="text-2xl mb-1">🔁</div>
+                <div className="font-semibold text-sm">Review</div>
+                <div className="text-xs text-muted-foreground">
+                  {dueCount > 0 ? `${dueCount} due now` : "Spaced repetition"}
+                </div>
+              </CardContent>
+            </Card>
+          </Link>
           {studyModes.map(({ href, label, emoji, desc }) => (
             <Link key={href} href={href}>
               <Card className="hover:bg-accent transition-colors cursor-pointer h-full">

@@ -7,8 +7,8 @@ import { Label } from "@/components/ui/label";
 import { Card, CardContent } from "@/components/ui/card";
 import { useStudySession } from "@/lib/useStudySession";
 import { useSpeech } from "@/lib/useSpeech";
-import { getVocabDistractors, getVocabUnit } from "@/lib/content";
-import UnitSelector from "@/components/UnitSelector";
+import { getVocabDistractors, tagsMatchSubject, subjectsPresent } from "@/lib/content";
+import SubjectSelector from "@/components/SubjectSelector";
 import type { VocabItem } from "@/lib/content";
 import { cn } from "@/lib/utils";
 import { getBoostEnabled } from "@/components/BoostToggle";
@@ -37,7 +37,8 @@ function buildQuestion(item: VocabItem): Question {
 }
 
 export default function VocabQuiz({ items, weakIds = [], initialIds }: { items: VocabItem[]; weakIds?: string[]; initialIds?: string[] }) {
-  const [unit, setUnit] = useState<number | undefined>(undefined);
+  const [subject, setSubject] = useState<string | undefined>(undefined);
+  const availableSubjects = subjectsPresent(items.map((v) => v.tags));
   const [limit, setLimit] = useState<number | null>(30);
   const [started, setStarted] = useState(false);
   const [questions, setQuestions] = useState<Question[]>([]);
@@ -50,7 +51,7 @@ export default function VocabQuiz({ items, weakIds = [], initialIds }: { items: 
   const { startSession, endSession, recordAttempt } = useStudySession("vocab");
   const { speak, speaking } = useSpeech();
 
-  const activeItems = unit ? items.filter((v) => getVocabUnit(v) === unit) : items;
+  const activeItems = subject ? items.filter((v) => tagsMatchSubject(v.tags, subject)) : items;
 
   useEffect(() => {
     return () => { endSession(); };
@@ -63,7 +64,7 @@ export default function VocabQuiz({ items, weakIds = [], initialIds }: { items: 
   }, []);
 
   function beginDrill(filterIds?: string[]) {
-    let active = unit ? items.filter((v) => getVocabUnit(v) === unit) : items;
+    let active = subject ? items.filter((v) => tagsMatchSubject(v.tags, subject)) : items;
     if (filterIds) {
       const filtered = active.filter((v) => filterIds.includes(v.id));
       if (filtered.length > 0) active = filtered;
@@ -127,7 +128,7 @@ export default function VocabQuiz({ items, weakIds = [], initialIds }: { items: 
     return (
       <div className="max-w-lg mx-auto px-4 py-6 space-y-6">
         <h1 className="text-2xl font-bold">Vocab Quiz</h1>
-        <UnitSelector value={unit} onChange={setUnit} />
+        <SubjectSelector subjects={availableSubjects} value={subject} onChange={setSubject} />
         <div>
           <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wide mb-2">Questions per session</p>
           <div className="flex flex-wrap gap-2">
@@ -177,7 +178,7 @@ export default function VocabQuiz({ items, weakIds = [], initialIds }: { items: 
           </Button>
         )}
         <Button variant="outline" onClick={() => setStarted(false)} className="w-full max-w-xs">
-          Change Unit
+          Change Subject
         </Button>
       </div>
     );

@@ -1,0 +1,152 @@
+[
+  {
+    "id": "dim001",
+    "category": "questo-quello",
+    "sentence": "___ libro è mio.",
+    "hint": "this book, m.sg. → -o",
+    "correct": "Questo",
+    "options": ["Questo", "Questa", "Questi", "Queste"],
+    "explanation": "Demonstratives agree with the noun. 'Libro' is masculine singular, so 'this' is 'questo'.",
+    "tags": ["demonstratives", "agreement"]
+  },
+  {
+    "id": "dim002",
+    "category": "questo-quello",
+    "sentence": "___ ragazza è simpatica.",
+    "hint": "this girl, f.sg. → -a",
+    "correct": "Questa",
+    "options": ["Questa", "Questo", "Queste", "Questi"],
+    "explanation": "'Ragazza' is feminine singular, so 'this' is 'questa'.",
+    "tags": ["demonstratives", "agreement"]
+  },
+  {
+    "id": "dim003",
+    "category": "questo-quello",
+    "sentence": "___ scarpe sono nuove.",
+    "hint": "these shoes, f.pl. → -e",
+    "correct": "Queste",
+    "options": ["Queste", "Questi", "Questa", "Questo"],
+    "explanation": "'Scarpe' is feminine plural, so 'these' is 'queste'.",
+    "tags": ["demonstratives", "agreement"]
+  },
+  {
+    "id": "dim004",
+    "category": "questo-quello",
+    "sentence": "___ ragazzi sono italiani.",
+    "hint": "these boys, m.pl. → -i",
+    "correct": "Questi",
+    "options": ["Questi", "Queste", "Questo", "Questa"],
+    "explanation": "'Ragazzi' is masculine plural, so 'these' is 'questi'.",
+    "tags": ["demonstratives", "agreement"]
+  },
+  {
+    "id": "dim005",
+    "category": "questo-quello",
+    "sentence": "___ casa è bella.",
+    "hint": "that house, f.sg. → -a",
+    "correct": "Quella",
+    "options": ["Quella", "Quello", "Quelli", "Quelle"],
+    "explanation": "'Casa' is feminine singular, so 'that' is 'quella'.",
+    "tags": ["demonstratives", "agreement"]
+  },
+  {
+    "id": "dim006",
+    "category": "questo-quello",
+    "sentence": "___ libri sono vecchi.",
+    "hint": "those books, m.pl. → -i",
+    "correct": "Quelli",
+    "options": ["Quelli", "Quello", "Quelle", "Quella"],
+    "explanation": "'Libri' is masculine plural, so 'those' is 'quelli' (simplified form).",
+    "tags": ["demonstratives", "agreement"]
+  },
+  {
+    "id": "dim007",
+    "category": "questo-quello",
+    "sentence": "Preferisco ___ gelato.",
+    "hint": "that ice cream, m.sg. → -o",
+    "correct": "quello",
+    "options": ["quella", "quello", "quelli", "quelle"],
+    "explanation": "'Gelato' is masculine singular, so 'that' is 'quello'.",
+    "tags": ["demonstratives", "agreement"]
+  },
+  {
+    "id": "dim008",
+    "category": "questo-quello",
+    "sentence": "___ donne sono francesi.",
+    "hint": "those women, f.pl. → -e",
+    "correct": "Quelle",
+    "options": ["Quelle", "Quelli", "Quella", "Quello"],
+    "explanation": "'Donne' is feminine plural, so 'those' is 'quelle'.",
+    "tags": ["demonstratives", "agreement"]
+  },
+  {
+    "id": "dim009",
+    "category": "traduzione",
+    "sentence": "this (m.sg.) = ___",
+    "hint": "m.sg. → -o",
+    "correct": "questo",
+    "options": ["questo", "questa", "quello", "questi"],
+    "explanation": "Masculine singular 'this' is 'questo'.",
+    "tags": ["demonstratives", "vocabulary"]
+  },
+  {
+    "id": "dim010",
+    "category": "traduzione",
+    "sentence": "these (f.pl.) = ___",
+    "hint": "f.pl. → -e",
+    "correct": "queste",
+    "options": ["questi", "queste", "quelle", "questa"],
+    "explanation": "Feminine plural 'these' is 'queste'.",
+    "tags": ["demonstratives", "vocabulary"]
+  },
+  {
+    "id": "dim011",
+    "category": "traduzione",
+    "sentence": "that (f.sg.) = ___",
+    "hint": "f.sg. → -a",
+    "correct": "quella",
+    "options": ["quello", "quella", "quelle", "questa"],
+    "explanation": "Feminine singular 'that' is 'quella'.",
+    "tags": ["demonstratives", "vocabulary"]
+  },
+  {
+    "id": "dim012",
+    "category": "traduzione",
+    "sentence": "those (m.pl.) = ___",
+    "hint": "m.pl. → -i",
+    "correct": "quelli",
+    "options": ["quelle", "quelli", "quello", "questi"],
+    "explanation": "Masculine plural 'those' is 'quelli' (simplified form).",
+    "tags": ["demonstratives", "vocabulary"]
+  },
+  {
+    "id": "dim013",
+    "category": "traduzione",
+    "sentence": "something = ___",
+    "hint": "invariable",
+    "correct": "qualcosa",
+    "options": ["qualcosa", "qualcuno", "questo", "quello"],
+    "explanation": "'Something' is 'qualcosa', an invariable word that never changes.",
+    "tags": ["demonstratives", "vocabulary"]
+  },
+  {
+    "id": "dim014",
+    "category": "traduzione",
+    "sentence": "this (f.sg.) = ___",
+    "hint": "f.sg. → -a",
+    "correct": "questa",
+    "options": ["questo", "questa", "questi", "queste"],
+    "explanation": "Feminine singular 'this' is 'questa'.",
+    "tags": ["demonstratives", "vocabulary"]
+  },
+  {
+    "id": "dim015",
+    "category": "traduzione",
+    "sentence": "these (m.pl.) = ___",
+    "hint": "m.pl. → -i",
+    "correct": "questi",
+    "options": ["queste", "questi", "quelli", "questa"],
+    "explanation": "Masculine plural 'these' is 'questi'.",
+    "tags": ["demonstratives", "vocabulary"]
+  }
+]

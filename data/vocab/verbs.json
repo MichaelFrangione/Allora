@@ -1,0 +1,1700 @@
+[
+  {
+    "id": "v001",
+    "italian": "abbracciare",
+    "english": "to hug",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Ti abbraccio forte.",
+    "tags": [
+      "verbs",
+      "are-verbs",
+      "actions"
+    ],
+    "unit": 1,
+    "pronunciation": "ab·brak·CHA·re"
+  },
+  {
+    "id": "v002",
+    "italian": "abitare",
+    "english": "to live, reside",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Abito a Milano.",
+    "tags": [
+      "verbs",
+      "are-verbs",
+      "daily-life"
+    ],
+    "unit": 1,
+    "pronunciation": "a·bi·TA·re"
+  },
+  {
+    "id": "v003",
+    "italian": "amare",
+    "english": "to love",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Amo la musica italiana.",
+    "tags": [
+      "verbs",
+      "are-verbs",
+      "emotions"
+    ],
+    "unit": 1,
+    "pronunciation": "a·MA·re"
+  },
+  {
+    "id": "v004",
+    "italian": "ascoltare",
+    "english": "to listen",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Ascolto la radio ogni mattina.",
+    "tags": [
+      "verbs",
+      "are-verbs",
+      "communication"
+    ],
+    "unit": 1,
+    "pronunciation": "a·skol·TA·re"
+  },
+  {
+    "id": "v005",
+    "italian": "assomigliare",
+    "english": "to resemble, look like",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Assomiglio molto a mia madre.",
+    "tags": [
+      "verbs",
+      "are-verbs",
+      "descriptions"
+    ],
+    "unit": 1,
+    "pronunciation": "as·so·mi·LYA·re"
+  },
+  {
+    "id": "v006",
+    "italian": "baciare",
+    "english": "to kiss",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Si baciano sulla guancia.",
+    "tags": [
+      "verbs",
+      "are-verbs",
+      "actions"
+    ],
+    "unit": 1,
+    "pronunciation": "ba·CHA·re"
+  },
+  {
+    "id": "v007",
+    "italian": "ballare",
+    "english": "to dance",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Balli bene il tango?",
+    "tags": [
+      "verbs",
+      "are-verbs",
+      "hobbies"
+    ],
+    "unit": 1,
+    "pronunciation": "bal·LA·re"
+  },
+  {
+    "id": "v008",
+    "italian": "camminare",
+    "english": "to walk",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Cammino ogni mattina.",
+    "tags": [
+      "verbs",
+      "are-verbs",
+      "movement"
+    ],
+    "unit": 1,
+    "pronunciation": "cam·mi·NA·re"
+  },
+  {
+    "id": "v009",
+    "italian": "cantare",
+    "english": "to sing",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Canto sotto la doccia.",
+    "tags": [
+      "verbs",
+      "are-verbs",
+      "hobbies"
+    ],
+    "unit": 1,
+    "pronunciation": "can·TA·re"
+  },
+  {
+    "id": "v010",
+    "italian": "cercare",
+    "english": "to look for, seek",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Cerco il mio telefono.",
+    "tags": [
+      "verbs",
+      "are-verbs",
+      "actions"
+    ],
+    "unit": 1,
+    "pronunciation": "cher·KA·re"
+  },
+  {
+    "id": "v011",
+    "italian": "chiacchierare",
+    "english": "to chat",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Chiacchieriamo per ore.",
+    "tags": [
+      "verbs",
+      "are-verbs",
+      "communication"
+    ],
+    "unit": 1,
+    "pronunciation": "kyak·kye·RA·re"
+  },
+  {
+    "id": "v012",
+    "italian": "chiamare",
+    "english": "to call",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Ti chiamo stasera.",
+    "tags": [
+      "verbs",
+      "are-verbs",
+      "communication"
+    ],
+    "unit": 1,
+    "pronunciation": "kya·MA·re"
+  },
+  {
+    "id": "v013",
+    "italian": "cominciare",
+    "english": "to start, begin",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Il film comincia alle otto.",
+    "tags": [
+      "verbs",
+      "are-verbs",
+      "actions"
+    ],
+    "unit": 1,
+    "pronunciation": "ko·min·CHA·re"
+  },
+  {
+    "id": "v014",
+    "italian": "comprare",
+    "english": "to buy",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Compro il pane ogni giorno.",
+    "tags": [
+      "verbs",
+      "are-verbs",
+      "shopping"
+    ],
+    "unit": 1,
+    "pronunciation": "com·PRA·re"
+  },
+  {
+    "id": "v015",
+    "italian": "costare",
+    "english": "to cost",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Quanto costa questo?",
+    "tags": [
+      "verbs",
+      "are-verbs",
+      "shopping"
+    ],
+    "unit": 1,
+    "pronunciation": "cos·TA·re"
+  },
+  {
+    "id": "v016",
+    "italian": "cucinare",
+    "english": "to cook",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Cucino la pasta stasera.",
+    "tags": [
+      "verbs",
+      "are-verbs",
+      "food",
+      "daily-life"
+    ],
+    "unit": 1,
+    "pronunciation": "ku·chi·NA·re"
+  },
+  {
+    "id": "v017",
+    "italian": "domandare",
+    "english": "to ask",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Posso domandarti una cosa?",
+    "tags": [
+      "verbs",
+      "are-verbs",
+      "communication"
+    ],
+    "unit": 1,
+    "pronunciation": "do·man·DA·re"
+  },
+  {
+    "id": "v018",
+    "italian": "firmare",
+    "english": "to sign",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Firma qui, per favore.",
+    "tags": [
+      "verbs",
+      "are-verbs",
+      "work"
+    ],
+    "unit": 1,
+    "pronunciation": "fir·MA·re"
+  },
+  {
+    "id": "v019",
+    "italian": "guardare",
+    "english": "to look, watch",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Guardiamo la TV insieme.",
+    "tags": [
+      "verbs",
+      "are-verbs",
+      "daily-life"
+    ],
+    "unit": 1,
+    "pronunciation": "guar·DA·re"
+  },
+  {
+    "id": "v020",
+    "italian": "guidare",
+    "english": "to drive",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Guida con attenzione.",
+    "tags": [
+      "verbs",
+      "are-verbs",
+      "movement"
+    ],
+    "unit": 1,
+    "pronunciation": "gui·DA·re"
+  },
+  {
+    "id": "v021",
+    "italian": "imparare",
+    "english": "to learn",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Imparo l'italiano ogni giorno.",
+    "tags": [
+      "verbs",
+      "are-verbs",
+      "education"
+    ],
+    "unit": 1,
+    "pronunciation": "im·pa·RA·re"
+  },
+  {
+    "id": "v022",
+    "italian": "insegnare",
+    "english": "to teach",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Insegna matematica al liceo.",
+    "tags": [
+      "verbs",
+      "are-verbs",
+      "education",
+      "work"
+    ],
+    "unit": 1,
+    "pronunciation": "in·se·NYA·re"
+  },
+  {
+    "id": "v023",
+    "italian": "lavorare",
+    "english": "to work",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Lavoro in un ufficio.",
+    "tags": [
+      "verbs",
+      "are-verbs",
+      "work"
+    ],
+    "unit": 1,
+    "pronunciation": "la·vo·RA·re"
+  },
+  {
+    "id": "v024",
+    "italian": "mangiare",
+    "english": "to eat",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Mangio la pizza ogni venerdì.",
+    "tags": [
+      "verbs",
+      "are-verbs",
+      "food"
+    ],
+    "unit": 1,
+    "pronunciation": "man·JA·re"
+  },
+  {
+    "id": "v025",
+    "italian": "odiare",
+    "english": "to hate",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Odio svegliarmi presto.",
+    "tags": [
+      "verbs",
+      "are-verbs",
+      "emotions"
+    ],
+    "unit": 1,
+    "pronunciation": "O·dia·re"
+  },
+  {
+    "id": "v026",
+    "italian": "ordinare",
+    "english": "to order",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Ordino sempre la stessa cosa.",
+    "tags": [
+      "verbs",
+      "are-verbs",
+      "food",
+      "shopping"
+    ],
+    "unit": 1,
+    "pronunciation": "or·di·NA·re"
+  },
+  {
+    "id": "v027",
+    "italian": "pagare",
+    "english": "to pay",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Pago con la carta.",
+    "tags": [
+      "verbs",
+      "are-verbs",
+      "shopping"
+    ],
+    "unit": 1,
+    "pronunciation": "pa·GA·re"
+  },
+  {
+    "id": "v028",
+    "italian": "parlare",
+    "english": "to speak, talk",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Parli italiano?",
+    "tags": [
+      "verbs",
+      "are-verbs",
+      "communication"
+    ],
+    "unit": 1,
+    "pronunciation": "par·LA·re"
+  },
+  {
+    "id": "v029",
+    "italian": "portare",
+    "english": "to bring, wear, carry",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Porto sempre un ombrello.",
+    "tags": [
+      "verbs",
+      "are-verbs",
+      "actions"
+    ],
+    "unit": 1,
+    "pronunciation": "por·TA·re"
+  },
+  {
+    "id": "v030",
+    "italian": "pranzare",
+    "english": "to have lunch",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Pranziamo insieme?",
+    "tags": [
+      "verbs",
+      "are-verbs",
+      "food",
+      "daily-life"
+    ],
+    "unit": 1,
+    "pronunciation": "pran·DZA·re"
+  },
+  {
+    "id": "v031",
+    "italian": "pregare",
+    "english": "to pray",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Prego ogni domenica.",
+    "tags": [
+      "verbs",
+      "are-verbs",
+      "actions"
+    ],
+    "unit": 1,
+    "pronunciation": "pre·GA·re"
+  },
+  {
+    "id": "v032",
+    "italian": "prenotare",
+    "english": "to reserve, book",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Ho prenotato un tavolo per due.",
+    "tags": [
+      "verbs",
+      "are-verbs",
+      "travel"
+    ],
+    "unit": 1,
+    "pronunciation": "pre·no·TA·re"
+  },
+  {
+    "id": "v033",
+    "italian": "preparare",
+    "english": "to prepare",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Preparo la cena alle sette.",
+    "tags": [
+      "verbs",
+      "are-verbs",
+      "food",
+      "daily-life"
+    ],
+    "unit": 1,
+    "pronunciation": "pre·pa·RA·re"
+  },
+  {
+    "id": "v034",
+    "italian": "respirare",
+    "english": "to breathe",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Respira profondamente.",
+    "tags": [
+      "verbs",
+      "are-verbs",
+      "actions"
+    ],
+    "unit": 1,
+    "pronunciation": "res·pi·RA·re"
+  },
+  {
+    "id": "v035",
+    "italian": "ringraziare",
+    "english": "to thank",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Ti ringrazio per tutto.",
+    "tags": [
+      "verbs",
+      "are-verbs",
+      "communication",
+      "politeness"
+    ],
+    "unit": 1,
+    "pronunciation": "rin·gra·TSYA·re"
+  },
+  {
+    "id": "v036",
+    "italian": "sbagliare",
+    "english": "to make a mistake",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Ho sbagliato strada.",
+    "tags": [
+      "verbs",
+      "are-verbs",
+      "actions"
+    ],
+    "unit": 1,
+    "pronunciation": "sba·LYA·re"
+  },
+  {
+    "id": "v037",
+    "italian": "sperare",
+    "english": "to hope",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Spero di vederti presto.",
+    "tags": [
+      "verbs",
+      "are-verbs",
+      "emotions"
+    ],
+    "unit": 1,
+    "pronunciation": "spe·RA·re"
+  },
+  {
+    "id": "v038",
+    "italian": "spiegare",
+    "english": "to explain",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Puoi spiegarmi di nuovo?",
+    "tags": [
+      "verbs",
+      "are-verbs",
+      "communication",
+      "education"
+    ],
+    "unit": 1,
+    "pronunciation": "spie·GA·re"
+  },
+  {
+    "id": "v039",
+    "italian": "studiare",
+    "english": "to study",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Studio italiano ogni sera.",
+    "tags": [
+      "verbs",
+      "are-verbs",
+      "education"
+    ],
+    "unit": 1,
+    "pronunciation": "stu·DIA·re"
+  },
+  {
+    "id": "v040",
+    "italian": "trovare",
+    "english": "to find",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Non trovo le chiavi.",
+    "tags": [
+      "verbs",
+      "are-verbs",
+      "actions"
+    ],
+    "unit": 1,
+    "pronunciation": "tro·VA·re"
+  },
+  {
+    "id": "v041",
+    "italian": "viaggiare",
+    "english": "to travel",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Viaggio spesso per lavoro.",
+    "tags": [
+      "verbs",
+      "are-verbs",
+      "travel"
+    ],
+    "unit": 1,
+    "pronunciation": "vyaj·JA·re"
+  },
+  {
+    "id": "v042",
+    "italian": "visitare",
+    "english": "to visit",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Visito Roma la prossima settimana.",
+    "tags": [
+      "verbs",
+      "are-verbs",
+      "travel"
+    ],
+    "unit": 1,
+    "pronunciation": "vi·si·TA·re"
+  },
+  {
+    "id": "v043",
+    "italian": "volare",
+    "english": "to fly",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Volo a Roma domani.",
+    "tags": [
+      "verbs",
+      "are-verbs",
+      "travel",
+      "movement"
+    ],
+    "unit": 1,
+    "pronunciation": "vo·LA·re"
+  },
+  {
+    "id": "v044",
+    "italian": "battere",
+    "english": "to hit, beat",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Il cuore batte forte.",
+    "tags": [
+      "verbs",
+      "ere-verbs",
+      "actions"
+    ],
+    "unit": 1,
+    "pronunciation": "BAT·te·re"
+  },
+  {
+    "id": "v045",
+    "italian": "cadere",
+    "english": "to fall",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Cado sempre sulle scale.",
+    "tags": [
+      "verbs",
+      "ere-verbs",
+      "movement"
+    ],
+    "unit": 1,
+    "pronunciation": "ka·DE·re"
+  },
+  {
+    "id": "v046",
+    "italian": "conoscere",
+    "english": "to know (a person or place)",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Conosci Marco?",
+    "tags": [
+      "verbs",
+      "ere-verbs",
+      "communication"
+    ],
+    "unit": 1,
+    "pronunciation": "ko·NO·she·re"
+  },
+  {
+    "id": "v047",
+    "italian": "correre",
+    "english": "to run",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Corro ogni mattina al parco.",
+    "tags": [
+      "verbs",
+      "ere-verbs",
+      "movement",
+      "sport"
+    ],
+    "unit": 1,
+    "pronunciation": "COR·re·re"
+  },
+  {
+    "id": "v048",
+    "italian": "credere",
+    "english": "to believe",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Credo che tu abbia ragione.",
+    "tags": [
+      "verbs",
+      "ere-verbs",
+      "communication"
+    ],
+    "unit": 1,
+    "pronunciation": "CRE·de·re"
+  },
+  {
+    "id": "v049",
+    "italian": "decidere",
+    "english": "to decide",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Decidiamo domani.",
+    "tags": [
+      "verbs",
+      "ere-verbs",
+      "actions"
+    ],
+    "unit": 1,
+    "pronunciation": "de·CHI·de·re"
+  },
+  {
+    "id": "v050",
+    "italian": "descrivere",
+    "english": "to describe",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Descrivimi la tua città.",
+    "tags": [
+      "verbs",
+      "ere-verbs",
+      "communication"
+    ],
+    "unit": 1,
+    "pronunciation": "de·SKRI·ve·re"
+  },
+  {
+    "id": "v051",
+    "italian": "leggere",
+    "english": "to read",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Leggo un libro al mese.",
+    "tags": [
+      "verbs",
+      "ere-verbs",
+      "hobbies",
+      "education"
+    ],
+    "unit": 1,
+    "pronunciation": "LEG·ge·re"
+  },
+  {
+    "id": "v052",
+    "italian": "mettere",
+    "english": "to put, place",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Metti il libro sul tavolo.",
+    "tags": [
+      "verbs",
+      "ere-verbs",
+      "actions"
+    ],
+    "unit": 1,
+    "pronunciation": "MET·te·re"
+  },
+  {
+    "id": "v053",
+    "italian": "mordere",
+    "english": "to bite",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Il cane ha morso il postino.",
+    "tags": [
+      "verbs",
+      "ere-verbs",
+      "actions"
+    ],
+    "unit": 1,
+    "pronunciation": "MOR·de·re"
+  },
+  {
+    "id": "v054",
+    "italian": "offendere",
+    "english": "to offend",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Non volevo offenderti.",
+    "tags": [
+      "verbs",
+      "ere-verbs",
+      "communication",
+      "emotions"
+    ],
+    "unit": 1,
+    "pronunciation": "of·FEN·de·re"
+  },
+  {
+    "id": "v055",
+    "italian": "perdere",
+    "english": "to lose",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Ho perso il treno.",
+    "tags": [
+      "verbs",
+      "ere-verbs",
+      "actions"
+    ],
+    "unit": 1,
+    "pronunciation": "PER·de·re"
+  },
+  {
+    "id": "v056",
+    "italian": "prendere",
+    "english": "to take",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Prendo un caffè.",
+    "tags": [
+      "verbs",
+      "ere-verbs",
+      "actions"
+    ],
+    "unit": 1,
+    "pronunciation": "PREN·de·re"
+  },
+  {
+    "id": "v057",
+    "italian": "ridere",
+    "english": "to laugh",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Ridiamo molto insieme.",
+    "tags": [
+      "verbs",
+      "ere-verbs",
+      "emotions"
+    ],
+    "unit": 1,
+    "pronunciation": "RI·de·re"
+  },
+  {
+    "id": "v058",
+    "italian": "rompere",
+    "english": "to break",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Ho rotto il telefono.",
+    "tags": [
+      "verbs",
+      "ere-verbs",
+      "actions"
+    ],
+    "unit": 1,
+    "pronunciation": "ROM·pe·re"
+  },
+  {
+    "id": "v059",
+    "italian": "scrivere",
+    "english": "to write",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Scrivo una lettera a mia nonna.",
+    "tags": [
+      "verbs",
+      "ere-verbs",
+      "communication",
+      "hobbies"
+    ],
+    "unit": 1,
+    "pronunciation": "SKRI·ve·re"
+  },
+  {
+    "id": "v060",
+    "italian": "sopravvivere",
+    "english": "to survive",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Sopravvivo senza caffè... appena.",
+    "tags": [
+      "verbs",
+      "ere-verbs",
+      "actions"
+    ],
+    "unit": 1,
+    "pronunciation": "so·prav·VI·ve·re"
+  },
+  {
+    "id": "v061",
+    "italian": "sorridere",
+    "english": "to smile",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Sorridi sempre!",
+    "tags": [
+      "verbs",
+      "ere-verbs",
+      "emotions"
+    ],
+    "unit": 1,
+    "pronunciation": "sor·RI·de·re"
+  },
+  {
+    "id": "v062",
+    "italian": "vedere",
+    "english": "to see",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Ci vediamo domani.",
+    "tags": [
+      "verbs",
+      "ere-verbs",
+      "daily-life"
+    ],
+    "unit": 1,
+    "pronunciation": "ve·DE·re"
+  },
+  {
+    "id": "v063",
+    "italian": "vivere",
+    "english": "to live",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Vivo in Canada da cinque anni.",
+    "tags": [
+      "verbs",
+      "ere-verbs",
+      "daily-life"
+    ],
+    "unit": 1,
+    "pronunciation": "VI·ve·re"
+  },
+  {
+    "id": "v064",
+    "italian": "aprire",
+    "english": "to open",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Apri la finestra, per favore.",
+    "tags": [
+      "verbs",
+      "ire-verbs",
+      "actions"
+    ],
+    "unit": 1,
+    "pronunciation": "a·PRI·re"
+  },
+  {
+    "id": "v065",
+    "italian": "bollire",
+    "english": "to boil",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "L'acqua bolle.",
+    "tags": [
+      "verbs",
+      "ire-verbs",
+      "food"
+    ],
+    "unit": 1,
+    "pronunciation": "bol·LI·re"
+  },
+  {
+    "id": "v066",
+    "italian": "capire",
+    "english": "to understand",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Capisco l'italiano ma non lo parlo bene.",
+    "tags": [
+      "verbs",
+      "ire-verbs",
+      "isc-verbs",
+      "communication",
+      "education"
+    ],
+    "unit": 1,
+    "pronunciation": "ka·PI·re"
+  },
+  {
+    "id": "v067",
+    "italian": "coprire",
+    "english": "to cover",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Copriti, fa freddo!",
+    "tags": [
+      "verbs",
+      "ire-verbs",
+      "actions"
+    ],
+    "unit": 1,
+    "pronunciation": "ko·PRI·re"
+  },
+  {
+    "id": "v068",
+    "italian": "cucire",
+    "english": "to sew",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Cucio i miei vestiti.",
+    "tags": [
+      "verbs",
+      "ire-verbs",
+      "hobbies"
+    ],
+    "unit": 1,
+    "pronunciation": "ku·CHI·re"
+  },
+  {
+    "id": "v069",
+    "italian": "dormire",
+    "english": "to sleep",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Dormo otto ore per notte.",
+    "tags": [
+      "verbs",
+      "ire-verbs",
+      "daily-life"
+    ],
+    "unit": 1,
+    "pronunciation": "dor·MI·re"
+  },
+  {
+    "id": "v070",
+    "italian": "finire",
+    "english": "to finish",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Finisco il lavoro alle sei.",
+    "tags": [
+      "verbs",
+      "ire-verbs",
+      "isc-verbs",
+      "daily-life",
+      "work"
+    ],
+    "unit": 1,
+    "pronunciation": "fi·NI·re"
+  },
+  {
+    "id": "v071",
+    "italian": "mentire",
+    "english": "to lie",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Non mentire mai.",
+    "tags": [
+      "verbs",
+      "ire-verbs",
+      "communication"
+    ],
+    "unit": 1,
+    "pronunciation": "men·TI·re"
+  },
+  {
+    "id": "v072",
+    "italian": "offrire",
+    "english": "to offer",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Offro io il caffè.",
+    "tags": [
+      "verbs",
+      "ire-verbs",
+      "actions",
+      "food"
+    ],
+    "unit": 1,
+    "pronunciation": "of·FRI·re"
+  },
+  {
+    "id": "v073",
+    "italian": "partire",
+    "english": "to leave, depart",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Partiamo domani mattina.",
+    "tags": [
+      "verbs",
+      "ire-verbs",
+      "travel",
+      "movement"
+    ],
+    "unit": 1,
+    "pronunciation": "par·TI·re"
+  },
+  {
+    "id": "v074",
+    "italian": "preferire",
+    "english": "to prefer",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Preferisco il caffè al tè.",
+    "tags": [
+      "verbs",
+      "ire-verbs",
+      "isc-verbs",
+      "food"
+    ],
+    "unit": 1,
+    "pronunciation": "pre·fe·RI·re"
+  },
+  {
+    "id": "v075",
+    "italian": "pulire",
+    "english": "to clean",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Pulisco la casa il sabato.",
+    "tags": [
+      "verbs",
+      "ire-verbs",
+      "isc-verbs",
+      "daily-life"
+    ],
+    "unit": 1,
+    "pronunciation": "pu·LI·re"
+  },
+  {
+    "id": "v076",
+    "italian": "scoprire",
+    "english": "to discover",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Ho scoperto un ristorante fantastico.",
+    "tags": [
+      "verbs",
+      "ire-verbs",
+      "actions"
+    ],
+    "unit": 1,
+    "pronunciation": "sko·PRI·re"
+  },
+  {
+    "id": "v077",
+    "italian": "seguire",
+    "english": "to follow",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Segui le istruzioni.",
+    "tags": [
+      "verbs",
+      "ire-verbs",
+      "actions"
+    ],
+    "unit": 1,
+    "pronunciation": "se·GUI·re"
+  },
+  {
+    "id": "v078",
+    "italian": "sentire",
+    "english": "to hear, feel, smell",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Senti che buon profumo!",
+    "tags": [
+      "verbs",
+      "ire-verbs",
+      "senses"
+    ],
+    "unit": 1,
+    "pronunciation": "sen·TI·re"
+  },
+  {
+    "id": "v079",
+    "italian": "servire",
+    "english": "to serve",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Il cameriere serve i clienti.",
+    "tags": [
+      "verbs",
+      "ire-verbs",
+      "food",
+      "work"
+    ],
+    "unit": 1,
+    "pronunciation": "ser·VI·re"
+  },
+  {
+    "id": "v080",
+    "italian": "soffrire",
+    "english": "to suffer",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Soffro di allergie in primavera.",
+    "tags": [
+      "verbs",
+      "ire-verbs",
+      "emotions"
+    ],
+    "unit": 1,
+    "pronunciation": "sof·FRI·re"
+  },
+  {
+    "id": "v081",
+    "italian": "sparire",
+    "english": "to disappear",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Le chiavi sono sparite!",
+    "tags": [
+      "verbs",
+      "ire-verbs",
+      "isc-verbs",
+      "actions"
+    ],
+    "unit": 1,
+    "pronunciation": "spa·RI·re"
+  },
+  {
+    "id": "v082",
+    "italian": "suggerire",
+    "english": "to suggest",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Cosa suggerisci di fare?",
+    "tags": [
+      "verbs",
+      "ire-verbs",
+      "isc-verbs",
+      "communication"
+    ],
+    "unit": 1,
+    "pronunciation": "suj·je·RI·re"
+  },
+  {
+    "id": "v083",
+    "italian": "vestire",
+    "english": "to dress",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Si veste sempre con eleganza.",
+    "tags": [
+      "verbs",
+      "ire-verbs",
+      "daily-life"
+    ],
+    "unit": 1,
+    "pronunciation": "ves·TI·re"
+  },
+  {
+    "id": "v084",
+    "italian": "affittare",
+    "english": "to rent",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Affitta un appartamento in centro.",
+    "tags": [
+      "verbs",
+      "are-verbs",
+      "daily-life",
+      "lesson-2"
+    ],
+    "unit": 2,
+    "pronunciation": "af·fit·TA·re"
+  },
+  {
+    "id": "v085",
+    "italian": "arrivare",
+    "english": "to arrive",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Arrivo a casa alle sei.",
+    "tags": [
+      "verbs",
+      "are-verbs",
+      "movement",
+      "lesson-2"
+    ],
+    "unit": 2,
+    "pronunciation": "ar·ri·VA·re"
+  },
+  {
+    "id": "v086",
+    "italian": "aspettare",
+    "english": "to wait (for)",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Ti aspetto davanti al cinema.",
+    "tags": [
+      "verbs",
+      "are-verbs",
+      "actions",
+      "lesson-2"
+    ],
+    "unit": 2,
+    "pronunciation": "a·spet·TA·re"
+  },
+  {
+    "id": "v087",
+    "italian": "cambiare",
+    "english": "to change",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Cambio idea spesso.",
+    "tags": [
+      "verbs",
+      "are-verbs",
+      "actions",
+      "lesson-2"
+    ],
+    "unit": 2,
+    "pronunciation": "cam·BIA·re"
+  },
+  {
+    "id": "v088",
+    "italian": "giocare",
+    "english": "to play (a game or sport)",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Gioco a tennis ogni settimana.",
+    "tags": [
+      "verbs",
+      "are-verbs",
+      "hobbies",
+      "sport",
+      "lesson-2"
+    ],
+    "unit": 2,
+    "pronunciation": "jo·KA·re"
+  },
+  {
+    "id": "v089",
+    "italian": "suonare",
+    "english": "to play (an instrument)",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Suono la chitarra da tre anni.",
+    "tags": [
+      "verbs",
+      "are-verbs",
+      "hobbies",
+      "music",
+      "lesson-2"
+    ],
+    "unit": 2,
+    "pronunciation": "suo·NA·re"
+  },
+  {
+    "id": "v090",
+    "italian": "nuotare",
+    "english": "to swim",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Nuoto in piscina tre volte a settimana.",
+    "tags": [
+      "verbs",
+      "are-verbs",
+      "hobbies",
+      "sport",
+      "lesson-2"
+    ],
+    "unit": 2,
+    "pronunciation": "nuo·TA·re"
+  },
+  {
+    "id": "v091",
+    "italian": "rispondere",
+    "english": "to answer, reply",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Non risponde al telefono.",
+    "tags": [
+      "verbs",
+      "ere-verbs",
+      "communication",
+      "lesson-2"
+    ],
+    "unit": 2,
+    "pronunciation": "ri·SPON·de·re"
+  },
+  {
+    "id": "v092",
+    "italian": "ritornare",
+    "english": "to return, come back",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Ritornano dal mare domenica.",
+    "tags": [
+      "verbs",
+      "are-verbs",
+      "movement",
+      "lesson-2"
+    ],
+    "unit": 2,
+    "pronunciation": "ri·tor·NA·re"
+  },
+  {
+    "id": "v093",
+    "italian": "sembrare",
+    "english": "to seem, appear",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Sembra stanco oggi.",
+    "tags": [
+      "verbs",
+      "are-verbs",
+      "descriptions",
+      "lesson-2"
+    ],
+    "unit": 2,
+    "pronunciation": "sem·BRA·re"
+  },
+  {
+    "id": "v094",
+    "italian": "cenare",
+    "english": "to have dinner",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Ceniamo alle otto di sera.",
+    "tags": [
+      "verbs",
+      "are-verbs",
+      "food",
+      "daily-life",
+      "lesson-2"
+    ],
+    "unit": 2,
+    "pronunciation": "che·NA·re"
+  },
+  {
+    "id": "v095",
+    "italian": "dipingere",
+    "english": "to paint",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Dipinge paesaggi nel tempo libero.",
+    "tags": [
+      "verbs",
+      "ere-verbs",
+      "hobbies",
+      "art",
+      "lesson-2"
+    ],
+    "unit": 2,
+    "pronunciation": "di·PIN·je·re"
+  },
+  {
+    "id": "v209",
+    "italian": "preferire",
+    "english": "to prefer",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Preferisco il cappuccino al caffè.",
+    "tags": [
+      "verbs",
+      "ire-verbs",
+      "isc-verbs",
+      "lesson-6"
+    ],
+    "unit": 6,
+    "pronunciation": "pre·fe·RI·re"
+  },
+  {
+    "id": "v227",
+    "italian": "girare",
+    "english": "to turn",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Dovete girare a destra all'incrocio.",
+    "tags": [
+      "verbs",
+      "city",
+      "directions",
+      "lesson-7"
+    ],
+    "unit": 7,
+    "pronunciation": "ji·RA·re"
+  },
+  {
+    "id": "v228",
+    "italian": "continuare",
+    "english": "to continue",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Continua sempre dritto per cento metri.",
+    "tags": [
+      "verbs",
+      "city",
+      "directions",
+      "lesson-7"
+    ],
+    "unit": 7,
+    "pronunciation": "kon·ti·nu·A·re"
+  },
+  {
+    "id": "v235",
+    "italian": "dovere",
+    "english": "to have to / must",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Devo studiare molto per l'esame.",
+    "tags": [
+      "verbs",
+      "modals",
+      "lesson-7"
+    ],
+    "unit": 7,
+    "pronunciation": "do·VE·re"
+  },
+  {
+    "id": "v236",
+    "italian": "potere",
+    "english": "to be able to / can",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Posso aiutarti con l'italiano.",
+    "tags": [
+      "verbs",
+      "modals",
+      "lesson-7"
+    ],
+    "unit": 7,
+    "pronunciation": "po·TE·re"
+  },
+  {
+    "id": "v237",
+    "italian": "volere",
+    "english": "to want",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Voglio andare in Italia quest'estate.",
+    "tags": [
+      "verbs",
+      "modals",
+      "lesson-7"
+    ],
+    "unit": 7,
+    "pronunciation": "vo·LE·re"
+  },
+  {
+    "id": "v267",
+    "italian": "svegliarsi",
+    "english": "to wake up",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Mi sveglio sempre alle sette.",
+    "tags": [
+      "verbs",
+      "reflexive-verbs",
+      "daily-life"
+    ],
+    "pronunciation": "zve·LYAR·si"
+  },
+  {
+    "id": "v268",
+    "italian": "alzarsi",
+    "english": "to get up",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Mi alzo dopo la sveglia.",
+    "tags": [
+      "verbs",
+      "reflexive-verbs",
+      "daily-life"
+    ],
+    "pronunciation": "al·TSAR·si"
+  },
+  {
+    "id": "v269",
+    "italian": "lavarsi",
+    "english": "to wash oneself",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Mi lavo i denti dopo cena.",
+    "tags": [
+      "verbs",
+      "reflexive-verbs",
+      "daily-life"
+    ],
+    "pronunciation": "la·VAR·si"
+  },
+  {
+    "id": "v270",
+    "italian": "vestirsi",
+    "english": "to get dressed",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Mi vesto prima di uscire.",
+    "tags": [
+      "verbs",
+      "reflexive-verbs",
+      "daily-life"
+    ],
+    "pronunciation": "ve·STIR·si"
+  },
+  {
+    "id": "v271",
+    "italian": "prepararsi",
+    "english": "to get ready",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Mi preparo per il meeting.",
+    "tags": [
+      "verbs",
+      "reflexive-verbs",
+      "daily-life"
+    ],
+    "pronunciation": "pre·pa·RAR·si"
+  },
+  {
+    "id": "v272",
+    "italian": "divertirsi",
+    "english": "to have fun",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Ci divertiamo molto alla festa.",
+    "tags": [
+      "verbs",
+      "reflexive-verbs",
+      "daily-life"
+    ],
+    "pronunciation": "di·ver·TIR·si"
+  },
+  {
+    "id": "v273",
+    "italian": "mettersi",
+    "english": "to put on",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Mi metto il pigiama e vado a letto.",
+    "tags": [
+      "verbs",
+      "reflexive-verbs",
+      "daily-life"
+    ],
+    "pronunciation": "MET·ter·si"
+  },
+  {
+    "id": "v274",
+    "italian": "rilassarsi",
+    "english": "to relax",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Dopo cena mi rilasso sul divano.",
+    "tags": [
+      "verbs",
+      "reflexive-verbs",
+      "daily-life"
+    ],
+    "pronunciation": "ri·las·SAR·si"
+  },
+  {
+    "id": "v275",
+    "italian": "addormentarsi",
+    "english": "to fall asleep",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Mi addormento davanti alla TV.",
+    "tags": [
+      "verbs",
+      "reflexive-verbs",
+      "daily-life"
+    ],
+    "pronunciation": "ad·dor·men·TAR·si"
+  },
+  {
+    "id": "v276",
+    "italian": "arrabbiarsi",
+    "english": "to get angry",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Si arrabbia quando arrivo tardi.",
+    "tags": [
+      "verbs",
+      "reflexive-verbs",
+      "emotions"
+    ],
+    "pronunciation": "ar·rab·BYAR·si"
+  }
+]

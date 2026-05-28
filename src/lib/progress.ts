@@ -76,6 +76,72 @@ export async function getModeStats(userId: string): Promise<ModeStats[]> {
   }));
 }
 
+// Leitner box → days until an item is due again, keyed by trailing correct-streak.
+const LEITNER_INTERVAL_DAYS: Record<number, number> = { 0: 0, 1: 1, 2: 3, 3: 7, 4: 14 };
+const MAX_INTERVAL_DAYS = 30; // streak >= 5
+
+function intervalDaysForStreak(streak: number): number {
+  return streak >= 5 ? MAX_INTERVAL_DAYS : LEITNER_INTERVAL_DAYS[streak] ?? 0;
+}
+
+const DUE_CONTENT_TYPES = ["flashcard", "vocab"] as const;
+
+export type DueItem = {
+  contentId: string;
+  /** ms past the due time; higher = more overdue */
+  overdueMs: number;
+};
+
+/**
+ * Spaced-repetition due list computed from existing CardAttempt rows (no schema change).
+ * For each vocab/flashcard contentId: take its attempts in chronological order, find the
+ * trailing run of correct answers, map that streak to a Leitner interval, and mark the item
+ * due when now >= lastAttempt + interval. Returns most-overdue first.
+ */
+export async function getDueVocabIds(
+  userId: string,
+  now: Date = new Date()
+): Promise<DueItem[]> {
+  const attempts = await prisma.cardAttempt.findMany({
+    where: { userId, contentType: { in: [...DUE_CONTENT_TYPES] } },
+    select: { contentId: true, correct: true, createdAt: true },
+    orderBy: { createdAt: "asc" },
+  });
+
+  // contentId → chronologically-ordered attempts (query already sorts ascending)
+  const byContent = new Map<string, { correct: boolean; createdAt: Date }[]>();
+  for (const a of attempts) {
+    const list = byContent.get(a.contentId) ?? [];
+    list.push({ correct: a.correct, createdAt: a.createdAt });
+    byContent.set(a.contentId, list);
+  }
+
+  const due: DueItem[] = [];
+  for (const [contentId, list] of byContent) {
+    const last = list[list.length - 1];
+
+    // Trailing correct-streak: count consecutive correct answers from the end.
+    let streak = 0;
+    for (let i = list.length - 1; i >= 0 && list[i].correct; i--) streak++;
+
+    const intervalMs = intervalDaysForStreak(streak) * 24 * 60 * 60 * 1000;
+    const dueAt = last.createdAt.getTime() + intervalMs;
+    const overdueMs = now.getTime() - dueAt;
+    if (overdueMs >= 0) due.push({ contentId, overdueMs });
+  }
+
+  due.sort((a, b) => b.overdueMs - a.overdueMs);
+  return due;
+}
+
+export async function getDueVocabCount(
+  userId: string,
+  now: Date = new Date()
+): Promise<number> {
+  const due = await getDueVocabIds(userId, now);
+  return due.length;
+}
+
 export async function getRecentSessions(userId: string, limit = 5) {
   return prisma.studySession.findMany({
     where: { userId },

@@ -3,8 +3,8 @@
 import { useState } from "react";
 import { Input } from "@/components/ui/input";
 import { Card, CardContent } from "@/components/ui/card";
-import UnitSelector from "@/components/UnitSelector";
-import { getVocabUnit } from "@/lib/content";
+import SubjectSelector from "@/components/SubjectSelector";
+import { tagsMatchSubject, subjectsPresent, SUBJECTS } from "@/lib/content";
 import type { VocabItem } from "@/lib/content";
 
 const POS_COLORS: Record<string, string> = {
@@ -28,8 +28,10 @@ export default function VocabBrowser({
 }) {
   const [query, setQuery] = useState("");
   const [activePos, setActivePos] = useState("");
-  const [unit, setUnit] = useState<number | undefined>(undefined);
+  const [subject, setSubject] = useState<string | undefined>(undefined);
   const [speaking, setSpeaking] = useState("");
+
+  const availableSubjects = subjectsPresent(initialItems.map((v) => v.tags));
 
   function speak(text: string) {
     if (!window.speechSynthesis) return;
@@ -45,21 +47,21 @@ export default function VocabBrowser({
   }
 
   const filtered = initialItems.filter((v) => {
-    const matchesUnit = !unit || getVocabUnit(v) === unit;
+    const matchesSubject = !subject || tagsMatchSubject(v.tags, subject);
     const matchesPos = !activePos || v.partOfSpeech === activePos;
     const q = query.toLowerCase();
     const matchesQuery =
       !q ||
       v.italian.toLowerCase().includes(q) ||
       v.english.toLowerCase().includes(q);
-    return matchesUnit && matchesPos && matchesQuery;
+    return matchesSubject && matchesPos && matchesQuery;
   });
 
   return (
     <div className="max-w-lg mx-auto px-4 py-6 space-y-4">
       <h1 className="text-2xl font-bold">Vocabulary</h1>
 
-      <UnitSelector value={unit} onChange={setUnit} />
+      <SubjectSelector subjects={availableSubjects} value={subject} onChange={setSubject} />
 
       <Input
         placeholder="Search Italian or English…"
@@ -112,9 +114,14 @@ export default function VocabBrowser({
                     >
                       {item.partOfSpeech}
                     </span>
-                    <span className="text-[10px] px-1.5 py-0.5 rounded font-medium bg-muted text-muted-foreground">
-                      U{getVocabUnit(item)}
-                    </span>
+                    {(() => {
+                      const s = SUBJECTS.find((sub) => tagsMatchSubject(item.tags, sub.id));
+                      return s ? (
+                        <span className="text-[10px] px-1.5 py-0.5 rounded font-medium bg-muted text-muted-foreground">
+                          {s.emoji} {s.label}
+                        </span>
+                      ) : null;
+                    })()}
                   </div>
                   {item.pronunciation && (
                     <p className="text-xs text-muted-foreground italic tracking-wide">{item.pronunciation}</p>

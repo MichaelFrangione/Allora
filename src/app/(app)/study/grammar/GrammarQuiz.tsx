@@ -6,8 +6,8 @@ import { Card, CardContent } from "@/components/ui/card";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Label } from "@/components/ui/label";
 import { useStudySession } from "@/lib/useStudySession";
-import UnitSelector from "@/components/UnitSelector";
-import { getGrammarUnit } from "@/lib/content";
+import SubjectSelector from "@/components/SubjectSelector";
+import { tagsMatchSubject, subjectsPresent } from "@/lib/content";
 import type { GrammarRule } from "@/lib/content";
 import { cn } from "@/lib/utils";
 
@@ -37,7 +37,8 @@ function buildQuestion(rule: GrammarRule, allRules: GrammarRule[]): Question {
 }
 
 export default function GrammarQuiz({ rules }: { rules: GrammarRule[] }) {
-  const [unit, setUnit] = useState<number | undefined>(undefined);
+  const [subject, setSubject] = useState<string | undefined>(undefined);
+  const availableSubjects = subjectsPresent(rules.map((r) => r.tags));
   const [started, setStarted] = useState(false);
   const [questions, setQuestions] = useState<Question[]>([]);
   const [index, setIndex] = useState(0);
@@ -48,7 +49,7 @@ export default function GrammarQuiz({ rules }: { rules: GrammarRule[] }) {
   const [done, setDone] = useState(false);
   const { startSession, endSession, recordAttempt } = useStudySession("grammar");
 
-  const activeRules = unit ? rules.filter((r) => getGrammarUnit(r) === unit) : rules;
+  const activeRules = subject ? rules.filter((r) => tagsMatchSubject(r.tags, subject)) : rules;
 
   useEffect(() => {
     return () => { endSession(); };
@@ -56,7 +57,7 @@ export default function GrammarQuiz({ rules }: { rules: GrammarRule[] }) {
   }, []);
 
   function beginDrill(filterIds?: string[]) {
-    let active = unit ? rules.filter((r) => getGrammarUnit(r) === unit) : rules;
+    let active = subject ? rules.filter((r) => tagsMatchSubject(r.tags, subject)) : rules;
     if (filterIds) {
       const filtered = active.filter((r) => filterIds.includes(r.id));
       if (filtered.length > 0) active = filtered;
@@ -109,7 +110,7 @@ export default function GrammarQuiz({ rules }: { rules: GrammarRule[] }) {
     return (
       <div className="max-w-lg mx-auto px-4 py-6 space-y-6">
         <h1 className="text-2xl font-bold">Grammar Quiz</h1>
-        <UnitSelector value={unit} onChange={setUnit} />
+        <SubjectSelector subjects={availableSubjects} value={subject} onChange={setSubject} />
         <Button
           className="w-full h-12"
           onClick={() => beginDrill()}
@@ -144,7 +145,7 @@ export default function GrammarQuiz({ rules }: { rules: GrammarRule[] }) {
           </Button>
         )}
         <Button variant="outline" onClick={() => setStarted(false)} className="w-full max-w-xs">
-          Change Unit
+          Change Subject
         </Button>
       </div>
     );

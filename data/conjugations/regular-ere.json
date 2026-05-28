@@ -1,0 +1,310 @@
+[
+  {
+    "id": "c004",
+    "verb": "leggere",
+    "meaning": "to read (regular -ERE)",
+    "tense": "presente",
+    "forms": {
+      "io": "leggo",
+      "tu": "leggi",
+      "lui/lei": "legge",
+      "noi": "leggiamo",
+      "voi": "leggete",
+      "loro": "leggono"
+    }
+  },
+  {
+    "id": "c005",
+    "verb": "prendere",
+    "meaning": "to take (regular -ERE)",
+    "tense": "presente",
+    "forms": {
+      "io": "prendo",
+      "tu": "prendi",
+      "lui/lei": "prende",
+      "noi": "prendiamo",
+      "voi": "prendete",
+      "loro": "prendono"
+    }
+  },
+  {
+    "id": "c006",
+    "verb": "vedere",
+    "meaning": "to see (regular -ERE)",
+    "tense": "presente",
+    "forms": {
+      "io": "vedo",
+      "tu": "vedi",
+      "lui/lei": "vede",
+      "noi": "vediamo",
+      "voi": "vedete",
+      "loro": "vedono"
+    }
+  },
+  {
+    "id": "c064",
+    "verb": "battere",
+    "meaning": "to hit, beat (regular -ERE)",
+    "tense": "presente",
+    "forms": {
+      "io": "batto",
+      "tu": "batti",
+      "lui/lei": "batte",
+      "noi": "battiamo",
+      "voi": "battete",
+      "loro": "battono"
+    }
+  },
+  {
+    "id": "c065",
+    "verb": "cadere",
+    "meaning": "to fall (regular -ERE)",
+    "tense": "presente",
+    "forms": {
+      "io": "cado",
+      "tu": "cadi",
+      "lui/lei": "cade",
+      "noi": "cadiamo",
+      "voi": "cadete",
+      "loro": "cadono"
+    }
+  },
+  {
+    "id": "c066",
+    "verb": "conoscere",
+    "meaning": "to know (a person/place) (regular -ERE)",
+    "tense": "presente",
+    "forms": {
+      "io": "conosco",
+      "tu": "conosci",
+      "lui/lei": "conosce",
+      "noi": "conosciamo",
+      "voi": "conoscete",
+      "loro": "conoscono"
+    }
+  },
+  {
+    "id": "c067",
+    "verb": "correre",
+    "meaning": "to run (regular -ERE)",
+    "tense": "presente",
+    "forms": {
+      "io": "corro",
+      "tu": "corri",
+      "lui/lei": "corre",
+      "noi": "corriamo",
+      "voi": "correte",
+      "loro": "corrono"
+    }
+  },
+  {
+    "id": "c068",
+    "verb": "credere",
+    "meaning": "to believe (regular -ERE)",
+    "tense": "presente",
+    "forms": {
+      "io": "credo",
+      "tu": "credi",
+      "lui/lei": "crede",
+      "noi": "crediamo",
+      "voi": "credete",
+      "loro": "credono"
+    }
+  },
+  {
+    "id": "c069",
+    "verb": "decidere",
+    "meaning": "to decide (regular -ERE)",
+    "tense": "presente",
+    "forms": {
+      "io": "decido",
+      "tu": "decidi",
+      "lui/lei": "decide",
+      "noi": "decidiamo",
+      "voi": "decidete",
+      "loro": "decidono"
+    }
+  },
+  {
+    "id": "c070",
+    "verb": "descrivere",
+    "meaning": "to describe (regular -ERE)",
+    "tense": "presente",
+    "forms": {
+      "io": "descrivo",
+      "tu": "descrivi",
+      "lui/lei": "descrive",
+      "noi": "descriviamo",
+      "voi": "descrivete",
+      "loro": "descrivono"
+    }
+  },
+  {
+    "id": "c071",
+    "verb": "mettere",
+    "meaning": "to put, place (regular -ERE)",
+    "tense": "presente",
+    "forms": {
+      "io": "metto",
+      "tu": "metti",
+      "lui/lei": "mette",
+      "noi": "mettiamo",
+      "voi": "mettete",
+      "loro": "mettono"
+    }
+  },
+  {
+    "id": "c072",
+    "verb": "mordere",
+    "meaning": "to bite (regular -ERE)",
+    "tense": "presente",
+    "forms": {
+      "io": "mordo",
+      "tu": "mordi",
+      "lui/lei": "morde",
+      "noi": "mordiamo",
+      "voi": "mordete",
+      "loro": "mordono"
+    }
+  },
+  {
+    "id": "c073",
+    "verb": "offendere",
+    "meaning": "to offend (regular -ERE)",
+    "tense": "presente",
+    "forms": {
+      "io": "offendo",
+      "tu": "offendi",
+      "lui/lei": "offende",
+      "noi": "offendiamo",
+      "voi": "offendete",
+      "loro": "offendono"
+    }
+  },
+  {
+    "id": "c074",
+    "verb": "perdere",
+    "meaning": "to lose (regular -ERE)",
+    "tense": "presente",
+    "forms": {
+      "io": "perdo",
+      "tu": "perdi",
+      "lui/lei": "perde",
+      "noi": "perdiamo",
+      "voi": "perdete",
+      "loro": "perdono"
+    }
+  },
+  {
+    "id": "c075",
+    "verb": "ridere",
+    "meaning": "to laugh (regular -ERE)",
+    "tense": "presente",
+    "forms": {
+      "io": "rido",
+      "tu": "ridi",
+      "lui/lei": "ride",
+      "noi": "ridiamo",
+      "voi": "ridete",
+      "loro": "ridono"
+    }
+  },
+  {
+    "id": "c076",
+    "verb": "rompere",
+    "meaning": "to break (regular -ERE)",
+    "tense": "presente",
+    "forms": {
+      "io": "rompo",
+      "tu": "rompi",
+      "lui/lei": "rompe",
+      "noi": "rompiamo",
+      "voi": "rompete",
+      "loro": "rompono"
+    }
+  },
+  {
+    "id": "c077",
+    "verb": "scrivere",
+    "meaning": "to write (regular -ERE)",
+    "tense": "presente",
+    "forms": {
+      "io": "scrivo",
+      "tu": "scrivi",
+      "lui/lei": "scrive",
+      "noi": "scriviamo",
+      "voi": "scrivete",
+      "loro": "scrivono"
+    }
+  },
+  {
+    "id": "c078",
+    "verb": "sopravvivere",
+    "meaning": "to survive (regular -ERE)",
+    "tense": "presente",
+    "forms": {
+      "io": "sopravvivo",
+      "tu": "sopravvivi",
+      "lui/lei": "sopravvive",
+      "noi": "sopravviviamo",
+      "voi": "sopravvivete",
+      "loro": "sopravvivono"
+    }
+  },
+  {
+    "id": "c079",
+    "verb": "sorridere",
+    "meaning": "to smile (regular -ERE)",
+    "tense": "presente",
+    "forms": {
+      "io": "sorrido",
+      "tu": "sorridi",
+      "lui/lei": "sorride",
+      "noi": "sorridiamo",
+      "voi": "sorridete",
+      "loro": "sorridono"
+    }
+  },
+  {
+    "id": "c080",
+    "verb": "vivere",
+    "meaning": "to live (regular -ERE)",
+    "tense": "presente",
+    "forms": {
+      "io": "vivo",
+      "tu": "vivi",
+      "lui/lei": "vive",
+      "noi": "viviamo",
+      "voi": "vivete",
+      "loro": "vivono"
+    }
+  },
+  {
+    "id": "c081",
+    "verb": "rispondere",
+    "meaning": "to answer (regular -ERE)",
+    "tense": "presente",
+    "forms": {
+      "io": "rispondo",
+      "tu": "rispondi",
+      "lui/lei": "risponde",
+      "noi": "rispondiamo",
+      "voi": "rispondete",
+      "loro": "rispondono"
+    }
+  },
+  {
+    "id": "c082",
+    "verb": "dipingere",
+    "meaning": "to paint (regular -ERE)",
+    "tense": "presente",
+    "forms": {
+      "io": "dipingo",
+      "tu": "dipingi",
+      "lui/lei": "dipinge",
+      "noi": "dipingiamo",
+      "voi": "dipingete",
+      "loro": "dipingono"
+    }
+  }
+]

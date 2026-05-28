@@ -8,8 +8,8 @@ import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent } from "@/components/ui/card";
 import { useStudySession } from "@/lib/useStudySession";
-import { getVocabUnit, getSentenceUnit, getVocabDistractors } from "@/lib/content";
-import UnitSelector from "@/components/UnitSelector";
+import { tagsMatchSubject, subjectsPresent, getVocabDistractors } from "@/lib/content";
+import SubjectSelector from "@/components/SubjectSelector";
 import type { VocabItem, SentenceExercise, Conjugation } from "@/lib/content";
 import { cn } from "@/lib/utils";
 
@@ -81,7 +81,11 @@ export default function MixedDrill({
   sentences: SentenceExercise[];
   conjugations: Conjugation[];
 }) {
-  const [unit, setUnit] = useState<number | undefined>(undefined);
+  const [subject, setSubject] = useState<string | undefined>(undefined);
+  const availableSubjects = subjectsPresent([
+    ...vocab.map((v) => v.tags),
+    ...sentences.map((s) => s.tags),
+  ]);
   const [started, setStarted] = useState(false);
   const [tasks, setTasks] = useState<MixedTask[]>([]);
   const [index, setIndex] = useState(0);
@@ -102,8 +106,8 @@ export default function MixedDrill({
 
   const { startSession, endSession, recordAttempt } = useStudySession("mixed");
 
-  const activeVocab = unit ? vocab.filter((v) => getVocabUnit(v) === unit) : vocab;
-  const activeSentences = unit ? sentences.filter((s) => getSentenceUnit(s) === unit) : sentences;
+  const activeVocab = subject ? vocab.filter((v) => tagsMatchSubject(v.tags, subject)) : vocab;
+  const activeSentences = subject ? sentences.filter((s) => tagsMatchSubject(s.tags, subject)) : sentences;
   const totalAvailable = activeVocab.length + activeSentences.length + conjugations.length;
 
   useEffect(() => {
@@ -254,7 +258,7 @@ export default function MixedDrill({
         <p className="text-sm text-muted-foreground">
           A mix of flip cards, vocab quiz, sentence building, and conjugation — all in one session.
         </p>
-        <UnitSelector value={unit} onChange={setUnit} />
+        <SubjectSelector subjects={availableSubjects} value={subject} onChange={setSubject} />
         <Button
           className="w-full h-12"
           onClick={beginDrill}
@@ -278,7 +282,7 @@ export default function MixedDrill({
         <p className="text-muted-foreground">{score.correct} / {total} correct</p>
         <Button onClick={beginDrill} className="w-full max-w-xs">Try Again</Button>
         <Button variant="outline" onClick={() => setStarted(false)} className="w-full max-w-xs">
-          Change Unit
+          Change Subject
         </Button>
       </div>
     );

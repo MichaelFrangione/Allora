@@ -9,6 +9,14 @@ import { useSpeech } from "@/lib/useSpeech";
 import type { DrillQuestion } from "@/lib/content";
 import { cn } from "@/lib/utils";
 import { getBoostEnabled } from "@/components/BoostToggle";
+import SubjectReference, { SUBJECT_REFERENCE_DATA } from "@/components/SubjectReference";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
 
 const LIMIT_OPTIONS = [10, 20, null] as const;
 
@@ -28,6 +36,10 @@ interface DrillQuizProps {
   questions: DrillQuestion[];
   weakIds?: string[];
   categoryLabels?: Record<string, string>;
+  /** Subject id whose conjugation / rule table the hint button reveals. */
+  subjectId?: string;
+  /** Plain-English instructions describing what the learner should do. */
+  instructions?: string;
 }
 
 export default function DrillQuiz({
@@ -37,7 +49,10 @@ export default function DrillQuiz({
   questions,
   weakIds = [],
   categoryLabels,
+  subjectId,
+  instructions,
 }: DrillQuizProps) {
+  const hasReference = !!(subjectId && SUBJECT_REFERENCE_DATA[subjectId]);
   const hasCategories = categoryLabels && Object.keys(categoryLabels).length > 0;
   const [selectedCategory, setSelectedCategory] = useState<string>("all");
   const [limit, setLimit] = useState<number | null>(null);
@@ -46,6 +61,7 @@ export default function DrillQuiz({
   const [index, setIndex] = useState(0);
   const [selected, setSelected] = useState<string | null>(null);
   const [submitted, setSubmitted] = useState(false);
+  const [showHint, setShowHint] = useState(false);
   const [score, setScore] = useState({ correct: 0, incorrect: 0 });
   const [wrongIds, setWrongIds] = useState<string[]>([]);
   const [done, setDone] = useState(false);
@@ -82,6 +98,7 @@ export default function DrillQuiz({
     setIndex(0);
     setSelected(null);
     setSubmitted(false);
+    setShowHint(false);
     setScore({ correct: 0, incorrect: 0 });
     setWrongIds([]);
     setDone(false);
@@ -98,7 +115,8 @@ export default function DrillQuiz({
   const q = deck[index];
 
   async function handleSubmit() {
-    if (!selected || !q) return;
+    if (submitted || !selected || !q) return;
+    setSubmitted(true);
     const correct = selected === q.correct;
     await recordAttempt(q.id, contentType, correct, selected);
     if (!correct) setWrongIds((ids) => [...ids, q.id]);
@@ -106,7 +124,6 @@ export default function DrillQuiz({
       correct: s.correct + (correct ? 1 : 0),
       incorrect: s.incorrect + (correct ? 0 : 1),
     }));
-    setSubmitted(true);
   }
 
   async function handleNext() {
@@ -118,6 +135,7 @@ export default function DrillQuiz({
       setIndex(next);
       setSelected(null);
       setSubmitted(false);
+      setShowHint(false);
     }
   }
 
@@ -131,6 +149,13 @@ export default function DrillQuiz({
           <h1 className="text-2xl font-bold">{title}</h1>
           <p className="text-sm text-muted-foreground mt-1">{subtitle}</p>
         </div>
+
+        {instructions && (
+          <div className="rounded-xl border border-primary/30 bg-primary/5 px-4 py-3">
+            <p className="text-xs font-semibold uppercase tracking-wide text-primary mb-1">How it works</p>
+            <p className="text-sm text-muted-foreground">{instructions}</p>
+          </div>
+        )}
 
         {/* Category selector */}
         {hasCategories && (
@@ -192,8 +217,8 @@ export default function DrillQuiz({
           </div>
         </div>
 
-        <Button className="w-full h-12" onClick={() => beginDrill()}>
-          Start · {count} question{count !== 1 ? "s" : ""}
+        <Button className="w-full h-12" onClick={() => beginDrill()} disabled={count === 0}>
+          {count === 0 ? "No questions available" : `Start · ${count} question${count !== 1 ? "s" : ""}`}
         </Button>
       </div>
     );
@@ -201,7 +226,7 @@ export default function DrillQuiz({
 
   // Done screen
   if (done) {
-    const pct = Math.round((score.correct / deck.length) * 100);
+    const pct = deck.length > 0 ? Math.round((score.correct / deck.length) * 100) : 0;
     return (
       <div className="max-w-lg mx-auto px-4 py-8 flex flex-col items-center gap-6">
         <div className="text-5xl">{pct >= 70 ? "🎉" : "📚"}</div>
@@ -233,18 +258,23 @@ export default function DrillQuiz({
 
   return (
     <div className="max-w-lg mx-auto px-4 py-6 space-y-6">
-      <div className="flex items-center justify-between">
-        <h1 className="font-semibold">{title}</h1>
-        <div className="flex items-center gap-3">
-          <span className="text-sm text-muted-foreground">{index + 1} / {deck.length}</span>
-          <button
-            onClick={exitSession}
-            className="text-muted-foreground hover:text-foreground transition-colors text-lg leading-none"
-            aria-label="Exit session"
-          >
-            ✕
-          </button>
+      <div>
+        <div className="flex items-center justify-between">
+          <h1 className="font-semibold">{title}</h1>
+          <div className="flex items-center gap-3">
+            <span className="text-sm text-muted-foreground">{index + 1} / {deck.length}</span>
+            <button
+              onClick={exitSession}
+              className="text-muted-foreground hover:text-foreground transition-colors text-lg leading-none"
+              aria-label="Exit session"
+            >
+              ✕
+            </button>
+          </div>
         </div>
+        {instructions && (
+          <p className="text-xs text-muted-foreground mt-1">{instructions}</p>
+        )}
       </div>
 
       {/* Prompt block */}
@@ -256,7 +286,27 @@ export default function DrillQuiz({
       )}
 
       {/* Question card */}
-      <div className="rounded-2xl border-2 border-border bg-card px-6 py-8 space-y-3">
+      <div className="relative rounded-2xl border-2 border-border bg-card px-6 py-8 space-y-3">
+        {(q.hint || hasReference) && (
+          <Dialog open={showHint} onOpenChange={setShowHint}>
+            <DialogTrigger asChild>
+              <button
+                type="button"
+                aria-label="Show hint"
+                className="absolute top-3 right-3 flex items-center gap-1 rounded-full bg-muted px-2.5 py-1 text-xs font-medium text-muted-foreground transition-colors hover:bg-muted/80"
+              >
+                💡 Hint
+              </button>
+            </DialogTrigger>
+            <DialogContent className="max-h-[85vh] overflow-y-auto sm:max-w-xl">
+              <DialogHeader>
+                <DialogTitle>Hint</DialogTitle>
+              </DialogHeader>
+              {q.hint && <p className="text-sm text-muted-foreground">💡 {q.hint}</p>}
+              {hasReference && <SubjectReference subjectId={subjectId} />}
+            </DialogContent>
+          </Dialog>
+        )}
         <p className="text-lg font-medium leading-relaxed text-center">
           {before}
           <span className="inline-block border-b-2 border-primary min-w-16 mx-1 text-center font-bold text-primary">
@@ -264,9 +314,6 @@ export default function DrillQuiz({
           </span>
           {after}
         </p>
-        {q.hint && (
-          <p className="text-xs text-center text-muted-foreground">{q.hint}</p>
-        )}
         {submitted && (
           <div className="flex justify-center">
             <button

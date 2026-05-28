@@ -1,0 +1,462 @@
+[
+  {
+    "id": "v100",
+    "italian": "lunedì",
+    "english": "Monday",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "Il lunedì vado in palestra.",
+    "tags": [
+      "nouns",
+      "time",
+      "days",
+      "lesson-3"
+    ],
+    "unit": 3,
+    "pronunciation": "lu·ne·DÌ"
+  },
+  {
+    "id": "v101",
+    "italian": "martedì",
+    "english": "Tuesday",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "Martedì ho lezione di italiano.",
+    "tags": [
+      "nouns",
+      "time",
+      "days",
+      "lesson-3"
+    ],
+    "unit": 3,
+    "pronunciation": "mar·te·DÌ"
+  },
+  {
+    "id": "v102",
+    "italian": "mercoledì",
+    "english": "Wednesday",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "Mercoledì pranzo con i colleghi.",
+    "tags": [
+      "nouns",
+      "time",
+      "days",
+      "lesson-3"
+    ],
+    "unit": 3,
+    "pronunciation": "mer·ko·le·DÌ"
+  },
+  {
+    "id": "v103",
+    "italian": "giovedì",
+    "english": "Thursday",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "Giovedì sera usciamo.",
+    "tags": [
+      "nouns",
+      "time",
+      "days",
+      "lesson-3"
+    ],
+    "unit": 3,
+    "pronunciation": "jo·ve·DÌ"
+  },
+  {
+    "id": "v104",
+    "italian": "venerdì",
+    "english": "Friday",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "Il venerdì finisco prima.",
+    "tags": [
+      "nouns",
+      "time",
+      "days",
+      "lesson-3"
+    ],
+    "unit": 3,
+    "pronunciation": "ve·ner·DÌ"
+  },
+  {
+    "id": "v105",
+    "italian": "sabato",
+    "english": "Saturday",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "Sabato vado al mercato.",
+    "tags": [
+      "nouns",
+      "time",
+      "days",
+      "lesson-3"
+    ],
+    "unit": 3,
+    "pronunciation": "SA·ba·to"
+  },
+  {
+    "id": "v106",
+    "italian": "domenica",
+    "english": "Sunday",
+    "gender": "f",
+    "partOfSpeech": "noun",
+    "example": "La domenica riposo.",
+    "tags": [
+      "nouns",
+      "time",
+      "days",
+      "lesson-3"
+    ],
+    "unit": 3,
+    "pronunciation": "do·ME·ni·ka"
+  },
+  {
+    "id": "v107",
+    "italian": "gennaio",
+    "english": "January",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "A gennaio fa molto freddo.",
+    "tags": [
+      "nouns",
+      "time",
+      "months",
+      "lesson-3"
+    ],
+    "unit": 3,
+    "pronunciation": "jen·NA·io"
+  },
+  {
+    "id": "v108",
+    "italian": "febbraio",
+    "english": "February",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "Il mio compleanno è in febbraio.",
+    "tags": [
+      "nouns",
+      "time",
+      "months",
+      "lesson-3"
+    ],
+    "unit": 3,
+    "pronunciation": "feb·BRA·io"
+  },
+  {
+    "id": "v109",
+    "italian": "marzo",
+    "english": "March",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "A marzo comincia la primavera.",
+    "tags": [
+      "nouns",
+      "time",
+      "months",
+      "lesson-3"
+    ],
+    "unit": 3,
+    "pronunciation": "MAR·tso"
+  },
+  {
+    "id": "v110",
+    "italian": "aprile",
+    "english": "April",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "Aprile è un mese piovoso.",
+    "tags": [
+      "nouns",
+      "time",
+      "months",
+      "lesson-3"
+    ],
+    "unit": 3,
+    "pronunciation": "a·PRI·le"
+  },
+  {
+    "id": "v111",
+    "italian": "maggio",
+    "english": "May",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "A maggio i fiori sbocciano.",
+    "tags": [
+      "nouns",
+      "time",
+      "months",
+      "lesson-3"
+    ],
+    "unit": 3,
+    "pronunciation": "MAJ·jo"
+  },
+  {
+    "id": "v112",
+    "italian": "giugno",
+    "english": "June",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "In giugno inizia l'estate.",
+    "tags": [
+      "nouns",
+      "time",
+      "months",
+      "lesson-3"
+    ],
+    "unit": 3,
+    "pronunciation": "JU·nyo"
+  },
+  {
+    "id": "v113",
+    "italian": "luglio",
+    "english": "July",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "A luglio andiamo in vacanza.",
+    "tags": [
+      "nouns",
+      "time",
+      "months",
+      "lesson-3"
+    ],
+    "unit": 3,
+    "pronunciation": "LU·lyo"
+  },
+  {
+    "id": "v114",
+    "italian": "agosto",
+    "english": "August",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "Ad agosto fa molto caldo.",
+    "tags": [
+      "nouns",
+      "time",
+      "months",
+      "lesson-3"
+    ],
+    "unit": 3,
+    "pronunciation": "a·GOS·to"
+  },
+  {
+    "id": "v115",
+    "italian": "settembre",
+    "english": "September",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "A settembre ricomincia la scuola.",
+    "tags": [
+      "nouns",
+      "time",
+      "months",
+      "lesson-3"
+    ],
+    "unit": 3,
+    "pronunciation": "set·TEM·bre"
+  },
+  {
+    "id": "v116",
+    "italian": "ottobre",
+    "english": "October",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "In ottobre le foglie cadono.",
+    "tags": [
+      "nouns",
+      "time",
+      "months",
+      "lesson-3"
+    ],
+    "unit": 3,
+    "pronunciation": "ot·TO·bre"
+  },
+  {
+    "id": "v117",
+    "italian": "novembre",
+    "english": "November",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "A novembre piove spesso.",
+    "tags": [
+      "nouns",
+      "time",
+      "months",
+      "lesson-3"
+    ],
+    "unit": 3,
+    "pronunciation": "no·VEM·bre"
+  },
+  {
+    "id": "v118",
+    "italian": "dicembre",
+    "english": "December",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "A dicembre celebriamo il Natale.",
+    "tags": [
+      "nouns",
+      "time",
+      "months",
+      "lesson-3"
+    ],
+    "unit": 3,
+    "pronunciation": "di·CHEM·bre"
+  },
+  {
+    "id": "v119",
+    "italian": "l'inverno",
+    "english": "winter",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "D'inverno nevica in montagna.",
+    "tags": [
+      "nouns",
+      "time",
+      "seasons",
+      "lesson-3"
+    ],
+    "unit": 3,
+    "pronunciation": "l'in·VER·no"
+  },
+  {
+    "id": "v120",
+    "italian": "la primavera",
+    "english": "spring",
+    "gender": "f",
+    "partOfSpeech": "noun",
+    "example": "In primavera tornano i fiori.",
+    "tags": [
+      "nouns",
+      "time",
+      "seasons",
+      "lesson-3"
+    ],
+    "unit": 3,
+    "pronunciation": "la pri·ma·VE·ra"
+  },
+  {
+    "id": "v121",
+    "italian": "l'estate",
+    "english": "summer",
+    "gender": "f",
+    "partOfSpeech": "noun",
+    "example": "D'estate vado al mare.",
+    "tags": [
+      "nouns",
+      "time",
+      "seasons",
+      "lesson-3"
+    ],
+    "unit": 3,
+    "pronunciation": "l'es·TA·te"
+  },
+  {
+    "id": "v122",
+    "italian": "l'autunno",
+    "english": "autumn, fall",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "In autunno le foglie diventano rosse.",
+    "tags": [
+      "nouns",
+      "time",
+      "seasons",
+      "lesson-3"
+    ],
+    "unit": 3,
+    "pronunciation": "l'au·TUN·no"
+  },
+  {
+    "id": "v123",
+    "italian": "il giorno",
+    "english": "the day",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "Che giorno è oggi?",
+    "tags": [
+      "nouns",
+      "time",
+      "lesson-3"
+    ],
+    "unit": 3,
+    "pronunciation": "JOR·no"
+  },
+  {
+    "id": "v124",
+    "italian": "la settimana",
+    "english": "the week",
+    "gender": "f",
+    "partOfSpeech": "noun",
+    "example": "Lavoro cinque giorni alla settimana.",
+    "tags": [
+      "nouns",
+      "time",
+      "lesson-3"
+    ],
+    "unit": 3,
+    "pronunciation": "la set·ti·MA·na"
+  },
+  {
+    "id": "v125",
+    "italian": "il mese",
+    "english": "the month",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "Il mese prossimo parto per l'Italia.",
+    "tags": [
+      "nouns",
+      "time",
+      "lesson-3"
+    ],
+    "unit": 3,
+    "pronunciation": "il ME·se"
+  },
+  {
+    "id": "v126",
+    "italian": "l'anno",
+    "english": "the year",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "Quest'anno studio molto.",
+    "tags": [
+      "nouns",
+      "time",
+      "lesson-3"
+    ],
+    "unit": 3,
+    "pronunciation": "l'AN·no"
+  },
+  {
+    "id": "v172",
+    "italian": "notte",
+    "english": "night",
+    "gender": "femminile",
+    "partOfSpeech": "noun",
+    "example": "Buona notte!",
+    "tags": [
+      "nouns",
+      "time",
+      "e-nouns",
+      "lesson-5"
+    ],
+    "unit": 5,
+    "pronunciation": "NOT·te"
+  },
+  {
+    "id": "v194",
+    "italian": "ritardo",
+    "english": "delay / lateness",
+    "gender": "maschile",
+    "partOfSpeech": "noun",
+    "example": "Sono in ritardo per la lezione.",
+    "tags": [
+      "nouns",
+      "time",
+      "expressions",
+      "lesson-6"
+    ],
+    "unit": 6,
+    "pronunciation": "ri·TAR·do"
+  }
+]

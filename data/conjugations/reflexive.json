@@ -1,0 +1,100 @@
+[
+  {
+    "id": "c105",
+    "verb": "svegliarsi",
+    "meaning": "to wake up (reflexive)",
+    "tense": "presente",
+    "forms": {
+      "io": "mi sveglio",
+      "tu": "ti svegli",
+      "lui/lei": "si sveglia",
+      "noi": "ci svegliamo",
+      "voi": "vi svegliate",
+      "loro": "si svegliano"
+    }
+  },
+  {
+    "id": "c106",
+    "verb": "mettersi",
+    "meaning": "to put on (reflexive)",
+    "tense": "presente",
+    "forms": {
+      "io": "mi metto",
+      "tu": "ti metti",
+      "lui/lei": "si mette",
+      "noi": "ci mettiamo",
+      "voi": "vi mettete",
+      "loro": "si mettono"
+    }
+  },
+  {
+    "id": "c107",
+    "verb": "divertirsi",
+    "meaning": "to have fun (reflexive)",
+    "tense": "presente",
+    "forms": {
+      "io": "mi diverto",
+      "tu": "ti diverti",
+      "lui/lei": "si diverte",
+      "noi": "ci divertiamo",
+      "voi": "vi divertite",
+      "loro": "si divertono"
+    }
+  },
+  {
+    "id": "c108",
+    "verb": "alzarsi",
+    "meaning": "to get up (reflexive)",
+    "tense": "presente",
+    "forms": {
+      "io": "mi alzo",
+      "tu": "ti alzi",
+      "lui/lei": "si alza",
+      "noi": "ci alziamo",
+      "voi": "vi alzate",
+      "loro": "si alzano"
+    }
+  },
+  {
+    "id": "c109",
+    "verb": "lavarsi",
+    "meaning": "to wash oneself (reflexive)",
+    "tense": "presente",
+    "forms": {
+      "io": "mi lavo",
+      "tu": "ti lavi",
+      "lui/lei": "si lava",
+      "noi": "ci laviamo",
+      "voi": "vi lavate",
+      "loro": "si lavano"
+    }
+  },
+  {
+    "id": "c110",
+    "verb": "vestirsi",
+    "meaning": "to get dressed (reflexive)",
+    "tense": "presente",
+    "forms": {
+      "io": "mi vesto",
+      "tu": "ti vesti",
+      "lui/lei": "si veste",
+      "noi": "ci vestiamo",
+      "voi": "vi vestite",
+      "loro": "si vestono"
+    }
+  },
+  {
+    "id": "c111",
+    "verb": "prepararsi",
+    "meaning": "to get ready (reflexive)",
+    "tense": "presente",
+    "forms": {
+      "io": "mi preparo",
+      "tu": "ti prepari",
+      "lui/lei": "si prepara",
+      "noi": "ci prepariamo",
+      "voi": "vi preparate",
+      "loro": "si preparano"
+    }
+  }
+]

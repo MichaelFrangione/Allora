@@ -1,0 +1,162 @@
+[
+  {
+    "id": "int001",
+    "category": "scegli",
+    "sentence": "___ ti chiami?",
+    "hint": "What's your name? (lit. how do you call yourself)",
+    "correct": "Come",
+    "options": ["Come", "Chi", "Dove", "Che"],
+    "explanation": "Come means 'how' — Italian asks names with 'come ti chiami?' (how do you call yourself).",
+    "tags": ["interrogatives", "question-words"]
+  },
+  {
+    "id": "int002",
+    "category": "scegli",
+    "sentence": "___ vai a scuola?",
+    "hint": "When do you go to school?",
+    "correct": "Quando",
+    "options": ["Quando", "Dove", "Come", "Chi"],
+    "explanation": "Quando means 'when' — used to ask about time.",
+    "tags": ["interrogatives", "question-words"]
+  },
+  {
+    "id": "int003",
+    "category": "scegli",
+    "sentence": "___ abiti?",
+    "hint": "Where do you live?",
+    "correct": "Dove",
+    "options": ["Chi", "Dove", "Quando", "Cosa"],
+    "explanation": "Dove means 'where' — used to ask about place or location.",
+    "tags": ["interrogatives", "question-words"]
+  },
+  {
+    "id": "int004",
+    "category": "scegli",
+    "sentence": "___ costa il caffè?",
+    "hint": "How much does the coffee cost?",
+    "correct": "Quanto",
+    "options": ["Quale", "Come", "Quanto", "Perché"],
+    "explanation": "Quanto means 'how much' — used to ask about price or quantity.",
+    "tags": ["interrogatives", "question-words"]
+  },
+  {
+    "id": "int005",
+    "category": "scegli",
+    "sentence": "___ sei?",
+    "hint": "Who are you?",
+    "correct": "Chi",
+    "options": ["Dove", "Chi", "Come", "Quando"],
+    "explanation": "Chi means 'who' — used to ask about a person.",
+    "tags": ["interrogatives", "question-words"]
+  },
+  {
+    "id": "int006",
+    "category": "scegli",
+    "sentence": "___ parti per Roma?",
+    "hint": "When do you leave for Rome?",
+    "correct": "Quando",
+    "options": ["Come", "Quando", "Quanto", "Dove"],
+    "explanation": "Quando means 'when' — used to ask about time of an event.",
+    "tags": ["interrogatives", "question-words"]
+  },
+  {
+    "id": "int007",
+    "category": "scegli",
+    "sentence": "___ fai stasera?",
+    "hint": "What are you doing tonight?",
+    "correct": "Cosa",
+    "options": ["Cosa", "Chi", "Dove", "Quanto"],
+    "explanation": "Cosa (or che cosa) means 'what' — used to ask about a thing or action.",
+    "tags": ["interrogatives", "question-words"]
+  },
+  {
+    "id": "int008",
+    "category": "scegli",
+    "sentence": "___ non mangi la carne?",
+    "hint": "Why don't you eat meat?",
+    "correct": "Perché",
+    "options": ["Come", "Quando", "Perché", "Chi"],
+    "explanation": "Perché means 'why' (and also 'because') — used to ask for a reason.",
+    "tags": ["interrogatives", "question-words"]
+  },
+  {
+    "id": "int009",
+    "category": "scegli",
+    "sentence": "___ anni hai?",
+    "hint": "How old are you? (lit. how many years do you have)",
+    "correct": "Quanti",
+    "options": ["Quanto", "Quanti", "Quante", "Quale"],
+    "explanation": "Quanti means 'how many' (masculine plural) — Italian asks age with 'quanti anni hai?'.",
+    "tags": ["interrogatives", "question-words"]
+  },
+  {
+    "id": "int010",
+    "category": "scegli",
+    "sentence": "___ libro preferisci?",
+    "hint": "Which book do you prefer?",
+    "correct": "Quale",
+    "options": ["Quanto", "Quale", "Come", "Chi"],
+    "explanation": "Quale means 'which' (quali in the plural) — used to pick among options.",
+    "tags": ["interrogatives", "question-words"]
+  },
+  {
+    "id": "int011",
+    "category": "scegli",
+    "sentence": "___ stai? Bene, grazie.",
+    "hint": "How are you? Well, thanks.",
+    "correct": "Come",
+    "options": ["Dove", "Quando", "Come", "Chi"],
+    "explanation": "Come means 'how' — used for 'come stai?' (how are you) and 'come ti chiami?' (what's your name).",
+    "tags": ["interrogatives", "question-words"]
+  },
+  {
+    "id": "int012",
+    "category": "scegli",
+    "sentence": "___ è la tua casa?",
+    "hint": "Where is your house?",
+    "correct": "Dove",
+    "options": ["Chi", "Come", "Dove", "Quale"],
+    "explanation": "Dove means 'where' — used to ask about location.",
+    "tags": ["interrogatives", "question-words"]
+  },
+  {
+    "id": "int013",
+    "category": "traduzione",
+    "sentence": "How much? = ___",
+    "hint": "Asking about price or quantity",
+    "correct": "Quanto",
+    "options": ["Quanto", "Quando", "Quanti", "Come"],
+    "explanation": "Quanto means 'how much'; quanti/quante mean 'how many'.",
+    "tags": ["interrogatives", "question-words"]
+  },
+  {
+    "id": "int014",
+    "category": "traduzione",
+    "sentence": "When? = ___",
+    "hint": "Asking about time",
+    "correct": "Quando",
+    "options": ["Quando", "Quanto", "Dove", "Chi"],
+    "explanation": "Quando means 'when'. Don't confuse it with quanto ('how much').",
+    "tags": ["interrogatives", "question-words"]
+  },
+  {
+    "id": "int015",
+    "category": "traduzione",
+    "sentence": "Who? = ___",
+    "hint": "Asking about a person",
+    "correct": "Chi",
+    "options": ["Che", "Chi", "Come", "Dove"],
+    "explanation": "Chi means 'who' — used to ask about a person.",
+    "tags": ["interrogatives", "question-words"]
+  },
+  {
+    "id": "int016",
+    "category": "traduzione",
+    "sentence": "Why? = ___",
+    "hint": "Asking for a reason",
+    "correct": "Perché",
+    "options": ["Come", "Perché", "Quale", "Quando"],
+    "explanation": "Perché means 'why' — and the same word also means 'because' in answers.",
+    "tags": ["interrogatives", "question-words"]
+  }
+]

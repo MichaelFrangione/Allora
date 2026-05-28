@@ -1,0 +1,296 @@
+[
+  {
+    "id": "c007",
+    "verb": "dormire",
+    "meaning": "to sleep (regular -IRE, type 1)",
+    "tense": "presente",
+    "forms": {
+      "io": "dormo",
+      "tu": "dormi",
+      "lui/lei": "dorme",
+      "noi": "dormiamo",
+      "voi": "dormite",
+      "loro": "dormono"
+    }
+  },
+  {
+    "id": "c008",
+    "verb": "partire",
+    "meaning": "to leave (regular -IRE, type 1)",
+    "tense": "presente",
+    "forms": {
+      "io": "parto",
+      "tu": "parti",
+      "lui/lei": "parte",
+      "noi": "partiamo",
+      "voi": "partite",
+      "loro": "partono"
+    }
+  },
+  {
+    "id": "c009",
+    "verb": "finire",
+    "meaning": "to finish (regular -IRE, type 2 -isc-)",
+    "tense": "presente",
+    "forms": {
+      "io": "finisco",
+      "tu": "finisci",
+      "lui/lei": "finisce",
+      "noi": "finiamo",
+      "voi": "finite",
+      "loro": "finiscono"
+    }
+  },
+  {
+    "id": "c010",
+    "verb": "capire",
+    "meaning": "to understand (regular -IRE, type 2 -isc-)",
+    "tense": "presente",
+    "forms": {
+      "io": "capisco",
+      "tu": "capisci",
+      "lui/lei": "capisce",
+      "noi": "capiamo",
+      "voi": "capite",
+      "loro": "capiscono"
+    }
+  },
+  {
+    "id": "c011",
+    "verb": "preferire",
+    "meaning": "to prefer (regular -IRE, type 2 -isc-)",
+    "tense": "presente",
+    "forms": {
+      "io": "preferisco",
+      "tu": "preferisci",
+      "lui/lei": "preferisce",
+      "noi": "preferiamo",
+      "voi": "preferite",
+      "loro": "preferiscono"
+    }
+  },
+  {
+    "id": "c083",
+    "verb": "aprire",
+    "meaning": "to open (regular -IRE)",
+    "tense": "presente",
+    "forms": {
+      "io": "apro",
+      "tu": "apri",
+      "lui/lei": "apre",
+      "noi": "apriamo",
+      "voi": "aprite",
+      "loro": "aprono"
+    }
+  },
+  {
+    "id": "c084",
+    "verb": "bollire",
+    "meaning": "to boil (regular -IRE)",
+    "tense": "presente",
+    "forms": {
+      "io": "bollo",
+      "tu": "bolli",
+      "lui/lei": "bolle",
+      "noi": "bolliamo",
+      "voi": "bollite",
+      "loro": "bollono"
+    }
+  },
+  {
+    "id": "c085",
+    "verb": "coprire",
+    "meaning": "to cover (regular -IRE)",
+    "tense": "presente",
+    "forms": {
+      "io": "copro",
+      "tu": "copri",
+      "lui/lei": "copre",
+      "noi": "copriamo",
+      "voi": "coprite",
+      "loro": "coprono"
+    }
+  },
+  {
+    "id": "c086",
+    "verb": "mentire",
+    "meaning": "to lie (regular -IRE)",
+    "tense": "presente",
+    "forms": {
+      "io": "mento",
+      "tu": "menti",
+      "lui/lei": "mente",
+      "noi": "mentiamo",
+      "voi": "mentite",
+      "loro": "mentono"
+    }
+  },
+  {
+    "id": "c087",
+    "verb": "offrire",
+    "meaning": "to offer (regular -IRE)",
+    "tense": "presente",
+    "forms": {
+      "io": "offro",
+      "tu": "offri",
+      "lui/lei": "offre",
+      "noi": "offriamo",
+      "voi": "offrite",
+      "loro": "offrono"
+    }
+  },
+  {
+    "id": "c088",
+    "verb": "scoprire",
+    "meaning": "to discover (regular -IRE)",
+    "tense": "presente",
+    "forms": {
+      "io": "scopro",
+      "tu": "scopri",
+      "lui/lei": "scopre",
+      "noi": "scopriamo",
+      "voi": "scoprite",
+      "loro": "scoprono"
+    }
+  },
+  {
+    "id": "c089",
+    "verb": "seguire",
+    "meaning": "to follow (regular -IRE)",
+    "tense": "presente",
+    "forms": {
+      "io": "seguo",
+      "tu": "segui",
+      "lui/lei": "segue",
+      "noi": "seguiamo",
+      "voi": "seguite",
+      "loro": "seguono"
+    }
+  },
+  {
+    "id": "c090",
+    "verb": "sentire",
+    "meaning": "to hear, feel (regular -IRE)",
+    "tense": "presente",
+    "forms": {
+      "io": "sento",
+      "tu": "senti",
+      "lui/lei": "sente",
+      "noi": "sentiamo",
+      "voi": "sentite",
+      "loro": "sentono"
+    }
+  },
+  {
+    "id": "c091",
+    "verb": "servire",
+    "meaning": "to serve (regular -IRE)",
+    "tense": "presente",
+    "forms": {
+      "io": "servo",
+      "tu": "servi",
+      "lui/lei": "serve",
+      "noi": "serviamo",
+      "voi": "servite",
+      "loro": "servono"
+    }
+  },
+  {
+    "id": "c092",
+    "verb": "soffrire",
+    "meaning": "to suffer (regular -IRE)",
+    "tense": "presente",
+    "forms": {
+      "io": "soffro",
+      "tu": "soffri",
+      "lui/lei": "soffre",
+      "noi": "soffriamo",
+      "voi": "soffrite",
+      "loro": "soffrono"
+    }
+  },
+  {
+    "id": "c093",
+    "verb": "vestire",
+    "meaning": "to dress (regular -IRE)",
+    "tense": "presente",
+    "forms": {
+      "io": "vesto",
+      "tu": "vesti",
+      "lui/lei": "veste",
+      "noi": "vestiamo",
+      "voi": "vestite",
+      "loro": "vestono"
+    }
+  },
+  {
+    "id": "c095",
+    "verb": "pulire",
+    "meaning": "to clean (regular -IRE (-isc-))",
+    "tense": "presente",
+    "forms": {
+      "io": "pulisco",
+      "tu": "pulisci",
+      "lui/lei": "pulisce",
+      "noi": "puliamo",
+      "voi": "pulite",
+      "loro": "puliscono"
+    }
+  },
+  {
+    "id": "c096",
+    "verb": "sparire",
+    "meaning": "to disappear (regular -IRE (-isc-))",
+    "tense": "presente",
+    "forms": {
+      "io": "sparisco",
+      "tu": "sparisci",
+      "lui/lei": "sparisce",
+      "noi": "spariamo",
+      "voi": "sparite",
+      "loro": "spariscono"
+    }
+  },
+  {
+    "id": "c097",
+    "verb": "suggerire",
+    "meaning": "to suggest (regular -IRE (-isc-))",
+    "tense": "presente",
+    "forms": {
+      "io": "suggerisco",
+      "tu": "suggerisci",
+      "lui/lei": "suggerisce",
+      "noi": "suggeriamo",
+      "voi": "suggerite",
+      "loro": "suggeriscono"
+    }
+  },
+  {
+    "id": "c098",
+    "verb": "spedire",
+    "meaning": "to send (regular -IRE (-isc-))",
+    "tense": "presente",
+    "forms": {
+      "io": "spedisco",
+      "tu": "spedisci",
+      "lui/lei": "spedisce",
+      "noi": "spediamo",
+      "voi": "spedite",
+      "loro": "spediscono"
+    }
+  },
+  {
+    "id": "c099",
+    "verb": "costruire",
+    "meaning": "to build (regular -IRE (-isc-))",
+    "tense": "presente",
+    "forms": {
+      "io": "costruisco",
+      "tu": "costruisci",
+      "lui/lei": "costruisce",
+      "noi": "costruiamo",
+      "voi": "costruite",
+      "loro": "costruiscono"
+    }
+  }
+]

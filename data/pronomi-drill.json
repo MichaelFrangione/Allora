@@ -1,0 +1,142 @@
+[
+  {
+    "id": "prn001",
+    "category": "soggetto",
+    "sentence": "Marco mangia una pizza. → ___ mangia una pizza.",
+    "hint": "Replace 'Marco' with a subject pronoun.",
+    "correct": "Lui",
+    "options": ["Lui", "Lei", "Lo", "Gli"],
+    "explanation": "Subject pronouns: io, tu, lui/lei, noi, voi, loro. Marco (m) → Lui.",
+    "tags": ["pronouns", "soggetto"]
+  },
+  {
+    "id": "prn002",
+    "category": "soggetto",
+    "sentence": "Anna e Sara studiano. → ___ studiano.",
+    "hint": "two people → subject pronoun",
+    "correct": "Loro",
+    "options": ["Loro", "Lei", "Voi", "Noi"],
+    "explanation": "Anna e Sara → Loro.",
+    "tags": ["pronouns", "soggetto"]
+  },
+  {
+    "id": "prn003",
+    "category": "oggetto-diretto",
+    "sentence": "Tu vedi Marco. → Tu ___ vedi.",
+    "hint": "Marco = direct object, masc sing",
+    "correct": "lo",
+    "options": ["lo", "gli", "la", "li"],
+    "explanation": "Direct object pronouns: mi, ti, lo/la, ci, vi, li/le. Marco (m sing) → lo.",
+    "tags": ["pronouns", "oggetto-diretto"]
+  },
+  {
+    "id": "prn004",
+    "category": "oggetto-diretto",
+    "sentence": "Compro la frutta. → ___ compro.",
+    "hint": "la frutta = direct object, fem sing",
+    "correct": "La",
+    "options": ["La", "Le", "Lo", "Gli"],
+    "explanation": "La frutta (f sing) → la.",
+    "tags": ["pronouns", "oggetto-diretto"]
+  },
+  {
+    "id": "prn005",
+    "category": "oggetto-diretto",
+    "sentence": "Leggo i libri. → ___ leggo.",
+    "hint": "i libri = direct object, masc plural",
+    "correct": "Li",
+    "options": ["Li", "Le", "Gli", "Lo"],
+    "explanation": "I libri (m pl) → li.",
+    "tags": ["pronouns", "oggetto-diretto"]
+  },
+  {
+    "id": "prn006",
+    "category": "oggetto-diretto",
+    "sentence": "Tu devi vedere Marco. → Tu devi ___.",
+    "hint": "attach the pronoun to the infinitive",
+    "correct": "vederlo",
+    "options": ["vederlo", "lo vedere", "vederli", "vedergli"],
+    "explanation": "With an infinitive the direct-object pronoun attaches to the end: vedere + lo → vederlo.",
+    "tags": ["pronouns", "oggetto-diretto"]
+  },
+  {
+    "id": "prn007",
+    "category": "oggetto-indiretto",
+    "sentence": "A Marco piace il calcio. → ___ piace il calcio.",
+    "hint": "a Marco = indirect object, masc",
+    "correct": "Gli",
+    "options": ["Gli", "Le", "Lo", "Li"],
+    "explanation": "Indirect object pronouns: mi, ti, gli/le, ci, vi, gli. A lui → gli.",
+    "tags": ["pronouns", "oggetto-indiretto"]
+  },
+  {
+    "id": "prn008",
+    "category": "oggetto-indiretto",
+    "sentence": "A Francesca piacciono i fiori. → ___ piacciono i fiori.",
+    "hint": "a Francesca = indirect object, fem",
+    "correct": "Le",
+    "options": ["Le", "Gli", "La", "Li"],
+    "explanation": "A lei → le.",
+    "tags": ["pronouns", "oggetto-indiretto"]
+  },
+  {
+    "id": "prn009",
+    "category": "oggetto-indiretto",
+    "sentence": "Telefono a te domani. → ___ telefono domani.",
+    "hint": "a te → indirect pronoun",
+    "correct": "Ti",
+    "options": ["Ti", "Te", "Tu", "Gli"],
+    "explanation": "A te → ti.",
+    "tags": ["pronouns", "oggetto-indiretto"]
+  },
+  {
+    "id": "prn010",
+    "category": "oggetto-indiretto",
+    "sentence": "A Luca e Marco piace il caffè. → ___ piace il caffè.",
+    "hint": "a loro → indirect pronoun",
+    "correct": "Gli",
+    "options": ["Gli", "Le", "Loro", "Li"],
+    "explanation": "A loro → gli (in everyday Italian).",
+    "tags": ["pronouns", "oggetto-indiretto"]
+  },
+  {
+    "id": "prn011",
+    "category": "riflessivi",
+    "sentence": "Marco si veste. → Lui deve ___.",
+    "hint": "reflexive infinitive after a modal",
+    "correct": "vestirsi",
+    "options": ["vestirsi", "si vestire", "vestirlo", "vestire"],
+    "explanation": "Reflexive pronouns: mi, ti, si, ci, vi, si. After deve, the reflexive infinitive keeps -si: vestirsi.",
+    "tags": ["pronouns", "riflessivi"]
+  },
+  {
+    "id": "prn012",
+    "category": "riflessivi",
+    "sentence": "(noi) ___ laviamo le mani.",
+    "hint": "reflexive pronoun for noi",
+    "correct": "ci",
+    "options": ["ci", "vi", "si", "mi"],
+    "explanation": "Reflexive pronoun for noi → ci.",
+    "tags": ["pronouns", "riflessivi"]
+  },
+  {
+    "id": "prn013",
+    "category": "oggetto-diretto",
+    "sentence": "Inviti Anna e Maria? Sì, ___ invito.",
+    "hint": "Anna e Maria = fem plural direct object",
+    "correct": "le",
+    "options": ["le", "li", "gli", "la"],
+    "explanation": "Anna e Maria (f pl) → le.",
+    "tags": ["pronouns", "oggetto-diretto"]
+  },
+  {
+    "id": "prn014",
+    "category": "oggetto-indiretto",
+    "sentence": "Scrivi a noi? Sì, ___ scrivo stasera.",
+    "hint": "a noi → indirect pronoun",
+    "correct": "vi",
+    "options": ["vi", "ci", "gli", "ti"],
+    "explanation": "When speaking to a group 'a voi' → vi; here the answer is to you (voi) → vi.",
+    "tags": ["pronouns", "oggetto-indiretto"]
+  }
+]

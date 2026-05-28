@@ -12,6 +12,7 @@ export default async function AlBarPage() {
     <DrillQuiz
       title="Al Bar"
       subtitle="ISC verbs and piacere translation exercises."
+      instructions="Complete each bar-themed exercise — conjugate the -isc- verb or choose the correct piacere translation."
       contentType="al-bar"
       questions={alBarDrill}
       weakIds={weakIds}

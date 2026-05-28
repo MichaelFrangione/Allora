@@ -481,5 +481,41 @@
       "vocabulary",
       "lesson-8"
     ]
+  },
+  {
+    "id": "g028",
+    "rule": "Le Parole Interrogative (Question Words)",
+    "explanation": "Italian questions are introduced by interrogative words. Most are invariable, but quanto and quale agree with the noun.\n\n• chi = who\n• che cosa / cosa / che = what\n• come = how\n• quando = when\n• dove = where\n• quale (quali) = which\n• perché = why (and 'because' in the answer)\n• quanto / quanta / quanti / quante = how much / how many",
+    "examples": [
+      "Come ti chiami? — Mi chiamo Luca.",
+      "Dove abiti? — Abito a Roma.",
+      "Quanto costa? — Cinque euro.",
+      "Perché studi l'italiano? — Perché mi piace!"
+    ],
+    "tags": ["interrogatives", "question-words", "grammar"]
+  },
+  {
+    "id": "g029",
+    "rule": "I Dimostrativi (This & That)",
+    "explanation": "Demonstratives point things out and agree in gender and number with the noun.\n\n• questo / questa / questi / queste = this / these (near)\n• quello / quella / quelli / quelle = that / those (far)\n• qualcosa = something (invariable)\n\nUsed before a noun, quello follows the definite-article pattern: quel, quello, quell', quei, quegli.",
+    "examples": [
+      "Questo libro è mio.",
+      "Questa ragazza è simpatica.",
+      "Quei ragazzi sono italiani.",
+      "Vuoi qualcosa da bere?"
+    ],
+    "tags": ["demonstratives", "grammar"]
+  },
+  {
+    "id": "g030",
+    "rule": "Saluti e Congedi (Greetings & Farewells)",
+    "explanation": "Italian greetings depend on the time of day and on formality.\n\nGREETINGS: Ciao (informal hi), Buongiorno (good morning/day), Buonasera (good evening), Buonanotte (good night, going to bed).\n\nFAREWELLS: Ciao (informal bye), Arrivederci (formal goodbye), Buona giornata (have a good day), Buona serata (have a good evening).",
+    "examples": [
+      "Buongiorno, signora! Come sta?",
+      "Buonasera a tutti.",
+      "Arrivederci, dottore!",
+      "Esco adesso — buona giornata!"
+    ],
+    "tags": ["greetings", "communication", "politeness"]
   }
 ]

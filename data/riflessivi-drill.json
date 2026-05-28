@@ -1,0 +1,192 @@
+[
+  {
+    "id": "rfx001",
+    "category": "coniugazione",
+    "sentence": "(io) ___ presto la mattina.",
+    "hint": "svegliarsi → io",
+    "correct": "mi sveglio",
+    "options": ["mi sveglio", "ti svegli", "si sveglia", "mi sveglia"],
+    "explanation": "Reflexive verbs use the pronoun mi/ti/si/ci/vi/si before the verb. Io → mi + sveglio.",
+    "tags": ["reflexive-verbs", "coniugazione"]
+  },
+  {
+    "id": "rfx002",
+    "category": "coniugazione",
+    "sentence": "(tu) ___ alle sette?",
+    "hint": "svegliarsi → tu",
+    "correct": "ti svegli",
+    "options": ["ti svegli", "mi sveglio", "si sveglia", "ti sveglia"],
+    "explanation": "Tu → ti + svegli.",
+    "tags": ["reflexive-verbs", "coniugazione"]
+  },
+  {
+    "id": "rfx003",
+    "category": "coniugazione",
+    "sentence": "Marco ___ il cappotto.",
+    "hint": "mettersi → lui",
+    "correct": "si mette",
+    "options": ["si mette", "mi metto", "ti metti", "si metto"],
+    "explanation": "Lui/lei → si + mette.",
+    "tags": ["reflexive-verbs", "coniugazione"]
+  },
+  {
+    "id": "rfx004",
+    "category": "coniugazione",
+    "sentence": "(noi) ___ alla festa.",
+    "hint": "divertirsi → noi",
+    "correct": "ci divertiamo",
+    "options": ["ci divertiamo", "vi divertite", "si divertono", "ci divertono"],
+    "explanation": "Noi → ci + divertiamo.",
+    "tags": ["reflexive-verbs", "coniugazione"]
+  },
+  {
+    "id": "rfx005",
+    "category": "coniugazione",
+    "sentence": "(voi) ___ sempre al cinema.",
+    "hint": "divertirsi → voi",
+    "correct": "vi divertite",
+    "options": ["vi divertite", "ci divertiamo", "si divertono", "vi divertono"],
+    "explanation": "Voi → vi + divertite.",
+    "tags": ["reflexive-verbs", "coniugazione"]
+  },
+  {
+    "id": "rfx006",
+    "category": "coniugazione",
+    "sentence": "I bambini ___ tardi il sabato.",
+    "hint": "svegliarsi → loro",
+    "correct": "si svegliano",
+    "options": ["si svegliano", "si sveglia", "ci svegliamo", "si svegliate"],
+    "explanation": "Loro → si + svegliano.",
+    "tags": ["reflexive-verbs", "coniugazione"]
+  },
+  {
+    "id": "rfx007",
+    "category": "coniugazione",
+    "sentence": "(io) ___ il pigiama prima di dormire.",
+    "hint": "mettersi → io",
+    "correct": "mi metto",
+    "options": ["mi metto", "ti metti", "si mette", "mi mette"],
+    "explanation": "Io → mi + metto.",
+    "tags": ["reflexive-verbs", "coniugazione"]
+  },
+  {
+    "id": "rfx008",
+    "category": "coniugazione",
+    "sentence": "Lei deve ___ per uscire.",
+    "hint": "infinito riflessivo (after deve)",
+    "correct": "vestirsi",
+    "options": ["vestirsi", "si veste", "vestire", "mi vesto"],
+    "explanation": "After a modal verb the reflexive infinitive keeps -si: deve vestirsi.",
+    "tags": ["reflexive-verbs", "coniugazione"]
+  },
+  {
+    "id": "rfx101",
+    "category": "giornata-io",
+    "sentence": "7:30 — (io) ___, mi lavo e mi vesto.",
+    "hint": "svegliarsi → io",
+    "correct": "mi sveglio",
+    "options": ["mi sveglio", "si sveglia", "ti svegli", "mi sveglia"],
+    "explanation": "La mia giornata (io): mi sveglio.",
+    "tags": ["reflexive-verbs", "giornata-io"]
+  },
+  {
+    "id": "rfx102",
+    "category": "giornata-io",
+    "sentence": "9:15 — (io) ___ per il meeting.",
+    "hint": "prepararsi → io",
+    "correct": "mi preparo",
+    "options": ["mi preparo", "si prepara", "ti prepari", "mi prepara"],
+    "explanation": "Io → mi preparo.",
+    "tags": ["reflexive-verbs", "giornata-io"]
+  },
+  {
+    "id": "rfx103",
+    "category": "giornata-io",
+    "sentence": "13:00 — (io) ___ con i colleghi a pranzo.",
+    "hint": "trovarsi → io",
+    "correct": "mi trovo",
+    "options": ["mi trovo", "si trova", "ti trovi", "mi trova"],
+    "explanation": "Io → mi trovo.",
+    "tags": ["reflexive-verbs", "giornata-io"]
+  },
+  {
+    "id": "rfx104",
+    "category": "giornata-io",
+    "sentence": "17:30 — (io) ___ con gli amici e mi diverto.",
+    "hint": "incontrarsi → io",
+    "correct": "mi incontro",
+    "options": ["mi incontro", "si incontra", "ti incontri", "mi incontra"],
+    "explanation": "Io → mi incontro.",
+    "tags": ["reflexive-verbs", "giornata-io"]
+  },
+  {
+    "id": "rfx105",
+    "category": "giornata-io",
+    "sentence": "20:30 — dopo cena (io) ___ sul divano.",
+    "hint": "rilassarsi → io",
+    "correct": "mi rilasso",
+    "options": ["mi rilasso", "si rilassa", "ti rilassi", "mi rilassa"],
+    "explanation": "Io → mi rilasso.",
+    "tags": ["reflexive-verbs", "giornata-io"]
+  },
+  {
+    "id": "rfx106",
+    "category": "giornata-io",
+    "sentence": "23:00 — (io) mi lavo i denti e ___ la doccia.",
+    "hint": "farsi → io",
+    "correct": "mi faccio",
+    "options": ["mi faccio", "si fa", "ti fai", "mi fa"],
+    "explanation": "Farsi is irregular: io → mi faccio.",
+    "tags": ["reflexive-verbs", "giornata-io"]
+  },
+  {
+    "id": "rfx201",
+    "category": "giornata-lui",
+    "sentence": "7:30 — (lui) ___, si lava e si veste.",
+    "hint": "svegliarsi → lui/lei",
+    "correct": "si sveglia",
+    "options": ["si sveglia", "mi sveglio", "si svegliano", "ti svegli"],
+    "explanation": "La sua giornata (lui/lei): si sveglia.",
+    "tags": ["reflexive-verbs", "giornata-lui"]
+  },
+  {
+    "id": "rfx202",
+    "category": "giornata-lui",
+    "sentence": "9:15 — (lei) ___ per il meeting.",
+    "hint": "prepararsi → lui/lei",
+    "correct": "si prepara",
+    "options": ["si prepara", "mi preparo", "si preparano", "ti prepari"],
+    "explanation": "Lui/lei → si prepara.",
+    "tags": ["reflexive-verbs", "giornata-lui"]
+  },
+  {
+    "id": "rfx203",
+    "category": "giornata-lui",
+    "sentence": "14:00 — torna in ufficio e (lui) ___ a lavorare.",
+    "hint": "rimettersi → lui/lei",
+    "correct": "si rimette",
+    "options": ["si rimette", "mi rimetto", "si rimettono", "ti rimetti"],
+    "explanation": "Lui/lei → si rimette.",
+    "tags": ["reflexive-verbs", "giornata-lui"]
+  },
+  {
+    "id": "rfx204",
+    "category": "giornata-lui",
+    "sentence": "17:30 — (lei) si incontra con gli amici e ___.",
+    "hint": "divertirsi → lui/lei",
+    "correct": "si diverte",
+    "options": ["si diverte", "mi diverto", "si divertono", "ti diverti"],
+    "explanation": "Lui/lei → si diverte.",
+    "tags": ["reflexive-verbs", "giornata-lui"]
+  },
+  {
+    "id": "rfx205",
+    "category": "giornata-lui",
+    "sentence": "24:00 — (lui) ___ il pigiama e va a letto.",
+    "hint": "mettersi → lui/lei",
+    "correct": "si mette",
+    "options": ["si mette", "mi metto", "si mettono", "ti metti"],
+    "explanation": "Lui/lei → si mette.",
+    "tags": ["reflexive-verbs", "giornata-lui"]
+  }
+]

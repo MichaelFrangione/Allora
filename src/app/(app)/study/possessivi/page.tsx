@@ -12,9 +12,11 @@ export default async function PossessiviPage() {
     <DrillQuiz
       title="Aggettivi Possessivi"
       subtitle="Pick the correct possessive adjective — Simpsons edition."
+      instructions="Pick the possessive (mio, tuo, suo…) that matches the owner and agrees with the thing owned — remember to drop the article with singular family members."
       contentType="possessivi"
       questions={possessiviDrill}
       weakIds={weakIds}
+      subjectId="possessives"
     />
   );
 }

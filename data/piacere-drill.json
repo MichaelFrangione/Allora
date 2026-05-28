@@ -228,5 +228,85 @@
     "options": ["Gli piace", "Gli piacciono", "Le piace", "Ti piace"],
     "explanation": "Lui → GLI. Singular noun → PIACE. → 'Gli piace la musica italiana?'",
     "tags": ["piacere", "questions", "lesson-7"]
+  },
+  {
+    "id": "pd026",
+    "category": "piace-piacciono",
+    "sentence": "Mi ___ il cappuccino.",
+    "hint": "il cappuccino → singolare",
+    "correct": "piace",
+    "options": ["piace", "piacciono", "piaci", "piacere"],
+    "explanation": "Singular noun → PIACE.",
+    "tags": ["piacere", "bar"]
+  },
+  {
+    "id": "pd027",
+    "category": "piace-piacciono",
+    "sentence": "Ti ___ i cornetti?",
+    "hint": "i cornetti → plurale",
+    "correct": "piacciono",
+    "options": ["piacciono", "piace", "piaci", "piacere"],
+    "explanation": "Plural noun → PIACCIONO.",
+    "tags": ["piacere", "bar"]
+  },
+  {
+    "id": "pd028",
+    "category": "piace-piacciono",
+    "sentence": "Le ___ fare colazione al bar.",
+    "hint": "infinito (fare colazione) → singolare",
+    "correct": "piace",
+    "options": ["piace", "piacciono", "piaci", "piacere"],
+    "explanation": "When the subject is an infinitive (fare colazione), use PIACE.",
+    "tags": ["piacere", "bar"]
+  },
+  {
+    "id": "pd029",
+    "category": "piace-piacciono",
+    "sentence": "Ci ___ le pizzette e i tramezzini.",
+    "hint": "le pizzette / i tramezzini → plurale",
+    "correct": "piacciono",
+    "options": ["piacciono", "piace", "piaci", "piacere"],
+    "explanation": "Plural nouns → PIACCIONO.",
+    "tags": ["piacere", "bar"]
+  },
+  {
+    "id": "pd030",
+    "category": "piace-piacciono",
+    "sentence": "Vi ___ il succo di frutta.",
+    "hint": "il succo → singolare",
+    "correct": "piace",
+    "options": ["piace", "piacciono", "piaci", "piacere"],
+    "explanation": "Singular noun → PIACE.",
+    "tags": ["piacere", "bar"]
+  },
+  {
+    "id": "pd031",
+    "category": "con-pronomi",
+    "sentence": "A Francesca ___ il caffè.",
+    "hint": "a Francesca → le | il caffè → singolare",
+    "correct": "piace",
+    "options": ["piace", "piacciono", "le piacciono", "gli piace"],
+    "explanation": "A Francesca = a lei → LE, but with 'A Francesca' stated, the verb is PIACE (singular noun).",
+    "tags": ["piacere", "bar", "con-pronomi"]
+  },
+  {
+    "id": "pd032",
+    "category": "con-pronomi",
+    "sentence": "A Luca e Marco ___ i biscotti.",
+    "hint": "i biscotti → plurale",
+    "correct": "piacciono",
+    "options": ["piacciono", "piace", "gli piace", "le piacciono"],
+    "explanation": "Plural noun → PIACCIONO (a loro → gli).",
+    "tags": ["piacere", "bar", "con-pronomi"]
+  },
+  {
+    "id": "pd033",
+    "category": "con-pronomi",
+    "sentence": "A mia madre ___ la spremuta d'arancia.",
+    "hint": "la spremuta → singolare",
+    "correct": "piace",
+    "options": ["piace", "piacciono", "piaci", "gli piacciono"],
+    "explanation": "Singular noun → PIACE.",
+    "tags": ["piacere", "bar", "con-pronomi"]
   }
 ]

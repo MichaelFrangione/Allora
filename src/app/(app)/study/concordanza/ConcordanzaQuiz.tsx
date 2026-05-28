@@ -9,6 +9,8 @@ import { useSpeech } from "@/lib/useSpeech";
 import type { ConcordanzaQuestion } from "@/lib/content";
 import { cn } from "@/lib/utils";
 import { getBoostEnabled } from "@/components/BoostToggle";
+import SubjectReference from "@/components/SubjectReference";
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 
 const LIMIT_OPTIONS = [10, 20, 30, 50, null] as const;
 
@@ -28,6 +30,7 @@ export default function ConcordanzaQuiz({ questions, weakIds = [] }: { questions
   const [index, setIndex] = useState(0);
   const [selected, setSelected] = useState<string | null>(null);
   const [submitted, setSubmitted] = useState(false);
+  const [showHint, setShowHint] = useState(false);
   const [score, setScore] = useState({ correct: 0, incorrect: 0 });
   const [wrongIds, setWrongIds] = useState<string[]>([]);
   const [done, setDone] = useState(false);
@@ -58,6 +61,7 @@ export default function ConcordanzaQuiz({ questions, weakIds = [] }: { questions
     setIndex(0);
     setSelected(null);
     setSubmitted(false);
+    setShowHint(false);
     setScore({ correct: 0, incorrect: 0 });
     setWrongIds([]);
     setDone(false);
@@ -94,6 +98,7 @@ export default function ConcordanzaQuiz({ questions, weakIds = [] }: { questions
       setIndex(next);
       setSelected(null);
       setSubmitted(false);
+      setShowHint(false);
     }
   }
 
@@ -106,6 +111,13 @@ export default function ConcordanzaQuiz({ questions, weakIds = [] }: { questions
           <p className="text-sm text-muted-foreground mt-1">
             Pick the correct adjective form to match the noun.
           </p>
+          <div className="rounded-xl border border-primary/30 bg-primary/5 px-4 py-3 mt-3">
+            <p className="text-xs font-semibold uppercase tracking-wide text-primary mb-1">How it works</p>
+            <p className="text-sm text-muted-foreground">
+              Choose the adjective ending that agrees with the noun in gender (m/f) and number
+              (singular/plural) — e.g. <em>la ragazza alt<strong>a</strong></em>, <em>i libri ross<strong>i</strong></em>.
+            </p>
+          </div>
         </div>
         <div>
           <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wide mb-2">Questions per session</p>
@@ -180,7 +192,25 @@ export default function ConcordanzaQuiz({ questions, weakIds = [] }: { questions
       </div>
 
       {/* Question card */}
-      <div className="rounded-2xl border-2 border-border bg-card px-6 py-8 space-y-3">
+      <div className="relative rounded-2xl border-2 border-border bg-card px-6 py-8 space-y-3">
+        <Dialog open={showHint} onOpenChange={setShowHint}>
+          <DialogTrigger asChild>
+            <button
+              type="button"
+              aria-label="Show hint"
+              className="absolute top-3 right-3 flex items-center gap-1 rounded-full bg-muted px-2.5 py-1 text-xs font-medium text-muted-foreground transition-colors hover:bg-muted/80"
+            >
+              💡 Hint
+            </button>
+          </DialogTrigger>
+          <DialogContent className="max-h-[85vh] overflow-y-auto sm:max-w-xl">
+            <DialogHeader>
+              <DialogTitle>Hint</DialogTitle>
+            </DialogHeader>
+            {q.hint && <p className="text-sm text-muted-foreground">💡 {q.hint}</p>}
+            <SubjectReference subjectId="adjectives" />
+          </DialogContent>
+        </Dialog>
         <p className="text-lg font-medium leading-relaxed text-center">
           {before}
           <span className="inline-block border-b-2 border-primary min-w-20 mx-1 text-center font-bold text-primary">
@@ -188,7 +218,6 @@ export default function ConcordanzaQuiz({ questions, weakIds = [] }: { questions
           </span>
           {after}
         </p>
-        <p className="text-xs text-center text-muted-foreground">{q.hint}</p>
         {submitted && (
           <div className="flex justify-center">
             <button

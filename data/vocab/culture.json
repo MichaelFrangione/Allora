@@ -1,0 +1,17 @@
+[
+  {
+    "id": "v136",
+    "italian": "il cane",
+    "english": "the dog",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "Il cane abbaia fuori.",
+    "tags": [
+      "nouns",
+      "animals",
+      "lesson-4"
+    ],
+    "unit": 4,
+    "pronunciation": "KA·ne"
+  }
+]
