@@ -10,6 +10,8 @@ import type { ModalVerbQuestion } from "@/lib/content";
 import { cn } from "@/lib/utils";
 import { getBoostEnabled } from "@/components/BoostToggle";
 import SubjectReference from "@/components/SubjectReference";
+import CorrectBurst from "@/components/CorrectBurst";
+import GlossedText from "@/components/GlossedText";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 
 type Category = "all" | "slide-9" | "slide-10";
@@ -46,6 +48,7 @@ export default function ModalVerbsQuiz({
   const [selected, setSelected] = useState<string | null>(null);
   const [submitted, setSubmitted] = useState(false);
   const [showHint, setShowHint] = useState(false);
+  const [burst, setBurst] = useState(0);
   const [score, setScore] = useState({ correct: 0, incorrect: 0 });
   const [wrongIds, setWrongIds] = useState<string[]>([]);
   const [done, setDone] = useState(false);
@@ -101,6 +104,7 @@ export default function ModalVerbsQuiz({
   async function handleSubmit() {
     if (!selected || !q) return;
     const correct = selected === q.correct;
+    if (correct) setBurst((b) => b + 1);
     await recordAttempt(q.id, "modal-verbs", correct, selected);
     if (!correct) setWrongIds((ids) => [...ids, q.id]);
     setScore((s) => ({
@@ -251,6 +255,7 @@ export default function ModalVerbsQuiz({
 
       {/* Question card */}
       <div className="relative rounded-2xl border-2 border-border bg-card px-6 py-8 space-y-3">
+        {burst > 0 && <CorrectBurst key={burst} />}
         <Dialog open={showHint} onOpenChange={setShowHint}>
           <DialogTrigger asChild>
             <button
@@ -270,11 +275,11 @@ export default function ModalVerbsQuiz({
           </DialogContent>
         </Dialog>
         <p className="text-lg font-medium leading-relaxed text-center">
-          {before}
+          <GlossedText text={before} />
           <span className="inline-block border-b-2 border-primary min-w-16 mx-1 text-center font-bold text-primary">
             {submitted ? q.correct : "?"}
           </span>
-          {after}
+          <GlossedText text={after} />
         </p>
         {submitted && (
           <div className="flex justify-center">

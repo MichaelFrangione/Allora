@@ -10,6 +10,7 @@ import { tagsMatchSubject, subjectsPresent } from "@/lib/content";
 import type { VocabItem } from "@/lib/content";
 import { cn } from "@/lib/utils";
 import { getBoostEnabled } from "@/components/BoostToggle";
+import CorrectBurst from "@/components/CorrectBurst";
 
 const LIMIT_OPTIONS = [10, 20, 30, 50, null] as const;
 
@@ -62,6 +63,7 @@ export default function FlashcardSession({
   const [deck, setDeck] = useState<FlipCard[]>([]);
   const [index, setIndex] = useState(0);
   const [flipped, setFlipped] = useState(false);
+  const [burst, setBurst] = useState(0);
   const [score, setScore] = useState({ correct: 0, incorrect: 0 });
   const [wrongIds, setWrongIds] = useState<string[]>([]);
   const [done, setDone] = useState(false);
@@ -113,6 +115,7 @@ export default function FlashcardSession({
   async function handleAnswer(correct: boolean) {
     if (!current || answeringRef.current) return;
     answeringRef.current = true;
+    if (correct) setBurst((b) => b + 1);
     await recordAttempt(current.item.id, "flashcard", correct);
     if (!correct) setWrongIds((ids) => [...ids, current.id]);
     setScore((s) => ({
@@ -210,7 +213,8 @@ export default function FlashcardSession({
   const isWeak = weakSet.has(current.item.id);
 
   return (
-    <div className="max-w-lg mx-auto px-4 py-6 flex flex-col gap-6">
+    <div className="relative max-w-lg mx-auto px-4 py-6 flex flex-col gap-6">
+      {burst > 0 && <CorrectBurst key={burst} />}
       <div className="flex items-center justify-between">
         <h1 className="font-semibold">Vocab Flip Cards</h1>
         <div className="flex items-center gap-3">
@@ -254,6 +258,7 @@ export default function FlashcardSession({
         }}
       >
         <div
+          key={current.id}
           className={cn(
             "relative min-h-56 w-full transform-3d transition-transform duration-500",
             flipped && "rotate-y-180"

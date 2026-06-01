@@ -10,6 +10,8 @@ import type { DrillQuestion } from "@/lib/content";
 import { cn } from "@/lib/utils";
 import { getBoostEnabled } from "@/components/BoostToggle";
 import SubjectReference, { SUBJECT_REFERENCE_DATA } from "@/components/SubjectReference";
+import CorrectBurst from "@/components/CorrectBurst";
+import GlossedText from "@/components/GlossedText";
 import {
   Dialog,
   DialogContent,
@@ -62,6 +64,7 @@ export default function DrillQuiz({
   const [selected, setSelected] = useState<string | null>(null);
   const [submitted, setSubmitted] = useState(false);
   const [showHint, setShowHint] = useState(false);
+  const [burst, setBurst] = useState(0);
   const [score, setScore] = useState({ correct: 0, incorrect: 0 });
   const [wrongIds, setWrongIds] = useState<string[]>([]);
   const [done, setDone] = useState(false);
@@ -118,6 +121,7 @@ export default function DrillQuiz({
     if (submitted || !selected || !q) return;
     setSubmitted(true);
     const correct = selected === q.correct;
+    if (correct) setBurst((b) => b + 1);
     await recordAttempt(q.id, contentType, correct, selected);
     if (!correct) setWrongIds((ids) => [...ids, q.id]);
     setScore((s) => ({
@@ -281,12 +285,13 @@ export default function DrillQuiz({
       {q.prompt && (
         <div className="rounded-xl bg-muted px-4 py-3">
           <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wide mb-1">Situation</p>
-          <p className="text-sm italic">{q.prompt}</p>
+          <p className="text-sm italic"><GlossedText text={q.prompt} /></p>
         </div>
       )}
 
       {/* Question card */}
       <div className="relative rounded-2xl border-2 border-border bg-card px-6 py-8 space-y-3">
+        {burst > 0 && <CorrectBurst key={burst} />}
         {(q.hint || hasReference) && (
           <Dialog open={showHint} onOpenChange={setShowHint}>
             <DialogTrigger asChild>
@@ -308,11 +313,11 @@ export default function DrillQuiz({
           </Dialog>
         )}
         <p className="text-lg font-medium leading-relaxed text-center">
-          {before}
+          <GlossedText text={before} />
           <span className="inline-block border-b-2 border-primary min-w-16 mx-1 text-center font-bold text-primary">
             {submitted ? q.correct : "?"}
           </span>
-          {after}
+          <GlossedText text={after} />
         </p>
         {submitted && (
           <div className="flex justify-center">

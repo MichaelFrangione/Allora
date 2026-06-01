@@ -10,6 +10,8 @@ import type { ConcordanzaQuestion } from "@/lib/content";
 import { cn } from "@/lib/utils";
 import { getBoostEnabled } from "@/components/BoostToggle";
 import SubjectReference from "@/components/SubjectReference";
+import CorrectBurst from "@/components/CorrectBurst";
+import GlossedText from "@/components/GlossedText";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 
 const LIMIT_OPTIONS = [10, 20, 30, 50, null] as const;
@@ -31,6 +33,7 @@ export default function ConcordanzaQuiz({ questions, weakIds = [] }: { questions
   const [selected, setSelected] = useState<string | null>(null);
   const [submitted, setSubmitted] = useState(false);
   const [showHint, setShowHint] = useState(false);
+  const [burst, setBurst] = useState(0);
   const [score, setScore] = useState({ correct: 0, incorrect: 0 });
   const [wrongIds, setWrongIds] = useState<string[]>([]);
   const [done, setDone] = useState(false);
@@ -80,6 +83,7 @@ export default function ConcordanzaQuiz({ questions, weakIds = [] }: { questions
   async function handleSubmit() {
     if (!selected || !q) return;
     const correct = selected === q.correct;
+    if (correct) setBurst((b) => b + 1);
     await recordAttempt(q.id, "concordanza", correct, selected);
     if (!correct) setWrongIds((ids) => [...ids, q.id]);
     setScore((s) => ({
@@ -193,6 +197,7 @@ export default function ConcordanzaQuiz({ questions, weakIds = [] }: { questions
 
       {/* Question card */}
       <div className="relative rounded-2xl border-2 border-border bg-card px-6 py-8 space-y-3">
+        {burst > 0 && <CorrectBurst key={burst} />}
         <Dialog open={showHint} onOpenChange={setShowHint}>
           <DialogTrigger asChild>
             <button
@@ -212,11 +217,11 @@ export default function ConcordanzaQuiz({ questions, weakIds = [] }: { questions
           </DialogContent>
         </Dialog>
         <p className="text-lg font-medium leading-relaxed text-center">
-          {before}
+          <GlossedText text={before} />
           <span className="inline-block border-b-2 border-primary min-w-20 mx-1 text-center font-bold text-primary">
             {submitted ? q.correct : "?"}
           </span>
-          {after}
+          <GlossedText text={after} />
         </p>
         {submitted && (
           <div className="flex justify-center">
