@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Button } from "@/components/ui/button";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Label } from "@/components/ui/label";
@@ -71,9 +71,17 @@ export default function DrillQuiz({
   const [done, setDone] = useState(false);
   const { startSession, endSession, recordAttempt } = useStudySession(contentType);
   const { speak, speaking } = useSpeech();
+  const advanceTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  function clearAdvance() {
+    if (advanceTimer.current) {
+      clearTimeout(advanceTimer.current);
+      advanceTimer.current = null;
+    }
+  }
 
   useEffect(() => {
-    return () => { endSession(); };
+    return () => { endSession(); clearAdvance(); };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
@@ -98,6 +106,7 @@ export default function DrillQuiz({
       pool = shuffle(weighted);
       if (limit !== null) pool = pool.slice(0, limit);
     }
+    clearAdvance();
     setDeck(pool);
     setIndex(0);
     setSelected(null);
@@ -111,6 +120,7 @@ export default function DrillQuiz({
   }
 
   function exitSession() {
+    clearAdvance();
     endSession();
     setStarted(false);
     setDone(false);
@@ -125,6 +135,9 @@ export default function DrillQuiz({
     if (correct) {
       setBurst((b) => b + 1);
       playCorrect();
+      // Auto-advance on correct after the celebration (a gentle pause, not instant).
+      clearAdvance();
+      advanceTimer.current = setTimeout(() => handleNext(), 1100);
     } else {
       playWrong();
     }
@@ -137,6 +150,7 @@ export default function DrillQuiz({
   }
 
   async function handleNext() {
+    clearAdvance();
     const next = index + 1;
     if (next >= deck.length) {
       await endSession();
@@ -399,6 +413,11 @@ export default function DrillQuiz({
         {!submitted ? (
           <Button className="flex-1 h-12" onClick={handleSubmit} disabled={!selected}>
             Check
+          </Button>
+        ) : selected === q.correct ? (
+          // Correct → auto-advances after the celebration; no button needed.
+          <Button variant="ghost" className="flex-1 h-12 text-green-600 pointer-events-none">
+            Correct! ✓
           </Button>
         ) : (
           <Button className="flex-1 h-12" onClick={handleNext}>

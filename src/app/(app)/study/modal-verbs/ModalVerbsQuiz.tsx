@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Button } from "@/components/ui/button";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Label } from "@/components/ui/label";
@@ -55,9 +55,17 @@ export default function ModalVerbsQuiz({
   const [done, setDone] = useState(false);
   const { startSession, endSession, recordAttempt } = useStudySession("modal-verbs");
   const { speak, speaking } = useSpeech();
+  const advanceTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  function clearAdvance() {
+    if (advanceTimer.current) {
+      clearTimeout(advanceTimer.current);
+      advanceTimer.current = null;
+    }
+  }
 
   useEffect(() => {
-    return () => { endSession(); };
+    return () => { endSession(); clearAdvance(); };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
@@ -95,6 +103,7 @@ export default function ModalVerbsQuiz({
   }
 
   function exitSession() {
+    clearAdvance();
     endSession();
     setStarted(false);
     setDone(false);
@@ -108,6 +117,8 @@ export default function ModalVerbsQuiz({
     if (correct) {
       setBurst((b) => b + 1);
       playCorrect();
+      clearAdvance();
+      advanceTimer.current = setTimeout(() => handleNext(), 1100);
     } else {
       playWrong();
     }
@@ -121,6 +132,7 @@ export default function ModalVerbsQuiz({
   }
 
   async function handleNext() {
+    clearAdvance();
     const next = index + 1;
     if (next >= deck.length) {
       await endSession();
@@ -351,6 +363,10 @@ export default function ModalVerbsQuiz({
         {!submitted ? (
           <Button className="flex-1 h-12" onClick={handleSubmit} disabled={!selected}>
             Check
+          </Button>
+        ) : selected === q.correct ? (
+          <Button variant="ghost" className="flex-1 h-12 text-green-600 pointer-events-none">
+            Correct! ✓
           </Button>
         ) : (
           <Button className="flex-1 h-12" onClick={handleNext}>

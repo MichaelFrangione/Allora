@@ -9,7 +9,7 @@ import { cn } from "@/lib/utils";
 import CorrectBurst from "@/components/CorrectBurst";
 import { playCorrect, playWrong } from "@/lib/feedback";
 
-const SESSION_SIZE = 15;
+const LIMIT_OPTIONS = [20, 40, null] as const;
 
 function shuffle<T>(arr: T[]): T[] {
   const a = [...arr];
@@ -22,10 +22,10 @@ function shuffle<T>(arr: T[]): T[] {
 
 type Question = { item: VocabItem; options: string[] };
 
-function buildDeck(items: VocabItem[]): Question[] {
+function buildDeck(items: VocabItem[], limit: number | null): Question[] {
   const pool = items.filter((v) => v.english && v.italian);
-  return shuffle(pool)
-    .slice(0, SESSION_SIZE)
+  const chosen = limit === null ? shuffle(pool) : shuffle(pool).slice(0, limit);
+  return chosen
     .map((item) => {
       const distractors = shuffle(pool.filter((v) => v.english !== item.english))
         .slice(0, 3)
@@ -36,6 +36,7 @@ function buildDeck(items: VocabItem[]): Question[] {
 
 export default function ListeningQuiz({ items }: { items: VocabItem[] }) {
   const [started, setStarted] = useState(false);
+  const [limit, setLimit] = useState<number | null>(20);
   const [deck, setDeck] = useState<Question[]>([]);
   const [index, setIndex] = useState(0);
   const [selected, setSelected] = useState<string | null>(null);
@@ -44,11 +45,21 @@ export default function ListeningQuiz({ items }: { items: VocabItem[] }) {
   const [burst, setBurst] = useState(0);
   const { startSession, endSession, recordAttempt } = useStudySession("listening");
   const { speak, speaking } = useSpeech();
+  const advanceTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  function clearAdvance() {
+    if (advanceTimer.current) {
+      clearTimeout(advanceTimer.current);
+      advanceTimer.current = null;
+    }
+  }
+
+  const poolSize = items.filter((v) => v.english && v.italian).length;
 
   const q = deck[index];
   const submitted = selected !== null;
 
-  useEffect(() => () => { endSession(); }, []); // eslint-disable-line react-hooks/exhaustive-deps
+  useEffect(() => () => { endSession(); clearAdvance(); }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   // Auto-play the Italian word each time the question changes.
   const spokenFor = useRef<string | null>(null);
@@ -60,7 +71,8 @@ export default function ListeningQuiz({ items }: { items: VocabItem[] }) {
   }, [started, q, speak]);
 
   function begin() {
-    setDeck(buildDeck(items));
+    clearAdvance();
+    setDeck(buildDeck(items, limit));
     setIndex(0);
     setSelected(null);
     setScore({ correct: 0, incorrect: 0 });
@@ -77,6 +89,8 @@ export default function ListeningQuiz({ items }: { items: VocabItem[] }) {
     if (correct) {
       setBurst((b) => b + 1);
       playCorrect();
+      clearAdvance();
+      advanceTimer.current = setTimeout(() => next(), 1100);
     } else {
       playWrong();
     }
@@ -89,6 +103,7 @@ export default function ListeningQuiz({ items }: { items: VocabItem[] }) {
   }
 
   async function next() {
+    clearAdvance();
     if (index + 1 >= deck.length) {
       await endSession();
       setDone(true);
@@ -111,7 +126,26 @@ export default function ListeningQuiz({ items }: { items: VocabItem[] }) {
             You&apos;ll hear an Italian word — tap the 🔊 to replay it — then pick its English meaning.
           </p>
         </div>
-        <Button className="w-full h-12" onClick={begin}>Start · {Math.min(SESSION_SIZE, items.length)} words</Button>
+        <div>
+          <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wide mb-2">Words per session</p>
+          <div className="flex flex-wrap gap-2">
+            {LIMIT_OPTIONS.map((l) => (
+              <button
+                key={l ?? "all"}
+                onClick={() => setLimit(l)}
+                className={cn(
+                  "px-3 py-1.5 rounded-full text-sm font-medium transition-colors",
+                  limit === l ? "bg-primary text-primary-foreground" : "bg-muted text-muted-foreground hover:bg-muted/80"
+                )}
+              >
+                {l ?? `All ${poolSize}`}
+              </button>
+            ))}
+          </div>
+        </div>
+        <Button className="w-full h-12" onClick={begin}>
+          Start · {limit === null ? poolSize : Math.min(limit, poolSize)} words
+        </Button>
       </div>
     );
   }
@@ -191,7 +225,7 @@ export default function ListeningQuiz({ items }: { items: VocabItem[] }) {
         })}
       </div>
 
-      {submitted && (
+      {submitted && selected !== q.item.english && (
         <Button className="w-full h-12" onClick={next}>
           {index + 1 >= deck.length ? "See Results" : "Next →"}
         </Button>
