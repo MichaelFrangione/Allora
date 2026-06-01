@@ -158,6 +158,8 @@ export interface DrillQuestion {
   options: string[];
   explanation?: string;
   tags: string[];
+  /** When set (e.g. in the mistakes queue), attempts record under this contentType. */
+  sourceType?: string;
 }
 
 export const piacereDrill: DrillQuestion[] = piacereData as DrillQuestion[];
@@ -175,6 +177,25 @@ export const aggettiviDrill: DrillQuestion[] = aggettiviData as DrillQuestion[];
 export const interrogativiDrill: DrillQuestion[] = interrogativiData as DrillQuestion[];
 export const dimostrativiDrill: DrillQuestion[] = dimostrativiData as DrillQuestion[];
 export const salutiDrill: DrillQuestion[] = salutiData as DrillQuestion[];
+
+/** All DrillQuiz-based drills keyed by their study contentType (for the mistakes queue). */
+export const DRILL_BY_TYPE: Record<string, DrillQuestion[]> = {
+  piacere: piacereDrill,
+  preposizioni: preposizioniDrill,
+  ristorante: ristoranteDrill,
+  "al-bar": alBarDrill,
+  possessivi: possessiviDrill,
+  riflessivi: riflessiviDrill,
+  pronomi: pronomiDrill,
+  "essere-avere": essereAvereDrill,
+  articoli: articoliDrill,
+  genere: genereDrill,
+  plurali: pluraliDrill,
+  aggettivi: aggettiviDrill,
+  interrogativi: interrogativiDrill,
+  dimostrativi: dimostrativiDrill,
+  saluti: salutiDrill,
+};
 
 /**
  * Subjects are the primary way content is organised (replacing units).

@@ -1,5 +1,5 @@
 import { auth } from "@/lib/auth";
-import { getModeStats, getRecentSessions, getDueVocabCount } from "@/lib/progress";
+import { getModeStats, getRecentSessions, getDueVocabCount, getMistakeItems } from "@/lib/progress";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
@@ -9,6 +9,8 @@ import BoostToggle from "@/components/BoostToggle";
 const studyModes = [
   { href: "/study/flashcards", label: "Flip Cards", emoji: "🃏", desc: "Both directions" },
   { href: "/study/vocab", label: "Vocab Quiz", emoji: "📝", desc: "Multiple choice" },
+  { href: "/study/listening", label: "Listening", emoji: "🎧", desc: "Hear it, pick the meaning" },
+  { href: "/study/match", label: "Match Pairs", emoji: "🧠", desc: "Match IT ↔ EN, fast" },
   { href: "/study/conjugation", label: "Conjugation", emoji: "🔤", desc: "One form at a time" },
   { href: "/study/pronunciation", label: "Pronunciation", emoji: "🔊", desc: "How sounds work" },
   { href: "/study/sentence-builder", label: "Sentences", emoji: "🧩", desc: "Tap to build" },
@@ -20,11 +22,13 @@ export default async function DashboardPage() {
   const session = await auth();
   const userId = session!.user!.id!;
 
-  const [modeStats, recentSessions, dueCount] = await Promise.all([
+  const [modeStats, recentSessions, dueCount, mistakes] = await Promise.all([
     getModeStats(userId),
     getRecentSessions(userId, 3),
     getDueVocabCount(userId),
+    getMistakeItems(userId),
   ]);
+  const mistakeCount = mistakes.length;
 
   const totalAttempts = modeStats.reduce((sum: number, m) => sum + m.total, 0);
   const overallAccuracy =
@@ -83,6 +87,20 @@ export default async function DashboardPage() {
               </CardContent>
             </Card>
           </Link>
+          {mistakeCount > 0 && (
+            <Link href="/study/mistakes">
+              <Card className="relative hover:bg-accent transition-colors cursor-pointer h-full border-amber-400/50">
+                <span className="absolute top-2 right-2 inline-flex min-w-5 items-center justify-center rounded-full bg-amber-500 px-1.5 text-xs font-bold text-white">
+                  {mistakeCount}
+                </span>
+                <CardContent className="pt-4 pb-3 px-3">
+                  <div className="text-2xl mb-1">🩹</div>
+                  <div className="font-semibold text-sm">Mistakes</div>
+                  <div className="text-xs text-muted-foreground">Retry what you missed</div>
+                </CardContent>
+              </Card>
+            </Link>
+          )}
           {studyModes.map(({ href, label, emoji, desc }) => (
             <Link key={href} href={href}>
               <Card className="hover:bg-accent transition-colors cursor-pointer h-full">

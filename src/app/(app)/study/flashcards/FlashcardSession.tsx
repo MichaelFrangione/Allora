@@ -11,6 +11,7 @@ import type { VocabItem } from "@/lib/content";
 import { cn } from "@/lib/utils";
 import { getBoostEnabled } from "@/components/BoostToggle";
 import CorrectBurst from "@/components/CorrectBurst";
+import { playCorrect, playWrong } from "@/lib/feedback";
 
 const LIMIT_OPTIONS = [10, 20, 30, 50, null] as const;
 
@@ -115,7 +116,12 @@ export default function FlashcardSession({
   async function handleAnswer(correct: boolean) {
     if (!current || answeringRef.current) return;
     answeringRef.current = true;
-    if (correct) setBurst((b) => b + 1);
+    if (correct) {
+      setBurst((b) => b + 1);
+      playCorrect();
+    } else {
+      playWrong();
+    }
     await recordAttempt(current.item.id, "flashcard", correct);
     if (!correct) setWrongIds((ids) => [...ids, current.id]);
     setScore((s) => ({

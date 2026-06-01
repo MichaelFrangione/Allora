@@ -24,17 +24,17 @@ export const SUBJECT_REFERENCE_DATA: Record<string, SubjectRef> = {
   "reflexive-verbs": {
     heading: "Verbi Riflessivi — presente",
     tables: [
-      conj("svegliarsi", ["mi sveglio", "ti svegli", "si sveglia", "ci svegliamo", "vi svegliate", "si svegliano"]),
-      conj("mettersi", ["mi metto", "ti metti", "si mette", "ci mettiamo", "vi mettete", "si mettono"]),
-      conj("divertirsi", ["mi diverto", "ti diverti", "si diverte", "ci divertiamo", "vi divertite", "si divertono"]),
+      conj("svegliarsi — to wake up", ["mi sveglio", "ti svegli", "si sveglia", "ci svegliamo", "vi svegliate", "si svegliano"]),
+      conj("mettersi — to put on", ["mi metto", "ti metti", "si mette", "ci mettiamo", "vi mettete", "si mettono"]),
+      conj("divertirsi — to have fun", ["mi diverto", "ti diverti", "si diverte", "ci divertiamo", "vi divertite", "si divertono"]),
     ],
     note: "The reflexive pronoun (mi/ti/si/ci/vi/si) goes before the verb. After a modal it attaches to the infinitive: deve vestirsi.",
   },
   "essere-avere": {
     heading: "Essere & Avere — presente",
     tables: [
-      conj("essere", ["sono", "sei", "è", "siamo", "siete", "sono"]),
-      conj("avere", ["ho", "hai", "ha", "abbiamo", "avete", "hanno"]),
+      conj("essere — to be", ["sono", "sei", "è", "siamo", "siete", "sono"]),
+      conj("avere — to have", ["ho", "hai", "ha", "abbiamo", "avete", "hanno"]),
     ],
     note: "Idioms use AVERE: avere fame, sete, sonno, caldo, freddo, paura, avere 20 anni.",
   },
@@ -251,9 +251,9 @@ export const SUBJECT_REFERENCE_DATA: Record<string, SubjectRef> = {
   modals: {
     heading: "Verbi Modali — presente",
     tables: [
-      conj("dovere", ["devo", "devi", "deve", "dobbiamo", "dovete", "devono"]),
-      conj("potere", ["posso", "puoi", "può", "possiamo", "potete", "possono"]),
-      conj("volere", ["voglio", "vuoi", "vuole", "vogliamo", "volete", "vogliono"]),
+      conj("dovere — must / to have to", ["devo", "devi", "deve", "dobbiamo", "dovete", "devono"]),
+      conj("potere — can / to be able to", ["posso", "puoi", "può", "possiamo", "potete", "possono"]),
+      conj("volere — to want", ["voglio", "vuoi", "vuole", "vogliamo", "volete", "vogliono"]),
     ],
     note: "Modals are followed by the infinitive: devo studiare, posso venire, voglio mangiare.",
   },

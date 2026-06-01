@@ -12,6 +12,7 @@ import { getBoostEnabled } from "@/components/BoostToggle";
 import SubjectReference, { SUBJECT_REFERENCE_DATA } from "@/components/SubjectReference";
 import CorrectBurst from "@/components/CorrectBurst";
 import GlossedText from "@/components/GlossedText";
+import { playCorrect, playWrong } from "@/lib/feedback";
 import {
   Dialog,
   DialogContent,
@@ -121,8 +122,13 @@ export default function DrillQuiz({
     if (submitted || !selected || !q) return;
     setSubmitted(true);
     const correct = selected === q.correct;
-    if (correct) setBurst((b) => b + 1);
-    await recordAttempt(q.id, contentType, correct, selected);
+    if (correct) {
+      setBurst((b) => b + 1);
+      playCorrect();
+    } else {
+      playWrong();
+    }
+    await recordAttempt(q.id, q.sourceType ?? contentType, correct, selected);
     if (!correct) setWrongIds((ids) => [...ids, q.id]);
     setScore((s) => ({
       correct: s.correct + (correct ? 1 : 0),
@@ -237,6 +243,16 @@ export default function DrillQuiz({
         <h1 className="text-2xl font-bold">Done!</h1>
         <p className="text-4xl font-bold">{pct}%</p>
         <p className="text-muted-foreground">{score.correct} / {deck.length} correct</p>
+        <div className="flex w-full max-w-xs justify-around rounded-xl border-2 border-border bg-card py-3">
+          <div className="text-center">
+            <p className="text-xl font-bold text-yellow-500">+{score.correct * 10 + score.incorrect * 2}</p>
+            <p className="text-[10px] uppercase tracking-wide text-muted-foreground">XP earned</p>
+          </div>
+          <div className="text-center">
+            <p className="text-xl font-bold">{pct}%</p>
+            <p className="text-[10px] uppercase tracking-wide text-muted-foreground">accuracy</p>
+          </div>
+        </div>
         <Button onClick={() => beginDrill()} className="w-full max-w-xs">Try Again</Button>
         {wrongIds.length > 0 && (
           <Button

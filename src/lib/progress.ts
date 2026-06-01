@@ -143,6 +143,33 @@ export async function getDueVocabCount(
   return due.length;
 }
 
+export type MistakeItem = { contentId: string; contentType: string; wrong: number };
+
+/**
+ * Items whose MOST RECENT attempt was incorrect — i.e. still unresolved mistakes.
+ * Answering one correctly makes its latest attempt correct, so it clears from the list.
+ * Ordered by total times missed (most-missed first).
+ */
+export async function getMistakeItems(userId: string): Promise<MistakeItem[]> {
+  const attempts = await prisma.cardAttempt.findMany({
+    where: { userId },
+    orderBy: { createdAt: "asc" },
+    select: { contentId: true, contentType: true, correct: true },
+  });
+  const map = new Map<string, { contentId: string; contentType: string; wrong: number; lastCorrect: boolean }>();
+  for (const a of attempts) {
+    const key = `${a.contentType}::${a.contentId}`;
+    const e = map.get(key) ?? { contentId: a.contentId, contentType: a.contentType, wrong: 0, lastCorrect: true };
+    e.wrong += a.correct ? 0 : 1;
+    e.lastCorrect = a.correct; // attempts are ascending, so this ends on the latest
+    map.set(key, e);
+  }
+  return Array.from(map.values())
+    .filter((e) => !e.lastCorrect)
+    .sort((a, b) => b.wrong - a.wrong)
+    .map(({ contentId, contentType, wrong }) => ({ contentId, contentType, wrong }));
+}
+
 export async function getRecentSessions(userId: string, limit = 5) {
   return prisma.studySession.findMany({
     where: { userId },
@@ -226,10 +253,13 @@ export type SubjectProgress = {
   level: number;
 };
 
+export const DAILY_GOAL_XP = 30;
+
 export type LearnStats = {
   xp: number;
   streak: number;
   todayCorrect: number;
+  todayXp: number;
   totalCorrect: number;
   bySubject: Record<string, SubjectProgress>;
 };
@@ -254,7 +284,9 @@ export async function getLearnStats(
   const streak = computeStreak(dayKeys, now);
 
   const todayKey = dayKey(now);
-  const todayCorrect = attempts.filter((a) => a.correct && dayKey(a.createdAt) === todayKey).length;
+  const todayAttempts = attempts.filter((a) => dayKey(a.createdAt) === todayKey);
+  const todayCorrect = todayAttempts.filter((a) => a.correct).length;
+  const todayXp = todayCorrect * XP_PER_CORRECT + (todayAttempts.length - todayCorrect) * XP_PER_ATTEMPT;
 
   const bySubject: Record<string, SubjectProgress> = {};
   for (const a of attempts) {
@@ -271,5 +303,5 @@ export async function getLearnStats(
     e.level = masteryLevel(e.correct, e.accuracy);
   }
 
-  return { xp, streak, todayCorrect, totalCorrect, bySubject };
+  return { xp, streak, todayCorrect, todayXp, totalCorrect, bySubject };
 }

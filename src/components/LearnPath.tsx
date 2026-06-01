@@ -1,8 +1,36 @@
 import Link from "next/link";
 import { Flame, Zap } from "lucide-react";
 import { SUBJECTS } from "@/lib/content";
-import type { LearnStats } from "@/lib/progress";
+import { DAILY_GOAL_XP, type LearnStats } from "@/lib/progress";
 import { cn } from "@/lib/utils";
+
+function GoalRing({ value, goal }: { value: number; goal: number }) {
+  const pct = Math.min(1, value / goal);
+  const r = 22;
+  const circ = 2 * Math.PI * r;
+  const done = pct >= 1;
+  return (
+    <div className="relative h-14 w-14 shrink-0">
+      <svg className="h-14 w-14 -rotate-90" viewBox="0 0 52 52">
+        <circle cx="26" cy="26" r={r} fill="none" strokeWidth="5" className="stroke-muted" />
+        <circle
+          cx="26"
+          cy="26"
+          r={r}
+          fill="none"
+          strokeWidth="5"
+          strokeLinecap="round"
+          className={done ? "stroke-green-500" : "stroke-primary"}
+          strokeDasharray={circ}
+          strokeDashoffset={circ * (1 - pct)}
+        />
+      </svg>
+      <span className="absolute inset-0 flex items-center justify-center text-base">
+        {done ? "🏆" : "🎯"}
+      </span>
+    </div>
+  );
+}
 
 // The curriculum order — each subject maps to the drill/route that teaches it.
 // Roughly ordered from foundational to more advanced.
@@ -49,9 +77,12 @@ export default function LearnPath({ stats }: { stats: LearnStats }) {
             <p className="text-[10px] uppercase tracking-wide text-muted-foreground">total XP</p>
           </div>
         </div>
-        <div className="text-right">
-          <p className="text-lg font-bold leading-none">+{stats.todayCorrect * 10}</p>
-          <p className="text-[10px] uppercase tracking-wide text-muted-foreground">today</p>
+        <div className="flex items-center gap-2">
+          <GoalRing value={stats.todayXp} goal={DAILY_GOAL_XP} />
+          <div>
+            <p className="text-lg font-bold leading-none">{stats.todayXp}/{DAILY_GOAL_XP}</p>
+            <p className="text-[10px] uppercase tracking-wide text-muted-foreground">daily goal</p>
+          </div>
         </div>
       </div>
 

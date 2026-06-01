@@ -12,6 +12,7 @@ import { getBoostEnabled } from "@/components/BoostToggle";
 import SubjectReference from "@/components/SubjectReference";
 import CorrectBurst from "@/components/CorrectBurst";
 import GlossedText from "@/components/GlossedText";
+import { playCorrect, playWrong } from "@/lib/feedback";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 
 const LIMIT_OPTIONS = [10, 20, 30, 50, null] as const;
@@ -83,7 +84,12 @@ export default function ConcordanzaQuiz({ questions, weakIds = [] }: { questions
   async function handleSubmit() {
     if (!selected || !q) return;
     const correct = selected === q.correct;
-    if (correct) setBurst((b) => b + 1);
+    if (correct) {
+      setBurst((b) => b + 1);
+      playCorrect();
+    } else {
+      playWrong();
+    }
     await recordAttempt(q.id, "concordanza", correct, selected);
     if (!correct) setWrongIds((ids) => [...ids, q.id]);
     setScore((s) => ({
