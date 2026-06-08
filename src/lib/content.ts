@@ -80,6 +80,8 @@ export type SentenceExercise = {
   parts: string[];
   distractors: string[];
   tags: string[];
+  /** Additional accepted orderings (e.g. items reordered around "e"/"o"). */
+  alternates?: string[];
 };
 
 export type PronunciationExample = {

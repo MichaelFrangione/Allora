@@ -139,8 +139,9 @@ export default function SentenceBuilder({
   }
 
   // Compare the built sentence to the target, ignoring spacing and trailing
-  // sentence punctuation (., ?, !) — which aren't tappable tokens. Word order and
-  // every word (including repeats like "il … il") must still match exactly.
+  // sentence punctuation (., ?, !) — which aren't tappable tokens. The exercise's
+  // `alternates` list also counts as correct, so valid reorderings (e.g. items
+  // swapped around "e"/"o") are accepted alongside the canonical order.
   function normalizeSentence(s: string): string {
     return s.replace(/\s+/g, " ").trim().replace(/[.?!]+$/, "");
   }
@@ -148,7 +149,8 @@ export default function SentenceBuilder({
   async function handleCheck() {
     if (!ex) return;
     const builtSentence = built.join(" ");
-    const isCorrect = normalizeSentence(builtSentence) === normalizeSentence(ex.italian);
+    const accepted = [ex.italian, ...(ex.alternates ?? [])].map(normalizeSentence);
+    const isCorrect = accepted.includes(normalizeSentence(builtSentence));
     setCorrect(isCorrect);
     setChecked(true);
     await recordAttempt(ex.id, "sentence", isCorrect, builtSentence);
