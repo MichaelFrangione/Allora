@@ -768,5 +768,33 @@
       "voi": "continuate",
       "loro": "continuano"
     }
+  },
+  {
+    "id": "c112",
+    "verb": "indovinare",
+    "meaning": "to guess (regular -ARE)",
+    "tense": "presente",
+    "forms": {
+      "io": "indovino",
+      "tu": "indovini",
+      "lui/lei": "indovina",
+      "noi": "indoviniamo",
+      "voi": "indovinate",
+      "loro": "indovinano"
+    }
+  },
+  {
+    "id": "c113",
+    "verb": "squillare",
+    "meaning": "to ring (regular -ARE)",
+    "tense": "presente",
+    "forms": {
+      "io": "squillo",
+      "tu": "squilli",
+      "lui/lei": "squilla",
+      "noi": "squilliamo",
+      "voi": "squillate",
+      "loro": "squillano"
+    }
   }
 ]

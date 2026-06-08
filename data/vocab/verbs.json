@@ -1696,5 +1696,33 @@
       "emotions"
     ],
     "pronunciation": "ar·rab·BYAR·si"
+  },
+  {
+    "id": "v298",
+    "italian": "indovinare",
+    "english": "to guess",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Indovina chi è!",
+    "tags": [
+      "verbs",
+      "are-verbs",
+      "lesson-7"
+    ],
+    "pronunciation": "in·do·vi·NA·re"
+  },
+  {
+    "id": "v299",
+    "italian": "squillare",
+    "english": "to ring (phone)",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Il telefono squilla.",
+    "tags": [
+      "verbs",
+      "are-verbs",
+      "lesson-7"
+    ],
+    "pronunciation": "skwil·LA·re"
   }
 ]

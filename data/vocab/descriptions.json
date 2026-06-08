@@ -316,5 +316,576 @@
     ],
     "unit": 6,
     "pronunciation": "spor·TI·vo"
+  },
+  {
+    "id": "v300",
+    "italian": "pazzerello",
+    "english": "slightly crazy, playful",
+    "gender": "m",
+    "partOfSpeech": "adjective",
+    "example": "È un tipo pazzerello e divertente.",
+    "tags": [
+      "adjectives",
+      "descriptions",
+      "personality",
+      "lesson-7"
+    ],
+    "pronunciation": "pat·tse·REL·lo"
+  },
+  {
+    "id": "v301",
+    "italian": "bizzarro",
+    "english": "weird, bizarre",
+    "gender": "m",
+    "partOfSpeech": "adjective",
+    "example": "Ha uno stile un po' bizzarro.",
+    "tags": [
+      "adjectives",
+      "descriptions",
+      "personality",
+      "lesson-7"
+    ],
+    "pronunciation": "bid·DZAR·ro"
+  },
+  {
+    "id": "v302",
+    "italian": "socievole",
+    "english": "sociable, outgoing",
+    "gender": null,
+    "partOfSpeech": "adjective",
+    "example": "Marco è molto socievole.",
+    "tags": [
+      "adjectives",
+      "descriptions",
+      "personality",
+      "e-adjectives",
+      "lesson-7"
+    ],
+    "pronunciation": "so·CHE·vo·le"
+  },
+  {
+    "id": "v303",
+    "italian": "paziente",
+    "english": "patient",
+    "gender": null,
+    "partOfSpeech": "adjective",
+    "example": "La maestra è paziente con noi.",
+    "tags": [
+      "adjectives",
+      "descriptions",
+      "personality",
+      "e-adjectives",
+      "lesson-7"
+    ],
+    "pronunciation": "pa·TSIEN·te"
+  },
+  {
+    "id": "v304",
+    "italian": "allegro",
+    "english": "cheerful, lively",
+    "gender": "m",
+    "partOfSpeech": "adjective",
+    "example": "È una persona allegra ed energica.",
+    "tags": [
+      "adjectives",
+      "descriptions",
+      "personality",
+      "lesson-7"
+    ],
+    "pronunciation": "al·LE·gro"
+  },
+  {
+    "id": "v305",
+    "italian": "riservato",
+    "english": "reserved, private",
+    "gender": "m",
+    "partOfSpeech": "adjective",
+    "example": "Andrea è riservata e un po' timida.",
+    "tags": [
+      "adjectives",
+      "descriptions",
+      "personality",
+      "lesson-7"
+    ],
+    "pronunciation": "ri·ser·VA·to"
+  },
+  {
+    "id": "v306",
+    "italian": "timido",
+    "english": "shy",
+    "gender": "m",
+    "partOfSpeech": "adjective",
+    "example": "Da bambino ero molto timido.",
+    "tags": [
+      "adjectives",
+      "descriptions",
+      "personality",
+      "lesson-7"
+    ],
+    "pronunciation": "TI·mi·do"
+  },
+  {
+    "id": "v307",
+    "italian": "pigro",
+    "english": "lazy",
+    "gender": "m",
+    "partOfSpeech": "adjective",
+    "example": "La domenica sono pigro.",
+    "tags": [
+      "adjectives",
+      "descriptions",
+      "personality",
+      "lesson-7"
+    ],
+    "pronunciation": "PI·gro"
+  },
+  {
+    "id": "v308",
+    "italian": "ansioso",
+    "english": "anxious",
+    "gender": "m",
+    "partOfSpeech": "adjective",
+    "example": "Martina è un po' ansiosa.",
+    "tags": [
+      "adjectives",
+      "descriptions",
+      "personality",
+      "lesson-7"
+    ],
+    "pronunciation": "an·SIO·so"
+  },
+  {
+    "id": "v309",
+    "italian": "buffo",
+    "english": "funny, silly",
+    "gender": "m",
+    "partOfSpeech": "adjective",
+    "example": "È un tipo buffo, mi fa ridere.",
+    "tags": [
+      "adjectives",
+      "descriptions",
+      "personality",
+      "lesson-7"
+    ],
+    "pronunciation": "BUF·fo"
+  },
+  {
+    "id": "v310",
+    "italian": "giocherellone",
+    "english": "playful",
+    "gender": "m",
+    "partOfSpeech": "adjective",
+    "example": "Il mio gatto è giocherellone.",
+    "tags": [
+      "adjectives",
+      "descriptions",
+      "personality",
+      "lesson-7"
+    ],
+    "pronunciation": "jo·ke·rel·LO·ne"
+  },
+  {
+    "id": "v311",
+    "italian": "procrastinatore",
+    "english": "procrastinator (m; f procrastinatrice)",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "Sono un grande procrastinatore.",
+    "tags": [
+      "descriptions",
+      "personality",
+      "people",
+      "lesson-7"
+    ],
+    "pronunciation": "pro·kra·sti·na·TO·re"
+  },
+  {
+    "id": "v312",
+    "italian": "scuro",
+    "english": "dark",
+    "gender": "m",
+    "partOfSpeech": "adjective",
+    "example": "Ha i capelli castano scuro.",
+    "tags": [
+      "adjectives",
+      "descriptions",
+      "appearance",
+      "lesson-7"
+    ],
+    "pronunciation": "SKU·ro"
+  },
+  {
+    "id": "v313",
+    "italian": "chiaro",
+    "english": "light, pale",
+    "gender": "m",
+    "partOfSpeech": "adjective",
+    "example": "Ha gli occhi di un azzurro chiaro.",
+    "tags": [
+      "adjectives",
+      "descriptions",
+      "appearance",
+      "lesson-7"
+    ],
+    "pronunciation": "KIA·ro"
+  },
+  {
+    "id": "v314",
+    "italian": "grasso",
+    "english": "fat",
+    "gender": "m",
+    "partOfSpeech": "adjective",
+    "example": "Il gatto è un po' grasso.",
+    "tags": [
+      "adjectives",
+      "descriptions",
+      "appearance",
+      "lesson-7"
+    ],
+    "pronunciation": "GRAS·so"
+  },
+  {
+    "id": "v315",
+    "italian": "rotondo",
+    "english": "round",
+    "gender": "m",
+    "partOfSpeech": "adjective",
+    "example": "Ha un viso rotondo.",
+    "tags": [
+      "adjectives",
+      "descriptions",
+      "appearance",
+      "lesson-7"
+    ],
+    "pronunciation": "ro·TON·do"
+  },
+  {
+    "id": "v316",
+    "italian": "cicciottello",
+    "english": "chubby, plump",
+    "gender": "m",
+    "partOfSpeech": "adjective",
+    "example": "Che bambino cicciottello!",
+    "tags": [
+      "adjectives",
+      "descriptions",
+      "appearance",
+      "lesson-7"
+    ],
+    "pronunciation": "chic·chot·TEL·lo"
+  },
+  {
+    "id": "v317",
+    "italian": "formoso",
+    "english": "curvy (of a woman)",
+    "gender": "m",
+    "partOfSpeech": "adjective",
+    "example": "È una donna formosa.",
+    "tags": [
+      "adjectives",
+      "descriptions",
+      "appearance",
+      "lesson-7"
+    ],
+    "pronunciation": "for·MO·so"
+  },
+  {
+    "id": "v318",
+    "italian": "stempiato",
+    "english": "with a receding hairline",
+    "gender": "m",
+    "partOfSpeech": "adjective",
+    "example": "Mio zio è un po' stempiato.",
+    "tags": [
+      "adjectives",
+      "descriptions",
+      "appearance",
+      "lesson-7"
+    ],
+    "pronunciation": "stem·PIA·to"
+  },
+  {
+    "id": "v319",
+    "italian": "biondo",
+    "english": "blond",
+    "gender": "m",
+    "partOfSpeech": "adjective",
+    "example": "Ha i capelli biondi.",
+    "tags": [
+      "adjectives",
+      "descriptions",
+      "appearance",
+      "colors",
+      "lesson-7"
+    ],
+    "pronunciation": "BION·do"
+  },
+  {
+    "id": "v320",
+    "italian": "castano",
+    "english": "chestnut brown (hair, eyes)",
+    "gender": "m",
+    "partOfSpeech": "adjective",
+    "example": "Andrea ha i capelli castani.",
+    "tags": [
+      "adjectives",
+      "descriptions",
+      "appearance",
+      "colors",
+      "lesson-7"
+    ],
+    "pronunciation": "ka·STA·no"
+  },
+  {
+    "id": "v321",
+    "italian": "liscio",
+    "english": "straight, smooth (hair)",
+    "gender": "m",
+    "partOfSpeech": "adjective",
+    "example": "Ha i capelli lunghi e lisci.",
+    "tags": [
+      "adjectives",
+      "descriptions",
+      "appearance",
+      "lesson-7"
+    ],
+    "pronunciation": "LI·sho"
+  },
+  {
+    "id": "v322",
+    "italian": "sottile",
+    "english": "thin, slim",
+    "gender": null,
+    "partOfSpeech": "adjective",
+    "example": "Ha la bocca sottile.",
+    "tags": [
+      "adjectives",
+      "descriptions",
+      "appearance",
+      "e-adjectives",
+      "lesson-7"
+    ],
+    "pronunciation": "sot·TI·le"
+  },
+  {
+    "id": "v323",
+    "italian": "profondo",
+    "english": "deep (voice)",
+    "gender": "m",
+    "partOfSpeech": "adjective",
+    "example": "Ha una voce profonda.",
+    "tags": [
+      "adjectives",
+      "descriptions",
+      "appearance",
+      "lesson-7"
+    ],
+    "pronunciation": "pro·FON·do"
+  },
+  {
+    "id": "v324",
+    "italian": "squillante",
+    "english": "shrill, ringing (voice)",
+    "gender": null,
+    "partOfSpeech": "adjective",
+    "example": "Ha una voce squillante.",
+    "tags": [
+      "adjectives",
+      "descriptions",
+      "appearance",
+      "e-adjectives",
+      "lesson-7"
+    ],
+    "pronunciation": "skwil·LAN·te"
+  },
+  {
+    "id": "v325",
+    "italian": "famoso",
+    "english": "famous (superlative: famosissimo = very/most famous)",
+    "gender": "m",
+    "partOfSpeech": "adjective",
+    "example": "Questo attore è famosissimo.",
+    "tags": [
+      "adjectives",
+      "descriptions",
+      "lesson-7"
+    ],
+    "pronunciation": "fa·MO·so"
+  },
+  {
+    "id": "v326",
+    "italian": "i capelli",
+    "english": "hair",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "Ha i capelli corti e castani.",
+    "tags": [
+      "descriptions",
+      "appearance",
+      "people",
+      "lesson-7"
+    ],
+    "pronunciation": "ka·PEL·li"
+  },
+  {
+    "id": "v327",
+    "italian": "la voce",
+    "english": "voice",
+    "gender": "f",
+    "partOfSpeech": "noun",
+    "example": "Ha una voce profonda.",
+    "tags": [
+      "descriptions",
+      "appearance",
+      "people",
+      "lesson-7"
+    ],
+    "pronunciation": "VO·che"
+  },
+  {
+    "id": "v328",
+    "italian": "il viso",
+    "english": "face",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "Ha il viso allungato (ovale).",
+    "tags": [
+      "descriptions",
+      "appearance",
+      "people",
+      "lesson-7"
+    ],
+    "pronunciation": "VI·zo"
+  },
+  {
+    "id": "v329",
+    "italian": "la bocca",
+    "english": "mouth",
+    "gender": "f",
+    "partOfSpeech": "noun",
+    "example": "Ha la bocca sottile.",
+    "tags": [
+      "descriptions",
+      "appearance",
+      "people",
+      "lesson-7"
+    ],
+    "pronunciation": "BOK·ka"
+  },
+  {
+    "id": "v330",
+    "italian": "l'altezza",
+    "english": "height",
+    "gender": "f",
+    "partOfSpeech": "noun",
+    "example": "La sua altezza è nella media.",
+    "tags": [
+      "descriptions",
+      "appearance",
+      "people",
+      "lesson-7"
+    ],
+    "pronunciation": "al·TET·tsa"
+  },
+  {
+    "id": "v331",
+    "italian": "la corporatura",
+    "english": "build, figure (body type)",
+    "gender": "f",
+    "partOfSpeech": "noun",
+    "example": "Ha una corporatura robusta.",
+    "tags": [
+      "descriptions",
+      "appearance",
+      "people",
+      "lesson-7"
+    ],
+    "pronunciation": "kor·po·ra·TU·ra"
+  },
+  {
+    "id": "v332",
+    "italian": "lo squillo",
+    "english": "ring (of a phone)",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "Ho sentito lo squillo del telefono.",
+    "tags": [
+      "descriptions",
+      "communication",
+      "lesson-7"
+    ],
+    "pronunciation": "SKWIL·lo"
+  },
+  {
+    "id": "v333",
+    "italian": "la ciccia",
+    "english": "fat, flab (colloquial)",
+    "gender": "f",
+    "partOfSpeech": "noun",
+    "example": "Ha messo su un po' di ciccia.",
+    "tags": [
+      "descriptions",
+      "appearance",
+      "lesson-7"
+    ],
+    "pronunciation": "CHIC·cha"
+  },
+  {
+    "id": "v334",
+    "italian": "in carne",
+    "english": "chubby (lit. 'in flesh')",
+    "gender": null,
+    "partOfSpeech": "expression",
+    "example": "È un po' in carne.",
+    "tags": [
+      "descriptions",
+      "appearance",
+      "expressions",
+      "lesson-7"
+    ],
+    "pronunciation": "in·KAR·ne"
+  },
+  {
+    "id": "v335",
+    "italian": "nella media",
+    "english": "average, in the average range",
+    "gender": null,
+    "partOfSpeech": "expression",
+    "example": "La sua altezza è nella media.",
+    "tags": [
+      "descriptions",
+      "appearance",
+      "expressions",
+      "lesson-7"
+    ],
+    "pronunciation": "nel·la·ME·dia"
+  },
+  {
+    "id": "v336",
+    "italian": "l'indizio",
+    "english": "clue (pl. indizi)",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "Ti do un indizio per indovinare.",
+    "tags": [
+      "descriptions",
+      "communication",
+      "lesson-7"
+    ],
+    "pronunciation": "in·DI·tsio"
+  },
+  {
+    "id": "v337",
+    "italian": "il tormentone",
+    "english": "catchphrase, recurring hit",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "Questo è il tormentone dell'estate.",
+    "tags": [
+      "descriptions",
+      "communication",
+      "lesson-7"
+    ],
+    "pronunciation": "tor·men·TO·ne"
   }
 ]
