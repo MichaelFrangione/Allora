@@ -15,7 +15,7 @@ function GlossWord({ word, translation }: { word: string; translation: string })
         }}
         onBlur={() => setOpen(false)}
         aria-label={`${word} — ${translation}`}
-        className="border-b border-dotted border-primary/70 hover:border-primary transition-colors"
+        className="border-b border-dotted border-muted-foreground/30 hover:border-muted-foreground/70 transition-colors"
       >
         {word}
       </button>

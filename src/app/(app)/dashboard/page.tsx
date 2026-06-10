@@ -14,6 +14,7 @@ const studyModes = [
   { href: "/study/conjugation", label: "Conjugation", emoji: "🔤", desc: "One form at a time" },
   { href: "/study/pronunciation", label: "Pronunciation", emoji: "🔊", desc: "How sounds work" },
   { href: "/study/sentence-builder", label: "Sentences", emoji: "🧩", desc: "Tap to build" },
+  { href: "/study/descrizione", label: "Describe a Picture", emoji: "🖼️", desc: "Answer about an image" },
   { href: "/study/mixed", label: "Mixed", emoji: "🎲", desc: "All modes at once" },
   { href: "/study/focused", label: "Focused Drills", emoji: "🎯", desc: "Topic-specific exercises" },
 ];

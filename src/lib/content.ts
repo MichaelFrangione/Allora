@@ -10,6 +10,7 @@ import vocabCommunication from "../../data/vocab/communication.json";
 import vocabDescriptions from "../../data/vocab/descriptions.json";
 import vocabCulture from "../../data/vocab/culture.json";
 import vocabAbstract from "../../data/vocab/abstract.json";
+import vocabDescrizione from "../../data/vocab/descrizione.json";
 import flashcardsData from "../../data/flashcards.json";
 // Conjugations are split by verb group under data/conjugations/.
 import conjRegularAre from "../../data/conjugations/regular-are.json";
@@ -37,6 +38,7 @@ import aggettiviData from "../../data/aggettivi-drill.json";
 import interrogativiData from "../../data/interrogativi-drill.json";
 import dimostrativiData from "../../data/dimostrativi-drill.json";
 import salutiData from "../../data/saluti-drill.json";
+import descrizioneData from "../../data/descrizione.json";
 
 export type VocabItem = {
   id: string;
@@ -111,6 +113,7 @@ export const vocab: VocabItem[] = [
   ...vocabDescriptions,
   ...vocabCulture,
   ...vocabAbstract,
+  ...vocabDescrizione,
 ] as VocabItem[];
 export const flashcards: Flashcard[] = flashcardsData as Flashcard[];
 export const conjugations: Conjugation[] = [
@@ -180,6 +183,35 @@ export const interrogativiDrill: DrillQuestion[] = interrogativiData as DrillQue
 export const dimostrativiDrill: DrillQuestion[] = dimostrativiData as DrillQuestion[];
 export const salutiDrill: DrillQuestion[] = salutiData as DrillQuestion[];
 
+/**
+ * Picture-description lesson: an image plus a set of multiple-choice questions about
+ * what's in it and where. Each picture is one deck; answers feed XP/mastery like a drill.
+ */
+export interface ImageQuestion {
+  id: string;
+  question: string;
+  /** English gloss of the question, shown beneath it. */
+  english?: string;
+  options: string[];
+  correct: string;
+  explanation?: string;
+}
+
+export interface ImageDescription {
+  id: string;
+  title: string;
+  /** Public path to the picture, e.g. /images/descrizione/parco.png */
+  image: string;
+  /** Intrinsic pixel size of the image, for aspect-ratio-correct full-width rendering. */
+  width: number;
+  height: number;
+  subject: string;
+  intro?: string;
+  questions: ImageQuestion[];
+}
+
+export const imageDescriptions: ImageDescription[] = descrizioneData as ImageDescription[];
+
 /** All DrillQuiz-based drills keyed by their study contentType (for the mistakes queue). */
 export const DRILL_BY_TYPE: Record<string, DrillQuestion[]> = {
   piacere: piacereDrill,
@@ -232,6 +264,9 @@ export const SUBJECTS: Subject[] = [
   { id: "city", label: "City & Directions", emoji: "🏙️", tags: ["city", "directions", "places"] },
   { id: "work", label: "Work", emoji: "💼", tags: ["work"] },
   { id: "colors", label: "Colors", emoji: "🌈", tags: ["colors"] },
+  { id: "positions", label: "Positions", emoji: "📍", tags: ["positions"] },
+  { id: "nature", label: "Nature", emoji: "🌳", tags: ["nature"] },
+  { id: "descrizione", label: "Describe a Picture", emoji: "🖼️", tags: ["descrizione", "description", "ce-ci-sono"] },
 ];
 
 const SUBJECT_BY_ID = new Map(SUBJECTS.map((s) => [s.id, s]));

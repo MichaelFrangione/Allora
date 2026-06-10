@@ -1,0 +1,352 @@
+[
+  {
+    "id": "parco",
+    "title": "Al parco",
+    "image": "/images/descrizione/parco.png",
+    "width": 1402,
+    "height": 1122,
+    "subject": "descrizione",
+    "intro": "Guarda l'immagine del parco e rispondi alle domande.",
+    "questions": [
+      {
+        "id": "parco-gatti-quanti",
+        "question": "Quanti gatti ci sono nell'immagine?",
+        "english": "How many cats are there in the picture?",
+        "options": ["Uno", "Due", "Tre", "Quattro"],
+        "correct": "Due",
+        "explanation": "Ci sono due gatti: uno arancione e uno grigio. Per più cose si usa «ci sono»."
+      },
+      {
+        "id": "parco-ce-alberi",
+        "question": "Nella foto ___ molti alberi.",
+        "english": "In the photo ___ many trees. (c'è / ci sono)",
+        "options": ["C'è", "Ci sono"],
+        "correct": "Ci sono",
+        "explanation": "Gli alberi sono più di uno, quindi si usa «ci sono»."
+      },
+      {
+        "id": "parco-cane",
+        "question": "Che animale c'è con la coppia a sinistra?",
+        "english": "What animal is with the couple on the left?",
+        "options": ["Un cane", "Un gatto", "Un cavallo", "Un coniglio"],
+        "correct": "Un cane",
+        "explanation": "C'è un cane al guinzaglio. Per una cosa sola si usa «c'è»."
+      },
+      {
+        "id": "parco-cane-colore",
+        "question": "Di che colore è il cane?",
+        "english": "What colour is the dog?",
+        "options": ["Marrone", "Nero", "Bianco", "Grigio"],
+        "correct": "Marrone",
+        "explanation": "Il cane è marrone (un golden retriever)."
+      },
+      {
+        "id": "parco-gatto-colore",
+        "question": "Di che colore è il gatto seduto a sinistra?",
+        "english": "What colour is the cat sitting on the left?",
+        "options": ["Arancione", "Grigio", "Nero", "Bianco"],
+        "correct": "Arancione",
+        "explanation": "Il gatto seduto a sinistra è arancione; l'altro, sdraiato, è grigio."
+      },
+      {
+        "id": "parco-centro",
+        "question": "Che cosa c'è al centro dell'immagine?",
+        "english": "What is in the centre of the picture?",
+        "options": ["Una fontana", "Una statua", "Un albero", "Una piscina"],
+        "correct": "Una fontana",
+        "explanation": "Al centro c'è una fontana con l'acqua."
+      },
+      {
+        "id": "parco-fontana-size",
+        "question": "Com'è la fontana al centro?",
+        "english": "What is the fountain in the centre like?",
+        "options": ["Grande", "Piccola", "Vecchia", "Rotta"],
+        "correct": "Grande",
+        "explanation": "La fontana al centro è grande."
+      },
+      {
+        "id": "parco-bambini",
+        "question": "Cosa fanno i due bambini dietro la fontana?",
+        "english": "What are the two children doing behind the fountain?",
+        "options": ["Giocano a calcio", "Leggono un libro", "Mangiano un gelato", "Dormono"],
+        "correct": "Giocano a calcio",
+        "explanation": "Dietro la fontana, due bambini giocano a calcio con un pallone."
+      },
+      {
+        "id": "parco-dietro",
+        "question": "Dove giocano a calcio i due bambini?",
+        "english": "Where are the two children playing football?",
+        "options": ["Dietro la fontana", "Davanti al cane", "Sotto un albero", "In primo piano"],
+        "correct": "Dietro la fontana",
+        "explanation": "I bambini giocano dietro la fontana."
+      },
+      {
+        "id": "parco-giochi",
+        "question": "Dov'è il parco giochi con lo scivolo e le altalene?",
+        "english": "Where is the playground with the slide and swings?",
+        "options": ["A destra", "A sinistra", "Al centro", "In alto"],
+        "correct": "A destra",
+        "explanation": "Il parco giochi è a destra."
+      },
+      {
+        "id": "parco-altalena",
+        "question": "Che cosa fa la bambina nel parco giochi?",
+        "english": "What is the girl doing in the playground?",
+        "options": ["È sull'altalena", "Nuota", "Mangia", "Legge"],
+        "correct": "È sull'altalena",
+        "explanation": "Una bambina è sull'altalena."
+      },
+      {
+        "id": "parco-biciclette",
+        "question": "Dove sono le biciclette?",
+        "english": "Where are the bicycles?",
+        "options": ["A sinistra", "A destra", "Al centro", "In alto"],
+        "correct": "A sinistra",
+        "explanation": "Le biciclette sono a sinistra, vicino al cartello del parcheggio."
+      },
+      {
+        "id": "parco-panchina",
+        "question": "Cosa fa l'uomo seduto sulla panchina a destra?",
+        "english": "What is the man sitting on the bench on the right doing?",
+        "options": ["Legge un libro", "Gioca a calcio", "Mangia un panino", "Parla al telefono"],
+        "correct": "Legge un libro",
+        "explanation": "A destra, un uomo legge un libro seduto su una panchina."
+      },
+      {
+        "id": "parco-picnic",
+        "question": "Che cosa fa la coppia seduta sulla coperta?",
+        "english": "What is the couple sitting on the blanket doing?",
+        "options": ["Fa un picnic", "Gioca a carte", "Dorme", "Nuota"],
+        "correct": "Fa un picnic",
+        "explanation": "La coppia fa un picnic sulla coperta a quadri."
+      },
+      {
+        "id": "parco-terra",
+        "question": "Che cosa c'è per terra, sotto la coppia che fa il picnic?",
+        "english": "What is on the ground, under the couple having a picnic?",
+        "options": ["Una coperta", "Un tappeto", "Un giornale", "Un asciugamano"],
+        "correct": "Una coperta",
+        "explanation": "Per terra c'è una coperta a quadri rossi e bianchi per il picnic."
+      },
+      {
+        "id": "parco-passeggino",
+        "question": "Che cosa spinge la donna sullo sfondo?",
+        "english": "What is the woman in the background pushing?",
+        "options": ["Un passeggino", "Una bicicletta", "Un carrello", "Una valigia"],
+        "correct": "Un passeggino",
+        "explanation": "Sullo sfondo una donna spinge un passeggino."
+      },
+      {
+        "id": "parco-alberi-intorno",
+        "question": "Che cosa c'è intorno al parco?",
+        "english": "What is there around the park?",
+        "options": ["Molti alberi", "Molte case", "Alte montagne", "Molti negozi"],
+        "correct": "Molti alberi",
+        "explanation": "Intorno al parco ci sono molti alberi verdi."
+      },
+      {
+        "id": "parco-cielo-colore",
+        "question": "Di che colore è il cielo?",
+        "english": "What colour is the sky?",
+        "options": ["Azzurro", "Grigio", "Rosa", "Nero"],
+        "correct": "Azzurro",
+        "explanation": "Il cielo è azzurro con qualche nuvola."
+      },
+      {
+        "id": "parco-nuvole",
+        "question": "Che cosa si vede in alto, nel cielo?",
+        "english": "What can you see up high, in the sky?",
+        "options": ["Le nuvole", "Le stelle", "La luna", "Gli aerei"],
+        "correct": "Le nuvole",
+        "explanation": "In alto, nel cielo, si vedono alcune nuvole bianche."
+      },
+      {
+        "id": "parco-fiori",
+        "question": "Dove sono i fiori rosa?",
+        "english": "Where are the pink flowers?",
+        "options": ["In basso", "In alto", "Al centro", "Sullo sfondo"],
+        "correct": "In basso",
+        "explanation": "I fiori rosa sono in basso, in primo piano."
+      },
+      {
+        "id": "parco-tempo",
+        "question": "Che tempo fa nell'immagine?",
+        "english": "What is the weather like in the picture?",
+        "options": ["C'è il sole", "Piove", "Nevica", "C'è nebbia"],
+        "correct": "C'è il sole",
+        "explanation": "Il cielo è azzurro con qualche nuvola: c'è il sole."
+      },
+      {
+        "id": "parco-atmosfera",
+        "question": "Com'è l'atmosfera del parco?",
+        "english": "What is the atmosphere of the park like?",
+        "options": ["Allegra e vivace", "Triste e silenziosa", "Buia e fredda", "Caotica e stressante"],
+        "correct": "Allegra e vivace",
+        "explanation": "Il parco è pieno di gente: l'atmosfera sembra allegra e vivace."
+      }
+    ]
+  },
+  {
+    "id": "tavola",
+    "title": "La tavola",
+    "image": "/images/descrizione/tavola.png",
+    "width": 1402,
+    "height": 1122,
+    "subject": "descrizione",
+    "intro": "Guarda l'immagine della tavola apparecchiata e rispondi alle domande.",
+    "questions": [
+      {
+        "id": "tavola-ce-piatto",
+        "question": "Al centro della tavola ___ un piatto di pasta.",
+        "english": "In the centre of the table ___ a plate of pasta. (c'è / ci sono)",
+        "options": ["C'è", "Ci sono"],
+        "correct": "C'è",
+        "explanation": "C'è un solo piatto al centro, quindi si usa «c'è»."
+      },
+      {
+        "id": "tavola-piatto",
+        "question": "Che cosa c'è nel piatto al centro?",
+        "english": "What is on the plate in the centre?",
+        "options": ["La pasta", "La pizza", "L'insalata", "La zuppa"],
+        "correct": "La pasta",
+        "explanation": "Al centro c'è un piatto di pasta con il formaggio."
+      },
+      {
+        "id": "tavola-piatto-dove",
+        "question": "Dove si trova il piatto di pasta?",
+        "english": "Where is the plate of pasta?",
+        "options": ["Al centro", "A sinistra", "A destra", "In alto"],
+        "correct": "Al centro",
+        "explanation": "Il piatto di pasta è al centro della tavola."
+      },
+      {
+        "id": "tavola-formaggio",
+        "question": "Che cosa c'è sopra la pasta?",
+        "english": "What is on top of the pasta?",
+        "options": ["Il formaggio", "Il cioccolato", "Lo zucchero", "La panna"],
+        "correct": "Il formaggio",
+        "explanation": "Sopra la pasta c'è il formaggio grattugiato."
+      },
+      {
+        "id": "tavola-mele-quante",
+        "question": "Quante mele ci sono?",
+        "english": "How many apples are there?",
+        "options": ["Una", "Due", "Tre", "Quattro"],
+        "correct": "Due",
+        "explanation": "A sinistra ci sono due mele su un piattino."
+      },
+      {
+        "id": "tavola-mele-colore",
+        "question": "Di che colore sono le mele?",
+        "english": "What colour are the apples?",
+        "options": ["Rosse", "Verdi", "Gialle", "Arancioni"],
+        "correct": "Rosse",
+        "explanation": "Le mele sono rosse."
+      },
+      {
+        "id": "tavola-mele-dove",
+        "question": "Dove sono le mele?",
+        "english": "Where are the apples?",
+        "options": ["A sinistra", "A destra", "Al centro", "In alto"],
+        "correct": "A sinistra",
+        "explanation": "Le mele sono a sinistra, su un piattino."
+      },
+      {
+        "id": "tavola-forchette",
+        "question": "Quante forchette ci sono sulla tavola?",
+        "english": "How many forks are on the table?",
+        "options": ["Due", "Tre", "Quattro", "Una"],
+        "correct": "Tre",
+        "explanation": "A sinistra del piatto ci sono tre forchette."
+      },
+      {
+        "id": "tavola-cucchiai",
+        "question": "Quanti cucchiai ci sono?",
+        "english": "How many spoons are there?",
+        "options": ["Uno", "Due", "Tre", "Quattro"],
+        "correct": "Due",
+        "explanation": "A destra del piatto ci sono due cucchiai, accanto al coltello."
+      },
+      {
+        "id": "tavola-coltello",
+        "question": "Che cosa c'è a destra del piatto, insieme ai cucchiai?",
+        "english": "What is to the right of the plate, together with the spoons?",
+        "options": ["Un coltello", "Una forchetta", "Un mestolo", "Le bacchette"],
+        "correct": "Un coltello",
+        "explanation": "A destra del piatto c'è un coltello, accanto ai cucchiai."
+      },
+      {
+        "id": "tavola-bicchieri",
+        "question": "Quanti bicchieri ci sono sulla tavola?",
+        "english": "How many glasses are on the table?",
+        "options": ["Due", "Tre", "Quattro", "Cinque"],
+        "correct": "Tre",
+        "explanation": "Ci sono tre bicchieri: un calice da vino e due bicchieri bassi."
+      },
+      {
+        "id": "tavola-sale-pepe",
+        "question": "Che cosa c'è tra le mele e i bicchieri?",
+        "english": "What is between the apples and the glasses?",
+        "options": ["Il sale e il pepe", "L'olio e l'aceto", "Lo zucchero", "Il pane"],
+        "correct": "Il sale e il pepe",
+        "explanation": "Tra le mele e i bicchieri ci sono il sale e il pepe."
+      },
+      {
+        "id": "tavola-bottiglie",
+        "question": "Dove sono le bottiglie di vino?",
+        "english": "Where are the wine bottles?",
+        "options": ["A destra", "A sinistra", "Al centro", "In basso"],
+        "correct": "A destra",
+        "explanation": "Le due bottiglie di vino sono a destra."
+      },
+      {
+        "id": "tavola-bottiglie-quante",
+        "question": "Quante bottiglie di vino ci sono?",
+        "english": "How many wine bottles are there?",
+        "options": ["Una", "Due", "Tre", "Quattro"],
+        "correct": "Due",
+        "explanation": "Ci sono due bottiglie: una di vino bianco e una di vino rosso."
+      },
+      {
+        "id": "tavola-vino-colore",
+        "question": "Di che colore è il vino nella bottiglia a sinistra?",
+        "english": "What colour is the wine in the bottle on the left?",
+        "options": ["Bianco", "Rosso", "Rosato", "Verde"],
+        "correct": "Bianco",
+        "explanation": "La bottiglia a sinistra è un Pinot Grigio: vino bianco. Quella a destra è vino rosso."
+      },
+      {
+        "id": "tavola-menu",
+        "question": "Che cosa c'è in basso a sinistra?",
+        "english": "What is at the bottom left?",
+        "options": ["Il menù", "Il giornale", "Una lettera", "Un libro"],
+        "correct": "Il menù",
+        "explanation": "In basso a sinistra c'è il menù."
+      },
+      {
+        "id": "tavola-tovaglia",
+        "question": "Di che colore è la tovaglia?",
+        "english": "What colour is the tablecloth?",
+        "options": ["Bianca", "Rossa", "Blu", "Nera"],
+        "correct": "Bianca",
+        "explanation": "La tovaglia è bianca."
+      },
+      {
+        "id": "tavola-sfondo",
+        "question": "Che cosa si vede sullo sfondo, dietro la tavola?",
+        "english": "What can you see in the background, behind the table?",
+        "options": ["Una pianta", "Il mare", "Una finestra", "Un televisore"],
+        "correct": "Una pianta",
+        "explanation": "Sullo sfondo si vede una pianta e un mobile di legno."
+      },
+      {
+        "id": "tavola-elegante",
+        "question": "Com'è la tavola apparecchiata?",
+        "english": "What is the set table like?",
+        "options": ["Elegante", "Disordinata", "Sporca", "Vuota"],
+        "correct": "Elegante",
+        "explanation": "La tavola è apparecchiata in modo elegante."
+      }
+    ]
+  }
+]

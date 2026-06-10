@@ -110,6 +110,12 @@ const drills = [
     emoji: "🕐",
     desc: "Telling the time, days, months, and seasons",
   },
+  {
+    href: "/study/descrizione",
+    label: "Descrivi l'Immagine",
+    emoji: "🖼️",
+    desc: "Describe a picture — c'è/ci sono, colours, and positions",
+  },
 ];
 
 export default function FocusedDrillsPage() {
