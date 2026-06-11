@@ -1724,5 +1724,117 @@
       "lesson-7"
     ],
     "pronunciation": "skwil·LA·re"
+  },
+  {
+    "id": "v338",
+    "italian": "essere",
+    "english": "to be",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Essendo stanco, sono andato a letto presto.",
+    "tags": [
+      "verbs",
+      "irregular",
+      "gerundio"
+    ],
+    "pronunciation": "ES·se·re"
+  },
+  {
+    "id": "v339",
+    "italian": "avere",
+    "english": "to have",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Avendo fame, ho mangiato un panino.",
+    "tags": [
+      "verbs",
+      "irregular",
+      "gerundio"
+    ],
+    "pronunciation": "a·VE·re"
+  },
+  {
+    "id": "v340",
+    "italian": "fare",
+    "english": "to do/make",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Che cosa stai facendo?",
+    "tags": [
+      "verbs",
+      "irregular",
+      "gerundio"
+    ],
+    "pronunciation": "FA·re"
+  },
+  {
+    "id": "v341",
+    "italian": "dire",
+    "english": "to say",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Sta dicendo la verità.",
+    "tags": [
+      "verbs",
+      "irregular",
+      "gerundio"
+    ],
+    "pronunciation": "DI·re"
+  },
+  {
+    "id": "v342",
+    "italian": "bere",
+    "english": "to drink",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Marco sta bevendo un caffè.",
+    "tags": [
+      "verbs",
+      "irregular",
+      "gerundio"
+    ],
+    "pronunciation": "BE·re"
+  },
+  {
+    "id": "v343",
+    "italian": "porre",
+    "english": "to put, to place",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Il professore sta ponendo una domanda.",
+    "tags": [
+      "verbs",
+      "irregular",
+      "gerundio"
+    ],
+    "pronunciation": "POR·re"
+  },
+  {
+    "id": "v344",
+    "italian": "tradurre",
+    "english": "to translate",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Sto traducendo una frase dall'italiano.",
+    "tags": [
+      "verbs",
+      "irregular",
+      "gerundio"
+    ],
+    "pronunciation": "tra·DUR·re"
+  },
+  {
+    "id": "v345",
+    "italian": "condurre",
+    "english": "to lead",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Lei sta conducendo la riunione.",
+    "tags": [
+      "verbs",
+      "irregular",
+      "gerundio"
+    ],
+    "pronunciation": "kon·DUR·re"
   }
 ]

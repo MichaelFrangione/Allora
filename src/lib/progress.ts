@@ -200,6 +200,7 @@ const CONTENT_TYPE_SUBJECT: Record<string, string> = {
   "modal-verbs": "modals",
   interrogativi: "interrogatives",
   dimostrativi: "demonstratives",
+  gerundio: "gerundio",
   saluti: "greetings",
   conjugation: "present-tense",
   descrizione: "descrizione",

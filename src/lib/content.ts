@@ -37,6 +37,7 @@ import pluraliData from "../../data/plurali-drill.json";
 import aggettiviData from "../../data/aggettivi-drill.json";
 import interrogativiData from "../../data/interrogativi-drill.json";
 import dimostrativiData from "../../data/dimostrativi-drill.json";
+import gerundioData from "../../data/gerundio-drill.json";
 import salutiData from "../../data/saluti-drill.json";
 import descrizioneData from "../../data/descrizione.json";
 
@@ -181,6 +182,7 @@ export const pluraliDrill: DrillQuestion[] = pluraliData as DrillQuestion[];
 export const aggettiviDrill: DrillQuestion[] = aggettiviData as DrillQuestion[];
 export const interrogativiDrill: DrillQuestion[] = interrogativiData as DrillQuestion[];
 export const dimostrativiDrill: DrillQuestion[] = dimostrativiData as DrillQuestion[];
+export const gerundioDrill: DrillQuestion[] = gerundioData as DrillQuestion[];
 export const salutiDrill: DrillQuestion[] = salutiData as DrillQuestion[];
 
 /**
@@ -229,6 +231,7 @@ export const DRILL_BY_TYPE: Record<string, DrillQuestion[]> = {
   interrogativi: interrogativiDrill,
   dimostrativi: dimostrativiDrill,
   saluti: salutiDrill,
+  gerundio: gerundioDrill,
 };
 
 /**
@@ -250,6 +253,7 @@ export const SUBJECTS: Subject[] = [
   { id: "possessives", label: "Possessives", emoji: "👪", tags: ["possessives", "possessivi"] },
   { id: "pronouns", label: "Pronouns", emoji: "👉", tags: ["pronouns"] },
   { id: "interrogatives", label: "Question Words", emoji: "❓", tags: ["interrogatives", "question-words"] },
+  { id: "gerundio", label: "Gerundio", emoji: "⏳", tags: ["gerundio", "gerund", "progressive"] },
   { id: "demonstratives", label: "This & That", emoji: "👆", tags: ["demonstratives"] },
   { id: "greetings", label: "Greetings & Farewells", emoji: "👋", tags: ["greetings"] },
   { id: "piacere", label: "Piacere", emoji: "💚", tags: ["piacere", "mi-piace"] },

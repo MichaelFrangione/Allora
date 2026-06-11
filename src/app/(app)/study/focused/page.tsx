@@ -111,6 +111,12 @@ const drills = [
     desc: "Telling the time, days, months, and seasons",
   },
   {
+    href: "/study/gerundio",
+    label: "Il Gerundio",
+    emoji: "⏳",
+    desc: "-ando / -endo, stare + gerundio, and the four uses",
+  },
+  {
     href: "/study/descrizione",
     label: "Descrivi l'Immagine",
     emoji: "🖼️",

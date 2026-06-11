@@ -51,6 +51,7 @@ const PATH: { subjectId: string; route: string }[] = [
   { subjectId: "interrogatives", route: "/study/interrogativi" },
   { subjectId: "demonstratives", route: "/study/dimostrativi" },
   { subjectId: "time", route: "/study/time" },
+  { subjectId: "gerundio", route: "/study/gerundio" },
 ];
 
 // Winding zig-zag horizontal offsets (Duolingo-style path), cycled by index.

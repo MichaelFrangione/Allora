@@ -492,7 +492,11 @@
       "Quanto costa? — Cinque euro.",
       "Perché studi l'italiano? — Perché mi piace!"
     ],
-    "tags": ["interrogatives", "question-words", "grammar"]
+    "tags": [
+      "interrogatives",
+      "question-words",
+      "grammar"
+    ]
   },
   {
     "id": "g029",
@@ -504,7 +508,10 @@
       "Quei ragazzi sono italiani.",
       "Vuoi qualcosa da bere?"
     ],
-    "tags": ["demonstratives", "grammar"]
+    "tags": [
+      "demonstratives",
+      "grammar"
+    ]
   },
   {
     "id": "g030",
@@ -516,6 +523,41 @@
       "Arrivederci, dottore!",
       "Esco adesso — buona giornata!"
     ],
-    "tags": ["greetings", "communication", "politeness"]
+    "tags": [
+      "greetings",
+      "communication",
+      "politeness"
+    ]
+  },
+  {
+    "id": "g031",
+    "rule": "Il Gerundio (-ando / -endo)",
+    "explanation": "The gerund is an invariable verb form (it never changes) that expresses an action happening while another takes place, or the manner, cause, or condition of an action.\n\nFORMATION: -ARE verbs take -ando (parlare → parlando); -ERE and -IRE verbs take -endo (leggere → leggendo, dormire → dormendo).\n\nIRREGULAR FORMS to memorize: essere → essendo, avere → avendo, fare → facendo, dire → dicendo, bere → bevendo, porre → ponendo, tradurre → traducendo, condurre → conducendo.\n\nUSES: simultaneity (Camminando, ascolto musica), manner (Ha risposto sorridendo), cause (Essendo stanco, sono andato a letto presto), condition (Studiando di più, passerai l'esame).",
+    "examples": [
+      "parlare → parlando, leggere → leggendo, dormire → dormendo",
+      "Camminando, ascolto musica. (simultaneity)",
+      "Ha risposto sorridendo. (manner)",
+      "Essendo stanco, sono andato a letto presto. (cause)",
+      "Studiando di più, passerai l'esame. (condition)"
+    ],
+    "tags": [
+      "gerundio",
+      "verbs"
+    ]
+  },
+  {
+    "id": "g032",
+    "rule": "Stare + Gerundio (azione in corso)",
+    "explanation": "To express an action in progress (English -ing: 'I am eating'), Italian uses the verb STARE conjugated + the gerund — never essere.\n\nPRESENT: sto / stai / sta / stiamo / state / stanno + gerund → Sto mangiando = I am eating.\n\nPAST (action in progress in the past): imperfect of stare → stavo / stavi / stava / stavamo / stavate / stavano + gerund → Stavano parlando = they were talking.",
+    "examples": [
+      "Sto mangiando. (I am eating)",
+      "Stai studiando. (you are studying)",
+      "Sto leggendo un libro interessante.",
+      "Stavano parlando quando sono entrato. (they were talking)"
+    ],
+    "tags": [
+      "gerundio",
+      "verbs"
+    ]
   }
 ]

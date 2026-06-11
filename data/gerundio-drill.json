@@ -1,0 +1,416 @@
+[
+  {
+    "id": "ger001",
+    "category": "formazione",
+    "sentence": "parlare → ___",
+    "hint": "to speak → speaking",
+    "correct": "parlando",
+    "options": ["parlando", "parlendo", "parlato", "parlare"],
+    "explanation": "-ARE verbs form the gerund with -ando: parlare → parlando.",
+    "tags": ["gerundio"]
+  },
+  {
+    "id": "ger002",
+    "category": "formazione",
+    "sentence": "leggere → ___",
+    "hint": "to read → reading",
+    "correct": "leggendo",
+    "options": ["leggendo", "leggando", "letto", "leggere"],
+    "explanation": "-ERE verbs form the gerund with -endo: leggere → leggendo.",
+    "tags": ["gerundio"]
+  },
+  {
+    "id": "ger003",
+    "category": "formazione",
+    "sentence": "dormire → ___",
+    "hint": "to sleep → sleeping",
+    "correct": "dormendo",
+    "options": ["dormendo", "dormando", "dormito", "dormiendo"],
+    "explanation": "-IRE verbs also take -endo: dormire → dormendo.",
+    "tags": ["gerundio"]
+  },
+  {
+    "id": "ger004",
+    "category": "formazione",
+    "sentence": "mangiare → ___",
+    "hint": "to eat → eating",
+    "correct": "mangiando",
+    "options": ["mangiando", "mangendo", "mangiato", "mangiamo"],
+    "explanation": "-ARE → -ando: mangiare → mangiando.",
+    "tags": ["gerundio"]
+  },
+  {
+    "id": "ger005",
+    "category": "formazione",
+    "sentence": "scrivere → ___",
+    "hint": "to write → writing",
+    "correct": "scrivendo",
+    "options": ["scrivendo", "scrivando", "scritto", "scriviamo"],
+    "explanation": "-ERE → -endo: scrivere → scrivendo.",
+    "tags": ["gerundio"]
+  },
+  {
+    "id": "ger006",
+    "category": "formazione",
+    "sentence": "partire → ___",
+    "hint": "to leave → leaving",
+    "correct": "partendo",
+    "options": ["partendo", "partando", "partito", "partiendo"],
+    "explanation": "-IRE → -endo: partire → partendo.",
+    "tags": ["gerundio"]
+  },
+  {
+    "id": "ger007",
+    "category": "formazione",
+    "sentence": "studiare → ___",
+    "hint": "to study → studying",
+    "correct": "studiando",
+    "options": ["studiando", "studiendo", "studiato", "studio"],
+    "explanation": "-ARE → -ando: studiare → studiando.",
+    "tags": ["gerundio"]
+  },
+  {
+    "id": "ger008",
+    "category": "formazione",
+    "sentence": "prendere → ___",
+    "hint": "to take → taking",
+    "correct": "prendendo",
+    "options": ["prendendo", "prendando", "preso", "prendiamo"],
+    "explanation": "-ERE → -endo: prendere → prendendo.",
+    "tags": ["gerundio"]
+  },
+  {
+    "id": "ger009",
+    "category": "formazione",
+    "sentence": "finire → ___",
+    "hint": "to finish → finishing",
+    "correct": "finendo",
+    "options": ["finendo", "finiscendo", "finando", "finito"],
+    "explanation": "-IRE → -endo: finire → finendo. ISC verbs do NOT keep -isc in the gerund.",
+    "tags": ["gerundio"]
+  },
+  {
+    "id": "ger010",
+    "category": "formazione",
+    "sentence": "camminare → ___",
+    "hint": "to walk → walking",
+    "correct": "camminando",
+    "options": ["camminando", "camminendo", "camminato", "cammino"],
+    "explanation": "-ARE → -ando: camminare → camminando.",
+    "tags": ["gerundio"]
+  },
+  {
+    "id": "ger011",
+    "category": "irregolari",
+    "sentence": "essere → ___",
+    "hint": "to be → being",
+    "correct": "essendo",
+    "options": ["essendo", "essando", "sendo", "stato"],
+    "explanation": "Irregular form to memorize: essere → essendo.",
+    "tags": ["gerundio"]
+  },
+  {
+    "id": "ger012",
+    "category": "irregolari",
+    "sentence": "avere → ___",
+    "hint": "to have → having",
+    "correct": "avendo",
+    "options": ["avendo", "avando", "abbiendo", "avuto"],
+    "explanation": "Irregular form to memorize: avere → avendo.",
+    "tags": ["gerundio"]
+  },
+  {
+    "id": "ger013",
+    "category": "irregolari",
+    "sentence": "fare → ___",
+    "hint": "to do/make → doing",
+    "correct": "facendo",
+    "options": ["facendo", "fando", "farendo", "fatto"],
+    "explanation": "Fare uses its old stem fac-: fare → facendo.",
+    "tags": ["gerundio"]
+  },
+  {
+    "id": "ger014",
+    "category": "irregolari",
+    "sentence": "dire → ___",
+    "hint": "to say → saying",
+    "correct": "dicendo",
+    "options": ["dicendo", "direndo", "dando", "detto"],
+    "explanation": "Dire uses its old stem dic-: dire → dicendo.",
+    "tags": ["gerundio"]
+  },
+  {
+    "id": "ger015",
+    "category": "irregolari",
+    "sentence": "bere → ___",
+    "hint": "to drink → drinking",
+    "correct": "bevendo",
+    "options": ["bevendo", "berendo", "bendo", "bevuto"],
+    "explanation": "Bere uses its old stem bev-: bere → bevendo.",
+    "tags": ["gerundio"]
+  },
+  {
+    "id": "ger016",
+    "category": "irregolari",
+    "sentence": "porre → ___",
+    "hint": "to put/place → putting",
+    "correct": "ponendo",
+    "options": ["ponendo", "porendo", "pondo", "posto"],
+    "explanation": "Porre uses the stem pon-: porre → ponendo.",
+    "tags": ["gerundio"]
+  },
+  {
+    "id": "ger017",
+    "category": "irregolari",
+    "sentence": "tradurre → ___",
+    "hint": "to translate → translating",
+    "correct": "traducendo",
+    "options": ["traducendo", "tradurrendo", "tradundo", "tradotto"],
+    "explanation": "-URRE verbs use the stem -duc-: tradurre → traducendo.",
+    "tags": ["gerundio"]
+  },
+  {
+    "id": "ger018",
+    "category": "irregolari",
+    "sentence": "condurre → ___",
+    "hint": "to lead → leading",
+    "correct": "conducendo",
+    "options": ["conducendo", "condurrendo", "condundo", "condotto"],
+    "explanation": "Like tradurre: condurre → conducendo (stem -duc-).",
+    "tags": ["gerundio"]
+  },
+  {
+    "id": "ger019",
+    "category": "progressivo",
+    "sentence": "Io ___ mangiando una pizza.",
+    "hint": "I am eating a pizza.",
+    "correct": "sto",
+    "options": ["sto", "sono", "stai", "sta"],
+    "explanation": "Action in progress = STARE + gerund. With io: sto mangiando. Never use essere (sono mangiando is wrong).",
+    "tags": ["gerundio"]
+  },
+  {
+    "id": "ger020",
+    "category": "progressivo",
+    "sentence": "Tu ___ studiando per l'esame.",
+    "hint": "You are studying for the exam.",
+    "correct": "stai",
+    "options": ["stai", "sei", "sto", "sta"],
+    "explanation": "With tu: stai studiando.",
+    "tags": ["gerundio"]
+  },
+  {
+    "id": "ger021",
+    "category": "progressivo",
+    "sentence": "Lei ___ leggendo un libro.",
+    "hint": "She is reading a book.",
+    "correct": "sta",
+    "options": ["sta", "è", "stai", "stanno"],
+    "explanation": "With lui/lei: sta leggendo.",
+    "tags": ["gerundio"]
+  },
+  {
+    "id": "ger022",
+    "category": "progressivo",
+    "sentence": "Noi ___ guardando un film.",
+    "hint": "We are watching a film.",
+    "correct": "stiamo",
+    "options": ["stiamo", "siamo", "state", "stanno"],
+    "explanation": "With noi: stiamo guardando.",
+    "tags": ["gerundio"]
+  },
+  {
+    "id": "ger023",
+    "category": "progressivo",
+    "sentence": "Voi ___ ascoltando la musica.",
+    "hint": "You (all) are listening to music.",
+    "correct": "state",
+    "options": ["state", "siete", "stiamo", "stanno"],
+    "explanation": "With voi: state ascoltando.",
+    "tags": ["gerundio"]
+  },
+  {
+    "id": "ger024",
+    "category": "progressivo",
+    "sentence": "Loro ___ parlando al telefono.",
+    "hint": "They are talking on the phone.",
+    "correct": "stanno",
+    "options": ["stanno", "sono", "sta", "state"],
+    "explanation": "With loro: stanno parlando.",
+    "tags": ["gerundio"]
+  },
+  {
+    "id": "ger025",
+    "category": "progressivo",
+    "sentence": "Marco sta ___ un caffè. (bere)",
+    "hint": "Marco is drinking a coffee.",
+    "correct": "bevendo",
+    "options": ["bevendo", "berendo", "bevuto", "bere"],
+    "explanation": "After stare you need the gerund — and bere is irregular: bevendo.",
+    "tags": ["gerundio"]
+  },
+  {
+    "id": "ger026",
+    "category": "progressivo",
+    "sentence": "I bambini stanno ___ in giardino. (giocare)",
+    "hint": "The children are playing in the garden.",
+    "correct": "giocando",
+    "options": ["giocando", "giocendo", "giocato", "giocare"],
+    "explanation": "-ARE → -ando: giocando. The gerund never agrees — it is invariable.",
+    "tags": ["gerundio"]
+  },
+  {
+    "id": "ger027",
+    "category": "progressivo",
+    "sentence": "Che cosa stai ___? (fare)",
+    "hint": "What are you doing?",
+    "correct": "facendo",
+    "options": ["facendo", "fando", "fatto", "fare"],
+    "explanation": "Fare is irregular: stai facendo.",
+    "tags": ["gerundio"]
+  },
+  {
+    "id": "ger028",
+    "category": "progressivo",
+    "sentence": "___ un libro interessante.",
+    "hint": "I am reading an interesting book.",
+    "correct": "Sto leggendo",
+    "options": ["Sto leggendo", "Sono leggendo", "Sto leggere", "Leggendo"],
+    "explanation": "STARE (not essere) + gerund: sto leggendo. «Sono leggendo» does not exist in Italian.",
+    "tags": ["gerundio"]
+  },
+  {
+    "id": "ger029",
+    "category": "progressivo",
+    "sentence": "Ieri alle otto noi ___ cenando.",
+    "hint": "Yesterday at eight we were having dinner. (imperfetto)",
+    "correct": "stavamo",
+    "options": ["stavamo", "stiamo", "stavano", "siamo"],
+    "explanation": "For an action in progress in the past, use the imperfect of stare: stavamo cenando.",
+    "tags": ["gerundio"]
+  },
+  {
+    "id": "ger030",
+    "category": "progressivo",
+    "sentence": "Quando hai chiamato, io ___ dormendo.",
+    "hint": "When you called, I was sleeping.",
+    "correct": "stavo",
+    "options": ["stavo", "sto", "stavi", "ero"],
+    "explanation": "Past action in progress: stavo dormendo (imperfect of stare + gerund).",
+    "tags": ["gerundio"]
+  },
+  {
+    "id": "ger031",
+    "category": "progressivo",
+    "sentence": "Loro ___ parlando quando sono entrato.",
+    "hint": "They were talking when I came in.",
+    "correct": "stavano",
+    "options": ["stavano", "stanno", "stavamo", "erano"],
+    "explanation": "Stavano parlando = they were talking (action in progress in the past).",
+    "tags": ["gerundio"]
+  },
+  {
+    "id": "ger032",
+    "category": "usi",
+    "sentence": "___, ascolto musica.",
+    "hint": "While walking, I listen to music.",
+    "correct": "Camminando",
+    "options": ["Camminando", "Cammino", "Camminare", "Camminato"],
+    "explanation": "Simultaneity: the gerund says the two actions happen at the same time — Camminando, ascolto musica.",
+    "tags": ["gerundio"]
+  },
+  {
+    "id": "ger033",
+    "category": "usi",
+    "sentence": "Ha risposto ___.",
+    "hint": "He answered smiling.",
+    "correct": "sorridendo",
+    "options": ["sorridendo", "sorridere", "sorriso", "sorridendo a"],
+    "explanation": "Manner: the gerund says HOW he answered — sorridendo (smiling).",
+    "tags": ["gerundio"]
+  },
+  {
+    "id": "ger034",
+    "category": "usi",
+    "sentence": "___ stanco, sono andato a letto presto.",
+    "hint": "Being tired, I went to bed early.",
+    "correct": "Essendo",
+    "options": ["Essendo", "Sono", "Essere", "Stando"],
+    "explanation": "Cause: Essendo stanco = because I was tired. Essere → essendo (irregular).",
+    "tags": ["gerundio"]
+  },
+  {
+    "id": "ger035",
+    "category": "usi",
+    "sentence": "___ di più, passerai l'esame.",
+    "hint": "By studying more, you'll pass the exam.",
+    "correct": "Studiando",
+    "options": ["Studiando", "Studi", "Studiare", "Studiato"],
+    "explanation": "Condition: Studiando di più = if you study more.",
+    "tags": ["gerundio"]
+  },
+  {
+    "id": "ger036",
+    "category": "usi",
+    "sentence": "___ con lui, ho capito il problema.",
+    "hint": "Speaking with him, I understood the problem.",
+    "correct": "Parlando",
+    "options": ["Parlando", "Parlo", "Parlare", "Parlato"],
+    "explanation": "Parlando con lui = while/by speaking with him.",
+    "tags": ["gerundio"]
+  },
+  {
+    "id": "ger037",
+    "category": "usi",
+    "prompt": "Che uso del gerundio è?",
+    "sentence": "«Camminando, ascolto musica.»",
+    "hint": "While walking, I listen to music.",
+    "correct": "Simultaneità",
+    "options": ["Simultaneità", "Modo", "Causa", "Condizione"],
+    "explanation": "Two actions at the same time: walking and listening → simultaneity.",
+    "tags": ["gerundio"]
+  },
+  {
+    "id": "ger038",
+    "category": "usi",
+    "prompt": "Che uso del gerundio è?",
+    "sentence": "«Ha risposto sorridendo.»",
+    "hint": "He answered smiling.",
+    "correct": "Modo",
+    "options": ["Modo", "Simultaneità", "Causa", "Condizione"],
+    "explanation": "It describes HOW he answered → manner (modo).",
+    "tags": ["gerundio"]
+  },
+  {
+    "id": "ger039",
+    "category": "usi",
+    "prompt": "Che uso del gerundio è?",
+    "sentence": "«Essendo stanco, sono andato a letto presto.»",
+    "hint": "Being tired, I went to bed early.",
+    "correct": "Causa",
+    "options": ["Causa", "Modo", "Simultaneità", "Condizione"],
+    "explanation": "It gives the reason (because I was tired) → cause (causa).",
+    "tags": ["gerundio"]
+  },
+  {
+    "id": "ger040",
+    "category": "usi",
+    "prompt": "Che uso del gerundio è?",
+    "sentence": "«Studiando di più, passerai l'esame.»",
+    "hint": "By studying more, you'll pass the exam.",
+    "correct": "Condizione",
+    "options": ["Condizione", "Causa", "Modo", "Simultaneità"],
+    "explanation": "It states the condition (if you study more) → condition (condizione).",
+    "tags": ["gerundio"]
+  },
+  {
+    "id": "ger041",
+    "category": "usi",
+    "sentence": "Il gerundio è una forma ___: non cambia mai.",
+    "hint": "The gerund is an ___ form: it never changes.",
+    "correct": "invariabile",
+    "options": ["invariabile", "plurale", "femminile", "irregolare"],
+    "explanation": "The gerund is invariable — no gender or number agreement, ever.",
+    "tags": ["gerundio"]
+  }
+]

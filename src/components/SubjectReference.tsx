@@ -74,6 +74,36 @@ export const SUBJECT_REFERENCE_DATA: Record<string, SubjectRef> = {
       },
     ],
   },
+  gerundio: {
+    heading: "Il Gerundio",
+    tables: [
+      {
+        title: "Formazione",
+        headers: ["Infinito", "Gerundio"],
+        rows: [
+          ["-ARE → -ando", "parlare → parlando"],
+          ["-ERE → -endo", "leggere → leggendo"],
+          ["-IRE → -endo", "dormire → dormendo"],
+        ],
+      },
+      {
+        title: "Forme irregolari",
+        rows: [
+          ["essere", "essendo"],
+          ["avere", "avendo"],
+          ["fare", "facendo"],
+          ["dire", "dicendo"],
+          ["bere", "bevendo"],
+          ["porre", "ponendo"],
+          ["tradurre", "traducendo"],
+          ["condurre", "conducendo"],
+        ],
+      },
+      conj("stare — presente", ["sto", "stai", "sta", "stiamo", "state", "stanno"]),
+      conj("stare — imperfetto", ["stavo", "stavi", "stava", "stavamo", "stavate", "stavano"]),
+    ],
+    note: "STARE + gerundio = action in progress: Sto mangiando (I am eating), Stavano parlando (they were talking) — never essere. The gerund is invariable. Uses: simultaneity (Camminando, ascolto musica), manner (Ha risposto sorridendo), cause (Essendo stanco…), condition (Studiando di più…).",
+  },
   demonstratives: {
     heading: "This & That (Dimostrativi)",
     tables: [
