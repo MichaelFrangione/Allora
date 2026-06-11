@@ -348,5 +348,363 @@
         "explanation": "La tavola è apparecchiata in modo elegante."
       }
     ]
+  },
+  {
+    "id": "alimentari",
+    "title": "Il negozio di alimentari",
+    "image": "/images/descrizione/alimentari.png",
+    "width": 1536,
+    "height": 1024,
+    "subject": "descrizione",
+    "intro": "Guarda l'immagine del negozio di alimentari e rispondi alle domande.",
+    "questions": [
+      {
+        "id": "alimentari-ce-barista",
+        "question": "Dietro il banco ___ un barista.",
+        "english": "Behind the counter ___ a barista. (c'è / ci sono)",
+        "options": ["C'è", "Ci sono"],
+        "correct": "C'è",
+        "explanation": "Il barista è uno solo, quindi si usa «c'è»."
+      },
+      {
+        "id": "alimentari-barista",
+        "question": "Che cosa fa il barista?",
+        "english": "What is the barista doing?",
+        "options": ["Parla con una cliente", "Legge un libro", "Mangia un panino", "Dorme"],
+        "correct": "Parla con una cliente",
+        "explanation": "Il barista parla con la donna al banco."
+      },
+      {
+        "id": "alimentari-donna-maglione",
+        "question": "Di che colore è il maglione della donna al banco?",
+        "english": "What colour is the sweater of the woman at the counter?",
+        "options": ["Rosso", "Giallo", "Verde", "Blu"],
+        "correct": "Rosso",
+        "explanation": "La donna al banco porta un maglione rosso e una borsa marrone."
+      },
+      {
+        "id": "alimentari-vetrina",
+        "question": "Che cosa c'è nella vetrina del bar?",
+        "english": "What is in the café display case?",
+        "options": ["I dolci", "I formaggi", "I fiori", "I libri"],
+        "correct": "I dolci",
+        "explanation": "Nella vetrina ci sono torte, muffin e cornetti."
+      },
+      {
+        "id": "alimentari-porta",
+        "question": "Chi entra dalla porta?",
+        "english": "Who is coming in through the door?",
+        "options": ["Un uomo", "Una bambina", "Un cane", "Una signora anziana"],
+        "correct": "Un uomo",
+        "explanation": "Un uomo entra dalla porta aperta."
+      },
+      {
+        "id": "alimentari-giacca",
+        "question": "Di che colore è la giacca dell'uomo che entra?",
+        "english": "What colour is the jacket of the man coming in?",
+        "options": ["Verde", "Rossa", "Nera", "Gialla"],
+        "correct": "Verde",
+        "explanation": "L'uomo che entra porta una giacca verde e una maglietta bianca."
+      },
+      {
+        "id": "alimentari-cestino",
+        "question": "Che cosa porta la donna con il maglione giallo?",
+        "english": "What is the woman in the yellow sweater carrying?",
+        "options": ["Un cestino", "Una valigia", "Uno zaino", "Un passeggino"],
+        "correct": "Un cestino",
+        "explanation": "La donna con il maglione giallo porta un cestino con la spesa."
+      },
+      {
+        "id": "alimentari-pane",
+        "question": "Che cosa c'è nel cestino della donna?",
+        "english": "What is in the woman's basket?",
+        "options": ["Il pane", "I fiori", "I libri", "Le scarpe"],
+        "correct": "Il pane",
+        "explanation": "Nel cestino c'è il pane e altra spesa."
+      },
+      {
+        "id": "alimentari-scaffali",
+        "question": "Che cosa c'è sugli scaffali a destra?",
+        "english": "What is on the shelves on the right?",
+        "options": ["Bottiglie e barattoli", "Vestiti", "Giocattoli", "Scarpe"],
+        "correct": "Bottiglie e barattoli",
+        "explanation": "Sugli scaffali ci sono bottiglie, barattoli e scatole."
+      },
+      {
+        "id": "alimentari-frutta",
+        "question": "Dov'è la frutta?",
+        "english": "Where is the fruit?",
+        "options": ["A destra", "A sinistra", "Al centro", "In alto"],
+        "correct": "A destra",
+        "explanation": "La frutta è a destra, nelle cassette sotto gli scaffali."
+      },
+      {
+        "id": "alimentari-ragazzi-quanti",
+        "question": "Quante persone mangiano al tavolo a sinistra?",
+        "english": "How many people are eating at the table on the left?",
+        "options": ["Una", "Due", "Tre", "Quattro"],
+        "correct": "Due",
+        "explanation": "Al tavolo a sinistra mangiano due persone: un ragazzo e una ragazza."
+      },
+      {
+        "id": "alimentari-ragazzo-mangia",
+        "question": "Che cosa mangia il ragazzo al tavolo?",
+        "english": "What is the boy at the table eating?",
+        "options": ["La pasta", "La pizza", "Il gelato", "La zuppa"],
+        "correct": "La pasta",
+        "explanation": "Il ragazzo mangia un piatto di pasta."
+      },
+      {
+        "id": "alimentari-ragazza-mangia",
+        "question": "Che cosa mangia la ragazza con il maglione rosa?",
+        "english": "What is the girl in the pink sweater eating?",
+        "options": ["La verdura", "La torta", "Il pesce", "Il risotto"],
+        "correct": "La verdura",
+        "explanation": "La ragazza mangia un piatto di verdura."
+      },
+      {
+        "id": "alimentari-ce-piatti",
+        "question": "Sul tavolo al centro ___ due piatti bianchi.",
+        "english": "On the table in the centre ___ two white plates. (c'è / ci sono)",
+        "options": ["Ci sono", "C'è"],
+        "correct": "Ci sono",
+        "explanation": "I piatti sono due, quindi si usa «ci sono»."
+      },
+      {
+        "id": "alimentari-fiore",
+        "question": "Di che colore è il fiore sul tavolo al centro?",
+        "english": "What colour is the flower on the table in the centre?",
+        "options": ["Rosa", "Giallo", "Blu", "Bianco"],
+        "correct": "Rosa",
+        "explanation": "Sul tavolo c'è un vaso con un fiore rosa."
+      },
+      {
+        "id": "alimentari-tazze",
+        "question": "Che cosa c'è sulla mensola sopra la macchina del caffè?",
+        "english": "What is on the shelf above the coffee machine?",
+        "options": ["Le tazze", "I piatti", "Le bottiglie", "I libri"],
+        "correct": "Le tazze",
+        "explanation": "Sulla mensola in alto ci sono le tazze bianche e una pianta."
+      },
+      {
+        "id": "alimentari-quadro",
+        "question": "Che cosa c'è sulla parete, vicino alla porta?",
+        "english": "What is on the wall, near the door?",
+        "options": ["Un quadro", "Uno specchio", "Un orologio", "Una televisione"],
+        "correct": "Un quadro",
+        "explanation": "Sulla parete c'è un quadro con un paesaggio."
+      },
+      {
+        "id": "alimentari-pianta",
+        "question": "Che cosa c'è accanto alla porta?",
+        "english": "What is next to the door?",
+        "options": ["Una pianta", "Una statua", "Una bicicletta", "Una fontana"],
+        "correct": "Una pianta",
+        "explanation": "Accanto alla porta c'è una pianta verde in un vaso."
+      },
+      {
+        "id": "alimentari-strada",
+        "question": "Che cosa si vede attraverso la porta aperta?",
+        "english": "What can you see through the open door?",
+        "options": ["La strada", "Il mare", "Le montagne", "Il giardino"],
+        "correct": "La strada",
+        "explanation": "Attraverso la porta si vedono la strada, un albero e le case."
+      },
+      {
+        "id": "alimentari-libri",
+        "question": "Che cosa c'è sul tavolino in basso a destra?",
+        "english": "What is on the small table at the bottom right?",
+        "options": ["Dei libri e una lampada", "Un computer", "Una pizza", "Un telefono"],
+        "correct": "Dei libri e una lampada",
+        "explanation": "Sul tavolino ci sono dei libri, una lampada, un vaso blu e una foto."
+      },
+      {
+        "id": "alimentari-atmosfera",
+        "question": "Com'è il negozio?",
+        "english": "What is the shop like?",
+        "options": ["Accogliente e ordinato", "Sporco e buio", "Vuoto e triste", "Caotico e rumoroso"],
+        "correct": "Accogliente e ordinato",
+        "explanation": "Il negozio è pieno di luce e ben organizzato: è accogliente e ordinato."
+      }
+    ]
+  },
+  {
+    "id": "bar",
+    "title": "Al bar in piazza",
+    "image": "/images/descrizione/bar.png",
+    "width": 1536,
+    "height": 1024,
+    "subject": "descrizione",
+    "intro": "Guarda l'immagine del bar in piazza e rispondi alle domande.",
+    "questions": [
+      {
+        "id": "bar-ce-fontana",
+        "question": "Nella piazza ___ una fontana.",
+        "english": "In the square ___ a fountain. (c'è / ci sono)",
+        "options": ["C'è", "Ci sono"],
+        "correct": "C'è",
+        "explanation": "La fontana è una sola, quindi si usa «c'è»."
+      },
+      {
+        "id": "bar-fontana-dove",
+        "question": "Dov'è la fontana?",
+        "english": "Where is the fountain?",
+        "options": ["A destra", "A sinistra", "Al centro", "Davanti al bar"],
+        "correct": "A destra",
+        "explanation": "La fontana è a destra, sullo sfondo."
+      },
+      {
+        "id": "bar-cameriere",
+        "question": "Che cosa fa il cameriere?",
+        "english": "What is the waiter doing?",
+        "options": ["Prende l'ordinazione", "Lava i piatti", "Beve un caffè", "Legge il giornale"],
+        "correct": "Prende l'ordinazione",
+        "explanation": "Il cameriere prende l'ordinazione dei clienti al tavolo."
+      },
+      {
+        "id": "bar-animale",
+        "question": "Che animale c'è a destra?",
+        "english": "What animal is on the right?",
+        "options": ["Un cane", "Un gatto", "Un uccello", "Un cavallo"],
+        "correct": "Un cane",
+        "explanation": "A destra c'è un cane (un golden retriever)."
+      },
+      {
+        "id": "bar-cane-colore",
+        "question": "Di che colore è il cane?",
+        "english": "What colour is the dog?",
+        "options": ["Marrone chiaro", "Nero", "Bianco", "Grigio"],
+        "correct": "Marrone chiaro",
+        "explanation": "Il cane è marrone chiaro, come tutti i golden retriever."
+      },
+      {
+        "id": "bar-donna-cane",
+        "question": "Che cosa fa la donna bionda?",
+        "english": "What is the blonde woman doing?",
+        "options": ["Accarezza il cane", "Corre", "Canta", "Dorme"],
+        "correct": "Accarezza il cane",
+        "explanation": "La donna bionda accarezza il cane."
+      },
+      {
+        "id": "bar-gelato",
+        "question": "Che cosa mangia il bambino con la maglietta rossa?",
+        "english": "What is the boy in the red t-shirt eating?",
+        "options": ["Un gelato", "Una pizza", "Un panino", "Una mela"],
+        "correct": "Un gelato",
+        "explanation": "Il bambino con la maglietta rossa mangia un gelato."
+      },
+      {
+        "id": "bar-spaghetti",
+        "question": "Che cosa mangia l'uomo in basso a destra?",
+        "english": "What is the man at the bottom right eating?",
+        "options": ["Gli spaghetti", "L'insalata", "La bistecca", "Il pesce"],
+        "correct": "Gli spaghetti",
+        "explanation": "L'uomo con gli occhiali mangia un piatto di spaghetti."
+      },
+      {
+        "id": "bar-legge",
+        "question": "Che cosa fa la donna con il maglione giallo?",
+        "english": "What is the woman in the yellow sweater doing?",
+        "options": ["Legge un libro", "Guarda il telefono", "Beve il vino", "Balla"],
+        "correct": "Legge un libro",
+        "explanation": "La donna con il maglione giallo legge un libro al tavolo."
+      },
+      {
+        "id": "bar-torta",
+        "question": "Che cosa c'è sul tavolo della donna che legge?",
+        "english": "What is on the table of the woman who is reading?",
+        "options": ["Una fetta di torta", "Una pizza", "Un gelato", "Una zuppa"],
+        "correct": "Una fetta di torta",
+        "explanation": "Sul tavolo c'è una fetta di torta (un tiramisù) e un bicchiere d'acqua."
+      },
+      {
+        "id": "bar-mappa",
+        "question": "Che cosa guarda la ragazza con il maglione viola?",
+        "english": "What is the girl in the purple sweater looking at?",
+        "options": ["Una mappa", "Un libro", "Un telefono", "Un giornale"],
+        "correct": "Una mappa",
+        "explanation": "La ragazza al centro guarda una mappa: forse è una turista."
+      },
+      {
+        "id": "bar-orologio",
+        "question": "Che cosa guarda il ragazzo con lo zaino nero?",
+        "english": "What is the boy with the black backpack looking at?",
+        "options": ["L'orologio", "La televisione", "Il menù", "Le scarpe"],
+        "correct": "L'orologio",
+        "explanation": "Il ragazzo con lo zaino guarda l'orologio: forse è in ritardo!"
+      },
+      {
+        "id": "bar-telefono",
+        "question": "Che cosa fa l'uomo in basso a sinistra?",
+        "english": "What is the man at the bottom left doing?",
+        "options": ["Guarda il telefono", "Mangia la pasta", "Suona la chitarra", "Scrive una lettera"],
+        "correct": "Guarda il telefono",
+        "explanation": "L'uomo con la felpa blu guarda il telefono al tavolo."
+      },
+      {
+        "id": "bar-foto",
+        "question": "Che cosa fa l'uomo con la macchina fotografica?",
+        "english": "What is the man with the camera doing?",
+        "options": ["Fa una foto", "Compra il pane", "Guida la macchina", "Gioca a calcio"],
+        "correct": "Fa una foto",
+        "explanation": "L'uomo con la macchina fotografica fa una foto della piazza."
+      },
+      {
+        "id": "bar-giornale",
+        "question": "Che cosa fa l'uomo seduto vicino alla fontana?",
+        "english": "What is the man sitting near the fountain doing?",
+        "options": ["Legge il giornale", "Dorme", "Nuota", "Telefona"],
+        "correct": "Legge il giornale",
+        "explanation": "Vicino alla fontana, un uomo legge il giornale."
+      },
+      {
+        "id": "bar-scooter-colore",
+        "question": "Di che colore è lo scooter?",
+        "english": "What colour is the scooter?",
+        "options": ["Rosso", "Blu", "Verde", "Nero"],
+        "correct": "Rosso",
+        "explanation": "Lo scooter sullo sfondo è rosso."
+      },
+      {
+        "id": "bar-macchina-colore",
+        "question": "Di che colore è la macchina?",
+        "english": "What colour is the car?",
+        "options": ["Bianca", "Rossa", "Nera", "Gialla"],
+        "correct": "Bianca",
+        "explanation": "La macchina sullo sfondo è bianca."
+      },
+      {
+        "id": "bar-ce-tavoli",
+        "question": "Davanti al bar ___ molti tavoli.",
+        "english": "In front of the café ___ many tables. (c'è / ci sono)",
+        "options": ["Ci sono", "C'è"],
+        "correct": "Ci sono",
+        "explanation": "I tavoli sono più di uno, quindi si usa «ci sono»."
+      },
+      {
+        "id": "bar-lavagna",
+        "question": "Che cosa c'è sulla lavagna davanti al bar?",
+        "english": "What is on the chalkboard in front of the café?",
+        "options": ["Una pizza", "Un gatto", "Una mappa", "Un fiore"],
+        "correct": "Una pizza",
+        "explanation": "Sulla lavagna c'è il piatto del giorno: una pizza."
+      },
+      {
+        "id": "bar-tempo",
+        "question": "Che tempo fa nell'immagine?",
+        "english": "What is the weather like in the picture?",
+        "options": ["C'è il sole", "Piove", "Nevica", "C'è nebbia"],
+        "correct": "C'è il sole",
+        "explanation": "È una bella giornata: c'è il sole e la gente sta fuori."
+      },
+      {
+        "id": "bar-atmosfera",
+        "question": "Com'è l'atmosfera della piazza?",
+        "english": "What is the atmosphere of the square like?",
+        "options": ["Allegra e vivace", "Triste e silenziosa", "Buia e fredda", "Noiosa"],
+        "correct": "Allegra e vivace",
+        "explanation": "La piazza è piena di gente che mangia, legge e passeggia: l'atmosfera è allegra e vivace."
+      }
+    ]
   }
 ]
