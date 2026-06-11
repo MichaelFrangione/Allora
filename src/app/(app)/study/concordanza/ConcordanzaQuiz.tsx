@@ -283,14 +283,9 @@ export default function ConcordanzaQuiz({ questions, weakIds = [] }: { questions
         })}
       </RadioGroup>
 
-      {submitted && (
-        <p className={cn(
-          "text-sm font-medium text-center",
-          selected === q.correct ? "text-green-600" : "text-red-500"
-        )}>
-          {selected === q.correct
-            ? "Correct! ✓"
-            : `Incorrect — the answer is "${q.correct}"`}
+      {submitted && selected !== q.correct && (
+        <p className="text-sm font-medium text-center text-red-500">
+          Incorrect — the answer is &quot;{q.correct}&quot;
         </p>
       )}
 

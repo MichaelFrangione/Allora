@@ -316,12 +316,11 @@ export default function ImageDescriptionQuiz({
 
       {submitted && (
         <div className="space-y-2">
-          <p className={cn(
-            "text-sm font-medium text-center",
-            selected === q.correct ? "text-green-600" : "text-red-500"
-          )}>
-            {selected === q.correct ? "Correct! ✓" : `Incorrect — the answer is "${q.correct}"`}
-          </p>
+          {selected !== q.correct && (
+            <p className="text-sm font-medium text-center text-red-500">
+              Incorrect — the answer is &quot;{q.correct}&quot;
+            </p>
+          )}
           {q.explanation && (
             <div className="rounded-xl bg-muted px-4 py-3">
               <p className="text-sm text-muted-foreground">{q.explanation}</p>
