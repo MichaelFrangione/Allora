@@ -1,17 +1,23 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useSyncExternalStore } from "react";
 import { Moon, Sun } from "lucide-react";
 import { cn } from "@/lib/utils";
 
-export default function ThemeToggle({ className }: { className?: string }) {
-  const [isDark, setIsDark] = useState(false);
-  const [mounted, setMounted] = useState(false);
+// The dark theme lives on <html class="dark"> (set by the no-FOUC script before
+// hydration), so treat it as an external store and subscribe to class changes.
+function subscribe(onChange: () => void) {
+  const observer = new MutationObserver(onChange);
+  observer.observe(document.documentElement, { attributes: true, attributeFilter: ["class"] });
+  return () => observer.disconnect();
+}
 
-  useEffect(() => {
-    setIsDark(document.documentElement.classList.contains("dark"));
-    setMounted(true);
-  }, []);
+export default function ThemeToggle({ className }: { className?: string }) {
+  const isDark = useSyncExternalStore(
+    subscribe,
+    () => document.documentElement.classList.contains("dark"),
+    () => false
+  );
 
   function toggle() {
     const next = !document.documentElement.classList.contains("dark");
@@ -19,7 +25,6 @@ export default function ThemeToggle({ className }: { className?: string }) {
     try {
       localStorage.setItem("theme", next ? "dark" : "light");
     } catch {}
-    setIsDark(next);
   }
 
   return (
@@ -31,7 +36,7 @@ export default function ThemeToggle({ className }: { className?: string }) {
         className
       )}
     >
-      {mounted && isDark ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
+      {isDark ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
     </button>
   );
 }

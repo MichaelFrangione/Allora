@@ -44,12 +44,6 @@ export default function MatchGame({ items }: { items: VocabItem[] }) {
   useEffect(() => () => { endSession(); }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   const done = started && cards.length > 0 && matched.size === cards.length;
-  useEffect(() => {
-    if (done) {
-      setBurst((b) => b + 1);
-      void endSession();
-    }
-  }, [done]); // eslint-disable-line react-hooks/exhaustive-deps
 
   function begin() {
     setCards(buildCards(items));
@@ -81,6 +75,10 @@ export default function MatchGame({ items }: { items: VocabItem[] }) {
       setSelected(null);
       playCorrect();
       void recordAttempt(card.vocabId, "vocab", true);
+      if (nextMatched.size === cards.length) {
+        setBurst((b) => b + 1);
+        void endSession();
+      }
     } else {
       setWrong([first.key, card.key]);
       setSelected(null);

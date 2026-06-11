@@ -5,6 +5,12 @@ import { useEffect, useMemo, useState } from "react";
 const EMOJIS = ["🎉", "✨", "⭐", "💚", "🎊"];
 const PARTICLE_COUNT = 16;
 
+// Deterministic 0..1 jitter — render must stay pure, so no Math.random here.
+function jitter(i: number, salt: number): number {
+  const x = Math.sin(i * 127.1 + salt * 311.7) * 43758.5453;
+  return x - Math.floor(x);
+}
+
 /**
  * A one-shot confetti-style burst shown when an answer is correct.
  * Render it keyed by a counter so it replays each time, e.g.
@@ -18,14 +24,14 @@ export default function CorrectBurst() {
   const particles = useMemo(
     () =>
       Array.from({ length: PARTICLE_COUNT }, (_, i) => {
-        const angle = (i / PARTICLE_COUNT) * Math.PI * 2 + Math.random() * 0.5;
-        const dist = 70 + Math.random() * 80;
+        const angle = (i / PARTICLE_COUNT) * Math.PI * 2 + jitter(i, 1) * 0.5;
+        const dist = 70 + jitter(i, 2) * 80;
         return {
           emoji: EMOJIS[i % EMOJIS.length],
           dx: Math.cos(angle) * dist,
           dy: Math.sin(angle) * dist,
-          rot: (Math.random() * 2 - 1) * 220,
-          delay: Math.random() * 80,
+          rot: (jitter(i, 3) * 2 - 1) * 220,
+          delay: jitter(i, 4) * 80,
         };
       }),
     []

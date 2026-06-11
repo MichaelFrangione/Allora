@@ -1,6 +1,8 @@
-// Run with: node scripts/gen-conjugations.js
-const fs = require("fs");
-const path = require("path");
+// Run with: node scripts/gen-conjugations.mjs
+import fs from "fs";
+import path from "path";
+
+const __dirname = path.dirname(new URL(import.meta.url).pathname);
 
 // ── Conjugation helpers ────────────────────────────────────────────────────────
 
