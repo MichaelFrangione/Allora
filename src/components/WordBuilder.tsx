@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect, useRef, useState } from "react";
 import { cn } from "@/lib/utils";
 import { glossFor } from "@/lib/glossary";
 
@@ -11,10 +12,99 @@ function tileGloss(word: string): string | undefined {
   return undefined;
 }
 
+const LONG_PRESS_MS = 400;
+
+/**
+ * A single word tile. A quick tap places/removes it (via `onActivate`); a
+ * press-and-hold reveals the translation tooltip without placing — the native
+ * touch callout / context menu is suppressed so the hold isn't hijacked.
+ */
+function Tile({
+  word,
+  gloss,
+  disabled,
+  onActivate,
+  className,
+  underlineClass,
+}: {
+  word: string;
+  gloss: string | undefined;
+  disabled: boolean;
+  onActivate: () => void;
+  className: string;
+  underlineClass: string;
+}) {
+  const [revealed, setRevealed] = useState(false);
+  const longPressed = useRef(false);
+  const timer = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  function clearTimer() {
+    if (timer.current) {
+      clearTimeout(timer.current);
+      timer.current = null;
+    }
+  }
+  useEffect(() => clearTimer, []);
+
+  function handlePointerDown() {
+    longPressed.current = false;
+    if (!gloss) return;
+    clearTimer();
+    timer.current = setTimeout(() => {
+      longPressed.current = true;
+      setRevealed(true);
+    }, LONG_PRESS_MS);
+  }
+
+  function endPress() {
+    clearTimer();
+    setRevealed(false);
+  }
+
+  function handleClick() {
+    clearTimer();
+    // A hold already fired — swallow the click so the tile isn't placed.
+    if (longPressed.current) {
+      longPressed.current = false;
+      return;
+    }
+    setRevealed(false);
+    onActivate();
+  }
+
+  return (
+    <span className="relative inline-flex">
+      {revealed && gloss && (
+        <span
+          role="tooltip"
+          className="absolute left-1/2 bottom-full z-30 mb-1.5 -translate-x-1/2 whitespace-nowrap rounded-md bg-foreground px-2 py-1 text-xs font-normal text-background shadow-lg"
+        >
+          {gloss}
+        </span>
+      )}
+      <button
+        type="button"
+        onClick={handleClick}
+        onPointerDown={handlePointerDown}
+        onPointerUp={endPress}
+        onPointerLeave={endPress}
+        onPointerCancel={endPress}
+        onContextMenu={(e) => e.preventDefault()}
+        disabled={disabled}
+        title={gloss}
+        className={cn(className, "select-none [-webkit-touch-callout:none]")}
+      >
+        {gloss ? <span className={underlineClass}>{word}</span> : word}
+      </button>
+    </span>
+  );
+}
+
 /**
  * Presentational tap-to-build word area: a drop zone holding the built sentence
  * (tap a tile to send it back) plus the remaining pool of word tiles. The state
  * lives in the parent (see `useWordBuilder`); this only renders + reports taps.
+ * Each glossable tile reveals its translation on press-and-hold (or hover).
  */
 export default function WordBuilder({
   built,
@@ -55,24 +145,17 @@ export default function WordBuilder({
             {emptyHint}
           </p>
         )}
-        {built.map((word, i) => {
-          const gloss = tileGloss(word);
-          return (
-            <button
-              key={`built-${i}`}
-              onClick={() => onRemove(word, i)}
-              title={gloss}
-              className="px-4 py-2.5 rounded-lg bg-primary text-primary-foreground text-sm font-medium active:scale-95 transition-transform disabled:opacity-60"
-              disabled={checked}
-            >
-              {gloss ? (
-                <span className="border-b border-dotted border-primary-foreground/50">{word}</span>
-              ) : (
-                word
-              )}
-            </button>
-          );
-        })}
+        {built.map((word, i) => (
+          <Tile
+            key={`built-${i}`}
+            word={word}
+            gloss={tileGloss(word)}
+            disabled={checked}
+            onActivate={() => onRemove(word, i)}
+            className="px-4 py-2.5 rounded-lg bg-primary text-primary-foreground text-sm font-medium active:scale-95 transition-transform disabled:opacity-60"
+            underlineClass="border-b border-dotted border-primary-foreground/50"
+          />
+        ))}
         {Array.from({ length: blanks }).map((_, i) => (
           <span
             key={`blank-${i}`}
@@ -86,24 +169,17 @@ export default function WordBuilder({
 
       {/* Pool of available words */}
       <div className="flex flex-wrap gap-2">
-        {pool.map((word, i) => {
-          const gloss = tileGloss(word);
-          return (
-            <button
-              key={`pool-${i}-${word}`}
-              onClick={() => onAdd(word, i)}
-              title={gloss}
-              className="px-4 py-2.5 rounded-lg border-2 border-border bg-background text-sm font-medium active:scale-95 transition-transform disabled:opacity-60"
-              disabled={checked}
-            >
-              {gloss ? (
-                <span className="border-b border-dotted border-muted-foreground/50">{word}</span>
-              ) : (
-                word
-              )}
-            </button>
-          );
-        })}
+        {pool.map((word, i) => (
+          <Tile
+            key={`pool-${i}-${word}`}
+            word={word}
+            gloss={tileGloss(word)}
+            disabled={checked}
+            onActivate={() => onAdd(word, i)}
+            className="px-4 py-2.5 rounded-lg border-2 border-border bg-background text-sm font-medium active:scale-95 transition-transform disabled:opacity-60"
+            underlineClass="border-b border-dotted border-muted-foreground/50"
+          />
+        ))}
       </div>
     </>
   );
