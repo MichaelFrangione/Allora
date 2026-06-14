@@ -296,6 +296,7 @@ export default function SentenceBuilder({
         correct={correct}
         onAdd={addWord}
         onRemove={removeWord}
+        slots={ex!.parts.length}
       />
 
       {checked && !correct && (

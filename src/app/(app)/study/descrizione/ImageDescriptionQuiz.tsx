@@ -378,7 +378,7 @@ export default function ImageDescriptionQuiz({
           correct={correct}
           onAdd={addWord}
           onRemove={removeWord}
-          emptyHint="Tap the Italian words to build your answer"
+          slots={q.parts.length}
         />
       ) : (
         <div className="flex flex-col gap-2">

@@ -14,6 +14,7 @@ export default function WordBuilder({
   correct,
   onAdd,
   onRemove,
+  slots,
   emptyHint = "Tap words below to build the sentence",
 }: {
   built: string[];
@@ -22,20 +23,25 @@ export default function WordBuilder({
   correct: boolean;
   onAdd: (word: string, index: number) => void;
   onRemove: (word: string, index: number) => void;
+  /** When set, show this many hangman-style blanks so the expected word count is unambiguous. */
+  slots?: number;
   emptyHint?: string;
 }) {
+  const showSlots = typeof slots === "number" && slots > 0;
+  const blanks = showSlots ? Math.max(0, slots - built.length) : 0;
   return (
     <>
-      {/* Drop zone — built sentence */}
+      {/* Drop zone — built sentence (with hangman blanks for any remaining words) */}
       <div
         className={cn(
           "min-h-16 rounded-xl border-2 border-dashed p-3 flex flex-wrap gap-2 transition-colors",
+          showSlots && "items-center",
           checked && correct && "border-green-500 bg-green-50 dark:bg-green-950",
           checked && !correct && "border-red-400 bg-red-50 dark:bg-red-950",
           !checked && "border-border"
         )}
       >
-        {built.length === 0 && (
+        {!showSlots && built.length === 0 && (
           <p className="text-sm text-muted-foreground self-center w-full text-center">
             {emptyHint}
           </p>
@@ -49,6 +55,15 @@ export default function WordBuilder({
           >
             {word}
           </button>
+        ))}
+        {Array.from({ length: blanks }).map((_, i) => (
+          <span
+            key={`blank-${i}`}
+            aria-hidden
+            className="inline-flex h-10 w-12 items-end justify-center"
+          >
+            <span className="block w-9 border-b-2 border-dashed border-muted-foreground/40" />
+          </span>
         ))}
       </div>
 
