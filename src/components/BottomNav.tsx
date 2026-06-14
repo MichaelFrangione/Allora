@@ -6,8 +6,8 @@ import { BookOpen, LayoutDashboard, BarChart2, BookMarked, GraduationCap } from 
 import { cn } from "@/lib/utils";
 
 const navItems = [
-  { href: "/learn", label: "Learn", icon: GraduationCap },
   { href: "/dashboard", label: "Home", icon: LayoutDashboard },
+  { href: "/learn", label: "Learn", icon: GraduationCap },
   { href: "/vocab", label: "Vocab", icon: BookOpen },
   { href: "/grammar", label: "Guide", icon: BookMarked },
   { href: "/progress", label: "Progress", icon: BarChart2 },
