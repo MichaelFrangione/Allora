@@ -7,6 +7,7 @@ import { useStudySession } from "@/lib/useStudySession";
 import { useSpeech } from "@/lib/useSpeech";
 import SubjectSelector from "@/components/SubjectSelector";
 import WordBuilder from "@/components/WordBuilder";
+import GlossedText from "@/components/GlossedText";
 import { tagsMatchSubject, subjectsPresent } from "@/lib/content";
 import type { SentenceExercise } from "@/lib/content";
 import { useWordBuilder, checkSentence } from "@/lib/useWordBuilder";
@@ -284,7 +285,9 @@ export default function SentenceBuilder({
           </div>
           <p className="text-base font-medium">{ex!.english}</p>
           {checked && (
-            <p className="text-sm text-muted-foreground mt-1 italic">{ex!.italian}</p>
+            <p className="text-sm text-muted-foreground mt-1 italic">
+              <GlossedText text={ex!.italian} />
+            </p>
           )}
         </CardContent>
       </Card>
@@ -302,7 +305,7 @@ export default function SentenceBuilder({
       {checked && !correct && (
         <div className="rounded-xl bg-muted px-4 py-3 text-sm">
           <span className="text-muted-foreground">Correct: </span>
-          <span className="font-semibold">{ex!.italian}</span>
+          <span className="font-semibold"><GlossedText text={ex!.italian} /></span>
         </div>
       )}
 

@@ -1,6 +1,15 @@
 "use client";
 
 import { cn } from "@/lib/utils";
+import { glossFor } from "@/lib/glossary";
+
+/** Gloss for a tile, falling back to the part after an apostrophe (e.g. "l'uomo" → "uomo"). */
+function tileGloss(word: string): string | undefined {
+  const direct = glossFor(word);
+  if (direct) return direct;
+  if (word.includes("'")) return glossFor(word.split("'").pop() ?? "");
+  return undefined;
+}
 
 /**
  * Presentational tap-to-build word area: a drop zone holding the built sentence
@@ -46,16 +55,24 @@ export default function WordBuilder({
             {emptyHint}
           </p>
         )}
-        {built.map((word, i) => (
-          <button
-            key={`built-${i}`}
-            onClick={() => onRemove(word, i)}
-            className="px-4 py-2.5 rounded-lg bg-primary text-primary-foreground text-sm font-medium active:scale-95 transition-transform disabled:opacity-60"
-            disabled={checked}
-          >
-            {word}
-          </button>
-        ))}
+        {built.map((word, i) => {
+          const gloss = tileGloss(word);
+          return (
+            <button
+              key={`built-${i}`}
+              onClick={() => onRemove(word, i)}
+              title={gloss}
+              className="px-4 py-2.5 rounded-lg bg-primary text-primary-foreground text-sm font-medium active:scale-95 transition-transform disabled:opacity-60"
+              disabled={checked}
+            >
+              {gloss ? (
+                <span className="border-b border-dotted border-primary-foreground/50">{word}</span>
+              ) : (
+                word
+              )}
+            </button>
+          );
+        })}
         {Array.from({ length: blanks }).map((_, i) => (
           <span
             key={`blank-${i}`}
@@ -69,16 +86,24 @@ export default function WordBuilder({
 
       {/* Pool of available words */}
       <div className="flex flex-wrap gap-2">
-        {pool.map((word, i) => (
-          <button
-            key={`pool-${i}-${word}`}
-            onClick={() => onAdd(word, i)}
-            className="px-4 py-2.5 rounded-lg border-2 border-border bg-background text-sm font-medium active:scale-95 transition-transform disabled:opacity-60"
-            disabled={checked}
-          >
-            {word}
-          </button>
-        ))}
+        {pool.map((word, i) => {
+          const gloss = tileGloss(word);
+          return (
+            <button
+              key={`pool-${i}-${word}`}
+              onClick={() => onAdd(word, i)}
+              title={gloss}
+              className="px-4 py-2.5 rounded-lg border-2 border-border bg-background text-sm font-medium active:scale-95 transition-transform disabled:opacity-60"
+              disabled={checked}
+            >
+              {gloss ? (
+                <span className="border-b border-dotted border-muted-foreground/50">{word}</span>
+              ) : (
+                word
+              )}
+            </button>
+          );
+        })}
       </div>
     </>
   );

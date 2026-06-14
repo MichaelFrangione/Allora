@@ -233,6 +233,156 @@
         "parts": ["Il", "cielo", "è", "azzurro", "con", "qualche", "nuvola"],
         "distractors": ["sono", "grigio", "nuvole"],
         "explanation": "«Qualche» is always followed by a singular noun: «qualche nuvola»."
+      },
+      {
+        "id": "parco-build-gatti",
+        "type": "build",
+        "question": "Quanti gatti ci sono nel parco?",
+        "english": "How many cats are there in the park?",
+        "italian": "Ci sono due gatti nel parco",
+        "parts": ["Ci", "sono", "due", "gatti", "nel", "parco"],
+        "distractors": ["c'è", "un", "gatto"],
+        "explanation": "Più di uno → «ci sono»."
+      },
+      {
+        "id": "parco-build-gatto-sinistra",
+        "type": "build",
+        "question": "Di che colore è il gatto seduto a sinistra?",
+        "english": "What colour is the cat sitting on the left?",
+        "italian": "Il gatto a sinistra è arancione",
+        "parts": ["Il", "gatto", "a", "sinistra", "è", "arancione"],
+        "distractors": ["destra", "grigio", "sono"],
+        "explanation": "«A sinistra» = on the left."
+      },
+      {
+        "id": "parco-build-cane-colore",
+        "type": "build",
+        "question": "Com'è il cane della coppia a sinistra?",
+        "english": "What is the couple's dog on the left like?",
+        "italian": "Il cane è grande e marrone",
+        "parts": ["Il", "cane", "è", "grande", "e", "marrone"],
+        "distractors": ["sono", "piccolo", "nero"],
+        "explanation": "Adjectives follow the noun: «grande e marrone»."
+      },
+      {
+        "id": "parco-build-fontana",
+        "type": "build",
+        "question": "Che cosa c'è al centro del parco?",
+        "english": "What is in the centre of the park?",
+        "italian": "Al centro c'è una grande fontana",
+        "parts": ["Al", "centro", "c'è", "una", "grande", "fontana"],
+        "distractors": ["ci", "sono", "statua"],
+        "explanation": "Una sola → «c'è»."
+      },
+      {
+        "id": "parco-build-fontana-acqua",
+        "type": "build",
+        "question": "Che cosa c'è nella fontana?",
+        "english": "What is in the fountain?",
+        "italian": "Nella fontana c'è l'acqua",
+        "parts": ["Nella", "fontana", "c'è", "l'acqua"],
+        "distractors": ["ci", "sono", "fiori"],
+        "explanation": "«L'acqua» = the water."
+      },
+      {
+        "id": "parco-build-altalena",
+        "type": "build",
+        "question": "Che cosa fa la bambina nel parco giochi?",
+        "english": "What is the girl doing in the playground?",
+        "italian": "La bambina è sull'altalena",
+        "parts": ["La", "bambina", "è", "sull'altalena"],
+        "distractors": ["sono", "gioca", "scivolo"],
+        "explanation": "«Sull'altalena» = on the swing."
+      },
+      {
+        "id": "parco-build-giochi",
+        "type": "build",
+        "question": "Dov'è il parco giochi?",
+        "english": "Where is the playground?",
+        "italian": "Il parco giochi è a destra",
+        "parts": ["Il", "parco", "giochi", "è", "a", "destra"],
+        "distractors": ["sono", "sinistra", "centro"],
+        "explanation": "«A destra» = on the right."
+      },
+      {
+        "id": "parco-build-biciclette",
+        "type": "build",
+        "question": "Dove sono le biciclette?",
+        "english": "Where are the bicycles?",
+        "italian": "Le biciclette sono a sinistra",
+        "parts": ["Le", "biciclette", "sono", "a", "sinistra"],
+        "distractors": ["è", "destra", "bicicletta"],
+        "explanation": "Plurale → «sono»."
+      },
+      {
+        "id": "parco-build-coperta",
+        "type": "build",
+        "question": "Che cosa c'è per terra sotto la coppia?",
+        "english": "What is on the ground under the couple?",
+        "italian": "Per terra c'è una coperta a quadri",
+        "parts": ["Per", "terra", "c'è", "una", "coperta", "a", "quadri"],
+        "distractors": ["ci", "sono", "tappeto"],
+        "explanation": "«A quadri» = checkered."
+      },
+      {
+        "id": "parco-build-alberi",
+        "type": "build",
+        "question": "Che cosa c'è intorno al parco?",
+        "english": "What is there around the park?",
+        "italian": "Intorno al parco ci sono molti alberi",
+        "parts": ["Intorno", "al", "parco", "ci", "sono", "molti", "alberi"],
+        "distractors": ["c'è", "un", "albero"],
+        "explanation": "«Intorno a» = around."
+      },
+      {
+        "id": "parco-build-nuvole",
+        "type": "build",
+        "question": "Che cosa si vede in alto nel cielo?",
+        "english": "What can you see up high in the sky?",
+        "italian": "In alto ci sono alcune nuvole bianche",
+        "parts": ["In", "alto", "ci", "sono", "alcune", "nuvole", "bianche"],
+        "distractors": ["c'è", "una", "nera"],
+        "explanation": "«Alcune» = some (f pl)."
+      },
+      {
+        "id": "parco-build-fiori",
+        "type": "build",
+        "question": "Dove sono i fiori rosa?",
+        "english": "Where are the pink flowers?",
+        "italian": "I fiori rosa sono in basso",
+        "parts": ["I", "fiori", "rosa", "sono", "in", "basso"],
+        "distractors": ["è", "alto", "fiore"],
+        "explanation": "«In basso» = at the bottom."
+      },
+      {
+        "id": "parco-build-tempo",
+        "type": "build",
+        "question": "Che tempo fa nel parco?",
+        "english": "What is the weather like in the park?",
+        "italian": "Nel parco c'è il sole",
+        "parts": ["Nel", "parco", "c'è", "il", "sole"],
+        "distractors": ["fa", "piove", "pioggia"],
+        "explanation": "«C'è il sole» = it's sunny."
+      },
+      {
+        "id": "parco-build-atmosfera",
+        "type": "build",
+        "question": "Com'è l'atmosfera del parco?",
+        "english": "What is the atmosphere of the park like?",
+        "italian": "L'atmosfera del parco è allegra e vivace",
+        "parts": ["L'atmosfera", "del", "parco", "è", "allegra", "e", "vivace"],
+        "distractors": ["sono", "triste", "buia"],
+        "explanation": "«Allegra e vivace» = cheerful and lively."
+      },
+      {
+        "id": "parco-build-coppia",
+        "type": "build",
+        "question": "Dove sono la coppia e il cane?",
+        "english": "Where are the couple and the dog?",
+        "italian": "La coppia con il cane è a sinistra",
+        "parts": ["La", "coppia", "con", "il", "cane", "è", "a", "sinistra"],
+        "distractors": ["sono", "destra", "gatto"],
+        "explanation": "«A sinistra» = on the left."
       }
     ]
   },
@@ -446,6 +596,156 @@
         "parts": ["La", "tavola", "è", "apparecchiata", "in", "modo", "elegante"],
         "distractors": ["sono", "disordinata", "sporca"],
         "explanation": "«Apparecchiata» = set/laid. «In modo elegante» = in an elegant way."
+      },
+      {
+        "id": "tavola-build-piatto-dove",
+        "type": "build",
+        "question": "Dove si trova il piatto di pasta?",
+        "english": "Where is the plate of pasta?",
+        "italian": "Il piatto di pasta è al centro",
+        "parts": ["Il", "piatto", "di", "pasta", "è", "al", "centro"],
+        "distractors": ["sono", "sinistra", "destra"],
+        "explanation": "«Al centro» = in the centre."
+      },
+      {
+        "id": "tavola-build-mele-quante",
+        "type": "build",
+        "question": "Quante mele ci sono e dove?",
+        "english": "How many apples are there and where?",
+        "italian": "Ci sono due mele a sinistra",
+        "parts": ["Ci", "sono", "due", "mele", "a", "sinistra"],
+        "distractors": ["c'è", "una", "destra"],
+        "explanation": "Plurale → «ci sono»."
+      },
+      {
+        "id": "tavola-build-mele-colore",
+        "type": "build",
+        "question": "Di che colore sono le mele?",
+        "english": "What colour are the apples?",
+        "italian": "Le due mele sono rosse",
+        "parts": ["Le", "due", "mele", "sono", "rosse"],
+        "distractors": ["è", "verdi", "gialle"],
+        "explanation": "Femminile plurale: «le mele sono rosse»."
+      },
+      {
+        "id": "tavola-build-forchette",
+        "type": "build",
+        "question": "Quante forchette ci sono e dove?",
+        "english": "How many forks are there and where?",
+        "italian": "A sinistra del piatto ci sono tre forchette",
+        "parts": ["A", "sinistra", "del", "piatto", "ci", "sono", "tre", "forchette"],
+        "distractors": ["destra", "c'è", "forchetta"],
+        "explanation": "«A sinistra del piatto» = to the left of the plate."
+      },
+      {
+        "id": "tavola-build-cucchiai",
+        "type": "build",
+        "question": "Quanti cucchiai ci sono?",
+        "english": "How many spoons are there?",
+        "italian": "A destra ci sono due cucchiai",
+        "parts": ["A", "destra", "ci", "sono", "due", "cucchiai"],
+        "distractors": ["sinistra", "c'è", "cucchiaio"],
+        "explanation": "Plurale → «ci sono»."
+      },
+      {
+        "id": "tavola-build-coltello",
+        "type": "build",
+        "question": "Che cosa c'è accanto ai cucchiai?",
+        "english": "What is next to the spoons?",
+        "italian": "Accanto ai cucchiai c'è un coltello",
+        "parts": ["Accanto", "ai", "cucchiai", "c'è", "un", "coltello"],
+        "distractors": ["ci", "sono", "forchetta"],
+        "explanation": "«Accanto a» = next to."
+      },
+      {
+        "id": "tavola-build-bicchieri",
+        "type": "build",
+        "question": "Quanti bicchieri ci sono sulla tavola?",
+        "english": "How many glasses are on the table?",
+        "italian": "Sulla tavola ci sono tre bicchieri",
+        "parts": ["Sulla", "tavola", "ci", "sono", "tre", "bicchieri"],
+        "distractors": ["c'è", "un", "bicchiere"],
+        "explanation": "Plurale → «ci sono»."
+      },
+      {
+        "id": "tavola-build-sale-pepe",
+        "type": "build",
+        "question": "Che cosa c'è tra le mele e i bicchieri?",
+        "english": "What is between the apples and the glasses?",
+        "italian": "Ci sono il sale e il pepe",
+        "parts": ["Ci", "sono", "il", "sale", "e", "il", "pepe"],
+        "distractors": ["c'è", "olio", "aceto"],
+        "explanation": "Due cose → «ci sono»."
+      },
+      {
+        "id": "tavola-build-vino-bianco",
+        "type": "build",
+        "question": "Di che colore è il vino nella bottiglia a sinistra?",
+        "english": "What colour is the wine in the left bottle?",
+        "italian": "Il vino a sinistra è bianco",
+        "parts": ["Il", "vino", "a", "sinistra", "è", "bianco"],
+        "distractors": ["destra", "rosso", "sono"],
+        "explanation": "«A sinistra» = on the left."
+      },
+      {
+        "id": "tavola-build-vino-rosso",
+        "type": "build",
+        "question": "Com'è il vino nella bottiglia a destra?",
+        "english": "What is the wine in the right bottle like?",
+        "italian": "Il vino a destra è rosso",
+        "parts": ["Il", "vino", "a", "destra", "è", "rosso"],
+        "distractors": ["sinistra", "bianco", "sono"],
+        "explanation": "«A destra» = on the right."
+      },
+      {
+        "id": "tavola-build-menu",
+        "type": "build",
+        "question": "Che cosa c'è in basso a sinistra?",
+        "english": "What is at the bottom left?",
+        "italian": "In basso a sinistra c'è il menù",
+        "parts": ["In", "basso", "a", "sinistra", "c'è", "il", "menù"],
+        "distractors": ["destra", "ci", "sono"],
+        "explanation": "«In basso» = at the bottom."
+      },
+      {
+        "id": "tavola-build-tovaglia",
+        "type": "build",
+        "question": "Di che colore è la tovaglia?",
+        "english": "What colour is the tablecloth?",
+        "italian": "La tovaglia è bianca",
+        "parts": ["La", "tovaglia", "è", "bianca"],
+        "distractors": ["sono", "rossa", "nera"],
+        "explanation": "«Bianca» agrees with «tovaglia» (f)."
+      },
+      {
+        "id": "tavola-build-sfondo",
+        "type": "build",
+        "question": "Che cosa si vede sullo sfondo?",
+        "english": "What can you see in the background?",
+        "italian": "Sullo sfondo c'è una pianta",
+        "parts": ["Sullo", "sfondo", "c'è", "una", "pianta"],
+        "distractors": ["ci", "sono", "mare"],
+        "explanation": "«Sullo sfondo» = in the background."
+      },
+      {
+        "id": "tavola-build-cibo",
+        "type": "build",
+        "question": "Che cosa c'è nel piatto al centro?",
+        "english": "What is on the plate in the centre?",
+        "italian": "Nel piatto c'è la pasta con il formaggio",
+        "parts": ["Nel", "piatto", "c'è", "la", "pasta", "con", "il", "formaggio"],
+        "distractors": ["ci", "sono", "pizza"],
+        "explanation": "«Con il formaggio» = with the cheese."
+      },
+      {
+        "id": "tavola-build-bottiglie-quante",
+        "type": "build",
+        "question": "Quante bottiglie di vino ci sono?",
+        "english": "How many wine bottles are there?",
+        "italian": "Ci sono due bottiglie di vino",
+        "parts": ["Ci", "sono", "due", "bottiglie", "di", "vino"],
+        "distractors": ["c'è", "una", "bottiglia"],
+        "explanation": "Plurale → «ci sono»."
       }
     ]
   },
@@ -675,6 +975,156 @@
         "parts": ["Il", "negozio", "è", "accogliente", "e", "ordinato"],
         "distractors": ["sono", "sporco", "vuoto"],
         "explanation": "Two adjectives joined by «e»: «accogliente e ordinato»."
+      },
+      {
+        "id": "alimentari-build-maglione",
+        "type": "build",
+        "question": "Di che colore è il maglione della donna al banco?",
+        "english": "What colour is the sweater of the woman at the counter?",
+        "italian": "Il maglione della donna è rosso",
+        "parts": ["Il", "maglione", "della", "donna", "è", "rosso"],
+        "distractors": ["sono", "giallo", "verde"],
+        "explanation": "«Rosso» agrees with «maglione» (m)."
+      },
+      {
+        "id": "alimentari-build-vetrina",
+        "type": "build",
+        "question": "Che cosa c'è nella vetrina del bar?",
+        "english": "What is in the café display case?",
+        "italian": "Nella vetrina ci sono i dolci",
+        "parts": ["Nella", "vetrina", "ci", "sono", "i", "dolci"],
+        "distractors": ["c'è", "il", "formaggio"],
+        "explanation": "Plurale → «ci sono»."
+      },
+      {
+        "id": "alimentari-build-giacca",
+        "type": "build",
+        "question": "Di che colore è la giacca dell'uomo che entra?",
+        "english": "What colour is the jacket of the man coming in?",
+        "italian": "La giacca dell'uomo è verde",
+        "parts": ["La", "giacca", "dell'uomo", "è", "verde"],
+        "distractors": ["sono", "rossa", "nera"],
+        "explanation": "«Verde» agrees with «giacca» (f)."
+      },
+      {
+        "id": "alimentari-build-pane",
+        "type": "build",
+        "question": "Che cosa c'è nel cestino della donna?",
+        "english": "What is in the woman's basket?",
+        "italian": "Nel cestino c'è il pane",
+        "parts": ["Nel", "cestino", "c'è", "il", "pane"],
+        "distractors": ["ci", "sono", "fiori"],
+        "explanation": "Una cosa → «c'è»."
+      },
+      {
+        "id": "alimentari-build-scaffali",
+        "type": "build",
+        "question": "Che cosa c'è sugli scaffali a destra?",
+        "english": "What is on the shelves on the right?",
+        "italian": "Sugli scaffali ci sono bottiglie e barattoli",
+        "parts": ["Sugli", "scaffali", "ci", "sono", "bottiglie", "e", "barattoli"],
+        "distractors": ["c'è", "una", "bottiglia"],
+        "explanation": "Plurale → «ci sono»."
+      },
+      {
+        "id": "alimentari-build-frutta",
+        "type": "build",
+        "question": "Dov'è la frutta?",
+        "english": "Where is the fruit?",
+        "italian": "La frutta è a destra",
+        "parts": ["La", "frutta", "è", "a", "destra"],
+        "distractors": ["sono", "sinistra", "centro"],
+        "explanation": "«A destra» = on the right."
+      },
+      {
+        "id": "alimentari-build-ragazzo",
+        "type": "build",
+        "question": "Che cosa mangia il ragazzo al tavolo?",
+        "english": "What is the boy at the table eating?",
+        "italian": "Il ragazzo mangia la pasta",
+        "parts": ["Il", "ragazzo", "mangia", "la", "pasta"],
+        "distractors": ["mangiano", "il", "pizza"],
+        "explanation": "Una persona → «mangia»."
+      },
+      {
+        "id": "alimentari-build-ragazza",
+        "type": "build",
+        "question": "Che cosa mangia la ragazza con il maglione rosa?",
+        "english": "What is the girl in the pink sweater eating?",
+        "italian": "La ragazza mangia la verdura",
+        "parts": ["La", "ragazza", "mangia", "la", "verdura"],
+        "distractors": ["mangiano", "il", "carne"],
+        "explanation": "«La verdura» = the vegetables."
+      },
+      {
+        "id": "alimentari-build-piatti",
+        "type": "build",
+        "question": "Quanti piatti ci sono sul tavolo al centro?",
+        "english": "How many plates are on the centre table?",
+        "italian": "Sul tavolo ci sono due piatti bianchi",
+        "parts": ["Sul", "tavolo", "ci", "sono", "due", "piatti", "bianchi"],
+        "distractors": ["c'è", "un", "piatto"],
+        "explanation": "Plurale → «ci sono»."
+      },
+      {
+        "id": "alimentari-build-fiore",
+        "type": "build",
+        "question": "Di che colore è il fiore sul tavolo?",
+        "english": "What colour is the flower on the table?",
+        "italian": "Il fiore sul tavolo è rosa",
+        "parts": ["Il", "fiore", "sul", "tavolo", "è", "rosa"],
+        "distractors": ["sono", "giallo", "blu"],
+        "explanation": "Una cosa → «è»."
+      },
+      {
+        "id": "alimentari-build-tazze",
+        "type": "build",
+        "question": "Che cosa c'è sulla mensola in alto?",
+        "english": "What is on the shelf up high?",
+        "italian": "Sulla mensola ci sono le tazze bianche",
+        "parts": ["Sulla", "mensola", "ci", "sono", "le", "tazze", "bianche"],
+        "distractors": ["c'è", "una", "tazza"],
+        "explanation": "Plurale → «ci sono»."
+      },
+      {
+        "id": "alimentari-build-quadro",
+        "type": "build",
+        "question": "Che cosa c'è sulla parete vicino alla porta?",
+        "english": "What is on the wall near the door?",
+        "italian": "Sulla parete c'è un quadro",
+        "parts": ["Sulla", "parete", "c'è", "un", "quadro"],
+        "distractors": ["ci", "sono", "specchio"],
+        "explanation": "Una cosa → «c'è»."
+      },
+      {
+        "id": "alimentari-build-pianta",
+        "type": "build",
+        "question": "Che cosa c'è accanto alla porta?",
+        "english": "What is next to the door?",
+        "italian": "Accanto alla porta c'è una pianta verde",
+        "parts": ["Accanto", "alla", "porta", "c'è", "una", "pianta", "verde"],
+        "distractors": ["ci", "sono", "statua"],
+        "explanation": "«Accanto a» = next to."
+      },
+      {
+        "id": "alimentari-build-strada",
+        "type": "build",
+        "question": "Che cosa si vede attraverso la porta aperta?",
+        "english": "What can you see through the open door?",
+        "italian": "Attraverso la porta si vede la strada",
+        "parts": ["Attraverso", "la", "porta", "si", "vede", "la", "strada"],
+        "distractors": ["vedono", "il", "mare"],
+        "explanation": "«Si vede» = one can see."
+      },
+      {
+        "id": "alimentari-build-cliente",
+        "type": "build",
+        "question": "Chi c'è al banco con il barista?",
+        "english": "Who is at the counter with the barista?",
+        "italian": "Al banco c'è una cliente",
+        "parts": ["Al", "banco", "c'è", "una", "cliente"],
+        "distractors": ["ci", "sono", "uomo"],
+        "explanation": "Una persona → «c'è»."
       }
     ]
   },
@@ -904,6 +1354,156 @@
         "parts": ["La", "piazza", "è", "allegra", "e", "vivace"],
         "distractors": ["sono", "triste", "buia"],
         "explanation": "«Allegra e vivace» = cheerful and lively."
+      },
+      {
+        "id": "bar-build-fontana",
+        "type": "build",
+        "question": "Dov'è la fontana nella piazza?",
+        "english": "Where is the fountain in the square?",
+        "italian": "La fontana è a destra",
+        "parts": ["La", "fontana", "è", "a", "destra"],
+        "distractors": ["sono", "sinistra", "centro"],
+        "explanation": "«A destra» = on the right."
+      },
+      {
+        "id": "bar-build-cane-colore",
+        "type": "build",
+        "question": "Di che colore è il cane?",
+        "english": "What colour is the dog?",
+        "italian": "Il cane è marrone chiaro",
+        "parts": ["Il", "cane", "è", "marrone", "chiaro"],
+        "distractors": ["sono", "nero", "scuro"],
+        "explanation": "«Marrone chiaro» = light brown."
+      },
+      {
+        "id": "bar-build-legge",
+        "type": "build",
+        "question": "Che cosa fa la donna con il maglione giallo?",
+        "english": "What is the woman in the yellow sweater doing?",
+        "italian": "La donna legge un libro",
+        "parts": ["La", "donna", "legge", "un", "libro"],
+        "distractors": ["leggono", "una", "rivista"],
+        "explanation": "Una persona → «legge»."
+      },
+      {
+        "id": "bar-build-torta",
+        "type": "build",
+        "question": "Che cosa c'è sul tavolo della donna che legge?",
+        "english": "What is on the table of the woman reading?",
+        "italian": "Sul tavolo c'è una fetta di torta",
+        "parts": ["Sul", "tavolo", "c'è", "una", "fetta", "di", "torta"],
+        "distractors": ["ci", "sono", "pizza"],
+        "explanation": "«Una fetta di torta» = a slice of cake."
+      },
+      {
+        "id": "bar-build-mappa",
+        "type": "build",
+        "question": "Che cosa guarda la ragazza con il maglione viola?",
+        "english": "What is the girl in the purple sweater looking at?",
+        "italian": "La ragazza guarda una mappa",
+        "parts": ["La", "ragazza", "guarda", "una", "mappa"],
+        "distractors": ["guardano", "un", "libro"],
+        "explanation": "«Guardare» = to look at."
+      },
+      {
+        "id": "bar-build-orologio",
+        "type": "build",
+        "question": "Che cosa guarda il ragazzo con lo zaino nero?",
+        "english": "What is the boy with the black backpack looking at?",
+        "italian": "Il ragazzo guarda l'orologio",
+        "parts": ["Il", "ragazzo", "guarda", "l'orologio"],
+        "distractors": ["guardano", "la", "telefono"],
+        "explanation": "«L'orologio» = the clock."
+      },
+      {
+        "id": "bar-build-telefono",
+        "type": "build",
+        "question": "Che cosa fa l'uomo in basso a sinistra?",
+        "english": "What is the man at the bottom left doing?",
+        "italian": "L'uomo guarda il telefono",
+        "parts": ["L'uomo", "guarda", "il", "telefono"],
+        "distractors": ["guardano", "la", "giornale"],
+        "explanation": "Una persona → «guarda»."
+      },
+      {
+        "id": "bar-build-foto",
+        "type": "build",
+        "question": "Che cosa fa l'uomo con la macchina fotografica?",
+        "english": "What is the man with the camera doing?",
+        "italian": "L'uomo fa una foto della piazza",
+        "parts": ["L'uomo", "fa", "una", "foto", "della", "piazza"],
+        "distractors": ["fanno", "un", "strada"],
+        "explanation": "«Fare una foto» = to take a photo."
+      },
+      {
+        "id": "bar-build-giornale",
+        "type": "build",
+        "question": "Che cosa fa l'uomo vicino alla fontana?",
+        "english": "What is the man near the fountain doing?",
+        "italian": "L'uomo legge il giornale",
+        "parts": ["L'uomo", "legge", "il", "giornale"],
+        "distractors": ["leggono", "la", "libro"],
+        "explanation": "«Il giornale» = the newspaper."
+      },
+      {
+        "id": "bar-build-scooter",
+        "type": "build",
+        "question": "Di che colore è lo scooter?",
+        "english": "What colour is the scooter?",
+        "italian": "Lo scooter è rosso",
+        "parts": ["Lo", "scooter", "è", "rosso"],
+        "distractors": ["sono", "blu", "verde"],
+        "explanation": "Una cosa → «è»."
+      },
+      {
+        "id": "bar-build-macchina",
+        "type": "build",
+        "question": "Di che colore è la macchina?",
+        "english": "What colour is the car?",
+        "italian": "La macchina è bianca",
+        "parts": ["La", "macchina", "è", "bianca"],
+        "distractors": ["sono", "rossa", "nera"],
+        "explanation": "«Bianca» agrees with «macchina» (f)."
+      },
+      {
+        "id": "bar-build-tavoli",
+        "type": "build",
+        "question": "Quanti tavoli ci sono davanti al bar?",
+        "english": "How many tables are in front of the café?",
+        "italian": "Davanti al bar ci sono molti tavoli",
+        "parts": ["Davanti", "al", "bar", "ci", "sono", "molti", "tavoli"],
+        "distractors": ["c'è", "un", "tavolo"],
+        "explanation": "Plurale → «ci sono»."
+      },
+      {
+        "id": "bar-build-lavagna",
+        "type": "build",
+        "question": "Che cosa c'è sulla lavagna davanti al bar?",
+        "english": "What is on the chalkboard in front of the café?",
+        "italian": "Sulla lavagna c'è una pizza",
+        "parts": ["Sulla", "lavagna", "c'è", "una", "pizza"],
+        "distractors": ["ci", "sono", "gatto"],
+        "explanation": "Una cosa → «c'è»."
+      },
+      {
+        "id": "bar-build-tempo",
+        "type": "build",
+        "question": "Che tempo fa nella piazza?",
+        "english": "What is the weather like in the square?",
+        "italian": "Nella piazza c'è il sole",
+        "parts": ["Nella", "piazza", "c'è", "il", "sole"],
+        "distractors": ["fa", "piove", "pioggia"],
+        "explanation": "«C'è il sole» = it's sunny."
+      },
+      {
+        "id": "bar-build-gente",
+        "type": "build",
+        "question": "Com'è la piazza?",
+        "english": "What is the square like?",
+        "italian": "La piazza è piena di gente",
+        "parts": ["La", "piazza", "è", "piena", "di", "gente"],
+        "distractors": ["sono", "vuota", "silenziosa"],
+        "explanation": "«Piena di gente» = full of people."
       }
     ]
   }
