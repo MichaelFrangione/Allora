@@ -6,8 +6,10 @@ import { Card, CardContent } from "@/components/ui/card";
 import { useStudySession } from "@/lib/useStudySession";
 import { useSpeech } from "@/lib/useSpeech";
 import SubjectSelector from "@/components/SubjectSelector";
+import WordBuilder from "@/components/WordBuilder";
 import { tagsMatchSubject, subjectsPresent } from "@/lib/content";
 import type { SentenceExercise } from "@/lib/content";
+import { useWordBuilder, checkSentence } from "@/lib/useWordBuilder";
 import { cn } from "@/lib/utils";
 import { getBoostEnabled } from "@/components/BoostToggle";
 
@@ -53,8 +55,7 @@ export default function SentenceBuilder({
   const [started, setStarted] = useState(false);
   const [deck, setDeck] = useState<SentenceExercise[]>([]);
   const [index, setIndex] = useState(0);
-  const [built, setBuilt] = useState<string[]>([]);
-  const [pool, setPool] = useState<string[]>([]);
+  const { built, pool, load, addWord, removeWord, builtSentence } = useWordBuilder();
   const [checked, setChecked] = useState(false);
   const [correct, setCorrect] = useState(false);
   const [score, setScore] = useState({ correct: 0, incorrect: 0 });
@@ -70,11 +71,10 @@ export default function SentenceBuilder({
   });
 
   const loadExercise = useCallback((ex: SentenceExercise) => {
-    setBuilt([]);
-    setPool(shuffle([...ex.parts, ...ex.distractors]));
+    load(ex.parts, ex.distractors);
     setChecked(false);
     setCorrect(false);
-  }, []);
+  }, [load]);
 
   useEffect(() => {
     return () => { endSession(); };
@@ -126,31 +126,11 @@ export default function SentenceBuilder({
 
   const ex = deck[index];
 
-  function addWord(word: string, wordIndex: number) {
-    if (checked) return;
-    setBuilt((b) => [...b, word]);
-    setPool((p) => p.filter((_, i) => i !== wordIndex));
-  }
-
-  function removeWord(word: string, builtIndex: number) {
-    if (checked) return;
-    setBuilt((b) => b.filter((_, i) => i !== builtIndex));
-    setPool((p) => [...p, word]);
-  }
-
-  // Compare the built sentence to the target, ignoring spacing and trailing
-  // sentence punctuation (., ?, !) — which aren't tappable tokens. The exercise's
-  // `alternates` list also counts as correct, so valid reorderings (e.g. items
-  // swapped around "e"/"o") are accepted alongside the canonical order.
-  function normalizeSentence(s: string): string {
-    return s.replace(/\s+/g, " ").trim().replace(/[.?!]+$/, "");
-  }
-
+  // The exercise's `alternates` list also counts as correct, so valid reorderings
+  // (e.g. items swapped around "e"/"o") are accepted alongside the canonical order.
   async function handleCheck() {
     if (!ex) return;
-    const builtSentence = built.join(" ");
-    const accepted = [ex.italian, ...(ex.alternates ?? [])].map(normalizeSentence);
-    const isCorrect = accepted.includes(normalizeSentence(builtSentence));
+    const isCorrect = checkSentence(builtSentence, ex.italian, ex.alternates);
     setCorrect(isCorrect);
     setChecked(true);
     await recordAttempt(ex.id, "sentence", isCorrect, builtSentence);
@@ -309,45 +289,14 @@ export default function SentenceBuilder({
         </CardContent>
       </Card>
 
-      {/* Drop zone — built sentence */}
-      <div
-        className={cn(
-          "min-h-16 rounded-xl border-2 border-dashed p-3 flex flex-wrap gap-2 transition-colors",
-          checked && correct && "border-green-500 bg-green-50 dark:bg-green-950",
-          checked && !correct && "border-red-400 bg-red-50 dark:bg-red-950",
-          !checked && "border-border"
-        )}
-      >
-        {built.length === 0 && (
-          <p className="text-sm text-muted-foreground self-center w-full text-center">
-            Tap words below to build the sentence
-          </p>
-        )}
-        {built.map((word, i) => (
-          <button
-            key={`built-${i}`}
-            onClick={() => removeWord(word, i)}
-            className="px-4 py-2.5 rounded-lg bg-primary text-primary-foreground text-sm font-medium active:scale-95 transition-transform disabled:opacity-60"
-            disabled={checked}
-          >
-            {word}
-          </button>
-        ))}
-      </div>
-
-      {/* Pool of available words */}
-      <div className="flex flex-wrap gap-2">
-        {pool.map((word, i) => (
-          <button
-            key={`pool-${i}-${word}`}
-            onClick={() => addWord(word, i)}
-            className="px-4 py-2.5 rounded-lg border-2 border-border bg-background text-sm font-medium active:scale-95 transition-transform disabled:opacity-60"
-            disabled={checked}
-          >
-            {word}
-          </button>
-        ))}
-      </div>
+      <WordBuilder
+        built={built}
+        pool={pool}
+        checked={checked}
+        correct={correct}
+        onAdd={addWord}
+        onRemove={removeWord}
+      />
 
       {checked && !correct && (
         <div className="rounded-xl bg-muted px-4 py-3 text-sm">

@@ -10,9 +10,34 @@ import { cn } from "@/lib/utils";
 import { getBoostEnabled } from "@/components/BoostToggle";
 import CorrectBurst from "@/components/CorrectBurst";
 import GlossedText from "@/components/GlossedText";
+import WordBuilder from "@/components/WordBuilder";
+import { useWordBuilder, checkSentence } from "@/lib/useWordBuilder";
 import { playCorrect, playWrong } from "@/lib/feedback";
 
 const CONTENT_TYPE = "descrizione";
+
+type Mode = "choice" | "build" | "mixed";
+
+const MODES: { value: Mode; label: string; blurb: string }[] = [
+  {
+    value: "choice",
+    label: "Multiple choice",
+    blurb:
+      "Answer multiple-choice questions using c’è / ci sono, colours, and position words (a sinistra, al centro, dietro a…). Tap 💡 for the guide.",
+  },
+  {
+    value: "build",
+    label: "Sentence builder",
+    blurb:
+      "Answer each question in Italian by tapping the word tiles to build a full sentence — same vocab and grammar as the quiz.",
+  },
+  {
+    value: "mixed",
+    label: "Mixed",
+    blurb:
+      "A blend of both: pick the right option on some questions, and build a full Italian sentence on others.",
+  },
+];
 
 function shuffle<T>(arr: T[]): T[] {
   const a = [...arr];
@@ -23,8 +48,19 @@ function shuffle<T>(arr: T[]): T[] {
   return a;
 }
 
-/** A question with its options pre-shuffled so the correct answer isn't always in the same spot. */
-type DeckItem = ImageQuestion & { shuffledOptions: string[] };
+/** Does this question belong in a deck for the given mode? */
+function inMode(q: ImageQuestion, mode: Mode): boolean {
+  if (mode === "mixed") return true;
+  if (mode === "build") return q.type === "build";
+  return q.type !== "build";
+}
+
+function countFor(img: ImageDescription, mode: Mode): number {
+  return img.questions.filter((q) => inMode(q, mode)).length;
+}
+
+/** A choice question carries its options pre-shuffled; build questions render the tile builder. */
+type DeckItem = ImageQuestion & { shuffledOptions?: string[] };
 
 export default function ImageDescriptionQuiz({
   images,
@@ -33,16 +69,19 @@ export default function ImageDescriptionQuiz({
   images: ImageDescription[];
   weakIds?: string[];
 }) {
+  const [mode, setMode] = useState<Mode>("mixed");
   const [active, setActive] = useState<ImageDescription | null>(null);
   const [deck, setDeck] = useState<DeckItem[]>([]);
   const [index, setIndex] = useState(0);
   const [selected, setSelected] = useState<string | null>(null);
   const [submitted, setSubmitted] = useState(false);
+  const [correct, setCorrect] = useState(false);
   const [showInfo, setShowInfo] = useState(false);
   const [burst, setBurst] = useState(0);
   const [score, setScore] = useState({ correct: 0, incorrect: 0 });
   const [wrongIds, setWrongIds] = useState<string[]>([]);
   const [done, setDone] = useState(false);
+  const { built, pool, load, addWord, removeWord, builtSentence } = useWordBuilder();
   const { startSession, endSession, recordAttempt } = useStudySession(CONTENT_TYPE);
   const { speak, speaking } = useSpeech();
   const advanceTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
@@ -59,32 +98,39 @@ export default function ImageDescriptionQuiz({
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
+  /** Reset per-question state and load the tile pool when the next item is a build question. */
+  function prepareQuestion(item: DeckItem | undefined) {
+    clearAdvance();
+    setSelected(null);
+    setSubmitted(false);
+    setCorrect(false);
+    setShowInfo(false);
+    if (item && item.type === "build") load(item.parts, item.distractors);
+    else load([], []);
+  }
+
   function beginDrill(img: ImageDescription, filterIds?: string[]) {
     const weakSet = new Set(weakIds);
     const boostEnabled = getBoostEnabled();
     const source = filterIds
       ? img.questions.filter((q) => filterIds.includes(q.id))
-      : img.questions;
+      : img.questions.filter((q) => inMode(q, mode));
     const weighted: ImageQuestion[] = [];
     for (const q of source) {
       const copies = !filterIds && boostEnabled && weakSet.has(q.id) ? 2 : 1;
       for (let i = 0; i < copies; i++) weighted.push(q);
     }
-    const pool: DeckItem[] = shuffle(weighted).map((q) => ({
-      ...q,
-      shuffledOptions: shuffle(q.options),
-    }));
-    clearAdvance();
+    const pile: DeckItem[] = shuffle(weighted).map((q) =>
+      q.type === "build" ? { ...q } : { ...q, shuffledOptions: shuffle(q.options) }
+    );
     setActive(img);
-    setDeck(pool);
+    setDeck(pile);
     setIndex(0);
-    setSelected(null);
-    setSubmitted(false);
-    setShowInfo(false);
     setBurst(0);
     setScore({ correct: 0, incorrect: 0 });
     setWrongIds([]);
     setDone(false);
+    prepareQuestion(pile[0]);
     startSession();
   }
 
@@ -97,11 +143,22 @@ export default function ImageDescriptionQuiz({
 
   const q = deck[index];
 
-  async function handleSubmit() {
-    if (submitted || !selected || !q) return;
+  async function handleCheck() {
+    if (submitted || !q) return;
+    let isCorrect: boolean;
+    let answer: string;
+    if (q.type === "build") {
+      if (built.length === 0) return;
+      answer = builtSentence;
+      isCorrect = checkSentence(builtSentence, q.italian, q.alternates);
+    } else {
+      if (!selected) return;
+      answer = selected;
+      isCorrect = selected === q.correct;
+    }
     setSubmitted(true);
-    const correct = selected === q.correct;
-    if (correct) {
+    setCorrect(isCorrect);
+    if (isCorrect) {
       setBurst((b) => b + 1);
       playCorrect();
       clearAdvance();
@@ -109,11 +166,11 @@ export default function ImageDescriptionQuiz({
     } else {
       playWrong();
     }
-    await recordAttempt(q.id, CONTENT_TYPE, correct, selected);
-    if (!correct) setWrongIds((ids) => [...ids, q.id]);
+    await recordAttempt(q.id, CONTENT_TYPE, isCorrect, answer);
+    if (!isCorrect) setWrongIds((ids) => [...ids, q.id]);
     setScore((s) => ({
-      correct: s.correct + (correct ? 1 : 0),
-      incorrect: s.incorrect + (correct ? 0 : 1),
+      correct: s.correct + (isCorrect ? 1 : 0),
+      incorrect: s.incorrect + (isCorrect ? 0 : 1),
     }));
   }
 
@@ -125,14 +182,13 @@ export default function ImageDescriptionQuiz({
       setDone(true);
     } else {
       setIndex(next);
-      setSelected(null);
-      setSubmitted(false);
-      setShowInfo(false);
+      prepareQuestion(deck[next]);
     }
   }
 
-  // ── Setup: pick a picture ──
+  // ── Setup: pick a mode + a picture ──
   if (!active) {
+    const activeMode = MODES.find((m) => m.value === mode)!;
     return (
       <div className="max-w-lg mx-auto px-4 py-6 space-y-6">
         <div>
@@ -142,41 +198,70 @@ export default function ImageDescriptionQuiz({
           </p>
         </div>
 
+        <div>
+          <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wide mb-2">Mode</p>
+          <div className="flex flex-wrap gap-2">
+            {MODES.map((m) => (
+              <button
+                key={m.value}
+                onClick={() => setMode(m.value)}
+                className={cn(
+                  "px-3 py-1.5 rounded-full text-sm font-medium transition-colors",
+                  mode === m.value
+                    ? "bg-primary text-primary-foreground"
+                    : "bg-muted text-muted-foreground hover:bg-muted/80"
+                )}
+              >
+                {m.label}
+              </button>
+            ))}
+          </div>
+        </div>
+
         <div className="rounded-xl border border-primary/30 bg-primary/5 px-4 py-3">
           <p className="text-xs font-semibold uppercase tracking-wide text-primary mb-1">How it works</p>
-          <p className="text-sm text-muted-foreground">
-            Choose a picture, then answer multiple-choice questions using <strong>c&apos;è / ci sono</strong>,
-            colours, and position words (<em>a sinistra, al centro, dietro a…</em>). Tap 💡 for the guide.
-          </p>
+          <p className="text-sm text-muted-foreground">{activeMode.blurb}</p>
         </div>
 
         <div className="flex flex-col gap-3">
-          {images.map((img) => (
-            <button
-              key={img.id}
-              onClick={() => beginDrill(img)}
-              className="group text-left rounded-2xl border-2 border-border bg-card overflow-hidden transition-colors hover:border-primary"
-            >
-              <div className="relative w-full h-40 bg-muted">
-                <Image
-                  src={img.image}
-                  alt={img.title}
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 640px) 100vw, 512px"
-                />
-              </div>
-              <div className="px-4 py-3 flex items-center justify-between">
-                <div>
-                  <div className="font-semibold">{img.title}</div>
-                  <div className="text-sm text-muted-foreground">
-                    {img.questions.length} question{img.questions.length !== 1 ? "s" : ""}
-                  </div>
+          {images.map((img) => {
+            const count = countFor(img, mode);
+            const disabled = count === 0;
+            return (
+              <button
+                key={img.id}
+                onClick={() => beginDrill(img)}
+                disabled={disabled}
+                className={cn(
+                  "group text-left rounded-2xl border-2 border-border bg-card overflow-hidden transition-colors",
+                  disabled ? "opacity-50 cursor-not-allowed" : "hover:border-primary"
+                )}
+              >
+                <div className="relative w-full h-40 bg-muted">
+                  <Image
+                    src={img.image}
+                    alt={img.title}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 640px) 100vw, 512px"
+                  />
                 </div>
-                <span className="text-primary text-sm font-medium opacity-70 group-hover:opacity-100">Start →</span>
-              </div>
-            </button>
-          ))}
+                <div className="px-4 py-3 flex items-center justify-between">
+                  <div>
+                    <div className="font-semibold">{img.title}</div>
+                    <div className="text-sm text-muted-foreground">
+                      {disabled
+                        ? "No sentence-builder questions yet"
+                        : `${count} question${count !== 1 ? "s" : ""}`}
+                    </div>
+                  </div>
+                  {!disabled && (
+                    <span className="text-primary text-sm font-medium opacity-70 group-hover:opacity-100">Start →</span>
+                  )}
+                </div>
+              </button>
+            );
+          })}
         </div>
       </div>
     );
@@ -277,49 +362,72 @@ export default function ImageDescriptionQuiz({
         {showInfo && q.english && (
           <p className="mt-2 text-sm italic text-muted-foreground">{q.english}</p>
         )}
+        {q.type === "build" && (
+          <p className="mt-2 text-xs font-medium uppercase tracking-wide text-primary">
+            Build your answer in Italian
+          </p>
+        )}
       </div>
 
-      {/* Options — stacked, full width (answers can be phrases) */}
-      <div className="flex flex-col gap-2">
-        {q.shuffledOptions.map((opt) => {
-          let optClass = "border-border bg-background";
-          if (submitted) {
-            if (opt === q.correct) optClass = "border-green-500 bg-green-50 dark:bg-green-950";
-            else if (opt === selected) optClass = "border-red-400 bg-red-50 dark:bg-red-950";
-          } else if (selected === opt) {
-            optClass = "border-primary";
-          }
-          return (
-            <div
-              key={opt}
-              role="button"
-              tabIndex={submitted ? -1 : 0}
-              aria-disabled={submitted}
-              onClick={() => { if (!submitted) setSelected(opt); }}
-              onKeyDown={(e) => {
-                if (!submitted && (e.key === "Enter" || e.key === " ")) {
-                  e.preventDefault();
-                  setSelected(opt);
-                }
-              }}
-              className={cn(
-                "w-full text-left border-2 rounded-xl px-4 py-2.5 text-base font-medium transition-colors select-none",
-                !submitted && "cursor-pointer",
-                optClass
-              )}
-            >
-              <GlossedText text={opt} />
-            </div>
-          );
-        })}
-      </div>
+      {/* Answer — tile builder (build) or stacked options (choice) */}
+      {q.type === "build" ? (
+        <WordBuilder
+          built={built}
+          pool={pool}
+          checked={submitted}
+          correct={correct}
+          onAdd={addWord}
+          onRemove={removeWord}
+          emptyHint="Tap the Italian words to build your answer"
+        />
+      ) : (
+        <div className="flex flex-col gap-2">
+          {q.shuffledOptions?.map((opt) => {
+            let optClass = "border-border bg-background";
+            if (submitted) {
+              if (opt === q.correct) optClass = "border-green-500 bg-green-50 dark:bg-green-950";
+              else if (opt === selected) optClass = "border-red-400 bg-red-50 dark:bg-red-950";
+            } else if (selected === opt) {
+              optClass = "border-primary";
+            }
+            return (
+              <div
+                key={opt}
+                role="button"
+                tabIndex={submitted ? -1 : 0}
+                aria-disabled={submitted}
+                onClick={() => { if (!submitted) setSelected(opt); }}
+                onKeyDown={(e) => {
+                  if (!submitted && (e.key === "Enter" || e.key === " ")) {
+                    e.preventDefault();
+                    setSelected(opt);
+                  }
+                }}
+                className={cn(
+                  "w-full text-left border-2 rounded-xl px-4 py-2.5 text-base font-medium transition-colors select-none",
+                  !submitted && "cursor-pointer",
+                  optClass
+                )}
+              >
+                <GlossedText text={opt} />
+              </div>
+            );
+          })}
+        </div>
+      )}
 
       {submitted && (
         <div className="space-y-2">
-          {selected !== q.correct && (
+          {!correct && q.type !== "build" && (
             <p className="text-sm font-medium text-center text-red-500">
               Incorrect — the answer is &quot;{q.correct}&quot;
             </p>
+          )}
+          {!correct && q.type === "build" && (
+            <div className="rounded-xl bg-muted px-4 py-3 text-sm">
+              <span className="text-muted-foreground">Correct answer: </span>
+              <span className="font-semibold"><GlossedText text={q.italian} /></span>
+            </div>
           )}
           {q.explanation && (
             <div className="rounded-xl bg-muted px-4 py-3">
@@ -331,10 +439,26 @@ export default function ImageDescriptionQuiz({
 
       <div className="flex gap-3">
         {!submitted ? (
-          <Button className="flex-1 h-11" onClick={handleSubmit} disabled={!selected}>
-            Check
-          </Button>
-        ) : selected === q.correct ? (
+          q.type === "build" ? (
+            <>
+              <Button
+                variant="outline"
+                className="flex-1 h-11"
+                onClick={() => load(q.parts, q.distractors)}
+                disabled={built.length === 0}
+              >
+                Reset
+              </Button>
+              <Button className="flex-1 h-11" onClick={handleCheck} disabled={built.length === 0}>
+                Check
+              </Button>
+            </>
+          ) : (
+            <Button className="flex-1 h-11" onClick={handleCheck} disabled={!selected}>
+              Check
+            </Button>
+          )
+        ) : correct ? (
           <Button variant="ghost" className="flex-1 h-11 text-green-600 pointer-events-none">
             Correct! ✓
           </Button>

@@ -186,18 +186,41 @@ export const gerundioDrill: DrillQuestion[] = gerundioData as DrillQuestion[];
 export const salutiDrill: DrillQuestion[] = salutiData as DrillQuestion[];
 
 /**
- * Picture-description lesson: an image plus a set of multiple-choice questions about
- * what's in it and where. Each picture is one deck; answers feed XP/mastery like a drill.
+ * Picture-description lesson: an image plus a set of questions about what's in it
+ * and where. A question is either multiple-choice (pick the option) or "build"
+ * (answer in Italian with the sentence-builder tiles). Each picture is one deck;
+ * answers feed XP/mastery like a drill.
  */
-export interface ImageQuestion {
+interface ImageQuestionBase {
   id: string;
+  /** The question, asked in Italian. */
   question: string;
-  /** English gloss of the question, shown beneath it. */
+  /** English gloss of the question, shown via the ℹ️ toggle. */
   english?: string;
-  options: string[];
-  correct: string;
   explanation?: string;
 }
+
+/** Multiple-choice question: pick the correct option. */
+export interface ImageChoiceQuestion extends ImageQuestionBase {
+  type?: "choice";
+  options: string[];
+  correct: string;
+}
+
+/** Sentence-builder question: answer in Italian by tapping word tiles. */
+export interface ImageBuildQuestion extends ImageQuestionBase {
+  type: "build";
+  /** The target Italian answer. */
+  italian: string;
+  /** Word tiles that make up the answer, in canonical order. */
+  parts: string[];
+  /** Extra wrong tiles mixed into the pool. */
+  distractors: string[];
+  /** Additional accepted orderings of the answer. */
+  alternates?: string[];
+}
+
+export type ImageQuestion = ImageChoiceQuestion | ImageBuildQuestion;
 
 export interface ImageDescription {
   id: string;

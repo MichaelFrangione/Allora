@@ -183,6 +183,56 @@
         "options": ["Allegra e vivace", "Triste e silenziosa", "Buia e fredda", "Caotica e stressante"],
         "correct": "Allegra e vivace",
         "explanation": "Il parco è pieno di gente: l'atmosfera sembra allegra e vivace."
+      },
+      {
+        "id": "parco-build-bambini",
+        "type": "build",
+        "question": "Che cosa fanno i bambini dietro la fontana?",
+        "english": "What are the children doing behind the fountain?",
+        "italian": "I bambini giocano a calcio dietro la fontana",
+        "parts": ["I", "bambini", "giocano", "a", "calcio", "dietro", "la", "fontana"],
+        "distractors": ["mangiano", "il", "gatto"],
+        "explanation": "«Giocare a calcio» = to play soccer. «Dietro la fontana» = behind the fountain."
+      },
+      {
+        "id": "parco-build-uomo-panchina",
+        "type": "build",
+        "question": "Che cosa fa l'uomo seduto sulla panchina a destra?",
+        "english": "What is the man sitting on the bench on the right doing?",
+        "italian": "L'uomo legge un libro sulla panchina",
+        "parts": ["L'uomo", "legge", "un", "libro", "sulla", "panchina"],
+        "distractors": ["mangia", "una", "rivista"],
+        "explanation": "«Leggere» = to read. «Sulla panchina» = on the bench."
+      },
+      {
+        "id": "parco-build-coppia-picnic",
+        "type": "build",
+        "question": "Che cosa fa la coppia seduta sulla coperta?",
+        "english": "What is the couple sitting on the blanket doing?",
+        "italian": "La coppia fa un picnic sulla coperta",
+        "parts": ["La", "coppia", "fa", "un", "picnic", "sulla", "coperta"],
+        "distractors": ["gioca", "a", "carte"],
+        "explanation": "«Fare un picnic» = to have a picnic."
+      },
+      {
+        "id": "parco-build-donna-passeggino",
+        "type": "build",
+        "question": "Che cosa spinge la donna sullo sfondo?",
+        "english": "What is the woman in the background pushing?",
+        "italian": "La donna spinge un passeggino",
+        "parts": ["La", "donna", "spinge", "un", "passeggino"],
+        "distractors": ["spingono", "una", "bicicletta"],
+        "explanation": "«Spingere» = to push. One person → «spinge»."
+      },
+      {
+        "id": "parco-build-cielo",
+        "type": "build",
+        "question": "Com'è il cielo nella foto?",
+        "english": "What is the sky like in the photo?",
+        "italian": "Il cielo è azzurro con qualche nuvola",
+        "parts": ["Il", "cielo", "è", "azzurro", "con", "qualche", "nuvola"],
+        "distractors": ["sono", "grigio", "nuvole"],
+        "explanation": "«Qualche» is always followed by a singular noun: «qualche nuvola»."
       }
     ]
   },
@@ -346,6 +396,56 @@
         "options": ["Elegante", "Disordinata", "Sporca", "Vuota"],
         "correct": "Elegante",
         "explanation": "La tavola è apparecchiata in modo elegante."
+      },
+      {
+        "id": "tavola-build-pasta",
+        "type": "build",
+        "question": "Che cosa c'è al centro della tavola?",
+        "english": "What is in the centre of the table?",
+        "italian": "Al centro c'è un piatto di pasta",
+        "parts": ["Al", "centro", "c'è", "un", "piatto", "di", "pasta"],
+        "distractors": ["ci", "sono", "pizza"],
+        "explanation": "One plate → «c'è». «Un piatto di pasta» = a plate of pasta."
+      },
+      {
+        "id": "tavola-build-mele",
+        "type": "build",
+        "question": "Come sono le mele e dove si trovano?",
+        "english": "What are the apples like and where are they?",
+        "italian": "Le mele sono rosse e sono a sinistra",
+        "parts": ["Le", "mele", "sono", "rosse", "e", "sono", "a", "sinistra"],
+        "distractors": ["è", "rossa", "destra"],
+        "explanation": "Plural feminine: «le mele sono rosse». «A sinistra» = on the left."
+      },
+      {
+        "id": "tavola-build-bottiglie",
+        "type": "build",
+        "question": "Quante bottiglie di vino ci sono e dove?",
+        "english": "How many wine bottles are there and where?",
+        "italian": "Ci sono due bottiglie di vino a destra",
+        "parts": ["Ci", "sono", "due", "bottiglie", "di", "vino", "a", "destra"],
+        "distractors": ["c'è", "una", "sinistra"],
+        "explanation": "More than one → «ci sono». «A destra» = on the right."
+      },
+      {
+        "id": "tavola-build-formaggio",
+        "type": "build",
+        "question": "Che cosa c'è sopra la pasta?",
+        "english": "What is on top of the pasta?",
+        "italian": "Sopra la pasta c'è il formaggio",
+        "parts": ["Sopra", "la", "pasta", "c'è", "il", "formaggio"],
+        "distractors": ["ci", "sono", "sale"],
+        "explanation": "«Sopra» = on top of / above."
+      },
+      {
+        "id": "tavola-build-elegante",
+        "type": "build",
+        "question": "Com'è la tavola apparecchiata?",
+        "english": "What is the set table like?",
+        "italian": "La tavola è apparecchiata in modo elegante",
+        "parts": ["La", "tavola", "è", "apparecchiata", "in", "modo", "elegante"],
+        "distractors": ["sono", "disordinata", "sporca"],
+        "explanation": "«Apparecchiata» = set/laid. «In modo elegante» = in an elegant way."
       }
     ]
   },
@@ -525,6 +625,56 @@
         "options": ["Accogliente e ordinato", "Sporco e buio", "Vuoto e triste", "Caotico e rumoroso"],
         "correct": "Accogliente e ordinato",
         "explanation": "Il negozio è pieno di luce e ben organizzato: è accogliente e ordinato."
+      },
+      {
+        "id": "alimentari-build-barista",
+        "type": "build",
+        "question": "Che cosa fa il barista dietro il banco?",
+        "english": "What is the barista doing behind the counter?",
+        "italian": "Il barista parla con una cliente",
+        "parts": ["Il", "barista", "parla", "con", "una", "cliente"],
+        "distractors": ["parlano", "un", "dorme"],
+        "explanation": "«Parlare con» = to talk with. One person → «parla»."
+      },
+      {
+        "id": "alimentari-build-uomo",
+        "type": "build",
+        "question": "Chi entra dalla porta e com'è la porta?",
+        "english": "Who is coming in through the door, and what is the door like?",
+        "italian": "Un uomo entra dalla porta aperta",
+        "parts": ["Un", "uomo", "entra", "dalla", "porta", "aperta"],
+        "distractors": ["esce", "una", "chiusa"],
+        "explanation": "«Entrare» = to enter. «Dalla porta aperta» = through the open door."
+      },
+      {
+        "id": "alimentari-build-ragazzi",
+        "type": "build",
+        "question": "Che cosa mangiano i due ragazzi al tavolo?",
+        "english": "What are the two young people at the table eating?",
+        "italian": "I ragazzi mangiano la pasta e la verdura",
+        "parts": ["I", "ragazzi", "mangiano", "la", "pasta", "e", "la", "verdura"],
+        "distractors": ["mangia", "il", "pizza"],
+        "explanation": "Plural subject → «mangiano»."
+      },
+      {
+        "id": "alimentari-build-cestino",
+        "type": "build",
+        "question": "Che cosa porta la donna con il maglione giallo?",
+        "english": "What is the woman in the yellow sweater carrying?",
+        "italian": "La donna porta un cestino con il pane",
+        "parts": ["La", "donna", "porta", "un", "cestino", "con", "il", "pane"],
+        "distractors": ["portano", "una", "fiori"],
+        "explanation": "«Portare» = to carry/bring."
+      },
+      {
+        "id": "alimentari-build-negozio",
+        "type": "build",
+        "question": "Com'è il negozio di alimentari?",
+        "english": "What is the grocery shop like?",
+        "italian": "Il negozio è accogliente e ordinato",
+        "parts": ["Il", "negozio", "è", "accogliente", "e", "ordinato"],
+        "distractors": ["sono", "sporco", "vuoto"],
+        "explanation": "Two adjectives joined by «e»: «accogliente e ordinato»."
       }
     ]
   },
@@ -704,6 +854,56 @@
         "options": ["Allegra e vivace", "Triste e silenziosa", "Buia e fredda", "Noiosa"],
         "correct": "Allegra e vivace",
         "explanation": "La piazza è piena di gente che mangia, legge e passeggia: l'atmosfera è allegra e vivace."
+      },
+      {
+        "id": "bar-build-cameriere",
+        "type": "build",
+        "question": "Che cosa fa il cameriere al tavolo?",
+        "english": "What is the waiter doing at the table?",
+        "italian": "Il cameriere prende l'ordinazione",
+        "parts": ["Il", "cameriere", "prende", "l'ordinazione"],
+        "distractors": ["prendono", "mangia", "il"],
+        "explanation": "«Prendere l'ordinazione» = to take the order."
+      },
+      {
+        "id": "bar-build-gelato",
+        "type": "build",
+        "question": "Che cosa mangia il bambino con la maglietta rossa?",
+        "english": "What is the boy in the red t-shirt eating?",
+        "italian": "Il bambino mangia un gelato",
+        "parts": ["Il", "bambino", "mangia", "un", "gelato"],
+        "distractors": ["mangiano", "una", "pizza"],
+        "explanation": "«Mangiare» = to eat. One person → «mangia»."
+      },
+      {
+        "id": "bar-build-donna-cane",
+        "type": "build",
+        "question": "Che cosa fa la donna bionda con il cane?",
+        "english": "What is the blonde woman doing with the dog?",
+        "italian": "La donna bionda accarezza il cane",
+        "parts": ["La", "donna", "bionda", "accarezza", "il", "cane"],
+        "distractors": ["accarezzano", "un", "gatto"],
+        "explanation": "«Accarezzare» = to pet/stroke."
+      },
+      {
+        "id": "bar-build-spaghetti",
+        "type": "build",
+        "question": "Che cosa mangia l'uomo con gli occhiali?",
+        "english": "What is the man with glasses eating?",
+        "italian": "L'uomo mangia un piatto di spaghetti",
+        "parts": ["L'uomo", "mangia", "un", "piatto", "di", "spaghetti"],
+        "distractors": ["mangiano", "una", "pasta"],
+        "explanation": "«Un piatto di spaghetti» = a plate of spaghetti."
+      },
+      {
+        "id": "bar-build-atmosfera",
+        "type": "build",
+        "question": "Com'è l'atmosfera della piazza?",
+        "english": "What is the atmosphere of the square like?",
+        "italian": "La piazza è allegra e vivace",
+        "parts": ["La", "piazza", "è", "allegra", "e", "vivace"],
+        "distractors": ["sono", "triste", "buia"],
+        "explanation": "«Allegra e vivace» = cheerful and lively."
       }
     ]
   }
