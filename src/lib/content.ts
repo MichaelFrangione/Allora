@@ -11,6 +11,7 @@ import vocabDescriptions from "../../data/vocab/descriptions.json";
 import vocabCulture from "../../data/vocab/culture.json";
 import vocabAbstract from "../../data/vocab/abstract.json";
 import vocabDescrizione from "../../data/vocab/descrizione.json";
+import vocabAdded from "../../data/vocab/added.json"; // promoted from the DB capture inbox
 import flashcardsData from "../../data/flashcards.json";
 // Conjugations are split by verb group under data/conjugations/.
 import conjRegularAre from "../../data/conjugations/regular-are.json";
@@ -115,6 +116,7 @@ export const vocab: VocabItem[] = [
   ...vocabCulture,
   ...vocabAbstract,
   ...vocabDescrizione,
+  ...vocabAdded,
 ] as VocabItem[];
 export const flashcards: Flashcard[] = flashcardsData as Flashcard[];
 export const conjugations: Conjugation[] = [

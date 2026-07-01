@@ -13,8 +13,9 @@ model User {
   password  String
   name      String?
   createdAt DateTime       @default(now())
-  sessions  StudySession[]
-  attempts  CardAttempt[]
+  sessions     StudySession[]
+  attempts     CardAttempt[]
+  vocabEntries VocabEntry[]
 }
 
 model StudySession {
@@ -38,4 +39,27 @@ model CardAttempt {
   correct     Boolean
   answer      String?
   createdAt   DateTime      @default(now())
+}
+
+/// User-captured vocab (the in-class "add a word" inbox). Runtime-writable + shared,
+/// unlike the static JSON content. Promoted into data/vocab/*.json on request, then
+/// marked PROMOTED. Fields mirror VocabItem (content.ts) so promotion is a clean map.
+model VocabEntry {
+  id           String    @id @default(cuid())
+  italian      String // the term as entered
+  english      String // definition / translation (user-provided)
+  partOfSpeech String? // "verb" | "noun" | ...
+  gender       String? // for nouns: "m" | "f"
+  verbGroup    String? // "-are" | "-ere" | "-ire" | "irregular"
+  conjugation  Json? // derived tables (italian-verbs)
+  example      String? // sample sentence (filled later)
+  tags         String[]  @default([]) // subject tags used at promotion time
+  notes        String?
+  status       String    @default("STAGED") // STAGED | PROMOTED
+  createdById  String?
+  createdBy    User?     @relation(fields: [createdById], references: [id])
+  createdAt    DateTime  @default(now())
+  promotedAt   DateTime?
+
+  @@index([status])
 }
