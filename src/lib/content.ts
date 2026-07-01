@@ -19,6 +19,7 @@ import conjRegularEre from "../../data/conjugations/regular-ere.json";
 import conjRegularIre from "../../data/conjugations/regular-ire.json";
 import conjIrregular from "../../data/conjugations/irregular.json";
 import conjReflexive from "../../data/conjugations/reflexive.json";
+import conjAdded from "../../data/conjugations/added.json"; // generated from promoted verbs
 import grammarData from "../../data/grammar.json";
 import sentencesData from "../../data/sentences.json";
 import pronunciationData from "../../data/pronunciation.json";
@@ -125,6 +126,7 @@ export const conjugations: Conjugation[] = [
   ...conjRegularIre,
   ...conjIrregular,
   ...conjReflexive,
+  ...conjAdded,
 ] as Conjugation[];
 export const grammar: GrammarRule[] = grammarData as GrammarRule[];
 export const sentences: SentenceExercise[] = sentencesData as SentenceExercise[];

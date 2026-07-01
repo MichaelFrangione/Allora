@@ -16,6 +16,7 @@ export async function POST(req: Request) {
   const body = await req.json().catch(() => null);
   const italian = typeof body?.italian === "string" ? body.italian.trim() : "";
   const english = typeof body?.english === "string" ? body.english.trim() : "";
+  const subject = typeof body?.subject === "string" ? body.subject.trim() : ""; // subject id → tag
   if (!italian) {
     return NextResponse.json({ error: "Nothing to add" }, { status: 400 });
   }
@@ -40,6 +41,7 @@ export async function POST(req: Request) {
       partOfSpeech: verb ? "verb" : null,
       gender: wikt.gender ?? null,
       verbGroup: verb ? verbGroupOf(italian) : null,
+      tags: subject ? [subject] : [],
       conjugation: (conj ?? undefined) as Prisma.InputJsonValue | undefined,
       createdById: session.user.id,
     },

@@ -5,8 +5,17 @@ import { Volume2, Trash2, ChevronDown, Plus, Search, Loader2, CheckCircle2 } fro
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 import { cn } from "@/lib/utils";
 import { useSpeech } from "@/lib/useSpeech";
+
+type Subject = { id: string; label: string; emoji: string };
 
 type ConjAux = "AVERE" | "ESSERE" | "BOTH";
 type AuxSource = "wiktionary" | "reflexive" | "curated";
@@ -27,6 +36,7 @@ export type StagedEntry = {
   partOfSpeech: string | null;
   gender: string | null;
   verbGroup: string | null;
+  tags: string[];
   conjugation: Conjugation | null;
   example: string | null;
   status: string;
@@ -75,10 +85,23 @@ const WHERE_LABEL: Record<DedupWhere, string> = {
   promoted: "the app's vocab",
 };
 
-export default function AddVocab({ initialStaged }: { initialStaged: StagedEntry[] }) {
+function defaultSubjectFor(r: LookupResult): string {
+  if (r.conjugation?.reflexive) return "reflexive-verbs";
+  if (r.isVerb) return "present-tense";
+  return "";
+}
+
+export default function AddVocab({
+  initialStaged,
+  subjects,
+}: {
+  initialStaged: StagedEntry[];
+  subjects: Subject[];
+}) {
   const [query, setQuery] = useState("");
   const [result, setResult] = useState<LookupResult | null>(null);
   const [englishDraft, setEnglishDraft] = useState("");
+  const [subject, setSubject] = useState("");
   const [looking, setLooking] = useState(false);
   const [adding, setAdding] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -100,6 +123,7 @@ export default function AddVocab({ initialStaged }: { initialStaged: StagedEntry
       const data = (await res.json()) as LookupResult;
       setResult(data);
       setEnglishDraft(data.english ?? "");
+      setSubject(defaultSubjectFor(data));
     } catch (e) {
       setError(e instanceof Error ? e.message : "Something went wrong");
     } finally {
@@ -115,7 +139,7 @@ export default function AddVocab({ initialStaged }: { initialStaged: StagedEntry
       const res = await fetch("/api/vocab/capture", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ italian: result.italian, english: englishDraft.trim() }),
+        body: JSON.stringify({ italian: result.italian, english: englishDraft.trim(), subject }),
       });
       if (res.status === 409) {
         const b = await res.json().catch(() => ({}));
@@ -131,6 +155,7 @@ export default function AddVocab({ initialStaged }: { initialStaged: StagedEntry
       setResult(null);
       setQuery("");
       setEnglishDraft("");
+      setSubject("");
       searchRef.current?.focus();
     } catch (e) {
       setError(e instanceof Error ? e.message : "Something went wrong");
@@ -184,6 +209,9 @@ export default function AddVocab({ initialStaged }: { initialStaged: StagedEntry
           result={result}
           english={englishDraft}
           setEnglish={setEnglishDraft}
+          subjects={subjects}
+          subject={subject}
+          setSubject={setSubject}
           onAdd={add}
           adding={adding}
         />
@@ -200,7 +228,12 @@ export default function AddVocab({ initialStaged }: { initialStaged: StagedEntry
         ) : (
           <ul className="space-y-2">
             {staged.map((entry) => (
-              <EntryCard key={entry.id} entry={entry} onDelete={() => remove(entry.id)} />
+              <EntryCard
+                key={entry.id}
+                entry={entry}
+                subjects={subjects}
+                onDelete={() => remove(entry.id)}
+              />
             ))}
           </ul>
         )}
@@ -215,6 +248,7 @@ function WordHeader({
   isVerb,
   verbGroup,
   gender,
+  subjectLabel,
   conjugation,
 }: {
   italian: string;
@@ -222,6 +256,7 @@ function WordHeader({
   isVerb: boolean;
   verbGroup: string | null;
   gender?: string | null;
+  subjectLabel?: string | null;
   conjugation: Conjugation | null;
 }) {
   const { speak } = useSpeech();
@@ -264,6 +299,9 @@ function WordHeader({
         {conjugation?.gerund && (
           <Badge variant="outline" className="text-[10px]">ger: {conjugation.gerund}</Badge>
         )}
+        {subjectLabel && (
+          <Badge variant="secondary" className="text-[10px]">{subjectLabel}</Badge>
+        )}
       </div>
     </div>
   );
@@ -295,12 +333,18 @@ function ResultCard({
   result,
   english,
   setEnglish,
+  subjects,
+  subject,
+  setSubject,
   onAdd,
   adding,
 }: {
   result: LookupResult;
   english: string;
   setEnglish: (v: string) => void;
+  subjects: Subject[];
+  subject: string;
+  setSubject: (v: string) => void;
   onAdd: () => void;
   adding: boolean;
 }) {
@@ -335,6 +379,22 @@ function ResultCard({
         )}
       </div>
 
+      <div className="space-y-1.5">
+        <label className="text-xs font-medium text-muted-foreground">Topic (Learn path)</label>
+        <Select value={subject} onValueChange={setSubject}>
+          <SelectTrigger className="w-full">
+            <SelectValue placeholder="Choose a topic…" />
+          </SelectTrigger>
+          <SelectContent>
+            {subjects.map((s) => (
+              <SelectItem key={s.id} value={s.id}>
+                {s.emoji} {s.label}
+              </SelectItem>
+            ))}
+          </SelectContent>
+        </Select>
+      </div>
+
       {result.conjugation && <ConjGrids conjugation={result.conjugation} />}
 
       {dup ? (
@@ -352,9 +412,18 @@ function ResultCard({
   );
 }
 
-function EntryCard({ entry, onDelete }: { entry: StagedEntry; onDelete: () => void }) {
+function EntryCard({
+  entry,
+  subjects,
+  onDelete,
+}: {
+  entry: StagedEntry;
+  subjects: Subject[];
+  onDelete: () => void;
+}) {
   const [open, setOpen] = useState(false);
   const hasConj = !!entry.conjugation && Object.keys(entry.conjugation.tenses).length > 0;
+  const subj = subjects.find((s) => entry.tags?.includes(s.id));
 
   return (
     <li className="rounded-lg border border-border bg-card">
@@ -366,6 +435,7 @@ function EntryCard({ entry, onDelete }: { entry: StagedEntry; onDelete: () => vo
             isVerb={entry.partOfSpeech === "verb"}
             verbGroup={entry.verbGroup}
             gender={entry.gender}
+            subjectLabel={subj ? `${subj.emoji} ${subj.label}` : null}
             conjugation={entry.conjugation}
           />
         </div>
