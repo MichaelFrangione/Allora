@@ -55,10 +55,14 @@ const DUAL_VERBS = new Set([
 ]);
 
 export type ConjAux = "AVERE" | "ESSERE" | "BOTH";
+/** Where the auxiliary came from: authoritative (Wiktionary), rule (reflexive → essere), or guess. */
+export type AuxSource = "wiktionary" | "reflexive" | "curated";
 
 export type ConjugationTables = {
-  /** avere / essere / both — curated best-effort (not in the source dictionary). */
+  /** avere / essere / both. */
   aux: ConjAux;
+  /** provenance of `aux` — "curated" is a best-effort guess worth verifying. */
+  auxSource: AuxSource;
   /** gerund, e.g. "rompendo" (null if not derivable). */
   gerund: string | null;
   /** true if this is a reflexive verb (forms carry mi/ti/si/…). */
@@ -106,14 +110,29 @@ function gerundOf(base: string): string | null {
   return null;
 }
 
-/** Conjugate common tenses + gerund + progressive, or null if the word isn't a known verb. */
-export function conjugate(infinitive: string): ConjugationTables | null {
+/**
+ * Conjugate common tenses + gerund + progressive, or null if the word isn't a known verb.
+ * `opts.aux` (e.g. from Wiktionary) overrides the curated guess for non-reflexive verbs.
+ */
+export function conjugate(infinitive: string, opts?: { aux?: ConjAux }): ConjugationTables | null {
   const input = norm(infinitive);
   const reflexive = input.endsWith("si");
   const base = reflexive ? reflexiveBase(input) : input;
   if (!inDict(base)) return null;
 
-  const aux = auxOf(input); // reflexive → ESSERE
+  let aux: ConjAux;
+  let auxSource: AuxSource;
+  if (reflexive) {
+    aux = "ESSERE"; // reflexives always take essere
+    auxSource = "reflexive";
+  } else if (opts?.aux) {
+    aux = opts.aux;
+    auxSource = "wiktionary";
+  } else {
+    aux = auxOf(input);
+    auxSource = "curated";
+  }
+
   const gerund = gerundOf(base);
   const tenses: Record<string, Record<string, string>> = {};
 
@@ -158,5 +177,5 @@ export function conjugate(infinitive: string): ConjugationTables | null {
     if (Object.keys(tenses).length === 0) return null;
   }
 
-  return { aux, gerund, reflexive, tenses };
+  return { aux, auxSource, gerund, reflexive, tenses };
 }

@@ -9,8 +9,11 @@ import { cn } from "@/lib/utils";
 import { useSpeech } from "@/lib/useSpeech";
 
 type ConjAux = "AVERE" | "ESSERE" | "BOTH";
+type AuxSource = "wiktionary" | "reflexive" | "curated";
+type Gender = "m" | "f" | "mf";
 type Conjugation = {
   aux: ConjAux;
+  auxSource?: AuxSource;
   gerund: string | null;
   reflexive?: boolean;
   tenses: Record<string, Record<string, string>>;
@@ -22,6 +25,7 @@ export type StagedEntry = {
   italian: string;
   english: string;
   partOfSpeech: string | null;
+  gender: string | null;
   verbGroup: string | null;
   conjugation: Conjugation | null;
   example: string | null;
@@ -36,6 +40,7 @@ type LookupResult = {
   isVerb: boolean;
   partOfSpeech: string | null;
   verbGroup: string | null;
+  gender: Gender | null;
   conjugation: Conjugation | null;
   already: { exists: boolean; where: DedupWhere | null };
 };
@@ -53,6 +58,17 @@ const PERSON_LABELS: Record<string, string> = {
   io: "io", tu: "tu", lui: "lui/lei", noi: "noi", voi: "voi", loro: "loro",
 };
 const AUX_LABEL: Record<ConjAux, string> = { AVERE: "avere", ESSERE: "essere", BOTH: "avere · essere" };
+const AUX_TITLE: Record<AuxSource, string> = {
+  wiktionary: "auxiliary from Wiktionary",
+  reflexive: "reflexive verb → essere",
+  curated: "best guess — please verify",
+};
+const GENDER_LABEL: Record<Gender, string> = { m: "m", f: "f", mf: "m/f" };
+const GENDER_STYLE: Record<Gender, string> = {
+  m: "border-blue-500 text-blue-600 dark:text-blue-400",
+  f: "border-pink-500 text-pink-600 dark:text-pink-400",
+  mf: "border-purple-500 text-purple-600 dark:text-purple-400",
+};
 const WHERE_LABEL: Record<DedupWhere, string> = {
   content: "the app's vocab",
   staged: "your staged list",
@@ -198,12 +214,14 @@ function WordHeader({
   english,
   isVerb,
   verbGroup,
+  gender,
   conjugation,
 }: {
   italian: string;
   english?: string;
   isVerb: boolean;
   verbGroup: string | null;
+  gender?: string | null;
   conjugation: Conjugation | null;
 }) {
   const { speak } = useSpeech();
@@ -224,9 +242,15 @@ function WordHeader({
         {isVerb && <Badge variant="secondary" className="text-[10px]">verb</Badge>}
         {conjugation?.reflexive && <Badge variant="secondary" className="text-[10px]">reflexive</Badge>}
         {verbGroup && <Badge variant="outline" className="text-[10px]">{verbGroup}</Badge>}
+        {gender && (gender === "m" || gender === "f" || gender === "mf") && (
+          <Badge variant="outline" className={cn("text-[10px]", GENDER_STYLE[gender])}>
+            {GENDER_LABEL[gender]}
+          </Badge>
+        )}
         {conjugation && (
           <Badge
             variant="outline"
+            title={conjugation.auxSource ? AUX_TITLE[conjugation.auxSource] : undefined}
             className={cn(
               "text-[10px]",
               conjugation.aux === "ESSERE" && "border-blue-500 text-blue-600 dark:text-blue-400",
@@ -234,6 +258,7 @@ function WordHeader({
             )}
           >
             aux: {AUX_LABEL[conjugation.aux]}
+            {conjugation.auxSource === "curated" ? " ?" : ""}
           </Badge>
         )}
         {conjugation?.gerund && (
@@ -286,6 +311,7 @@ function ResultCard({
         italian={result.italian}
         isVerb={result.isVerb}
         verbGroup={result.verbGroup}
+        gender={result.gender}
         conjugation={result.conjugation}
       />
 
@@ -339,6 +365,7 @@ function EntryCard({ entry, onDelete }: { entry: StagedEntry; onDelete: () => vo
             english={entry.english}
             isVerb={entry.partOfSpeech === "verb"}
             verbGroup={entry.verbGroup}
+            gender={entry.gender}
             conjugation={entry.conjugation}
           />
         </div>
