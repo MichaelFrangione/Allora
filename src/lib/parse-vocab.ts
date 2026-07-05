@@ -13,3 +13,14 @@ export function parseVocabLine(raw: string): ParsedVocab {
   }
   return { italian: stripQuotes(s), english: "" };
 }
+
+// Strip a leading Italian article so dictionary/example lookups match the bare word.
+// "il ristorante" -> "ristorante", "l'amico" -> "amico", "gli studenti" -> "studenti".
+export function stripArticle(s: string): string {
+  const t = s.trim();
+  const elided = t.match(/^(l'|un'|dell'|nell'|all'|dall')\s*/i);
+  if (elided) return t.slice(elided[0].length).trim();
+  const spaced = t.match(/^(il|lo|la|i|gli|le|un|uno|una|dei|degli|delle|del|dello|della)\s+/i);
+  if (spaced) return t.slice(spaced[0].length).trim();
+  return t;
+}

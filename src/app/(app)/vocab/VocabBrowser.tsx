@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { Input } from "@/components/ui/input";
 import { Card, CardContent } from "@/components/ui/card";
 import SubjectSelector from "@/components/SubjectSelector";
@@ -90,14 +91,19 @@ export default function VocabBrowser({
 
       <div className="space-y-2">
         {filtered.map((item) => (
-          <Card key={item.id}>
+          <Link key={item.id} href={`/vocab/${item.id}`} className="block">
+            <Card className="transition-colors hover:bg-accent">
             <CardContent className="pt-3 pb-3 px-4">
               <div className="flex items-start justify-between gap-2">
                 <div className="flex-1 min-w-0">
                   <div className="flex items-center gap-2 flex-wrap">
                     <span className="font-semibold text-base">{item.italian}</span>
                     <button
-                      onClick={() => speak(item.italian)}
+                      onClick={(e) => {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        speak(item.italian);
+                      }}
                       className={`text-base transition-opacity ${speaking === item.italian ? "opacity-40" : "opacity-50 hover:opacity-100"}`}
                       aria-label="Hear pronunciation"
                     >
@@ -133,7 +139,8 @@ export default function VocabBrowser({
                 </div>
               </div>
             </CardContent>
-          </Card>
+            </Card>
+          </Link>
         ))}
       </div>
 

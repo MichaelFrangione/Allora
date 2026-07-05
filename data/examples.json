@@ -1,0 +1,17 @@
+[
+  { "it": "Ho mangiato un panino.", "en": "I ate a sandwich.", "terms": ["mangiare", "panino"] },
+  { "it": "Sono arrivato a casa alle 18:30.", "en": "I arrived home at 18:30.", "terms": ["arrivare", "casa"] },
+  { "it": "Hai incontrato Marco.", "en": "You met Marco.", "terms": ["incontrare"] },
+  { "it": "Ha voluto un caffè.", "en": "He/She wanted a coffee.", "terms": ["volere", "caffè"] },
+  { "it": "Abbiamo sentito un rumore.", "en": "We heard a noise.", "terms": ["sentire", "rumore"] },
+  { "it": "Hanno ascoltato la canzone.", "en": "They listened to the song.", "terms": ["ascoltare", "canzone"] },
+  { "it": "Sei andato a casa.", "en": "You went home.", "terms": ["andare", "casa"] },
+  { "it": "Ci siamo svegliate presto.", "en": "We woke up early.", "terms": ["svegliarsi"] },
+  { "it": "Siete cambiati molto.", "en": "You have changed a lot.", "terms": ["cambiare"] },
+  { "it": "Mi è piaciuta la cena.", "en": "I liked the dinner.", "terms": ["piacere", "cena"] },
+  { "it": "Ho creduto alla sua storia.", "en": "I believed his story.", "terms": ["credere"] },
+  { "it": "Abbiamo venduto la macchina.", "en": "We sold the car.", "terms": ["vendere", "macchina"] },
+  { "it": "Non ho saputo la risposta.", "en": "I didn't know the answer.", "terms": ["sapere"] },
+  { "it": "Ho dormito bene.", "en": "I slept well.", "terms": ["dormire"] },
+  { "it": "Sono partito la settimana scorsa.", "en": "I left last week.", "terms": ["partire"] }
+]
