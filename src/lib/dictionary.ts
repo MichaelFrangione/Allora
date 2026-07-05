@@ -116,3 +116,12 @@ export async function lookupWord(word: string): Promise<WordInfo> {
     return { meaning: null, aux: null, gender: null, partOfSpeech: null };
   }
 }
+
+/** Gender only — one wikitext call. Lighter than lookupWord for bulk noun imports. */
+export async function lookupGender(word: string): Promise<Gender | null> {
+  try {
+    return await fetchGender(word);
+  } catch {
+    return null;
+  }
+}

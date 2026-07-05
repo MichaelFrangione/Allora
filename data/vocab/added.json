@@ -1,1 +1,747 @@
-[]
+[
+  {
+    "id": "jun-gelato",
+    "italian": "gelato",
+    "english": "ice cream",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "",
+    "tags": [
+      "food"
+    ]
+  },
+  {
+    "id": "jun-pallina",
+    "italian": "pallina",
+    "english": "scoop",
+    "gender": "f",
+    "partOfSpeech": "noun",
+    "example": "",
+    "tags": [
+      "food"
+    ]
+  },
+  {
+    "id": "jun-cono",
+    "italian": "cono",
+    "english": "cone",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "",
+    "tags": [
+      "food"
+    ]
+  },
+  {
+    "id": "jun-coppetta",
+    "italian": "coppetta",
+    "english": "cup (of gelato)",
+    "gender": "f",
+    "partOfSpeech": "noun",
+    "example": "",
+    "tags": [
+      "food"
+    ]
+  },
+  {
+    "id": "jun-cioccolato",
+    "italian": "cioccolato",
+    "english": "chocolate",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "",
+    "tags": [
+      "food"
+    ]
+  },
+  {
+    "id": "jun-vaniglia",
+    "italian": "vaniglia",
+    "english": "vanilla",
+    "gender": "f",
+    "partOfSpeech": "noun",
+    "example": "",
+    "tags": [
+      "food"
+    ]
+  },
+  {
+    "id": "jun-fragola",
+    "italian": "fragola",
+    "english": "strawberry",
+    "gender": "f",
+    "partOfSpeech": "noun",
+    "example": "",
+    "tags": [
+      "food"
+    ]
+  },
+  {
+    "id": "jun-pistacchio",
+    "italian": "pistacchio",
+    "english": "pistachio",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "",
+    "tags": [
+      "food"
+    ]
+  },
+  {
+    "id": "jun-nocciola",
+    "italian": "nocciola",
+    "english": "hazelnut",
+    "gender": "f",
+    "partOfSpeech": "noun",
+    "example": "",
+    "tags": [
+      "food"
+    ]
+  },
+  {
+    "id": "jun-gianduia",
+    "italian": "gianduia",
+    "english": "gianduja (chocolate-hazelnut)",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "",
+    "tags": [
+      "food"
+    ]
+  },
+  {
+    "id": "jun-stracciatella",
+    "italian": "stracciatella",
+    "english": "stracciatella",
+    "gender": "f",
+    "partOfSpeech": "noun",
+    "example": "",
+    "tags": [
+      "food"
+    ]
+  },
+  {
+    "id": "jun-limone",
+    "italian": "limone",
+    "english": "lemon",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "",
+    "tags": [
+      "food"
+    ]
+  },
+  {
+    "id": "jun-amarena",
+    "italian": "amarena",
+    "english": "sour cherry",
+    "gender": "f",
+    "partOfSpeech": "noun",
+    "example": "",
+    "tags": [
+      "food"
+    ]
+  },
+  {
+    "id": "jun-amaretto",
+    "italian": "amaretto",
+    "english": "amaretto",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "",
+    "tags": [
+      "food"
+    ]
+  },
+  {
+    "id": "jun-cameriera",
+    "italian": "cameriera",
+    "english": "waitress",
+    "gender": "f",
+    "partOfSpeech": "noun",
+    "example": "",
+    "tags": [
+      "restaurant"
+    ]
+  },
+  {
+    "id": "jun-carrello",
+    "italian": "carrello",
+    "english": "cart",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "",
+    "tags": [
+      "restaurant"
+    ]
+  },
+  {
+    "id": "jun-scaffale",
+    "italian": "scaffale",
+    "english": "shelf",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "",
+    "tags": [
+      "restaurant"
+    ]
+  },
+  {
+    "id": "jun-barattolo",
+    "italian": "barattolo",
+    "english": "jar",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "",
+    "tags": [
+      "restaurant"
+    ]
+  },
+  {
+    "id": "jun-farelaspesa",
+    "italian": "fare la spesa",
+    "english": "to do the shopping",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "",
+    "tags": [
+      "restaurant"
+    ]
+  },
+  {
+    "id": "jun-cortile",
+    "italian": "cortile",
+    "english": "backyard, courtyard",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "",
+    "tags": [
+      "city"
+    ]
+  },
+  {
+    "id": "jun-scivolare",
+    "italian": "scivolare",
+    "english": "to slide",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "",
+    "tags": [
+      "daily-life"
+    ]
+  },
+  {
+    "id": "jun-motorino",
+    "italian": "motorino",
+    "english": "scooter",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "",
+    "tags": [
+      "travel"
+    ]
+  },
+  {
+    "id": "jun-vespa",
+    "italian": "vespa",
+    "english": "Vespa, scooter",
+    "gender": "f",
+    "partOfSpeech": "noun",
+    "example": "",
+    "tags": [
+      "travel"
+    ]
+  },
+  {
+    "id": "jun-treno",
+    "italian": "treno",
+    "english": "train",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "",
+    "tags": [
+      "travel"
+    ]
+  },
+  {
+    "id": "jun-cartina",
+    "italian": "cartina",
+    "english": "map",
+    "gender": "f",
+    "partOfSpeech": "noun",
+    "example": "",
+    "tags": [
+      "travel"
+    ]
+  },
+  {
+    "id": "jun-mappa",
+    "italian": "mappa",
+    "english": "map",
+    "gender": "f",
+    "partOfSpeech": "noun",
+    "example": "",
+    "tags": [
+      "travel"
+    ]
+  },
+  {
+    "id": "jun-macchinafotografica",
+    "italian": "macchina fotografica",
+    "english": "camera",
+    "gender": "f",
+    "partOfSpeech": "noun",
+    "example": "",
+    "tags": [
+      "daily-life"
+    ]
+  },
+  {
+    "id": "jun-telecamera",
+    "italian": "telecamera",
+    "english": "video camera",
+    "gender": "f",
+    "partOfSpeech": "noun",
+    "example": "",
+    "tags": [
+      "daily-life"
+    ]
+  },
+  {
+    "id": "jun-orologio",
+    "italian": "orologio",
+    "english": "watch, clock",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "",
+    "tags": [
+      "daily-life"
+    ]
+  },
+  {
+    "id": "jun-lilla",
+    "italian": "lilla",
+    "english": "lilac",
+    "gender": null,
+    "partOfSpeech": "adjective",
+    "example": "",
+    "tags": [
+      "colors"
+    ]
+  },
+  {
+    "id": "jun-coppia",
+    "italian": "coppia",
+    "english": "couple, pair",
+    "gender": "f",
+    "partOfSpeech": "noun",
+    "example": "",
+    "tags": [
+      "family"
+    ]
+  },
+  {
+    "id": "jun-bosco",
+    "italian": "bosco",
+    "english": "woods",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "",
+    "tags": [
+      "nature"
+    ]
+  },
+  {
+    "id": "jun-quadro",
+    "italian": "quadro",
+    "english": "painting",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "",
+    "tags": [
+      "descrizione"
+    ]
+  },
+  {
+    "id": "jun-dettaglio",
+    "italian": "dettaglio",
+    "english": "detail",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "",
+    "tags": [
+      "descrizione"
+    ]
+  },
+  {
+    "id": "jun-compito",
+    "italian": "compito",
+    "english": "homework, task",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "",
+    "tags": [
+      "daily-life"
+    ]
+  },
+  {
+    "id": "jun-amica",
+    "italian": "amica",
+    "english": "friend (female)",
+    "gender": "f",
+    "partOfSpeech": "noun",
+    "example": "",
+    "tags": [
+      "family"
+    ]
+  },
+  {
+    "id": "jun-costanza",
+    "italian": "costanza",
+    "english": "consistency, perseverance",
+    "gender": "f",
+    "partOfSpeech": "noun",
+    "example": "",
+    "tags": [
+      "daily-life"
+    ]
+  },
+  {
+    "id": "jun-voto",
+    "italian": "voto",
+    "english": "grade, mark",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "",
+    "tags": [
+      "daily-life"
+    ]
+  },
+  {
+    "id": "jun-inizio",
+    "italian": "inizio",
+    "english": "beginning",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "",
+    "tags": [
+      "daily-life"
+    ]
+  },
+  {
+    "id": "jun-gara",
+    "italian": "gara",
+    "english": "race, competition",
+    "gender": "f",
+    "partOfSpeech": "noun",
+    "example": "",
+    "tags": [
+      "daily-life"
+    ]
+  },
+  {
+    "id": "jun-atleta",
+    "italian": "atleta",
+    "english": "athlete",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "",
+    "tags": [
+      "daily-life"
+    ]
+  },
+  {
+    "id": "jun-migliorare",
+    "italian": "migliorare",
+    "english": "to improve",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "",
+    "tags": [
+      "present-tense"
+    ]
+  },
+  {
+    "id": "jun-notare",
+    "italian": "notare",
+    "english": "to notice",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "",
+    "tags": [
+      "present-tense"
+    ]
+  },
+  {
+    "id": "jun-festeggiare",
+    "italian": "festeggiare",
+    "english": "to celebrate",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "",
+    "tags": [
+      "present-tense"
+    ]
+  },
+  {
+    "id": "jun-effettuare",
+    "italian": "effettuare",
+    "english": "to carry out (formal)",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "",
+    "tags": [
+      "present-tense"
+    ]
+  },
+  {
+    "id": "jun-subito",
+    "italian": "subito",
+    "english": "immediately",
+    "gender": null,
+    "partOfSpeech": "adverb",
+    "example": "",
+    "tags": []
+  },
+  {
+    "id": "jun-meglio",
+    "italian": "meglio",
+    "english": "better (adverb)",
+    "gender": null,
+    "partOfSpeech": "adverb",
+    "example": "",
+    "tags": []
+  },
+  {
+    "id": "jun-migliore",
+    "italian": "migliore",
+    "english": "better (adjective)",
+    "gender": null,
+    "partOfSpeech": "adjective",
+    "example": "",
+    "tags": [
+      "adjectives"
+    ]
+  },
+  {
+    "id": "jun-immediatamente",
+    "italian": "immediatamente",
+    "english": "immediately",
+    "gender": null,
+    "partOfSpeech": "adverb",
+    "example": "",
+    "tags": []
+  },
+  {
+    "id": "jun-presumibilmente",
+    "italian": "presumibilmente",
+    "english": "presumably",
+    "gender": null,
+    "partOfSpeech": "adverb",
+    "example": "",
+    "tags": []
+  },
+  {
+    "id": "jun-rapidamente",
+    "italian": "rapidamente",
+    "english": "rapidly",
+    "gender": null,
+    "partOfSpeech": "adverb",
+    "example": "",
+    "tags": []
+  },
+  {
+    "id": "jun-rabbiosamente",
+    "italian": "rabbiosamente",
+    "english": "angrily",
+    "gender": null,
+    "partOfSpeech": "adverb",
+    "example": "",
+    "tags": []
+  },
+  {
+    "id": "jun-stupidamente",
+    "italian": "stupidamente",
+    "english": "stupidly",
+    "gender": null,
+    "partOfSpeech": "adverb",
+    "example": "",
+    "tags": []
+  },
+  {
+    "id": "jun-spegnere",
+    "italian": "spegnere",
+    "english": "to turn off",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "",
+    "tags": [
+      "present-tense"
+    ]
+  },
+  {
+    "id": "jun-produrre",
+    "italian": "produrre",
+    "english": "to produce",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "",
+    "tags": [
+      "present-tense"
+    ]
+  },
+  {
+    "id": "jun-piangere",
+    "italian": "piangere",
+    "english": "to cry",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "",
+    "tags": [
+      "present-tense"
+    ]
+  },
+  {
+    "id": "jun-accendere",
+    "italian": "accendere",
+    "english": "to turn on, to light",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "",
+    "tags": [
+      "present-tense"
+    ]
+  },
+  {
+    "id": "jun-correggere",
+    "italian": "correggere",
+    "english": "to correct",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "",
+    "tags": [
+      "present-tense"
+    ]
+  },
+  {
+    "id": "jun-chiedere",
+    "italian": "chiedere",
+    "english": "to ask",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "",
+    "tags": [
+      "present-tense"
+    ]
+  },
+  {
+    "id": "jun-vincere",
+    "italian": "vincere",
+    "english": "to win",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "",
+    "tags": [
+      "present-tense"
+    ]
+  },
+  {
+    "id": "jun-spingere",
+    "italian": "spingere",
+    "english": "to push",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "",
+    "tags": [
+      "present-tense"
+    ]
+  },
+  {
+    "id": "jun-succedere",
+    "italian": "succedere",
+    "english": "to happen",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "",
+    "tags": [
+      "present-tense"
+    ]
+  },
+  {
+    "id": "jun-permettere",
+    "italian": "permettere",
+    "english": "to allow, to permit",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "",
+    "tags": [
+      "present-tense"
+    ]
+  },
+  {
+    "id": "jun-spendere",
+    "italian": "spendere",
+    "english": "to spend",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "",
+    "tags": [
+      "present-tense"
+    ]
+  },
+  {
+    "id": "jun-nascere",
+    "italian": "nascere",
+    "english": "to be born",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "",
+    "tags": [
+      "present-tense"
+    ]
+  },
+  {
+    "id": "jun-crescere",
+    "italian": "crescere",
+    "english": "to grow",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "",
+    "tags": [
+      "present-tense"
+    ]
+  },
+  {
+    "id": "jun-ingrassare",
+    "italian": "ingrassare",
+    "english": "to gain weight",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "",
+    "tags": [
+      "present-tense"
+    ]
+  },
+  {
+    "id": "jun-dimagrire",
+    "italian": "dimagrire",
+    "english": "to lose weight",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "",
+    "tags": [
+      "present-tense"
+    ]
+  },
+  {
+    "id": "jun-diventare",
+    "italian": "diventare",
+    "english": "to become",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "",
+    "tags": [
+      "present-tense"
+    ]
+  }
+]
