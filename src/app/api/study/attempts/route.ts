@@ -1,5 +1,7 @@
 import { auth } from "@/lib/auth";
 import { prisma } from "@/lib/prisma";
+import { progressTag } from "@/lib/progress";
+import { revalidateTag } from "next/cache";
 import { NextResponse } from "next/server";
 
 export async function POST(req: Request) {
@@ -33,6 +35,9 @@ export async function POST(req: Request) {
       answer: answer ?? null,
     },
   });
+
+  // New attempt → every cached progress aggregate for this user is stale.
+  revalidateTag(progressTag(session.user.id), "max");
 
   return NextResponse.json(attempt);
 }

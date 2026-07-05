@@ -1,6 +1,7 @@
+import { unstable_cache } from "next/cache";
 import { prisma } from "@/lib/prisma";
 import { SUBJECTS, getVocabById } from "@/lib/content";
-import { DRILL_CONTENT_TYPE_SUBJECT } from "@/lib/drills";
+import { DRILL_CONTENT_TYPE_SUBJECT, LEARN_PATH } from "@/lib/drills";
 
 export type ItemStats = {
   contentId: string;
@@ -17,34 +18,59 @@ export type ModeStats = {
   accuracy: number;
 };
 
+// ── Per-user caching ───────────────────────────────────────────────────────────
+// The attempt-history scans below (learn stats, due list, mistakes) are cached
+// per user and invalidated by revalidateTag(progressTag(userId)) whenever an
+// attempt or session is written. The short revalidate window keeps
+// time-dependent values (streak, due counts) from drifting too far between
+// writes. NOTE: CardAttempt has no DB index yet — @@index([userId, createdAt])
+// is worth a deliberate Neon migration if history grows large.
+
+/** Cache tag covering everything derived from a user's attempt history. */
+export function progressTag(userId: string): string {
+  return `progress-${userId}`;
+}
+
+function cached<T>(userId: string, key: string, fn: () => Promise<T>): Promise<T> {
+  return unstable_cache(fn, [key, userId], {
+    tags: [progressTag(userId)],
+    revalidate: 120,
+  })();
+}
+
+// ── Item / mode accuracy (SQL aggregates — no row transfer) ────────────────────
+
 export async function getUserItemStats(
   userId: string,
   contentType?: string
 ): Promise<ItemStats[]> {
-  const attempts = await prisma.cardAttempt.findMany({
-    where: { userId, ...(contentType ? { contentType } : {}) },
-    select: { contentId: true, contentType: true, correct: true },
-  });
+  const where = { userId, ...(contentType ? { contentType } : {}) };
+  const [totals, corrects] = await Promise.all([
+    prisma.cardAttempt.groupBy({
+      by: ["contentType", "contentId"],
+      where,
+      _count: { _all: true },
+    }),
+    prisma.cardAttempt.groupBy({
+      by: ["contentType", "contentId"],
+      where: { ...where, correct: true },
+      _count: { _all: true },
+    }),
+  ]);
 
-  const map = new Map<string, { total: number; correct: number; contentType: string }>();
+  const correctByKey = new Map(
+    corrects.map((c) => [`${c.contentType}::${c.contentId}`, c._count._all])
+  );
 
-  for (const a of attempts) {
-    const key = `${a.contentType}::${a.contentId}`;
-    const existing = map.get(key) ?? { total: 0, correct: 0, contentType: a.contentType };
-    existing.total += 1;
-    existing.correct += a.correct ? 1 : 0;
-    map.set(key, existing);
-  }
-
-  return Array.from(map.entries())
-    .map(([key, stats]) => {
-      const [, contentId] = key.split("::");
+  return totals
+    .map((t) => {
+      const correct = correctByKey.get(`${t.contentType}::${t.contentId}`) ?? 0;
       return {
-        contentId,
-        contentType: stats.contentType,
-        total: stats.total,
-        correct: stats.correct,
-        accuracy: stats.total > 0 ? stats.correct / stats.total : 0,
+        contentId: t.contentId,
+        contentType: t.contentType,
+        total: t._count._all,
+        correct,
+        accuracy: t._count._all > 0 ? correct / t._count._all : 0,
       };
     })
     .filter((s) => s.total >= 3);
@@ -60,18 +86,29 @@ export async function getWeakItems(
 }
 
 export async function getModeStats(userId: string): Promise<ModeStats[]> {
-  const sessions = await prisma.studySession.findMany({
-    where: { userId },
-    include: { attempts: { select: { correct: true } } },
-  });
+  const attemptWhere = { userId, sessionId: { not: null } };
+  const [sessions, totals, corrects] = await Promise.all([
+    prisma.studySession.findMany({ where: { userId }, select: { id: true, mode: true } }),
+    prisma.cardAttempt.groupBy({ by: ["sessionId"], where: attemptWhere, _count: { _all: true } }),
+    prisma.cardAttempt.groupBy({
+      by: ["sessionId"],
+      where: { ...attemptWhere, correct: true },
+      _count: { _all: true },
+    }),
+  ]);
 
+  const modeBySession = new Map(sessions.map((s) => [s.id, s.mode]));
   const modeMap = new Map<string, { total: number; correct: number }>();
-
-  for (const session of sessions) {
-    const existing = modeMap.get(session.mode) ?? { total: 0, correct: 0 };
-    existing.total += session.attempts.length;
-    existing.correct += session.attempts.filter((a) => a.correct).length;
-    modeMap.set(session.mode, existing);
+  for (const s of sessions) {
+    if (!modeMap.has(s.mode)) modeMap.set(s.mode, { total: 0, correct: 0 });
+  }
+  for (const t of totals) {
+    const mode = modeBySession.get(t.sessionId!);
+    if (mode) modeMap.get(mode)!.total += t._count._all;
+  }
+  for (const c of corrects) {
+    const mode = modeBySession.get(c.sessionId!);
+    if (mode) modeMap.get(mode)!.correct += c._count._all;
   }
 
   return Array.from(modeMap.entries()).map(([mode, stats]) => ({
@@ -81,6 +118,8 @@ export async function getModeStats(userId: string): Promise<ModeStats[]> {
     accuracy: stats.total > 0 ? stats.correct / stats.total : 0,
   }));
 }
+
+// ── Spaced repetition (Leitner) ────────────────────────────────────────────────
 
 // Leitner box → days until an item is due again, keyed by trailing correct-streak.
 const LEITNER_INTERVAL_DAYS: Record<number, number> = { 0: 0, 1: 1, 2: 3, 3: 7, 4: 14 };
@@ -98,23 +137,12 @@ export type DueItem = {
   overdueMs: number;
 };
 
-/**
- * Spaced-repetition due list computed from existing CardAttempt rows (no schema change).
- * For each vocab/flashcard contentId: take its attempts in chronological order, find the
- * trailing run of correct answers, map that streak to a Leitner interval, and mark the item
- * due when now >= lastAttempt + interval. Returns most-overdue first.
- */
-export async function getDueVocabIds(
-  userId: string,
-  now: Date = new Date()
-): Promise<DueItem[]> {
-  const attempts = await prisma.cardAttempt.findMany({
-    where: { userId, contentType: { in: [...DUE_CONTENT_TYPES] } },
-    select: { contentId: true, correct: true, createdAt: true },
-    orderBy: { createdAt: "asc" },
-  });
-
-  // contentId → chronologically-ordered attempts (query already sorts ascending)
+/** Pure Leitner due-list computation, exported for tests. */
+export function computeDueItems(
+  attempts: { contentId: string; correct: boolean; createdAt: Date }[],
+  now: Date
+): DueItem[] {
+  // contentId → chronologically-ordered attempts (callers sort ascending)
   const byContent = new Map<string, { correct: boolean; createdAt: Date }[]>();
   for (const a of attempts) {
     const list = byContent.get(a.contentId) ?? [];
@@ -140,22 +168,42 @@ export async function getDueVocabIds(
   return due;
 }
 
-export async function getDueVocabCount(
-  userId: string,
-  now: Date = new Date()
-): Promise<number> {
+async function fetchDueVocabIds(userId: string, now: Date): Promise<DueItem[]> {
+  const attempts = await prisma.cardAttempt.findMany({
+    where: { userId, contentType: { in: [...DUE_CONTENT_TYPES] } },
+    select: { contentId: true, correct: true, createdAt: true },
+    orderBy: { createdAt: "asc" },
+  });
+  return computeDueItems(attempts, now);
+}
+
+/**
+ * Spaced-repetition due list computed from existing CardAttempt rows (no schema
+ * change). For each vocab/flashcard contentId: take its attempts in chronological
+ * order, find the trailing run of correct answers, map that streak to a Leitner
+ * interval, and mark the item due when now >= lastAttempt + interval. Returns
+ * most-overdue first. Passing `now` (tests) bypasses the cache.
+ */
+export async function getDueVocabIds(userId: string, now?: Date): Promise<DueItem[]> {
+  if (now) {
+    const items = await fetchDueVocabIds(userId, now);
+    return items;
+  }
+  const items = await cached(userId, "due-vocab", () => fetchDueVocabIds(userId, new Date()));
+  // unstable_cache round-trips through JSON; shape here is already plain data.
+  return items;
+}
+
+export async function getDueVocabCount(userId: string, now?: Date): Promise<number> {
   const due = await getDueVocabIds(userId, now);
   return due.length;
 }
 
+// ── Mistakes ───────────────────────────────────────────────────────────────────
+
 export type MistakeItem = { contentId: string; contentType: string; wrong: number };
 
-/**
- * Items whose MOST RECENT attempt was incorrect — i.e. still unresolved mistakes.
- * Answering one correctly makes its latest attempt correct, so it clears from the list.
- * Ordered by total times missed (most-missed first).
- */
-export async function getMistakeItems(userId: string): Promise<MistakeItem[]> {
+async function fetchMistakeItems(userId: string): Promise<MistakeItem[]> {
   const attempts = await prisma.cardAttempt.findMany({
     where: { userId },
     orderBy: { createdAt: "asc" },
@@ -173,6 +221,15 @@ export async function getMistakeItems(userId: string): Promise<MistakeItem[]> {
     .filter((e) => !e.lastCorrect)
     .sort((a, b) => b.wrong - a.wrong)
     .map(({ contentId, contentType, wrong }) => ({ contentId, contentType, wrong }));
+}
+
+/**
+ * Items whose MOST RECENT attempt was incorrect — i.e. still unresolved mistakes.
+ * Answering one correctly makes its latest attempt correct, so it clears from the list.
+ * Ordered by total times missed (most-missed first).
+ */
+export async function getMistakeItems(userId: string): Promise<MistakeItem[]> {
+  return cached(userId, "mistakes", () => fetchMistakeItems(userId));
 }
 
 export async function getRecentSessions(userId: string, limit = 5) {
@@ -222,7 +279,7 @@ function dayKey(d: Date): string {
 }
 
 /** Consecutive days practised, counting back from today (stays alive if today not done yet). */
-function computeStreak(dayKeys: Set<string>, now: Date): number {
+export function computeStreak(dayKeys: Set<string>, now: Date): number {
   if (dayKeys.size === 0) return 0;
   const cursor = new Date(now);
   // If nothing today, start counting from yesterday so the streak isn't broken mid-day.
@@ -236,7 +293,7 @@ function computeStreak(dayKeys: Set<string>, now: Date): number {
 }
 
 /** Mastery level 0–5 for a subject, from correct count gated by accuracy. */
-function masteryLevel(correct: number, accuracy: number): number {
+export function masteryLevel(correct: number, accuracy: number): number {
   if (correct < 4 || accuracy < 0.5) return Math.min(1, Math.floor(correct / 4));
   // 1 level per ~8 correct answers, capped at 5
   return Math.min(5, 1 + Math.floor(correct / 8));
@@ -260,14 +317,7 @@ export type LearnStats = {
   bySubject: Record<string, SubjectProgress>;
 };
 
-/**
- * Everything the Duolingo-style Learn path needs, computed from persisted CardAttempt
- * rows (no extra schema). XP, streak and per-subject mastery all survive across devices.
- */
-export async function getLearnStats(
-  userId: string,
-  now: Date = new Date()
-): Promise<LearnStats> {
+async function fetchLearnStats(userId: string, now: Date): Promise<LearnStats> {
   const attempts: AttemptRow[] = await prisma.cardAttempt.findMany({
     where: { userId },
     select: { contentType: true, contentId: true, correct: true, createdAt: true },
@@ -300,4 +350,96 @@ export async function getLearnStats(
   }
 
   return { xp, streak, todayCorrect, todayXp, totalCorrect, bySubject };
+}
+
+/**
+ * Everything the Duolingo-style Learn path needs, computed from persisted
+ * CardAttempt rows (no extra schema). XP, streak and per-subject mastery all
+ * survive across devices. Passing `now` (tests) bypasses the cache.
+ */
+export async function getLearnStats(userId: string, now?: Date): Promise<LearnStats> {
+  if (now) return fetchLearnStats(userId, now);
+  return cached(userId, "learn-stats", () => fetchLearnStats(userId, new Date()));
+}
+
+// ── "Continue" recommendation ──────────────────────────────────────────────────
+
+export type NextUp = { href: string; title: string; detail: string; emoji: string };
+
+/** Pure priority logic behind the Continue CTA, exported for tests. */
+export function pickNextUp(input: {
+  dueCount: number;
+  mistakeCount: number;
+  bySubject: Record<string, SubjectProgress>;
+}): NextUp {
+  const { dueCount, mistakeCount, bySubject } = input;
+  if (dueCount > 0) {
+    return {
+      href: "/study/review",
+      title: "Review",
+      detail: `${dueCount} item${dueCount === 1 ? "" : "s"} due`,
+      emoji: "🔁",
+    };
+  }
+  if (mistakeCount >= 3) {
+    return {
+      href: "/study/mistakes",
+      title: "Fix your mistakes",
+      detail: `${mistakeCount} to clear`,
+      emoji: "🩹",
+    };
+  }
+
+  const subjectById = new Map(SUBJECTS.map((s) => [s.id, s]));
+
+  // Weakest in-progress topic on the Learn path…
+  const inProgress = LEARN_PATH
+    .map((p) => ({ ...p, prog: bySubject[p.subjectId] }))
+    .filter((p) => p.prog && p.prog.attempts > 0 && p.prog.level < 5);
+  if (inProgress.length > 0) {
+    const weakest = inProgress.reduce((a, b) =>
+      b.prog!.level < a.prog!.level ||
+      (b.prog!.level === a.prog!.level && b.prog!.accuracy < a.prog!.accuracy)
+        ? b
+        : a
+    );
+    const subject = subjectById.get(weakest.subjectId);
+    return {
+      href: weakest.route,
+      title: `Level up ${subject?.label ?? weakest.subjectId}`,
+      detail: `Level ${weakest.prog!.level} of 5`,
+      emoji: subject?.emoji ?? "📈",
+    };
+  }
+
+  // …or the next new topic on the path.
+  const nextNew = LEARN_PATH.find((p) => (bySubject[p.subjectId]?.attempts ?? 0) === 0);
+  if (nextNew) {
+    const subject = subjectById.get(nextNew.subjectId);
+    return {
+      href: nextNew.route,
+      title: `Start ${subject?.label ?? nextNew.subjectId}`,
+      detail: "New topic",
+      emoji: subject?.emoji ?? "✨",
+    };
+  }
+
+  return { href: "/study/mixed", title: "Daily mix", detail: "Keep your streak alive", emoji: "🎲" };
+}
+
+/**
+ * What the user should do next, one tap: due reviews → unresolved mistakes →
+ * weakest in-progress Learn-path topic → next new topic → mixed practice.
+ */
+export async function getNextUp(userId: string): Promise<NextUp> {
+  const [dueCount, mistakes, learn] = await Promise.all([
+    getDueVocabCount(userId),
+    getMistakeItems(userId),
+    getLearnStats(userId),
+  ]);
+  return pickNextUp({
+    dueCount,
+    mistakeCount: mistakes.length,
+    bySubject: learn.bySubject,
+  });
 }

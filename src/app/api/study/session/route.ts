@@ -1,5 +1,7 @@
 import { auth } from "@/lib/auth";
 import { prisma } from "@/lib/prisma";
+import { progressTag } from "@/lib/progress";
+import { revalidateTag } from "next/cache";
 import { NextResponse } from "next/server";
 
 export async function POST(req: Request) {
@@ -16,6 +18,7 @@ export async function POST(req: Request) {
     const newSession = await prisma.studySession.create({
       data: { userId: session.user.id, mode },
     });
+    revalidateTag(progressTag(session.user.id), "max");
     return NextResponse.json(newSession);
   }
 
