@@ -1,18 +1,20 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
-import { Label } from "@/components/ui/label";
-import { useStudySession } from "@/lib/useStudySession";
 import { useSpeech } from "@/lib/useSpeech";
 import type { DrillQuestion } from "@/lib/content";
 import { cn } from "@/lib/utils";
-import { getBoostEnabled } from "@/components/BoostToggle";
+import { useQuizEngine, buildSessionPool, shuffle, DEFAULT_LIMIT } from "@/lib/useQuizEngine";
+import { isAnswerCorrect, isTypeable } from "@/lib/answer-check";
 import SubjectReference, { SUBJECT_REFERENCE_DATA } from "@/components/SubjectReference";
 import CorrectBurst from "@/components/CorrectBurst";
 import GlossedText from "@/components/GlossedText";
-import { playCorrect, playWrong } from "@/lib/feedback";
+import QuizHeader from "@/components/quiz/QuizHeader";
+import LimitPicker from "@/components/quiz/LimitPicker";
+import DoneScreen from "@/components/quiz/DoneScreen";
+import OptionList from "@/components/quiz/OptionList";
+import TypedAnswer from "@/components/quiz/TypedAnswer";
 import {
   Dialog,
   DialogContent,
@@ -21,16 +23,10 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 
-const LIMIT_OPTIONS = [10, 20, null] as const;
+/** Blank marker in drill sentences — some content uses ___ and some _____. */
+const BLANK_RE = /_{3,}/;
 
-function shuffle<T>(arr: T[]): T[] {
-  const a = [...arr];
-  for (let i = a.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [a[i], a[j]] = [a[j], a[i]];
-  }
-  return a;
-}
+export type DrillInputMode = "choice" | "typed";
 
 interface DrillQuizProps {
   title: string;
@@ -43,6 +39,8 @@ interface DrillQuizProps {
   subjectId?: string;
   /** Plain-English instructions describing what the learner should do. */
   instructions?: string;
+  /** Answer mode preselected on the setup screen ("typed" once a subject is mastered). */
+  defaultInputMode?: DrillInputMode;
 }
 
 export default function DrillQuiz({
@@ -54,36 +52,39 @@ export default function DrillQuiz({
   categoryLabels,
   subjectId,
   instructions,
+  defaultInputMode = "choice",
 }: DrillQuizProps) {
   const hasReference = !!(subjectId && SUBJECT_REFERENCE_DATA[subjectId]);
   const hasCategories = categoryLabels && Object.keys(categoryLabels).length > 0;
-  const [selectedCategory, setSelectedCategory] = useState<string>("all");
-  const [limit, setLimit] = useState<number | null>(null);
-  const [started, setStarted] = useState(false);
-  const [deck, setDeck] = useState<DrillQuestion[]>([]);
-  const [index, setIndex] = useState(0);
-  const [selected, setSelected] = useState<string | null>(null);
-  const [submitted, setSubmitted] = useState(false);
-  const [showHint, setShowHint] = useState(false);
-  const [burst, setBurst] = useState(0);
-  const [score, setScore] = useState({ correct: 0, incorrect: 0 });
-  const [wrongIds, setWrongIds] = useState<string[]>([]);
-  const [done, setDone] = useState(false);
-  const { startSession, endSession, recordAttempt } = useStudySession(contentType);
-  const { speak, speaking } = useSpeech();
-  const advanceTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const anyTypeable = questions.some((q) => isTypeable(q.correct));
 
-  function clearAdvance() {
-    if (advanceTimer.current) {
-      clearTimeout(advanceTimer.current);
-      advanceTimer.current = null;
-    }
+  const [selectedCategory, setSelectedCategory] = useState<string>("all");
+  const [limit, setLimit] = useState<number | null>(DEFAULT_LIMIT);
+  const [inputMode, setInputMode] = useState<DrillInputMode>(
+    anyTypeable ? defaultInputMode : "choice"
+  );
+  const [selected, setSelected] = useState<string | null>(null);
+  const [typedValue, setTypedValue] = useState("");
+  const [showHint, setShowHint] = useState(false);
+
+  const engine = useQuizEngine<DrillQuestion>({
+    mode: contentType,
+    getId: (q) => q.id,
+    getRecordType: (q) => q.sourceType ?? contentType,
+  });
+
+  // Reset per-question local state when the engine advances (render-time
+  // adjustment, per react.dev "you might not need an effect").
+  const questionKey = `${engine.started ? "s" : "-"}:${engine.index}`;
+  const [prevQuestionKey, setPrevQuestionKey] = useState(questionKey);
+  if (prevQuestionKey !== questionKey) {
+    setPrevQuestionKey(questionKey);
+    setSelected(null);
+    setTypedValue("");
+    setShowHint(false);
   }
 
-  useEffect(() => {
-    return () => { endSession(); clearAdvance(); };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  const { speak, speaking } = useSpeech();
 
   function getPool(): DrillQuestion[] {
     if (!hasCategories || selectedCategory === "all") return questions;
@@ -91,80 +92,17 @@ export default function DrillQuiz({
   }
 
   function beginDrill(filterIds?: string[]) {
-    let pool: DrillQuestion[];
     if (filterIds) {
-      pool = shuffle(questions.filter((q) => filterIds.includes(q.id)));
+      engine.begin(shuffle(questions.filter((q) => filterIds.includes(q.id))));
     } else {
-      const base = getPool();
-      const weakSet = new Set(weakIds);
-      const boostEnabled = getBoostEnabled();
-      const weighted: DrillQuestion[] = [];
-      for (const q of base) {
-        const copies = boostEnabled && weakSet.has(q.id) ? 3 : 1;
-        for (let i = 0; i < copies; i++) weighted.push(q);
-      }
-      pool = shuffle(weighted);
-      if (limit !== null) pool = pool.slice(0, limit);
-    }
-    clearAdvance();
-    setDeck(pool);
-    setIndex(0);
-    setSelected(null);
-    setSubmitted(false);
-    setShowHint(false);
-    setScore({ correct: 0, incorrect: 0 });
-    setWrongIds([]);
-    setDone(false);
-    setStarted(true);
-    startSession();
-  }
-
-  function exitSession() {
-    clearAdvance();
-    endSession();
-    setStarted(false);
-    setDone(false);
-  }
-
-  const q = deck[index];
-
-  async function handleSubmit() {
-    if (submitted || !selected || !q) return;
-    setSubmitted(true);
-    const correct = selected === q.correct;
-    if (correct) {
-      setBurst((b) => b + 1);
-      playCorrect();
-      // Auto-advance on correct after the celebration (a gentle pause, not instant).
-      clearAdvance();
-      advanceTimer.current = setTimeout(() => handleNext(), 1100);
-    } else {
-      playWrong();
-    }
-    await recordAttempt(q.id, q.sourceType ?? contentType, correct, selected);
-    if (!correct) setWrongIds((ids) => [...ids, q.id]);
-    setScore((s) => ({
-      correct: s.correct + (correct ? 1 : 0),
-      incorrect: s.incorrect + (correct ? 0 : 1),
-    }));
-  }
-
-  async function handleNext() {
-    clearAdvance();
-    const next = index + 1;
-    if (next >= deck.length) {
-      await endSession();
-      setDone(true);
-    } else {
-      setIndex(next);
-      setSelected(null);
-      setSubmitted(false);
-      setShowHint(false);
+      engine.begin(buildSessionPool(getPool(), { getId: (q) => q.id, weakIds, limit }));
     }
   }
+
+  const q = engine.current;
 
   // Setup screen
-  if (!started) {
+  if (!engine.started) {
     const pool = getPool();
     const count = limit !== null ? Math.min(limit, pool.length) : pool.length;
     return (
@@ -186,7 +124,6 @@ export default function DrillQuiz({
           <div>
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wide mb-2">Category</p>
             <div className="flex flex-col gap-2">
-              {/* All option */}
               <button
                 onClick={() => setSelectedCategory("all")}
                 className={cn(
@@ -220,26 +157,40 @@ export default function DrillQuiz({
           </div>
         )}
 
-        {/* Session limit */}
-        <div>
-          <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wide mb-2">Questions per session</p>
-          <div className="flex flex-wrap gap-2">
-            {LIMIT_OPTIONS.map((l) => (
-              <button
-                key={l ?? "all"}
-                onClick={() => setLimit(l)}
-                className={cn(
-                  "px-3 py-1.5 rounded-full text-sm font-medium transition-colors",
-                  limit === l
-                    ? "bg-primary text-primary-foreground"
-                    : "bg-muted text-muted-foreground hover:bg-muted/80"
-                )}
-              >
-                {l ?? "All"}
-              </button>
-            ))}
+        {/* Answer mode */}
+        {anyTypeable && (
+          <div>
+            <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wide mb-2">Answer mode</p>
+            <div className="flex gap-2">
+              {(
+                [
+                  ["choice", "Multiple choice"],
+                  ["typed", "Typing"],
+                ] as const
+              ).map(([mode, label]) => (
+                <button
+                  key={mode}
+                  onClick={() => setInputMode(mode)}
+                  className={cn(
+                    "px-3 py-1.5 rounded-full text-sm font-medium transition-colors",
+                    inputMode === mode
+                      ? "bg-primary text-primary-foreground"
+                      : "bg-muted text-muted-foreground hover:bg-muted/80"
+                  )}
+                >
+                  {label}
+                </button>
+              ))}
+            </div>
+            {inputMode === "typed" && (
+              <p className="text-xs text-muted-foreground mt-2">
+                Type the answers yourself — harder, and better for remembering.
+              </p>
+            )}
           </div>
-        </div>
+        )}
+
+        <LimitPicker value={limit} onChange={setLimit} />
 
         <Button className="w-full h-12" onClick={() => beginDrill()} disabled={count === 0}>
           {count === 0 ? "No questions available" : `Start · ${count} question${count !== 1 ? "s" : ""}`}
@@ -249,67 +200,46 @@ export default function DrillQuiz({
   }
 
   // Done screen
-  if (done) {
-    const pct = deck.length > 0 ? Math.round((score.correct / deck.length) * 100) : 0;
+  if (engine.done) {
     return (
-      <div className="max-w-lg mx-auto px-4 py-8 flex flex-col items-center gap-6">
-        <div className="text-5xl">{pct >= 70 ? "🎉" : "📚"}</div>
-        <h1 className="text-2xl font-bold">Done!</h1>
-        <p className="text-4xl font-bold">{pct}%</p>
-        <p className="text-muted-foreground">{score.correct} / {deck.length} correct</p>
-        <div className="flex w-full max-w-xs justify-around rounded-xl border-2 border-border bg-card py-3">
-          <div className="text-center">
-            <p className="text-xl font-bold text-yellow-500">+{score.correct * 10 + score.incorrect * 2}</p>
-            <p className="text-[10px] uppercase tracking-wide text-muted-foreground">XP earned</p>
-          </div>
-          <div className="text-center">
-            <p className="text-xl font-bold">{pct}%</p>
-            <p className="text-[10px] uppercase tracking-wide text-muted-foreground">accuracy</p>
-          </div>
-        </div>
-        <Button onClick={() => beginDrill()} className="w-full max-w-xs">Try Again</Button>
-        {wrongIds.length > 0 && (
-          <Button
-            variant="outline"
-            onClick={() => beginDrill(wrongIds)}
-            className="w-full max-w-xs border-amber-400 text-amber-700 hover:bg-amber-50 dark:hover:bg-amber-950"
-          >
-            Practice {wrongIds.length} missed
-          </Button>
-        )}
-        <Button variant="outline" onClick={() => setStarted(false)} className="w-full max-w-xs">
-          Back to Setup
-        </Button>
-      </div>
+      <DoneScreen
+        score={engine.score}
+        xp={engine.xp}
+        wrongCount={engine.wrongIds.length}
+        onRetry={() => beginDrill()}
+        onPracticeMissed={() => beginDrill(engine.wrongIds)}
+        onBack={engine.backToSetup}
+      />
     );
   }
 
   if (!q) return null;
 
-  const parts = q.sentence.split("___");
+  const typed = inputMode === "typed" && isTypeable(q.correct);
+  const parts = q.sentence.split(BLANK_RE);
   const before = parts[0] ?? "";
   const after = parts[1] ?? "";
+  const submitted = engine.submitted;
+  const wasCorrect = engine.lastCorrect === true;
+
+  function handleChoiceSubmit() {
+    if (!selected) return;
+    engine.submit(selected === q!.correct, selected);
+  }
+
+  function handleTypedSubmit() {
+    engine.submit(isAnswerCorrect(typedValue, q!.correct), typedValue.trim());
+  }
 
   return (
     <div className="max-w-lg mx-auto px-4 py-6 space-y-6">
-      <div>
-        <div className="flex items-center justify-between">
-          <h1 className="font-semibold">{title}</h1>
-          <div className="flex items-center gap-3">
-            <span className="text-sm text-muted-foreground">{index + 1} / {deck.length}</span>
-            <button
-              onClick={exitSession}
-              className="text-muted-foreground hover:text-foreground transition-colors text-lg leading-none"
-              aria-label="Exit session"
-            >
-              ✕
-            </button>
-          </div>
-        </div>
-        {instructions && (
-          <p className="text-xs text-muted-foreground mt-1">{instructions}</p>
-        )}
-      </div>
+      <QuizHeader
+        title={title}
+        index={engine.index}
+        total={engine.deck.length}
+        onExit={engine.exit}
+        instructions={instructions}
+      />
 
       {/* Prompt block */}
       {q.prompt && (
@@ -321,7 +251,12 @@ export default function DrillQuiz({
 
       {/* Question card */}
       <div className="relative rounded-2xl border-2 border-border bg-card px-6 py-8 space-y-3">
-        {burst > 0 && <CorrectBurst key={burst} />}
+        {engine.burst > 0 && <CorrectBurst key={engine.burst} />}
+        {engine.currentIsRetry && (
+          <span className="absolute top-3 left-3 rounded-full bg-amber-100 px-2.5 py-1 text-xs font-medium text-amber-700 dark:bg-amber-950 dark:text-amber-300">
+            ↻ Retry
+          </span>
+        )}
         {(q.hint || hasReference) && (
           <Dialog open={showHint} onOpenChange={setShowHint}>
             <DialogTrigger asChild>
@@ -352,7 +287,7 @@ export default function DrillQuiz({
         {submitted && (
           <div className="flex justify-center">
             <button
-              onClick={() => speak(q.sentence.replace("___", q.correct))}
+              onClick={() => speak(q.sentence.replace(BLANK_RE, q.correct))}
               className={cn("text-lg transition-opacity", speaking ? "opacity-40" : "opacity-60 hover:opacity-100")}
               aria-label="Hear sentence"
             >
@@ -362,40 +297,30 @@ export default function DrillQuiz({
         )}
       </div>
 
-      {/* Options */}
-      <RadioGroup
-        value={selected ?? ""}
-        onValueChange={(v) => { if (!submitted) setSelected(v); }}
-        className="grid grid-cols-2 gap-3"
-      >
-        {q.options.map((opt) => {
-          let optClass = "border-border";
-          if (submitted) {
-            if (opt === q.correct) optClass = "border-green-500 bg-green-50 dark:bg-green-950";
-            else if (opt === selected) optClass = "border-red-400 bg-red-50 dark:bg-red-950";
-          }
-          return (
-            <Label
-              key={opt}
-              htmlFor={`opt-${opt}`}
-              className={cn(
-                "flex items-center gap-3 border-2 rounded-xl px-4 py-4 cursor-pointer transition-colors text-base",
-                optClass,
-                !submitted && selected === opt && "border-primary"
-              )}
-            >
-              <RadioGroupItem value={opt} id={`opt-${opt}`} />
-              <span className="font-medium">{opt}</span>
-            </Label>
-          );
-        })}
-      </RadioGroup>
+      {/* Answer input */}
+      {typed ? (
+        <TypedAnswer
+          value={typedValue}
+          onChange={setTypedValue}
+          onSubmit={handleTypedSubmit}
+          submitted={submitted}
+          correct={wasCorrect}
+        />
+      ) : (
+        <OptionList
+          options={q.options}
+          selected={selected}
+          submitted={submitted}
+          correct={q.correct}
+          onSelect={setSelected}
+        />
+      )}
 
       {submitted && (
         <div className="space-y-2">
-          {selected !== q.correct && (
+          {!wasCorrect && (
             <p className="text-sm font-medium text-center text-red-500">
-              Incorrect — the answer is &quot;{q.correct}&quot;
+              Incorrect — the answer is &quot;{q.correct}&quot;. You&apos;ll see this one again.
             </p>
           )}
           {q.explanation && (
@@ -408,24 +333,26 @@ export default function DrillQuiz({
 
       <div className="flex gap-3">
         {!submitted ? (
-          <Button className="flex-1 h-12" onClick={handleSubmit} disabled={!selected}>
-            Check
-          </Button>
-        ) : selected === q.correct ? (
+          !typed ? (
+            <Button className="flex-1 h-12" onClick={handleChoiceSubmit} disabled={!selected}>
+              Check
+            </Button>
+          ) : null // typed mode renders its own Check button inside the form
+        ) : wasCorrect ? (
           // Correct → auto-advances after the celebration; no button needed.
           <Button variant="ghost" className="flex-1 h-12 text-green-600 pointer-events-none">
             Correct! ✓
           </Button>
         ) : (
-          <Button className="flex-1 h-12" onClick={handleNext}>
-            {index + 1 >= deck.length ? "See Results" : "Next →"}
+          <Button className="flex-1 h-12" onClick={engine.next}>
+            {engine.index + 1 >= engine.deck.length ? "See Results" : "Next →"}
           </Button>
         )}
       </div>
 
       <div className="flex justify-between text-sm px-1">
-        <span className="text-green-600 font-medium">✓ {score.correct}</span>
-        <span className="text-red-500 font-medium">✗ {score.incorrect}</span>
+        <span className="text-green-600 font-medium">✓ {engine.score.correct}</span>
+        <span className="text-red-500 font-medium">✗ {engine.score.incorrect}</span>
       </div>
     </div>
   );
