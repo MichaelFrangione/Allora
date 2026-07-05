@@ -2,10 +2,17 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Card, CardContent } from "@/components/ui/card";
-import SubjectSelector from "@/components/SubjectSelector";
-import { tagsMatchSubject, subjectsPresent, SUBJECTS } from "@/lib/content";
+import { Button } from "@/components/ui/button";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 import type { VocabItem } from "@/lib/content";
 import type { VerbClass } from "@/lib/conjugate";
 
@@ -18,16 +25,16 @@ const POS_COLORS: Record<string, string> = {
   adverb: "bg-orange-100 text-orange-800 dark:bg-orange-900 dark:text-orange-200",
 };
 
-const POS_CHIPS = [
-  { label: "All", value: "" },
+const POS_OPTIONS = [
+  { label: "All types", value: "all" },
   { label: "Nouns", value: "noun" },
   { label: "Verbs", value: "verb" },
   { label: "Adjectives", value: "adjective" },
   { label: "Adverbs", value: "adverb" },
 ];
 
-const VERB_GROUPS = [
-  { label: "All", value: "" },
+const GROUP_OPTIONS = [
+  { label: "All verbs", value: "all" },
   { label: "-are", value: "-are" },
   { label: "-ere", value: "-ere" },
   { label: "-ire", value: "-ire" },
@@ -35,28 +42,22 @@ const VERB_GROUPS = [
   { label: "Irregular", value: "irregular" },
 ];
 
-export default function VocabBrowser({
-  initialItems,
-}: {
-  initialItems: VocabWithClass[];
-}) {
+const PAGE_SIZE = 24;
+
+export default function VocabBrowser({ initialItems }: { initialItems: VocabWithClass[] }) {
   const [query, setQuery] = useState("");
-  const [activePos, setActivePos] = useState("");
-  const [activeGroup, setActiveGroup] = useState("");
-  const [subject, setSubject] = useState<string | undefined>(undefined);
+  const [pos, setPos] = useState("all");
+  const [group, setGroup] = useState("all");
+  const [page, setPage] = useState(1);
   const [speaking, setSpeaking] = useState("");
-
-  function selectPos(value: string) {
-    setActivePos(activePos === value ? "" : value);
-    setActiveGroup("");
-  }
-
-  const availableSubjects = subjectsPresent(initialItems.map((v) => v.tags));
 
   function speak(text: string) {
     if (!window.speechSynthesis) return;
     window.speechSynthesis.cancel();
-    if (speaking === text) { setSpeaking(""); return; }
+    if (speaking === text) {
+      setSpeaking("");
+      return;
+    }
     const utterance = new SpeechSynthesisUtterance(text);
     utterance.lang = "it-IT";
     utterance.rate = 0.9;
@@ -67,96 +68,91 @@ export default function VocabBrowser({
   }
 
   const q = query.toLowerCase();
-  // Items matching search + subject only (before pos/group) — used for the filter counts.
-  const base = initialItems.filter((v) => {
-    const matchesSubject = !subject || tagsMatchSubject(v.tags, subject);
-    const matchesQuery =
-      !q || v.italian.toLowerCase().includes(q) || v.english.toLowerCase().includes(q);
-    return matchesSubject && matchesQuery;
-  });
-  const verbsInBase = base.filter((v) => v.partOfSpeech === "verb");
-  const posCount = (value: string) =>
-    value === "" ? base.length : base.filter((v) => v.partOfSpeech === value).length;
-  const groupCount = (value: string) =>
-    value === "" ? verbsInBase.length : verbsInBase.filter((v) => v.verbClass === value).length;
+  const searched = initialItems.filter(
+    (v) => !q || v.italian.toLowerCase().includes(q) || v.english.toLowerCase().includes(q),
+  );
+  const verbsSearched = searched.filter((v) => v.partOfSpeech === "verb");
+  const count = (value: string) =>
+    value === "all" ? searched.length : searched.filter((v) => v.partOfSpeech === value).length;
+  const groupCountOf = (value: string) =>
+    value === "all" ? verbsSearched.length : verbsSearched.filter((v) => v.verbClass === value).length;
 
-  const filtered = base.filter((v) => {
-    const matchesPos = !activePos || v.partOfSpeech === activePos;
-    const matchesGroup = activePos !== "verb" || !activeGroup || v.verbClass === activeGroup;
-    return matchesPos && matchesGroup;
-  });
+  const filtered = searched.filter(
+    (v) =>
+      (pos === "all" || v.partOfSpeech === pos) &&
+      (pos !== "verb" || group === "all" || v.verbClass === group),
+  );
+
+  const totalPages = Math.max(1, Math.ceil(filtered.length / PAGE_SIZE));
+  const current = Math.min(page, totalPages);
+  const pageItems = filtered.slice((current - 1) * PAGE_SIZE, current * PAGE_SIZE);
 
   return (
     <div className="max-w-lg mx-auto px-4 py-6 space-y-4">
       <h1 className="text-2xl font-bold">Vocabulary</h1>
 
-      <SubjectSelector subjects={availableSubjects} value={subject} onChange={setSubject} />
-
       <Input
         placeholder="Search Italian or English…"
         value={query}
-        onChange={(e) => setQuery(e.target.value)}
+        onChange={(e) => {
+          setQuery(e.target.value);
+          setPage(1);
+        }}
         className="text-base"
       />
 
-      {/* Type filter */}
-      <div className="flex flex-wrap gap-1.5">
-        {POS_CHIPS.map(({ label, value }) => {
-          const count = posCount(value);
-          const active = activePos === value;
-          return (
-            <button
-              key={value}
-              onClick={() => selectPos(value)}
-              disabled={count === 0 && !active}
-              className={`text-sm px-3 py-1.5 rounded-full border transition-colors disabled:opacity-40 ${
-                active
-                  ? "bg-primary text-primary-foreground border-primary"
-                  : "border-border hover:bg-accent"
-              }`}
-            >
-              {label}
-              <span className={`ml-1.5 text-xs ${active ? "opacity-80" : "text-muted-foreground"}`}>
-                {count}
-              </span>
-            </button>
-          );
-        })}
+      <div className="flex gap-2">
+        <Select
+          value={pos}
+          onValueChange={(v) => {
+            setPos(v);
+            setGroup("all");
+            setPage(1);
+          }}
+        >
+          <SelectTrigger className="flex-1">
+            <SelectValue />
+          </SelectTrigger>
+          <SelectContent>
+            {POS_OPTIONS.map((o) => (
+              <SelectItem key={o.value} value={o.value}>
+                {o.label} ({count(o.value)})
+              </SelectItem>
+            ))}
+          </SelectContent>
+        </Select>
+
+        {pos === "verb" && (
+          <Select
+            value={group}
+            onValueChange={(v) => {
+              setGroup(v);
+              setPage(1);
+            }}
+          >
+            <SelectTrigger className="flex-1">
+              <SelectValue />
+            </SelectTrigger>
+            <SelectContent>
+              {GROUP_OPTIONS.map((o) => (
+                <SelectItem key={o.value} value={o.value} disabled={groupCountOf(o.value) === 0}>
+                  {o.label} ({groupCountOf(o.value)})
+                </SelectItem>
+              ))}
+            </SelectContent>
+          </Select>
+        )}
       </div>
 
-      {/* Verb conjugation group — only when Verbs is selected */}
-      {activePos === "verb" && (
-        <div className="flex flex-wrap items-center gap-1.5 border-l-2 border-primary/40 pl-3 ml-0.5">
-          {VERB_GROUPS.map(({ label, value }) => {
-            const count = groupCount(value);
-            const active = activeGroup === value;
-            return (
-              <button
-                key={value || "all"}
-                onClick={() => setActiveGroup(value)}
-                disabled={count === 0 && value !== ""}
-                className={`text-xs px-2.5 py-1 rounded-full border transition-colors disabled:opacity-40 ${
-                  active
-                    ? "bg-primary text-primary-foreground border-primary"
-                    : "border-border hover:bg-accent"
-                }`}
-              >
-                {label}
-                <span className={`ml-1 ${active ? "opacity-80" : "text-muted-foreground"}`}>{count}</span>
-              </button>
-            );
-          })}
-        </div>
-      )}
-
-      <p className="text-sm text-muted-foreground">{filtered.length} words</p>
+      <p className="text-sm text-muted-foreground">
+        {filtered.length} {filtered.length === 1 ? "word" : "words"}
+      </p>
 
       <div className="space-y-2">
-        {filtered.map((item) => (
+        {pageItems.map((item) => (
           <Link key={item.id} href={`/vocab/${item.id}`} className="block">
             <Card className="transition-colors hover:bg-accent">
-            <CardContent className="pt-3 pb-3 px-4">
-              <div className="flex items-start justify-between gap-2">
+              <CardContent className="pt-3 pb-3 px-4">
                 <div className="flex-1 min-w-0">
                   <div className="flex items-center gap-2 flex-wrap">
                     <span className="font-semibold text-base">{item.italian}</span>
@@ -174,7 +170,6 @@ export default function VocabBrowser({
                     {item.gender && (
                       <span className="text-xs text-muted-foreground">({item.gender}.)</span>
                     )}
-
                     <span
                       className={`text-[10px] px-1.5 py-0.5 rounded font-medium ${
                         POS_COLORS[item.partOfSpeech] ?? "bg-muted text-muted-foreground"
@@ -182,25 +177,13 @@ export default function VocabBrowser({
                     >
                       {item.partOfSpeech}
                     </span>
-                    {(() => {
-                      const s = SUBJECTS.find((sub) => tagsMatchSubject(item.tags, sub.id));
-                      return s ? (
-                        <span className="text-[10px] px-1.5 py-0.5 rounded font-medium bg-muted text-muted-foreground">
-                          {s.emoji} {s.label}
-                        </span>
-                      ) : null;
-                    })()}
                   </div>
                   {item.pronunciation && (
                     <p className="text-xs text-muted-foreground italic tracking-wide">{item.pronunciation}</p>
                   )}
                   <p className="text-sm text-muted-foreground mt-0.5">{item.english}</p>
-                  {item.example && (
-                    <p className="text-xs text-muted-foreground italic mt-1">{item.example}</p>
-                  )}
                 </div>
-              </div>
-            </CardContent>
+              </CardContent>
             </Card>
           </Link>
         ))}
@@ -208,6 +191,20 @@ export default function VocabBrowser({
 
       {filtered.length === 0 && (
         <p className="text-center text-muted-foreground py-8">No words found.</p>
+      )}
+
+      {totalPages > 1 && (
+        <div className="flex items-center justify-between pt-2">
+          <Button variant="outline" size="sm" disabled={current <= 1} onClick={() => setPage(current - 1)}>
+            <ChevronLeft className="h-4 w-4" /> Prev
+          </Button>
+          <span className="text-sm text-muted-foreground">
+            Page {current} of {totalPages}
+          </span>
+          <Button variant="outline" size="sm" disabled={current >= totalPages} onClick={() => setPage(current + 1)}>
+            Next <ChevronRight className="h-4 w-4" />
+          </Button>
+        </div>
       )}
     </div>
   );
