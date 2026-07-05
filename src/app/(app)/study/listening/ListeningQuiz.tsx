@@ -2,118 +2,67 @@
 
 import { useEffect, useRef, useState } from "react";
 import { Button } from "@/components/ui/button";
-import { useStudySession } from "@/lib/useStudySession";
 import { useSpeech } from "@/lib/useSpeech";
 import type { VocabItem } from "@/lib/content";
 import { cn } from "@/lib/utils";
+import { useQuizEngine, buildSessionPool, shuffle, DEFAULT_LIMIT } from "@/lib/useQuizEngine";
 import CorrectBurst from "@/components/CorrectBurst";
-import { playCorrect, playWrong } from "@/lib/feedback";
-
-const LIMIT_OPTIONS = [20, 40, null] as const;
-
-function shuffle<T>(arr: T[]): T[] {
-  const a = [...arr];
-  for (let i = a.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [a[i], a[j]] = [a[j], a[i]];
-  }
-  return a;
-}
+import QuizHeader from "@/components/quiz/QuizHeader";
+import LimitPicker from "@/components/quiz/LimitPicker";
+import DoneScreen from "@/components/quiz/DoneScreen";
 
 type Question = { item: VocabItem; options: string[] };
 
-function buildDeck(items: VocabItem[], limit: number | null): Question[] {
-  const pool = items.filter((v) => v.english && v.italian);
-  const chosen = limit === null ? shuffle(pool) : shuffle(pool).slice(0, limit);
-  return chosen
-    .map((item) => {
-      const distractors = shuffle(pool.filter((v) => v.english !== item.english))
-        .slice(0, 3)
-        .map((v) => v.english);
-      return { item, options: shuffle([item.english, ...distractors]) };
-    });
+function buildQuestion(item: VocabItem, pool: VocabItem[]): Question {
+  const distractors = shuffle(pool.filter((v) => v.english !== item.english))
+    .slice(0, 3)
+    .map((v) => v.english);
+  return { item, options: shuffle([item.english, ...distractors]) };
 }
 
 export default function ListeningQuiz({ items }: { items: VocabItem[] }) {
-  const [started, setStarted] = useState(false);
-  const [limit, setLimit] = useState<number | null>(20);
-  const [deck, setDeck] = useState<Question[]>([]);
-  const [index, setIndex] = useState(0);
+  const [limit, setLimit] = useState<number | null>(DEFAULT_LIMIT);
   const [selected, setSelected] = useState<string | null>(null);
-  const [score, setScore] = useState({ correct: 0, incorrect: 0 });
-  const [done, setDone] = useState(false);
-  const [burst, setBurst] = useState(0);
-  const { startSession, endSession, recordAttempt } = useStudySession("listening");
   const { speak, speaking } = useSpeech();
-  const advanceTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
-  function clearAdvance() {
-    if (advanceTimer.current) {
-      clearTimeout(advanceTimer.current);
-      advanceTimer.current = null;
-    }
+  const engine = useQuizEngine<Question>({
+    mode: "listening",
+    getId: (q) => q.item.id,
+    // Reinforces the word's own mastery (session mode stays "listening").
+    getRecordType: () => "vocab",
+  });
+
+  const pool = items.filter((v) => v.english && v.italian);
+
+  function begin() {
+    engine.begin(
+      buildSessionPool(pool, { getId: (v) => v.id, limit }).map((item) =>
+        buildQuestion(item, pool)
+      )
+    );
   }
 
-  const poolSize = items.filter((v) => v.english && v.italian).length;
+  // Reset the selection when the engine advances (render-time adjustment).
+  const questionKey = `${engine.started ? "s" : "-"}:${engine.index}`;
+  const [prevQuestionKey, setPrevQuestionKey] = useState(questionKey);
+  if (prevQuestionKey !== questionKey) {
+    setPrevQuestionKey(questionKey);
+    setSelected(null);
+  }
 
-  const q = deck[index];
-  const submitted = selected !== null;
-
-  useEffect(() => () => { endSession(); clearAdvance(); }, []); // eslint-disable-line react-hooks/exhaustive-deps
+  const q = engine.current;
+  const submitted = engine.submitted;
 
   // Auto-play the Italian word each time the question changes.
   const spokenFor = useRef<string | null>(null);
   useEffect(() => {
-    if (started && q && spokenFor.current !== q.item.id) {
-      spokenFor.current = q.item.id;
+    if (engine.started && !engine.done && q && spokenFor.current !== questionKey) {
+      spokenFor.current = questionKey;
       speak(q.item.italian);
     }
-  }, [started, q, speak]);
+  }, [engine.started, engine.done, q, questionKey, speak]);
 
-  function begin() {
-    clearAdvance();
-    setDeck(buildDeck(items, limit));
-    setIndex(0);
-    setSelected(null);
-    setScore({ correct: 0, incorrect: 0 });
-    setDone(false);
-    setStarted(true);
-    spokenFor.current = null;
-    startSession();
-  }
-
-  async function choose(option: string) {
-    if (submitted || !q) return;
-    setSelected(option);
-    const correct = option === q.item.english;
-    if (correct) {
-      setBurst((b) => b + 1);
-      playCorrect();
-      clearAdvance();
-      advanceTimer.current = setTimeout(() => next(), 1100);
-    } else {
-      playWrong();
-    }
-    // Record under "vocab" so it reinforces the word's mastery (mode stays "listening").
-    await recordAttempt(q.item.id, "vocab", correct, option);
-    setScore((s) => ({
-      correct: s.correct + (correct ? 1 : 0),
-      incorrect: s.incorrect + (correct ? 0 : 1),
-    }));
-  }
-
-  async function next() {
-    clearAdvance();
-    if (index + 1 >= deck.length) {
-      await endSession();
-      setDone(true);
-    } else {
-      setIndex((i) => i + 1);
-      setSelected(null);
-    }
-  }
-
-  if (!started) {
+  if (!engine.started) {
     return (
       <div className="max-w-lg mx-auto px-4 py-6 space-y-6">
         <div>
@@ -126,50 +75,29 @@ export default function ListeningQuiz({ items }: { items: VocabItem[] }) {
             You&apos;ll hear an Italian word — tap the 🔊 to replay it — then pick its English meaning.
           </p>
         </div>
-        <div>
-          <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wide mb-2">Words per session</p>
-          <div className="flex flex-wrap gap-2">
-            {LIMIT_OPTIONS.map((l) => (
-              <button
-                key={l ?? "all"}
-                onClick={() => setLimit(l)}
-                className={cn(
-                  "px-3 py-1.5 rounded-full text-sm font-medium transition-colors",
-                  limit === l ? "bg-primary text-primary-foreground" : "bg-muted text-muted-foreground hover:bg-muted/80"
-                )}
-              >
-                {l ?? `All ${poolSize}`}
-              </button>
-            ))}
-          </div>
-        </div>
+        <LimitPicker
+          value={limit}
+          onChange={setLimit}
+          label="Words per session"
+          allCount={pool.length}
+        />
         <Button className="w-full h-12" onClick={begin}>
-          Start · {limit === null ? poolSize : Math.min(limit, poolSize)} words
+          Start · {limit === null ? pool.length : Math.min(limit, pool.length)} words
         </Button>
       </div>
     );
   }
 
-  if (done) {
-    const pct = deck.length > 0 ? Math.round((score.correct / deck.length) * 100) : 0;
+  if (engine.done) {
     return (
-      <div className="max-w-lg mx-auto px-4 py-8 flex flex-col items-center gap-6">
-        <div className="text-5xl">{pct >= 70 ? "🎉" : "📚"}</div>
-        <h1 className="text-2xl font-bold">Done!</h1>
-        <p className="text-4xl font-bold">{pct}%</p>
-        <div className="flex w-full max-w-xs justify-around rounded-xl border-2 border-border bg-card py-3">
-          <div className="text-center">
-            <p className="text-xl font-bold text-yellow-500">+{score.correct * 10 + score.incorrect * 2}</p>
-            <p className="text-[10px] uppercase tracking-wide text-muted-foreground">XP earned</p>
-          </div>
-          <div className="text-center">
-            <p className="text-xl font-bold">{score.correct} / {deck.length}</p>
-            <p className="text-[10px] uppercase tracking-wide text-muted-foreground">correct</p>
-          </div>
-        </div>
-        <Button onClick={begin} className="w-full max-w-xs">Again</Button>
-        <Button variant="outline" onClick={() => setStarted(false)} className="w-full max-w-xs">Back</Button>
-      </div>
+      <DoneScreen
+        score={engine.score}
+        xp={engine.xp}
+        wrongCount={engine.wrongIds.length}
+        onRetry={begin}
+        onBack={engine.backToSetup}
+        backLabel="Back"
+      />
     );
   }
 
@@ -177,14 +105,13 @@ export default function ListeningQuiz({ items }: { items: VocabItem[] }) {
 
   return (
     <div className="relative max-w-lg mx-auto px-4 py-6 space-y-6">
-      {burst > 0 && <CorrectBurst key={burst} />}
-      <div className="flex items-center justify-between">
-        <h1 className="font-semibold">Ascolto</h1>
-        <div className="flex items-center gap-3">
-          <span className="text-sm text-muted-foreground">{index + 1} / {deck.length}</span>
-          <button onClick={() => { endSession(); setStarted(false); }} aria-label="Exit" className="text-muted-foreground hover:text-foreground text-lg leading-none">✕</button>
-        </div>
-      </div>
+      {engine.burst > 0 && <CorrectBurst key={engine.burst} />}
+      <QuizHeader
+        title="Ascolto"
+        index={engine.index}
+        total={engine.deck.length}
+        onExit={engine.exit}
+      />
 
       {/* Big speaker */}
       <div className="flex justify-center py-4">
@@ -209,7 +136,11 @@ export default function ListeningQuiz({ items }: { items: VocabItem[] }) {
           return (
             <button
               key={opt}
-              onClick={() => choose(opt)}
+              onClick={() => {
+                if (submitted) return;
+                setSelected(opt);
+                engine.submit(isCorrect, opt);
+              }}
               disabled={submitted}
               className={cn(
                 "rounded-xl border-2 px-4 py-4 text-base font-medium text-left transition-colors",
@@ -225,15 +156,15 @@ export default function ListeningQuiz({ items }: { items: VocabItem[] }) {
         })}
       </div>
 
-      {submitted && selected !== q.item.english && (
-        <Button className="w-full h-12" onClick={next}>
-          {index + 1 >= deck.length ? "See Results" : "Next →"}
+      {submitted && !engine.lastCorrect && (
+        <Button className="w-full h-12" onClick={engine.next}>
+          {engine.index + 1 >= engine.deck.length ? "See Results" : "Next →"}
         </Button>
       )}
 
       <div className="flex justify-between text-sm px-1">
-        <span className="text-green-600 font-medium">✓ {score.correct}</span>
-        <span className="text-red-500 font-medium">✗ {score.incorrect}</span>
+        <span className="text-green-600 font-medium">✓ {engine.score.correct}</span>
+        <span className="text-red-500 font-medium">✗ {engine.score.incorrect}</span>
       </div>
     </div>
   );

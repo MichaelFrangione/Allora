@@ -2,10 +2,14 @@
 
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Label } from "@/components/ui/label";
-import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Badge } from "@/components/ui/badge";
 import { cn } from "@/lib/utils";
+import { useQuizEngine, buildSessionPool, shuffle, DEFAULT_LIMIT } from "@/lib/useQuizEngine";
+import CorrectBurst from "@/components/CorrectBurst";
+import QuizHeader from "@/components/quiz/QuizHeader";
+import LimitPicker from "@/components/quiz/LimitPicker";
+import DoneScreen from "@/components/quiz/DoneScreen";
+import OptionList from "@/components/quiz/OptionList";
 
 // ── Question data ──────────────────────────────────────────────────────────────
 
@@ -349,29 +353,19 @@ const ALL_QUESTIONS: Q[] = [
 
 // ── Helpers ───────────────────────────────────────────────────────────────────
 
-function shuffle<T>(arr: T[]): T[] {
-  const a = [...arr];
-  for (let i = a.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [a[i], a[j]] = [a[j], a[i]];
-  }
-  return a;
-}
-
 const CATEGORIES = ["All", "Telling the time", "Time expressions", "Parts of the day", "Days of the week", "Months", "Seasons"];
 
 // ── Component ─────────────────────────────────────────────────────────────────
 
-export default function TimeQuiz() {
+export default function TimeQuiz({ weakIds = [] }: { weakIds?: string[] }) {
   const [category, setCategory] = useState("All");
-  const [started, setStarted] = useState(false);
-  const [questions, setQuestions] = useState<Q[]>([]);
-  const [index, setIndex] = useState(0);
+  const [limit, setLimit] = useState<number | null>(DEFAULT_LIMIT);
   const [selected, setSelected] = useState<string | null>(null);
-  const [submitted, setSubmitted] = useState(false);
-  const [score, setScore] = useState({ correct: 0, incorrect: 0 });
-  const [wrongIds, setWrongIds] = useState<string[]>([]);
-  const [done, setDone] = useState(false);
+
+  const engine = useQuizEngine<Q>({
+    mode: "time",
+    getId: (q) => q.id,
+  });
 
   const activeQuestions =
     category === "All"
@@ -383,48 +377,25 @@ export default function TimeQuiz() {
     if (filterIds) {
       const filtered = pool.filter((q) => filterIds.includes(q.id));
       if (filtered.length > 0) pool = filtered;
-    }
-    setQuestions(shuffle(pool));
-    setIndex(0);
-    setSelected(null);
-    setSubmitted(false);
-    setScore({ correct: 0, incorrect: 0 });
-    setWrongIds([]);
-    setDone(false);
-    setStarted(true);
-  }
-
-  function exitSession() {
-    setStarted(false);
-    setDone(false);
-  }
-
-  const q = questions[index];
-
-  function handleSubmit() {
-    if (!selected || !q) return;
-    const correct = selected === q.correct;
-    if (!correct) setWrongIds((ids) => [...ids, q.id]);
-    setScore((s) => ({
-      correct: s.correct + (correct ? 1 : 0),
-      incorrect: s.incorrect + (correct ? 0 : 1),
-    }));
-    setSubmitted(true);
-  }
-
-  function handleNext() {
-    const next = index + 1;
-    if (next >= questions.length) {
-      setDone(true);
+      engine.begin(shuffle(pool));
     } else {
-      setIndex(next);
-      setSelected(null);
-      setSubmitted(false);
+      engine.begin(buildSessionPool(pool, { getId: (q) => q.id, weakIds, limit }));
     }
   }
+
+  // Reset the selection when the engine advances (render-time adjustment).
+  const questionKey = `${engine.started ? "s" : "-"}:${engine.index}`;
+  const [prevQuestionKey, setPrevQuestionKey] = useState(questionKey);
+  if (prevQuestionKey !== questionKey) {
+    setPrevQuestionKey(questionKey);
+    setSelected(null);
+  }
+
+  const q = engine.current;
+  const submitted = engine.submitted;
 
   // ── Setup screen ────────────────────────────────────────────────────────────
-  if (!started) {
+  if (!engine.started) {
     return (
       <div className="max-w-lg mx-auto px-4 py-6 space-y-6">
         <h1 className="text-2xl font-bold">Time &amp; Dates Quiz</h1>
@@ -457,40 +428,32 @@ export default function TimeQuiz() {
           </div>
         </div>
 
+        <LimitPicker value={limit} onChange={setLimit} allCount={activeQuestions.length} />
+
         <Button
           className="w-full h-12"
           onClick={() => beginDrill()}
           disabled={activeQuestions.length === 0}
         >
-          Start · {activeQuestions.length} question{activeQuestions.length !== 1 ? "s" : ""}
+          Start · {limit === null ? activeQuestions.length : Math.min(limit, activeQuestions.length)} question
+          {(limit === null ? activeQuestions.length : Math.min(limit, activeQuestions.length)) !== 1 ? "s" : ""}
         </Button>
       </div>
     );
   }
 
   // ── Done screen ─────────────────────────────────────────────────────────────
-  if (done) {
-    const pct = Math.round((score.correct / questions.length) * 100);
+  if (engine.done) {
     return (
-      <div className="max-w-lg mx-auto px-4 py-8 flex flex-col items-center gap-6">
-        <div className="text-5xl">{pct >= 70 ? "🎉" : "📚"}</div>
-        <h1 className="text-2xl font-bold">Quiz Complete!</h1>
-        <p className="text-4xl font-bold">{pct}%</p>
-        <p className="text-muted-foreground">{score.correct} / {questions.length} correct</p>
-        <Button onClick={() => beginDrill()} className="w-full max-w-xs">Try Again</Button>
-        {wrongIds.length > 0 && (
-          <Button
-            variant="outline"
-            onClick={() => beginDrill(wrongIds)}
-            className="w-full max-w-xs border-amber-400 text-amber-700 hover:bg-amber-50 dark:hover:bg-amber-950"
-          >
-            Practice {wrongIds.length} missed
-          </Button>
-        )}
-        <Button variant="outline" onClick={() => exitSession()} className="w-full max-w-xs">
-          Change Category
-        </Button>
-      </div>
+      <DoneScreen
+        score={engine.score}
+        xp={engine.xp}
+        wrongCount={engine.wrongIds.length}
+        onRetry={() => beginDrill()}
+        onPracticeMissed={() => beginDrill(engine.wrongIds)}
+        onBack={engine.backToSetup}
+        backLabel="Change Category"
+      />
     );
   }
 
@@ -499,70 +462,53 @@ export default function TimeQuiz() {
   // ── Quiz screen ─────────────────────────────────────────────────────────────
   return (
     <div className="max-w-lg mx-auto px-4 py-6 space-y-6">
-      <div className="flex items-center justify-between">
-        <h1 className="font-semibold">Time &amp; Dates</h1>
-        <div className="flex items-center gap-3">
-          <span className="text-sm text-muted-foreground">{index + 1} / {questions.length}</span>
-          <button
-            onClick={exitSession}
-            className="text-muted-foreground hover:text-foreground transition-colors text-lg leading-none"
-            aria-label="Exit"
-          >
-            ✕
-          </button>
-        </div>
-      </div>
+      <QuizHeader
+        title="Time & Dates"
+        index={engine.index}
+        total={engine.deck.length}
+        onExit={engine.exit}
+      />
 
       <Badge variant="outline" className="text-xs">{q.category}</Badge>
 
-      <div className="rounded-2xl border-2 border-border bg-card px-6 py-8 text-center space-y-2">
+      <div className="relative rounded-2xl border-2 border-border bg-card px-6 py-8 text-center space-y-2">
+        {engine.burst > 0 && <CorrectBurst key={engine.burst} />}
         <p className="text-2xl font-bold">{q.prompt}</p>
         <p className="text-sm text-muted-foreground">{q.promptSub}</p>
       </div>
 
-      <RadioGroup
-        value={selected ?? ""}
-        onValueChange={(v) => { if (!submitted) setSelected(v); }}
+      <OptionList
+        options={q.options}
+        selected={selected}
+        submitted={submitted}
+        correct={q.correct}
+        onSelect={setSelected}
         className="space-y-3"
-      >
-        {q.options.map((opt) => {
-          let optClass = "border-border";
-          if (submitted) {
-            if (opt === q.correct) optClass = "border-green-500 bg-green-50 dark:bg-green-950";
-            else if (opt === selected) optClass = "border-red-400 bg-red-50 dark:bg-red-950";
-          }
-          return (
-            <Label
-              key={opt}
-              htmlFor={`opt-${opt}`}
-              className={cn(
-                "flex items-center gap-3 border-2 rounded-xl px-4 py-4 cursor-pointer transition-colors text-base",
-                optClass,
-                !submitted && selected === opt && "border-primary"
-              )}
-            >
-              <RadioGroupItem value={opt} id={`opt-${opt}`} />
-              {opt}
-            </Label>
-          );
-        })}
-      </RadioGroup>
+      />
 
       <div className="flex gap-3">
         {!submitted ? (
-          <Button className="flex-1 h-12" onClick={handleSubmit} disabled={!selected}>
+          <Button
+            className="flex-1 h-12"
+            onClick={() => engine.submit(selected === q.correct, selected ?? undefined)}
+            disabled={!selected}
+          >
             Check
           </Button>
+        ) : engine.lastCorrect ? (
+          <Button variant="ghost" className="flex-1 h-12 text-green-600 pointer-events-none">
+            Correct! ✓
+          </Button>
         ) : (
-          <Button className="flex-1 h-12" onClick={handleNext}>
-            {index + 1 >= questions.length ? "See Results" : "Next →"}
+          <Button className="flex-1 h-12" onClick={engine.next}>
+            {engine.index + 1 >= engine.deck.length ? "See Results" : "Next →"}
           </Button>
         )}
       </div>
 
       <div className="flex justify-between text-sm px-1">
-        <span className="text-green-600 font-medium">✓ {score.correct}</span>
-        <span className="text-red-500 font-medium">✗ {score.incorrect}</span>
+        <span className="text-green-600 font-medium">✓ {engine.score.correct}</span>
+        <span className="text-red-500 font-medium">✗ {engine.score.incorrect}</span>
       </div>
     </div>
   );

@@ -1,28 +1,19 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
-import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
-import { Label } from "@/components/ui/label";
 import { Card, CardContent } from "@/components/ui/card";
-import { useStudySession } from "@/lib/useStudySession";
 import { useSpeech } from "@/lib/useSpeech";
 import { getVocabDistractors, tagsMatchSubject, subjectsPresent } from "@/lib/content";
 import SubjectSelector from "@/components/SubjectSelector";
 import type { VocabItem } from "@/lib/content";
 import { cn } from "@/lib/utils";
-import { getBoostEnabled } from "@/components/BoostToggle";
-
-const LIMIT_OPTIONS = [10, 20, 30, 50, null] as const;
-
-function shuffle<T>(arr: T[]): T[] {
-  const a = [...arr];
-  for (let i = a.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [a[i], a[j]] = [a[j], a[i]];
-  }
-  return a;
-}
+import { useQuizEngine, buildSessionPool, shuffle, DEFAULT_LIMIT } from "@/lib/useQuizEngine";
+import CorrectBurst from "@/components/CorrectBurst";
+import QuizHeader from "@/components/quiz/QuizHeader";
+import LimitPicker from "@/components/quiz/LimitPicker";
+import DoneScreen from "@/components/quiz/DoneScreen";
+import OptionList from "@/components/quiz/OptionList";
 
 type Question = {
   item: VocabItem;
@@ -36,118 +27,61 @@ function buildQuestion(item: VocabItem): Question {
   return { item, options, correct: item.english };
 }
 
-export default function VocabQuiz({ items, weakIds = [], initialIds }: { items: VocabItem[]; weakIds?: string[]; initialIds?: string[] }) {
+export default function VocabQuiz({
+  items,
+  weakIds = [],
+  initialIds,
+}: {
+  items: VocabItem[];
+  weakIds?: string[];
+  initialIds?: string[];
+}) {
   const [subject, setSubject] = useState<string | undefined>(undefined);
   const availableSubjects = subjectsPresent(items.map((v) => v.tags));
-  const [limit, setLimit] = useState<number | null>(30);
-  const [started, setStarted] = useState(false);
-  const [questions, setQuestions] = useState<Question[]>([]);
-  const [index, setIndex] = useState(0);
+  const [limit, setLimit] = useState<number | null>(DEFAULT_LIMIT);
   const [selected, setSelected] = useState<string | null>(null);
-  const [submitted, setSubmitted] = useState(false);
-  const [score, setScore] = useState({ correct: 0, incorrect: 0 });
-  const [wrongIds, setWrongIds] = useState<string[]>([]);
-  const [done, setDone] = useState(false);
-  const { startSession, endSession, recordAttempt } = useStudySession("vocab");
   const { speak, speaking } = useSpeech();
 
+  const engine = useQuizEngine<Question>({
+    mode: "vocab",
+    getId: (q) => q.item.id,
+  });
+
   const activeItems = subject ? items.filter((v) => tagsMatchSubject(v.tags, subject)) : items;
-
-  useEffect(() => {
-    return () => { endSession(); };
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
-
-  useEffect(() => {
-    if (initialIds && initialIds.length > 0) beginDrill(initialIds);
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
 
   function beginDrill(filterIds?: string[]) {
     let active = subject ? items.filter((v) => tagsMatchSubject(v.tags, subject)) : items;
     if (filterIds) {
       const filtered = active.filter((v) => filterIds.includes(v.id));
       if (filtered.length > 0) active = filtered;
-      setQuestions(shuffle(active).map((item) => buildQuestion(item)));
+      engine.begin(shuffle(active).map(buildQuestion));
     } else {
-      const weakSet = new Set(weakIds);
-      const boostEnabled = getBoostEnabled();
-      const pool: VocabItem[] = [];
-      for (const item of active) {
-        const copies = boostEnabled && weakSet.has(item.id) ? 3 : 1;
-        for (let i = 0; i < copies; i++) pool.push(item);
-      }
-      let shuffled = shuffle(pool);
-      if (limit !== null) shuffled = shuffled.slice(0, limit);
-      setQuestions(shuffled.map((item) => buildQuestion(item)));
+      engine.begin(
+        buildSessionPool(active, { getId: (v) => v.id, weakIds, limit }).map(buildQuestion)
+      );
     }
-    setIndex(0);
+  }
+
+  useEffect(() => {
+    if (initialIds && initialIds.length > 0) beginDrill(initialIds);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  // Reset the selection when the engine advances (render-time adjustment).
+  const questionKey = `${engine.started ? "s" : "-"}:${engine.index}`;
+  const [prevQuestionKey, setPrevQuestionKey] = useState(questionKey);
+  if (prevQuestionKey !== questionKey) {
+    setPrevQuestionKey(questionKey);
     setSelected(null);
-    setSubmitted(false);
-    setScore({ correct: 0, incorrect: 0 });
-    setWrongIds([]);
-    setDone(false);
-    setStarted(true);
-    startSession();
   }
 
-  function exitSession() {
-    endSession();
-    setStarted(false);
-    setDone(false);
-  }
-
-  const q = questions[index];
-
-  async function handleSubmit() {
-    if (!selected || !q) return;
-    const correct = selected === q.correct;
-    await recordAttempt(q.item.id, "vocab", correct, selected);
-    if (!correct) setWrongIds((ids) => [...ids, q.item.id]);
-    setScore((s) => ({
-      correct: s.correct + (correct ? 1 : 0),
-      incorrect: s.incorrect + (correct ? 0 : 1),
-    }));
-    setSubmitted(true);
-  }
-
-  async function handleNext() {
-    const next = index + 1;
-    if (next >= questions.length) {
-      await endSession();
-      setDone(true);
-    } else {
-      setIndex(next);
-      setSelected(null);
-      setSubmitted(false);
-    }
-  }
-
-  if (!started) {
+  if (!engine.started) {
     const count = limit !== null ? Math.min(limit, activeItems.length) : activeItems.length;
     return (
       <div className="max-w-lg mx-auto px-4 py-6 space-y-6">
         <h1 className="text-2xl font-bold">Vocab Quiz</h1>
         <SubjectSelector subjects={availableSubjects} value={subject} onChange={setSubject} />
-        <div>
-          <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wide mb-2">Questions per session</p>
-          <div className="flex flex-wrap gap-2">
-            {LIMIT_OPTIONS.map((l) => (
-              <button
-                key={l ?? "all"}
-                onClick={() => setLimit(l)}
-                className={cn(
-                  "px-3 py-1.5 rounded-full text-sm font-medium transition-colors",
-                  limit === l
-                    ? "bg-primary text-primary-foreground"
-                    : "bg-muted text-muted-foreground hover:bg-muted/80"
-                )}
-              >
-                {l ?? "All"}
-              </button>
-            ))}
-          </div>
-        </div>
+        <LimitPicker value={limit} onChange={setLimit} />
         <Button
           className="w-full h-12"
           onClick={() => beginDrill()}
@@ -159,52 +93,37 @@ export default function VocabQuiz({ items, weakIds = [], initialIds }: { items: 
     );
   }
 
-  if (done) {
-    const pct = Math.round((score.correct / questions.length) * 100);
+  if (engine.done) {
     return (
-      <div className="max-w-lg mx-auto px-4 py-8 flex flex-col items-center gap-6">
-        <div className="text-5xl">{pct >= 70 ? "🎉" : "📚"}</div>
-        <h1 className="text-2xl font-bold">Quiz Complete!</h1>
-        <p className="text-4xl font-bold">{pct}%</p>
-        <p className="text-muted-foreground">{score.correct} / {questions.length} correct</p>
-        <Button onClick={() => beginDrill()} className="w-full max-w-xs">Try Again</Button>
-        {wrongIds.length > 0 && (
-          <Button
-            variant="outline"
-            onClick={() => beginDrill(wrongIds)}
-            className="w-full max-w-xs border-amber-400 text-amber-700 hover:bg-amber-50 dark:hover:bg-amber-950"
-          >
-            Practice {wrongIds.length} missed
-          </Button>
-        )}
-        <Button variant="outline" onClick={() => setStarted(false)} className="w-full max-w-xs">
-          Change Subject
-        </Button>
-      </div>
+      <DoneScreen
+        score={engine.score}
+        xp={engine.xp}
+        wrongCount={engine.wrongIds.length}
+        onRetry={() => beginDrill()}
+        onPracticeMissed={() => beginDrill(engine.wrongIds)}
+        onBack={engine.backToSetup}
+        backLabel="Change Subject"
+      />
     );
   }
 
+  const q = engine.current;
   if (!q) {
     return <div className="flex items-center justify-center min-h-64">Loading…</div>;
   }
+  const submitted = engine.submitted;
 
   return (
     <div className="max-w-lg mx-auto px-4 py-6 space-y-6">
-      <div className="flex items-center justify-between">
-        <h1 className="font-semibold">Vocab Quiz</h1>
-        <div className="flex items-center gap-3">
-          <span className="text-sm text-muted-foreground">{index + 1} / {questions.length}</span>
-          <button
-            onClick={exitSession}
-            className="text-muted-foreground hover:text-foreground transition-colors text-lg leading-none"
-            aria-label="Exit session"
-          >
-            ✕
-          </button>
-        </div>
-      </div>
+      <QuizHeader
+        title="Vocab Quiz"
+        index={engine.index}
+        total={engine.deck.length}
+        onExit={engine.exit}
+      />
 
-      <Card>
+      <Card className="relative">
+        {engine.burst > 0 && <CorrectBurst key={engine.burst} />}
         <CardContent className="pt-8 pb-8 text-center">
           <p className="text-2xl font-bold">{q.item.italian}</p>
           {q.item.partOfSpeech && (
@@ -220,49 +139,38 @@ export default function VocabQuiz({ items, weakIds = [], initialIds }: { items: 
         </CardContent>
       </Card>
 
-      <RadioGroup
-        value={selected ?? ""}
-        onValueChange={(v) => { if (!submitted) setSelected(v); }}
+      <OptionList
+        options={q.options}
+        selected={selected}
+        submitted={submitted}
+        correct={q.correct}
+        onSelect={setSelected}
         className="space-y-3"
-      >
-        {q.options.map((opt) => {
-          let optClass = "border-border";
-          if (submitted) {
-            if (opt === q.correct) optClass = "border-green-500 bg-green-50 dark:bg-green-950";
-            else if (opt === selected) optClass = "border-red-400 bg-red-50 dark:bg-red-950";
-          }
-          return (
-            <Label
-              key={opt}
-              htmlFor={opt}
-              className={cn(
-                "flex items-center gap-3 border-2 rounded-xl px-4 py-4 cursor-pointer transition-colors text-base",
-                optClass,
-                !submitted && selected === opt && "border-primary"
-              )}
-            >
-              <RadioGroupItem value={opt} id={opt} />
-              {opt}
-            </Label>
-          );
-        })}
-      </RadioGroup>
+      />
 
       <div className="flex gap-3">
         {!submitted ? (
-          <Button className="flex-1 h-12" onClick={handleSubmit} disabled={!selected}>
+          <Button
+            className="flex-1 h-12"
+            onClick={() => engine.submit(selected === q.correct, selected ?? undefined)}
+            disabled={!selected}
+          >
             Check
           </Button>
+        ) : engine.lastCorrect ? (
+          <Button variant="ghost" className="flex-1 h-12 text-green-600 pointer-events-none">
+            Correct! ✓
+          </Button>
         ) : (
-          <Button className="flex-1 h-12" onClick={handleNext}>
-            {index + 1 >= questions.length ? "See Results" : "Next →"}
+          <Button className="flex-1 h-12" onClick={engine.next}>
+            {engine.index + 1 >= engine.deck.length ? "See Results" : "Next →"}
           </Button>
         )}
       </div>
 
       <div className="flex justify-between text-sm text-muted-foreground px-1">
-        <span className="text-green-600 font-medium">✓ {score.correct}</span>
-        <span className="text-red-500 font-medium">✗ {score.incorrect}</span>
+        <span className="text-green-600 font-medium">✓ {engine.score.correct}</span>
+        <span className="text-red-500 font-medium">✗ {engine.score.incorrect}</span>
       </div>
     </div>
   );
