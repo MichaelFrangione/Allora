@@ -89,6 +89,46 @@ export function verbGroupOf(infinitive: string): string | null {
   return null;
 }
 
+export type VerbClass = "-are" | "-ere" | "-ire" | "-isc" | "irregular";
+
+/**
+ * Classify a verb by conjugation group for filtering: regular -are/-ere/-ire, -isc (-ire verbs
+ * that insert -isc-, e.g. finire→finisco), or irregular (irregular participle or present stem,
+ * incl. contracted -rre verbs). Returns null if the word isn't a known verb.
+ */
+export function verbClass(infinitive: string): VerbClass | null {
+  const input = norm(infinitive);
+  const base = input.endsWith("si") ? reflexiveBase(input) : input;
+  if (!inDict(base)) return null;
+
+  const ending = base.slice(-3);
+  const REGULAR_PART: Record<string, string> = { are: "ato", ere: "uto", ire: "ito" };
+  if (!(ending in REGULAR_PART)) return "irregular"; // -rre / contracted
+
+  let participle: string;
+  let presenteIo: string;
+  try {
+    // Participle is the same for the masculine singular regardless of auxiliary.
+    participle = getConjugation(DICT, base, "PASSATO_PROSSIMO", 1, "S", {
+      aux: "AVERE",
+      agreeGender: undefined,
+      agreeNumber: undefined,
+    }).replace(/^\S+\s+/, "");
+    presenteIo = getConjugation(DICT, base, "PRESENTE", 1, "S", undefined);
+  } catch {
+    return "irregular";
+  }
+
+  const stem = base.slice(0, -3);
+  const isIsc = ending === "ire" && presenteIo === stem + "isco";
+  const partIrregular = participle !== stem + REGULAR_PART[ending];
+  const presIrregular = presenteIo !== stem + "o" && !isIsc;
+
+  if (partIrregular || presIrregular) return "irregular";
+  if (isIsc) return "-isc";
+  return ("-" + ending) as VerbClass;
+}
+
 /** Curated auxiliary: reflexive/essere-verbs → ESSERE, dual-use → BOTH, else AVERE. */
 export function auxOf(infinitive: string): ConjAux {
   const v = norm(infinitive);

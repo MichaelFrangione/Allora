@@ -7,6 +7,9 @@ import { Card, CardContent } from "@/components/ui/card";
 import SubjectSelector from "@/components/SubjectSelector";
 import { tagsMatchSubject, subjectsPresent, SUBJECTS } from "@/lib/content";
 import type { VocabItem } from "@/lib/content";
+import type { VerbClass } from "@/lib/conjugate";
+
+type VocabWithClass = VocabItem & { verbClass?: VerbClass | null };
 
 const POS_COLORS: Record<string, string> = {
   noun: "bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200",
@@ -20,17 +23,33 @@ const POS_CHIPS = [
   { label: "Nouns", value: "noun" },
   { label: "Verbs", value: "verb" },
   { label: "Adjectives", value: "adjective" },
+  { label: "Adverbs", value: "adverb" },
+];
+
+const VERB_GROUPS = [
+  { label: "All", value: "" },
+  { label: "-are", value: "-are" },
+  { label: "-ere", value: "-ere" },
+  { label: "-ire", value: "-ire" },
+  { label: "-isc", value: "-isc" },
+  { label: "Irregular", value: "irregular" },
 ];
 
 export default function VocabBrowser({
   initialItems,
 }: {
-  initialItems: VocabItem[];
+  initialItems: VocabWithClass[];
 }) {
   const [query, setQuery] = useState("");
   const [activePos, setActivePos] = useState("");
+  const [activeGroup, setActiveGroup] = useState("");
   const [subject, setSubject] = useState<string | undefined>(undefined);
   const [speaking, setSpeaking] = useState("");
+
+  function selectPos(value: string) {
+    setActivePos(activePos === value ? "" : value);
+    setActiveGroup("");
+  }
 
   const availableSubjects = subjectsPresent(initialItems.map((v) => v.tags));
 
@@ -47,15 +66,24 @@ export default function VocabBrowser({
     window.speechSynthesis.speak(utterance);
   }
 
-  const filtered = initialItems.filter((v) => {
+  const q = query.toLowerCase();
+  // Items matching search + subject only (before pos/group) — used for the filter counts.
+  const base = initialItems.filter((v) => {
     const matchesSubject = !subject || tagsMatchSubject(v.tags, subject);
-    const matchesPos = !activePos || v.partOfSpeech === activePos;
-    const q = query.toLowerCase();
     const matchesQuery =
-      !q ||
-      v.italian.toLowerCase().includes(q) ||
-      v.english.toLowerCase().includes(q);
-    return matchesSubject && matchesPos && matchesQuery;
+      !q || v.italian.toLowerCase().includes(q) || v.english.toLowerCase().includes(q);
+    return matchesSubject && matchesQuery;
+  });
+  const verbsInBase = base.filter((v) => v.partOfSpeech === "verb");
+  const posCount = (value: string) =>
+    value === "" ? base.length : base.filter((v) => v.partOfSpeech === value).length;
+  const groupCount = (value: string) =>
+    value === "" ? verbsInBase.length : verbsInBase.filter((v) => v.verbClass === value).length;
+
+  const filtered = base.filter((v) => {
+    const matchesPos = !activePos || v.partOfSpeech === activePos;
+    const matchesGroup = activePos !== "verb" || !activeGroup || v.verbClass === activeGroup;
+    return matchesPos && matchesGroup;
   });
 
   return (
@@ -71,21 +99,55 @@ export default function VocabBrowser({
         className="text-base"
       />
 
-      <div className="flex flex-wrap gap-2">
-        {POS_CHIPS.map(({ label, value }) => (
-          <button
-            key={value}
-            onClick={() => setActivePos(activePos === value ? "" : value)}
-            className={`text-xs px-3 py-1 rounded-full border transition-colors ${
-              activePos === value
-                ? "bg-primary text-primary-foreground border-primary"
-                : "border-border hover:bg-accent"
-            }`}
-          >
-            {label}
-          </button>
-        ))}
+      {/* Type filter */}
+      <div className="flex flex-wrap gap-1.5">
+        {POS_CHIPS.map(({ label, value }) => {
+          const count = posCount(value);
+          const active = activePos === value;
+          return (
+            <button
+              key={value}
+              onClick={() => selectPos(value)}
+              disabled={count === 0 && !active}
+              className={`text-sm px-3 py-1.5 rounded-full border transition-colors disabled:opacity-40 ${
+                active
+                  ? "bg-primary text-primary-foreground border-primary"
+                  : "border-border hover:bg-accent"
+              }`}
+            >
+              {label}
+              <span className={`ml-1.5 text-xs ${active ? "opacity-80" : "text-muted-foreground"}`}>
+                {count}
+              </span>
+            </button>
+          );
+        })}
       </div>
+
+      {/* Verb conjugation group — only when Verbs is selected */}
+      {activePos === "verb" && (
+        <div className="flex flex-wrap items-center gap-1.5 border-l-2 border-primary/40 pl-3 ml-0.5">
+          {VERB_GROUPS.map(({ label, value }) => {
+            const count = groupCount(value);
+            const active = activeGroup === value;
+            return (
+              <button
+                key={value || "all"}
+                onClick={() => setActiveGroup(value)}
+                disabled={count === 0 && value !== ""}
+                className={`text-xs px-2.5 py-1 rounded-full border transition-colors disabled:opacity-40 ${
+                  active
+                    ? "bg-primary text-primary-foreground border-primary"
+                    : "border-border hover:bg-accent"
+                }`}
+              >
+                {label}
+                <span className={`ml-1 ${active ? "opacity-80" : "text-muted-foreground"}`}>{count}</span>
+              </button>
+            );
+          })}
+        </div>
+      )}
 
       <p className="text-sm text-muted-foreground">{filtered.length} words</p>
 
