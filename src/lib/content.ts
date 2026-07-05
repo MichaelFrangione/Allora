@@ -41,6 +41,7 @@ import interrogativiData from "../../data/interrogativi-drill.json";
 import dimostrativiData from "../../data/dimostrativi-drill.json";
 import gerundioData from "../../data/gerundio-drill.json";
 import salutiData from "../../data/saluti-drill.json";
+import passatoProssimoData from "../../data/passato-prossimo-drill.json";
 import descrizioneData from "../../data/descrizione.json";
 
 export type VocabItem = {
@@ -188,6 +189,7 @@ export const interrogativiDrill: DrillQuestion[] = interrogativiData as DrillQue
 export const dimostrativiDrill: DrillQuestion[] = dimostrativiData as DrillQuestion[];
 export const gerundioDrill: DrillQuestion[] = gerundioData as DrillQuestion[];
 export const salutiDrill: DrillQuestion[] = salutiData as DrillQuestion[];
+export const passatoProssimoDrill: DrillQuestion[] = passatoProssimoData as DrillQuestion[];
 
 /**
  * Picture-description lesson: an image plus a set of questions about what's in it
@@ -259,6 +261,7 @@ export const DRILL_BY_TYPE: Record<string, DrillQuestion[]> = {
   dimostrativi: dimostrativiDrill,
   saluti: salutiDrill,
   gerundio: gerundioDrill,
+  "passato-prossimo": passatoProssimoDrill,
 };
 
 /**
@@ -272,6 +275,7 @@ export const SUBJECTS: Subject[] = [
   { id: "present-tense", label: "Present Tense", emoji: "🔤", tags: ["present-tense", "present", "conjugation", "are-verbs", "ere-verbs", "ire-verbs", "isc-verbs", "verbi-are", "verbi-ere", "verbi-ire", "verbi-misti"] },
   { id: "reflexive-verbs", label: "Reflexive Verbs", emoji: "🔁", tags: ["reflexive-verbs", "reflexive", "riflessivi"] },
   { id: "essere-avere", label: "Essere & Avere", emoji: "🟰", tags: ["essere-avere", "verb-essere", "verb-avere"] },
+  { id: "passato-prossimo", label: "Passato Prossimo", emoji: "⏮️", tags: ["passato-prossimo"] },
   { id: "modals", label: "Modal Verbs", emoji: "🔧", tags: ["modals", "dovere", "potere", "volere"] },
   { id: "articles", label: "Articles", emoji: "📰", tags: ["articles"] },
   { id: "gender", label: "Noun Gender", emoji: "⚥", tags: ["gender"] },

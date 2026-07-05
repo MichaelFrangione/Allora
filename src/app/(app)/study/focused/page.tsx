@@ -39,6 +39,12 @@ const drills = [
     desc: "The two key verbs, plus avere fame / sete / sonno",
   },
   {
+    href: "/study/passato-prossimo",
+    label: "Passato Prossimo",
+    emoji: "⏮️",
+    desc: "The past tense — avere/essere + participle, irregular participles",
+  },
+  {
     href: "/study/articoli",
     label: "Articoli",
     emoji: "📰",

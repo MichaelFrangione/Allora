@@ -1,0 +1,905 @@
+[
+  {
+    "id": "pp001",
+    "category": "ausiliare",
+    "sentence": "(io) ___ mangiato.",
+    "hint": "mangiare → ausiliare?",
+    "correct": "ho",
+    "options": [
+      "sono",
+      "ha",
+      "sei",
+      "ho"
+    ],
+    "explanation": "mangiare → avere (verbo transitivo).",
+    "tags": [
+      "passato-prossimo",
+      "ausiliare"
+    ]
+  },
+  {
+    "id": "pp002",
+    "category": "ausiliare",
+    "sentence": "(lui/lei) ___ mangiato.",
+    "hint": "mangiare → ausiliare?",
+    "correct": "ha",
+    "options": [
+      "sei",
+      "ha",
+      "è"
+    ],
+    "explanation": "mangiare → avere (verbo transitivo).",
+    "tags": [
+      "passato-prossimo",
+      "ausiliare"
+    ]
+  },
+  {
+    "id": "pp003",
+    "category": "ausiliare",
+    "sentence": "(tu) ___ parlato.",
+    "hint": "parlare → ausiliare?",
+    "correct": "hai",
+    "options": [
+      "hai",
+      "sei",
+      "ha"
+    ],
+    "explanation": "parlare → avere (verbo transitivo).",
+    "tags": [
+      "passato-prossimo",
+      "ausiliare"
+    ]
+  },
+  {
+    "id": "pp004",
+    "category": "ausiliare",
+    "sentence": "(noi) ___ comprato.",
+    "hint": "comprare → ausiliare?",
+    "correct": "abbiamo",
+    "options": [
+      "abbiamo",
+      "siamo",
+      "ha",
+      "sei"
+    ],
+    "explanation": "comprare → avere (verbo transitivo).",
+    "tags": [
+      "passato-prossimo",
+      "ausiliare"
+    ]
+  },
+  {
+    "id": "pp005",
+    "category": "ausiliare",
+    "sentence": "(lui/lei) ___ creduto.",
+    "hint": "credere → ausiliare?",
+    "correct": "ha",
+    "options": [
+      "sei",
+      "ha",
+      "è"
+    ],
+    "explanation": "credere → avere (verbo transitivo).",
+    "tags": [
+      "passato-prossimo",
+      "ausiliare"
+    ]
+  },
+  {
+    "id": "pp006",
+    "category": "ausiliare",
+    "sentence": "(io) ___ capito.",
+    "hint": "capire → ausiliare?",
+    "correct": "ho",
+    "options": [
+      "ha",
+      "sei",
+      "ho",
+      "sono"
+    ],
+    "explanation": "capire → avere (verbo transitivo).",
+    "tags": [
+      "passato-prossimo",
+      "ausiliare"
+    ]
+  },
+  {
+    "id": "pp007",
+    "category": "ausiliare",
+    "sentence": "(voi) ___ sentito.",
+    "hint": "sentire → ausiliare?",
+    "correct": "avete",
+    "options": [
+      "sei",
+      "avete",
+      "siete",
+      "ha"
+    ],
+    "explanation": "sentire → avere (verbo transitivo).",
+    "tags": [
+      "passato-prossimo",
+      "ausiliare"
+    ]
+  },
+  {
+    "id": "pp008",
+    "category": "ausiliare",
+    "sentence": "(lui/lei) ___ incontrato.",
+    "hint": "incontrare → ausiliare?",
+    "correct": "ha",
+    "options": [
+      "sei",
+      "ha",
+      "è"
+    ],
+    "explanation": "incontrare → avere (verbo transitivo).",
+    "tags": [
+      "passato-prossimo",
+      "ausiliare"
+    ]
+  },
+  {
+    "id": "pp009",
+    "category": "ausiliare",
+    "sentence": "(tu) ___ ricevuto.",
+    "hint": "ricevere → ausiliare?",
+    "correct": "hai",
+    "options": [
+      "hai",
+      "sei",
+      "ha"
+    ],
+    "explanation": "ricevere → avere (verbo transitivo).",
+    "tags": [
+      "passato-prossimo",
+      "ausiliare"
+    ]
+  },
+  {
+    "id": "pp010",
+    "category": "ausiliare",
+    "sentence": "(io) ___ andato.",
+    "hint": "andare → ausiliare?",
+    "correct": "sono",
+    "options": [
+      "è",
+      "hai",
+      "sono",
+      "ho"
+    ],
+    "explanation": "andare → essere (movimento/cambiamento).",
+    "tags": [
+      "passato-prossimo",
+      "ausiliare"
+    ]
+  },
+  {
+    "id": "pp011",
+    "category": "ausiliare",
+    "sentence": "(lui/lei) ___ andato.",
+    "hint": "andare → ausiliare?",
+    "correct": "è",
+    "options": [
+      "hai",
+      "è",
+      "ha"
+    ],
+    "explanation": "andare → essere (movimento/cambiamento).",
+    "tags": [
+      "passato-prossimo",
+      "ausiliare"
+    ]
+  },
+  {
+    "id": "pp012",
+    "category": "ausiliare",
+    "sentence": "(noi) ___ partito.",
+    "hint": "partire → ausiliare?",
+    "correct": "siamo",
+    "options": [
+      "siamo",
+      "abbiamo",
+      "è",
+      "hai"
+    ],
+    "explanation": "partire → essere (movimento/cambiamento).",
+    "tags": [
+      "passato-prossimo",
+      "ausiliare"
+    ]
+  },
+  {
+    "id": "pp013",
+    "category": "ausiliare",
+    "sentence": "(loro) ___ arrivato.",
+    "hint": "arrivare → ausiliare?",
+    "correct": "sono",
+    "options": [
+      "hanno",
+      "è",
+      "hai",
+      "sono"
+    ],
+    "explanation": "arrivare → essere (movimento/cambiamento).",
+    "tags": [
+      "passato-prossimo",
+      "ausiliare"
+    ]
+  },
+  {
+    "id": "pp014",
+    "category": "ausiliare",
+    "sentence": "(tu) ___ uscito.",
+    "hint": "uscire → ausiliare?",
+    "correct": "sei",
+    "options": [
+      "è",
+      "sei",
+      "hai"
+    ],
+    "explanation": "uscire → essere (movimento/cambiamento).",
+    "tags": [
+      "passato-prossimo",
+      "ausiliare"
+    ]
+  },
+  {
+    "id": "pp015",
+    "category": "ausiliare",
+    "sentence": "(lui/lei) ___ tornato.",
+    "hint": "tornare → ausiliare?",
+    "correct": "è",
+    "options": [
+      "è",
+      "ha",
+      "hai"
+    ],
+    "explanation": "tornare → essere (movimento/cambiamento).",
+    "tags": [
+      "passato-prossimo",
+      "ausiliare"
+    ]
+  },
+  {
+    "id": "pp016",
+    "category": "ausiliare",
+    "sentence": "(io) ___ nato.",
+    "hint": "nascere → ausiliare?",
+    "correct": "sono",
+    "options": [
+      "sono",
+      "ho",
+      "è",
+      "hai"
+    ],
+    "explanation": "nascere → essere (movimento/cambiamento).",
+    "tags": [
+      "passato-prossimo",
+      "ausiliare"
+    ]
+  },
+  {
+    "id": "pp017",
+    "category": "ausiliare",
+    "sentence": "(lui/lei) ___ diventato.",
+    "hint": "diventare → ausiliare?",
+    "correct": "è",
+    "options": [
+      "hai",
+      "è",
+      "ha"
+    ],
+    "explanation": "diventare → essere (movimento/cambiamento).",
+    "tags": [
+      "passato-prossimo",
+      "ausiliare"
+    ]
+  },
+  {
+    "id": "pp018",
+    "category": "ausiliare",
+    "sentence": "(lui/lei) ___ caduto.",
+    "hint": "cadere → ausiliare?",
+    "correct": "è",
+    "options": [
+      "è",
+      "ha",
+      "hai"
+    ],
+    "explanation": "cadere → essere (movimento/cambiamento).",
+    "tags": [
+      "passato-prossimo",
+      "ausiliare"
+    ]
+  },
+  {
+    "id": "pp019",
+    "category": "ausiliare",
+    "sentence": "(io) mi ___ svegliato.",
+    "hint": "svegliarsi → ausiliare?",
+    "correct": "sono",
+    "options": [
+      "hai",
+      "sono",
+      "ho",
+      "è"
+    ],
+    "explanation": "svegliarsi → essere (verbo riflessivo → sempre essere).",
+    "tags": [
+      "passato-prossimo",
+      "ausiliare"
+    ]
+  },
+  {
+    "id": "pp020",
+    "category": "ausiliare",
+    "sentence": "(noi) ci ___ divertito.",
+    "hint": "divertirsi → ausiliare?",
+    "correct": "siamo",
+    "options": [
+      "siamo",
+      "abbiamo",
+      "è",
+      "hai"
+    ],
+    "explanation": "divertirsi → essere (verbo riflessivo → sempre essere).",
+    "tags": [
+      "passato-prossimo",
+      "ausiliare"
+    ]
+  },
+  {
+    "id": "pp021",
+    "category": "forma",
+    "sentence": "(io) ___  — mangiare",
+    "hint": "mangiare → passato prossimo, io",
+    "correct": "ho mangiato",
+    "options": [
+      "ho mangiato",
+      "sono mangiato",
+      "hai mangiato"
+    ],
+    "explanation": "mangiare, io → ho mangiato.",
+    "tags": [
+      "passato-prossimo",
+      "forma"
+    ]
+  },
+  {
+    "id": "pp022",
+    "category": "forma",
+    "sentence": "(io) ___  — rompere",
+    "hint": "rompere → passato prossimo, io",
+    "correct": "ho rotto",
+    "options": [
+      "ho romputo",
+      "hai rotto",
+      "ho rotto",
+      "sono rotto"
+    ],
+    "explanation": "rompere, io → ho rotto.",
+    "tags": [
+      "passato-prossimo",
+      "forma"
+    ]
+  },
+  {
+    "id": "pp023",
+    "category": "forma",
+    "sentence": "(lui/lei) ___  — scrivere",
+    "hint": "scrivere → passato prossimo, lui/lei",
+    "correct": "ha scritto",
+    "options": [
+      "ho scritto",
+      "ha scritto",
+      "è scritto",
+      "ha scrivuto"
+    ],
+    "explanation": "scrivere, lui/lei → ha scritto.",
+    "tags": [
+      "passato-prossimo",
+      "forma"
+    ]
+  },
+  {
+    "id": "pp024",
+    "category": "forma",
+    "sentence": "(noi) ___  — prendere",
+    "hint": "prendere → passato prossimo, noi",
+    "correct": "abbiamo preso",
+    "options": [
+      "abbiamo preso",
+      "siamo preso",
+      "abbiamo prenduto",
+      "ho preso"
+    ],
+    "explanation": "prendere, noi → abbiamo preso.",
+    "tags": [
+      "passato-prossimo",
+      "forma"
+    ]
+  },
+  {
+    "id": "pp025",
+    "category": "forma",
+    "sentence": "(lui/lei) ___  — andare",
+    "hint": "andare → passato prossimo, lui/lei",
+    "correct": "è andato",
+    "options": [
+      "ha andato",
+      "sono andato",
+      "è andato"
+    ],
+    "explanation": "andare, lui/lei → è andato.",
+    "tags": [
+      "passato-prossimo",
+      "forma"
+    ]
+  },
+  {
+    "id": "pp026",
+    "category": "forma",
+    "sentence": "(loro) ___  — partire",
+    "hint": "partire → passato prossimo, loro",
+    "correct": "sono partiti",
+    "options": [
+      "sono partito",
+      "sono partiti",
+      "hanno partiti"
+    ],
+    "explanation": "partire, loro → sono partiti.",
+    "tags": [
+      "passato-prossimo",
+      "forma"
+    ]
+  },
+  {
+    "id": "pp027",
+    "category": "forma",
+    "sentence": "(io) ___  — fare",
+    "hint": "fare → passato prossimo, io",
+    "correct": "ho fatto",
+    "options": [
+      "hai fatto",
+      "ho fatto",
+      "sono fatto",
+      "ho fato"
+    ],
+    "explanation": "fare, io → ho fatto.",
+    "tags": [
+      "passato-prossimo",
+      "forma"
+    ]
+  },
+  {
+    "id": "pp028",
+    "category": "forma",
+    "sentence": "(tu) ___  — dire",
+    "hint": "dire → passato prossimo, tu",
+    "correct": "hai detto",
+    "options": [
+      "hai detto",
+      "sei detto",
+      "hai dito",
+      "ho detto"
+    ],
+    "explanation": "dire, tu → hai detto.",
+    "tags": [
+      "passato-prossimo",
+      "forma"
+    ]
+  },
+  {
+    "id": "pp029",
+    "category": "forma",
+    "sentence": "(io) ___  — leggere",
+    "hint": "leggere → passato prossimo, io",
+    "correct": "ho letto",
+    "options": [
+      "sono letto",
+      "ho legguto",
+      "hai letto",
+      "ho letto"
+    ],
+    "explanation": "leggere, io → ho letto.",
+    "tags": [
+      "passato-prossimo",
+      "forma"
+    ]
+  },
+  {
+    "id": "pp030",
+    "category": "forma",
+    "sentence": "(io) ___  — svegliarsi",
+    "hint": "svegliarsi → passato prossimo, io",
+    "correct": "mi sono svegliato",
+    "options": [
+      "mi sono svegliato",
+      "mi ho svegliato",
+      "ti sei svegliato"
+    ],
+    "explanation": "svegliarsi, io → mi sono svegliato.",
+    "tags": [
+      "passato-prossimo",
+      "forma"
+    ]
+  },
+  {
+    "id": "pp031",
+    "category": "forma",
+    "sentence": "(noi) ___  — vedere",
+    "hint": "vedere → passato prossimo, noi",
+    "correct": "abbiamo veduto",
+    "options": [
+      "siamo veduto",
+      "ho veduto",
+      "abbiamo veduto"
+    ],
+    "explanation": "vedere, noi → abbiamo veduto.",
+    "tags": [
+      "passato-prossimo",
+      "forma"
+    ]
+  },
+  {
+    "id": "pp032",
+    "category": "forma",
+    "sentence": "(lui/lei) ___  — venire",
+    "hint": "venire → passato prossimo, lui/lei",
+    "correct": "è venuto",
+    "options": [
+      "è venuto",
+      "ha venuto",
+      "è venito",
+      "sono venuto"
+    ],
+    "explanation": "venire, lui/lei → è venuto.",
+    "tags": [
+      "passato-prossimo",
+      "forma"
+    ]
+  },
+  {
+    "id": "pp033",
+    "category": "participio",
+    "sentence": "Il participio passato di «fare» è ___",
+    "hint": "participio irregolare",
+    "correct": "fatto",
+    "options": [
+      "fato",
+      "detto",
+      "chiesto",
+      "fatto"
+    ],
+    "explanation": "fare → fatto (participio irregolare).",
+    "tags": [
+      "passato-prossimo",
+      "participio"
+    ]
+  },
+  {
+    "id": "pp034",
+    "category": "participio",
+    "sentence": "Il participio passato di «dire» è ___",
+    "hint": "participio irregolare",
+    "correct": "detto",
+    "options": [
+      "letto",
+      "messo",
+      "detto",
+      "dito"
+    ],
+    "explanation": "dire → detto (participio irregolare).",
+    "tags": [
+      "passato-prossimo",
+      "participio"
+    ]
+  },
+  {
+    "id": "pp035",
+    "category": "participio",
+    "sentence": "Il participio passato di «leggere» è ___",
+    "hint": "participio irregolare",
+    "correct": "letto",
+    "options": [
+      "aperto",
+      "letto",
+      "legguto",
+      "scritto"
+    ],
+    "explanation": "leggere → letto (participio irregolare).",
+    "tags": [
+      "passato-prossimo",
+      "participio"
+    ]
+  },
+  {
+    "id": "pp036",
+    "category": "participio",
+    "sentence": "Il participio passato di «scrivere» è ___",
+    "hint": "participio irregolare",
+    "correct": "scritto",
+    "options": [
+      "scritto",
+      "scrivuto",
+      "rotto",
+      "bevuto"
+    ],
+    "explanation": "scrivere → scritto (participio irregolare).",
+    "tags": [
+      "passato-prossimo",
+      "participio"
+    ]
+  },
+  {
+    "id": "pp037",
+    "category": "participio",
+    "sentence": "Il participio passato di «rompere» è ___",
+    "hint": "participio irregolare",
+    "correct": "rotto",
+    "options": [
+      "romputo",
+      "preso",
+      "vinto",
+      "rotto"
+    ],
+    "explanation": "rompere → rotto (participio irregolare).",
+    "tags": [
+      "passato-prossimo",
+      "participio"
+    ]
+  },
+  {
+    "id": "pp038",
+    "category": "participio",
+    "sentence": "Il participio passato di «prendere» è ___",
+    "hint": "participio irregolare",
+    "correct": "preso",
+    "options": [
+      "chiesto",
+      "deciso",
+      "preso",
+      "prenduto"
+    ],
+    "explanation": "prendere → preso (participio irregolare).",
+    "tags": [
+      "passato-prossimo",
+      "participio"
+    ]
+  },
+  {
+    "id": "pp039",
+    "category": "participio",
+    "sentence": "Il participio passato di «chiedere» è ___",
+    "hint": "participio irregolare",
+    "correct": "chiesto",
+    "options": [
+      "risposto",
+      "chiesto",
+      "chieduto",
+      "messo"
+    ],
+    "explanation": "chiedere → chiesto (participio irregolare).",
+    "tags": [
+      "passato-prossimo",
+      "participio"
+    ]
+  },
+  {
+    "id": "pp040",
+    "category": "participio",
+    "sentence": "Il participio passato di «mettere» è ___",
+    "hint": "participio irregolare",
+    "correct": "messo",
+    "options": [
+      "messo",
+      "mettuto",
+      "aperto",
+      "chiuso"
+    ],
+    "explanation": "mettere → messo (participio irregolare).",
+    "tags": [
+      "passato-prossimo",
+      "participio"
+    ]
+  },
+  {
+    "id": "pp041",
+    "category": "participio",
+    "sentence": "Il participio passato di «aprire» è ___",
+    "hint": "participio irregolare",
+    "correct": "aperto",
+    "options": [
+      "aprito",
+      "bevuto",
+      "venuto",
+      "aperto"
+    ],
+    "explanation": "aprire → aperto (participio irregolare).",
+    "tags": [
+      "passato-prossimo",
+      "participio"
+    ]
+  },
+  {
+    "id": "pp042",
+    "category": "participio",
+    "sentence": "Il participio passato di «bere» è ___",
+    "hint": "participio irregolare",
+    "correct": "bevuto",
+    "options": [
+      "vinto",
+      "rimasto",
+      "bevuto",
+      "buto"
+    ],
+    "explanation": "bere → bevuto (participio irregolare).",
+    "tags": [
+      "passato-prossimo",
+      "participio"
+    ]
+  },
+  {
+    "id": "pp043",
+    "category": "participio",
+    "sentence": "Il participio passato di «vincere» è ___",
+    "hint": "participio irregolare",
+    "correct": "vinto",
+    "options": [
+      "perso",
+      "vinto",
+      "vincuto",
+      "deciso"
+    ],
+    "explanation": "vincere → vinto (participio irregolare).",
+    "tags": [
+      "passato-prossimo",
+      "participio"
+    ]
+  },
+  {
+    "id": "pp044",
+    "category": "participio",
+    "sentence": "Il participio passato di «decidere» è ___",
+    "hint": "participio irregolare",
+    "correct": "deciso",
+    "options": [
+      "deciso",
+      "deciduto",
+      "risposto",
+      "spento"
+    ],
+    "explanation": "decidere → deciso (participio irregolare).",
+    "tags": [
+      "passato-prossimo",
+      "participio"
+    ]
+  },
+  {
+    "id": "pp045",
+    "category": "participio",
+    "sentence": "Il participio passato di «rispondere» è ___",
+    "hint": "participio irregolare",
+    "correct": "risposto",
+    "options": [
+      "risponduto",
+      "chiuso",
+      "vissuto",
+      "risposto"
+    ],
+    "explanation": "rispondere → risposto (participio irregolare).",
+    "tags": [
+      "passato-prossimo",
+      "participio"
+    ]
+  },
+  {
+    "id": "pp046",
+    "category": "participio",
+    "sentence": "Il participio passato di «chiudere» è ___",
+    "hint": "participio irregolare",
+    "correct": "chiuso",
+    "options": [
+      "venuto",
+      "fatto",
+      "chiuso",
+      "chiuduto"
+    ],
+    "explanation": "chiudere → chiuso (participio irregolare).",
+    "tags": [
+      "passato-prossimo",
+      "participio"
+    ]
+  },
+  {
+    "id": "pp047",
+    "category": "participio",
+    "sentence": "Il participio passato di «venire» è ___",
+    "hint": "participio irregolare",
+    "correct": "venuto",
+    "options": [
+      "detto",
+      "venuto",
+      "venito",
+      "rimasto"
+    ],
+    "explanation": "venire → venuto (participio irregolare).",
+    "tags": [
+      "passato-prossimo",
+      "participio"
+    ]
+  },
+  {
+    "id": "pp048",
+    "category": "participio",
+    "sentence": "Il participio passato di «rimanere» è ___",
+    "hint": "participio irregolare",
+    "correct": "rimasto",
+    "options": [
+      "rimasto",
+      "rimanuto",
+      "perso",
+      "letto"
+    ],
+    "explanation": "rimanere → rimasto (participio irregolare).",
+    "tags": [
+      "passato-prossimo",
+      "participio"
+    ]
+  },
+  {
+    "id": "pp049",
+    "category": "participio",
+    "sentence": "Il participio passato di «perdere» è ___",
+    "hint": "participio irregolare",
+    "correct": "perso",
+    "options": [
+      "perduto",
+      "spento",
+      "scritto",
+      "perso"
+    ],
+    "explanation": "perdere → perso (participio irregolare).",
+    "tags": [
+      "passato-prossimo",
+      "participio"
+    ]
+  },
+  {
+    "id": "pp050",
+    "category": "participio",
+    "sentence": "Il participio passato di «spegnere» è ___",
+    "hint": "participio irregolare",
+    "correct": "spento",
+    "options": [
+      "vissuto",
+      "rotto",
+      "spento",
+      "spegnuto"
+    ],
+    "explanation": "spegnere → spento (participio irregolare).",
+    "tags": [
+      "passato-prossimo",
+      "participio"
+    ]
+  },
+  {
+    "id": "pp051",
+    "category": "participio",
+    "sentence": "Il participio passato di «vivere» è ___",
+    "hint": "participio irregolare",
+    "correct": "vissuto",
+    "options": [
+      "preso",
+      "vissuto",
+      "vivuto",
+      "fatto"
+    ],
+    "explanation": "vivere → vissuto (participio irregolare).",
+    "tags": [
+      "passato-prossimo",
+      "participio"
+    ]
+  }
+]

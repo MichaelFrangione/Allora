@@ -21,6 +21,27 @@ function conj(title: string, forms: string[]): RefTable {
 }
 
 export const SUBJECT_REFERENCE_DATA: Record<string, SubjectRef> = {
+  "passato-prossimo": {
+    heading: "Passato Prossimo",
+    tables: [
+      conj("avere + participio — mangiare", ["ho mangiato", "hai mangiato", "ha mangiato", "abbiamo mangiato", "avete mangiato", "hanno mangiato"]),
+      conj("essere + participio — andare", ["sono andato/a", "sei andato/a", "è andato/a", "siamo andati/e", "siete andati/e", "sono andati/e"]),
+      {
+        title: "Participio regolare",
+        headers: ["infinito", "participio"],
+        rows: [["-are → -ato", "parlare → parlato"], ["-ere → -uto", "credere → creduto"], ["-ire → -ito", "dormire → dormito"]],
+      },
+      {
+        title: "Participi irregolari",
+        rows: [["fare → fatto", "dire → detto"], ["scrivere → scritto", "leggere → letto"], ["rompere → rotto", "prendere → preso"], ["aprire → aperto", "vedere → visto"], ["bere → bevuto", "rimanere → rimasto"], ["mettere → messo", "chiedere → chiesto"]],
+      },
+      {
+        title: "Vogliono ESSERE",
+        rows: [["movimento", "andare, venire, uscire, partire, arrivare, tornare"], ["cambiamento", "nascere, morire, diventare, crescere, dimagrire"], ["riflessivi", "mi sono svegliato, ci siamo divertiti"], ["piacere", "mi è piaciuto / piaciuta"]],
+      },
+    ],
+    note: "AVERE for transitive verbs (they answer chi? / che cosa?). ESSERE for movement, reflexive, change-of-state and piacere — and with essere the participle agrees with the subject: è andata, siamo andati/e.",
+  },
   "reflexive-verbs": {
     heading: "Verbi Riflessivi — presente",
     tables: [

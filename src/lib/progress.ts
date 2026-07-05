@@ -204,6 +204,7 @@ const CONTENT_TYPE_SUBJECT: Record<string, string> = {
   saluti: "greetings",
   conjugation: "present-tense",
   descrizione: "descrizione",
+  "passato-prossimo": "passato-prossimo",
 };
 
 type AttemptRow = { contentType: string; contentId: string; correct: boolean; createdAt: Date };
