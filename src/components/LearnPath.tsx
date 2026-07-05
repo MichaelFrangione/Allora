@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Flame, Zap } from "lucide-react";
 import { SUBJECTS } from "@/lib/content";
+import { LEARN_PATH } from "@/lib/drills";
 import { DAILY_GOAL_XP, type LearnStats } from "@/lib/progress";
 import { cn } from "@/lib/utils";
 
@@ -31,29 +32,6 @@ function GoalRing({ value, goal }: { value: number; goal: number }) {
     </div>
   );
 }
-
-// The curriculum order — each subject maps to the drill/route that teaches it.
-// Roughly ordered from foundational to more advanced.
-const PATH: { subjectId: string; route: string }[] = [
-  { subjectId: "greetings", route: "/study/saluti" },
-  { subjectId: "essere-avere", route: "/study/essere-avere" },
-  { subjectId: "present-tense", route: "/study/conjugation" },
-  { subjectId: "articles", route: "/study/articoli" },
-  { subjectId: "gender", route: "/study/genere" },
-  { subjectId: "plural", route: "/study/plurali" },
-  { subjectId: "adjectives", route: "/study/aggettivi" },
-  { subjectId: "possessives", route: "/study/possessivi" },
-  { subjectId: "piacere", route: "/study/piacere" },
-  { subjectId: "reflexive-verbs", route: "/study/riflessivi" },
-  { subjectId: "modals", route: "/study/modal-verbs" },
-  { subjectId: "pronouns", route: "/study/pronomi" },
-  { subjectId: "prepositions", route: "/study/preposizioni-articolate" },
-  { subjectId: "interrogatives", route: "/study/interrogativi" },
-  { subjectId: "demonstratives", route: "/study/dimostrativi" },
-  { subjectId: "time", route: "/study/time" },
-  { subjectId: "gerundio", route: "/study/gerundio" },
-  { subjectId: "passato-prossimo", route: "/study/passato-prossimo" },
-];
 
 // Winding zig-zag horizontal offsets (Duolingo-style path), cycled by index.
 const OFFSETS = [0, 44, 64, 44, 0, -44, -64, -44];
@@ -90,7 +68,7 @@ export default function LearnPath({ stats }: { stats: LearnStats }) {
 
       {/* Winding lesson path */}
       <div className="flex flex-col items-center gap-7">
-        {PATH.map(({ subjectId, route }, i) => {
+        {LEARN_PATH.map(({ subjectId, route }, i) => {
           const subject = SUBJECT_BY_ID.get(subjectId);
           if (!subject) return null;
           const progress = stats.bySubject[subjectId];

@@ -1,5 +1,6 @@
 import { prisma } from "@/lib/prisma";
 import { SUBJECTS, getVocabById } from "@/lib/content";
+import { DRILL_CONTENT_TYPE_SUBJECT } from "@/lib/drills";
 
 export type ItemStats = {
   contentId: string;
@@ -16,9 +17,12 @@ export type ModeStats = {
   accuracy: number;
 };
 
-export async function getUserItemStats(userId: string): Promise<ItemStats[]> {
+export async function getUserItemStats(
+  userId: string,
+  contentType?: string
+): Promise<ItemStats[]> {
   const attempts = await prisma.cardAttempt.findMany({
-    where: { userId },
+    where: { userId, ...(contentType ? { contentType } : {}) },
     select: { contentId: true, contentType: true, correct: true },
   });
 
@@ -48,9 +52,10 @@ export async function getUserItemStats(userId: string): Promise<ItemStats[]> {
 
 export async function getWeakItems(
   userId: string,
+  contentType?: string,
   threshold = 0.7
 ): Promise<ItemStats[]> {
-  const stats = await getUserItemStats(userId);
+  const stats = await getUserItemStats(userId, contentType);
   return stats.filter((s) => s.accuracy < threshold);
 }
 
@@ -184,27 +189,15 @@ export async function getRecentSessions(userId: string, limit = 5) {
 const XP_PER_CORRECT = 10;
 const XP_PER_ATTEMPT = 2; // a little XP even for wrong answers, like Duolingo
 
-/** Maps a drill's contentType to the subject id it practises. */
+/**
+ * Maps a drill's contentType to the subject id it practises. Registry drills
+ * come from drills.ts; only the custom study modes are listed by hand.
+ */
 const CONTENT_TYPE_SUBJECT: Record<string, string> = {
-  riflessivi: "reflexive-verbs",
-  pronomi: "pronouns",
-  "essere-avere": "essere-avere",
-  articoli: "articles",
-  genere: "gender",
-  plurali: "plural",
-  aggettivi: "adjectives",
-  concordanza: "adjectives",
-  possessivi: "possessives",
-  piacere: "piacere",
-  preposizioni: "prepositions",
-  "modal-verbs": "modals",
-  interrogativi: "interrogatives",
-  dimostrativi: "demonstratives",
-  gerundio: "gerundio",
-  saluti: "greetings",
+  ...DRILL_CONTENT_TYPE_SUBJECT,
   conjugation: "present-tense",
   descrizione: "descrizione",
-  "passato-prossimo": "passato-prossimo",
+  time: "time",
 };
 
 type AttemptRow = { contentType: string; contentId: string; correct: boolean; createdAt: Date };

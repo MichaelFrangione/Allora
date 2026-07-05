@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { auth } from "@/lib/auth";
 import { getMistakeItems } from "@/lib/progress";
-import { DRILL_BY_TYPE } from "@/lib/content";
+import { DRILL_QUESTIONS_BY_TYPE } from "@/lib/drills";
 import type { DrillQuestion } from "@/lib/content";
 import { Button } from "@/components/ui/button";
 import DrillQuiz from "@/components/DrillQuiz";
@@ -16,7 +16,7 @@ export default async function MistakesPage() {
   const questions: DrillQuestion[] = [];
   const seen = new Set<string>();
   for (const m of mistakes) {
-    const pool = DRILL_BY_TYPE[m.contentType];
+    const pool = DRILL_QUESTIONS_BY_TYPE[m.contentType];
     if (!pool) continue;
     const q = pool.find((x) => x.id === m.contentId);
     if (!q) continue;

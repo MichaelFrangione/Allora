@@ -10,10 +10,8 @@ export default async function FlashcardsPage({
 }) {
   const session = await auth();
   const userId = session?.user?.id;
-  const weakItems = userId ? await getWeakItems(userId) : [];
-  const weakIds = weakItems
-    .filter((w) => w.contentType === "flashcard")
-    .map((w) => w.contentId);
+  const weakItems = userId ? await getWeakItems(userId, "flashcard") : [];
+  const weakIds = weakItems.map((w) => w.contentId);
   const params = await searchParams;
   const initialIds = params.weak === "1" ? weakIds : undefined;
   return <FlashcardSession vocab={vocab} weakIds={weakIds} initialIds={initialIds} />;

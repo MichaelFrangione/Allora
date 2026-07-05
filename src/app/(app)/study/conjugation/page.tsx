@@ -10,8 +10,8 @@ export default async function ConjugationPage({
 }) {
   const session = await auth();
   const userId = session?.user?.id;
-  const weakItems = userId ? await getWeakItems(userId) : [];
-  const weakIds = weakItems.filter((w) => w.contentType === "conjugation").map((w) => w.contentId);
+  const weakItems = userId ? await getWeakItems(userId, "conjugation") : [];
+  const weakIds = weakItems.map((w) => w.contentId);
   const verbs = getConjugationVerbs();
   const tenses = getConjugationTenses();
   const params = await searchParams;

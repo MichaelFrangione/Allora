@@ -1,115 +1,9 @@
 import { Card, CardContent } from "@/components/ui/card";
 import Link from "next/link";
+import { DRILLS } from "@/lib/drills";
 
-const drills = [
-  {
-    href: "/study/saluti",
-    label: "Saluti",
-    emoji: "👋",
-    desc: "Greetings & farewells — ciao, buongiorno, arrivederci",
-  },
-  {
-    href: "/study/interrogativi",
-    label: "Interrogativi",
-    emoji: "❓",
-    desc: "Question words — chi, cosa, come, quando, dove",
-  },
-  {
-    href: "/study/dimostrativi",
-    label: "Dimostrativi",
-    emoji: "👆",
-    desc: "This & that — questo, quello, questi, quelli",
-  },
-  {
-    href: "/study/riflessivi",
-    label: "Verbi Riflessivi",
-    emoji: "🔁",
-    desc: "Reflexive verbs — mi sveglio, ti vesti, si diverte",
-  },
-  {
-    href: "/study/pronomi",
-    label: "Pronomi",
-    emoji: "👉",
-    desc: "Subject, reflexive, direct- and indirect-object pronouns",
-  },
-  {
-    href: "/study/essere-avere",
-    label: "Essere & Avere",
-    emoji: "🟰",
-    desc: "The two key verbs, plus avere fame / sete / sonno",
-  },
-  {
-    href: "/study/passato-prossimo",
-    label: "Passato Prossimo",
-    emoji: "⏮️",
-    desc: "The past tense — avere/essere + participle, irregular participles",
-  },
-  {
-    href: "/study/articoli",
-    label: "Articoli",
-    emoji: "📰",
-    desc: "il / lo / un / dei — definite, indefinite, partitive",
-  },
-  {
-    href: "/study/genere",
-    label: "Il Genere dei Nomi",
-    emoji: "⚥",
-    desc: "Masculine or feminine — endings and exceptions",
-  },
-  {
-    href: "/study/plurali",
-    label: "Il Plurale dei Nomi",
-    emoji: "➕",
-    desc: "Regular, spelling-change, and irregular plurals",
-  },
-  {
-    href: "/study/aggettivi",
-    label: "Gli Aggettivi",
-    emoji: "🎨",
-    desc: "Agreement, plus bello and buono",
-  },
-  {
-    href: "/study/modal-verbs",
-    label: "Verbi Modali",
-    emoji: "🔧",
-    desc: "Dovere, potere, volere — choose the right verb or form",
-  },
-  {
-    href: "/study/concordanza",
-    label: "La Concordanza",
-    emoji: "🎯",
-    desc: "Pick the correct adjective form to match the noun",
-  },
-  {
-    href: "/study/piacere",
-    label: "Piacere",
-    emoji: "💚",
-    desc: "Mi piace / mi piacciono — singular, plural, and questions",
-  },
-  {
-    href: "/study/preposizioni-articolate",
-    label: "Preposizioni Articolate",
-    emoji: "🔗",
-    desc: "del / al / dal / nel / sul — fill in the right form",
-  },
-  {
-    href: "/study/ristorante",
-    label: "Al Ristorante",
-    emoji: "🍽️",
-    desc: "Complete the restaurant conversation",
-  },
-  {
-    href: "/study/al-bar",
-    label: "Al Bar",
-    emoji: "☕",
-    desc: "ISC verbs and piacere translation exercises",
-  },
-  {
-    href: "/study/possessivi",
-    label: "Aggettivi Possessivi",
-    emoji: "👨‍👩‍👧",
-    desc: "Mio / tuo / suo — possessive adjectives with family",
-  },
+// Custom study modes that belong in this list but aren't registry drills.
+const customDrills = [
   {
     href: "/study/time",
     label: "Time & Dates",
@@ -117,17 +11,21 @@ const drills = [
     desc: "Telling the time, days, months, and seasons",
   },
   {
-    href: "/study/gerundio",
-    label: "Il Gerundio",
-    emoji: "⏳",
-    desc: "-ando / -endo, stare + gerundio, and the four uses",
-  },
-  {
     href: "/study/descrizione",
     label: "Descrivi l'Immagine",
     emoji: "🖼️",
     desc: "Describe a picture — c'è/ci sono, colours, and positions",
   },
+];
+
+const drills = [
+  ...DRILLS.map((d) => ({
+    href: `/study/${d.slug}`,
+    label: d.title,
+    emoji: d.emoji,
+    desc: d.desc,
+  })),
+  ...customDrills,
 ];
 
 export default function FocusedDrillsPage() {

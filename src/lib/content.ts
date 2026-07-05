@@ -243,27 +243,6 @@ export interface ImageDescription {
 
 export const imageDescriptions: ImageDescription[] = descrizioneData as ImageDescription[];
 
-/** All DrillQuiz-based drills keyed by their study contentType (for the mistakes queue). */
-export const DRILL_BY_TYPE: Record<string, DrillQuestion[]> = {
-  piacere: piacereDrill,
-  preposizioni: preposizioniDrill,
-  ristorante: ristoranteDrill,
-  "al-bar": alBarDrill,
-  possessivi: possessiviDrill,
-  riflessivi: riflessiviDrill,
-  pronomi: pronomiDrill,
-  "essere-avere": essereAvereDrill,
-  articoli: articoliDrill,
-  genere: genereDrill,
-  plurali: pluraliDrill,
-  aggettivi: aggettiviDrill,
-  interrogativi: interrogativiDrill,
-  dimostrativi: dimostrativiDrill,
-  saluti: salutiDrill,
-  gerundio: gerundioDrill,
-  "passato-prossimo": passatoProssimoDrill,
-};
-
 /**
  * Subjects are the primary way content is organised (replacing units).
  * Each subject owns a set of tags; an item belongs to the subject if it carries
