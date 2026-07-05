@@ -471,7 +471,7 @@ export default function TimeQuiz({ weakIds = [] }: { weakIds?: string[] }) {
 
       <Badge variant="outline" className="text-xs">{q.category}</Badge>
 
-      <div className="relative rounded-2xl border-2 border-border bg-card px-6 py-8 text-center space-y-2">
+      <div className="relative rounded-2xl border-2 border-border bg-card px-6 py-8 text-center space-y-2 shadow-[0_3px_0_0_var(--border-deep)]">
         {engine.burst > 0 && <CorrectBurst key={engine.burst} />}
         <p className="text-2xl font-bold">{q.prompt}</p>
         <p className="text-sm text-muted-foreground">{q.promptSub}</p>

@@ -250,7 +250,7 @@ export default function DrillQuiz({
       )}
 
       {/* Question card */}
-      <div className="relative rounded-2xl border-2 border-border bg-card px-6 py-8 space-y-3">
+      <div className="relative rounded-2xl border-2 border-border bg-card px-6 py-8 space-y-3 shadow-[0_3px_0_0_var(--border-deep)]">
         {engine.burst > 0 && <CorrectBurst key={engine.burst} />}
         {engine.currentIsRetry && (
           <span className="absolute top-3 left-3 rounded-full bg-amber-100 px-2.5 py-1 text-xs font-medium text-amber-700 dark:bg-amber-950 dark:text-amber-300">

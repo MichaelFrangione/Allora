@@ -25,18 +25,18 @@ export default function DoneScreen({
   return (
     <div className="max-w-lg mx-auto px-4 py-8 flex flex-col items-center gap-6">
       <div className="text-5xl">{pct >= 70 ? "🎉" : "📚"}</div>
-      <h1 className="text-2xl font-bold">Done!</h1>
-      <p className="text-4xl font-bold">{pct}%</p>
+      <h1 className="text-2xl font-bold">{pct >= 70 ? "Bravissimo!" : "Done!"}</h1>
+      <p className="font-display text-5xl font-bold text-primary">{pct}%</p>
       <p className="text-muted-foreground">
         {score.correct} / {total} correct first try
       </p>
-      <div className="flex w-full max-w-xs justify-around rounded-xl border-2 border-border bg-card py-3">
+      <div className="flex w-full max-w-xs justify-around rounded-2xl border-2 border-border bg-card py-3 shadow-[0_3px_0_0_var(--border-deep)]">
         <div className="text-center">
-          <p className="text-xl font-bold text-yellow-500">+{xp}</p>
+          <p className="font-display text-xl font-bold text-gold">+{xp}</p>
           <p className="text-[10px] uppercase tracking-wide text-muted-foreground">XP earned</p>
         </div>
         <div className="text-center">
-          <p className="text-xl font-bold">{pct}%</p>
+          <p className="font-display text-xl font-bold">{pct}%</p>
           <p className="text-[10px] uppercase tracking-wide text-muted-foreground">accuracy</p>
         </div>
       </div>

@@ -119,7 +119,7 @@ export default function ListeningQuiz({ items }: { items: VocabItem[] }) {
           onClick={() => speak(q.item.italian)}
           aria-label="Play the word"
           className={cn(
-            "flex h-28 w-28 items-center justify-center rounded-full border-4 border-primary bg-primary/10 text-5xl transition-transform active:scale-95",
+            "flex h-28 w-28 items-center justify-center rounded-full border-4 border-primary bg-primary/10 text-5xl shadow-[0_5px_0_0_var(--primary-deep)] transition-all active:translate-y-[4px] active:shadow-none",
             speaking && "animate-pulse"
           )}
         >

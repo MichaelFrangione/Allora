@@ -21,7 +21,7 @@ function GoalRing({ value, goal }: { value: number; goal: number }) {
           fill="none"
           strokeWidth="5"
           strokeLinecap="round"
-          className={done ? "stroke-green-500" : "stroke-primary"}
+          className={done ? "stroke-gold" : "stroke-primary"}
           strokeDasharray={circ}
           strokeDashoffset={circ * (1 - pct)}
         />
@@ -46,21 +46,21 @@ export default function LearnPath({ stats }: { stats: LearnStats }) {
         <div className="flex items-center gap-2">
           <Flame className={cn("h-6 w-6", stats.streak > 0 ? "text-orange-500" : "text-muted-foreground")} />
           <div>
-            <p className="text-lg font-bold leading-none">{stats.streak}</p>
+            <p className="font-display text-lg font-bold leading-none">{stats.streak}</p>
             <p className="text-[10px] uppercase tracking-wide text-muted-foreground">day streak</p>
           </div>
         </div>
         <div className="flex items-center gap-2">
-          <Zap className="h-6 w-6 text-yellow-500" />
+          <Zap className="h-6 w-6 text-gold" />
           <div>
-            <p className="text-lg font-bold leading-none">{stats.xp.toLocaleString()}</p>
+            <p className="font-display text-lg font-bold leading-none">{stats.xp.toLocaleString()}</p>
             <p className="text-[10px] uppercase tracking-wide text-muted-foreground">total XP</p>
           </div>
         </div>
         <div className="flex items-center gap-2">
           <GoalRing value={stats.todayXp} goal={DAILY_GOAL_XP} />
           <div>
-            <p className="text-lg font-bold leading-none">{stats.todayXp}/{DAILY_GOAL_XP}</p>
+            <p className="font-display text-lg font-bold leading-none">{stats.todayXp}/{DAILY_GOAL_XP}</p>
             <p className="text-[10px] uppercase tracking-wide text-muted-foreground">daily goal</p>
           </div>
         </div>
@@ -87,12 +87,12 @@ export default function LearnPath({ stats }: { stats: LearnStats }) {
                 href={route}
                 aria-label={`${subject.label} — level ${level} of 5`}
                 className={cn(
-                  "relative flex h-[72px] w-[72px] items-center justify-center rounded-full border-4 text-3xl shadow-sm transition-transform active:scale-95",
+                  "relative flex h-[72px] w-[72px] items-center justify-center rounded-full border-4 text-3xl transition-all active:translate-y-[4px] active:shadow-none",
                   mastered
-                    ? "border-amber-400 bg-amber-100 dark:bg-amber-950"
+                    ? "border-gold bg-gold/25 shadow-[0_5px_0_0_var(--gold-deep)]"
                     : started
-                      ? "border-primary bg-primary/15"
-                      : "border-border bg-card hover:bg-accent"
+                      ? "border-primary bg-primary/15 shadow-[0_5px_0_0_var(--primary-deep)]"
+                      : "border-border bg-card shadow-[0_5px_0_0_var(--border-deep)] hover:bg-accent"
                 )}
               >
                 {subject.emoji}
@@ -103,7 +103,7 @@ export default function LearnPath({ stats }: { stats: LearnStats }) {
               <span className="text-xs font-semibold text-center">{subject.label}</span>
               <div className="h-1.5 w-16 rounded-full bg-muted overflow-hidden">
                 <div
-                  className={cn("h-full rounded-full", mastered ? "bg-amber-400" : "bg-primary")}
+                  className={cn("h-full rounded-full", mastered ? "bg-gold" : "bg-primary")}
                   style={{ width: `${(level / 5) * 100}%` }}
                 />
               </div>

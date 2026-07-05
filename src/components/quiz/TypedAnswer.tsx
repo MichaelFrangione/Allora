@@ -73,7 +73,7 @@ export default function TypedAnswer({
             tabIndex={-1}
             disabled={submitted}
             onClick={() => insertAccent(ch)}
-            className="h-9 w-9 rounded-lg border-2 border-border bg-card text-base font-medium transition-colors hover:bg-accent disabled:opacity-40"
+            className="h-9 w-9 rounded-lg border-2 border-border bg-card text-base font-medium shadow-[0_2px_0_0_var(--border-deep)] transition-all hover:bg-accent active:translate-y-[2px] active:shadow-none disabled:opacity-40"
           >
             {ch}
           </button>
