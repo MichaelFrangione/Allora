@@ -21,6 +21,7 @@
     "italian-verbs": "^5.4.0",
     "italian-verbs-dict": "^3.4.0",
     "lucide-react": "^0.575.0",
+    "motion": "^12.42.2",
     "next": "16.1.6",
     "next-auth": "^5.0.0-beta.30",
     "prisma": "^5.22.0",

@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { motion } from "motion/react";
 import { BookOpen, LayoutDashboard, BarChart2, BookMarked, GraduationCap, PlusCircle } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -27,17 +28,27 @@ export default function BottomNav() {
               key={href}
               href={href}
               className={cn(
-                "flex flex-col items-center gap-0.5 px-3 py-1.5 rounded-2xl transition-all min-w-[56px]",
-                active
-                  ? "bg-primary/10 text-primary"
-                  : "text-muted-foreground hover:text-foreground"
+                "relative flex flex-col items-center gap-0.5 px-3 py-1.5 rounded-2xl transition-colors min-w-[56px]",
+                active ? "text-primary" : "text-muted-foreground hover:text-foreground"
               )}
             >
+              {active && (
+                <motion.span
+                  layoutId="nav-pill"
+                  className="absolute inset-0 rounded-2xl bg-primary/10"
+                  transition={{ type: "spring", stiffness: 500, damping: 35 }}
+                />
+              )}
               <Icon
-                className={cn("h-5 w-5 transition-transform", active && "scale-110")}
+                className={cn("relative z-10 h-5 w-5 transition-transform", active && "scale-110")}
                 strokeWidth={active ? 2.5 : 2}
               />
-              <span className={cn("text-[10px]", active ? "font-extrabold" : "font-medium")}>
+              <span
+                className={cn(
+                  "relative z-10 text-[10px]",
+                  active ? "font-extrabold" : "font-medium"
+                )}
+              >
                 {label}
               </span>
             </Link>

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Baloo_2, Nunito, Geist_Mono } from "next/font/google";
+import MotionProvider from "@/components/MotionProvider";
 import "./globals.css";
 
 // Body: Nunito — rounded, warm, extremely legible at quiz sizes.
@@ -42,7 +43,7 @@ export default function RootLayout({
       <body
         className={`${nunito.variable} ${baloo.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <MotionProvider>{children}</MotionProvider>
       </body>
     </html>
   );

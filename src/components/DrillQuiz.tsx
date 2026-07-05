@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { motion } from "motion/react";
 import { Button } from "@/components/ui/button";
 import { useSpeech } from "@/lib/useSpeech";
 import type { DrillQuestion } from "@/lib/content";
@@ -249,8 +250,21 @@ export default function DrillQuiz({
         </div>
       )}
 
-      {/* Question card */}
-      <div className="relative rounded-2xl border-2 border-border bg-card px-6 py-8 space-y-3 shadow-[0_2px_0_0_var(--border-deep)]">
+      {/* Question card: springs in per question, shakes on a wrong answer */}
+      <motion.div
+        key={`card-${engine.index}`}
+        initial={{ y: 24, opacity: 0 }}
+        animate={
+          submitted && !wasCorrect
+            ? { y: 0, opacity: 1, x: [0, -8, 8, -5, 5, 0] }
+            : { y: 0, opacity: 1, x: 0 }
+        }
+        transition={{
+          default: { type: "spring", stiffness: 420, damping: 28 },
+          x: { duration: 0.4, ease: "easeInOut" },
+          opacity: { duration: 0.15 },
+        }}
+        className="relative rounded-2xl border-2 border-border bg-card px-6 py-8 space-y-3 shadow-[0_2px_0_0_var(--border-deep)]">
         {engine.burst > 0 && <CorrectBurst key={engine.burst} />}
         {engine.currentIsRetry && (
           <span className="absolute top-3 left-3 rounded-full bg-amber-100 px-2.5 py-1 text-xs font-medium text-amber-700 dark:bg-amber-950 dark:text-amber-300">
@@ -295,7 +309,7 @@ export default function DrillQuiz({
             </button>
           </div>
         )}
-      </div>
+      </motion.div>
 
       {/* Answer input */}
       {typed ? (
