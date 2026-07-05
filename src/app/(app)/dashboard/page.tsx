@@ -1,10 +1,11 @@
 import { auth } from "@/lib/auth";
-import { getModeStats, getRecentSessions, getDueVocabCount, getMistakeItems } from "@/lib/progress";
+import { getModeStats, getRecentSessions, getDueVocabCount, getMistakeItems, getNextUp } from "@/lib/progress";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
 import Link from "next/link";
 import BoostToggle from "@/components/BoostToggle";
+import ContinueCard from "@/components/ContinueCard";
 import DarkModeToggle from "@/components/DarkModeToggle";
 
 const studyModes = [
@@ -24,11 +25,12 @@ export default async function DashboardPage() {
   const session = await auth();
   const userId = session!.user!.id!;
 
-  const [modeStats, recentSessions, dueCount, mistakes] = await Promise.all([
+  const [modeStats, recentSessions, dueCount, mistakes, nextUp] = await Promise.all([
     getModeStats(userId),
     getRecentSessions(userId, 3),
     getDueVocabCount(userId),
     getMistakeItems(userId),
+    getNextUp(userId),
   ]);
   const mistakeCount = mistakes.length;
 
@@ -46,6 +48,8 @@ export default async function DashboardPage() {
         </h1>
         <p className="text-muted-foreground text-sm mt-1">Ready to practice Italian?</p>
       </div>
+
+      <ContinueCard nextUp={nextUp} />
 
       {overallAccuracy !== null && (
         <Card>
