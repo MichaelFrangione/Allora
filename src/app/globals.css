@@ -64,7 +64,7 @@
   --popover-foreground: oklch(0.29 0.035 55);
   --primary: oklch(0.56 0.145 148);
   --primary-foreground: oklch(0.985 0.01 95);
-  --primary-deep: oklch(0.44 0.12 148);
+  --primary-deep: oklch(0.48 0.125 148);
   --secondary: oklch(0.93 0.045 130);
   --secondary-foreground: oklch(0.35 0.06 145);
   --muted: oklch(0.935 0.02 90);
@@ -72,13 +72,13 @@
   --accent: oklch(0.93 0.03 100);
   --accent-foreground: oklch(0.29 0.035 55);
   --destructive: oklch(0.58 0.19 30);
-  --destructive-deep: oklch(0.47 0.16 30);
+  --destructive-deep: oklch(0.5 0.16 30);
   --border: oklch(0.885 0.025 85);
-  --border-deep: oklch(0.815 0.03 82);
+  --border-deep: oklch(0.855 0.025 84);
   --input: oklch(0.885 0.025 85);
   --ring: oklch(0.66 0.12 148);
   --gold: oklch(0.8 0.14 85);
-  --gold-deep: oklch(0.66 0.13 80);
+  --gold-deep: oklch(0.7 0.13 82);
   --chart-1: oklch(0.646 0.222 41.116);
   --chart-2: oklch(0.6 0.118 184.704);
   --chart-3: oklch(0.398 0.07 227.392);
@@ -104,7 +104,7 @@
   --popover-foreground: oklch(0.945 0.015 85);
   --primary: oklch(0.72 0.15 150);
   --primary-foreground: oklch(0.2 0.035 145);
-  --primary-deep: oklch(0.55 0.13 150);
+  --primary-deep: oklch(0.58 0.13 150);
   --secondary: oklch(0.33 0.04 140);
   --secondary-foreground: oklch(0.9 0.04 140);
   --muted: oklch(0.315 0.022 55);
@@ -112,13 +112,13 @@
   --accent: oklch(0.33 0.025 60);
   --accent-foreground: oklch(0.945 0.015 85);
   --destructive: oklch(0.66 0.17 28);
-  --destructive-deep: oklch(0.52 0.14 28);
+  --destructive-deep: oklch(0.55 0.14 28);
   --border: oklch(0.38 0.025 60);
-  --border-deep: oklch(0.17 0.015 55);
+  --border-deep: oklch(0.2 0.015 55);
   --input: oklch(0.38 0.025 60);
   --ring: oklch(0.6 0.1 150);
   --gold: oklch(0.75 0.13 85);
-  --gold-deep: oklch(0.58 0.12 80);
+  --gold-deep: oklch(0.62 0.12 82);
   --chart-1: oklch(0.488 0.243 264.376);
   --chart-2: oklch(0.696 0.17 162.48);
   --chart-3: oklch(0.769 0.188 70.08);
@@ -151,14 +151,15 @@
   }
 }
 
-/* Signature: a slim tricolore hairline across the very top of the viewport */
+/* Signature: a slim tricolore hairline across the very top of the viewport.
+   Overdrawn 1px above the viewport edge so zoom/DPR rounding can't leave a gap. */
 body::before {
   content: "";
   position: fixed;
-  top: 0;
+  top: -1px;
   left: 0;
   right: 0;
-  height: 3px;
+  height: 4px;
   z-index: 60;
   pointer-events: none;
   background: linear-gradient(

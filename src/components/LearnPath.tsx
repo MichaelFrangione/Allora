@@ -87,12 +87,12 @@ export default function LearnPath({ stats }: { stats: LearnStats }) {
                 href={route}
                 aria-label={`${subject.label} — level ${level} of 5`}
                 className={cn(
-                  "relative flex h-[72px] w-[72px] items-center justify-center rounded-full border-4 text-3xl transition-all active:translate-y-[4px] active:shadow-none",
+                  "relative flex h-[72px] w-[72px] items-center justify-center rounded-full border-4 text-3xl transition-all active:translate-y-[3px] active:shadow-none",
                   mastered
-                    ? "border-gold bg-gold/25 shadow-[0_5px_0_0_var(--gold-deep)]"
+                    ? "border-gold bg-gold/25 shadow-[0_4px_0_0_var(--gold-deep)]"
                     : started
-                      ? "border-primary bg-primary/15 shadow-[0_5px_0_0_var(--primary-deep)]"
-                      : "border-border bg-card shadow-[0_5px_0_0_var(--border-deep)] hover:bg-accent"
+                      ? "border-primary bg-primary/15 shadow-[0_4px_0_0_var(--primary-deep)]"
+                      : "border-border bg-card shadow-[0_4px_0_0_var(--border-deep)] hover:bg-accent"
                 )}
               >
                 {subject.emoji}

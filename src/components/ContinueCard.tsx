@@ -6,7 +6,7 @@ import type { NextUp } from "@/lib/progress";
 export default function ContinueCard({ nextUp }: { nextUp: NextUp }) {
   return (
     <Link href={nextUp.href} className="group block">
-      <div className="flex items-center gap-4 rounded-2xl bg-primary px-5 py-4 text-primary-foreground shadow-[0_5px_0_0_var(--primary-deep)] transition-all group-hover:brightness-105 group-active:translate-y-[4px] group-active:shadow-none">
+      <div className="flex items-center gap-4 rounded-2xl bg-primary px-5 py-4 text-primary-foreground shadow-[0_4px_0_0_var(--primary-deep)] transition-all group-hover:brightness-105 group-active:translate-y-[3px] group-active:shadow-none">
         <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-white/20 text-2xl">
           {nextUp.emoji}
         </div>

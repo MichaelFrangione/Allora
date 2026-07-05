@@ -42,7 +42,7 @@ export default function OptionList({
             className={cn(
               "flex items-center gap-3 border-2 rounded-xl cursor-pointer transition-all",
               !submitted &&
-                "bg-card shadow-[0_3px_0_0_var(--border-deep)] hover:bg-accent/60 active:translate-y-[2px] active:shadow-none",
+                "bg-card shadow-[0_2px_0_0_var(--border-deep)] hover:bg-accent/60 active:translate-y-[2px] active:shadow-none",
               optionClassName,
               optClass,
               !submitted && selected === opt && "border-primary bg-primary/10"

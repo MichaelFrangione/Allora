@@ -30,7 +30,7 @@ export default function DoneScreen({
       <p className="text-muted-foreground">
         {score.correct} / {total} correct first try
       </p>
-      <div className="flex w-full max-w-xs justify-around rounded-2xl border-2 border-border bg-card py-3 shadow-[0_3px_0_0_var(--border-deep)]">
+      <div className="flex w-full max-w-xs justify-around rounded-2xl border-2 border-border bg-card py-3 shadow-[0_2px_0_0_var(--border-deep)]">
         <div className="text-center">
           <p className="font-display text-xl font-bold text-gold">+{xp}</p>
           <p className="text-[10px] uppercase tracking-wide text-muted-foreground">XP earned</p>

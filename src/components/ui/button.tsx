@@ -11,11 +11,11 @@ const buttonVariants = cva(
       variant: {
         // "Pressable" 3D edge: hard bottom shadow that compresses on press.
         default:
-          "bg-primary text-primary-foreground shadow-[0_4px_0_0_var(--primary-deep)] hover:bg-primary/95 active:translate-y-[3px] active:shadow-none",
+          "bg-primary text-primary-foreground shadow-[0_3px_0_0_var(--primary-deep)] hover:bg-primary/95 active:translate-y-[2px] active:shadow-none",
         destructive:
-          "bg-destructive text-white shadow-[0_4px_0_0_var(--destructive-deep)] hover:bg-destructive/95 active:translate-y-[3px] active:shadow-none focus-visible:ring-destructive/20 dark:focus-visible:ring-destructive/40",
+          "bg-destructive text-white shadow-[0_3px_0_0_var(--destructive-deep)] hover:bg-destructive/95 active:translate-y-[2px] active:shadow-none focus-visible:ring-destructive/20 dark:focus-visible:ring-destructive/40",
         outline:
-          "border-2 bg-card shadow-[0_4px_0_0_var(--border-deep)] hover:bg-accent hover:text-accent-foreground active:translate-y-[3px] active:shadow-none",
+          "border-2 bg-card shadow-[0_3px_0_0_var(--border-deep)] hover:bg-accent hover:text-accent-foreground active:translate-y-[2px] active:shadow-none",
         secondary:
           "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost:
