@@ -141,6 +141,9 @@
   body {
     @apply bg-background text-foreground;
     font-family: var(--font-nunito), ui-sans-serif, system-ui, sans-serif;
+    /* Installed-PWA mode uses viewport-fit=cover; clear the status bar/notch.
+       In a normal browser tab this inset is 0, so nothing changes. */
+    padding-top: env(safe-area-inset-top, 0px);
   }
   /* Chunky, friendly display face for all headings */
   h1,
@@ -156,7 +159,8 @@
 body::before {
   content: "";
   position: fixed;
-  top: -1px;
+  /* Sits just below the status bar in the installed app; -1px in a browser tab. */
+  top: calc(env(safe-area-inset-top, 0px) - 1px);
   left: 0;
   right: 0;
   height: 4px;

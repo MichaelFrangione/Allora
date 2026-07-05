@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Baloo_2, Nunito, Geist_Mono } from "next/font/google";
 import MotionProvider from "@/components/MotionProvider";
 import "./globals.css";
@@ -24,6 +24,21 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Allora",
   description: "Italian language learning app",
+  icons: { apple: "/apple-touch-icon.png" },
+  appleWebApp: {
+    capable: true,
+    title: "Allora",
+    statusBarStyle: "default",
+  },
+};
+
+export const viewport: Viewport = {
+  // Edge-to-edge on phones; safe-area insets are handled in globals.css/BottomNav.
+  viewportFit: "cover",
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#faf6ec" },
+    { media: "(prefers-color-scheme: dark)", color: "#241f19" },
+  ],
 };
 
 export default function RootLayout({

@@ -15,8 +15,9 @@ export default auth((req) => {
 });
 
 export const config = {
-  // Exclude API, Next internals, and public static assets (e.g. /images/*, .png/.svg)
-  // so unauthenticated asset requests — including next/image's own upstream fetch —
+  // Exclude API, Next internals, public static assets (e.g. /images/*, .png/.svg)
+  // and the PWA manifest, so unauthenticated asset requests — including
+  // next/image's own upstream fetch and the browser's manifest fetch —
   // aren't redirected to /login.
-  matcher: ["/((?!api|_next/static|_next/image|favicon.ico|images|.*\\.(?:png|jpg|jpeg|gif|svg|webp|ico)$).*)"],
+  matcher: ["/((?!api|_next/static|_next/image|favicon.ico|manifest.webmanifest|images|.*\\.(?:png|jpg|jpeg|gif|svg|webp|ico)$).*)"],
 };
