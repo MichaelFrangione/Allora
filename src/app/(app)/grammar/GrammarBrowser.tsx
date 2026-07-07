@@ -1,16 +1,9 @@
 "use client";
 
-import Link from "next/link";
-import { ChevronRight, TableIcon } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
 import { tagsMatchSubject } from "@/lib/content";
 import type { GrammarRule, Conjugation } from "@/lib/content";
+import type { Topic } from "./topics";
 import GlossedText from "@/components/GlossedText";
 import {
   PRONOUNS,
@@ -73,41 +66,6 @@ const MONTHS = [
 const SEASONS = [
   ["primavera", "spring"], ["estate", "summer"],
   ["autunno", "autumn"], ["inverno", "winter"],
-];
-
-// ── Subject sections ───────────────────────────────────────────────────────────
-// The Guide is organised by subject. Each section pulls its grammar rules by
-// subject tag, plus an optional curated set of conjugation tables and/or a
-// special visual reference (numbers/time, concordanza, preposizioni articolate).
-
-type ExtraSection = "numbers-time" | "concordanza" | "preposizioni" | "passato-prossimo";
-
-const SECTIONS: {
-  id: string;
-  label: string;
-  conjIds?: string[];
-  extra?: ExtraSection;
-}[] = [
-  {
-    id: "present-tense",
-    label: "🔤 Present Tense — Regular & Irregular Verbs",
-    conjIds: ["c001", "c002", "c003", "c004", "c005", "c006", "c007", "c008", "c009", "c010", "c011", "c012", "c013", "c098", "c099", "c103", "c104"],
-  },
-  { id: "reflexive-verbs", label: "🔁 Reflexive Verbs", conjIds: ["c105", "c106", "c107", "c108", "c109", "c110", "c111"] },
-  { id: "passato-prossimo", label: "⏮️ Passato Prossimo — Avere & Essere", extra: "passato-prossimo" },
-  { id: "modals", label: "🔧 Modal Verbs", conjIds: ["c100", "c101", "c102"] },
-  { id: "piacere", label: "💚 Piacere" },
-  { id: "pronouns", label: "👉 Pronouns" },
-  { id: "interrogatives", label: "❓ Question Words" },
-  { id: "demonstratives", label: "👆 This & That" },
-  { id: "greetings", label: "👋 Greetings & Farewells" },
-  { id: "articles", label: "📰 Articles" },
-  { id: "gender", label: "⚥ Noun Gender" },
-  { id: "plural", label: "➕ Plurals" },
-  { id: "adjectives", label: "🎨 Adjectives & Agreement", extra: "concordanza" },
-  { id: "possessives", label: "👪 Possessives" },
-  { id: "prepositions", label: "🔗 Prepositions", extra: "preposizioni" },
-  { id: "time", label: "🕐 Numbers, Time, Days & Months", extra: "numbers-time" },
 ];
 
 // ── Sub-components ────────────────────────────────────────────────────────────
@@ -753,102 +711,68 @@ function PreposizioniArticolateSection() {
   );
 }
 
-// ── Main component ────────────────────────────────────────────────────────────
+// ── Topic content ─────────────────────────────────────────────────────────────
+// Renders one topic's full reference: its grammar rules + any bespoke visual block
+// + curated conjugation tables. Shown on the topic page (/grammar/<id>).
 
-export default function ReferenceBrowser({
+export function TopicContent({
+  topic,
   rules,
   conjugations,
 }: {
+  topic: Topic;
   rules: GrammarRule[];
   conjugations: Conjugation[];
 }) {
+  // g018 is an older, partial duplicate of g026 (both possessivi) — skip it.
+  const topicRules = rules.filter((r) => tagsMatchSubject(r.tags, topic.id) && r.id !== "g018");
+  const topicConjs = topic.conjIds
+    ? conjugations.filter((c) => topic.conjIds!.includes(c.id))
+    : [];
+
   return (
-    <div className="max-w-lg mx-auto px-4 py-6 space-y-2">
-      <h1 className="text-2xl font-bold mb-4">Guide</h1>
+    <div className="space-y-4">
+      {topicRules.map((rule) => (
+        <GrammarCard key={rule.id} rule={rule} />
+      ))}
 
-      <Link href="/grammar/conjugations">
-        <div className="flex items-center justify-between rounded-lg border px-4 py-3 hover:bg-muted/50 transition-colors mb-2">
-          <div className="flex items-center gap-3">
-            <TableIcon className="h-5 w-5 text-muted-foreground" />
-            <div>
-              <p className="text-sm font-semibold">Verb Conjugations</p>
-              <p className="text-xs text-muted-foreground">All conjugation tables — searchable</p>
-            </div>
+      {topic.extra === "numbers-time" && (
+        <>
+          <div className="space-y-3">
+            <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">Numbers — Reference</p>
+            <NumbersSection />
           </div>
-          <ChevronRight className="h-4 w-4 text-muted-foreground" />
+          <div className="space-y-3">
+            <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">Time, Days &amp; Months — Reference</p>
+            <TimeSection />
+          </div>
+        </>
+      )}
+
+      {topic.extra === "passato-prossimo" && <PassatoProssimoSection />}
+
+      {topic.extra === "concordanza" && (
+        <div className="space-y-3">
+          <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">La Concordanza — Reference Tables</p>
+          <ConcordanzaSection />
         </div>
-      </Link>
+      )}
 
-      <Accordion type="multiple" className="space-y-2">
+      {topic.extra === "preposizioni" && (
+        <div className="space-y-3">
+          <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">Preposizioni Articolate — Reference Table</p>
+          <PreposizioniArticolateSection />
+        </div>
+      )}
 
-        {/* Organised by subject */}
-        {SECTIONS.map((section) => {
-          // g018 is an older, partial duplicate of g026 (both possessivi) — skip it
-          const sectionRules = rules.filter(
-            (r) => tagsMatchSubject(r.tags, section.id) && r.id !== "g018"
-          );
-          const sectionConjs = section.conjIds
-            ? conjugations.filter((c) => section.conjIds!.includes(c.id))
-            : [];
-
-          // Skip sections with nothing to show
-          if (sectionRules.length === 0 && sectionConjs.length === 0 && !section.extra) {
-            return null;
-          }
-
-          return (
-            <AccordionItem key={section.id} value={section.id} className="border rounded-lg px-4">
-              <AccordionTrigger className="text-base font-semibold hover:no-underline py-3">
-                {section.label}
-              </AccordionTrigger>
-              <AccordionContent className="pt-2 pb-4 space-y-4">
-                {sectionRules.map((rule) => (
-                  <GrammarCard key={rule.id} rule={rule} />
-                ))}
-
-                {section.extra === "numbers-time" && (
-                  <>
-                    <div className="space-y-3">
-                      <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">Numbers — Reference</p>
-                      <NumbersSection />
-                    </div>
-                    <div className="space-y-3">
-                      <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">Time, Days &amp; Months — Reference</p>
-                      <TimeSection />
-                    </div>
-                  </>
-                )}
-
-                {section.extra === "passato-prossimo" && <PassatoProssimoSection />}
-
-                {section.extra === "concordanza" && (
-                  <div className="space-y-3">
-                    <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">La Concordanza — Reference Tables</p>
-                    <ConcordanzaSection />
-                  </div>
-                )}
-
-                {section.extra === "preposizioni" && (
-                  <div className="space-y-3">
-                    <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">Preposizioni Articolate — Reference Table</p>
-                    <PreposizioniArticolateSection />
-                  </div>
-                )}
-
-                {sectionConjs.length > 0 && (
-                  <div className="space-y-3">
-                    <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">Conjugation Tables</p>
-                    {sectionConjs.map((c) => (
-                      <ConjugationTable key={c.id} conj={c} />
-                    ))}
-                  </div>
-                )}
-              </AccordionContent>
-            </AccordionItem>
-          );
-        })}
-
-      </Accordion>
+      {topicConjs.length > 0 && (
+        <div className="space-y-3">
+          <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">Conjugation Tables</p>
+          {topicConjs.map((c) => (
+            <ConjugationTable key={c.id} conj={c} />
+          ))}
+        </div>
+      )}
     </div>
   );
 }

@@ -1,39 +1,29 @@
 // @vitest-environment jsdom
 import { afterEach, describe, it, expect } from "vitest";
 import { render, screen, cleanup } from "@testing-library/react";
-import ReferenceBrowser, { PassatoProssimoSection } from "../GrammarBrowser";
+import { TopicContent, PassatoProssimoSection } from "../GrammarBrowser";
+import { getTopic } from "../topics";
 import { grammar, conjugations } from "@/lib/content";
-
-// Radix Accordion may reference ResizeObserver, which jsdom doesn't provide.
-globalThis.ResizeObserver =
-  globalThis.ResizeObserver ||
-  class {
-    observe() {}
-    unobserve() {}
-    disconnect() {}
-  };
 
 afterEach(cleanup);
 
-describe("Grammar guide — Passato Prossimo", () => {
-  it("is wired into the guide as its own section", () => {
-    render(<ReferenceBrowser rules={grammar} conjugations={conjugations} />);
-    expect(screen.getByText(/Passato Prossimo — Avere & Essere/)).toBeTruthy();
-  });
+describe("Guide topic page — Passato Prossimo", () => {
+  it("TopicContent renders the Passato Prossimo reference (full conjugations, avere/essere)", () => {
+    const topic = getTopic("passato-prossimo");
+    expect(topic).toBeTruthy();
+    render(<TopicContent topic={topic!} rules={grammar} conjugations={conjugations} />);
 
-  it("shows full conjugations and the avere / essere split", () => {
-    render(<PassatoProssimoSection />);
-
-    // Avere: invariable participle.
+    // Avere: invariable participle; Essere: agreeing participle.
     expect(screen.getByText("ho mangiato")).toBeTruthy();
-    expect(screen.getByText("hanno mangiato")).toBeTruthy();
-
-    // Essere: participle agrees with the subject.
     expect(screen.getByText("sono andato/a")).toBeTruthy();
     expect(screen.getByText("siamo andati/e")).toBeTruthy();
-
-    // Regular endings + an irregular participle from the notes.
+    // Regular endings + an irregular participle.
     expect(screen.getAllByText(/-ato/).length).toBeGreaterThan(0);
     expect(screen.getByText("fatto")).toBeTruthy();
+  });
+
+  it("PassatoProssimoSection renders standalone", () => {
+    render(<PassatoProssimoSection />);
+    expect(screen.getByText("hanno mangiato")).toBeTruthy();
   });
 });
