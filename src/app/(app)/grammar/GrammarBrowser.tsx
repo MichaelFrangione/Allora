@@ -11,6 +11,7 @@ import {
 } from "@/components/ui/accordion";
 import { tagsMatchSubject } from "@/lib/content";
 import type { GrammarRule, Conjugation } from "@/lib/content";
+import GlossedText from "@/components/GlossedText";
 import {
   PRONOUNS,
   TIME_MARKERS,
@@ -509,7 +510,9 @@ function ConcordanzaSection() {
 function PPExample({ it, en }: { it: string; en: string }) {
   return (
     <div className="text-sm pl-3 border-l-2 border-primary/30">
-      <span className="italic font-medium">{it}</span>
+      <span className="italic font-medium">
+        <GlossedText text={it} />
+      </span>
       <span className="text-muted-foreground"> — {en}</span>
     </div>
   );
@@ -565,7 +568,9 @@ export function PassatoProssimoSection() {
         </p>
         <div className="flex flex-wrap gap-1.5">
           {TIME_MARKERS.map((t) => (
-            <span key={t} className="rounded-full border bg-card px-2.5 py-0.5 text-xs">{t}</span>
+            <span key={t} className="rounded-full border bg-card px-2.5 py-0.5 text-xs">
+              <GlossedText text={t} />
+            </span>
           ))}
         </div>
         <div className="space-y-1.5 pt-1">

@@ -901,5 +901,1547 @@
       "passato-prossimo",
       "participio"
     ]
+  },
+  {
+    "id": "pp052",
+    "category": "participio",
+    "sentence": "Piero ha ___ una mela.",
+    "hint": "mangiare → participio",
+    "correct": "mangiato",
+    "options": [
+      "parlato",
+      "finito",
+      "mangiato"
+    ],
+    "explanation": "mangiare → mangiato.",
+    "tags": [
+      "passato-prossimo",
+      "participio"
+    ]
+  },
+  {
+    "id": "pp053",
+    "category": "participio",
+    "sentence": "Maria ha ___ con Silvia.",
+    "hint": "parlare → participio",
+    "correct": "parlato",
+    "options": [
+      "salito",
+      "parlato",
+      "visitato"
+    ],
+    "explanation": "parlare → parlato.",
+    "tags": [
+      "passato-prossimo",
+      "participio"
+    ]
+  },
+  {
+    "id": "pp054",
+    "category": "participio",
+    "sentence": "Carmine ha ___ gli Stati Uniti.",
+    "hint": "visitare → participio",
+    "correct": "visitato",
+    "options": [
+      "visitato",
+      "giocato",
+      "pulito"
+    ],
+    "explanation": "visitare → visitato.",
+    "tags": [
+      "passato-prossimo",
+      "participio"
+    ]
+  },
+  {
+    "id": "pp055",
+    "category": "participio",
+    "sentence": "Sandro ha ___ a calcio.",
+    "hint": "giocare → participio",
+    "correct": "giocato",
+    "options": [
+      "arrivato",
+      "capito",
+      "giocato"
+    ],
+    "explanation": "giocare → giocato.",
+    "tags": [
+      "passato-prossimo",
+      "participio"
+    ]
+  },
+  {
+    "id": "pp056",
+    "category": "participio",
+    "sentence": "Felice è ___ ieri.",
+    "hint": "arrivare → participio",
+    "correct": "arrivato",
+    "options": [
+      "sentito",
+      "arrivato",
+      "andato"
+    ],
+    "explanation": "arrivare → arrivato.",
+    "tags": [
+      "passato-prossimo",
+      "participio"
+    ]
+  },
+  {
+    "id": "pp057",
+    "category": "participio",
+    "sentence": "Dove sei ___?",
+    "hint": "andare → participio",
+    "correct": "andato",
+    "options": [
+      "andato",
+      "dato",
+      "venduto"
+    ],
+    "explanation": "andare → andato.",
+    "tags": [
+      "passato-prossimo",
+      "participio"
+    ]
+  },
+  {
+    "id": "pp058",
+    "category": "participio",
+    "sentence": "Giorgio ha ___ un regalo a Silvia.",
+    "hint": "dare → participio",
+    "correct": "dato",
+    "options": [
+      "uscito",
+      "dovuto",
+      "dato"
+    ],
+    "explanation": "dare → dato.",
+    "tags": [
+      "passato-prossimo",
+      "participio"
+    ]
+  },
+  {
+    "id": "pp059",
+    "category": "participio",
+    "sentence": "Carlo è ___.",
+    "hint": "uscire → participio",
+    "correct": "uscito",
+    "options": [
+      "saputo",
+      "uscito",
+      "finito"
+    ],
+    "explanation": "uscire → uscito.",
+    "tags": [
+      "passato-prossimo",
+      "participio"
+    ]
+  },
+  {
+    "id": "pp060",
+    "category": "participio",
+    "sentence": "Carmela ha ___ di parlare.",
+    "hint": "finire → participio",
+    "correct": "finito",
+    "options": [
+      "finito",
+      "salito",
+      "potuto"
+    ],
+    "explanation": "finire → finito.",
+    "tags": [
+      "passato-prossimo",
+      "participio"
+    ]
+  },
+  {
+    "id": "pp061",
+    "category": "participio",
+    "sentence": "Nicola è ___ in autobus.",
+    "hint": "salire → participio",
+    "correct": "salito",
+    "options": [
+      "pulito",
+      "fatto",
+      "salito"
+    ],
+    "explanation": "salire → salito.",
+    "tags": [
+      "passato-prossimo",
+      "participio"
+    ]
+  },
+  {
+    "id": "pp062",
+    "category": "participio",
+    "sentence": "Giovanni ha ___ la sua camera.",
+    "hint": "pulire → participio",
+    "correct": "pulito",
+    "options": [
+      "chiuso",
+      "pulito",
+      "capito"
+    ],
+    "explanation": "pulire → pulito.",
+    "tags": [
+      "passato-prossimo",
+      "participio"
+    ]
+  },
+  {
+    "id": "pp063",
+    "category": "participio",
+    "sentence": "Grazia non ha ___ niente!",
+    "hint": "capire → participio",
+    "correct": "capito",
+    "options": [
+      "capito",
+      "sentito",
+      "bevuto"
+    ],
+    "explanation": "capire → capito.",
+    "tags": [
+      "passato-prossimo",
+      "participio"
+    ]
+  },
+  {
+    "id": "pp064",
+    "category": "participio",
+    "sentence": "Francesco non ha ___ niente.",
+    "hint": "sentire → participio",
+    "correct": "sentito",
+    "options": [
+      "venduto",
+      "aperto",
+      "sentito"
+    ],
+    "explanation": "sentire → sentito.",
+    "tags": [
+      "passato-prossimo",
+      "participio"
+    ]
+  },
+  {
+    "id": "pp065",
+    "category": "participio",
+    "sentence": "Gigi ha ___ la sua macchina.",
+    "hint": "vendere → participio",
+    "correct": "venduto",
+    "options": [
+      "messo",
+      "venduto",
+      "dovuto"
+    ],
+    "explanation": "vendere → venduto.",
+    "tags": [
+      "passato-prossimo",
+      "participio"
+    ]
+  },
+  {
+    "id": "pp066",
+    "category": "participio",
+    "sentence": "Beatrice ha ___ lavorare.",
+    "hint": "dovere → participio",
+    "correct": "dovuto",
+    "options": [
+      "dovuto",
+      "saputo",
+      "chiesto"
+    ],
+    "explanation": "dovere → dovuto.",
+    "tags": [
+      "passato-prossimo",
+      "participio"
+    ]
+  },
+  {
+    "id": "pp067",
+    "category": "participio",
+    "sentence": "Alessandro ha ___ una notizia.",
+    "hint": "sapere → participio",
+    "correct": "saputo",
+    "options": [
+      "potuto",
+      "scelto",
+      "saputo"
+    ],
+    "explanation": "sapere → saputo.",
+    "tags": [
+      "passato-prossimo",
+      "participio"
+    ]
+  },
+  {
+    "id": "pp068",
+    "category": "participio",
+    "sentence": "Dora ha ___ dormire.",
+    "hint": "potere → participio",
+    "correct": "potuto",
+    "options": [
+      "deciso",
+      "potuto",
+      "fatto"
+    ],
+    "explanation": "potere → potuto.",
+    "tags": [
+      "passato-prossimo",
+      "participio"
+    ]
+  },
+  {
+    "id": "pp069",
+    "category": "participio",
+    "sentence": "Andrea ha ___ molto sport.",
+    "hint": "fare → participio",
+    "correct": "fatto",
+    "options": [
+      "fato",
+      "chiuso",
+      "rotto",
+      "fatto"
+    ],
+    "explanation": "fare → fatto (participio irregolare).",
+    "tags": [
+      "passato-prossimo",
+      "participio"
+    ]
+  },
+  {
+    "id": "pp070",
+    "category": "participio",
+    "sentence": "Ho ___ la porta.",
+    "hint": "chiudere → participio",
+    "correct": "chiuso",
+    "options": [
+      "bevuto",
+      "sceso",
+      "chiuso",
+      "chiuduto"
+    ],
+    "explanation": "chiudere → chiuso (participio irregolare).",
+    "tags": [
+      "passato-prossimo",
+      "participio"
+    ]
+  },
+  {
+    "id": "pp071",
+    "category": "participio",
+    "sentence": "Hai ___ troppa birra?",
+    "hint": "bere → participio",
+    "correct": "bevuto",
+    "options": [
+      "stato",
+      "bevuto",
+      "buto",
+      "aperto"
+    ],
+    "explanation": "bere → bevuto (participio irregolare).",
+    "tags": [
+      "passato-prossimo",
+      "participio"
+    ]
+  },
+  {
+    "id": "pp072",
+    "category": "participio",
+    "sentence": "Marco ha ___ la porta.",
+    "hint": "aprire → participio",
+    "correct": "aperto",
+    "options": [
+      "aperto",
+      "aprito",
+      "messo",
+      "preso"
+    ],
+    "explanation": "aprire → aperto (participio irregolare).",
+    "tags": [
+      "passato-prossimo",
+      "participio"
+    ]
+  },
+  {
+    "id": "pp073",
+    "category": "participio",
+    "sentence": "Ho ___ il piatto sul tavolo.",
+    "hint": "mettere → participio",
+    "correct": "messo",
+    "options": [
+      "mettuto",
+      "chiesto",
+      "scritto",
+      "messo"
+    ],
+    "explanation": "mettere → messo (participio irregolare).",
+    "tags": [
+      "passato-prossimo",
+      "participio"
+    ]
+  },
+  {
+    "id": "pp074",
+    "category": "participio",
+    "sentence": "Abbiamo ___ un gelato.",
+    "hint": "chiedere → participio",
+    "correct": "chiesto",
+    "options": [
+      "scelto",
+      "nato",
+      "chiesto",
+      "chieduto"
+    ],
+    "explanation": "chiedere → chiesto (participio irregolare).",
+    "tags": [
+      "passato-prossimo",
+      "participio"
+    ]
+  },
+  {
+    "id": "pp075",
+    "category": "participio",
+    "sentence": "Abbiamo ___ un gelato alla fragola.",
+    "hint": "scegliere → participio",
+    "correct": "scelto",
+    "options": [
+      "venuto",
+      "scelto",
+      "scegliuto",
+      "deciso"
+    ],
+    "explanation": "scegliere → scelto (participio irregolare).",
+    "tags": [
+      "passato-prossimo",
+      "participio"
+    ]
+  },
+  {
+    "id": "pp076",
+    "category": "participio",
+    "sentence": "Avete ___ di uscire.",
+    "hint": "decidere → participio",
+    "correct": "deciso",
+    "options": [
+      "deciso",
+      "deciduto",
+      "rotto",
+      "morto"
+    ],
+    "explanation": "decidere → deciso (participio irregolare).",
+    "tags": [
+      "passato-prossimo",
+      "participio"
+    ]
+  },
+  {
+    "id": "pp077",
+    "category": "participio",
+    "sentence": "Perché hai ___ il bicchiere?",
+    "hint": "rompere → participio",
+    "correct": "rotto",
+    "options": [
+      "romputo",
+      "sceso",
+      "vissuto",
+      "rotto"
+    ],
+    "explanation": "rompere → rotto (participio irregolare).",
+    "tags": [
+      "passato-prossimo",
+      "participio"
+    ]
+  },
+  {
+    "id": "pp078",
+    "category": "participio",
+    "sentence": "Luigi è ___ dalla macchina.",
+    "hint": "scendere → participio",
+    "correct": "sceso",
+    "options": [
+      "stato",
+      "rimasto",
+      "sceso",
+      "scenduto"
+    ],
+    "explanation": "scendere → sceso (participio irregolare).",
+    "tags": [
+      "passato-prossimo",
+      "participio"
+    ]
+  },
+  {
+    "id": "pp079",
+    "category": "participio",
+    "sentence": "Giorgio è ___ malato.",
+    "hint": "essere → participio",
+    "correct": "stato",
+    "options": [
+      "detto",
+      "stato",
+      "essuto",
+      "preso"
+    ],
+    "explanation": "essere → stato (participio irregolare).",
+    "tags": [
+      "passato-prossimo",
+      "participio"
+    ]
+  },
+  {
+    "id": "pp080",
+    "category": "participio",
+    "sentence": "Federico ha ___ la macchina.",
+    "hint": "prendere → participio",
+    "correct": "preso",
+    "options": [
+      "preso",
+      "prenduto",
+      "scritto",
+      "risposto"
+    ],
+    "explanation": "prendere → preso (participio irregolare).",
+    "tags": [
+      "passato-prossimo",
+      "participio"
+    ]
+  },
+  {
+    "id": "pp081",
+    "category": "participio",
+    "sentence": "Hai ___ quella lettera?",
+    "hint": "scrivere → participio",
+    "correct": "scritto",
+    "options": [
+      "scrivuto",
+      "nato",
+      "visto",
+      "scritto"
+    ],
+    "explanation": "scrivere → scritto (participio irregolare).",
+    "tags": [
+      "passato-prossimo",
+      "participio"
+    ]
+  },
+  {
+    "id": "pp082",
+    "category": "participio",
+    "sentence": "Quando sei ___?",
+    "hint": "nascere → participio",
+    "correct": "nato",
+    "options": [
+      "venuto",
+      "perso",
+      "nato",
+      "nascuto"
+    ],
+    "explanation": "nascere → nato (participio irregolare).",
+    "tags": [
+      "passato-prossimo",
+      "participio"
+    ]
+  },
+  {
+    "id": "pp083",
+    "category": "participio",
+    "sentence": "Giovanni è ___ a cena ieri sera.",
+    "hint": "venire → participio",
+    "correct": "venuto",
+    "options": [
+      "successo",
+      "venuto",
+      "venito",
+      "morto"
+    ],
+    "explanation": "venire → venuto (participio irregolare).",
+    "tags": [
+      "passato-prossimo",
+      "participio"
+    ]
+  },
+  {
+    "id": "pp084",
+    "category": "participio",
+    "sentence": "Mio zio è ___ ieri.",
+    "hint": "morire → participio",
+    "correct": "morto",
+    "options": [
+      "morto",
+      "morito",
+      "vissuto",
+      "vinto"
+    ],
+    "explanation": "morire → morto (participio irregolare).",
+    "tags": [
+      "passato-prossimo",
+      "participio"
+    ]
+  },
+  {
+    "id": "pp085",
+    "category": "participio",
+    "sentence": "Davide ha ___ in Spagna.",
+    "hint": "vivere → participio",
+    "correct": "vissuto",
+    "options": [
+      "vivuto",
+      "rimasto",
+      "letto",
+      "vissuto"
+    ],
+    "explanation": "vivere → vissuto (participio irregolare).",
+    "tags": [
+      "passato-prossimo",
+      "participio"
+    ]
+  },
+  {
+    "id": "pp086",
+    "category": "participio",
+    "sentence": "Daniele è ___ in Australia.",
+    "hint": "rimanere → participio",
+    "correct": "rimasto",
+    "options": [
+      "detto",
+      "speso",
+      "rimasto",
+      "rimanuto"
+    ],
+    "explanation": "rimanere → rimasto (participio irregolare).",
+    "tags": [
+      "passato-prossimo",
+      "participio"
+    ]
+  },
+  {
+    "id": "pp087",
+    "category": "participio",
+    "sentence": "Hai ___ una bugia.",
+    "hint": "dire → participio",
+    "correct": "detto",
+    "options": [
+      "mangiato",
+      "detto",
+      "dito",
+      "risposto"
+    ],
+    "explanation": "dire → detto (participio irregolare).",
+    "tags": [
+      "passato-prossimo",
+      "participio"
+    ]
+  },
+  {
+    "id": "pp088",
+    "category": "participio",
+    "sentence": "Ho ___ al telefono.",
+    "hint": "rispondere → participio",
+    "correct": "risposto",
+    "options": [
+      "risposto",
+      "risponduto",
+      "visto",
+      "parlato"
+    ],
+    "explanation": "rispondere → risposto (participio irregolare).",
+    "tags": [
+      "passato-prossimo",
+      "participio"
+    ]
+  },
+  {
+    "id": "pp089",
+    "category": "participio",
+    "sentence": "A Roma, abbiamo ___ il colosseo.",
+    "hint": "vedere → participio",
+    "correct": "visto",
+    "options": [
+      "veduto",
+      "perso",
+      "visitato",
+      "visto"
+    ],
+    "explanation": "vedere → visto (participio irregolare).",
+    "tags": [
+      "passato-prossimo",
+      "participio"
+    ]
+  },
+  {
+    "id": "pp090",
+    "category": "participio",
+    "sentence": "Hanno ___ i loro quaderni.",
+    "hint": "perdere → participio",
+    "correct": "perso",
+    "options": [
+      "successo",
+      "giocato",
+      "perso",
+      "perduto"
+    ],
+    "explanation": "perdere → perso (participio irregolare).",
+    "tags": [
+      "passato-prossimo",
+      "participio"
+    ]
+  },
+  {
+    "id": "pp091",
+    "category": "participio",
+    "sentence": "Che cosa è ___?",
+    "hint": "succedere → participio",
+    "correct": "successo",
+    "options": [
+      "arrivato",
+      "successo",
+      "succeduto",
+      "vinto"
+    ],
+    "explanation": "succedere → successo (participio irregolare).",
+    "tags": [
+      "passato-prossimo",
+      "participio"
+    ]
+  },
+  {
+    "id": "pp092",
+    "category": "participio",
+    "sentence": "L'Italia ha ___ la coppa del mondo.",
+    "hint": "vincere → participio",
+    "correct": "vinto",
+    "options": [
+      "vinto",
+      "vincuto",
+      "letto",
+      "andato"
+    ],
+    "explanation": "vincere → vinto (participio irregolare).",
+    "tags": [
+      "passato-prossimo",
+      "participio"
+    ]
+  },
+  {
+    "id": "pp093",
+    "category": "participio",
+    "sentence": "Ho ___ un libro interessante.",
+    "hint": "leggere → participio",
+    "correct": "letto",
+    "options": [
+      "legguto",
+      "speso",
+      "dato",
+      "letto"
+    ],
+    "explanation": "leggere → letto (participio irregolare).",
+    "tags": [
+      "passato-prossimo",
+      "participio"
+    ]
+  },
+  {
+    "id": "pp094",
+    "category": "participio",
+    "sentence": "Abbiamo ___ troppi soldi in vacanza.",
+    "hint": "spendere → participio",
+    "correct": "speso",
+    "options": [
+      "mangiato",
+      "uscito",
+      "speso",
+      "spenduto"
+    ],
+    "explanation": "spendere → speso (participio irregolare).",
+    "tags": [
+      "passato-prossimo",
+      "participio"
+    ]
+  },
+  {
+    "id": "pp095",
+    "category": "ausiliare",
+    "sentence": "(io) ___ fatto la spesa.",
+    "hint": "fare → ausiliare?",
+    "correct": "ho",
+    "options": [
+      "sono",
+      "ha",
+      "sei",
+      "ho"
+    ],
+    "explanation": "fare → avere → ho.",
+    "tags": [
+      "passato-prossimo",
+      "ausiliare"
+    ]
+  },
+  {
+    "id": "pp096",
+    "category": "ausiliare",
+    "sentence": "(noi) ___ arrivati ieri.",
+    "hint": "arrivare → ausiliare?",
+    "correct": "siamo",
+    "options": [
+      "è",
+      "hai",
+      "siamo",
+      "abbiamo"
+    ],
+    "explanation": "arrivare → essere → siamo.",
+    "tags": [
+      "passato-prossimo",
+      "ausiliare"
+    ]
+  },
+  {
+    "id": "pp097",
+    "category": "ausiliare",
+    "sentence": "Piero ___ mangiato una mela.",
+    "hint": "mangiare → ausiliare?",
+    "correct": "ha",
+    "options": [
+      "ha",
+      "è",
+      "sei"
+    ],
+    "explanation": "mangiare → avere → ha.",
+    "tags": [
+      "passato-prossimo",
+      "ausiliare"
+    ]
+  },
+  {
+    "id": "pp098",
+    "category": "ausiliare",
+    "sentence": "Piero e Maria ___ partiti stamattina.",
+    "hint": "partire → ausiliare?",
+    "correct": "sono",
+    "options": [
+      "sono",
+      "hanno",
+      "è",
+      "hai"
+    ],
+    "explanation": "partire → essere → sono.",
+    "tags": [
+      "passato-prossimo",
+      "ausiliare"
+    ]
+  },
+  {
+    "id": "pp099",
+    "category": "ausiliare",
+    "sentence": "(noi) ___ letto un bel libro.",
+    "hint": "leggere → ausiliare?",
+    "correct": "abbiamo",
+    "options": [
+      "siamo",
+      "ha",
+      "sei",
+      "abbiamo"
+    ],
+    "explanation": "leggere → avere → abbiamo.",
+    "tags": [
+      "passato-prossimo",
+      "ausiliare"
+    ]
+  },
+  {
+    "id": "pp100",
+    "category": "ausiliare",
+    "sentence": "Voi, quando ___ usciti?",
+    "hint": "uscire → ausiliare?",
+    "correct": "siete",
+    "options": [
+      "è",
+      "hai",
+      "siete",
+      "avete"
+    ],
+    "explanation": "uscire → essere → siete.",
+    "tags": [
+      "passato-prossimo",
+      "ausiliare"
+    ]
+  },
+  {
+    "id": "pp101",
+    "category": "ausiliare",
+    "sentence": "I ragazzi ___ preso un caffè.",
+    "hint": "prendere → ausiliare?",
+    "correct": "hanno",
+    "options": [
+      "sei",
+      "hanno",
+      "sono",
+      "ha"
+    ],
+    "explanation": "prendere → avere → hanno.",
+    "tags": [
+      "passato-prossimo",
+      "ausiliare"
+    ]
+  },
+  {
+    "id": "pp102",
+    "category": "ausiliare",
+    "sentence": "Piero ___ andato a Roma.",
+    "hint": "andare → ausiliare?",
+    "correct": "è",
+    "options": [
+      "hai",
+      "è",
+      "ha"
+    ],
+    "explanation": "andare → essere → è.",
+    "tags": [
+      "passato-prossimo",
+      "ausiliare"
+    ]
+  },
+  {
+    "id": "pp103",
+    "category": "ausiliare",
+    "sentence": "(io) ___ venuto in macchina.",
+    "hint": "venire → ausiliare?",
+    "correct": "sono",
+    "options": [
+      "ho",
+      "è",
+      "hai",
+      "sono"
+    ],
+    "explanation": "venire → essere → sono.",
+    "tags": [
+      "passato-prossimo",
+      "ausiliare"
+    ]
+  },
+  {
+    "id": "pp104",
+    "category": "ausiliare",
+    "sentence": "Tu, ___ avuto il tuo regalo?",
+    "hint": "avere → ausiliare?",
+    "correct": "hai",
+    "options": [
+      "sei",
+      "ha",
+      "hai"
+    ],
+    "explanation": "avere → avere → hai.",
+    "tags": [
+      "passato-prossimo",
+      "ausiliare"
+    ]
+  },
+  {
+    "id": "pp105",
+    "category": "ausiliare",
+    "sentence": "(voi) ___ finito di parlare.",
+    "hint": "finire → ausiliare?",
+    "correct": "avete",
+    "options": [
+      "sei",
+      "avete",
+      "siete",
+      "ha"
+    ],
+    "explanation": "finire → avere → avete.",
+    "tags": [
+      "passato-prossimo",
+      "ausiliare"
+    ]
+  },
+  {
+    "id": "pp106",
+    "category": "ausiliare",
+    "sentence": "Tu, quando ___ nato?",
+    "hint": "nascere → ausiliare?",
+    "correct": "sei",
+    "options": [
+      "sei",
+      "hai",
+      "è"
+    ],
+    "explanation": "nascere → essere → sei.",
+    "tags": [
+      "passato-prossimo",
+      "ausiliare"
+    ]
+  },
+  {
+    "id": "pp107",
+    "category": "ausiliare",
+    "sentence": "Ti ___ piaciuto il film?",
+    "hint": "piacere → ausiliare?",
+    "correct": "è",
+    "options": [
+      "ha",
+      "hai",
+      "è"
+    ],
+    "explanation": "piacere → essere → è.",
+    "tags": [
+      "passato-prossimo",
+      "ausiliare"
+    ]
+  },
+  {
+    "id": "pp108",
+    "category": "ausiliare",
+    "sentence": "Tu, perché ___ rimasto a casa?",
+    "hint": "rimanere → ausiliare?",
+    "correct": "sei",
+    "options": [
+      "è",
+      "sei",
+      "hai"
+    ],
+    "explanation": "rimanere → essere → sei.",
+    "tags": [
+      "passato-prossimo",
+      "ausiliare"
+    ]
+  },
+  {
+    "id": "pp109",
+    "category": "ausiliare",
+    "sentence": "(noi) ___ visto un bel film.",
+    "hint": "vedere → ausiliare?",
+    "correct": "abbiamo",
+    "options": [
+      "sei",
+      "abbiamo",
+      "siamo",
+      "ha"
+    ],
+    "explanation": "vedere → avere → abbiamo.",
+    "tags": [
+      "passato-prossimo",
+      "ausiliare"
+    ]
+  },
+  {
+    "id": "pp110",
+    "category": "ausiliare",
+    "sentence": "Mario ___ sceso dal treno.",
+    "hint": "scendere → ausiliare?",
+    "correct": "ha",
+    "options": [
+      "è",
+      "sei",
+      "ha"
+    ],
+    "explanation": "scendere → avere → ha.",
+    "tags": [
+      "passato-prossimo",
+      "ausiliare"
+    ]
+  },
+  {
+    "id": "pp111",
+    "category": "ausiliare",
+    "sentence": "(io) ___ offerto un regalo al mio amico.",
+    "hint": "offrire → ausiliare?",
+    "correct": "ho",
+    "options": [
+      "sono",
+      "ha",
+      "sei",
+      "ho"
+    ],
+    "explanation": "offrire → avere → ho.",
+    "tags": [
+      "passato-prossimo",
+      "ausiliare"
+    ]
+  },
+  {
+    "id": "pp112",
+    "category": "ausiliare",
+    "sentence": "(voi) ___ stati in Italia?",
+    "hint": "essere → ausiliare?",
+    "correct": "siete",
+    "options": [
+      "è",
+      "hai",
+      "siete",
+      "avete"
+    ],
+    "explanation": "essere → essere → siete.",
+    "tags": [
+      "passato-prossimo",
+      "ausiliare"
+    ]
+  },
+  {
+    "id": "pp113",
+    "category": "ausiliare",
+    "sentence": "Le ragazze ___ arrivate a casa.",
+    "hint": "arrivare → ausiliare?",
+    "correct": "sono",
+    "options": [
+      "hai",
+      "sono",
+      "hanno",
+      "è"
+    ],
+    "explanation": "arrivare → essere → sono.",
+    "tags": [
+      "passato-prossimo",
+      "ausiliare"
+    ]
+  },
+  {
+    "id": "pp114",
+    "category": "ausiliare",
+    "sentence": "(voi) ___ bevuto del vino rosso.",
+    "hint": "bere → ausiliare?",
+    "correct": "avete",
+    "options": [
+      "avete",
+      "siete",
+      "ha",
+      "sei"
+    ],
+    "explanation": "bere → avere → avete.",
+    "tags": [
+      "passato-prossimo",
+      "ausiliare"
+    ]
+  },
+  {
+    "id": "pp115",
+    "category": "ausiliare",
+    "sentence": "Tu, perché ___ deciso di uscire?",
+    "hint": "decidere → ausiliare?",
+    "correct": "hai",
+    "options": [
+      "hai",
+      "sei",
+      "ha"
+    ],
+    "explanation": "decidere → avere → hai.",
+    "tags": [
+      "passato-prossimo",
+      "ausiliare"
+    ]
+  },
+  {
+    "id": "pp116",
+    "category": "ausiliare",
+    "sentence": "Carlo ___ ricevuto una lettera.",
+    "hint": "ricevere → ausiliare?",
+    "correct": "ha",
+    "options": [
+      "è",
+      "sei",
+      "ha"
+    ],
+    "explanation": "ricevere → avere → ha.",
+    "tags": [
+      "passato-prossimo",
+      "ausiliare"
+    ]
+  },
+  {
+    "id": "pp117",
+    "category": "ausiliare",
+    "sentence": "(noi) ___ diventati amici.",
+    "hint": "diventare → ausiliare?",
+    "correct": "siamo",
+    "options": [
+      "hai",
+      "siamo",
+      "abbiamo",
+      "è"
+    ],
+    "explanation": "diventare → essere → siamo.",
+    "tags": [
+      "passato-prossimo",
+      "ausiliare"
+    ]
+  },
+  {
+    "id": "pp118",
+    "category": "ausiliare",
+    "sentence": "(io) ___ salito in macchina.",
+    "hint": "salire → ausiliare?",
+    "correct": "ho",
+    "options": [
+      "ho",
+      "sono",
+      "ha",
+      "sei"
+    ],
+    "explanation": "salire → avere → ho.",
+    "tags": [
+      "passato-prossimo",
+      "ausiliare"
+    ]
+  },
+  {
+    "id": "pp119",
+    "category": "forma",
+    "sentence": "(io) ___ un esame.",
+    "hint": "avere → io",
+    "correct": "ho avuto",
+    "options": [
+      "sono avuto",
+      "hai avuto",
+      "ho avuto"
+    ],
+    "explanation": "avere, io → ho avuto.",
+    "tags": [
+      "passato-prossimo",
+      "forma"
+    ]
+  },
+  {
+    "id": "pp120",
+    "category": "forma",
+    "sentence": "(io) ___ delle caramelle.",
+    "hint": "comprare → io",
+    "correct": "ho comprato",
+    "options": [
+      "hai comprato",
+      "ho comprato",
+      "sono comprato"
+    ],
+    "explanation": "comprare, io → ho comprato.",
+    "tags": [
+      "passato-prossimo",
+      "forma"
+    ]
+  },
+  {
+    "id": "pp121",
+    "category": "forma",
+    "sentence": "(io) ___ in città.",
+    "hint": "andare → io",
+    "correct": "sono andato",
+    "options": [
+      "sono andato",
+      "ho andato",
+      "sei andato"
+    ],
+    "explanation": "andare, io → sono andato.",
+    "tags": [
+      "passato-prossimo",
+      "forma"
+    ]
+  },
+  {
+    "id": "pp122",
+    "category": "forma",
+    "sentence": "(io) ___ con mio padre.",
+    "hint": "parlare → io",
+    "correct": "ho parlato",
+    "options": [
+      "sono parlato",
+      "hai parlato",
+      "ho parlato"
+    ],
+    "explanation": "parlare, io → ho parlato.",
+    "tags": [
+      "passato-prossimo",
+      "forma"
+    ]
+  },
+  {
+    "id": "pp123",
+    "category": "forma",
+    "sentence": "(io) ___ a Roma.",
+    "hint": "nascere → io",
+    "correct": "sono nato",
+    "options": [
+      "ho nato",
+      "sono nascuto",
+      "sei nato",
+      "sono nato"
+    ],
+    "explanation": "nascere, io → sono nato.",
+    "tags": [
+      "passato-prossimo",
+      "forma"
+    ]
+  },
+  {
+    "id": "pp124",
+    "category": "forma",
+    "sentence": "(io) ___ una bella donna.",
+    "hint": "conoscere → io",
+    "correct": "ho conosciuto",
+    "options": [
+      "ho conoscuto",
+      "hai conosciuto",
+      "ho conosciuto",
+      "sono conosciuto"
+    ],
+    "explanation": "conoscere, io → ho conosciuto.",
+    "tags": [
+      "passato-prossimo",
+      "forma"
+    ]
+  },
+  {
+    "id": "pp125",
+    "category": "forma",
+    "sentence": "(io) ___ a casa.",
+    "hint": "rimanere → io",
+    "correct": "sono rimasto",
+    "options": [
+      "sei rimasto",
+      "sono rimasto",
+      "ho rimasto",
+      "sono rimanuto"
+    ],
+    "explanation": "rimanere, io → sono rimasto.",
+    "tags": [
+      "passato-prossimo",
+      "forma"
+    ]
+  },
+  {
+    "id": "pp126",
+    "category": "forma",
+    "sentence": "(io) ___ il sole.",
+    "hint": "prendere → io",
+    "correct": "ho preso",
+    "options": [
+      "ho preso",
+      "sono preso",
+      "ho prenduto",
+      "hai preso"
+    ],
+    "explanation": "prendere, io → ho preso.",
+    "tags": [
+      "passato-prossimo",
+      "forma"
+    ]
+  },
+  {
+    "id": "pp127",
+    "category": "forma",
+    "sentence": "(io) ___ in casa.",
+    "hint": "entrare → io",
+    "correct": "sono entrato",
+    "options": [
+      "sono entrato",
+      "ho entrato",
+      "sei entrato"
+    ],
+    "explanation": "entrare, io → sono entrato.",
+    "tags": [
+      "passato-prossimo",
+      "forma"
+    ]
+  },
+  {
+    "id": "pp128",
+    "category": "forma",
+    "sentence": "(io) ___ della ginnastica.",
+    "hint": "fare → io",
+    "correct": "ho fatto",
+    "options": [
+      "ho fato",
+      "hai fatto",
+      "ho fatto",
+      "sono fatto"
+    ],
+    "explanation": "fare, io → ho fatto.",
+    "tags": [
+      "passato-prossimo",
+      "forma"
+    ]
+  },
+  {
+    "id": "pp129",
+    "category": "forma",
+    "sentence": "(io) ___ di casa presto.",
+    "hint": "uscire → io",
+    "correct": "sono uscito",
+    "options": [
+      "sei uscito",
+      "sono uscito",
+      "ho uscito"
+    ],
+    "explanation": "uscire, io → sono uscito.",
+    "tags": [
+      "passato-prossimo",
+      "forma"
+    ]
+  },
+  {
+    "id": "pp130",
+    "category": "forma",
+    "sentence": "(io) ___ a casa tardi.",
+    "hint": "tornare → io",
+    "correct": "sono tornato",
+    "options": [
+      "sono tornato",
+      "ho tornato",
+      "sei tornato"
+    ],
+    "explanation": "tornare, io → sono tornato.",
+    "tags": [
+      "passato-prossimo",
+      "forma"
+    ]
+  },
+  {
+    "id": "pp131",
+    "category": "forma",
+    "sentence": "(io) ___ a calcio.",
+    "hint": "giocare → io",
+    "correct": "ho giocato",
+    "options": [
+      "sono giocato",
+      "hai giocato",
+      "ho giocato"
+    ],
+    "explanation": "giocare, io → ho giocato.",
+    "tags": [
+      "passato-prossimo",
+      "forma"
+    ]
+  },
+  {
+    "id": "pp132",
+    "category": "forma",
+    "sentence": "(io) ___ alle otto.",
+    "hint": "partire → io",
+    "correct": "sono partito",
+    "options": [
+      "sei partito",
+      "sono partito",
+      "ho partito"
+    ],
+    "explanation": "partire, io → sono partito.",
+    "tags": [
+      "passato-prossimo",
+      "forma"
+    ]
+  },
+  {
+    "id": "pp133",
+    "category": "forma",
+    "sentence": "(io) ___ la macchina.",
+    "hint": "vendere → io",
+    "correct": "ho venduto",
+    "options": [
+      "ho venduto",
+      "sono venduto",
+      "hai venduto"
+    ],
+    "explanation": "vendere, io → ho venduto.",
+    "tags": [
+      "passato-prossimo",
+      "forma"
+    ]
+  },
+  {
+    "id": "pp134",
+    "category": "forma",
+    "sentence": "(io) ___ i compiti.",
+    "hint": "finire → io",
+    "correct": "ho finito",
+    "options": [
+      "sono finito",
+      "hai finito",
+      "ho finito"
+    ],
+    "explanation": "finire, io → ho finito.",
+    "tags": [
+      "passato-prossimo",
+      "forma"
+    ]
+  },
+  {
+    "id": "pp135",
+    "category": "forma",
+    "sentence": "(io) ___ lungo la spiaggia.",
+    "hint": "camminare → io",
+    "correct": "ho camminato",
+    "options": [
+      "hai camminato",
+      "ho camminato",
+      "sono camminato"
+    ],
+    "explanation": "camminare, io → ho camminato.",
+    "tags": [
+      "passato-prossimo",
+      "forma"
+    ]
+  },
+  {
+    "id": "pp136",
+    "category": "forma",
+    "sentence": "(io) ___ in vacanza.",
+    "hint": "essere → io",
+    "correct": "sono stato",
+    "options": [
+      "sono stato",
+      "ho stato",
+      "sei stato"
+    ],
+    "explanation": "essere, io → sono stato.",
+    "tags": [
+      "passato-prossimo",
+      "forma"
+    ]
+  },
+  {
+    "id": "pp137",
+    "category": "forma",
+    "sentence": "(io) ___ una mano a Silvia.",
+    "hint": "dare → io",
+    "correct": "ho dato",
+    "options": [
+      "sono dato",
+      "hai dato",
+      "ho dato"
+    ],
+    "explanation": "dare, io → ho dato.",
+    "tags": [
+      "passato-prossimo",
+      "forma"
+    ]
+  },
+  {
+    "id": "pp138",
+    "category": "forma",
+    "sentence": "(io) ___ un'amica.",
+    "hint": "incontrare → io",
+    "correct": "ho incontrato",
+    "options": [
+      "hai incontrato",
+      "ho incontrato",
+      "sono incontrato"
+    ],
+    "explanation": "incontrare, io → ho incontrato.",
+    "tags": [
+      "passato-prossimo",
+      "forma"
+    ]
+  },
+  {
+    "id": "pp139",
+    "category": "forma",
+    "sentence": "(io) ___ da Firenze.",
+    "hint": "ritornare → io",
+    "correct": "sono ritornato",
+    "options": [
+      "sono ritornato",
+      "ho ritornato",
+      "sei ritornato"
+    ],
+    "explanation": "ritornare, io → sono ritornato.",
+    "tags": [
+      "passato-prossimo",
+      "forma"
+    ]
   }
 ]
