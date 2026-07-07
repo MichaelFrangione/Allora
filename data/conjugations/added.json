@@ -1,1 +1,86 @@
-[]
+[
+  {
+    "id": "cmr9tbklt0001vc17bvte4se7-presente",
+    "verb": "Salire",
+    "meaning": "to go up, to come up",
+    "tense": "presente",
+    "forms": {
+      "io": "salgo",
+      "tu": "sali",
+      "lui/lei": "sale",
+      "noi": "saliamo",
+      "voi": "salite",
+      "loro": "salgono"
+    }
+  },
+  {
+    "id": "cmr9tine00003vc17ar01hujq-presente",
+    "verb": "Sapere",
+    "meaning": "to know (information)",
+    "tense": "presente",
+    "forms": {
+      "io": "so",
+      "tu": "sai",
+      "lui/lei": "sa",
+      "noi": "sappiamo",
+      "voi": "sapete",
+      "loro": "sanno"
+    }
+  },
+  {
+    "id": "cmr9tn3vw0005vc17sozjfzvj-presente",
+    "verb": "Chiudere",
+    "meaning": "to close, to shut",
+    "tense": "presente",
+    "forms": {
+      "io": "chiudo",
+      "tu": "chiudi",
+      "lui/lei": "chiude",
+      "noi": "chiudiamo",
+      "voi": "chiudete",
+      "loro": "chiudono"
+    }
+  },
+  {
+    "id": "cmr9tqrre0007vc17kc7je3xo-presente",
+    "verb": "Scegliere",
+    "meaning": "to choose",
+    "tense": "presente",
+    "forms": {
+      "io": "scelgo",
+      "tu": "scegli",
+      "lui/lei": "sceglie",
+      "noi": "scegliamo",
+      "voi": "scegliete",
+      "loro": "scelgono"
+    }
+  },
+  {
+    "id": "cmr9tu1lh0009vc174559oaw7-presente",
+    "verb": "Scendere",
+    "meaning": "to go (all the way) down, come (all the way) down (the stairs)",
+    "tense": "presente",
+    "forms": {
+      "io": "scendo",
+      "tu": "scendi",
+      "lui/lei": "scende",
+      "noi": "scendiamo",
+      "voi": "scendete",
+      "loro": "scendono"
+    }
+  },
+  {
+    "id": "cmr9tzrv3000dvc17pei9u0tx-presente",
+    "verb": "Rimanere",
+    "meaning": "to stay",
+    "tense": "presente",
+    "forms": {
+      "io": "rimango",
+      "tu": "rimani",
+      "lui/lei": "rimane",
+      "noi": "rimaniamo",
+      "voi": "rimanete",
+      "loro": "rimangono"
+    }
+  }
+]

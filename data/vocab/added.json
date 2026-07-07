@@ -743,5 +743,98 @@
     "tags": [
       "present-tense"
     ]
+  },
+  {
+    "id": "cmr9tbklt0001vc17bvte4se7",
+    "italian": "Salire",
+    "english": "to go up, to come up",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "",
+    "tags": [
+      "present-tense"
+    ]
+  },
+  {
+    "id": "cmr9tine00003vc17ar01hujq",
+    "italian": "Sapere",
+    "english": "to know (information)",
+    "gender": "m",
+    "partOfSpeech": "verb",
+    "example": "",
+    "tags": [
+      "present-tense"
+    ]
+  },
+  {
+    "id": "cmr9tn3vw0005vc17sozjfzvj",
+    "italian": "Chiudere",
+    "english": "to close, to shut",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "",
+    "tags": [
+      "present-tense"
+    ]
+  },
+  {
+    "id": "cmr9tqrre0007vc17kc7je3xo",
+    "italian": "Scegliere",
+    "english": "to choose",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "",
+    "tags": [
+      "present-tense"
+    ]
+  },
+  {
+    "id": "cmr9tu1lh0009vc174559oaw7",
+    "italian": "Scendere",
+    "english": "to go (all the way) down, come (all the way) down (the stairs)",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "",
+    "tags": [
+      "present-tense"
+    ]
+  },
+  {
+    "id": "cmr9tuvf4000bvc175m9vb81q",
+    "italian": "Malato",
+    "english": "ill, sick, unwell, affected, sore",
+    "gender": "m",
+    "partOfSpeech": "",
+    "example": "",
+    "tags": []
+  },
+  {
+    "id": "cmr9tzrv3000dvc17pei9u0tx",
+    "italian": "Rimanere",
+    "english": "to stay",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "",
+    "tags": [
+      "present-tense"
+    ]
+  },
+  {
+    "id": "cmr9uaz3i000114mh0rvjcage",
+    "italian": "Regalo",
+    "english": "present, gift",
+    "gender": "m",
+    "partOfSpeech": "",
+    "example": "",
+    "tags": []
+  },
+  {
+    "id": "cmr9ujx06000314mh1krpamvx",
+    "italian": "Esame",
+    "english": "examination, test",
+    "gender": "m",
+    "partOfSpeech": "",
+    "example": "",
+    "tags": []
   }
 ]
