@@ -11,6 +11,20 @@ import {
 } from "@/components/ui/accordion";
 import { tagsMatchSubject } from "@/lib/content";
 import type { GrammarRule, Conjugation } from "@/lib/content";
+import {
+  PRONOUNS,
+  TIME_MARKERS,
+  USAGE_EXAMPLES,
+  REGULAR_PARTICIPLE,
+  AVERE_VERBS,
+  ESSERE_VERBS,
+  AVERE_EXAMPLES,
+  ESSERE_GROUPS,
+  ESSERE_EXAMPLES,
+  IRREGULAR_GROUPS,
+  conjugatePP,
+  type PPVerb,
+} from "@/lib/passato-prossimo";
 
 // ── Numbers data ─────────────────────────────────────────────────────────────
 
@@ -65,7 +79,7 @@ const SEASONS = [
 // subject tag, plus an optional curated set of conjugation tables and/or a
 // special visual reference (numbers/time, concordanza, preposizioni articolate).
 
-type ExtraSection = "numbers-time" | "concordanza" | "preposizioni";
+type ExtraSection = "numbers-time" | "concordanza" | "preposizioni" | "passato-prossimo";
 
 const SECTIONS: {
   id: string;
@@ -79,6 +93,7 @@ const SECTIONS: {
     conjIds: ["c001", "c002", "c003", "c004", "c005", "c006", "c007", "c008", "c009", "c010", "c011", "c012", "c013", "c098", "c099", "c103", "c104"],
   },
   { id: "reflexive-verbs", label: "🔁 Reflexive Verbs", conjIds: ["c105", "c106", "c107", "c108", "c109", "c110", "c111"] },
+  { id: "passato-prossimo", label: "⏮️ Passato Prossimo — Avere & Essere", extra: "passato-prossimo" },
   { id: "modals", label: "🔧 Modal Verbs", conjIds: ["c100", "c101", "c102"] },
   { id: "piacere", label: "💚 Piacere" },
   { id: "pronouns", label: "👉 Pronouns" },
@@ -489,6 +504,191 @@ function ConcordanzaSection() {
   );
 }
 
+// ── Passato Prossimo ──────────────────────────────────────────────────────────
+
+function PPExample({ it, en }: { it: string; en: string }) {
+  return (
+    <div className="text-sm pl-3 border-l-2 border-primary/30">
+      <span className="italic font-medium">{it}</span>
+      <span className="text-muted-foreground"> — {en}</span>
+    </div>
+  );
+}
+
+function PPConjTable({ verb }: { verb: PPVerb }) {
+  const forms = conjugatePP(verb);
+  const headerTint =
+    verb.aux === "avere" ? "bg-blue-50 dark:bg-blue-950/40" : "bg-amber-50 dark:bg-amber-950/40";
+  return (
+    <div className="rounded-lg border overflow-hidden">
+      <div className={`flex items-baseline justify-between border-b px-3 py-1.5 ${headerTint}`}>
+        <p className="text-sm font-semibold">
+          {verb.verb} <span className="font-normal text-muted-foreground">— {verb.meaning}</span>
+        </p>
+        <span className="text-[10px] font-bold uppercase tracking-wide text-muted-foreground">{verb.aux}</span>
+      </div>
+      <table className="w-full text-sm">
+        <tbody>
+          {PRONOUNS.map((p, i) => (
+            <tr key={p} className="border-t border-border first:border-0">
+              <td className="w-20 px-3 py-1 text-muted-foreground">{p}</td>
+              <td className="px-3 py-1 font-medium">{forms[i]}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
+}
+
+export function PassatoProssimoSection() {
+  return (
+    <div className="space-y-6">
+      {/* What it is + the formula */}
+      <div className="space-y-2">
+        <p className="text-sm text-muted-foreground">
+          A compound tense (<em>tempo composto</em>) for finished past actions that happened at a
+          specific moment. It is built from two pieces:
+        </p>
+        <div className="rounded-lg border bg-muted px-3 py-2 text-center text-sm">
+          <span className="font-semibold">ausiliare</span>{" "}
+          <span className="text-muted-foreground">(avere / essere, al presente)</span>
+          <span className="mx-1.5 font-bold text-primary">+</span>
+          <span className="font-semibold">participio passato</span>
+        </div>
+      </div>
+
+      {/* When to use — glanceable time markers */}
+      <div className="space-y-2">
+        <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">
+          Quando si usa? — Time markers
+        </p>
+        <div className="flex flex-wrap gap-1.5">
+          {TIME_MARKERS.map((t) => (
+            <span key={t} className="rounded-full border bg-card px-2.5 py-0.5 text-xs">{t}</span>
+          ))}
+        </div>
+        <div className="space-y-1.5 pt-1">
+          {USAGE_EXAMPLES.map(([it, en]) => (
+            <PPExample key={it} it={it} en={en} />
+          ))}
+        </div>
+      </div>
+
+      {/* Regular participle */}
+      <div className="space-y-2">
+        <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">
+          Il participio passato — regolare
+        </p>
+        <div className="overflow-hidden rounded-lg border">
+          <table className="w-full text-sm">
+            <thead>
+              <tr className="bg-muted">
+                <th className="w-16 px-3 py-1.5 text-left text-xs font-semibold">Verbo</th>
+                <th className="w-24 px-3 py-1.5 text-left text-xs font-semibold">Participio</th>
+                <th className="px-3 py-1.5 text-left text-xs font-semibold">Esempi</th>
+              </tr>
+            </thead>
+            <tbody>
+              {REGULAR_PARTICIPLE.map((r) => (
+                <tr key={r.ending} className="border-t align-top">
+                  <td className="px-3 py-1.5 font-bold">{r.ending}</td>
+                  <td className="px-3 py-1.5 font-medium text-primary">{r.becomes}</td>
+                  <td className="px-3 py-1.5 italic text-muted-foreground">
+                    {r.examples.map(([inf, part]) => `${inf} → ${part}`).join(",  ")}
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      {/* Avere or Essere? */}
+      <div className="space-y-2">
+        <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">
+          Avere o Essere?
+        </p>
+        <div className="grid gap-3 sm:grid-cols-2">
+          <div className="overflow-hidden rounded-lg border">
+            <div className="border-b bg-blue-50 px-3 py-1.5 dark:bg-blue-950/40">
+              <p className="text-sm font-semibold">AVERE</p>
+              <p className="text-xs text-muted-foreground">answers <em>chi? / che cosa?</em> (transitive)</p>
+            </div>
+            <div className="space-y-1.5 p-3">
+              {AVERE_EXAMPLES.map(([it, en]) => (
+                <PPExample key={it} it={it} en={en} />
+              ))}
+              <p className="pt-1 text-xs text-muted-foreground">
+                Participle stays <strong>-o</strong> — no agreement.
+              </p>
+            </div>
+          </div>
+          <div className="overflow-hidden rounded-lg border">
+            <div className="border-b bg-amber-50 px-3 py-1.5 dark:bg-amber-950/40">
+              <p className="text-sm font-semibold">ESSERE</p>
+              <p className="text-xs text-muted-foreground">does <em>not</em> answer chi? / che cosa?</p>
+            </div>
+            <ul className="space-y-1 p-3">
+              {ESSERE_GROUPS.map((g) => (
+                <li key={g.label} className="text-xs">
+                  <span className="font-semibold">{g.label}</span>
+                  <span className="text-muted-foreground"> — {g.verbs.slice(0, 4).join(", ")}…</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+        <div className="space-y-1.5 pt-1">
+          {ESSERE_EXAMPLES.map(([it, en]) => (
+            <PPExample key={it} it={it} en={en} />
+          ))}
+        </div>
+        <div className="rounded-md border border-amber-200 bg-amber-50 px-3 py-2 text-sm dark:border-amber-800 dark:bg-amber-950/40">
+          ⚠️ With <strong>essere</strong> the participle agrees with the subject: -o (m.), -a (f.),
+          -i (m. pl.), -e (f. pl.) — e.g. <em>sono andato / andata / andati / andate</em>.
+        </div>
+      </div>
+
+      {/* Full example conjugations — every verb gets its table */}
+      <div className="space-y-2">
+        <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">
+          Coniugazione completa
+        </p>
+        <div className="grid gap-3 sm:grid-cols-2">
+          {[...AVERE_VERBS, ...ESSERE_VERBS].map((v) => (
+            <PPConjTable key={v.verb} verb={v} />
+          ))}
+        </div>
+      </div>
+
+      {/* Irregular participles, grouped by ending */}
+      <div className="space-y-2">
+        <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">
+          Participi irregolari
+        </p>
+        <div className="grid gap-2 sm:grid-cols-2">
+          {IRREGULAR_GROUPS.map((g) => (
+            <div key={g.ending} className="overflow-hidden rounded-lg border">
+              <div className="bg-muted px-3 py-1">
+                <span className="text-xs font-bold">{g.ending}</span>
+              </div>
+              <ul className="divide-y">
+                {g.pairs.map(([inf, part]) => (
+                  <li key={inf} className="flex items-baseline justify-between px-3 py-1 text-sm">
+                    <span className="italic text-muted-foreground">{inf}</span>
+                    <span className="font-medium">{part}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
+
 // ── Preposizioni Articolate ───────────────────────────────────────────────────
 
 const PREP_ROWS: [string, string, string, string, string, string, string, string][] = [
@@ -613,6 +813,8 @@ export default function ReferenceBrowser({
                     </div>
                   </>
                 )}
+
+                {section.extra === "passato-prossimo" && <PassatoProssimoSection />}
 
                 {section.extra === "concordanza" && (
                   <div className="space-y-3">
