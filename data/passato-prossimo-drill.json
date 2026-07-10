@@ -3,6 +3,7 @@
     "id": "pp001",
     "category": "ausiliare",
     "sentence": "(io) ___ mangiato.",
+    "cue": "avere o essere?",
     "hint": "mangiare → ausiliare?",
     "correct": "ho",
     "options": [
@@ -21,6 +22,7 @@
     "id": "pp002",
     "category": "ausiliare",
     "sentence": "(lui/lei) ___ mangiato.",
+    "cue": "avere o essere?",
     "hint": "mangiare → ausiliare?",
     "correct": "ha",
     "options": [
@@ -38,6 +40,7 @@
     "id": "pp003",
     "category": "ausiliare",
     "sentence": "(tu) ___ parlato.",
+    "cue": "avere o essere?",
     "hint": "parlare → ausiliare?",
     "correct": "hai",
     "options": [
@@ -55,6 +58,7 @@
     "id": "pp004",
     "category": "ausiliare",
     "sentence": "(noi) ___ comprato.",
+    "cue": "avere o essere?",
     "hint": "comprare → ausiliare?",
     "correct": "abbiamo",
     "options": [
@@ -73,6 +77,7 @@
     "id": "pp005",
     "category": "ausiliare",
     "sentence": "(lui/lei) ___ creduto.",
+    "cue": "avere o essere?",
     "hint": "credere → ausiliare?",
     "correct": "ha",
     "options": [
@@ -90,6 +95,7 @@
     "id": "pp006",
     "category": "ausiliare",
     "sentence": "(io) ___ capito.",
+    "cue": "avere o essere?",
     "hint": "capire → ausiliare?",
     "correct": "ho",
     "options": [
@@ -108,6 +114,7 @@
     "id": "pp007",
     "category": "ausiliare",
     "sentence": "(voi) ___ sentito.",
+    "cue": "avere o essere?",
     "hint": "sentire → ausiliare?",
     "correct": "avete",
     "options": [
@@ -126,6 +133,7 @@
     "id": "pp008",
     "category": "ausiliare",
     "sentence": "(lui/lei) ___ incontrato.",
+    "cue": "avere o essere?",
     "hint": "incontrare → ausiliare?",
     "correct": "ha",
     "options": [
@@ -143,6 +151,7 @@
     "id": "pp009",
     "category": "ausiliare",
     "sentence": "(tu) ___ ricevuto.",
+    "cue": "avere o essere?",
     "hint": "ricevere → ausiliare?",
     "correct": "hai",
     "options": [
@@ -160,6 +169,7 @@
     "id": "pp010",
     "category": "ausiliare",
     "sentence": "(io) ___ andato.",
+    "cue": "avere o essere?",
     "hint": "andare → ausiliare?",
     "correct": "sono",
     "options": [
@@ -178,6 +188,7 @@
     "id": "pp011",
     "category": "ausiliare",
     "sentence": "(lui/lei) ___ andato.",
+    "cue": "avere o essere?",
     "hint": "andare → ausiliare?",
     "correct": "è",
     "options": [
@@ -195,6 +206,7 @@
     "id": "pp012",
     "category": "ausiliare",
     "sentence": "(noi) ___ partito.",
+    "cue": "avere o essere?",
     "hint": "partire → ausiliare?",
     "correct": "siamo",
     "options": [
@@ -213,6 +225,7 @@
     "id": "pp013",
     "category": "ausiliare",
     "sentence": "(loro) ___ arrivato.",
+    "cue": "avere o essere?",
     "hint": "arrivare → ausiliare?",
     "correct": "sono",
     "options": [
@@ -231,6 +244,7 @@
     "id": "pp014",
     "category": "ausiliare",
     "sentence": "(tu) ___ uscito.",
+    "cue": "avere o essere?",
     "hint": "uscire → ausiliare?",
     "correct": "sei",
     "options": [
@@ -248,6 +262,7 @@
     "id": "pp015",
     "category": "ausiliare",
     "sentence": "(lui/lei) ___ tornato.",
+    "cue": "avere o essere?",
     "hint": "tornare → ausiliare?",
     "correct": "è",
     "options": [
@@ -265,6 +280,7 @@
     "id": "pp016",
     "category": "ausiliare",
     "sentence": "(io) ___ nato.",
+    "cue": "avere o essere?",
     "hint": "nascere → ausiliare?",
     "correct": "sono",
     "options": [
@@ -283,6 +299,7 @@
     "id": "pp017",
     "category": "ausiliare",
     "sentence": "(lui/lei) ___ diventato.",
+    "cue": "avere o essere?",
     "hint": "diventare → ausiliare?",
     "correct": "è",
     "options": [
@@ -300,6 +317,7 @@
     "id": "pp018",
     "category": "ausiliare",
     "sentence": "(lui/lei) ___ caduto.",
+    "cue": "avere o essere?",
     "hint": "cadere → ausiliare?",
     "correct": "è",
     "options": [
@@ -317,6 +335,7 @@
     "id": "pp019",
     "category": "ausiliare",
     "sentence": "(io) mi ___ svegliato.",
+    "cue": "avere o essere?",
     "hint": "svegliarsi → ausiliare?",
     "correct": "sono",
     "options": [
@@ -335,6 +354,7 @@
     "id": "pp020",
     "category": "ausiliare",
     "sentence": "(noi) ci ___ divertito.",
+    "cue": "avere o essere?",
     "hint": "divertirsi → ausiliare?",
     "correct": "siamo",
     "options": [
@@ -1718,6 +1738,7 @@
     "id": "pp095",
     "category": "ausiliare",
     "sentence": "(io) ___ fatto la spesa.",
+    "cue": "avere o essere?",
     "hint": "fare → ausiliare?",
     "correct": "ho",
     "options": [
@@ -1736,6 +1757,7 @@
     "id": "pp096",
     "category": "ausiliare",
     "sentence": "(noi) ___ arrivati ieri.",
+    "cue": "avere o essere?",
     "hint": "arrivare → ausiliare?",
     "correct": "siamo",
     "options": [
@@ -1754,6 +1776,7 @@
     "id": "pp097",
     "category": "ausiliare",
     "sentence": "Piero ___ mangiato una mela.",
+    "cue": "avere o essere?",
     "hint": "mangiare → ausiliare?",
     "correct": "ha",
     "options": [
@@ -1771,6 +1794,7 @@
     "id": "pp098",
     "category": "ausiliare",
     "sentence": "Piero e Maria ___ partiti stamattina.",
+    "cue": "avere o essere?",
     "hint": "partire → ausiliare?",
     "correct": "sono",
     "options": [
@@ -1789,6 +1813,7 @@
     "id": "pp099",
     "category": "ausiliare",
     "sentence": "(noi) ___ letto un bel libro.",
+    "cue": "avere o essere?",
     "hint": "leggere → ausiliare?",
     "correct": "abbiamo",
     "options": [
@@ -1807,6 +1832,7 @@
     "id": "pp100",
     "category": "ausiliare",
     "sentence": "Voi, quando ___ usciti?",
+    "cue": "avere o essere?",
     "hint": "uscire → ausiliare?",
     "correct": "siete",
     "options": [
@@ -1825,6 +1851,7 @@
     "id": "pp101",
     "category": "ausiliare",
     "sentence": "I ragazzi ___ preso un caffè.",
+    "cue": "avere o essere?",
     "hint": "prendere → ausiliare?",
     "correct": "hanno",
     "options": [
@@ -1843,6 +1870,7 @@
     "id": "pp102",
     "category": "ausiliare",
     "sentence": "Piero ___ andato a Roma.",
+    "cue": "avere o essere?",
     "hint": "andare → ausiliare?",
     "correct": "è",
     "options": [
@@ -1860,6 +1888,7 @@
     "id": "pp103",
     "category": "ausiliare",
     "sentence": "(io) ___ venuto in macchina.",
+    "cue": "avere o essere?",
     "hint": "venire → ausiliare?",
     "correct": "sono",
     "options": [
@@ -1878,6 +1907,7 @@
     "id": "pp104",
     "category": "ausiliare",
     "sentence": "Tu, ___ avuto il tuo regalo?",
+    "cue": "avere o essere?",
     "hint": "avere → ausiliare?",
     "correct": "hai",
     "options": [
@@ -1895,6 +1925,7 @@
     "id": "pp105",
     "category": "ausiliare",
     "sentence": "(voi) ___ finito di parlare.",
+    "cue": "avere o essere?",
     "hint": "finire → ausiliare?",
     "correct": "avete",
     "options": [
@@ -1913,6 +1944,7 @@
     "id": "pp106",
     "category": "ausiliare",
     "sentence": "Tu, quando ___ nato?",
+    "cue": "avere o essere?",
     "hint": "nascere → ausiliare?",
     "correct": "sei",
     "options": [
@@ -1930,6 +1962,7 @@
     "id": "pp107",
     "category": "ausiliare",
     "sentence": "Ti ___ piaciuto il film?",
+    "cue": "avere o essere?",
     "hint": "piacere → ausiliare?",
     "correct": "è",
     "options": [
@@ -1947,6 +1980,7 @@
     "id": "pp108",
     "category": "ausiliare",
     "sentence": "Tu, perché ___ rimasto a casa?",
+    "cue": "avere o essere?",
     "hint": "rimanere → ausiliare?",
     "correct": "sei",
     "options": [
@@ -1964,6 +1998,7 @@
     "id": "pp109",
     "category": "ausiliare",
     "sentence": "(noi) ___ visto un bel film.",
+    "cue": "avere o essere?",
     "hint": "vedere → ausiliare?",
     "correct": "abbiamo",
     "options": [
@@ -1982,6 +2017,7 @@
     "id": "pp110",
     "category": "ausiliare",
     "sentence": "Mario ___ sceso dal treno.",
+    "cue": "avere o essere?",
     "hint": "scendere → ausiliare?",
     "correct": "ha",
     "options": [
@@ -1999,6 +2035,7 @@
     "id": "pp111",
     "category": "ausiliare",
     "sentence": "(io) ___ offerto un regalo al mio amico.",
+    "cue": "avere o essere?",
     "hint": "offrire → ausiliare?",
     "correct": "ho",
     "options": [
@@ -2017,6 +2054,7 @@
     "id": "pp112",
     "category": "ausiliare",
     "sentence": "(voi) ___ stati in Italia?",
+    "cue": "avere o essere?",
     "hint": "essere → ausiliare?",
     "correct": "siete",
     "options": [
@@ -2035,6 +2073,7 @@
     "id": "pp113",
     "category": "ausiliare",
     "sentence": "Le ragazze ___ arrivate a casa.",
+    "cue": "avere o essere?",
     "hint": "arrivare → ausiliare?",
     "correct": "sono",
     "options": [
@@ -2053,6 +2092,7 @@
     "id": "pp114",
     "category": "ausiliare",
     "sentence": "(voi) ___ bevuto del vino rosso.",
+    "cue": "avere o essere?",
     "hint": "bere → ausiliare?",
     "correct": "avete",
     "options": [
@@ -2071,6 +2111,7 @@
     "id": "pp115",
     "category": "ausiliare",
     "sentence": "Tu, perché ___ deciso di uscire?",
+    "cue": "avere o essere?",
     "hint": "decidere → ausiliare?",
     "correct": "hai",
     "options": [
@@ -2088,6 +2129,7 @@
     "id": "pp116",
     "category": "ausiliare",
     "sentence": "Carlo ___ ricevuto una lettera.",
+    "cue": "avere o essere?",
     "hint": "ricevere → ausiliare?",
     "correct": "ha",
     "options": [
@@ -2105,6 +2147,7 @@
     "id": "pp117",
     "category": "ausiliare",
     "sentence": "(noi) ___ diventati amici.",
+    "cue": "avere o essere?",
     "hint": "diventare → ausiliare?",
     "correct": "siamo",
     "options": [
@@ -2123,6 +2166,7 @@
     "id": "pp118",
     "category": "ausiliare",
     "sentence": "(io) ___ salito in macchina.",
+    "cue": "avere o essere?",
     "hint": "salire → ausiliare?",
     "correct": "ho",
     "options": [

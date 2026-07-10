@@ -143,7 +143,7 @@ export const DRILLS: DrillDef[] = [
     title: "Passato Prossimo",
     subtitle: "Talking about the past — ho mangiato, sono andato/a, mi sono svegliato",
     instructions:
-      "The verb to use is shown in parentheses after the blank, e.g. (io) ___ (comprare) → ho comprato. Pick the auxiliary (avere or essere), form the full passato prossimo, or choose the irregular past participle. Remember: essere for movement, reflexive and change-of-state verbs — and with essere the participle agrees (è andata, siamo andati).",
+      "The hint in parentheses after the blank tells you what to write: an infinitive means conjugate that verb — e.g. (io) ___ (comprare) → ho comprato — while 'avere o essere?' means just pick the auxiliary — e.g. (lui/lei) ___ (avere o essere?) incontrato → ha. Remember: essere for movement, reflexive and change-of-state verbs, and with essere the participle agrees (è andata, siamo andati).",
     emoji: "⏮️",
     desc: "The past tense — avere/essere + participle, irregular participles",
     categoryLabels: {

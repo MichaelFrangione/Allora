@@ -56,11 +56,12 @@ describe("passato prossimo verb cue", () => {
     expect(pp.length).toBeGreaterThan(0);
   });
 
-  // "forma" (write the full compound) and "participio" (write the past participle)
-  // blank out the verb, so the sentence alone can't tell you which verb to use.
-  // Each must reveal it — via a `cue` infinitive, or by naming it in «guillemets»
-  // ("Il participio passato di «fare»"). Otherwise the prompt is unanswerable in
-  // typed mode. (The "ausiliare" category already shows the participle.)
+  // Every question must signal what goes in the blank, since the in-quiz header
+  // doesn't show the category. "forma" (full compound) and "participio" (past
+  // participle) blank out the verb, so they carry a `cue` infinitive (or name the
+  // verb in «guillemets», e.g. "Il participio passato di «fare»"). "ausiliare"
+  // shows the participle but not that the blank is the helper verb, so it carries
+  // an "avere o essere?" cue. Without this, prompts are unanswerable in typed mode.
   it("every forma/participio question reveals which verb to use", () => {
     for (const q of pp) {
       if (q.category !== "forma" && q.category !== "participio") continue;
@@ -69,9 +70,12 @@ describe("passato prossimo verb cue", () => {
     }
   });
 
-  it("ausiliare questions don't need a cue (the participle is in the sentence)", () => {
-    const auxWithCue = pp.filter((q) => q.category === "ausiliare" && q.cue);
-    expect(auxWithCue, auxWithCue.map((q) => q.id).join(",")).toHaveLength(0);
+  it("every ausiliare question cues that the blank is the auxiliary", () => {
+    const aux = pp.filter((q) => q.category === "ausiliare");
+    expect(aux.length).toBeGreaterThan(0);
+    for (const q of aux) {
+      expect(q.cue, `${q.id}: ${q.sentence}`).toBe("avere o essere?");
+    }
   });
 });
 
