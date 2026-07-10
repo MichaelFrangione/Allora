@@ -169,6 +169,13 @@ export interface DrillQuestion {
   options: string[];
   explanation?: string;
   tags: string[];
+  /**
+   * Infinitive (or short label) shown in parentheses beside the blank when the
+   * sentence alone doesn't reveal which verb to use — e.g. "(io) ___ (comprare)
+   * delle caramelle." Keeps fill-in-the-blank prompts unambiguous, especially in
+   * typed mode. Kept out of the sentence string so TTS reads the answer cleanly.
+   */
+  cue?: string;
   /** When set (e.g. in the mistakes queue), attempts record under this contentType. */
   sourceType?: string;
 }

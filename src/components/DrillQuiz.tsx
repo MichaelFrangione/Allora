@@ -296,6 +296,13 @@ export default function DrillQuiz({
           <span className="inline-block border-b-2 border-primary min-w-16 mx-1 text-center font-bold text-primary">
             {submitted ? q.correct : "?"}
           </span>
+          {q.cue && (
+            <span className="text-base font-normal italic text-muted-foreground whitespace-nowrap">
+              {"("}
+              <GlossedText text={q.cue} />
+              {")"}
+            </span>
+          )}
           <GlossedText text={after} />
         </p>
         {submitted && (

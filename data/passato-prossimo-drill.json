@@ -352,7 +352,8 @@
   {
     "id": "pp021",
     "category": "forma",
-    "sentence": "(io) ___  — mangiare",
+    "sentence": "(io) ___",
+    "cue": "mangiare",
     "hint": "mangiare → passato prossimo, io",
     "correct": "ho mangiato",
     "options": [
@@ -369,7 +370,8 @@
   {
     "id": "pp022",
     "category": "forma",
-    "sentence": "(io) ___  — rompere",
+    "sentence": "(io) ___",
+    "cue": "rompere",
     "hint": "rompere → passato prossimo, io",
     "correct": "ho rotto",
     "options": [
@@ -387,7 +389,8 @@
   {
     "id": "pp023",
     "category": "forma",
-    "sentence": "(lui/lei) ___  — scrivere",
+    "sentence": "(lui/lei) ___",
+    "cue": "scrivere",
     "hint": "scrivere → passato prossimo, lui/lei",
     "correct": "ha scritto",
     "options": [
@@ -405,7 +408,8 @@
   {
     "id": "pp024",
     "category": "forma",
-    "sentence": "(noi) ___  — prendere",
+    "sentence": "(noi) ___",
+    "cue": "prendere",
     "hint": "prendere → passato prossimo, noi",
     "correct": "abbiamo preso",
     "options": [
@@ -423,7 +427,8 @@
   {
     "id": "pp025",
     "category": "forma",
-    "sentence": "(lui/lei) ___  — andare",
+    "sentence": "(lui/lei) ___",
+    "cue": "andare",
     "hint": "andare → passato prossimo, lui/lei",
     "correct": "è andato",
     "options": [
@@ -440,7 +445,8 @@
   {
     "id": "pp026",
     "category": "forma",
-    "sentence": "(loro) ___  — partire",
+    "sentence": "(loro) ___",
+    "cue": "partire",
     "hint": "partire → passato prossimo, loro",
     "correct": "sono partiti",
     "options": [
@@ -457,7 +463,8 @@
   {
     "id": "pp027",
     "category": "forma",
-    "sentence": "(io) ___  — fare",
+    "sentence": "(io) ___",
+    "cue": "fare",
     "hint": "fare → passato prossimo, io",
     "correct": "ho fatto",
     "options": [
@@ -475,7 +482,8 @@
   {
     "id": "pp028",
     "category": "forma",
-    "sentence": "(tu) ___  — dire",
+    "sentence": "(tu) ___",
+    "cue": "dire",
     "hint": "dire → passato prossimo, tu",
     "correct": "hai detto",
     "options": [
@@ -493,7 +501,8 @@
   {
     "id": "pp029",
     "category": "forma",
-    "sentence": "(io) ___  — leggere",
+    "sentence": "(io) ___",
+    "cue": "leggere",
     "hint": "leggere → passato prossimo, io",
     "correct": "ho letto",
     "options": [
@@ -511,7 +520,8 @@
   {
     "id": "pp030",
     "category": "forma",
-    "sentence": "(io) ___  — svegliarsi",
+    "sentence": "(io) ___",
+    "cue": "svegliarsi",
     "hint": "svegliarsi → passato prossimo, io",
     "correct": "mi sono svegliato",
     "options": [
@@ -528,7 +538,8 @@
   {
     "id": "pp031",
     "category": "forma",
-    "sentence": "(noi) ___  — vedere",
+    "sentence": "(noi) ___",
+    "cue": "vedere",
     "hint": "vedere → passato prossimo, noi",
     "correct": "abbiamo veduto",
     "options": [
@@ -545,7 +556,8 @@
   {
     "id": "pp032",
     "category": "forma",
-    "sentence": "(lui/lei) ___  — venire",
+    "sentence": "(lui/lei) ___",
+    "cue": "venire",
     "hint": "venire → passato prossimo, lui/lei",
     "correct": "è venuto",
     "options": [
@@ -906,6 +918,7 @@
     "id": "pp052",
     "category": "participio",
     "sentence": "Piero ha ___ una mela.",
+    "cue": "mangiare",
     "hint": "mangiare → participio",
     "correct": "mangiato",
     "options": [
@@ -923,6 +936,7 @@
     "id": "pp053",
     "category": "participio",
     "sentence": "Maria ha ___ con Silvia.",
+    "cue": "parlare",
     "hint": "parlare → participio",
     "correct": "parlato",
     "options": [
@@ -940,6 +954,7 @@
     "id": "pp054",
     "category": "participio",
     "sentence": "Carmine ha ___ gli Stati Uniti.",
+    "cue": "visitare",
     "hint": "visitare → participio",
     "correct": "visitato",
     "options": [
@@ -957,6 +972,7 @@
     "id": "pp055",
     "category": "participio",
     "sentence": "Sandro ha ___ a calcio.",
+    "cue": "giocare",
     "hint": "giocare → participio",
     "correct": "giocato",
     "options": [
@@ -974,6 +990,7 @@
     "id": "pp056",
     "category": "participio",
     "sentence": "Felice è ___ ieri.",
+    "cue": "arrivare",
     "hint": "arrivare → participio",
     "correct": "arrivato",
     "options": [
@@ -991,6 +1008,7 @@
     "id": "pp057",
     "category": "participio",
     "sentence": "Dove sei ___?",
+    "cue": "andare",
     "hint": "andare → participio",
     "correct": "andato",
     "options": [
@@ -1008,6 +1026,7 @@
     "id": "pp058",
     "category": "participio",
     "sentence": "Giorgio ha ___ un regalo a Silvia.",
+    "cue": "dare",
     "hint": "dare → participio",
     "correct": "dato",
     "options": [
@@ -1025,6 +1044,7 @@
     "id": "pp059",
     "category": "participio",
     "sentence": "Carlo è ___.",
+    "cue": "uscire",
     "hint": "uscire → participio",
     "correct": "uscito",
     "options": [
@@ -1042,6 +1062,7 @@
     "id": "pp060",
     "category": "participio",
     "sentence": "Carmela ha ___ di parlare.",
+    "cue": "finire",
     "hint": "finire → participio",
     "correct": "finito",
     "options": [
@@ -1059,6 +1080,7 @@
     "id": "pp061",
     "category": "participio",
     "sentence": "Nicola è ___ in autobus.",
+    "cue": "salire",
     "hint": "salire → participio",
     "correct": "salito",
     "options": [
@@ -1076,6 +1098,7 @@
     "id": "pp062",
     "category": "participio",
     "sentence": "Giovanni ha ___ la sua camera.",
+    "cue": "pulire",
     "hint": "pulire → participio",
     "correct": "pulito",
     "options": [
@@ -1093,6 +1116,7 @@
     "id": "pp063",
     "category": "participio",
     "sentence": "Grazia non ha ___ niente!",
+    "cue": "capire",
     "hint": "capire → participio",
     "correct": "capito",
     "options": [
@@ -1110,6 +1134,7 @@
     "id": "pp064",
     "category": "participio",
     "sentence": "Francesco non ha ___ niente.",
+    "cue": "sentire",
     "hint": "sentire → participio",
     "correct": "sentito",
     "options": [
@@ -1127,6 +1152,7 @@
     "id": "pp065",
     "category": "participio",
     "sentence": "Gigi ha ___ la sua macchina.",
+    "cue": "vendere",
     "hint": "vendere → participio",
     "correct": "venduto",
     "options": [
@@ -1144,6 +1170,7 @@
     "id": "pp066",
     "category": "participio",
     "sentence": "Beatrice ha ___ lavorare.",
+    "cue": "dovere",
     "hint": "dovere → participio",
     "correct": "dovuto",
     "options": [
@@ -1161,6 +1188,7 @@
     "id": "pp067",
     "category": "participio",
     "sentence": "Alessandro ha ___ una notizia.",
+    "cue": "sapere",
     "hint": "sapere → participio",
     "correct": "saputo",
     "options": [
@@ -1178,6 +1206,7 @@
     "id": "pp068",
     "category": "participio",
     "sentence": "Dora ha ___ dormire.",
+    "cue": "potere",
     "hint": "potere → participio",
     "correct": "potuto",
     "options": [
@@ -1195,6 +1224,7 @@
     "id": "pp069",
     "category": "participio",
     "sentence": "Andrea ha ___ molto sport.",
+    "cue": "fare",
     "hint": "fare → participio",
     "correct": "fatto",
     "options": [
@@ -1213,6 +1243,7 @@
     "id": "pp070",
     "category": "participio",
     "sentence": "Ho ___ la porta.",
+    "cue": "chiudere",
     "hint": "chiudere → participio",
     "correct": "chiuso",
     "options": [
@@ -1231,6 +1262,7 @@
     "id": "pp071",
     "category": "participio",
     "sentence": "Hai ___ troppa birra?",
+    "cue": "bere",
     "hint": "bere → participio",
     "correct": "bevuto",
     "options": [
@@ -1249,6 +1281,7 @@
     "id": "pp072",
     "category": "participio",
     "sentence": "Marco ha ___ la porta.",
+    "cue": "aprire",
     "hint": "aprire → participio",
     "correct": "aperto",
     "options": [
@@ -1267,6 +1300,7 @@
     "id": "pp073",
     "category": "participio",
     "sentence": "Ho ___ il piatto sul tavolo.",
+    "cue": "mettere",
     "hint": "mettere → participio",
     "correct": "messo",
     "options": [
@@ -1285,6 +1319,7 @@
     "id": "pp074",
     "category": "participio",
     "sentence": "Abbiamo ___ un gelato.",
+    "cue": "chiedere",
     "hint": "chiedere → participio",
     "correct": "chiesto",
     "options": [
@@ -1303,6 +1338,7 @@
     "id": "pp075",
     "category": "participio",
     "sentence": "Abbiamo ___ un gelato alla fragola.",
+    "cue": "scegliere",
     "hint": "scegliere → participio",
     "correct": "scelto",
     "options": [
@@ -1321,6 +1357,7 @@
     "id": "pp076",
     "category": "participio",
     "sentence": "Avete ___ di uscire.",
+    "cue": "decidere",
     "hint": "decidere → participio",
     "correct": "deciso",
     "options": [
@@ -1339,6 +1376,7 @@
     "id": "pp077",
     "category": "participio",
     "sentence": "Perché hai ___ il bicchiere?",
+    "cue": "rompere",
     "hint": "rompere → participio",
     "correct": "rotto",
     "options": [
@@ -1357,6 +1395,7 @@
     "id": "pp078",
     "category": "participio",
     "sentence": "Luigi è ___ dalla macchina.",
+    "cue": "scendere",
     "hint": "scendere → participio",
     "correct": "sceso",
     "options": [
@@ -1375,6 +1414,7 @@
     "id": "pp079",
     "category": "participio",
     "sentence": "Giorgio è ___ malato.",
+    "cue": "essere",
     "hint": "essere → participio",
     "correct": "stato",
     "options": [
@@ -1393,6 +1433,7 @@
     "id": "pp080",
     "category": "participio",
     "sentence": "Federico ha ___ la macchina.",
+    "cue": "prendere",
     "hint": "prendere → participio",
     "correct": "preso",
     "options": [
@@ -1411,6 +1452,7 @@
     "id": "pp081",
     "category": "participio",
     "sentence": "Hai ___ quella lettera?",
+    "cue": "scrivere",
     "hint": "scrivere → participio",
     "correct": "scritto",
     "options": [
@@ -1429,6 +1471,7 @@
     "id": "pp082",
     "category": "participio",
     "sentence": "Quando sei ___?",
+    "cue": "nascere",
     "hint": "nascere → participio",
     "correct": "nato",
     "options": [
@@ -1447,6 +1490,7 @@
     "id": "pp083",
     "category": "participio",
     "sentence": "Giovanni è ___ a cena ieri sera.",
+    "cue": "venire",
     "hint": "venire → participio",
     "correct": "venuto",
     "options": [
@@ -1465,6 +1509,7 @@
     "id": "pp084",
     "category": "participio",
     "sentence": "Mio zio è ___ ieri.",
+    "cue": "morire",
     "hint": "morire → participio",
     "correct": "morto",
     "options": [
@@ -1483,6 +1528,7 @@
     "id": "pp085",
     "category": "participio",
     "sentence": "Davide ha ___ in Spagna.",
+    "cue": "vivere",
     "hint": "vivere → participio",
     "correct": "vissuto",
     "options": [
@@ -1501,6 +1547,7 @@
     "id": "pp086",
     "category": "participio",
     "sentence": "Daniele è ___ in Australia.",
+    "cue": "rimanere",
     "hint": "rimanere → participio",
     "correct": "rimasto",
     "options": [
@@ -1519,6 +1566,7 @@
     "id": "pp087",
     "category": "participio",
     "sentence": "Hai ___ una bugia.",
+    "cue": "dire",
     "hint": "dire → participio",
     "correct": "detto",
     "options": [
@@ -1537,6 +1585,7 @@
     "id": "pp088",
     "category": "participio",
     "sentence": "Ho ___ al telefono.",
+    "cue": "rispondere",
     "hint": "rispondere → participio",
     "correct": "risposto",
     "options": [
@@ -1555,6 +1604,7 @@
     "id": "pp089",
     "category": "participio",
     "sentence": "A Roma, abbiamo ___ il colosseo.",
+    "cue": "vedere",
     "hint": "vedere → participio",
     "correct": "visto",
     "options": [
@@ -1573,6 +1623,7 @@
     "id": "pp090",
     "category": "participio",
     "sentence": "Hanno ___ i loro quaderni.",
+    "cue": "perdere",
     "hint": "perdere → participio",
     "correct": "perso",
     "options": [
@@ -1591,6 +1642,7 @@
     "id": "pp091",
     "category": "participio",
     "sentence": "Che cosa è ___?",
+    "cue": "succedere",
     "hint": "succedere → participio",
     "correct": "successo",
     "options": [
@@ -1609,6 +1661,7 @@
     "id": "pp092",
     "category": "participio",
     "sentence": "L'Italia ha ___ la coppa del mondo.",
+    "cue": "vincere",
     "hint": "vincere → participio",
     "correct": "vinto",
     "options": [
@@ -1627,6 +1680,7 @@
     "id": "pp093",
     "category": "participio",
     "sentence": "Ho ___ un libro interessante.",
+    "cue": "leggere",
     "hint": "leggere → participio",
     "correct": "letto",
     "options": [
@@ -1645,6 +1699,7 @@
     "id": "pp094",
     "category": "participio",
     "sentence": "Abbiamo ___ troppi soldi in vacanza.",
+    "cue": "spendere",
     "hint": "spendere → participio",
     "correct": "speso",
     "options": [
@@ -2086,6 +2141,7 @@
     "id": "pp119",
     "category": "forma",
     "sentence": "(io) ___ un esame.",
+    "cue": "avere",
     "hint": "avere → io",
     "correct": "ho avuto",
     "options": [
@@ -2103,6 +2159,7 @@
     "id": "pp120",
     "category": "forma",
     "sentence": "(io) ___ delle caramelle.",
+    "cue": "comprare",
     "hint": "comprare → io",
     "correct": "ho comprato",
     "options": [
@@ -2120,6 +2177,7 @@
     "id": "pp121",
     "category": "forma",
     "sentence": "(io) ___ in città.",
+    "cue": "andare",
     "hint": "andare → io",
     "correct": "sono andato",
     "options": [
@@ -2137,6 +2195,7 @@
     "id": "pp122",
     "category": "forma",
     "sentence": "(io) ___ con mio padre.",
+    "cue": "parlare",
     "hint": "parlare → io",
     "correct": "ho parlato",
     "options": [
@@ -2154,6 +2213,7 @@
     "id": "pp123",
     "category": "forma",
     "sentence": "(io) ___ a Roma.",
+    "cue": "nascere",
     "hint": "nascere → io",
     "correct": "sono nato",
     "options": [
@@ -2172,6 +2232,7 @@
     "id": "pp124",
     "category": "forma",
     "sentence": "(io) ___ una bella donna.",
+    "cue": "conoscere",
     "hint": "conoscere → io",
     "correct": "ho conosciuto",
     "options": [
@@ -2190,6 +2251,7 @@
     "id": "pp125",
     "category": "forma",
     "sentence": "(io) ___ a casa.",
+    "cue": "rimanere",
     "hint": "rimanere → io",
     "correct": "sono rimasto",
     "options": [
@@ -2208,6 +2270,7 @@
     "id": "pp126",
     "category": "forma",
     "sentence": "(io) ___ il sole.",
+    "cue": "prendere",
     "hint": "prendere → io",
     "correct": "ho preso",
     "options": [
@@ -2226,6 +2289,7 @@
     "id": "pp127",
     "category": "forma",
     "sentence": "(io) ___ in casa.",
+    "cue": "entrare",
     "hint": "entrare → io",
     "correct": "sono entrato",
     "options": [
@@ -2243,6 +2307,7 @@
     "id": "pp128",
     "category": "forma",
     "sentence": "(io) ___ della ginnastica.",
+    "cue": "fare",
     "hint": "fare → io",
     "correct": "ho fatto",
     "options": [
@@ -2261,6 +2326,7 @@
     "id": "pp129",
     "category": "forma",
     "sentence": "(io) ___ di casa presto.",
+    "cue": "uscire",
     "hint": "uscire → io",
     "correct": "sono uscito",
     "options": [
@@ -2278,6 +2344,7 @@
     "id": "pp130",
     "category": "forma",
     "sentence": "(io) ___ a casa tardi.",
+    "cue": "tornare",
     "hint": "tornare → io",
     "correct": "sono tornato",
     "options": [
@@ -2295,6 +2362,7 @@
     "id": "pp131",
     "category": "forma",
     "sentence": "(io) ___ a calcio.",
+    "cue": "giocare",
     "hint": "giocare → io",
     "correct": "ho giocato",
     "options": [
@@ -2312,6 +2380,7 @@
     "id": "pp132",
     "category": "forma",
     "sentence": "(io) ___ alle otto.",
+    "cue": "partire",
     "hint": "partire → io",
     "correct": "sono partito",
     "options": [
@@ -2329,6 +2398,7 @@
     "id": "pp133",
     "category": "forma",
     "sentence": "(io) ___ la macchina.",
+    "cue": "vendere",
     "hint": "vendere → io",
     "correct": "ho venduto",
     "options": [
@@ -2346,6 +2416,7 @@
     "id": "pp134",
     "category": "forma",
     "sentence": "(io) ___ i compiti.",
+    "cue": "finire",
     "hint": "finire → io",
     "correct": "ho finito",
     "options": [
@@ -2363,6 +2434,7 @@
     "id": "pp135",
     "category": "forma",
     "sentence": "(io) ___ lungo la spiaggia.",
+    "cue": "camminare",
     "hint": "camminare → io",
     "correct": "ho camminato",
     "options": [
@@ -2380,6 +2452,7 @@
     "id": "pp136",
     "category": "forma",
     "sentence": "(io) ___ in vacanza.",
+    "cue": "essere",
     "hint": "essere → io",
     "correct": "sono stato",
     "options": [
@@ -2397,6 +2470,7 @@
     "id": "pp137",
     "category": "forma",
     "sentence": "(io) ___ una mano a Silvia.",
+    "cue": "dare",
     "hint": "dare → io",
     "correct": "ho dato",
     "options": [
@@ -2414,6 +2488,7 @@
     "id": "pp138",
     "category": "forma",
     "sentence": "(io) ___ un'amica.",
+    "cue": "incontrare",
     "hint": "incontrare → io",
     "correct": "ho incontrato",
     "options": [
@@ -2431,6 +2506,7 @@
     "id": "pp139",
     "category": "forma",
     "sentence": "(io) ___ da Firenze.",
+    "cue": "ritornare",
     "hint": "ritornare → io",
     "correct": "sono ritornato",
     "options": [

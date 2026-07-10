@@ -49,6 +49,32 @@ describe("drill registry", () => {
   });
 });
 
+describe("passato prossimo verb cue", () => {
+  const pp = DRILL_QUESTIONS_BY_TYPE["passato-prossimo"] ?? [];
+
+  it("has questions", () => {
+    expect(pp.length).toBeGreaterThan(0);
+  });
+
+  // "forma" (write the full compound) and "participio" (write the past participle)
+  // blank out the verb, so the sentence alone can't tell you which verb to use.
+  // Each must reveal it — via a `cue` infinitive, or by naming it in «guillemets»
+  // ("Il participio passato di «fare»"). Otherwise the prompt is unanswerable in
+  // typed mode. (The "ausiliare" category already shows the participle.)
+  it("every forma/participio question reveals which verb to use", () => {
+    for (const q of pp) {
+      if (q.category !== "forma" && q.category !== "participio") continue;
+      if (q.sentence.includes("«")) continue; // verb named in the sentence
+      expect(q.cue, `${q.id}: ${q.sentence}`).toBeTruthy();
+    }
+  });
+
+  it("ausiliare questions don't need a cue (the participle is in the sentence)", () => {
+    const auxWithCue = pp.filter((q) => q.category === "ausiliare" && q.cue);
+    expect(auxWithCue, auxWithCue.map((q) => q.id).join(",")).toHaveLength(0);
+  });
+});
+
 describe("learn path", () => {
   it("subjects exist and routes resolve to a drill slug or a custom study mode", () => {
     const customRoutes = new Set(["/study/conjugation", "/study/time"]);

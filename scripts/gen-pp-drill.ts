@@ -16,6 +16,9 @@ type Q = {
   options: string[];
   explanation?: string;
   tags: string[];
+  /** Infinitive shown in parentheses beside the blank when the sentence alone
+   * doesn't reveal which verb to conjugate (e.g. participle / full-form prompts). */
+  cue?: string;
 };
 
 const PLABEL: Record<string, string> = { io: "io", tu: "tu", lui: "lui/lei", noi: "noi", voi: "voi", loro: "loro" };
@@ -108,7 +111,8 @@ for (const [verb, p] of FORM_VERBS) {
   questions.push({
     id: id(),
     category: "forma",
-    sentence: `(${PLABEL[p]}) ___  — ${verb}`,
+    sentence: `(${PLABEL[p]}) ___`,
+    cue: verb,
     hint: `${verb} → passato prossimo, ${PLABEL[p]}`,
     correct,
     options: arrange(correct, [wrongAuxForm, regForm, c.tenses.PASSATO_PROSSIMO[p === "io" ? "tu" : "io"]], n),
@@ -225,6 +229,7 @@ SHEET_PARTICIPI.forEach(([sentence, verb], i) => {
     id: id(),
     category: "participio",
     sentence,
+    cue: verb,
     hint: `${verb} → participio`,
     correct,
     options: arrange(correct, [reg !== correct ? reg : "", others[i % others.length], others[(i + 7) % others.length]], n),
@@ -310,6 +315,7 @@ SHEET_IO.forEach(([sentence, verb], i) => {
     id: id(),
     category: "forma",
     sentence,
+    cue: verb,
     hint: `${verb} → io`,
     correct,
     options: arrange(correct, [wrongAux, regForm, otherPerson], i + 1),
