@@ -79,6 +79,25 @@ describe("passato prossimo verb cue", () => {
   });
 });
 
+describe("essere/avere verb cue", () => {
+  const ea = DRILL_QUESTIONS_BY_TYPE["essere-avere"] ?? [];
+
+  it("has questions", () => {
+    expect(ea.length).toBeGreaterThan(0);
+  });
+
+  // "essere" and "avere" questions blank out the verb, and nothing in the sentence
+  // says which one to conjugate ("(Noi) ___ stanchi" could be either verb to a
+  // learner). They carry a `cue` naming the infinitive. "espressioni-avere" items
+  // blank out the noun and already print the verb, so they need no cue.
+  it("every conjugation question names the verb to conjugate", () => {
+    for (const q of ea) {
+      if (q.category !== "essere" && q.category !== "avere") continue;
+      expect(q.cue, `${q.id}: ${q.sentence}`).toBe(q.category);
+    }
+  });
+});
+
 describe("learn path", () => {
   it("subjects exist and routes resolve to a drill slug or a custom study mode", () => {
     const customRoutes = new Set(["/study/conjugation", "/study/time"]);
