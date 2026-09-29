@@ -559,5 +559,107 @@
       "gerundio",
       "verbs"
     ]
+  },
+  {
+    "id": "g033",
+    "rule": "Body Parts That Change Gender in the Plural",
+    "explanation": "A small, closed class of body parts is masculine in the singular (-O) but feminine in the plural (-A). The adjective follows the plural's gender, not the singular's.",
+    "examples": [
+      "il labbro → le labbra (sottili)",
+      "il sopracciglio → le sopracciglia (folte)",
+      "il ciglio → le ciglia (lunghe)",
+      "il corno → le corna — «i corni» sono invece gli strumenti musicali",
+      "l'orecchio → le orecchie — stessa classe, ma finisce in -E",
+      "stesso gruppo: il braccio → le braccia, il dito → le dita, l'osso → le ossa"
+    ],
+    "tags": [
+      "nouns",
+      "plural",
+      "body",
+      "irregular"
+    ]
+  },
+  {
+    "id": "g034",
+    "rule": "AVERE + Article + Body Part",
+    "explanation": "To say what someone has (hair, eyes, freckles), use AVERE + the definite article + the body part. The article is obligatory, and the adjective agrees with the BODY PART, not with the person.",
+    "examples": [
+      "Maria ha i capelli biondi. (non «ha capelli biondi», non «ha i capelli bionda»)",
+      "Paolo ha gli occhi azzurri.",
+      "Sofia ha le ciglia lunghe.",
+      "Mia nonna ha i capelli grigi. — «grigi» concorda con i capelli (m. pl.)"
+    ],
+    "tags": [
+      "descrizione-fisica",
+      "agreement",
+      "verb-avere",
+      "body"
+    ]
+  },
+  {
+    "id": "g035",
+    "rule": "ESSERE or AVERE When Describing Someone",
+    "explanation": "ESSERE describes the person; AVERE introduces a physical feature they have. The same idea often works both ways with a different verb.",
+    "examples": [
+      "ESSERE + aggettivo: È biondo. È alta. È un uomo. / È una donna.",
+      "AVERE + articolo + parte del corpo: Ha i capelli biondi. Ha le lentiggini.",
+      "È biondo = Ha i capelli biondi.",
+      "Anche i baffi si hanno, non si portano: Ha i baffi."
+    ],
+    "tags": [
+      "descrizione-fisica",
+      "essere-avere",
+      "indovina-chi"
+    ]
+  },
+  {
+    "id": "g036",
+    "rule": "PORTARE or INDOSSARE",
+    "explanation": "INDOSSARE is used only for clothes. PORTARE is wider: anything you have with you or wear — glasses, a hat, a bag, a scarf — and it also covers clothes in everyday speech.",
+    "examples": [
+      "INDOSSARE (vestiti): indossa una camicia, una giacca, una maglietta, un vestito, un camice",
+      "PORTARE (avere con sé / usare): porta gli occhiali, un cappello, una borsa, una sciarpa",
+      "Chi porta un cappello rosso?",
+      "Il medico indossa un camice bianco."
+    ],
+    "tags": [
+      "descrizione-fisica",
+      "clothing",
+      "verbs",
+      "indovina-chi"
+    ]
+  },
+  {
+    "id": "g037",
+    "rule": "Patterns: A + Plural Noun",
+    "explanation": "Fabric patterns are formed with A + a plural noun, and the whole phrase is invariable — it never agrees with the garment. «A tinta unita» (solid colour) is the singular exception.",
+    "examples": [
+      "a righe (striped), a pallini (polka-dotted), a fiori (floral), a stelle, a macchie",
+      "a quadri / a quadretti (checked)",
+      "una camicia a righe · un vestito a righe · i pantaloni a righe — sempre uguale",
+      "a tinta unita = di un solo colore"
+    ],
+    "tags": [
+      "patterns",
+      "clothing",
+      "descrizione-fisica"
+    ]
+  },
+  {
+    "id": "g038",
+    "rule": "The Four Agreement Classes of Colours",
+    "explanation": "Colours don't all behave the same way. Sort them into four groups instead of memorising them one by one.",
+    "examples": [
+      "4 forme (-o/-a/-i/-e): rosso, nero, giallo, azzurro, bianco (bianchi/bianche), grigio (grigi/grigie)",
+      "2 forme (-e/-i): verde/verdi, marrone/marroni, arancione/arancioni",
+      "Invariabili: blu, rosa, viola, lilla, beige — due magliette rosa, occhi blu, fiori viola",
+      "Qualificati = invariabili: una camicia verde chiaro, due giacche blu scuro",
+      "blu (dark blue) ≠ azzurro (sky blue) ≠ celeste (pale blue)"
+    ],
+    "tags": [
+      "colors",
+      "adjectives",
+      "agreement"
+    ]
   }
 ]

@@ -1,0 +1,380 @@
+[
+  {
+    "id": "cor001",
+    "category": "parti-del-corpo",
+    "sentence": "Sento gli odori con ___.",
+    "hint": "the nose — maschile singolare.",
+    "correct": "il naso",
+    "options": [
+      "il naso",
+      "la naso",
+      "i naso",
+      "il nasi"
+    ],
+    "explanation": "«Naso» è maschile e regolare: il naso → i nasi.",
+    "tags": [
+      "body",
+      "descrizione-fisica"
+    ]
+  },
+  {
+    "id": "cor002",
+    "category": "parti-del-corpo",
+    "sentence": "Vedo il mondo con ___.",
+    "hint": "the eyes — plurale maschile davanti a vocale.",
+    "correct": "gli occhi",
+    "options": [
+      "gli occhi",
+      "i occhi",
+      "le occhie",
+      "gli occhio"
+    ],
+    "explanation": "L'occhio → gli occhi. Davanti a vocale l'articolo plurale maschile è «gli».",
+    "tags": [
+      "body",
+      "descrizione-fisica"
+    ]
+  },
+  {
+    "id": "cor003",
+    "category": "parti-del-corpo",
+    "sentence": "Mastico il cibo con ___.",
+    "hint": "the teeth — il dente è maschile in -E.",
+    "correct": "i denti",
+    "options": [
+      "i denti",
+      "le denti",
+      "gli denti",
+      "i dente"
+    ],
+    "explanation": "Il dente → i denti: i nomi in -E fanno il plurale in -I.",
+    "tags": [
+      "body",
+      "descrizione-fisica"
+    ]
+  },
+  {
+    "id": "cor004",
+    "category": "parti-del-corpo",
+    "sentence": "Ascolto la musica con ___.",
+    "hint": "the ears — maschile al singolare, femminile al plurale.",
+    "correct": "le orecchie",
+    "options": [
+      "le orecchie",
+      "gli orecchi",
+      "le orecchi",
+      "i orecchie"
+    ],
+    "explanation": "L'orecchio (m.) → le orecchie (f.): cambia genere al plurale.",
+    "tags": [
+      "body",
+      "descrizione-fisica"
+    ]
+  },
+  {
+    "id": "cor005",
+    "category": "parti-del-corpo",
+    "sentence": "Assaggio il gelato con ___.",
+    "hint": "the tongue — femminile singolare.",
+    "correct": "la lingua",
+    "options": [
+      "la lingua",
+      "il lingua",
+      "le lingua",
+      "la linguo"
+    ],
+    "explanation": "«La lingua» è femminile: la lingua → le lingue. Significa anche «language».",
+    "tags": [
+      "body",
+      "descrizione-fisica"
+    ]
+  },
+  {
+    "id": "cor006",
+    "category": "parti-del-corpo",
+    "sentence": "Il rossetto si mette sulle ___.",
+    "hint": "the lips — plurale femminile irregolare.",
+    "correct": "labbra",
+    "options": [
+      "labbra",
+      "labbre",
+      "labbri",
+      "labbros"
+    ],
+    "explanation": "Il labbro (m.) → le labbra (f.). Sulle labbra, non «sui labbri».",
+    "tags": [
+      "body",
+      "descrizione-fisica"
+    ]
+  },
+  {
+    "id": "cor007",
+    "category": "parti-del-corpo",
+    "sentence": "___ di Elisa sono lunghi e biondi.",
+    "hint": "the hair — in italiano è quasi sempre plurale.",
+    "correct": "I capelli",
+    "options": [
+      "I capelli",
+      "Il capello",
+      "Le capelle",
+      "I capelle"
+    ],
+    "explanation": "«I capelli» è plurale in italiano; «un capello» al singolare è un pelo solo.",
+    "tags": [
+      "body",
+      "descrizione-fisica"
+    ]
+  },
+  {
+    "id": "cor008",
+    "category": "parti-del-corpo",
+    "sentence": "Sorride e mostra ___ bianchi.",
+    "hint": "the teeth.",
+    "correct": "i denti",
+    "options": [
+      "i denti",
+      "le denti",
+      "i dente",
+      "gli denti"
+    ],
+    "explanation": "Il dente → i denti, articolo «i».",
+    "tags": [
+      "body",
+      "descrizione-fisica"
+    ]
+  },
+  {
+    "id": "cor009",
+    "category": "plurale-irregolare",
+    "sentence": "il labbro → ___",
+    "hint": "Maschile in -O al singolare, femminile in -A al plurale.",
+    "correct": "le labbra",
+    "options": [
+      "le labbra",
+      "i labbri",
+      "le labbre",
+      "gli labbra"
+    ],
+    "explanation": "Il labbro → le labbra. Fa parte del gruppo braccio/braccia, dito/dita, uovo/uova.",
+    "tags": [
+      "body",
+      "descrizione-fisica"
+    ]
+  },
+  {
+    "id": "cor010",
+    "category": "plurale-irregolare",
+    "sentence": "il sopracciglio → ___",
+    "hint": "Stesso gruppo di «il labbro → le labbra».",
+    "correct": "le sopracciglia",
+    "options": [
+      "le sopracciglia",
+      "i sopraccigli",
+      "le sopracciglie",
+      "i sopracciglia"
+    ],
+    "explanation": "Il sopracciglio (m.) → le sopracciglia (f.).",
+    "tags": [
+      "body",
+      "descrizione-fisica"
+    ]
+  },
+  {
+    "id": "cor011",
+    "category": "plurale-irregolare",
+    "sentence": "il ciglio → ___",
+    "hint": "Le ciglia dell'occhio (eyelashes).",
+    "correct": "le ciglia",
+    "options": [
+      "le ciglia",
+      "i cigli",
+      "le ciglie",
+      "i ciglia"
+    ],
+    "explanation": "Il ciglio → le ciglia (eyelashes). Attenzione: «i cigli» sono i bordi della strada.",
+    "tags": [
+      "body",
+      "descrizione-fisica"
+    ]
+  },
+  {
+    "id": "cor012",
+    "category": "plurale-irregolare",
+    "sentence": "il corno → ___",
+    "hint": "Le corna di un animale.",
+    "correct": "le corna",
+    "options": [
+      "le corna",
+      "i corni",
+      "le corne",
+      "i corna"
+    ],
+    "explanation": "Il corno → le corna (di un animale). «I corni» invece sono gli strumenti musicali.",
+    "tags": [
+      "body",
+      "descrizione-fisica"
+    ]
+  },
+  {
+    "id": "cor013",
+    "category": "plurale-irregolare",
+    "sentence": "l'orecchio → ___",
+    "hint": "Cambia genere, ma finisce in -E.",
+    "correct": "le orecchie",
+    "options": [
+      "le orecchie",
+      "gli orecchi",
+      "le orecchia",
+      "i orecchi"
+    ],
+    "explanation": "L'orecchio (m.) → le orecchie (f.) — l'eccezione del gruppo: finisce in -E, non in -A.",
+    "tags": [
+      "body",
+      "descrizione-fisica"
+    ]
+  },
+  {
+    "id": "cor014",
+    "category": "plurale-irregolare",
+    "sentence": "l'occhio → ___",
+    "hint": "Regolare, ma attenzione alla scrittura.",
+    "correct": "gli occhi",
+    "options": [
+      "gli occhi",
+      "gli occhii",
+      "le occhie",
+      "i occhi"
+    ],
+    "explanation": "L'occhio → gli occhi: una sola -i, mai «occhii».",
+    "tags": [
+      "body",
+      "descrizione-fisica"
+    ]
+  },
+  {
+    "id": "cor015",
+    "category": "plurale-irregolare",
+    "sentence": "la bocca → ___",
+    "hint": "-CA → serve la H per mantenere il suono duro.",
+    "correct": "le bocche",
+    "options": [
+      "le bocche",
+      "le bocce",
+      "le bocca",
+      "i bocchi"
+    ],
+    "explanation": "La bocca → le bocche: si aggiunge la H per conservare il suono duro /k/.",
+    "tags": [
+      "body",
+      "descrizione-fisica"
+    ]
+  },
+  {
+    "id": "cor016",
+    "category": "plurale-irregolare",
+    "sentence": "la lingua → ___",
+    "hint": "Femminile regolare in -A.",
+    "correct": "le lingue",
+    "options": [
+      "le lingue",
+      "le lingui",
+      "le lingua",
+      "i lingui"
+    ],
+    "explanation": "La lingua → le lingue: femminile in -A → -E.",
+    "tags": [
+      "body",
+      "descrizione-fisica"
+    ]
+  },
+  {
+    "id": "cor017",
+    "category": "plurale-irregolare",
+    "sentence": "il capello → ___",
+    "hint": "Maschile regolare in -O.",
+    "correct": "i capelli",
+    "options": [
+      "i capelli",
+      "le capella",
+      "i capelle",
+      "le capelli"
+    ],
+    "explanation": "Il capello → i capelli. Con due P, «il cappello», è il hat!",
+    "tags": [
+      "body",
+      "descrizione-fisica"
+    ]
+  },
+  {
+    "id": "cor018",
+    "category": "caratteristiche",
+    "sentence": "Anna ha il viso pieno di ___.",
+    "hint": "freckles — plurale femminile.",
+    "correct": "lentiggini",
+    "options": [
+      "lentiggini",
+      "lentiggine",
+      "lentiggie",
+      "lentigine"
+    ],
+    "explanation": "La lentiggine → le lentiggini: femminile in -E → -I.",
+    "tags": [
+      "body",
+      "descrizione-fisica"
+    ]
+  },
+  {
+    "id": "cor019",
+    "category": "caratteristiche",
+    "sentence": "Il cane è bianco con delle ___ nere.",
+    "hint": "spots — attenzione a non confondere con «macchine» (cars).",
+    "correct": "macchie",
+    "options": [
+      "macchie",
+      "macchine",
+      "macchi",
+      "macce"
+    ],
+    "explanation": "La macchia → le macchie (spots). «La macchina» invece è la car.",
+    "tags": [
+      "body",
+      "descrizione-fisica"
+    ]
+  },
+  {
+    "id": "cor020",
+    "category": "caratteristiche",
+    "sentence": "Mio nonno ha ___ bianchi sotto il naso.",
+    "hint": "a moustache — in italiano è plurale.",
+    "correct": "i baffi",
+    "options": [
+      "i baffi",
+      "il baffo",
+      "la barba",
+      "le baffe"
+    ],
+    "explanation": "«I baffi» è sempre plurale in italiano, anche se in inglese «moustache» è singolare.",
+    "tags": [
+      "body",
+      "descrizione-fisica"
+    ]
+  },
+  {
+    "id": "cor021",
+    "category": "caratteristiche",
+    "sentence": "Un uomo con dei baffi piccoli e sottili ha ___.",
+    "hint": "Il diminutivo di «baffi».",
+    "correct": "i baffetti",
+    "options": [
+      "i baffetti",
+      "i baffoni",
+      "le baffette",
+      "i baffini"
+    ],
+    "explanation": "-ETTO è il suffisso del diminutivo: baffi → baffetti (little moustache).",
+    "tags": [
+      "body",
+      "descrizione-fisica"
+    ]
+  }
+]

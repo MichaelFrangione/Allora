@@ -1,0 +1,621 @@
+[
+  {
+    "id": "ind001",
+    "category": "essere-o-avere",
+    "sentence": "Marco ___ biondo.",
+    "hint": "«Biondo» descrive la persona, non una parte del corpo.",
+    "correct": "è",
+    "options": [
+      "è",
+      "ha",
+      "sono",
+      "hanno"
+    ],
+    "explanation": "ESSERE + aggettivo della persona: è biondo, è alto, è simpatico.",
+    "tags": [
+      "descrizione-fisica",
+      "indovina-chi",
+      "essere-avere"
+    ]
+  },
+  {
+    "id": "ind002",
+    "category": "essere-o-avere",
+    "sentence": "Marco ___ i capelli biondi.",
+    "hint": "Qui c'è una parte del corpo: i capelli.",
+    "correct": "ha",
+    "options": [
+      "ha",
+      "è",
+      "sono",
+      "hanno"
+    ],
+    "explanation": "AVERE + articolo + parte del corpo: ha i capelli biondi. Stessa idea, verbo diverso.",
+    "tags": [
+      "descrizione-fisica",
+      "indovina-chi",
+      "essere-avere"
+    ]
+  },
+  {
+    "id": "ind003",
+    "category": "essere-o-avere",
+    "sentence": "Lucia ___ gli occhi verdi.",
+    "hint": "Parte del corpo → avere.",
+    "correct": "ha",
+    "options": [
+      "ha",
+      "è",
+      "hanno",
+      "sei"
+    ],
+    "explanation": "AVERE per le caratteristiche fisiche: ha gli occhi verdi.",
+    "tags": [
+      "descrizione-fisica",
+      "indovina-chi",
+      "essere-avere"
+    ]
+  },
+  {
+    "id": "ind004",
+    "category": "essere-o-avere",
+    "sentence": "Lucia ___ alta e magra.",
+    "hint": "Aggettivi della persona → essere.",
+    "correct": "è",
+    "options": [
+      "è",
+      "ha",
+      "sono",
+      "siete"
+    ],
+    "explanation": "ESSERE + aggettivo: è alta e magra.",
+    "tags": [
+      "descrizione-fisica",
+      "indovina-chi",
+      "essere-avere"
+    ]
+  },
+  {
+    "id": "ind005",
+    "category": "essere-o-avere",
+    "sentence": "___ un uomo o una donna?",
+    "hint": "Essere + articolo + nome.",
+    "correct": "È",
+    "options": [
+      "È",
+      "Ha",
+      "Sono",
+      "Hanno"
+    ],
+    "explanation": "Per l'identità si usa ESSERE + articolo + nome: È un uomo? È una donna?",
+    "tags": [
+      "descrizione-fisica",
+      "indovina-chi",
+      "essere-avere"
+    ]
+  },
+  {
+    "id": "ind006",
+    "category": "essere-o-avere",
+    "sentence": "I bambini ___ le lentiggini sul naso.",
+    "hint": "Soggetto plurale + parte del corpo.",
+    "correct": "hanno",
+    "options": [
+      "hanno",
+      "sono",
+      "ha",
+      "è"
+    ],
+    "explanation": "AVERE, 3ª plurale: hanno le lentiggini.",
+    "tags": [
+      "descrizione-fisica",
+      "indovina-chi",
+      "essere-avere"
+    ]
+  },
+  {
+    "id": "ind007",
+    "category": "essere-o-avere",
+    "sentence": "Marco ___ i baffi.",
+    "hint": "I baffi crescono: non si portano, si hanno.",
+    "correct": "ha",
+    "options": [
+      "ha",
+      "è",
+      "porta",
+      "hanno"
+    ],
+    "explanation": "I baffi sono una caratteristica fisica → AVERE: ha i baffi.",
+    "tags": [
+      "descrizione-fisica",
+      "indovina-chi",
+      "essere-avere"
+    ]
+  },
+  {
+    "id": "ind008",
+    "category": "essere-o-avere",
+    "sentence": "Ha ___ capelli ricci.",
+    "hint": "Dopo AVERE la parte del corpo vuole l'articolo determinativo.",
+    "correct": "i",
+    "options": [
+      "i",
+      "gli",
+      "le",
+      "dei"
+    ],
+    "explanation": "Dopo AVERE serve sempre l'articolo: ha «i» capelli ricci, mai «ha capelli ricci».",
+    "tags": [
+      "descrizione-fisica",
+      "indovina-chi",
+      "essere-avere"
+    ]
+  },
+  {
+    "id": "ind009",
+    "category": "accordo",
+    "sentence": "Maria ha i capelli ___.",
+    "cue": "biondo",
+    "hint": "L'aggettivo si accorda con «i capelli» (m. plurale), non con Maria.",
+    "correct": "biondi",
+    "options": [
+      "biondi",
+      "bionda",
+      "bionde",
+      "biondo"
+    ],
+    "explanation": "Maria è bionda, ma ha i capelli biondi: l'accordo è con la parte del corpo.",
+    "tags": [
+      "descrizione-fisica",
+      "indovina-chi",
+      "agreement",
+      "concordanza"
+    ]
+  },
+  {
+    "id": "ind010",
+    "category": "accordo",
+    "sentence": "Paolo ha gli occhi ___.",
+    "cue": "azzurro",
+    "hint": "Gli occhi = maschile plurale.",
+    "correct": "azzurri",
+    "options": [
+      "azzurri",
+      "azzurro",
+      "azzurre",
+      "azzurra"
+    ],
+    "explanation": "Gli occhi (m. pl.) → azzurri.",
+    "tags": [
+      "descrizione-fisica",
+      "indovina-chi",
+      "agreement",
+      "concordanza"
+    ]
+  },
+  {
+    "id": "ind011",
+    "category": "accordo",
+    "sentence": "Sofia ha le ciglia ___.",
+    "cue": "lungo",
+    "hint": "Le ciglia sono femminili plurali (anche se «il ciglio» è maschile).",
+    "correct": "lunghe",
+    "options": [
+      "lunghe",
+      "lunghi",
+      "lunga",
+      "lungo"
+    ],
+    "explanation": "Le ciglia (f. pl.) → lunghe. Il plurale cambia genere, e l'aggettivo lo segue.",
+    "tags": [
+      "descrizione-fisica",
+      "indovina-chi",
+      "agreement",
+      "concordanza"
+    ]
+  },
+  {
+    "id": "ind012",
+    "category": "accordo",
+    "sentence": "Luca ha le sopracciglia ___.",
+    "cue": "folto",
+    "hint": "Le sopracciglia = femminile plurale.",
+    "correct": "folte",
+    "options": [
+      "folte",
+      "folti",
+      "folto",
+      "folta"
+    ],
+    "explanation": "Le sopracciglia (f. pl.) → folte, non «folti».",
+    "tags": [
+      "descrizione-fisica",
+      "indovina-chi",
+      "agreement",
+      "concordanza"
+    ]
+  },
+  {
+    "id": "ind013",
+    "category": "accordo",
+    "sentence": "Marco ha le labbra ___.",
+    "cue": "sottile",
+    "hint": "Aggettivo in -E: al plurale fa -I, per maschile e femminile.",
+    "correct": "sottili",
+    "options": [
+      "sottili",
+      "sottile",
+      "sottila",
+      "sottilo"
+    ],
+    "explanation": "Le labbra (f. pl.) → sottili: gli aggettivi in -E hanno una sola forma plurale, -I.",
+    "tags": [
+      "descrizione-fisica",
+      "indovina-chi",
+      "agreement",
+      "concordanza"
+    ]
+  },
+  {
+    "id": "ind014",
+    "category": "accordo",
+    "sentence": "Mia nonna ha i capelli ___.",
+    "cue": "grigio",
+    "hint": "I capelli = maschile plurale; «grigio» perde la -o.",
+    "correct": "grigi",
+    "options": [
+      "grigi",
+      "grige",
+      "grigie",
+      "grigio"
+    ],
+    "explanation": "I capelli (m. pl.) → grigi. Con la nonna l'istinto dice «grigie», ma l'accordo è con i capelli.",
+    "tags": [
+      "descrizione-fisica",
+      "indovina-chi",
+      "agreement",
+      "concordanza"
+    ]
+  },
+  {
+    "id": "ind015",
+    "category": "accordo",
+    "sentence": "Giulia ha la bocca ___.",
+    "cue": "piccolo",
+    "hint": "La bocca = femminile singolare.",
+    "correct": "piccola",
+    "options": [
+      "piccola",
+      "piccolo",
+      "piccole",
+      "piccoli"
+    ],
+    "explanation": "La bocca (f. sing.) → piccola.",
+    "tags": [
+      "descrizione-fisica",
+      "indovina-chi",
+      "agreement",
+      "concordanza"
+    ]
+  },
+  {
+    "id": "ind016",
+    "category": "portare-indossare",
+    "sentence": "Il medico ___ un camice bianco.",
+    "hint": "Un camice è un vestito.",
+    "correct": "indossa",
+    "options": [
+      "indossa",
+      "porta",
+      "ha",
+      "è"
+    ],
+    "explanation": "INDOSSARE si usa per i vestiti: indossa un camice. (Anche «porta» si sente, ma «indossare» è il verbo dei vestiti.)",
+    "tags": [
+      "descrizione-fisica",
+      "indovina-chi",
+      "clothing"
+    ]
+  },
+  {
+    "id": "ind017",
+    "category": "portare-indossare",
+    "sentence": "Elena ___ gli occhiali da sole.",
+    "hint": "Gli occhiali non sono un vestito.",
+    "correct": "porta",
+    "options": [
+      "porta",
+      "indossa",
+      "ha",
+      "mette"
+    ],
+    "explanation": "PORTARE = avere con sé / usare qualcosa: porta gli occhiali, un cappello, una borsa, una sciarpa.",
+    "tags": [
+      "descrizione-fisica",
+      "indovina-chi",
+      "clothing"
+    ]
+  },
+  {
+    "id": "ind018",
+    "category": "portare-indossare",
+    "sentence": "Chi ___ un cappello rosso?",
+    "hint": "Un cappello si porta.",
+    "correct": "porta",
+    "options": [
+      "porta",
+      "indossa",
+      "è",
+      "ha"
+    ],
+    "explanation": "Il cappello sta con PORTARE, come gli occhiali e la borsa.",
+    "tags": [
+      "descrizione-fisica",
+      "indovina-chi",
+      "clothing"
+    ]
+  },
+  {
+    "id": "ind019",
+    "category": "portare-indossare",
+    "sentence": "Giovanni ___ una giacca elegante.",
+    "hint": "La giacca è un vestito.",
+    "correct": "indossa",
+    "options": [
+      "indossa",
+      "porta",
+      "sono",
+      "hanno"
+    ],
+    "explanation": "INDOSSARE + vestiti: indossa una giacca, una camicia, una maglietta, un vestito.",
+    "tags": [
+      "descrizione-fisica",
+      "indovina-chi",
+      "clothing"
+    ]
+  },
+  {
+    "id": "ind020",
+    "category": "portare-indossare",
+    "sentence": "Quale verbo si usa SOLO per i vestiti?",
+    "hint": "Uno dei due vale anche per occhiali e borsa.",
+    "correct": "indossare",
+    "options": [
+      "indossare",
+      "portare",
+      "avere",
+      "essere"
+    ],
+    "explanation": "INDOSSARE è solo per i vestiti; PORTARE è più largo (occhiali, cappello, borsa, sciarpa).",
+    "tags": [
+      "descrizione-fisica",
+      "indovina-chi",
+      "clothing"
+    ]
+  },
+  {
+    "id": "ind021",
+    "category": "portare-indossare",
+    "sentence": "La ragazza ___ una borsa gialla.",
+    "hint": "La borsa si tiene, non si veste.",
+    "correct": "porta",
+    "options": [
+      "porta",
+      "indossa",
+      "è",
+      "veste"
+    ],
+    "explanation": "PORTARE = avere con sé: porta una borsa.",
+    "tags": [
+      "descrizione-fisica",
+      "indovina-chi",
+      "clothing"
+    ]
+  },
+  {
+    "id": "ind022",
+    "category": "fantasie-colori",
+    "sentence": "Una camicia con le righe è una camicia ___.",
+    "hint": "A + nome plurale.",
+    "correct": "a righe",
+    "options": [
+      "a righe",
+      "di righe",
+      "con righe",
+      "a riga"
+    ],
+    "explanation": "Le fantasie si formano con A + nome plurale: a righe, a pallini, a fiori, a stelle.",
+    "tags": [
+      "descrizione-fisica",
+      "indovina-chi",
+      "colors",
+      "patterns"
+    ]
+  },
+  {
+    "id": "ind023",
+    "category": "fantasie-colori",
+    "sentence": "Un vestito con i pallini è un vestito ___.",
+    "hint": "Sempre A + plurale.",
+    "correct": "a pallini",
+    "options": [
+      "a pallini",
+      "a pallino",
+      "di pallini",
+      "con i pallini"
+    ],
+    "explanation": "A pallini (polka-dotted). «Pallino» è il diminutivo di «palla».",
+    "tags": [
+      "descrizione-fisica",
+      "indovina-chi",
+      "colors",
+      "patterns"
+    ]
+  },
+  {
+    "id": "ind024",
+    "category": "fantasie-colori",
+    "sentence": "Una maglietta di un solo colore è una maglietta ___.",
+    "hint": "L'unica fantasia che resta al singolare.",
+    "correct": "a tinta unita",
+    "options": [
+      "a tinta unita",
+      "a tinte unite",
+      "di tinta unita",
+      "a un colore"
+    ],
+    "explanation": "«A tinta unita» = solid colour, ed è l'eccezione singolare del gruppo.",
+    "tags": [
+      "descrizione-fisica",
+      "indovina-chi",
+      "colors",
+      "patterns"
+    ]
+  },
+  {
+    "id": "ind025",
+    "category": "fantasie-colori",
+    "sentence": "I pantaloni ___ sono di moda.",
+    "hint": "La fantasia non cambia mai, neanche al maschile plurale.",
+    "correct": "a righe",
+    "options": [
+      "a righe",
+      "a righi",
+      "a righe rossi",
+      "alle righe"
+    ],
+    "explanation": "«A righe» è invariabile: una camicia a righe, un vestito a righe, i pantaloni a righe.",
+    "tags": [
+      "descrizione-fisica",
+      "indovina-chi",
+      "colors",
+      "patterns"
+    ]
+  },
+  {
+    "id": "ind026",
+    "category": "fantasie-colori",
+    "sentence": "Le due magliette sono ___.",
+    "cue": "rosa",
+    "hint": "Un colore invariabile.",
+    "correct": "rosa",
+    "options": [
+      "rosa",
+      "rose",
+      "rosi",
+      "rosae"
+    ],
+    "explanation": "ROSA non cambia mai: due magliette rosa. Come blu, viola, lilla, beige.",
+    "tags": [
+      "descrizione-fisica",
+      "indovina-chi",
+      "colors",
+      "patterns"
+    ]
+  },
+  {
+    "id": "ind027",
+    "category": "fantasie-colori",
+    "sentence": "Ha due sciarpe ___.",
+    "cue": "blu",
+    "hint": "Colore invariabile.",
+    "correct": "blu",
+    "options": [
+      "blu",
+      "blue",
+      "blui",
+      "ble"
+    ],
+    "explanation": "BLU è invariabile: due sciarpe blu.",
+    "tags": [
+      "descrizione-fisica",
+      "indovina-chi",
+      "colors",
+      "patterns"
+    ]
+  },
+  {
+    "id": "ind028",
+    "category": "fantasie-colori",
+    "sentence": "Porta degli occhiali ___.",
+    "cue": "viola",
+    "hint": "Colore invariabile.",
+    "correct": "viola",
+    "options": [
+      "viola",
+      "violi",
+      "viole",
+      "violo"
+    ],
+    "explanation": "VIOLA non cambia mai: occhiali viola, fiori viola.",
+    "tags": [
+      "descrizione-fisica",
+      "indovina-chi",
+      "colors",
+      "patterns"
+    ]
+  },
+  {
+    "id": "ind029",
+    "category": "fantasie-colori",
+    "sentence": "Indossa due camicie ___.",
+    "cue": "bianco",
+    "hint": "Colore a quattro forme, femminile plurale — e serve la H.",
+    "correct": "bianche",
+    "options": [
+      "bianche",
+      "bianchi",
+      "biance",
+      "bianca"
+    ],
+    "explanation": "BIANCO ha quattro forme: bianco/bianca/bianchi/bianche. Camicie (f. pl.) → bianche.",
+    "tags": [
+      "descrizione-fisica",
+      "indovina-chi",
+      "colors",
+      "patterns"
+    ]
+  },
+  {
+    "id": "ind030",
+    "category": "fantasie-colori",
+    "sentence": "Ha due giacche ___.",
+    "cue": "arancione",
+    "hint": "Colore in -E: una sola forma plurale.",
+    "correct": "arancioni",
+    "options": [
+      "arancioni",
+      "arancione",
+      "arance",
+      "arancie"
+    ],
+    "explanation": "ARANCIONE è a due forme: arancione / arancioni.",
+    "tags": [
+      "descrizione-fisica",
+      "indovina-chi",
+      "colors",
+      "patterns"
+    ]
+  },
+  {
+    "id": "ind031",
+    "category": "fantasie-colori",
+    "sentence": "Indossa una camicia ___.",
+    "cue": "verde chiaro",
+    "hint": "Quando il colore è qualificato, tutto resta invariabile.",
+    "correct": "verde chiaro",
+    "options": [
+      "verde chiaro",
+      "verde chiara",
+      "verda chiara",
+      "verdi chiari"
+    ],
+    "explanation": "Colore + chiaro/scuro diventa invariabile: una camicia verde chiaro, due camicie verde chiaro.",
+    "tags": [
+      "descrizione-fisica",
+      "indovina-chi",
+      "colors",
+      "patterns"
+    ]
+  }
+]

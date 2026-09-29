@@ -1,0 +1,515 @@
+[
+  {
+    "id": "l1-naso",
+    "italian": "il naso",
+    "english": "nose",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "Ha il naso lungo. / plurale: i nasi",
+    "tags": [
+      "nouns",
+      "body",
+      "appearance"
+    ],
+    "pronunciation": "NA·so"
+  },
+  {
+    "id": "l1-corno",
+    "italian": "il corno (pl. le corna)",
+    "english": "horn",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "Il diavolo ha le corna. — «i corni» invece sono gli strumenti musicali.",
+    "tags": [
+      "nouns",
+      "body",
+      "appearance",
+      "plural"
+    ],
+    "pronunciation": "COR·no"
+  },
+  {
+    "id": "l1-occhio",
+    "italian": "l'occhio (pl. gli occhi)",
+    "english": "eye",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "Ha gli occhi azzurri.",
+    "tags": [
+      "nouns",
+      "body",
+      "appearance"
+    ],
+    "pronunciation": "OC·chio"
+  },
+  {
+    "id": "l1-sopracciglio",
+    "italian": "il sopracciglio (pl. le sopracciglia)",
+    "english": "eyebrow",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "Ha le sopracciglia folte.",
+    "tags": [
+      "nouns",
+      "body",
+      "appearance",
+      "plural"
+    ],
+    "pronunciation": "so·prac·CI·glio"
+  },
+  {
+    "id": "l1-ciglio",
+    "italian": "il ciglio (pl. le ciglia)",
+    "english": "eyelash",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "Ha le ciglia lunghe. — «i cigli» invece sono i bordi della strada.",
+    "tags": [
+      "nouns",
+      "body",
+      "appearance",
+      "plural"
+    ],
+    "pronunciation": "CI·glio"
+  },
+  {
+    "id": "l1-capello",
+    "italian": "il capello (pl. i capelli)",
+    "english": "hair",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "Ha i capelli ricci. — al singolare «un capello» è un solo pelo.",
+    "tags": [
+      "nouns",
+      "body",
+      "appearance"
+    ],
+    "pronunciation": "ca·PEL·lo"
+  },
+  {
+    "id": "l1-orecchio",
+    "italian": "l'orecchio (pl. le orecchie)",
+    "english": "ear",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "Ha le orecchie grandi.",
+    "tags": [
+      "nouns",
+      "body",
+      "appearance",
+      "plural"
+    ],
+    "pronunciation": "o·REC·chio"
+  },
+  {
+    "id": "l1-lingua",
+    "italian": "la lingua",
+    "english": "tongue; language",
+    "gender": "f",
+    "partOfSpeech": "noun",
+    "example": "Il bambino mostra la lingua. / Parlo due lingue.",
+    "tags": [
+      "nouns",
+      "body",
+      "appearance"
+    ],
+    "pronunciation": "LIN·gua"
+  },
+  {
+    "id": "l1-bocca",
+    "italian": "la bocca (pl. le bocche)",
+    "english": "mouth",
+    "gender": "f",
+    "partOfSpeech": "noun",
+    "example": "Ha la bocca piccola.",
+    "tags": [
+      "nouns",
+      "body",
+      "appearance"
+    ],
+    "pronunciation": "BOC·ca"
+  },
+  {
+    "id": "l1-dente",
+    "italian": "il dente (pl. i denti)",
+    "english": "tooth",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "Ha i denti bianchi.",
+    "tags": [
+      "nouns",
+      "body",
+      "appearance"
+    ],
+    "pronunciation": "DEN·te"
+  },
+  {
+    "id": "l1-labbro",
+    "italian": "il labbro (pl. le labbra)",
+    "english": "lip",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "Ha le labbra sottili.",
+    "tags": [
+      "nouns",
+      "body",
+      "appearance",
+      "plural"
+    ],
+    "pronunciation": "LAB·bro"
+  },
+  {
+    "id": "l1-macchia",
+    "italian": "la macchia (pl. le macchie)",
+    "english": "spot, blotch, stain",
+    "gender": "f",
+    "partOfSpeech": "noun",
+    "example": "Il cane bianco ha delle macchie nere.",
+    "tags": [
+      "nouns",
+      "body",
+      "appearance",
+      "descrizione-fisica"
+    ],
+    "pronunciation": "MAC·chia"
+  },
+  {
+    "id": "l1-lentiggine",
+    "italian": "la lentiggine (pl. le lentiggini)",
+    "english": "freckle",
+    "gender": "f",
+    "partOfSpeech": "noun",
+    "example": "Ha il viso pieno di lentiggini.",
+    "tags": [
+      "nouns",
+      "body",
+      "appearance",
+      "descrizione-fisica"
+    ],
+    "pronunciation": "len·TIG·gi·ne"
+  },
+  {
+    "id": "l1-baffi",
+    "italian": "i baffi",
+    "english": "moustache",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "Ha i baffi bianchi. — in italiano è sempre plurale.",
+    "tags": [
+      "nouns",
+      "body",
+      "appearance",
+      "descrizione-fisica"
+    ],
+    "pronunciation": "BAF·fi"
+  },
+  {
+    "id": "l1-baffetti",
+    "italian": "i baffetti",
+    "english": "little moustache",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "Porta dei baffetti sottili.",
+    "tags": [
+      "nouns",
+      "body",
+      "appearance",
+      "descrizione-fisica"
+    ],
+    "pronunciation": "baf·FET·ti"
+  },
+  {
+    "id": "l1-maglietta",
+    "italian": "la maglietta",
+    "english": "t-shirt",
+    "gender": "f",
+    "partOfSpeech": "noun",
+    "example": "Indossa una maglietta a righe.",
+    "tags": [
+      "nouns",
+      "clothing",
+      "descrizione-fisica"
+    ],
+    "pronunciation": "ma·GLIET·ta"
+  },
+  {
+    "id": "l1-camicia",
+    "italian": "la camicia (pl. le camicie)",
+    "english": "shirt",
+    "gender": "f",
+    "partOfSpeech": "noun",
+    "example": "Indossa una camicia bianca.",
+    "tags": [
+      "nouns",
+      "clothing",
+      "descrizione-fisica"
+    ],
+    "pronunciation": "ca·MI·cia"
+  },
+  {
+    "id": "l1-camice",
+    "italian": "il camice (pl. i camici)",
+    "english": "lab coat",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "Il medico indossa un camice. — attenzione: «il camice» ≠ «la camicia».",
+    "tags": [
+      "nouns",
+      "clothing",
+      "descrizione-fisica"
+    ],
+    "pronunciation": "CA·mi·ce"
+  },
+  {
+    "id": "l1-giacca",
+    "italian": "la giacca (pl. le giacche)",
+    "english": "jacket",
+    "gender": "f",
+    "partOfSpeech": "noun",
+    "example": "Indossa una giacca nera.",
+    "tags": [
+      "nouns",
+      "clothing",
+      "descrizione-fisica"
+    ],
+    "pronunciation": "GIAC·ca"
+  },
+  {
+    "id": "l1-colletto",
+    "italian": "il colletto",
+    "english": "collar",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "Il colletto della camicia è bianco.",
+    "tags": [
+      "nouns",
+      "clothing",
+      "descrizione-fisica"
+    ],
+    "pronunciation": "col·LET·to"
+  },
+  {
+    "id": "l1-sciarpa",
+    "italian": "la sciarpa",
+    "english": "scarf",
+    "gender": "f",
+    "partOfSpeech": "noun",
+    "example": "Porta una sciarpa a righe.",
+    "tags": [
+      "nouns",
+      "clothing",
+      "descrizione-fisica"
+    ],
+    "pronunciation": "SCIAR·pa"
+  },
+  {
+    "id": "l1-occhiali",
+    "italian": "gli occhiali",
+    "english": "glasses",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "Porta gli occhiali. — in italiano è sempre plurale.",
+    "tags": [
+      "nouns",
+      "clothing",
+      "descrizione-fisica"
+    ],
+    "pronunciation": "oc·CHIA·li"
+  },
+  {
+    "id": "l1-cappello",
+    "italian": "il cappello",
+    "english": "hat",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "Porta un cappello rosso. — attenzione: «cappello» (hat) ≠ «capello» (hair).",
+    "tags": [
+      "nouns",
+      "clothing",
+      "descrizione-fisica"
+    ],
+    "pronunciation": "cap·PEL·lo"
+  },
+  {
+    "id": "l1-borsa",
+    "italian": "la borsa",
+    "english": "bag, purse",
+    "gender": "f",
+    "partOfSpeech": "noun",
+    "example": "Porta una borsa gialla.",
+    "tags": [
+      "nouns",
+      "clothing",
+      "descrizione-fisica"
+    ],
+    "pronunciation": "BOR·sa"
+  },
+  {
+    "id": "l1-vestito",
+    "italian": "il vestito",
+    "english": "dress, suit",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "Indossa un vestito a fiori.",
+    "tags": [
+      "nouns",
+      "clothing",
+      "descrizione-fisica"
+    ],
+    "pronunciation": "ve·STI·to"
+  },
+  {
+    "id": "l1-riga",
+    "italian": "la riga (pl. le righe)",
+    "english": "line, stripe",
+    "gender": "f",
+    "partOfSpeech": "noun",
+    "example": "Una camicia a righe.",
+    "tags": [
+      "patterns",
+      "clothing",
+      "descrizione-fisica"
+    ],
+    "pronunciation": "RI·ga"
+  },
+  {
+    "id": "l1-pallino",
+    "italian": "il pallino",
+    "english": "dot, polka dot",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "Un vestito a pallini.",
+    "tags": [
+      "patterns",
+      "clothing",
+      "descrizione-fisica"
+    ],
+    "pronunciation": "pal·LI·no"
+  },
+  {
+    "id": "l1-stella",
+    "italian": "la stella",
+    "english": "star",
+    "gender": "f",
+    "partOfSpeech": "noun",
+    "example": "Una maglietta a stelle.",
+    "tags": [
+      "patterns",
+      "clothing",
+      "descrizione-fisica"
+    ],
+    "pronunciation": "STEL·la"
+  },
+  {
+    "id": "l1-a-righe",
+    "italian": "a righe",
+    "english": "striped",
+    "gender": null,
+    "partOfSpeech": "expression",
+    "example": "Indossa una camicia a righe.",
+    "tags": [
+      "patterns",
+      "clothing",
+      "descrizione-fisica"
+    ],
+    "pronunciation": "a RI·ghe"
+  },
+  {
+    "id": "l1-a-pallini",
+    "italian": "a pallini",
+    "english": "polka-dotted",
+    "gender": null,
+    "partOfSpeech": "expression",
+    "example": "Porta un vestito a pallini.",
+    "tags": [
+      "patterns",
+      "clothing",
+      "descrizione-fisica"
+    ],
+    "pronunciation": "a pal·LI·ni"
+  },
+  {
+    "id": "l1-a-fiori",
+    "italian": "a fiori",
+    "english": "floral, flowered",
+    "gender": null,
+    "partOfSpeech": "expression",
+    "example": "Una gonna a fiori.",
+    "tags": [
+      "patterns",
+      "clothing",
+      "descrizione-fisica"
+    ],
+    "pronunciation": "a FIO·ri"
+  },
+  {
+    "id": "l1-a-stelle",
+    "italian": "a stelle",
+    "english": "starred, star-patterned",
+    "gender": null,
+    "partOfSpeech": "expression",
+    "example": "Una maglietta a stelle.",
+    "tags": [
+      "patterns",
+      "clothing",
+      "descrizione-fisica"
+    ],
+    "pronunciation": "a STEL·le"
+  },
+  {
+    "id": "l1-a-macchie",
+    "italian": "a macchie",
+    "english": "spotted, blotchy",
+    "gender": null,
+    "partOfSpeech": "expression",
+    "example": "Un cane a macchie.",
+    "tags": [
+      "patterns",
+      "clothing",
+      "descrizione-fisica"
+    ],
+    "pronunciation": "a MAC·chie"
+  },
+  {
+    "id": "l1-tinta-unita",
+    "italian": "a tinta unita",
+    "english": "solid colour, plain",
+    "gender": null,
+    "partOfSpeech": "expression",
+    "example": "Una camicia a tinta unita.",
+    "tags": [
+      "patterns",
+      "clothing",
+      "descrizione-fisica"
+    ],
+    "pronunciation": "a TIN·ta u·NI·ta"
+  },
+  {
+    "id": "l1-viola",
+    "italian": "viola",
+    "english": "purple",
+    "gender": null,
+    "partOfSpeech": "adjective",
+    "example": "Ha due maglioni viola. — invariabile: non cambia mai.",
+    "tags": [
+      "adjectives",
+      "colors"
+    ],
+    "pronunciation": "VI·o·la"
+  },
+  {
+    "id": "l1-indossare",
+    "italian": "indossare",
+    "english": "to wear (clothes)",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Indossa una giacca. — per i vestiti; «portare» anche per occhiali, cappello, borsa.",
+    "tags": [
+      "verbs",
+      "are-verbs",
+      "clothing",
+      "descrizione-fisica"
+    ],
+    "pronunciation": "in·dos·SA·re"
+  }
+]

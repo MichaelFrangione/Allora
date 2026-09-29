@@ -4,10 +4,12 @@ import {
   alBarDrill,
   articoliDrill,
   concordanza,
+  corpoDrill,
   dimostrativiDrill,
   essereAvereDrill,
   genereDrill,
   gerundioDrill,
+  indovinaChiDrill,
   interrogativiDrill,
   modalVerbs,
   passatoProssimoDrill,
@@ -332,6 +334,41 @@ export const DRILLS: DrillDef[] = [
     },
     questions: gerundioDrill,
   },
+  {
+    slug: "corpo",
+    contentType: "corpo",
+    subjectId: "body",
+    title: "Il Corpo e il Viso",
+    subtitle: "Parts of the body — and the plurals that change gender.",
+    instructions:
+      "Name the part of the body with its article, and form the plural. Watch the small class of nouns that are masculine in the singular but feminine in the plural: il labbro → le labbra, il sopracciglio → le sopracciglia, il ciglio → le ciglia, il corno → le corna (l'orecchio → le orecchie ends in -E instead).",
+    emoji: "👀",
+    desc: "Body parts, plus the m. → f. irregular plurals",
+    categoryLabels: {
+      "parti-del-corpo": "Parti del corpo",
+      "plurale-irregolare": "Plurali irregolari",
+      caratteristiche: "Caratteristiche fisiche",
+    },
+    questions: corpoDrill,
+  },
+  {
+    slug: "indovina-chi",
+    contentType: "indovina-chi",
+    subjectId: "descrizione-fisica",
+    title: "Indovina Chi",
+    subtitle: "Describing people — essere, avere, portare, indossare.",
+    instructions:
+      "Describing a person uses four verbs: ESSERE + adjective for what the person is (è biondo), AVERE + article + body part for what they have (ha i capelli biondi — the adjective agrees with the body part, not the person), PORTARE for things carried or worn with you (occhiali, cappello, borsa, sciarpa), and INDOSSARE for clothes. Patterns use A + a plural noun and never change (a righe, a pallini); colours split into four-form (rosso), two-form (verde, arancione) and invariable (blu, rosa, viola, lilla).",
+    emoji: "🕵️",
+    desc: "Essere / avere / portare / indossare, agreement, patterns & colours",
+    categoryLabels: {
+      "essere-o-avere": "Essere o Avere?",
+      accordo: "L'accordo",
+      "portare-indossare": "Portare o Indossare?",
+      "fantasie-colori": "Fantasie e colori",
+    },
+    questions: indovinaChiDrill,
+  },
 ];
 
 const DRILL_BY_SLUG = new Map(DRILLS.map((d) => [d.slug, d]));
@@ -363,6 +400,8 @@ export const LEARN_PATH: { subjectId: string; route: string }[] = [
   { subjectId: "gender", route: "/study/genere" },
   { subjectId: "plural", route: "/study/plurali" },
   { subjectId: "adjectives", route: "/study/aggettivi" },
+  { subjectId: "body", route: "/study/corpo" },
+  { subjectId: "descrizione-fisica", route: "/study/indovina-chi" },
   { subjectId: "possessives", route: "/study/possessivi" },
   { subjectId: "piacere", route: "/study/piacere" },
   { subjectId: "reflexive-verbs", route: "/study/riflessivi" },

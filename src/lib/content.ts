@@ -11,6 +11,7 @@ import vocabDescriptions from "../../data/vocab/descriptions.json";
 import vocabCulture from "../../data/vocab/culture.json";
 import vocabAbstract from "../../data/vocab/abstract.json";
 import vocabDescrizione from "../../data/vocab/descrizione.json";
+import vocabCorpo from "../../data/vocab/corpo.json";
 import vocabAdded from "../../data/vocab/added.json"; // promoted from the DB capture inbox
 import flashcardsData from "../../data/flashcards.json";
 // Conjugations are split by verb group under data/conjugations/.
@@ -42,6 +43,8 @@ import dimostrativiData from "../../data/dimostrativi-drill.json";
 import gerundioData from "../../data/gerundio-drill.json";
 import salutiData from "../../data/saluti-drill.json";
 import passatoProssimoData from "../../data/passato-prossimo-drill.json";
+import corpoData from "../../data/corpo-drill.json";
+import indovinaChiData from "../../data/indovina-chi-drill.json";
 import descrizioneData from "../../data/descrizione.json";
 
 export type VocabItem = {
@@ -118,6 +121,7 @@ export const vocab: VocabItem[] = [
   ...vocabCulture,
   ...vocabAbstract,
   ...vocabDescrizione,
+  ...vocabCorpo,
   ...vocabAdded,
 ] as VocabItem[];
 export const flashcards: Flashcard[] = flashcardsData as Flashcard[];
@@ -197,6 +201,8 @@ export const dimostrativiDrill: DrillQuestion[] = dimostrativiData as DrillQuest
 export const gerundioDrill: DrillQuestion[] = gerundioData as DrillQuestion[];
 export const salutiDrill: DrillQuestion[] = salutiData as DrillQuestion[];
 export const passatoProssimoDrill: DrillQuestion[] = passatoProssimoData as DrillQuestion[];
+export const corpoDrill: DrillQuestion[] = corpoData as DrillQuestion[];
+export const indovinaChiDrill: DrillQuestion[] = indovinaChiData as DrillQuestion[];
 
 /**
  * Picture-description lesson: an image plus a set of questions about what's in it
@@ -284,6 +290,8 @@ export const SUBJECTS: Subject[] = [
   { id: "travel", label: "Travel", emoji: "✈️", tags: ["travel", "transport"] },
   { id: "city", label: "City & Directions", emoji: "🏙️", tags: ["city", "directions", "places"] },
   { id: "work", label: "Work", emoji: "💼", tags: ["work"] },
+  { id: "body", label: "Body & Face", emoji: "👀", tags: ["body"] },
+  { id: "descrizione-fisica", label: "Describing People", emoji: "🕵️", tags: ["descrizione-fisica", "clothing", "patterns", "indovina-chi"] },
   { id: "colors", label: "Colors", emoji: "🌈", tags: ["colors"] },
   { id: "positions", label: "Positions", emoji: "📍", tags: ["positions"] },
   { id: "nature", label: "Nature", emoji: "🌳", tags: ["nature"] },

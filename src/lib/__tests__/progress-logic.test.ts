@@ -1,6 +1,7 @@
 import { describe, it, expect } from "vitest";
 import { computeDueItems, computeStreak, masteryLevel, pickNextUp } from "@/lib/progress";
 import type { SubjectProgress } from "@/lib/progress";
+import { LEARN_PATH } from "@/lib/drills";
 
 const DAY = 24 * 60 * 60 * 1000;
 const now = new Date("2026-07-05T12:00:00");
@@ -130,13 +131,10 @@ describe("pickNextUp priority", () => {
   });
 
   it("falls back to the daily mix when everything is mastered", () => {
+    // Derived from LEARN_PATH so adding a topic to the path doesn't break this.
     const bySubject: Record<string, SubjectProgress> = {};
-    for (const id of [
-      "greetings", "essere-avere", "present-tense", "articles", "gender", "plural",
-      "adjectives", "possessives", "piacere", "reflexive-verbs", "modals", "pronouns",
-      "prepositions", "interrogatives", "demonstratives", "time", "gerundio", "passato-prossimo",
-    ]) {
-      bySubject[id] = prog(100, 95, 0.95, 5);
+    for (const { subjectId } of LEARN_PATH) {
+      bySubject[subjectId] = prog(100, 95, 0.95, 5);
     }
     const next = pickNextUp({ dueCount: 0, mistakeCount: 0, bySubject });
     expect(next.href).toBe("/study/mixed");
