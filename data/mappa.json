@@ -1,0 +1,1185 @@
+{
+  "image": "/images/mappa/aurora.jpg",
+  "width": 1052,
+  "height": 1199,
+  "places": [
+    {
+      "id": "scuola",
+      "name": "la scuola",
+      "label": "Scuola",
+      "emoji": "🏫",
+      "rect": [
+        345,
+        40,
+        180,
+        160
+      ],
+      "vado": "a scuola"
+    },
+    {
+      "id": "biblioteca",
+      "name": "la biblioteca",
+      "label": "Biblioteca",
+      "emoji": "🏛️",
+      "rect": [
+        560,
+        30,
+        145,
+        160
+      ],
+      "vado": "in biblioteca"
+    },
+    {
+      "id": "caffetteria",
+      "name": "la caffetteria",
+      "label": "Caffetteria",
+      "emoji": "☕",
+      "rect": [
+        740,
+        50,
+        150,
+        150
+      ],
+      "vado": "in caffetteria"
+    },
+    {
+      "id": "parco",
+      "name": "il parco",
+      "label": "Parco",
+      "emoji": "🌳",
+      "rect": [
+        10,
+        100,
+        290,
+        120
+      ],
+      "vado": "al parco"
+    },
+    {
+      "id": "chiesa",
+      "name": "la chiesa",
+      "label": "Chiesa",
+      "emoji": "⛪",
+      "rect": [
+        30,
+        230,
+        180,
+        170
+      ],
+      "vado": "in chiesa"
+    },
+    {
+      "id": "farmacia",
+      "name": "la farmacia",
+      "label": "Farmacia",
+      "emoji": "💊",
+      "rect": [
+        345,
+        250,
+        150,
+        150
+      ],
+      "vado": "in farmacia"
+    },
+    {
+      "id": "piazza",
+      "name": "Piazza del Sole",
+      "label": "Piazza del Sole",
+      "emoji": "⛲",
+      "rect": [
+        520,
+        245,
+        210,
+        190
+      ],
+      "vado": "in Piazza del Sole"
+    },
+    {
+      "id": "poste",
+      "name": "le poste",
+      "label": "Poste",
+      "emoji": "📮",
+      "rect": [
+        760,
+        260,
+        130,
+        145
+      ],
+      "vado": "alle poste"
+    },
+    {
+      "id": "panetteria",
+      "name": "la panetteria",
+      "label": "Panetteria",
+      "emoji": "🥖",
+      "rect": [
+        10,
+        460,
+        150,
+        140
+      ],
+      "vado": "in panetteria"
+    },
+    {
+      "id": "gelateria",
+      "name": "la gelateria",
+      "label": "Gelateria",
+      "emoji": "🍦",
+      "rect": [
+        170,
+        455,
+        145,
+        145
+      ],
+      "vado": "in gelateria"
+    },
+    {
+      "id": "ospedale",
+      "name": "l'ospedale",
+      "label": "Ospedale",
+      "emoji": "🏥",
+      "rect": [
+        395,
+        455,
+        220,
+        160
+      ],
+      "vado": "all'ospedale"
+    },
+    {
+      "id": "bar",
+      "name": "il bar",
+      "label": "Bar",
+      "emoji": "☕",
+      "rect": [
+        625,
+        465,
+        125,
+        150
+      ],
+      "vado": "al bar"
+    },
+    {
+      "id": "museo",
+      "name": "il museo",
+      "label": "Museo",
+      "emoji": "🖼️",
+      "rect": [
+        20,
+        655,
+        150,
+        130
+      ],
+      "vado": "al museo"
+    },
+    {
+      "id": "ristorante",
+      "name": "il ristorante",
+      "label": "Ristorante",
+      "emoji": "🍕",
+      "rect": [
+        200,
+        655,
+        135,
+        135
+      ],
+      "vado": "al ristorante"
+    },
+    {
+      "id": "banca",
+      "name": "la banca",
+      "label": "Banca",
+      "emoji": "💰",
+      "rect": [
+        610,
+        660,
+        150,
+        130
+      ],
+      "vado": "in banca"
+    },
+    {
+      "id": "stazione",
+      "name": "la stazione",
+      "label": "Stazione",
+      "emoji": "🚆",
+      "rect": [
+        5,
+        830,
+        255,
+        165
+      ],
+      "vado": "in stazione"
+    },
+    {
+      "id": "supermercato",
+      "name": "il supermercato",
+      "label": "Supermercato",
+      "emoji": "🛒",
+      "rect": [
+        345,
+        845,
+        155,
+        140
+      ],
+      "vado": "al supermercato"
+    },
+    {
+      "id": "palestra",
+      "name": "la palestra",
+      "label": "Palestra",
+      "emoji": "🏋️",
+      "rect": [
+        575,
+        845,
+        160,
+        135
+      ],
+      "vado": "in palestra"
+    },
+    {
+      "id": "libreria",
+      "name": "la libreria",
+      "label": "Libreria",
+      "emoji": "📚",
+      "rect": [
+        765,
+        850,
+        115,
+        130
+      ],
+      "vado": "in libreria"
+    },
+    {
+      "id": "hotel",
+      "name": "l'hotel",
+      "label": "Hotel",
+      "emoji": "🛏️",
+      "rect": [
+        125,
+        1030,
+        125,
+        100
+      ],
+      "vado": "in hotel"
+    },
+    {
+      "id": "teatro",
+      "name": "il teatro",
+      "label": "Teatro",
+      "emoji": "🎭",
+      "rect": [
+        380,
+        1020,
+        160,
+        120
+      ],
+      "vado": "a teatro"
+    },
+    {
+      "id": "pasticceria",
+      "name": "la pasticceria",
+      "label": "Pasticceria",
+      "emoji": "🎂",
+      "rect": [
+        580,
+        1025,
+        150,
+        115
+      ],
+      "vado": "in pasticceria"
+    },
+    {
+      "id": "casa-martina",
+      "name": "la casa di Martina",
+      "label": "Casa di Martina",
+      "emoji": "🏠",
+      "rect": [
+        800,
+        1025,
+        150,
+        115
+      ],
+      "vado": "a casa di Martina"
+    },
+    {
+      "id": "ponte",
+      "name": "il Ponte Vecchio",
+      "label": "Ponte Vecchio",
+      "emoji": "🌉",
+      "rect": [
+        905,
+        485,
+        145,
+        90
+      ],
+      "vado": "al Ponte Vecchio"
+    }
+  ],
+  "questions": [
+    {
+      "id": "trova-scuola",
+      "type": "trova",
+      "prompt": "Dov'è la scuola?",
+      "answers": [
+        "scuola"
+      ],
+      "explanation": "Ecco la scuola!"
+    },
+    {
+      "id": "trova-biblioteca",
+      "type": "trova",
+      "prompt": "Dov'è la biblioteca?",
+      "answers": [
+        "biblioteca"
+      ],
+      "explanation": "Ecco la biblioteca!"
+    },
+    {
+      "id": "trova-caffetteria",
+      "type": "trova",
+      "prompt": "Dov'è la caffetteria?",
+      "answers": [
+        "caffetteria"
+      ],
+      "explanation": "Ecco la caffetteria!"
+    },
+    {
+      "id": "trova-parco",
+      "type": "trova",
+      "prompt": "Dov'è il parco?",
+      "answers": [
+        "parco"
+      ],
+      "explanation": "Ecco il parco!"
+    },
+    {
+      "id": "trova-chiesa",
+      "type": "trova",
+      "prompt": "Dov'è la chiesa?",
+      "answers": [
+        "chiesa"
+      ],
+      "explanation": "Ecco la chiesa!"
+    },
+    {
+      "id": "trova-farmacia",
+      "type": "trova",
+      "prompt": "Dov'è la farmacia?",
+      "answers": [
+        "farmacia"
+      ],
+      "explanation": "Ecco la farmacia!"
+    },
+    {
+      "id": "trova-piazza",
+      "type": "trova",
+      "prompt": "Dov'è Piazza del Sole?",
+      "answers": [
+        "piazza"
+      ],
+      "explanation": "Ecco Piazza del Sole!"
+    },
+    {
+      "id": "trova-poste",
+      "type": "trova",
+      "prompt": "Dove sono le poste?",
+      "answers": [
+        "poste"
+      ],
+      "explanation": "Ecco le poste!"
+    },
+    {
+      "id": "trova-panetteria",
+      "type": "trova",
+      "prompt": "Dov'è la panetteria?",
+      "answers": [
+        "panetteria"
+      ],
+      "explanation": "Ecco la panetteria!"
+    },
+    {
+      "id": "trova-gelateria",
+      "type": "trova",
+      "prompt": "Dov'è la gelateria?",
+      "answers": [
+        "gelateria"
+      ],
+      "explanation": "Ecco la gelateria!"
+    },
+    {
+      "id": "trova-ospedale",
+      "type": "trova",
+      "prompt": "Dov'è l'ospedale?",
+      "answers": [
+        "ospedale"
+      ],
+      "explanation": "Ecco l'ospedale!"
+    },
+    {
+      "id": "trova-bar",
+      "type": "trova",
+      "prompt": "Dov'è il bar?",
+      "answers": [
+        "bar"
+      ],
+      "explanation": "Ecco il bar!"
+    },
+    {
+      "id": "trova-museo",
+      "type": "trova",
+      "prompt": "Dov'è il museo?",
+      "answers": [
+        "museo"
+      ],
+      "explanation": "Ecco il museo!"
+    },
+    {
+      "id": "trova-ristorante",
+      "type": "trova",
+      "prompt": "Dov'è il ristorante?",
+      "answers": [
+        "ristorante"
+      ],
+      "explanation": "Ecco il ristorante!"
+    },
+    {
+      "id": "trova-banca",
+      "type": "trova",
+      "prompt": "Dov'è la banca?",
+      "answers": [
+        "banca"
+      ],
+      "explanation": "Ecco la banca!"
+    },
+    {
+      "id": "trova-stazione",
+      "type": "trova",
+      "prompt": "Dov'è la stazione?",
+      "answers": [
+        "stazione"
+      ],
+      "explanation": "Ecco la stazione!"
+    },
+    {
+      "id": "trova-supermercato",
+      "type": "trova",
+      "prompt": "Dov'è il supermercato?",
+      "answers": [
+        "supermercato"
+      ],
+      "explanation": "Ecco il supermercato!"
+    },
+    {
+      "id": "trova-palestra",
+      "type": "trova",
+      "prompt": "Dov'è la palestra?",
+      "answers": [
+        "palestra"
+      ],
+      "explanation": "Ecco la palestra!"
+    },
+    {
+      "id": "trova-libreria",
+      "type": "trova",
+      "prompt": "Dov'è la libreria?",
+      "answers": [
+        "libreria"
+      ],
+      "explanation": "Ecco la libreria!"
+    },
+    {
+      "id": "trova-hotel",
+      "type": "trova",
+      "prompt": "Dov'è l'hotel?",
+      "answers": [
+        "hotel"
+      ],
+      "explanation": "Ecco l'hotel!"
+    },
+    {
+      "id": "trova-teatro",
+      "type": "trova",
+      "prompt": "Dov'è il teatro?",
+      "answers": [
+        "teatro"
+      ],
+      "explanation": "Ecco il teatro!"
+    },
+    {
+      "id": "trova-pasticceria",
+      "type": "trova",
+      "prompt": "Dov'è la pasticceria?",
+      "answers": [
+        "pasticceria"
+      ],
+      "explanation": "Ecco la pasticceria!"
+    },
+    {
+      "id": "trova-casa-martina",
+      "type": "trova",
+      "prompt": "Dov'è la casa di Martina?",
+      "answers": [
+        "casa-martina"
+      ],
+      "explanation": "Ecco la casa di Martina!"
+    },
+    {
+      "id": "trova-ponte",
+      "type": "trova",
+      "prompt": "Dov'è il Ponte Vecchio?",
+      "answers": [
+        "ponte"
+      ],
+      "explanation": "Ecco il Ponte Vecchio!"
+    },
+    {
+      "id": "errand-medicine",
+      "type": "errand",
+      "prompt": "Devo comprare le medicine. Dove vado?",
+      "answers": [
+        "farmacia"
+      ],
+      "explanation": "Vado in farmacia."
+    },
+    {
+      "id": "errand-pane",
+      "type": "errand",
+      "prompt": "Devo comprare il pane. Dove vado?",
+      "answers": [
+        "panetteria"
+      ],
+      "explanation": "Vado in panetteria."
+    },
+    {
+      "id": "errand-frutta",
+      "type": "errand",
+      "prompt": "Devo comprare frutta e verdura. Dove vado?",
+      "answers": [
+        "supermercato"
+      ],
+      "explanation": "Vado al supermercato."
+    },
+    {
+      "id": "errand-treno",
+      "type": "errand",
+      "prompt": "Devo prendere il treno. Dove vado?",
+      "answers": [
+        "stazione"
+      ],
+      "explanation": "Vado in stazione."
+    },
+    {
+      "id": "errand-libro-prestito",
+      "type": "errand",
+      "prompt": "Devo prendere un libro in prestito. Dove vado?",
+      "answers": [
+        "biblioteca"
+      ],
+      "explanation": "Vado in biblioteca."
+    },
+    {
+      "id": "errand-comprare-libro",
+      "type": "errand",
+      "prompt": "Voglio comprare un libro. Dove vado?",
+      "answers": [
+        "libreria"
+      ],
+      "explanation": "Vado in libreria."
+    },
+    {
+      "id": "errand-caffe",
+      "type": "errand",
+      "prompt": "Voglio prendere un caffè. Dove vado?",
+      "answers": [
+        "bar",
+        "caffetteria"
+      ],
+      "explanation": "Vado al bar / Vado in caffetteria."
+    },
+    {
+      "id": "errand-pizza",
+      "type": "errand",
+      "prompt": "Voglio mangiare una pizza. Dove vado?",
+      "answers": [
+        "ristorante"
+      ],
+      "explanation": "Vado al ristorante."
+    },
+    {
+      "id": "errand-soldi",
+      "type": "errand",
+      "prompt": "Devo prelevare dei soldi. Dove vado?",
+      "answers": [
+        "banca"
+      ],
+      "explanation": "Vado in banca."
+    },
+    {
+      "id": "errand-medico",
+      "type": "errand",
+      "prompt": "Devo vedere un medico. Dove vado?",
+      "answers": [
+        "ospedale"
+      ],
+      "explanation": "Vado all'ospedale."
+    },
+    {
+      "id": "errand-lettera",
+      "type": "errand",
+      "prompt": "Devo spedire una lettera. Dove vado?",
+      "answers": [
+        "poste"
+      ],
+      "explanation": "Vado alle poste."
+    },
+    {
+      "id": "errand-passeggiata",
+      "type": "errand",
+      "prompt": "Voglio fare una passeggiata. Dove vado?",
+      "answers": [
+        "parco"
+      ],
+      "explanation": "Vado al parco."
+    },
+    {
+      "id": "errand-quadro",
+      "type": "errand",
+      "prompt": "Voglio vedere un quadro. Dove vado?",
+      "answers": [
+        "museo"
+      ],
+      "explanation": "Vado al museo."
+    },
+    {
+      "id": "errand-gelato",
+      "type": "errand",
+      "prompt": "Voglio mangiare un gelato. Dove vado?",
+      "answers": [
+        "gelateria"
+      ],
+      "explanation": "Vado in gelateria."
+    },
+    {
+      "id": "errand-torta",
+      "type": "errand",
+      "prompt": "Devo comprare una torta. Dove vado?",
+      "answers": [
+        "pasticceria"
+      ],
+      "explanation": "Vado in pasticceria."
+    },
+    {
+      "id": "errand-sport",
+      "type": "errand",
+      "prompt": "Voglio fare sport. Dove vado?",
+      "answers": [
+        "palestra"
+      ],
+      "explanation": "Vado in palestra."
+    },
+    {
+      "id": "errand-spettacolo",
+      "type": "errand",
+      "prompt": "Voglio vedere uno spettacolo. Dove vado?",
+      "answers": [
+        "teatro"
+      ],
+      "explanation": "Vado a teatro."
+    },
+    {
+      "id": "errand-dormire",
+      "type": "errand",
+      "prompt": "Devo dormire una notte in città. Dove vado?",
+      "answers": [
+        "hotel"
+      ],
+      "explanation": "Vado in hotel."
+    },
+    {
+      "id": "errand-lezione",
+      "type": "errand",
+      "prompt": "Devo andare a lezione. Dove vado?",
+      "answers": [
+        "scuola"
+      ],
+      "explanation": "Vado a scuola."
+    },
+    {
+      "id": "errand-messa",
+      "type": "errand",
+      "prompt": "Voglio andare a messa. Dove vado?",
+      "answers": [
+        "chiesa"
+      ],
+      "explanation": "Vado in chiesa."
+    },
+    {
+      "id": "dove-sei-scuola-farmacia",
+      "type": "dove-sei",
+      "prompt": "Parti dalla scuola. Attraversa Via Garibaldi. Il luogo è davanti a te, con la croce verde.",
+      "answers": [
+        "farmacia"
+      ],
+      "start": "scuola",
+      "explanation": "Sei in farmacia!"
+    },
+    {
+      "id": "dove-sei-stazione-palestra",
+      "type": "dove-sei",
+      "prompt": "Parti dalla stazione e vai dritto su Via Mazzini. Passa il supermercato. Il luogo è sulla destra, tra il supermercato e la libreria.",
+      "answers": [
+        "palestra"
+      ],
+      "start": "stazione",
+      "explanation": "Sei in palestra!"
+    },
+    {
+      "id": "dove-sei-museo-bar",
+      "type": "dove-sei",
+      "prompt": "Esci dal museo e gira a destra in Via delle Magnolie. Continua dritto e attraversa Via Cavour. Il luogo è sulla sinistra, di fronte alla banca.",
+      "answers": [
+        "bar"
+      ],
+      "start": "museo",
+      "explanation": "Sei al bar!"
+    },
+    {
+      "id": "dove-sei-poste-piazza",
+      "type": "dove-sei",
+      "prompt": "Parti dalle poste. Attraversa Via Vittorio Veneto: il luogo è di fronte alle poste, con la fontana.",
+      "answers": [
+        "piazza"
+      ],
+      "start": "poste",
+      "explanation": "Sei in Piazza del Sole!"
+    },
+    {
+      "id": "dove-sei-hotel-pasticceria",
+      "type": "dove-sei",
+      "prompt": "Esci dall'hotel e gira a destra in Via del Lago. Continua dritto e passa davanti al teatro. Il luogo è sulla destra, tra il teatro e la casa di Martina.",
+      "answers": [
+        "pasticceria"
+      ],
+      "start": "hotel",
+      "explanation": "Sei in pasticceria!"
+    },
+    {
+      "id": "dove-sei-chiesa-scuola",
+      "type": "dove-sei",
+      "prompt": "Esci dalla chiesa, vai fino a Via Garibaldi e gira a destra. Il luogo è sulla sinistra, subito dopo l'incrocio con Via dei Fiori.",
+      "answers": [
+        "scuola"
+      ],
+      "start": "chiesa",
+      "explanation": "Sei a scuola!"
+    },
+    {
+      "id": "dove-sei-caffetteria-poste",
+      "type": "dove-sei",
+      "prompt": "Parti dalla caffetteria e attraversa Via Garibaldi. Il luogo è davanti a te, all'angolo con Via Vittorio Veneto.",
+      "answers": [
+        "poste"
+      ],
+      "start": "caffetteria",
+      "explanation": "Sei alle poste!"
+    },
+    {
+      "id": "dove-sei-supermercato-teatro",
+      "type": "dove-sei",
+      "prompt": "Parti dal supermercato e attraversa Via del Lago. Il luogo è proprio di fronte al supermercato.",
+      "answers": [
+        "teatro"
+      ],
+      "start": "supermercato",
+      "explanation": "Sei a teatro!"
+    },
+    {
+      "id": "dove-sei-banca-libreria",
+      "type": "dove-sei",
+      "prompt": "Esci dalla banca su Via Mazzini e gira a sinistra. Il luogo è sulla destra, all'angolo con Via Vittorio Veneto.",
+      "answers": [
+        "libreria"
+      ],
+      "start": "banca",
+      "explanation": "Sei in libreria!"
+    },
+    {
+      "id": "dove-sei-panetteria-supermercato",
+      "type": "dove-sei",
+      "prompt": "Esci dalla panetteria e gira a sinistra in Via delle Magnolie. Passa la gelateria e gira a destra in Via Cavour. Continua dritto e attraversa Via Mazzini. Il luogo è sulla sinistra.",
+      "answers": [
+        "supermercato"
+      ],
+      "start": "panetteria",
+      "explanation": "Sei al supermercato!"
+    },
+    {
+      "id": "dove-sei-panetteria-stazione",
+      "type": "dove-sei",
+      "prompt": "Esci dalla panetteria e gira a sinistra in Via delle Magnolie. Al primo incrocio gira a destra in Via Cavour. Continua dritto e attraversa Via Mazzini. Il luogo è sulla destra, con il treno.",
+      "answers": [
+        "stazione"
+      ],
+      "start": "panetteria",
+      "explanation": "Sei in stazione!"
+    },
+    {
+      "id": "percorso-stazione-libreria",
+      "type": "percorso",
+      "prompt": "Mi trovo in stazione e devo andare in libreria. Come ci arrivo?",
+      "correct": "Vai su Via Mazzini e continua sempre dritto. La libreria è sulla destra, all'angolo con Via Vittorio Veneto.",
+      "options": [
+        "Vai su Via Mazzini e continua sempre dritto. La libreria è sulla destra, all'angolo con Via Vittorio Veneto.",
+        "Vai su Via Garibaldi e gira a sinistra in Via Roma. La libreria è di fronte alle poste.",
+        "Prendi Via delle Magnolie. La libreria è tra il museo e il ristorante."
+      ],
+      "highlight": [
+        "stazione",
+        "libreria"
+      ],
+      "start": "stazione",
+      "explanation": "Partenza: Stazione → arrivo: Libreria."
+    },
+    {
+      "id": "percorso-parco-piazza",
+      "type": "percorso",
+      "prompt": "Mi trovo al parco e devo andare in Piazza del Sole. Come ci arrivo?",
+      "correct": "Vai su Via Garibaldi e passa davanti alla scuola. La piazza è sulla destra, di fronte alla biblioteca.",
+      "options": [
+        "Vai su Via Garibaldi e passa davanti alla scuola. La piazza è sulla destra, di fronte alla biblioteca.",
+        "Vai su Via Garibaldi e gira a sinistra in Via dei Fiori. La piazza è dietro alla chiesa.",
+        "Prendi Via Mazzini. La piazza è accanto alla palestra."
+      ],
+      "highlight": [
+        "parco",
+        "piazza"
+      ],
+      "start": "parco",
+      "explanation": "Partenza: Parco → arrivo: Piazza del Sole."
+    },
+    {
+      "id": "percorso-bar-martina",
+      "type": "percorso",
+      "prompt": "Mi trovo al bar e devo andare a casa di Martina. Come ci arrivo?",
+      "correct": "Prendi Via Vittorio Veneto verso il lago, attraversa Via Mazzini e continua fino a Via del Lago. La casa di Martina è di fronte alla libreria, accanto alla pasticceria.",
+      "options": [
+        "Prendi Via Vittorio Veneto verso il lago, attraversa Via Mazzini e continua fino a Via del Lago. La casa di Martina è di fronte alla libreria, accanto alla pasticceria.",
+        "Vai su Via Garibaldi. La casa di Martina è accanto alla chiesa.",
+        "Attraversa il Ponte Vecchio. La casa di Martina è dietro al fiume."
+      ],
+      "highlight": [
+        "bar",
+        "casa-martina"
+      ],
+      "start": "bar",
+      "explanation": "Partenza: Bar → arrivo: Casa di Martina."
+    },
+    {
+      "id": "percorso-teatro-ristorante",
+      "type": "percorso",
+      "prompt": "Mi trovo a teatro e devo andare al ristorante. Come ci arrivo?",
+      "correct": "Vai su Via del Lago fino a Via Cavour e gira a destra. Attraversa Via Mazzini: il ristorante è sulla sinistra, accanto al museo.",
+      "options": [
+        "Vai su Via del Lago fino a Via Cavour e gira a destra. Attraversa Via Mazzini: il ristorante è sulla sinistra, accanto al museo.",
+        "Vai su Via del Lago e gira a sinistra in Via Lungolago. Il ristorante è accanto alla libreria.",
+        "Attraversa Via del Lago. Il ristorante è di fronte al teatro, accanto al supermercato."
+      ],
+      "highlight": [
+        "teatro",
+        "ristorante"
+      ],
+      "start": "teatro",
+      "explanation": "Partenza: Teatro → arrivo: Ristorante."
+    },
+    {
+      "id": "percorso-chiesa-poste",
+      "type": "percorso",
+      "prompt": "Mi trovo in chiesa e devo andare alle poste. Come ci arrivo?",
+      "correct": "Vai su Via Garibaldi e continua dritto: passa la scuola e la biblioteca. Le poste sono sulla destra, di fronte alla caffetteria.",
+      "options": [
+        "Vai su Via Garibaldi e continua dritto: passa la scuola e la biblioteca. Le poste sono sulla destra, di fronte alla caffetteria.",
+        "Vai su Via delle Magnolie. Le poste sono tra la panetteria e la gelateria.",
+        "Vai su Via Garibaldi e gira a sinistra in Via dei Fiori. Le poste sono accanto al parco."
+      ],
+      "highlight": [
+        "chiesa",
+        "poste"
+      ],
+      "start": "chiesa",
+      "explanation": "Partenza: Chiesa → arrivo: Poste."
+    },
+    {
+      "id": "pos-ospedale",
+      "type": "posizione",
+      "prompt": "L'ospedale è ___ la gelateria e il bar.",
+      "correct": "tra",
+      "options": [
+        "tra",
+        "dietro a",
+        "lontano da",
+        "di fronte a"
+      ],
+      "highlight": [
+        "ospedale",
+        "gelateria",
+        "bar"
+      ],
+      "explanation": "L'ospedale è in mezzo: TRA la gelateria e il bar."
+    },
+    {
+      "id": "pos-farmacia",
+      "type": "posizione",
+      "prompt": "La farmacia è ___ Piazza del Sole.",
+      "correct": "accanto a",
+      "options": [
+        "accanto a",
+        "lontano da",
+        "dietro a",
+        "tra"
+      ],
+      "highlight": [
+        "farmacia",
+        "piazza"
+      ],
+      "explanation": "Sono uno vicino all'altra: la farmacia è ACCANTO A Piazza del Sole."
+    },
+    {
+      "id": "pos-scuola",
+      "type": "posizione",
+      "prompt": "La scuola è ___ farmacia, dall'altra parte di Via Garibaldi.",
+      "correct": "di fronte alla",
+      "options": [
+        "di fronte alla",
+        "dietro alla",
+        "lontano dalla",
+        "tra la"
+      ],
+      "highlight": [
+        "scuola",
+        "farmacia"
+      ],
+      "explanation": "Dall'altra parte della strada = DI FRONTE A (a + la = alla)."
+    },
+    {
+      "id": "pos-supermercato",
+      "type": "posizione",
+      "prompt": "Il supermercato è ___ stazione e la palestra.",
+      "correct": "tra la",
+      "options": [
+        "tra la",
+        "dietro alla",
+        "di fronte alla",
+        "lontano dalla"
+      ],
+      "highlight": [
+        "supermercato",
+        "stazione",
+        "palestra"
+      ],
+      "explanation": "In mezzo a due luoghi: TRA la stazione e la palestra."
+    },
+    {
+      "id": "pos-chiesa",
+      "type": "posizione",
+      "prompt": "La chiesa è ___ casa di Martina.",
+      "correct": "lontano dalla",
+      "options": [
+        "lontano dalla",
+        "vicino alla",
+        "accanto alla",
+        "di fronte alla"
+      ],
+      "highlight": [
+        "chiesa",
+        "casa-martina"
+      ],
+      "explanation": "Sono ai due lati opposti della città: LONTANO DA (da + la = dalla)."
+    },
+    {
+      "id": "pos-ristorante",
+      "type": "posizione",
+      "prompt": "Il ristorante è ___ museo.",
+      "correct": "accanto al",
+      "options": [
+        "accanto al",
+        "lontano dal",
+        "di fronte al",
+        "tra il"
+      ],
+      "highlight": [
+        "ristorante",
+        "museo"
+      ],
+      "explanation": "Uno di fianco all'altro: ACCANTO A (a + il = al)."
+    },
+    {
+      "id": "pos-palestra",
+      "type": "posizione",
+      "prompt": "La palestra è ___ banca, dall'altra parte di Via Mazzini.",
+      "correct": "di fronte alla",
+      "options": [
+        "di fronte alla",
+        "accanto alla",
+        "lontano dalla",
+        "tra la"
+      ],
+      "highlight": [
+        "palestra",
+        "banca"
+      ],
+      "explanation": "Dall'altra parte della strada = DI FRONTE A."
+    },
+    {
+      "id": "pos-caffetteria",
+      "type": "posizione",
+      "prompt": "La caffetteria è all'___ tra Via Garibaldi e Via Roma.",
+      "correct": "angolo",
+      "options": [
+        "angolo",
+        "incrocio",
+        "fine",
+        "centro"
+      ],
+      "highlight": [
+        "caffetteria"
+      ],
+      "explanation": "Dove due strade si incontrano, l'edificio è ALL'ANGOLO."
+    },
+    {
+      "id": "pos-teatro",
+      "type": "posizione",
+      "prompt": "Il teatro è ___ supermercato, dall'altra parte di Via del Lago.",
+      "correct": "di fronte al",
+      "options": [
+        "di fronte al",
+        "accanto al",
+        "lontano dal",
+        "dietro al"
+      ],
+      "highlight": [
+        "teatro",
+        "supermercato"
+      ],
+      "explanation": "Dall'altra parte della strada = DI FRONTE A (a + il = al)."
+    },
+    {
+      "id": "pos-poste",
+      "type": "posizione",
+      "prompt": "Sulla mappa, le poste sono ___ Piazza del Sole.",
+      "correct": "a destra di",
+      "options": [
+        "a destra di",
+        "a sinistra di",
+        "lontano da",
+        "tra"
+      ],
+      "highlight": [
+        "poste",
+        "piazza"
+      ],
+      "explanation": "Guardando la mappa, le poste sono A DESTRA DI Piazza del Sole."
+    },
+    {
+      "id": "pos-panetteria",
+      "type": "posizione",
+      "prompt": "La panetteria è ___ gelateria.",
+      "correct": "accanto alla",
+      "options": [
+        "accanto alla",
+        "lontano dalla",
+        "di fronte alla",
+        "dietro alla"
+      ],
+      "highlight": [
+        "panetteria",
+        "gelateria"
+      ],
+      "explanation": "Una di fianco all'altra: ACCANTO A."
+    },
+    {
+      "id": "pos-libreria",
+      "type": "posizione",
+      "prompt": "La libreria è all'angolo ___ Via Mazzini e Via Vittorio Veneto.",
+      "correct": "tra",
+      "options": [
+        "tra",
+        "da",
+        "su",
+        "per"
+      ],
+      "highlight": [
+        "libreria"
+      ],
+      "explanation": "All'angolo TRA due strade."
+    },
+    {
+      "id": "pos-martina",
+      "type": "posizione",
+      "prompt": "La casa di Martina è ___ pasticceria.",
+      "correct": "accanto alla",
+      "options": [
+        "accanto alla",
+        "lontano dalla",
+        "di fronte alla",
+        "tra la"
+      ],
+      "highlight": [
+        "casa-martina",
+        "pasticceria"
+      ],
+      "explanation": "Una di fianco all'altra: ACCANTO A."
+    },
+    {
+      "id": "pos-stazione",
+      "type": "posizione",
+      "prompt": "La stazione è ___ hotel.",
+      "correct": "vicino all'",
+      "options": [
+        "vicino all'",
+        "lontano dall'",
+        "tra l'",
+        "sopra l'"
+      ],
+      "highlight": [
+        "stazione",
+        "hotel"
+      ],
+      "explanation": "Sono vicini: VICINO A (a + l' = all')."
+    },
+    {
+      "id": "pos-bar",
+      "type": "posizione",
+      "prompt": "Il bar è ___ banca, dall'altra parte di Via delle Magnolie.",
+      "correct": "di fronte alla",
+      "options": [
+        "di fronte alla",
+        "lontano dalla",
+        "tra la",
+        "accanto alla"
+      ],
+      "highlight": [
+        "bar",
+        "banca"
+      ],
+      "explanation": "Dall'altra parte della strada = DI FRONTE A."
+    },
+    {
+      "id": "pos-gelateria-ospedale",
+      "type": "posizione",
+      "prompt": "La gelateria è ___ sinistra dell'ospedale.",
+      "correct": "a",
+      "options": [
+        "a",
+        "da",
+        "in",
+        "su"
+      ],
+      "highlight": [
+        "gelateria",
+        "ospedale"
+      ],
+      "explanation": "A SINISTRA DI: la gelateria è a sinistra dell'ospedale."
+    }
+  ]
+}

@@ -17,6 +17,7 @@ const studyModes = [
   { href: "/study/pronunciation", label: "Pronunciation", emoji: "🔊", desc: "How sounds work" },
   { href: "/study/sentence-builder", label: "Sentences", emoji: "🧩", desc: "Tap to build" },
   { href: "/study/descrizione", label: "Describe a Picture", emoji: "🖼️", desc: "Answer about an image" },
+  { href: "/study/mappa", label: "Town Map", emoji: "🗺️", desc: "Find it, follow directions" },
   { href: "/study/mixed", label: "Mixed", emoji: "🎲", desc: "All modes at once" },
   { href: "/study/focused", label: "Focused Drills", emoji: "🎯", desc: "Topic-specific exercises" },
 ];

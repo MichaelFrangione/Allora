@@ -1,0 +1,780 @@
+[
+  {
+    "id": "l2-la-farmacia",
+    "italian": "la farmacia",
+    "english": "pharmacy",
+    "gender": "f",
+    "partOfSpeech": "noun",
+    "example": "Vado in farmacia a comprare le medicine.",
+    "tags": [
+      "nouns",
+      "city",
+      "places",
+      "lesson-dove-si-trova"
+    ],
+    "pronunciation": "far·ma·CI·a"
+  },
+  {
+    "id": "l2-la-panetteria",
+    "italian": "la panetteria",
+    "english": "bakery (bread)",
+    "gender": "f",
+    "partOfSpeech": "noun",
+    "example": "Compro il pane in panetteria.",
+    "tags": [
+      "nouns",
+      "city",
+      "places",
+      "lesson-dove-si-trova"
+    ],
+    "pronunciation": "pa·net·te·RI·a"
+  },
+  {
+    "id": "l2-il-supermercato",
+    "italian": "il supermercato",
+    "english": "supermarket",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "Compro frutta e verdura al supermercato.",
+    "tags": [
+      "nouns",
+      "city",
+      "places",
+      "lesson-dove-si-trova"
+    ],
+    "pronunciation": "su·per·mer·CA·to"
+  },
+  {
+    "id": "l2-il-fruttivendolo",
+    "italian": "il fruttivendolo",
+    "english": "greengrocer",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "Compro la frutta dal fruttivendolo.",
+    "tags": [
+      "nouns",
+      "city",
+      "places",
+      "lesson-dove-si-trova"
+    ],
+    "pronunciation": "frut·ti·VEN·do·lo"
+  },
+  {
+    "id": "l2-la-biblioteca",
+    "italian": "la biblioteca",
+    "english": "library",
+    "gender": "f",
+    "partOfSpeech": "noun",
+    "example": "Prendo un libro in prestito in biblioteca.",
+    "tags": [
+      "nouns",
+      "city",
+      "places",
+      "lesson-dove-si-trova"
+    ],
+    "pronunciation": "bi·blio·TE·ca"
+  },
+  {
+    "id": "l2-la-libreria",
+    "italian": "la libreria",
+    "english": "bookshop",
+    "gender": "f",
+    "partOfSpeech": "noun",
+    "example": "Compro un libro in libreria. (biblioteca = library!)",
+    "tags": [
+      "nouns",
+      "city",
+      "places",
+      "lesson-dove-si-trova"
+    ],
+    "pronunciation": "li·bre·RI·a"
+  },
+  {
+    "id": "l2-la-banca",
+    "italian": "la banca",
+    "english": "bank",
+    "gender": "f",
+    "partOfSpeech": "noun",
+    "example": "Vado in banca a prelevare dei soldi.",
+    "tags": [
+      "nouns",
+      "city",
+      "places",
+      "lesson-dove-si-trova"
+    ],
+    "pronunciation": "BAN·ca"
+  },
+  {
+    "id": "l2-l-ospedale",
+    "italian": "l'ospedale",
+    "english": "hospital",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "L'ospedale è tra la gelateria e il bar.",
+    "tags": [
+      "nouns",
+      "city",
+      "places",
+      "lesson-dove-si-trova"
+    ],
+    "pronunciation": "o·spe·DA·le"
+  },
+  {
+    "id": "l2-il-medico",
+    "italian": "il medico",
+    "english": "doctor",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "Sto male: vado dal medico.",
+    "tags": [
+      "nouns",
+      "city",
+      "places",
+      "lesson-dove-si-trova"
+    ],
+    "pronunciation": "ME·di·co"
+  },
+  {
+    "id": "l2-le-poste-l-ufficio-postale",
+    "italian": "le poste / l'ufficio postale",
+    "english": "post office",
+    "gender": "f",
+    "partOfSpeech": "noun",
+    "example": "Spedisco una lettera alle poste.",
+    "tags": [
+      "nouns",
+      "city",
+      "places",
+      "lesson-dove-si-trova"
+    ],
+    "pronunciation": "POS·te"
+  },
+  {
+    "id": "l2-il-museo",
+    "italian": "il museo",
+    "english": "museum",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "Al museo vedo un quadro famoso.",
+    "tags": [
+      "nouns",
+      "city",
+      "places",
+      "lesson-dove-si-trova"
+    ],
+    "pronunciation": "mu·SE·o"
+  },
+  {
+    "id": "l2-la-gelateria",
+    "italian": "la gelateria",
+    "english": "ice-cream shop",
+    "gender": "f",
+    "partOfSpeech": "noun",
+    "example": "Mangio un gelato in gelateria.",
+    "tags": [
+      "nouns",
+      "city",
+      "places",
+      "lesson-dove-si-trova"
+    ],
+    "pronunciation": "ge·la·te·RI·a"
+  },
+  {
+    "id": "l2-la-pasticceria",
+    "italian": "la pasticceria",
+    "english": "pastry shop",
+    "gender": "f",
+    "partOfSpeech": "noun",
+    "example": "Compro una torta in pasticceria.",
+    "tags": [
+      "nouns",
+      "city",
+      "places",
+      "lesson-dove-si-trova"
+    ],
+    "pronunciation": "pa·stic·ce·RI·a"
+  },
+  {
+    "id": "l2-la-palestra",
+    "italian": "la palestra",
+    "english": "gym",
+    "gender": "f",
+    "partOfSpeech": "noun",
+    "example": "Faccio sport in palestra.",
+    "tags": [
+      "nouns",
+      "city",
+      "places",
+      "lesson-dove-si-trova"
+    ],
+    "pronunciation": "pa·LE·stra"
+  },
+  {
+    "id": "l2-il-teatro",
+    "italian": "il teatro",
+    "english": "theatre",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "Stasera vado a teatro.",
+    "tags": [
+      "nouns",
+      "city",
+      "places",
+      "lesson-dove-si-trova"
+    ],
+    "pronunciation": "te·A·tro"
+  },
+  {
+    "id": "l2-il-cinema",
+    "italian": "il cinema",
+    "english": "cinema",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "Vado al cinema a vedere un film.",
+    "tags": [
+      "nouns",
+      "city",
+      "places",
+      "lesson-dove-si-trova"
+    ],
+    "pronunciation": "CI·ne·ma"
+  },
+  {
+    "id": "l2-l-hotel-l-albergo",
+    "italian": "l'hotel / l'albergo",
+    "english": "hotel",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "Dormo in hotel.",
+    "tags": [
+      "nouns",
+      "city",
+      "places",
+      "lesson-dove-si-trova"
+    ],
+    "pronunciation": "al·BER·go"
+  },
+  {
+    "id": "l2-la-chiesa",
+    "italian": "la chiesa",
+    "english": "church",
+    "gender": "f",
+    "partOfSpeech": "noun",
+    "example": "La chiesa è vicino al parco.",
+    "tags": [
+      "nouns",
+      "city",
+      "places",
+      "lesson-dove-si-trova"
+    ],
+    "pronunciation": "CHIE·sa"
+  },
+  {
+    "id": "l2-la-scuola",
+    "italian": "la scuola",
+    "english": "school",
+    "gender": "f",
+    "partOfSpeech": "noun",
+    "example": "Vado a scuola.",
+    "tags": [
+      "nouns",
+      "city",
+      "places",
+      "lesson-dove-si-trova"
+    ],
+    "pronunciation": "SCUO·la"
+  },
+  {
+    "id": "l2-la-caffetteria",
+    "italian": "la caffetteria",
+    "english": "café",
+    "gender": "f",
+    "partOfSpeech": "noun",
+    "example": "La caffetteria è all'angolo.",
+    "tags": [
+      "nouns",
+      "city",
+      "places",
+      "lesson-dove-si-trova"
+    ],
+    "pronunciation": "caf·fet·te·RI·a"
+  },
+  {
+    "id": "l2-la-fermata-dell-autobus",
+    "italian": "la fermata dell'autobus",
+    "english": "bus stop",
+    "gender": "f",
+    "partOfSpeech": "noun",
+    "example": "Prendo l'autobus alla fermata.",
+    "tags": [
+      "nouns",
+      "city",
+      "places",
+      "lesson-dove-si-trova"
+    ],
+    "pronunciation": "fer·MA·ta"
+  },
+  {
+    "id": "l2-l-autobus",
+    "italian": "l'autobus",
+    "english": "bus",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "Prendo l'autobus per andare in centro.",
+    "tags": [
+      "nouns",
+      "city",
+      "places",
+      "lesson-dove-si-trova"
+    ],
+    "pronunciation": "AU·to·bus"
+  },
+  {
+    "id": "l2-il-negozio-di-vestiti",
+    "italian": "il negozio di vestiti",
+    "english": "clothes shop",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "Compro dei vestiti in un negozio di vestiti.",
+    "tags": [
+      "nouns",
+      "city",
+      "places",
+      "lesson-dove-si-trova"
+    ],
+    "pronunciation": "ne·GO·zio"
+  },
+  {
+    "id": "l2-il-fiume",
+    "italian": "il fiume",
+    "english": "river",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "Il Ponte Vecchio attraversa il fiume.",
+    "tags": [
+      "nouns",
+      "city",
+      "places",
+      "lesson-dove-si-trova"
+    ],
+    "pronunciation": "FIU·me"
+  },
+  {
+    "id": "l2-il-laghetto",
+    "italian": "il laghetto",
+    "english": "small lake, pond",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "Nel parco c'è un laghetto.",
+    "tags": [
+      "nouns",
+      "city",
+      "places",
+      "lesson-dove-si-trova"
+    ],
+    "pronunciation": "la·GHET·to"
+  },
+  {
+    "id": "l2-il-luogo",
+    "italian": "il luogo",
+    "english": "place",
+    "gender": "m",
+    "partOfSpeech": "noun",
+    "example": "Il luogo si trova dietro alla casa di Martina.",
+    "tags": [
+      "nouns",
+      "city",
+      "places",
+      "lesson-dove-si-trova"
+    ],
+    "pronunciation": "LUO·go"
+  },
+  {
+    "id": "l2-le-strisce-pedonali",
+    "italian": "le strisce pedonali",
+    "english": "crosswalk",
+    "gender": "f",
+    "partOfSpeech": "noun",
+    "example": "Attraversa sulle strisce pedonali.",
+    "tags": [
+      "nouns",
+      "city",
+      "places",
+      "lesson-dove-si-trova"
+    ],
+    "pronunciation": "STRI·sce"
+  },
+  {
+    "id": "l2-andare",
+    "italian": "andare",
+    "english": "to go",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Vado in farmacia. / (tu) Vai dritto!",
+    "tags": [
+      "verbs",
+      "city",
+      "directions",
+      "lesson-dove-si-trova"
+    ]
+  },
+  {
+    "id": "l2-attraversare",
+    "italian": "attraversare",
+    "english": "to cross",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Attraversa la strada.",
+    "tags": [
+      "verbs",
+      "city",
+      "directions",
+      "lesson-dove-si-trova"
+    ]
+  },
+  {
+    "id": "l2-passare",
+    "italian": "passare",
+    "english": "to pass, go past",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Passa davanti alla banca.",
+    "tags": [
+      "verbs",
+      "city",
+      "directions",
+      "lesson-dove-si-trova"
+    ]
+  },
+  {
+    "id": "l2-svoltare",
+    "italian": "svoltare",
+    "english": "to turn (= girare)",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Svolta a sinistra al semaforo.",
+    "tags": [
+      "verbs",
+      "city",
+      "directions",
+      "lesson-dove-si-trova"
+    ]
+  },
+  {
+    "id": "l2-prelevare",
+    "italian": "prelevare",
+    "english": "to withdraw (money)",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Devo prelevare dei soldi in banca.",
+    "tags": [
+      "verbs",
+      "city",
+      "directions",
+      "lesson-dove-si-trova"
+    ]
+  },
+  {
+    "id": "l2-spedire",
+    "italian": "spedire",
+    "english": "to send, mail",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Devo spedire una lettera. (io spedisco)",
+    "tags": [
+      "verbs",
+      "city",
+      "directions",
+      "lesson-dove-si-trova"
+    ]
+  },
+  {
+    "id": "l2-trovarsi",
+    "italian": "trovarsi",
+    "english": "to be located",
+    "gender": null,
+    "partOfSpeech": "verb",
+    "example": "Dove si trova la banca? Mi trovo in stazione.",
+    "tags": [
+      "verbs",
+      "city",
+      "directions",
+      "lesson-dove-si-trova"
+    ]
+  },
+  {
+    "id": "l2-sempre-dritto",
+    "italian": "sempre dritto",
+    "english": "straight ahead",
+    "gender": null,
+    "partOfSpeech": "phrase",
+    "example": "Vai sempre dritto fino alla piazza.",
+    "tags": [
+      "phrases",
+      "city",
+      "directions",
+      "lesson-dove-si-trova"
+    ]
+  },
+  {
+    "id": "l2-fino-a",
+    "italian": "fino a",
+    "english": "as far as, until",
+    "gender": null,
+    "partOfSpeech": "phrase",
+    "example": "Continua fino al semaforo.",
+    "tags": [
+      "phrases",
+      "city",
+      "directions",
+      "lesson-dove-si-trova"
+    ]
+  },
+  {
+    "id": "l2-la-prima-strada-a-destra",
+    "italian": "la prima strada a destra",
+    "english": "the first street on the right",
+    "gender": null,
+    "partOfSpeech": "phrase",
+    "example": "Prendi la prima strada a destra.",
+    "tags": [
+      "phrases",
+      "city",
+      "directions",
+      "lesson-dove-si-trova"
+    ]
+  },
+  {
+    "id": "l2-la-seconda-strada-a-sinistra",
+    "italian": "la seconda strada a sinistra",
+    "english": "the second street on the left",
+    "gender": null,
+    "partOfSpeech": "phrase",
+    "example": "Prendi la seconda strada a sinistra.",
+    "tags": [
+      "phrases",
+      "city",
+      "directions",
+      "lesson-dove-si-trova"
+    ]
+  },
+  {
+    "id": "l2-sulla-destra-sulla-sinistra",
+    "italian": "sulla destra / sulla sinistra",
+    "english": "on the right / on the left",
+    "gender": null,
+    "partOfSpeech": "phrase",
+    "example": "La farmacia è sulla sinistra.",
+    "tags": [
+      "phrases",
+      "city",
+      "directions",
+      "lesson-dove-si-trova"
+    ]
+  },
+  {
+    "id": "l2-in-fondo-alla-strada",
+    "italian": "in fondo alla strada",
+    "english": "at the end of the street",
+    "gender": null,
+    "partOfSpeech": "phrase",
+    "example": "Il supermercato è là, in fondo alla strada.",
+    "tags": [
+      "phrases",
+      "city",
+      "directions",
+      "lesson-dove-si-trova"
+    ]
+  },
+  {
+    "id": "l2-alla-fine-della-strada",
+    "italian": "alla fine della strada",
+    "english": "at the end of the street",
+    "gender": null,
+    "partOfSpeech": "phrase",
+    "example": "La chiesa è alla fine della strada.",
+    "tags": [
+      "phrases",
+      "city",
+      "directions",
+      "lesson-dove-si-trova"
+    ]
+  },
+  {
+    "id": "l2-dove-si-trova",
+    "italian": "Dove si trova…?",
+    "english": "Where is…?",
+    "gender": null,
+    "partOfSpeech": "phrase",
+    "example": "Scusi, dove si trova la stazione?",
+    "tags": [
+      "phrases",
+      "city",
+      "directions",
+      "lesson-dove-si-trova"
+    ]
+  },
+  {
+    "id": "l2-come-ci-arrivo",
+    "italian": "Come ci arrivo?",
+    "english": "How do I get there?",
+    "gender": null,
+    "partOfSpeech": "phrase",
+    "example": "Devo andare in libreria: come ci arrivo?",
+    "tags": [
+      "phrases",
+      "city",
+      "directions",
+      "lesson-dove-si-trova"
+    ]
+  },
+  {
+    "id": "l2-scusi-dov-e",
+    "italian": "Scusi, dov'è…?",
+    "english": "Excuse me, where is…?",
+    "gender": null,
+    "partOfSpeech": "phrase",
+    "example": "Scusi, dov'è la farmacia?",
+    "tags": [
+      "phrases",
+      "city",
+      "directions",
+      "lesson-dove-si-trova"
+    ]
+  },
+  {
+    "id": "l2-vicino-a",
+    "italian": "vicino a",
+    "english": "near",
+    "gender": null,
+    "partOfSpeech": "adverb",
+    "example": "La farmacia è vicino alla banca.",
+    "tags": [
+      "prepositions",
+      "city",
+      "directions",
+      "positions",
+      "lesson-dove-si-trova"
+    ]
+  },
+  {
+    "id": "l2-lontano-da",
+    "italian": "lontano da",
+    "english": "far from",
+    "gender": null,
+    "partOfSpeech": "adverb",
+    "example": "La stazione è lontano dal centro.",
+    "tags": [
+      "prepositions",
+      "city",
+      "directions",
+      "positions",
+      "lesson-dove-si-trova"
+    ]
+  },
+  {
+    "id": "l2-di-fronte-a",
+    "italian": "di fronte a",
+    "english": "opposite, across from",
+    "gender": null,
+    "partOfSpeech": "adverb",
+    "example": "Il bar è di fronte alla banca.",
+    "tags": [
+      "prepositions",
+      "city",
+      "directions",
+      "positions",
+      "lesson-dove-si-trova"
+    ]
+  },
+  {
+    "id": "l2-all-angolo",
+    "italian": "all'angolo",
+    "english": "on the corner",
+    "gender": null,
+    "partOfSpeech": "adverb",
+    "example": "La caffetteria è all'angolo.",
+    "tags": [
+      "prepositions",
+      "city",
+      "directions",
+      "positions",
+      "lesson-dove-si-trova"
+    ]
+  },
+  {
+    "id": "l2-all-incrocio",
+    "italian": "all'incrocio",
+    "english": "at the intersection",
+    "gender": null,
+    "partOfSpeech": "adverb",
+    "example": "Gira a destra all'incrocio.",
+    "tags": [
+      "prepositions",
+      "city",
+      "directions",
+      "positions",
+      "lesson-dove-si-trova"
+    ]
+  },
+  {
+    "id": "l2-qui",
+    "italian": "qui",
+    "english": "here (precise spot)",
+    "gender": null,
+    "partOfSpeech": "adverb",
+    "example": "Vieni qui! Il libro è qui, sul tavolo.",
+    "tags": [
+      "prepositions",
+      "city",
+      "directions",
+      "positions",
+      "lesson-dove-si-trova"
+    ]
+  },
+  {
+    "id": "l2-qua",
+    "italian": "qua",
+    "english": "here (around here)",
+    "gender": null,
+    "partOfSpeech": "adverb",
+    "example": "Abito qua vicino.",
+    "tags": [
+      "prepositions",
+      "city",
+      "directions",
+      "positions",
+      "lesson-dove-si-trova"
+    ]
+  },
+  {
+    "id": "l2-li",
+    "italian": "lì",
+    "english": "there (precise spot)",
+    "gender": null,
+    "partOfSpeech": "adverb",
+    "example": "Il telefono è lì, sul tavolo.",
+    "tags": [
+      "prepositions",
+      "city",
+      "directions",
+      "positions",
+      "lesson-dove-si-trova"
+    ]
+  },
+  {
+    "id": "l2-la",
+    "italian": "là",
+    "english": "there (general, farther)",
+    "gender": null,
+    "partOfSpeech": "adverb",
+    "example": "Il supermercato è là, in fondo alla strada.",
+    "tags": [
+      "prepositions",
+      "city",
+      "directions",
+      "positions",
+      "lesson-dove-si-trova"
+    ]
+  }
+]

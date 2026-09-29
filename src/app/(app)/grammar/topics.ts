@@ -31,6 +31,7 @@ export const TOPICS: Topic[] = [
   { id: "adjectives", emoji: "🎨", label: "Adjectives & Agreement", extra: "concordanza" },
   { id: "possessives", emoji: "👪", label: "Possessives" },
   { id: "prepositions", emoji: "🔗", label: "Prepositions", extra: "preposizioni" },
+  { id: "city", emoji: "🏙️", label: "Dove si trova? — Directions & Places" },
   { id: "time", emoji: "🕐", label: "Numbers, Time, Days & Months", extra: "numbers-time" },
 ];
 
@@ -53,11 +54,19 @@ export const VISIBLE_TOPICS = TOPICS.filter(topicHasContent);
 export type TopicExercise = { slug: string; title: string; emoji: string; subtitle: string };
 
 /** Drills that practise this topic (linked from the topic page's Practice section). */
+/** Custom study modes (not registry drills) that also practise a topic; slug = /study/<slug>. */
+const CUSTOM_EXERCISES: Record<string, TopicExercise[]> = {
+  city: [{ slug: "mappa", title: "La Città di Aurora", emoji: "🗺️", subtitle: "Map game — find places and follow directions." }],
+};
+
 export function exercisesForTopic(id: string): TopicExercise[] {
-  return DRILLS.filter((d) => d.subjectId === id).map((d) => ({
-    slug: d.slug,
-    title: d.title,
-    emoji: d.emoji,
-    subtitle: d.subtitle,
-  }));
+  return [
+    ...(CUSTOM_EXERCISES[id] ?? []),
+    ...DRILLS.filter((d) => d.subjectId === id).map((d) => ({
+      slug: d.slug,
+      title: d.title,
+      emoji: d.emoji,
+      subtitle: d.subtitle,
+    })),
+  ];
 }

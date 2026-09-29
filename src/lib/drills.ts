@@ -5,6 +5,7 @@ import {
   articoliDrill,
   concordanza,
   corpoDrill,
+  direzioniDrill,
   dimostrativiDrill,
   essereAvereDrill,
   genereDrill,
@@ -369,6 +370,25 @@ export const DRILLS: DrillDef[] = [
     },
     questions: indovinaChiDrill,
   },
+  {
+    slug: "direzioni",
+    contentType: "direzioni",
+    subjectId: "city",
+    title: "Dove si trova?",
+    subtitle: "Directions & positions — gira, attraversa, vicino a, qui/lì…",
+    instructions:
+      "Give and understand directions. The key verbs as instructions to one person (tu): gira, attraversa, continua, vai (andare is irregular), segui, prendi, passa. Positions combine with the article: vicino alla banca, lontano dal centro, di fronte all'ospedale, a destra della scuola. QUI/QUA = here (qui more precise), LÌ/LÀ = there (lì more precise). Places: in farmacia, in banca — but al bar, a teatro, dal medico.",
+    emoji: "🧭",
+    desc: "Directions, positions, qui/qua/lì/là, dove vai se devi…?",
+    categoryLabels: {
+      verbi: "I verbi utili",
+      direzioni: "Le direzioni",
+      posizioni: "La posizione",
+      "qui-qua-li-la": "Qui, qua, lì, là",
+      "dove-vado": "Dove vai se devi…?",
+    },
+    questions: direzioniDrill,
+  },
 ];
 
 const DRILL_BY_SLUG = new Map(DRILLS.map((d) => [d.slug, d]));
@@ -402,6 +422,7 @@ export const LEARN_PATH: { subjectId: string; route: string }[] = [
   { subjectId: "adjectives", route: "/study/aggettivi" },
   { subjectId: "body", route: "/study/corpo" },
   { subjectId: "descrizione-fisica", route: "/study/indovina-chi" },
+  { subjectId: "city", route: "/study/mappa" },
   { subjectId: "possessives", route: "/study/possessivi" },
   { subjectId: "piacere", route: "/study/piacere" },
   { subjectId: "reflexive-verbs", route: "/study/riflessivi" },

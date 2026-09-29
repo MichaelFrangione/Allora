@@ -661,5 +661,110 @@
       "adjectives",
       "agreement"
     ]
+  },
+  {
+    "id": "g039",
+    "rule": "I verbi delle direzioni (tu)",
+    "explanation": "To give directions to one person, use the tu command form. -ARE verbs end in -A, -ERE/-IRE verbs in -I. ANDARE is irregular: vai (or va').",
+    "examples": [
+      "girare → Gira a destra.",
+      "attraversare → Attraversa la strada.",
+      "continuare → Continua sempre dritto.",
+      "passare → Passa davanti alla banca.",
+      "seguire → Segui questa strada.",
+      "prendere → Prendi la seconda strada a sinistra.",
+      "andare → Vai dritto fino al semaforo."
+    ],
+    "tags": [
+      "city",
+      "directions"
+    ]
+  },
+  {
+    "id": "g040",
+    "rule": "Chiedere la strada",
+    "explanation": "The key questions for finding your way. Dove si trova…? / Dov'è…? for one place, Dove si trovano…? / Dove sono…? for plural places.",
+    "examples": [
+      "Scusi, dove si trova la stazione?",
+      "Scusi, dov'è la farmacia?",
+      "Dove sono le poste?",
+      "Come arrivo alla stazione? / Come ci arrivo?",
+      "Mi trovo in stazione e devo andare in libreria.",
+      "Cerco la farmacia. / Non riesco a trovare il museo."
+    ],
+    "tags": [
+      "city",
+      "directions"
+    ]
+  },
+  {
+    "id": "g041",
+    "rule": "Le direzioni",
+    "explanation": "Direction phrases to chain together: go straight, turn, cross, keep going as far as…",
+    "examples": [
+      "andare (sempre) dritto",
+      "girare / svoltare a destra, a sinistra",
+      "attraversare la strada",
+      "continuare fino a… (fino al semaforo)",
+      "prendere la prima / la seconda strada a destra",
+      "arrivare fino a…",
+      "È sulla destra / sulla sinistra.",
+      "È in fondo alla strada / alla fine della strada."
+    ],
+    "tags": [
+      "city",
+      "directions"
+    ]
+  },
+  {
+    "id": "g042",
+    "rule": "La posizione + preposizioni articolate",
+    "explanation": "Position words end in A or DA (or DI for destra/sinistra), which combine with the article of the next noun.",
+    "examples": [
+      "vicino a → vicino alla banca, vicino al bar",
+      "lontano da → lontano dalla stazione, lontano dal centro",
+      "davanti a / dietro a → davanti all'ospedale, dietro al museo",
+      "accanto a → accanto alle poste",
+      "di fronte a → di fronte alla chiesa",
+      "a destra di / a sinistra di → a destra della scuola",
+      "tra / fra → tra la farmacia e il bar",
+      "all'angolo, all'incrocio"
+    ],
+    "tags": [
+      "city",
+      "directions"
+    ]
+  },
+  {
+    "id": "g043",
+    "rule": "Qui / qua, lì / là",
+    "explanation": "All four mean 'here' or 'there'. QUI and LÌ point to a precise spot; QUA and LÀ are vaguer ('around here', 'over there').",
+    "examples": [
+      "QUI (preciso, vicino): Vieni qui! Il libro è qui, sul tavolo.",
+      "QUA (generale, vicino): Vieni qua! Abito qua vicino.",
+      "LÌ (preciso, lontano): Il telefono è lì, sul tavolo. Siediti lì.",
+      "LÀ (generale, lontano): Il supermercato è là, in fondo alla strada. Guarda là!"
+    ],
+    "tags": [
+      "city",
+      "directions"
+    ]
+  },
+  {
+    "id": "g044",
+    "rule": "Dove vai se devi…? In, a, da",
+    "explanation": "Most shops and places take IN with no article; some take A + article; a few take A alone; people take DA.",
+    "examples": [
+      "IN: in farmacia, in banca, in panetteria, in biblioteca, in libreria, in stazione, in palestra",
+      "AL / ALLA / ALLE: al bar, al supermercato, al parco, al museo, al cinema, al ristorante, alle poste",
+      "A: a teatro, a scuola, a casa",
+      "DA (persone): dal medico, da Martina",
+      "Devo comprare le medicine → vado in farmacia.",
+      "Devo spedire una lettera → vado alle poste."
+    ],
+    "tags": [
+      "city",
+      "directions"
+    ]
   }
 ]

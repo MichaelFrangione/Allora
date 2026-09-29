@@ -254,6 +254,7 @@ const CONTENT_TYPE_SUBJECT: Record<string, string> = {
   ...DRILL_CONTENT_TYPE_SUBJECT,
   conjugation: "present-tense",
   descrizione: "descrizione",
+  mappa: "city",
   time: "time",
 };
 

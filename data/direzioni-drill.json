@@ -1,0 +1,1521 @@
+[
+  {
+    "id": "dir001",
+    "category": "verbi",
+    "sentence": "___ a destra al semaforo.",
+    "correct": "Gira",
+    "options": [
+      "Gira",
+      "Giri",
+      "Girare",
+      "Girano"
+    ],
+    "explanation": "GIRARE → (tu) gira! Per i verbi in -ARE l'imperativo (tu) finisce in -A.",
+    "tags": [
+      "city",
+      "directions"
+    ],
+    "cue": "girare"
+  },
+  {
+    "id": "dir002",
+    "category": "verbi",
+    "sentence": "___ la strada sulle strisce.",
+    "correct": "Attraversa",
+    "options": [
+      "Attraversa",
+      "Attraversi",
+      "Attraversare",
+      "Attraversano"
+    ],
+    "explanation": "ATTRAVERSARE → (tu) attraversa!",
+    "tags": [
+      "city",
+      "directions"
+    ],
+    "cue": "attraversare"
+  },
+  {
+    "id": "dir003",
+    "category": "verbi",
+    "sentence": "___ sempre dritto.",
+    "correct": "Continua",
+    "options": [
+      "Continua",
+      "Continui",
+      "Continuare",
+      "Continuano"
+    ],
+    "explanation": "CONTINUARE → (tu) continua!",
+    "tags": [
+      "city",
+      "directions"
+    ],
+    "cue": "continuare"
+  },
+  {
+    "id": "dir004",
+    "category": "verbi",
+    "sentence": "___ questa strada fino alla piazza.",
+    "correct": "Segui",
+    "options": [
+      "Segui",
+      "Segua",
+      "Seguire",
+      "Seguono"
+    ],
+    "explanation": "SEGUIRE (-IRE) → (tu) segui! Per -ERE e -IRE l'imperativo (tu) finisce in -I.",
+    "tags": [
+      "city",
+      "directions"
+    ],
+    "cue": "seguire"
+  },
+  {
+    "id": "dir005",
+    "category": "verbi",
+    "sentence": "___ la seconda strada a sinistra.",
+    "correct": "Prendi",
+    "options": [
+      "Prendi",
+      "Prenda",
+      "Prendere",
+      "Prendono"
+    ],
+    "explanation": "PRENDERE (-ERE) → (tu) prendi!",
+    "tags": [
+      "city",
+      "directions"
+    ],
+    "cue": "prendere"
+  },
+  {
+    "id": "dir006",
+    "category": "verbi",
+    "sentence": "___ davanti alla banca.",
+    "correct": "Passa",
+    "options": [
+      "Passa",
+      "Passi",
+      "Passare",
+      "Passano"
+    ],
+    "explanation": "PASSARE → (tu) passa!",
+    "tags": [
+      "city",
+      "directions"
+    ],
+    "cue": "passare"
+  },
+  {
+    "id": "dir007",
+    "category": "verbi",
+    "sentence": "___ a sinistra dopo il ponte.",
+    "correct": "Svolta",
+    "options": [
+      "Svolta",
+      "Svolti",
+      "Svoltare",
+      "Svoltano"
+    ],
+    "explanation": "SVOLTARE = girare → (tu) svolta!",
+    "tags": [
+      "city",
+      "directions"
+    ],
+    "cue": "svoltare"
+  },
+  {
+    "id": "dir008",
+    "category": "verbi",
+    "sentence": "___ fino alla stazione.",
+    "correct": "Arriva",
+    "options": [
+      "Arriva",
+      "Arrivi",
+      "Arrivare",
+      "Arrivano"
+    ],
+    "explanation": "ARRIVARE → (tu) arriva fino a…",
+    "tags": [
+      "city",
+      "directions"
+    ],
+    "cue": "arrivare"
+  },
+  {
+    "id": "dir009",
+    "category": "verbi",
+    "sentence": "___ sempre dritto fino al semaforo.",
+    "correct": "Vai",
+    "options": [
+      "Vai",
+      "Vado",
+      "Andare",
+      "Vanno"
+    ],
+    "explanation": "ANDARE è irregolare: (tu) vai! (anche va').",
+    "tags": [
+      "city",
+      "directions"
+    ],
+    "cue": "andare"
+  },
+  {
+    "id": "dir010",
+    "category": "verbi",
+    "sentence": "(io) ___ in farmacia.",
+    "correct": "Vado",
+    "options": [
+      "Vado",
+      "Vai",
+      "Va",
+      "Andiamo"
+    ],
+    "explanation": "ANDARE: io vado, tu vai, lui/lei va, noi andiamo, voi andate, loro vanno.",
+    "tags": [
+      "city",
+      "directions"
+    ],
+    "cue": "andare"
+  },
+  {
+    "id": "dir011",
+    "category": "verbi",
+    "sentence": "Scusi, (io) ___ la farmacia. Sa dov'è?",
+    "correct": "cerco",
+    "options": [
+      "cerco",
+      "cerchi",
+      "cerca",
+      "cercano"
+    ],
+    "explanation": "CERCARE: io cerco, tu cerchi (con la H!), lui/lei cerca.",
+    "tags": [
+      "city",
+      "directions"
+    ],
+    "cue": "cercare"
+  },
+  {
+    "id": "dir012",
+    "category": "verbi",
+    "sentence": "Tu ___ la banca? È lì, a destra.",
+    "correct": "cerchi",
+    "options": [
+      "cerchi",
+      "ceri",
+      "cerci",
+      "cerca"
+    ],
+    "explanation": "CERCARE → tu cerchi: la H mantiene il suono duro /k/.",
+    "tags": [
+      "city",
+      "directions"
+    ],
+    "cue": "cercare"
+  },
+  {
+    "id": "dir013",
+    "category": "verbi",
+    "sentence": "Come ___ alla stazione? (io)",
+    "correct": "arrivo",
+    "options": [
+      "arrivo",
+      "arrivi",
+      "arriva",
+      "arriviamo"
+    ],
+    "explanation": "ARRIVARE: io arrivo. «Come arrivo a…?» = How do I get to…?",
+    "tags": [
+      "city",
+      "directions"
+    ],
+    "cue": "arrivare"
+  },
+  {
+    "id": "dir014",
+    "category": "verbi",
+    "sentence": "Non riesco a ___ il museo.",
+    "correct": "trovare",
+    "options": [
+      "trovare",
+      "trovo",
+      "trova",
+      "trovi"
+    ],
+    "explanation": "Dopo «riuscire a» si usa l'infinito: riesco a trovare.",
+    "tags": [
+      "city",
+      "directions"
+    ],
+    "cue": "trovare"
+  },
+  {
+    "id": "dir015",
+    "category": "verbi",
+    "sentence": "Dove ___ la banca?",
+    "correct": "si trova",
+    "options": [
+      "si trova",
+      "si trovano",
+      "trova",
+      "trovi"
+    ],
+    "explanation": "«Dove si trova…?» = Where is…? Singolare: si trova.",
+    "tags": [
+      "city",
+      "directions"
+    ]
+  },
+  {
+    "id": "dir016",
+    "category": "verbi",
+    "sentence": "Dove ___ le poste?",
+    "correct": "si trovano",
+    "options": [
+      "si trovano",
+      "si trova",
+      "trovano",
+      "sono trovate"
+    ],
+    "explanation": "Plurale: le poste → si trovano.",
+    "tags": [
+      "city",
+      "directions"
+    ]
+  },
+  {
+    "id": "dir017",
+    "category": "verbi",
+    "sentence": "Scusi, dov'___ la stazione?",
+    "correct": "è",
+    "options": [
+      "è",
+      "sono",
+      "ha",
+      "sta"
+    ],
+    "explanation": "Dov'è = dove + è (singolare). Plurale: dove sono…?",
+    "tags": [
+      "city",
+      "directions"
+    ]
+  },
+  {
+    "id": "dir018",
+    "category": "verbi",
+    "sentence": "Mi ___ in stazione e devo andare in libreria.",
+    "correct": "trovo",
+    "options": [
+      "trovo",
+      "trova",
+      "trovi",
+      "trovano"
+    ],
+    "explanation": "«Mi trovo in…» = I am (located) in…",
+    "tags": [
+      "city",
+      "directions"
+    ]
+  },
+  {
+    "id": "dir019",
+    "category": "direzioni",
+    "prompt": "Cosa significa?",
+    "sentence": "«Gira a destra.»",
+    "correct": "Turn right.",
+    "options": [
+      "Turn right.",
+      "Go straight ahead.",
+      "It's on the left.",
+      "Keep going until the traffic light."
+    ],
+    "explanation": "Gira a destra. = Turn right.",
+    "tags": [
+      "city",
+      "directions"
+    ]
+  },
+  {
+    "id": "dir020",
+    "category": "direzioni",
+    "prompt": "Cosa significa?",
+    "sentence": "«Gira a sinistra.»",
+    "correct": "Turn left.",
+    "options": [
+      "Turn left.",
+      "Cross the street.",
+      "Follow this street.",
+      "Take the first street on the right."
+    ],
+    "explanation": "Gira a sinistra. = Turn left.",
+    "tags": [
+      "city",
+      "directions"
+    ]
+  },
+  {
+    "id": "dir021",
+    "category": "direzioni",
+    "prompt": "Cosa significa?",
+    "sentence": "«Vai sempre dritto.»",
+    "correct": "Go straight ahead.",
+    "options": [
+      "Go straight ahead.",
+      "It's on the corner.",
+      "It's at the intersection.",
+      "Cross the street."
+    ],
+    "explanation": "Vai sempre dritto. = Go straight ahead.",
+    "tags": [
+      "city",
+      "directions"
+    ]
+  },
+  {
+    "id": "dir022",
+    "category": "direzioni",
+    "prompt": "Cosa significa?",
+    "sentence": "«Attraversa la strada.»",
+    "correct": "Cross the street.",
+    "options": [
+      "Cross the street.",
+      "Follow this street.",
+      "Take the first street on the right.",
+      "Go past the bank."
+    ],
+    "explanation": "Attraversa la strada. = Cross the street.",
+    "tags": [
+      "city",
+      "directions"
+    ]
+  },
+  {
+    "id": "dir023",
+    "category": "direzioni",
+    "prompt": "Cosa significa?",
+    "sentence": "«Continua fino al semaforo.»",
+    "correct": "Keep going until the traffic light.",
+    "options": [
+      "Keep going until the traffic light.",
+      "It's on the left.",
+      "It's on the corner.",
+      "Go past the bank."
+    ],
+    "explanation": "Continua fino al semaforo. = Keep going until the traffic light.",
+    "tags": [
+      "city",
+      "directions"
+    ]
+  },
+  {
+    "id": "dir024",
+    "category": "direzioni",
+    "prompt": "Cosa significa?",
+    "sentence": "«Prendi la prima strada a destra.»",
+    "correct": "Take the first street on the right.",
+    "options": [
+      "Take the first street on the right.",
+      "Turn right.",
+      "Follow this street.",
+      "Turn left."
+    ],
+    "explanation": "Prendi la prima strada a destra. = Take the first street on the right.",
+    "tags": [
+      "city",
+      "directions"
+    ]
+  },
+  {
+    "id": "dir025",
+    "category": "direzioni",
+    "prompt": "Cosa significa?",
+    "sentence": "«Segui questa strada.»",
+    "correct": "Follow this street.",
+    "options": [
+      "Follow this street.",
+      "Turn right.",
+      "Take the first street on the right.",
+      "It's on the corner."
+    ],
+    "explanation": "Segui questa strada. = Follow this street.",
+    "tags": [
+      "city",
+      "directions"
+    ]
+  },
+  {
+    "id": "dir026",
+    "category": "direzioni",
+    "prompt": "Cosa significa?",
+    "sentence": "«Passa davanti alla banca.»",
+    "correct": "Go past the bank.",
+    "options": [
+      "Go past the bank.",
+      "Take the first street on the right.",
+      "Follow this street.",
+      "Turn right."
+    ],
+    "explanation": "Passa davanti alla banca. = Go past the bank.",
+    "tags": [
+      "city",
+      "directions"
+    ]
+  },
+  {
+    "id": "dir027",
+    "category": "direzioni",
+    "prompt": "Cosa significa?",
+    "sentence": "«È all'angolo.»",
+    "correct": "It's on the corner.",
+    "options": [
+      "It's on the corner.",
+      "It's at the end of the street.",
+      "It's at the intersection.",
+      "Keep going until the traffic light."
+    ],
+    "explanation": "È all'angolo. = It's on the corner.",
+    "tags": [
+      "city",
+      "directions"
+    ]
+  },
+  {
+    "id": "dir028",
+    "category": "direzioni",
+    "prompt": "Cosa significa?",
+    "sentence": "«È all'incrocio.»",
+    "correct": "It's at the intersection.",
+    "options": [
+      "It's at the intersection.",
+      "Cross the street.",
+      "It's at the end of the street.",
+      "Go straight ahead."
+    ],
+    "explanation": "È all'incrocio. = It's at the intersection.",
+    "tags": [
+      "city",
+      "directions"
+    ]
+  },
+  {
+    "id": "dir029",
+    "category": "direzioni",
+    "prompt": "Cosa significa?",
+    "sentence": "«È in fondo alla strada.»",
+    "correct": "It's at the end of the street.",
+    "options": [
+      "It's at the end of the street.",
+      "Follow this street.",
+      "It's on the corner.",
+      "Turn left."
+    ],
+    "explanation": "È in fondo alla strada. = It's at the end of the street.",
+    "tags": [
+      "city",
+      "directions"
+    ]
+  },
+  {
+    "id": "dir030",
+    "category": "direzioni",
+    "prompt": "Cosa significa?",
+    "sentence": "«È sulla sinistra.»",
+    "correct": "It's on the left.",
+    "options": [
+      "It's on the left.",
+      "Cross the street.",
+      "Follow this street.",
+      "Keep going until the traffic light."
+    ],
+    "explanation": "È sulla sinistra. = It's on the left.",
+    "tags": [
+      "city",
+      "directions"
+    ]
+  },
+  {
+    "id": "dir031",
+    "category": "direzioni",
+    "prompt": "Come si dice in italiano?",
+    "sentence": "«Turn left.»",
+    "correct": "Gira a sinistra.",
+    "options": [
+      "Gira a sinistra.",
+      "Gira a destra.",
+      "Vai sempre dritto.",
+      "È a sinistra."
+    ],
+    "explanation": "Turn left. = Gira a sinistra.",
+    "tags": [
+      "city",
+      "directions"
+    ]
+  },
+  {
+    "id": "dir032",
+    "category": "direzioni",
+    "prompt": "Come si dice in italiano?",
+    "sentence": "«Cross the street.»",
+    "correct": "Attraversa la strada.",
+    "options": [
+      "Attraversa la strada.",
+      "Segui la strada.",
+      "Prendi la strada.",
+      "Continua la strada."
+    ],
+    "explanation": "Cross the street. = Attraversa la strada.",
+    "tags": [
+      "city",
+      "directions"
+    ]
+  },
+  {
+    "id": "dir033",
+    "category": "direzioni",
+    "prompt": "Come si dice in italiano?",
+    "sentence": "«Keep going straight.»",
+    "correct": "Continua sempre dritto.",
+    "options": [
+      "Continua sempre dritto.",
+      "Gira sempre a destra.",
+      "Torna indietro.",
+      "Attraversa sempre."
+    ],
+    "explanation": "Keep going straight. = Continua sempre dritto.",
+    "tags": [
+      "city",
+      "directions"
+    ]
+  },
+  {
+    "id": "dir034",
+    "category": "direzioni",
+    "prompt": "Come si dice in italiano?",
+    "sentence": "«Take the second street on the left.»",
+    "correct": "Prendi la seconda strada a sinistra.",
+    "options": [
+      "Prendi la seconda strada a sinistra.",
+      "Prendi la prima strada a sinistra.",
+      "Prendi la seconda strada a destra.",
+      "Passa la seconda strada a sinistra."
+    ],
+    "explanation": "Take the second street on the left. = Prendi la seconda strada a sinistra.",
+    "tags": [
+      "city",
+      "directions"
+    ]
+  },
+  {
+    "id": "dir035",
+    "category": "posizioni",
+    "sentence": "La farmacia è vicino ___ banca.",
+    "correct": "alla",
+    "options": [
+      "alla",
+      "al",
+      "della",
+      "dalla"
+    ],
+    "explanation": "VICINO A + la = alla.",
+    "tags": [
+      "city",
+      "directions",
+      "positions",
+      "articolate"
+    ]
+  },
+  {
+    "id": "dir036",
+    "category": "posizioni",
+    "sentence": "La stazione è lontano ___ centro.",
+    "correct": "dal",
+    "options": [
+      "dal",
+      "al",
+      "del",
+      "dalla"
+    ],
+    "explanation": "LONTANO DA + il = dal.",
+    "tags": [
+      "city",
+      "directions",
+      "positions",
+      "articolate"
+    ]
+  },
+  {
+    "id": "dir037",
+    "category": "posizioni",
+    "sentence": "L'hotel è davanti ___ stazione.",
+    "correct": "alla",
+    "options": [
+      "alla",
+      "dalla",
+      "della",
+      "al"
+    ],
+    "explanation": "DAVANTI A + la = alla.",
+    "tags": [
+      "city",
+      "directions",
+      "positions",
+      "articolate"
+    ]
+  },
+  {
+    "id": "dir038",
+    "category": "posizioni",
+    "sentence": "Il bar è di fronte ___ ospedale.",
+    "correct": "all'",
+    "options": [
+      "all'",
+      "dall'",
+      "dell'",
+      "al"
+    ],
+    "explanation": "DI FRONTE A + l' = all'.",
+    "tags": [
+      "city",
+      "directions",
+      "positions",
+      "articolate"
+    ]
+  },
+  {
+    "id": "dir039",
+    "category": "posizioni",
+    "sentence": "La gelateria è accanto ___ poste.",
+    "correct": "alle",
+    "options": [
+      "alle",
+      "ai",
+      "dalle",
+      "delle"
+    ],
+    "explanation": "ACCANTO A + le = alle.",
+    "tags": [
+      "city",
+      "directions",
+      "positions",
+      "articolate"
+    ]
+  },
+  {
+    "id": "dir040",
+    "category": "posizioni",
+    "sentence": "Il parco è dietro ___ museo.",
+    "correct": "al",
+    "options": [
+      "al",
+      "dal",
+      "del",
+      "alla"
+    ],
+    "explanation": "DIETRO A + il = al.",
+    "tags": [
+      "city",
+      "directions",
+      "positions",
+      "articolate"
+    ]
+  },
+  {
+    "id": "dir041",
+    "category": "posizioni",
+    "sentence": "La scuola è lontano ___ parco.",
+    "correct": "dal",
+    "options": [
+      "dal",
+      "al",
+      "del",
+      "nel"
+    ],
+    "explanation": "LONTANO DA + il = dal.",
+    "tags": [
+      "city",
+      "directions",
+      "positions",
+      "articolate"
+    ]
+  },
+  {
+    "id": "dir042",
+    "category": "posizioni",
+    "sentence": "Il cinema è vicino ___ supermercato.",
+    "correct": "al",
+    "options": [
+      "al",
+      "allo",
+      "dal",
+      "del"
+    ],
+    "explanation": "VICINO A + il = al.",
+    "tags": [
+      "city",
+      "directions",
+      "positions",
+      "articolate"
+    ]
+  },
+  {
+    "id": "dir043",
+    "category": "posizioni",
+    "sentence": "La banca è lontano ___ stazione.",
+    "correct": "dalla",
+    "options": [
+      "dalla",
+      "alla",
+      "della",
+      "nella"
+    ],
+    "explanation": "LONTANO DA + la = dalla.",
+    "tags": [
+      "city",
+      "directions",
+      "positions",
+      "articolate"
+    ]
+  },
+  {
+    "id": "dir044",
+    "category": "posizioni",
+    "sentence": "La chiesa è a destra ___ scuola.",
+    "correct": "della",
+    "options": [
+      "della",
+      "alla",
+      "dalla",
+      "nella"
+    ],
+    "explanation": "A DESTRA DI + la = della (a destra/a sinistra usano DI).",
+    "tags": [
+      "city",
+      "directions",
+      "positions",
+      "articolate"
+    ]
+  },
+  {
+    "id": "dir045",
+    "category": "posizioni",
+    "sentence": "Il museo è a sinistra ___ teatro.",
+    "correct": "del",
+    "options": [
+      "del",
+      "al",
+      "dal",
+      "nel"
+    ],
+    "explanation": "A SINISTRA DI + il = del.",
+    "tags": [
+      "city",
+      "directions",
+      "positions",
+      "articolate"
+    ]
+  },
+  {
+    "id": "dir046",
+    "category": "posizioni",
+    "sentence": "Il bar è a due minuti a piedi: è ___ casa mia.",
+    "correct": "vicino a",
+    "options": [
+      "vicino a",
+      "lontano da",
+      "dietro a",
+      "tra"
+    ],
+    "explanation": "Due minuti = VICINO A.",
+    "tags": [
+      "city",
+      "directions",
+      "positions"
+    ]
+  },
+  {
+    "id": "dir047",
+    "category": "posizioni",
+    "sentence": "La stazione è a un'ora a piedi: è ___ qui.",
+    "correct": "lontano da",
+    "options": [
+      "lontano da",
+      "vicino a",
+      "accanto a",
+      "davanti a"
+    ],
+    "explanation": "Un'ora a piedi = LONTANO DA.",
+    "tags": [
+      "city",
+      "directions",
+      "positions"
+    ]
+  },
+  {
+    "id": "dir048",
+    "category": "posizioni",
+    "sentence": "La banca è ___ la farmacia e il bar.",
+    "correct": "tra",
+    "options": [
+      "tra",
+      "dietro",
+      "accanto",
+      "vicino"
+    ],
+    "explanation": "In mezzo a due cose = TRA (o FRA).",
+    "tags": [
+      "city",
+      "directions",
+      "positions"
+    ]
+  },
+  {
+    "id": "dir049",
+    "category": "posizioni",
+    "sentence": "Il negozio è dove due strade si incontrano: è ___.",
+    "correct": "all'angolo",
+    "options": [
+      "all'angolo",
+      "in fondo",
+      "davanti",
+      "lontano"
+    ],
+    "explanation": "Dove due strade si incontrano = ALL'ANGOLO (o all'incrocio).",
+    "tags": [
+      "city",
+      "directions",
+      "positions"
+    ]
+  },
+  {
+    "id": "dir050",
+    "category": "posizioni",
+    "sentence": "Il museo è dall'altra parte della strada: è ___ al bar.",
+    "correct": "di fronte",
+    "options": [
+      "di fronte",
+      "dietro",
+      "accanto",
+      "lontano"
+    ],
+    "explanation": "Dall'altra parte della strada = DI FRONTE A.",
+    "tags": [
+      "city",
+      "directions",
+      "positions"
+    ]
+  },
+  {
+    "id": "dir051",
+    "category": "qui-qua-li-la",
+    "sentence": "Vieni ___! (esattamente in questo punto)",
+    "correct": "qui",
+    "options": [
+      "qui",
+      "qua",
+      "lì",
+      "là"
+    ],
+    "explanation": "QUI = in questo punto preciso, vicino a chi parla.",
+    "tags": [
+      "city",
+      "directions",
+      "positions"
+    ]
+  },
+  {
+    "id": "dir052",
+    "category": "qui-qua-li-la",
+    "sentence": "Abito ___ vicino. (da queste parti)",
+    "correct": "qua",
+    "options": [
+      "qui",
+      "qua",
+      "lì",
+      "là"
+    ],
+    "explanation": "QUA = da queste parti, più generale.",
+    "tags": [
+      "city",
+      "directions",
+      "positions"
+    ]
+  },
+  {
+    "id": "dir053",
+    "category": "qui-qua-li-la",
+    "sentence": "Il libro è ___, sul tavolo. (vicino a me)",
+    "correct": "qui",
+    "options": [
+      "qui",
+      "qua",
+      "lì",
+      "là"
+    ],
+    "explanation": "QUI = vicino a chi parla, luogo preciso.",
+    "tags": [
+      "city",
+      "directions",
+      "positions"
+    ]
+  },
+  {
+    "id": "dir054",
+    "category": "qui-qua-li-la",
+    "sentence": "Vieni ___! (da questa parte)",
+    "correct": "qua",
+    "options": [
+      "qui",
+      "qua",
+      "lì",
+      "là"
+    ],
+    "explanation": "QUA = da questa parte, meno preciso.",
+    "tags": [
+      "city",
+      "directions",
+      "positions"
+    ]
+  },
+  {
+    "id": "dir055",
+    "category": "qui-qua-li-la",
+    "sentence": "Il telefono è ___, su quel tavolo. (lontano da me)",
+    "correct": "lì",
+    "options": [
+      "qui",
+      "qua",
+      "lì",
+      "là"
+    ],
+    "explanation": "LÌ = lontano da chi parla, luogo preciso.",
+    "tags": [
+      "city",
+      "directions",
+      "positions"
+    ]
+  },
+  {
+    "id": "dir056",
+    "category": "qui-qua-li-la",
+    "sentence": "Siediti ___, su quella sedia.",
+    "correct": "lì",
+    "options": [
+      "qui",
+      "qua",
+      "lì",
+      "là"
+    ],
+    "explanation": "LÌ = lontano da chi parla, luogo preciso.",
+    "tags": [
+      "city",
+      "directions",
+      "positions"
+    ]
+  },
+  {
+    "id": "dir057",
+    "category": "qui-qua-li-la",
+    "sentence": "Il supermercato è ___, in fondo alla strada.",
+    "correct": "là",
+    "options": [
+      "qui",
+      "qua",
+      "lì",
+      "là"
+    ],
+    "explanation": "LÀ = lontano e più generale.",
+    "tags": [
+      "city",
+      "directions",
+      "positions"
+    ]
+  },
+  {
+    "id": "dir058",
+    "category": "qui-qua-li-la",
+    "sentence": "Guarda ___! (laggiù, da quella parte)",
+    "correct": "là",
+    "options": [
+      "qui",
+      "qua",
+      "lì",
+      "là"
+    ],
+    "explanation": "LÀ = lontano, meno preciso.",
+    "tags": [
+      "city",
+      "directions",
+      "positions"
+    ]
+  },
+  {
+    "id": "dir059",
+    "category": "qui-qua-li-la",
+    "sentence": "Le chiavi? Sono ___, vicino alla porta. (lontano, preciso)",
+    "correct": "lì",
+    "options": [
+      "qui",
+      "qua",
+      "lì",
+      "là"
+    ],
+    "explanation": "LÌ = lontano da chi parla, ma in un punto preciso.",
+    "tags": [
+      "city",
+      "directions",
+      "positions"
+    ]
+  },
+  {
+    "id": "dir060",
+    "category": "dove-vado",
+    "sentence": "Devo comprare le medicine. Vado ___.",
+    "correct": "in farmacia",
+    "options": [
+      "in farmacia",
+      "in panetteria",
+      "alle poste",
+      "al ristorante"
+    ],
+    "explanation": "Devo comprare le medicine. Vado in farmacia.",
+    "tags": [
+      "city",
+      "directions",
+      "places"
+    ]
+  },
+  {
+    "id": "dir061",
+    "category": "dove-vado",
+    "sentence": "Devo comprare il pane. Vado ___.",
+    "correct": "in panetteria",
+    "options": [
+      "in panetteria",
+      "alle poste",
+      "al parco",
+      "dal medico"
+    ],
+    "explanation": "Devo comprare il pane. Vado in panetteria.",
+    "tags": [
+      "city",
+      "directions",
+      "places"
+    ]
+  },
+  {
+    "id": "dir062",
+    "category": "dove-vado",
+    "sentence": "Devo comprare frutta e verdura. Vado ___.",
+    "correct": "al supermercato",
+    "options": [
+      "al supermercato",
+      "alla fermata dell'autobus",
+      "in banca",
+      "al ristorante"
+    ],
+    "explanation": "Devo comprare frutta e verdura. Vado al supermercato.",
+    "tags": [
+      "city",
+      "directions",
+      "places"
+    ]
+  },
+  {
+    "id": "dir063",
+    "category": "dove-vado",
+    "sentence": "Devo prendere il treno. Vado ___.",
+    "correct": "in stazione",
+    "options": [
+      "in stazione",
+      "al bar",
+      "in un negozio di vestiti",
+      "in panetteria"
+    ],
+    "explanation": "Devo prendere il treno. Vado in stazione.",
+    "tags": [
+      "city",
+      "directions",
+      "places"
+    ]
+  },
+  {
+    "id": "dir064",
+    "category": "dove-vado",
+    "sentence": "Devo prendere un libro in prestito. Vado ___.",
+    "correct": "in biblioteca",
+    "options": [
+      "in biblioteca",
+      "al parco",
+      "in banca",
+      "al museo"
+    ],
+    "explanation": "Devo prendere un libro in prestito. Vado in biblioteca.",
+    "tags": [
+      "city",
+      "directions",
+      "places"
+    ]
+  },
+  {
+    "id": "dir065",
+    "category": "dove-vado",
+    "sentence": "Voglio prendere un caffè. Vado ___.",
+    "correct": "al bar",
+    "options": [
+      "al bar",
+      "al museo",
+      "al cinema",
+      "in banca"
+    ],
+    "explanation": "Voglio prendere un caffè. Vado al bar.",
+    "tags": [
+      "city",
+      "directions",
+      "places"
+    ]
+  },
+  {
+    "id": "dir066",
+    "category": "dove-vado",
+    "sentence": "Voglio mangiare una pizza. Vado ___.",
+    "correct": "al ristorante",
+    "options": [
+      "al ristorante",
+      "in stazione",
+      "in biblioteca",
+      "in banca"
+    ],
+    "explanation": "Voglio mangiare una pizza. Vado al ristorante.",
+    "tags": [
+      "city",
+      "directions",
+      "places"
+    ]
+  },
+  {
+    "id": "dir067",
+    "category": "dove-vado",
+    "sentence": "Devo prelevare dei soldi. Vado ___.",
+    "correct": "in banca",
+    "options": [
+      "in banca",
+      "in un negozio di vestiti",
+      "al ristorante",
+      "al bar"
+    ],
+    "explanation": "Devo prelevare dei soldi. Vado in banca.",
+    "tags": [
+      "city",
+      "directions",
+      "places"
+    ]
+  },
+  {
+    "id": "dir068",
+    "category": "dove-vado",
+    "sentence": "Sto male, devo vedere un medico. Vado ___.",
+    "correct": "dal medico",
+    "options": [
+      "dal medico",
+      "al parco",
+      "in farmacia",
+      "in stazione"
+    ],
+    "explanation": "Sto male, devo vedere un medico. Vado dal medico.",
+    "tags": [
+      "city",
+      "directions",
+      "places"
+    ]
+  },
+  {
+    "id": "dir069",
+    "category": "dove-vado",
+    "sentence": "Devo spedire una lettera. Vado ___.",
+    "correct": "alle poste",
+    "options": [
+      "alle poste",
+      "in un negozio di vestiti",
+      "in panetteria",
+      "al bar"
+    ],
+    "explanation": "Devo spedire una lettera. Vado alle poste.",
+    "tags": [
+      "city",
+      "directions",
+      "places"
+    ]
+  },
+  {
+    "id": "dir070",
+    "category": "dove-vado",
+    "sentence": "Voglio fare una passeggiata. Vado ___.",
+    "correct": "al parco",
+    "options": [
+      "al parco",
+      "al ristorante",
+      "alla fermata dell'autobus",
+      "al cinema"
+    ],
+    "explanation": "Voglio fare una passeggiata. Vado al parco.",
+    "tags": [
+      "city",
+      "directions",
+      "places"
+    ]
+  },
+  {
+    "id": "dir071",
+    "category": "dove-vado",
+    "sentence": "Voglio vedere un quadro. Vado ___.",
+    "correct": "al museo",
+    "options": [
+      "al museo",
+      "al ristorante",
+      "al cinema",
+      "in panetteria"
+    ],
+    "explanation": "Voglio vedere un quadro. Vado al museo.",
+    "tags": [
+      "city",
+      "directions",
+      "places"
+    ]
+  },
+  {
+    "id": "dir072",
+    "category": "dove-vado",
+    "sentence": "Voglio vedere un film. Vado ___.",
+    "correct": "al cinema",
+    "options": [
+      "al cinema",
+      "alle poste",
+      "alla fermata dell'autobus",
+      "in biblioteca"
+    ],
+    "explanation": "Voglio vedere un film. Vado al cinema.",
+    "tags": [
+      "city",
+      "directions",
+      "places"
+    ]
+  },
+  {
+    "id": "dir073",
+    "category": "dove-vado",
+    "sentence": "Devo prendere l'autobus. Vado ___.",
+    "correct": "alla fermata dell'autobus",
+    "options": [
+      "alla fermata dell'autobus",
+      "in stazione",
+      "al museo",
+      "in un negozio di vestiti"
+    ],
+    "explanation": "Devo prendere l'autobus. Vado alla fermata dell'autobus.",
+    "tags": [
+      "city",
+      "directions",
+      "places"
+    ]
+  },
+  {
+    "id": "dir074",
+    "category": "dove-vado",
+    "sentence": "Devo comprare dei vestiti. Vado ___.",
+    "correct": "in un negozio di vestiti",
+    "options": [
+      "in un negozio di vestiti",
+      "alle poste",
+      "in stazione",
+      "in biblioteca"
+    ],
+    "explanation": "Devo comprare dei vestiti. Vado in un negozio di vestiti.",
+    "tags": [
+      "city",
+      "directions",
+      "places"
+    ]
+  },
+  {
+    "id": "dir075",
+    "category": "dove-vado",
+    "sentence": "Vado ___ farmacia.",
+    "correct": "in",
+    "options": [
+      "in",
+      "a",
+      "al",
+      "dal"
+    ],
+    "explanation": "Negozi in -ERIA/-IA e molti luoghi: IN farmacia, in banca, in biblioteca, in panetteria.",
+    "tags": [
+      "city",
+      "directions",
+      "prepositions"
+    ]
+  },
+  {
+    "id": "dir076",
+    "category": "dove-vado",
+    "sentence": "Vado ___ banca.",
+    "correct": "in",
+    "options": [
+      "in",
+      "a",
+      "al",
+      "dal"
+    ],
+    "explanation": "IN banca (senza articolo).",
+    "tags": [
+      "city",
+      "directions",
+      "prepositions"
+    ]
+  },
+  {
+    "id": "dir077",
+    "category": "dove-vado",
+    "sentence": "Vado ___ bar.",
+    "correct": "al",
+    "options": [
+      "in",
+      "a",
+      "al",
+      "dal"
+    ],
+    "explanation": "AL bar, al supermercato, al parco, al museo, al cinema (a + il).",
+    "tags": [
+      "city",
+      "directions",
+      "prepositions"
+    ]
+  },
+  {
+    "id": "dir078",
+    "category": "dove-vado",
+    "sentence": "Vado ___ supermercato.",
+    "correct": "al",
+    "options": [
+      "in",
+      "a",
+      "al",
+      "dal"
+    ],
+    "explanation": "AL supermercato (a + il).",
+    "tags": [
+      "city",
+      "directions",
+      "prepositions"
+    ]
+  },
+  {
+    "id": "dir079",
+    "category": "dove-vado",
+    "sentence": "Vado ___ teatro.",
+    "correct": "a",
+    "options": [
+      "in",
+      "a",
+      "al",
+      "dal"
+    ],
+    "explanation": "A teatro, a scuola, a casa: A senza articolo.",
+    "tags": [
+      "city",
+      "directions",
+      "prepositions"
+    ]
+  },
+  {
+    "id": "dir080",
+    "category": "dove-vado",
+    "sentence": "Vado ___ scuola.",
+    "correct": "a",
+    "options": [
+      "in",
+      "a",
+      "al",
+      "dal"
+    ],
+    "explanation": "A scuola (senza articolo).",
+    "tags": [
+      "city",
+      "directions",
+      "prepositions"
+    ]
+  },
+  {
+    "id": "dir081",
+    "category": "dove-vado",
+    "sentence": "Vado ___ medico.",
+    "correct": "dal",
+    "options": [
+      "in",
+      "a",
+      "al",
+      "dal"
+    ],
+    "explanation": "Con una persona si usa DA: dal medico, dal dentista, da Martina.",
+    "tags": [
+      "city",
+      "directions",
+      "prepositions"
+    ]
+  },
+  {
+    "id": "dir082",
+    "category": "dove-vado",
+    "sentence": "Vado ___ poste.",
+    "correct": "alle",
+    "options": [
+      "alle",
+      "in",
+      "al",
+      "dal"
+    ],
+    "explanation": "ALLE poste (a + le): poste è plurale.",
+    "tags": [
+      "city",
+      "directions",
+      "prepositions"
+    ]
+  },
+  {
+    "id": "dir083",
+    "category": "dove-vado",
+    "sentence": "Vado ___ biblioteca.",
+    "correct": "in",
+    "options": [
+      "in",
+      "a",
+      "al",
+      "dal"
+    ],
+    "explanation": "IN biblioteca (senza articolo).",
+    "tags": [
+      "city",
+      "directions",
+      "prepositions"
+    ]
+  },
+  {
+    "id": "dir084",
+    "category": "dove-vado",
+    "sentence": "Vado ___ casa di Martina.",
+    "correct": "a",
+    "options": [
+      "in",
+      "a",
+      "al",
+      "dal"
+    ],
+    "explanation": "A casa di…",
+    "tags": [
+      "city",
+      "directions",
+      "prepositions"
+    ]
+  }
+]

@@ -11,6 +11,12 @@ const customDrills = [
     desc: "Telling the time, days, months, and seasons",
   },
   {
+    href: "/study/mappa",
+    label: "La Città di Aurora",
+    emoji: "🗺️",
+    desc: "Map game — find places, follow directions, dov'è?",
+  },
+  {
     href: "/study/descrizione",
     label: "Descrivi l'Immagine",
     emoji: "🖼️",

@@ -100,7 +100,7 @@ describe("essere/avere verb cue", () => {
 
 describe("learn path", () => {
   it("subjects exist and routes resolve to a drill slug or a custom study mode", () => {
-    const customRoutes = new Set(["/study/conjugation", "/study/time"]);
+    const customRoutes = new Set(["/study/conjugation", "/study/time", "/study/mappa"]);
     for (const p of LEARN_PATH) {
       expect(subjectIds.has(p.subjectId), p.subjectId).toBe(true);
       const slug = p.route.replace("/study/", "");

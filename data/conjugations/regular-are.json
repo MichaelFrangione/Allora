@@ -796,5 +796,61 @@
       "voi": "squillate",
       "loro": "squillano"
     }
+  },
+  {
+    "id": "c200",
+    "verb": "attraversare",
+    "meaning": "to cross (regular -ARE)",
+    "tense": "presente",
+    "forms": {
+      "io": "attraverso",
+      "tu": "attraversi",
+      "lui/lei": "attraversa",
+      "noi": "attraversiamo",
+      "voi": "attraversate",
+      "loro": "attraversano"
+    }
+  },
+  {
+    "id": "c201",
+    "verb": "passare",
+    "meaning": "to pass, go past (regular -ARE)",
+    "tense": "presente",
+    "forms": {
+      "io": "passo",
+      "tu": "passi",
+      "lui/lei": "passa",
+      "noi": "passiamo",
+      "voi": "passate",
+      "loro": "passano"
+    }
+  },
+  {
+    "id": "c202",
+    "verb": "svoltare",
+    "meaning": "to turn (regular -ARE)",
+    "tense": "presente",
+    "forms": {
+      "io": "svolto",
+      "tu": "svolti",
+      "lui/lei": "svolta",
+      "noi": "svoltiamo",
+      "voi": "svoltate",
+      "loro": "svoltano"
+    }
+  },
+  {
+    "id": "c203",
+    "verb": "prelevare",
+    "meaning": "to withdraw (regular -ARE)",
+    "tense": "presente",
+    "forms": {
+      "io": "prelevo",
+      "tu": "prelevi",
+      "lui/lei": "preleva",
+      "noi": "preleviamo",
+      "voi": "prelevate",
+      "loro": "prelevano"
+    }
   }
 ]
