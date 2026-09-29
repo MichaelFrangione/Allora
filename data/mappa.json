@@ -831,8 +831,8 @@
       "correct": "Vai su Via Mazzini e continua sempre dritto. La libreria è sulla destra, all'angolo con Via Vittorio Veneto.",
       "options": [
         "Vai su Via Mazzini e continua sempre dritto. La libreria è sulla destra, all'angolo con Via Vittorio Veneto.",
-        "Vai su Via Garibaldi e gira a sinistra in Via Roma. La libreria è di fronte alle poste.",
-        "Prendi Via delle Magnolie. La libreria è tra il museo e il ristorante."
+        "Vai su Via Mazzini e gira a sinistra in Via Vittorio Veneto. La libreria è sulla sinistra, di fronte alla banca.",
+        "Vai su Via delle Magnolie e continua sempre dritto. La libreria è sulla destra, tra il museo e il ristorante."
       ],
       "highlight": [
         "stazione",
@@ -848,8 +848,8 @@
       "correct": "Vai su Via Garibaldi e passa davanti alla scuola. La piazza è sulla destra, di fronte alla biblioteca.",
       "options": [
         "Vai su Via Garibaldi e passa davanti alla scuola. La piazza è sulla destra, di fronte alla biblioteca.",
-        "Vai su Via Garibaldi e gira a sinistra in Via dei Fiori. La piazza è dietro alla chiesa.",
-        "Prendi Via Mazzini. La piazza è accanto alla palestra."
+        "Vai su Via Garibaldi e gira a sinistra in Via dei Fiori. La piazza è sulla destra, dietro alla chiesa.",
+        "Vai su Via Garibaldi e passa davanti alla scuola. La piazza è sulla sinistra, accanto alla biblioteca."
       ],
       "highlight": [
         "parco",
@@ -865,8 +865,8 @@
       "correct": "Prendi Via Vittorio Veneto verso il lago, attraversa Via Mazzini e continua fino a Via del Lago. La casa di Martina è di fronte alla libreria, accanto alla pasticceria.",
       "options": [
         "Prendi Via Vittorio Veneto verso il lago, attraversa Via Mazzini e continua fino a Via del Lago. La casa di Martina è di fronte alla libreria, accanto alla pasticceria.",
-        "Vai su Via Garibaldi. La casa di Martina è accanto alla chiesa.",
-        "Attraversa il Ponte Vecchio. La casa di Martina è dietro al fiume."
+        "Prendi Via Vittorio Veneto verso Via Garibaldi e continua dritto. La casa di Martina è di fronte alle poste, accanto alla caffetteria.",
+        "Prendi Via delle Magnolie verso ovest e gira a sinistra in Via Cavour. La casa di Martina è di fronte al museo, accanto al ristorante."
       ],
       "highlight": [
         "bar",
@@ -882,8 +882,8 @@
       "correct": "Vai su Via del Lago fino a Via Cavour e gira a destra. Attraversa Via Mazzini: il ristorante è sulla sinistra, accanto al museo.",
       "options": [
         "Vai su Via del Lago fino a Via Cavour e gira a destra. Attraversa Via Mazzini: il ristorante è sulla sinistra, accanto al museo.",
-        "Vai su Via del Lago e gira a sinistra in Via Lungolago. Il ristorante è accanto alla libreria.",
-        "Attraversa Via del Lago. Il ristorante è di fronte al teatro, accanto al supermercato."
+        "Vai su Via del Lago fino a Via Lungolago e gira a sinistra. Continua dritto: il ristorante è sulla destra, accanto alla libreria.",
+        "Vai su Via del Lago fino a Via Cavour e gira a sinistra. Il ristorante è sulla destra, accanto all'hotel."
       ],
       "highlight": [
         "teatro",
@@ -899,8 +899,8 @@
       "correct": "Vai su Via Garibaldi e continua dritto: passa la scuola e la biblioteca. Le poste sono sulla destra, di fronte alla caffetteria.",
       "options": [
         "Vai su Via Garibaldi e continua dritto: passa la scuola e la biblioteca. Le poste sono sulla destra, di fronte alla caffetteria.",
-        "Vai su Via delle Magnolie. Le poste sono tra la panetteria e la gelateria.",
-        "Vai su Via Garibaldi e gira a sinistra in Via dei Fiori. Le poste sono accanto al parco."
+        "Vai su Via delle Magnolie e continua dritto: passa la panetteria e la gelateria. Le poste sono sulla sinistra, di fronte al museo.",
+        "Vai su Via Garibaldi e continua dritto: passa il parco e la scuola. Le poste sono sulla sinistra, accanto alla biblioteca."
       ],
       "highlight": [
         "chiesa",
